@@ -1,0 +1,206 @@
+@media (max-width: 1024px) {
+    body h1:not([class]) {
+        font-size: 28px;
+    }
+
+    .services-detail-banner {
+        background-position: 0, 330px 0, center;
+        background-size: 330px 100%, 180px 100%, cover;
+
+        .services-detail-banner__text {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .services-detail-wrapper {
+        .service-detail-item {
+            padding: 15px;
+        }
+
+        .service-detail-item__content-hidden .service-detail-item__content-hidden-button {
+            min-width: 135px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services-detail-description {
+        margin-bottom: 20px;
+    }
+
+    .services-section-main .catalog_content__sort_horizon {
+        margin-bottom: 10px;
+    }
+
+    .services-detail-description__popular {
+        display: none;
+    }
+
+    .services-detail-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .services-detail-description .services-detail-description__text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .services-detail-banner .services-detail-banner__text {
+        max-width: 335px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .services-detail-banner {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    body h1:not([class]) {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .services-detail-banner {
+        background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+        url('./banner_bg.png');
+        background-position: 0 100%, center;
+        background-size: 100% 200px, cover;
+    }
+
+    .services-detail-wrapper {
+        .service-detail-item__content-hidden {
+            display: none;
+        }
+
+        .service-detail-item-wrapper {
+            width: 100%;
+            margin: 5px 10px;
+        }
+    }
+
+    .services-detail-banner {
+        padding: 75px 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .services-section-main .catalog_content__sort_horizon {
+        margin-bottom: 15px;
+    }
+
+    .services-section-main {
+
+        .catalog_content__sort_horizon_property:hover {
+            fill: var(--main-color);
+            background: var(--main-color);
+        }
+
+        .custom-select-trigger_sorting_text {
+            display: none;
+        }
+
+        .custom-select-trigger:after {
+            display: none;
+        }
+
+        .custom-select-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0;
+            border: 1px solid #ededed;
+        }
+
+        .custom-select-trigger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            width: 44px;
+        }
+
+        .mobile_sorting_svg_icons {
+            display: inline-block;
+        }
+
+        .catalog_content__sort_horizon_title {
+            display: none;
+        }
+
+        form[name='sort'] {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .custom-options {
+            right: 0;
+            left: auto;
+            min-width: 150px;
+            margin-top: 10px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                right: 13px;
+                left: auto;
+                bottom: 100%;
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                margin-bottom: -0.45rem;
+                border-top: 1px solid #ced2d5;
+                border-left: 1px solid #ced2d5;
+                background: #fff;
+                transform: rotate(45deg);
+                transition: all .4s ease-in-out;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-select-trigger_sorting_text {
+        display: none;
+    }
+
+    body .mobile_filter_icon_sorting_mobile,
+    body .mobile_filter_icon_list_mobile {
+        position: initial;
+    }
+
+    .select_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .catalog_content__sort_horizon .custom-select-trigger:hover:after {
+        border-color: #000000 !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .services-detail-wrapper .service-detail-item__image-wrapper {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .services-detail-wrapper .service-detail-item {
+        padding: 10px;
+    }
+
+    .services-detail-description {
+        flex-direction: column;
+    }
+
+    .services-detail-description__show-more {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}

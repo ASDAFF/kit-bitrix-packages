@@ -1,0 +1,69 @@
+body h1:not([class]) {
+    padding-bottom: 15px;
+    font-size: 31px;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 65px;
+
+    .service-item {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: calc(50% - 30px);
+        min-height: 285px;
+        margin: 15px;
+        transition: all 0.2s ease-in-out;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+
+            .service-item__content {
+                background: #ffffff;
+            }
+        }
+    }
+
+    .service-item__content {
+        padding: 40px;
+        width: 350px;
+        min-height: 265px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        transition: all 0.2s ease;
+    }
+
+    .service-item__title {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .service-item__link {
+        display: block;
+        max-height: 42px;
+        overflow: hidden;
+        font-weight: 600;
+        line-height: 21px;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--main-color);
+        }
+
+        & + .service-item__link {
+            margin-top: 15px;
+        }
+    }
+}
