@@ -1,0 +1,339 @@
+.callback-popup .sotbit_order_phone .sotbit_order_phone__block .phone_input_callback .main-input-md__wrapper {
+    width: calc(100% - 60px);
+}
+
+.callback-popup .sotbit_order_phone .sotbit_order_phone__block .phone_input_callback .main-input-md__wrapper.fullsize {
+    width: 100%;
+}
+
+.callback-popup .phone_input_callback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.callback-popup .phone_input__flag {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #DADADA;
+    border-radius: 4px 4px 0 0;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position-x: center !important;
+}
+
+.callback-popup .phone_input__flag:hover {
+    border-color: #BDBDBD;
+}
+
+.callback-popup .phone_input__flag .bx-flag-16::after,
+.callback-popup .phone_input__flag .bx-flag-24::after,
+.callback-popup .phone_input__flag .bx-flag-32::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.callback-popup__select-country {
+    position: fixed !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.callback-popup .popup-window .popup-window-angly-bottom {
+    bottom: -10px;
+    height: 10px;
+}
+
+.callback-popup .phone_input__flag .bx-flag-16::before,
+.callback-popup .phone_input__flag .bx-flag-24::before,
+.callback-popup .phone_input__flag .bx-flag-32::before {
+    content: '';
+    top: 36%;
+    right: 11px;
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    transform: rotate(-45deg);
+}
+
+.callback-popup .captcha-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon_refresh {
+    transition: all 0.3s ease;
+}
+
+.callback-popup .feedback_block__captcha_img {
+    display: flex;
+}
+
+.callback-popup .feedback_block__captcha_img {
+    height: 50px;
+    width: 206px;
+}
+
+.callback-popup .popup-window-message-content {
+    margin: 0;
+    padding: 30px 30px 32px 30px;
+}
+
+.callback-popup .feedback_block__captcha_img > img {
+    width: 180px;
+    height: 50px;
+}
+
+.feedback_block__captcha {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.callback-popup .feedback_block__captcha_input {
+    width: calc(100% - 226px);
+    margin-right: 20px;
+}
+
+.sotbit_order_phone__block input::placeholder {
+    color: #808080;
+}
+
+.sotbit_order_phone_wrapper {
+    background: #F7F7F7;
+    min-width: 429px;
+}
+
+.popup_resizeable_content {
+    position: relative;
+    z-index: 1;
+}
+
+p > .errortext {
+    font-size: 12px;
+    padding: 0;
+}
+
+.confidential-field {
+    margin: 0 30px;
+}
+
+.confidential-field label {
+    min-height: 20px;
+}
+
+.sotbit_order_phone .confidential-field a {
+    color: var(--main-color);
+}
+
+.popup-window .popup-window-submit_button {
+    margin: 30px;
+}
+
+.accept_checkbox {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 30px;
+}
+
+.feedback_block__compliance .fonts__middle_comment {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.callback-popup .confidential-field .checkbox__label::before {
+    background-color: #ffffff;
+}
+
+. .popup-window-message-content {
+    display: flex;
+    max-width: 429px;
+    padding: 30px 30px 32px 30px;
+}
+
+.callback-popup .popup-error-message p {
+    padding: 0;
+    margin: 20px 30px 0 30px;
+    color: red;
+}
+
+.popup-window-field_description {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.popup-window-icon-check {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    fill: #00B02A;
+    margin: 10px 20px 0 0;
+}
+
+.popup-window-message-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.sotbit_order__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+    padding: 16px 45px 17px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    z-index: 2;
+    position: relative;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block {
+    margin: 20px 30px;
+}
+
+.callback-popup input:not(.main-input-md):not(.main-textarea-md),
+.callback-popup textarea:not(.main-input-md):not(.main-textarea-md) {
+    border: 1px solid #ededed;
+    padding: 5px;
+}
+
+.callback-popup input:not(.main-input-md):not(.main-textarea-md) {
+    height: 40px;
+}
+
+.callback-popup textarea:not(.main-input-md):not(.main-textarea-md) {
+    height: 120px;
+    margin-bottom: 10px;
+    min-height: 40px;
+    max-height: 400px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 16px 45px 17px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.callback-popup input[type="submit"],
+.callback-popup input[type="button"] {
+    width: 100%;
+}
+
+.sotbit_order_phone .feedback_block__compliance {
+    padding-left: 0;
+}
+
+.sotbit_order_phone .feedback_block__compliance .cntr {
+    justify-content: flex-start;
+    margin: 0 30px;
+}
+
+.confidential-field .error {
+    border-bottom: 1px solid red;
+}
+
+.sotbit_order_phone_wrapper.callback-popup {
+    max-width: 429px;
+}
+
+.popup-window .popup-error-message {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .sotbit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
+        padding-left: 0.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sotbit_order_phone .sotbit_order_phone__block_title {
+        padding-bottom: 12px;
+    }
+
+    .sotbit_order_phone .feedback_block__compliance {
+        margin-top: 21px;
+    }
+
+    .sotbit_order_phone .feedback_block__compliance .cntr {
+        align-items: flex-start;
+    }
+
+    .sotbit_order_phone input[type="button"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sotbit_order_phone .sotbit_order_phone__block {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 429px) {
+    .callback-popup .feedback_block__captcha_input {
+        width: 100%;
+    }
+
+    .callback-popup .feedback_block__captcha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .callback-popup .feedback_block__captcha .feedback_block__captcha {
+        width: 100%;
+    }
+
+    .callback-popup .feedback_block__captcha .feedback_block__captcha_input {
+        order: 1;
+        margin-top: 12px;
+    }
+}
+
+.captcha-refresh .icon_refresh {
+    fill: var(--main-color);
+}
+
+.captcha-refresh:hover .icon_refresh {
+    fill: var(--main-color-hover);
+}

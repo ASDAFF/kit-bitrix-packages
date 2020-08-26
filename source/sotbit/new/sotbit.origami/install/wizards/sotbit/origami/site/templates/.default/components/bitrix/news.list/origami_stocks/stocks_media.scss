@@ -1,0 +1,169 @@
+@media screen and (max-width: 1024px) {
+    .stocks-slide.swiper-slide {
+
+        &:hover {
+            .stocks-slide__image-wrapper {
+                height: calc(100% - 230px);
+            }
+
+            .stocks-slide__description-wrapper {
+                height: 210px;
+
+                .stocks-slide__description-wrapper--description {
+                    height: 60px;
+                    margin: 10px 0 11px;
+                }
+            }
+        }
+    }
+
+    .stocks-block .slick-list.draggable {
+        margin-right: -20px;
+    }
+}
+
+@media screen and (max-width: 879px) {
+    .stocks-slide.swiper-slide {
+        width: 290px;
+    }
+
+    .stocks-block .slick-list.draggable {
+        margin: 0;
+    }
+
+    //.stocks-slider__wrapper {
+    //    margin: 0 -10px;
+    //}
+
+    //.stocks-slide {
+    //    margin: 0 10px;
+    //}
+}
+
+@media screen and (max-width: 800px) {
+
+    .stocks-slide.swiper-slide {
+
+        .stocks-slide__image-wrapper {
+            height: calc(100% - 133px);
+        }
+
+        .stocks-slide__description-wrapper {
+            height: 133px;
+
+            .stocks-slide__description-wrapper--description {
+                display: none;
+            }
+        }
+
+        &:hover {
+            .stocks-slide__image-wrapper {
+                height: calc(100% - 133px);
+            }
+
+            .stocks-slide__description-wrapper {
+                height: 133px;
+
+                .stocks-slide__description-wrapper--description {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .stocks-slide__image-wrapper {
+        height: calc(100% - 133px);
+    }
+
+    .stocks-slide__description-wrapper {
+        height: 133px;
+
+        .stocks-slide__description-wrapper--date {
+            font-size: 12px;
+        }
+
+        .stocks-slide__description-wrapper--title {
+            font-size: 15px;
+        }
+
+        .stocks-slide__description-wrapper--link {
+            font-size: 13px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .stocks-slider.swiper-slide {
+        .btn-slider-main {
+            display: none;
+        }
+
+        &:hover .btn-slider-main {
+            display: none;
+        }
+    }
+
+    .stocks-slider__wrapper.swiper-wrapper {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .stocks-slider__wrapper.swiper-wrapper {
+        min-height: 261px;
+    }
+
+    .stocks-slide {
+        //width: calc(100% - 10px) !important;
+        //margin: 0 0 0 10px;
+
+        &:hover {
+            .stocks-slide__image-wrapper {
+                height: calc(100% - 117px);
+            }
+
+            .stocks-slide__description-wrapper {
+                height: 117px;
+
+                .stocks-slide__description-wrapper--description {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .stocks-slide__image-wrapper {
+        height: calc(100% - 117px);
+    }
+
+    .stocks-slide__description-wrapper {
+        height: 117px;
+        padding: 10px 10px 15px;
+
+        .stocks-slide__description-wrapper--date {
+            margin-bottom: 5px;
+            font-size: 11px;
+            line-height: 17px;
+        }
+
+        .stocks-slide__description-wrapper--title {
+            height: 42px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .stocks-slide__description-wrapper--link {
+            font-size: 12px;
+            bottom: 15px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 434px) {
+    .stocks-slide {
+        width: 220px !important;
+    }
+}

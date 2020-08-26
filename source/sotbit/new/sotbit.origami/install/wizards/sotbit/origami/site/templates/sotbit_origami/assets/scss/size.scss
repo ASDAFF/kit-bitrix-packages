@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+:root {
+    --main-width: #{$main-width};
+}
+
+.size {
+    max-width: $main_width !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media screen and (max-width: $main_width + 46) {
+    .news-slider-wrapper {
+        overflow: hidden;
+    }
+}
+
+.header-two__main-nav {
+    max-width: $main_width !important;
+}

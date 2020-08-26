@@ -1,0 +1,87 @@
+@import "../../../assets/scss/variables.scss";
+
+body h1:not([class]) {
+    font-size: 31px;
+}
+
+.contacts-block .contacts-block__title {
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.contacts-block__regions-description {
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.puzzle_block.no-padding.main-container {
+    max-width: 100%;
+}
+
+.block_main_left_menu__content h1 {
+    padding-bottom: 30px;
+}
+
+.addresses .addresses-wrapper:not(:last-child) {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.contacts-callback-wrapper {
+    background: url("../../../assets/img/contact_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.contacts-block > p {
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    body h1:not([class]) {
+        font-size: 28px;
+    }
+
+    .contacts-block .contacts-block__title {
+        font-size: 24px;
+    }
+
+    .contacts-block__regions-description {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contacts-block__regions-description {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body h1:not([class]) {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .contacts-block .contacts-block__title {
+        font-size: 20px;
+    }
+
+    .contacts-block__regions-description {
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+
+    .contacts-content-size-wrapper {
+        padding: 0 15px;
+    }
+
+    body .breadcrumb_block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .puzzle_block.no-padding.main-container h1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

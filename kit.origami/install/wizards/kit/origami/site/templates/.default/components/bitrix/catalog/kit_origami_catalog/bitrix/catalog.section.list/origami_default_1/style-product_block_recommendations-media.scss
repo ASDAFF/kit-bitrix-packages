@@ -1,0 +1,163 @@
+@import "../../../../../../../../kit_origami/assets/scss/variables.scss";
+
+@media screen and (max-width: 900px) {
+    .block_main_left_menu__content {
+        width: 100%;
+
+        .catalog-main_page {
+
+            .row {
+                flex-direction: column;
+                padding: 0 15px;
+
+                .catalog-section_item {
+                    width: 100%;
+                    margin: 5px 0;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block_main_left_menu__content {
+
+        .catalog-main_page {
+
+            .catalog-section_item {
+
+                .catalog_section-content_wrapper {
+
+                    .catalog-section_item-title {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block_main_left_menu__content {
+
+        .catalog-main_page {
+
+            .row {
+                padding: 0;
+
+            }
+
+            .catalog-section_item {
+
+                &.mobile_opened {
+
+                    .catalog_section-content_wrapper {
+
+                        .items_titles {
+                            display: flex;
+
+                            .catalog-section_item-title {
+                                color: $main_color;
+                            }
+                        }
+
+                        .icon-nav_button {
+                            transform: rotate(180deg) translateY(-3px);
+
+                            &:before {
+                                color: $main_color;
+                                border-color: $main_color;
+                            }
+                        }
+                    }
+                }
+
+                &.mobile_closed {
+                    .items_links-mobile {
+                        height: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: none;
+
+                    .catalog-section_item-title {
+                        color: #000;
+                    }
+                }
+
+                .items_links-mobile {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #FAFAFA;
+                    padding: 20px 10px 10px 70px;
+
+                    .catalog-items_links:hover {
+                        color: $main_color;
+                    }
+
+                    .catalog-items_links {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .catalog_section-content_wrapper {
+                    height: 70px;
+
+                    .catalog-section_item-image {
+                        flex: 0 0 10%;
+                        height: 30px;
+                        width: 30px;
+                        max-width: 30px;
+
+                        & > img {
+                            max-height: 40px;
+                            max-width: 40px
+                        }
+                    }
+
+                    .items_titles {
+                        display: flex;
+                        align-items: center;
+                        flex-grow: 1;
+                        justify-content: space-between;
+                        max-width: calc(100% - 50px);
+
+                        .catalog-section_item-title_wrapper {
+                            max-width: calc(100% - 30px);
+                        }
+
+                        .icon-nav_button-mobile_wrapper {
+                            display: flex;
+                            justify-content: flex-end;
+                            flex-grow: 1;
+                        }
+
+                        .catalog-section_item-title {
+                            margin-bottom: 0;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+
+                        }
+                    }
+
+                    .icon-nav_button {
+                        display: flex;
+                    }
+
+                    .items_links {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

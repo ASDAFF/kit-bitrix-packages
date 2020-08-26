@@ -1,0 +1,1 @@
+<?define("sotbit_origami_TEMPORARY_CACHE", "djEOA3E2AwdqUC0wBmNUKldy");?>

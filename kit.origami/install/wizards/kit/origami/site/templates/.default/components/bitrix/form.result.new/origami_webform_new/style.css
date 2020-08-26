@@ -1,0 +1,231 @@
+.contacts-call-back-form {
+    padding: 40px 0;
+}
+
+.contacts-call_back-title-wrapper {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.acceptance-checkbox {
+    width: 59%;
+    padding-left: 15px;
+}
+
+.call-back-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.inputs_container {
+    display: flex;
+}
+
+.form-block-left {
+    flex: 0 0 41%;
+    padding-right: 15px;
+}
+
+.form-block-right {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 59%;
+    padding-left: 15px;
+}
+
+input[name=web_form_submit] {
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    background-color: #fb0040;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+input[name=web_form_submit]:hover {
+    background-color: #c80033;
+}
+
+.contacts-form-send-button {
+    width: 41%;
+    padding-right: 15px;
+}
+
+.form_row {
+    position: relative;
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.form_row input::placeholder {
+    color: #808080;
+    font-size: 15px;
+}
+
+.contacts-textarea::placeholder {
+    color: #808080;
+    font-size: 15px;
+}
+
+.required-star {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 4px;
+    height: 100%;
+    font-size: 22px;
+    color: #fb0040;
+}
+
+.feedback_block__form_input {
+    padding: 0 15px;
+    border: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+
+.form-block-right textarea {
+    flex: 1;
+    min-height: 100px;
+    line-height: normal;
+    padding: 15px;
+}
+
+.form_block_title {
+    margin-bottom: 12px;
+}
+
+.contacts-textarea {
+    padding: 0 15px;
+    border: 1px solid #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.call-back-buttons p {
+    font-size: 13px;
+    padding-left: 25px;
+}
+
+.call-back-buttons p .feedback_block__compliance_link {
+    font-size: 13px;
+}
+
+.feedback_block__captcha-new-input-wrapper input[name="captcha_word"] {
+    margin-right: 15px;
+}
+
+textarea.contacts-textarea {
+    margin-top: 18px;
+}
+
+.feedback_block__captcha-new-input-wrapper {
+    display: flex;
+}
+
+.contacts-call-back-form .captcha-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    height: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.contacts-call-back-form .feedback_block__captcha {
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 700px) {
+    .inputs_container {
+        flex-direction: column;
+    }
+
+    .form-block-left {
+        padding-right: 0;
+    }
+
+    .form-block-right {
+        padding-left: 0;
+    }
+
+    .form-block-right textarea {
+        min-height: 200px;
+    }
+
+    textarea.contacts-textarea {
+        margin-top: 10px;
+    }
+
+    input[name=web_form_submit] {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .call-back-buttons {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    .contacts-form-send-button {
+        margin-bottom: 10px;
+    }
+
+    .acceptance-checkbox {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contacts-call_back-title-wrapper {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .form_block_title {
+        font-size: 12px;
+    }
+
+    .contacts-call-back-form {
+        padding: 30px 0;
+    }
+
+    .form_row {
+        margin-top: 10px;
+    }
+
+    .call-back-buttons p {
+        font-size: 11px;
+    }
+
+    .call-back-buttons p .feedback_block__compliance_link {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .feedback_block__captcha-new-input-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .contacts-form-send-button {
+        padding-right: 0;
+        width: 100%;
+    }
+}

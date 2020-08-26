@@ -1,0 +1,117 @@
+@media screen and (max-width: 1024px) {
+
+    .main_page-catalog_banner .catalog_links-block .links-section_wrapper .links-section_left > a,
+    .main_page-catalog_banner .catalog_links-block .links-section_wrapper .links-section_right > a {
+        height: auto;
+    }
+
+    .main_page-catalog_banner .links-section_left > a > img,
+    .main_page-catalog_banner .links-section_right > a > img {
+        width: auto;
+    }
+
+    .main_page-catalog_banner .links-section_left > a .link-section_text,
+    .main_page-catalog_banner .links-section_right > a .link-section_text {
+        opacity: 1;
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .main_page-catalog_banner {
+        flex-direction: column;
+        max-height: none;
+
+        .slider_block {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            height: 410px;
+        }
+
+        .owl-item .block_main_canvas__big_canvas__content {
+
+            & > img {
+                height: auto;
+                width: auto;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .block_main_canvas__big_canvas__info {
+                width: 70%;
+            }
+        }
+
+        .catalog_links-block {
+            width: 100%;
+
+            .links-section_wrapper {
+                max-width: none;
+
+
+            }
+        }
+
+        .links-section_left, .links-section_right {
+            flex-direction: row;
+            // height: 130px;
+            
+            & > a {
+                width: 50%;
+
+                &:first-child {
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .main_page-catalog_banner .links-section_left > a,
+    .main_page-catalog_banner .links-section_right > a {
+        width: 100%;
+    }
+
+    .main_page-catalog_banner {
+
+        .slider_block {
+
+            .block_main_canvas__big_canvas__content {
+
+                .block_main_canvas__big_canvas__info {
+                  width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main_page-catalog_banner {
+
+        .catalog_links-block {
+
+            .links-section_wrapper {
+
+                .links-section_left, .links-section_right {
+                    flex-direction: column;
+                    // height: 430px;
+
+                    & > a {
+
+                        &:first-child {
+                            margin-bottom: 10px;
+                            margin-right: 0;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}

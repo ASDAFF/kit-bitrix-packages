@@ -1,0 +1,39 @@
+/* ___________ 1. service_block __________________ */
+.service_block__item_link {
+  display: block;
+  padding-bottom: 1.3rem; }
+  .service_block__item_link img {
+    width: 100%; }
+
+.service_block__content_comment {
+  padding-bottom: 1.5rem; }
+
+.service_block__content_title {
+  display: block;
+  padding: 0 0 0.5rem 0; }
+
+/* ___________ 2.variant_two service_block __________________ */
+.service_block__variant_two {
+  position: relative;
+  display: block; }
+
+.service_block__variant_two__content {
+  position: absolute;
+  color: #ffffff;
+  bottom: 0;
+  padding: 0 1rem 2.67rem 2.67rem; }
+
+.service_block__variant_two_link {
+  display: block; }
+  .service_block__variant_two_link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(200%, #050505), to(#050505));
+    background: linear-gradient(to bottom, transparent 0%, #050505 200%, #050505 100%); }
+
+.service_block__variant_two__img {
+  width: 100%; }

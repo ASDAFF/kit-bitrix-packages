@@ -1,0 +1,3 @@
+<?
+$MESS["KIT_CROSSSELL_ACTION_YES"] = 'Да';
+?>

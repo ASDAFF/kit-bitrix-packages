@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,600,400);
+
+
+.overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    z-index: 10000;
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#generate:before {
+    background: url(icons/waiter-button-light.gif) no-repeat 0 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.success-msg {
+    color: #270;
+    margin-top: 10px;
+    margin-right: 17px;
+}

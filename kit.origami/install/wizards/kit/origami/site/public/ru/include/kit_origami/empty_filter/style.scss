@@ -1,0 +1,45 @@
+.empty-filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #f7f7f7;
+
+    .empty-filter__icon {
+        fill: #fb0040;
+    }
+
+    .empty-filter__icon-wrapper {
+        margin-right: 20px;
+    }
+
+    .no-result_image {
+        margin-right: 30px;
+        width: 360px;
+        height: 200px;
+    }
+
+    .empty-filter__text-block {
+
+        .empty-filter__text-block-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .empty-filter__text-block-subtitle {
+            font-size: 15px;
+        }
+    }
+}
+
+.main-color_link {
+    color: #fb0040;
+
+    &:hover {
+        color: #fb0040;
+    }
+}
+
+@import "mobile.scss";

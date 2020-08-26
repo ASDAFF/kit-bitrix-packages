@@ -1,0 +1,76 @@
+@import "../../../../../sotbit_origami/assets/scss/variables";
+
+.subscribe_subform {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe_subform__input {
+    display: flex;
+}
+
+.subscribe-desc__title {
+    margin-bottom: 6px;
+    margin-top: 8px;
+    color: #aaa;
+}
+
+.subscribe_checkbox_container {
+
+    label {
+        position: relative;
+        margin: 0;
+        padding-left: 30px;
+        color: #aaa;
+        user-select: none;
+        cursor: pointer;
+
+        &:not(:first-of-type) {
+            margin-top: 6px;
+        }
+
+        &:hover {
+            color: $main_color;
+            .subscribe_checkbox_checked {
+                border-color: $main_color;
+                transition: border-color 0.2s ease-out ;
+            }
+            transition: color 0.2s ease-out;
+        }
+
+        .subscribe_checkbox_checked {
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #E6E6E6;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        .subscribe_checkbox_checked__icon {
+            fill: #fff;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked + label {
+            .subscribe_checkbox_checked {
+                border-color: $main_color;
+                background-color: $main_color;
+            }
+
+            .subscribe_checkbox_checked__icon {
+                fill: #fff;
+            }
+        }
+
+    }
+}
+

@@ -1,0 +1,148 @@
+/* ___________ about_block __________________ */
+/* ___________ about_block __________________ */
+.about__puzzle_block {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 60px; }
+
+.about-block__wrapper {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.about_block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about_block__img {
+  margin-right: 31px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: red; }
+
+.about_block__img img {
+  width: 100%; }
+
+.about_block__content_item {
+  padding-bottom: 2rem; }
+
+.about_block__title {
+  padding-bottom: 1.8rem;
+  padding-top: 10px;
+  font-size: 1.6rem; }
+
+.about_block__content-title {
+  padding-bottom: 6px;
+  padding-top: 10px;
+  font-size: 1.6rem; }
+
+.about__puzzle_block__title {
+  padding-bottom: 3.1rem; }
+
+.about_block__name {
+  margin-bottom: 1px; }
+
+.about_block__features {
+  margin-bottom: 3px;
+  font-size: 1.1rem; }
+
+.about_block__list {
+  padding-left: 16px !important;
+  margin-bottom: 18px; }
+
+.about_block__list .about_block__item {
+  position: relative;
+  margin-bottom: 0.28rem;
+  padding-left: 1.2rem; }
+
+.about_block__content li::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fb0040; }
+
+.about__fas {
+  font-weight: 400;
+  vertical-align: middle;
+  margin-left: -2px; }
+
+.about__more {
+  padding-left: 2px;
+  color: #807f7f;
+  font-size: 13px; }
+
+@media (max-width: 991.98px) {
+  .about_block__content a {
+    padding-left: 20px; }
+  .about_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about_block__img {
+    margin-right: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .about__puzzle_block__title {
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 1.8rem;
+    font-size: 1.4rem; }
+  .about_block__content-title {
+    padding-top: 23px;
+    padding-bottom: 0;
+    font-size: 1.1rem; }
+  .about_block__name {
+    margin-top: -2px;
+    margin-bottom: 4px;
+    line-height: 1.6rem; }
+  .about_block__features {
+    margin-bottom: 10px;
+    font-size: 0.95rem; }
+  .about_block__title {
+    padding-bottom: 0;
+    font-size: 1.1rem; }
+  .about_block__list {
+    padding-left: 0 !important;
+    margin-left: 0.4rem;
+    margin-bottom: 13px; }
+  .about_block__item::after {
+    left: -3px; }
+  .about_block__list .about_block__item {
+    padding-left: 1.1rem;
+    margin-bottom: 1rem; }
+    .about_block__list .about_block__item:last-child {
+      margin-bottom: 0; } }
+
+@media (max-width: 1199.98px) {
+  .about__puzzle_block {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media (max-width: 767.98px) {
+  .about__puzzle_block {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px; }
+  .about_block__img {
+    margin-bottom: 25px; }
+  .about_block__content h4 {
+    padding-bottom: 0; }
+  .about_block__content .fonts__small_text {
+    padding-left: 0 !important; }
+  .about_block__content .about__fas {
+    padding-left: 4px; } }
+
+@media (max-width: 575.98px) {
+  .about__puzzle_block {
+    padding-left: 15px;
+    padding-right: 15px; } }

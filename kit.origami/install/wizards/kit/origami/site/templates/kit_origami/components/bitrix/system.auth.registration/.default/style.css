@@ -1,0 +1,190 @@
+/*
+old css files
+div.bx-auth input.bx-auth-input {vertical-align:middle;}
+div.bx-auth span.bx-auth-secure {background-color:#FFFAE3; border:1px solid #DEDBC8; padding:2px; display:inline-block; vertical-align:middle;}
+div.bx-auth div.bx-auth-secure-icon {background-image:url(images/sec.png); background-repeat:no-repeat; background-position:center; width:19px; height:18px;}
+div.bx-auth div.bx-auth-secure-unlock {background-image:url(images/sec-unlocked.png);}*/
+
+.origami-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 440px;
+    border-radius: 10px;
+    width: 440px;
+}
+
+.starrequired {color:red;margin-left: 3px;}
+
+
+.origami-auth form[name=bform] {
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+    min-width: 450px;
+}
+
+.origami-auth input[type=text], .origami-auth input[type=password] {
+    /*min-width: 300px;
+    max-width: 423px;*/
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ededed;
+    padding-left: 15px;
+}
+
+
+.origami-auth input::-webkit-input-placeholder {color:#808080;}
+
+
+.origami-auth input[type=submit] {
+    width: 213px;
+    height: 40px;
+    background-color: #fb0040;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.origami-auth input[type=submit]:hover {
+    background-color: #c80033;
+}
+
+.origami-auth__captcha-controls {
+    display: flex;
+    justify-content: space-between;
+    max-height: 40px;
+	width: 100%;
+	max-width: 423px;
+}
+
+.origami-auth__captcha-controls input {
+	width: 100% !important;
+    min-width: 100px !important;
+    margin-right: 20px;
+}
+
+.origami-auth__captcha-field {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.origami-auth__gotoauthorize {
+    margin-top: 15px;
+}
+
+.origami-auth__gotoauthorize a {
+    color: #fb0040;
+}
+
+.origami-auth__gotoauthorize a:hover {
+    color: #c80033;
+}
+
+
+
+/*-------SMS ANSWER----------*/
+.origami-auth__sms-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 450px;
+}
+
+/*.origami-auth__sms-wrapper p {
+    font-weight: bold;
+    font-size: 2rem;
+}*/
+
+.origami-auth__sms-wrapper input {
+	height: 40px;
+	margin-bottom: 15px;
+}
+
+.origami-auth__sms-wrapper input[type=text] {
+    width: 213px;
+    border: 1px solid #ededed;
+
+    padding: 0 10px;
+}
+
+.origami-auth__sms-wrapper input[type=submit] {
+    width: 213px;
+    background-color: #fb0040;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+#bx_register_resend_action {
+    display: flex;
+}
+
+#bx_register_resend_action a {
+	/*width: 213px;
+    height: 40px;
+    background-color: #b1b1b163;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;*/
+    color: #fb0040;
+}
+
+#bx_register_error {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 991px) {
+	.origami-auth {
+    	margin: 0 auto;
+		padding: 10px 0;
+		width: auto;
+		align-items: center;
+
+	}
+
+	.origami-auth__captcha-controls {
+		align-items: center;
+		max-height: 100px;
+	}
+
+	.origami-auth__captcha-controls input[type="text"] {
+        margin-right: 15px;
+        margin-bottom: 0;
+	}
+	.origami-auth input[type=submit] {
+        margin:auto;
+	}
+	.origami-auth__gotoauthorize {
+        text-align: center;
+	}
+	.origami-auth form[name=bform] {
+        width: 100%; min-width: 400px;
+	}
+}
+
+@media (max-width: 424px) {
+
+    .origami-auth__captcha-controls {
+        flex-direction: column;
+        align-items: center;
+        max-height: 100px;
+    }
+
+    .origami-auth form[name=bform] {
+        min-width: 300px;
+    }
+
+    .origami-auth__captcha-controls input[type="text"] {
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+}

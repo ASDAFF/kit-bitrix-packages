@@ -1,0 +1,370 @@
+.bx-authform-label-container {
+  font-size: 0.93rem;
+  color: #000;
+  padding-bottom: 0.5rem; }
+
+.bx-authform-content-container {
+  font-size: 0.93rem;
+  color: #000;
+  padding-bottom: 2rem; }
+
+.bx-authform-input-container input[type="text"],
+.bx-authform-input-container input[type="password"] {
+  font-size: 13px;
+  color: #495057;
+  padding: .375rem .75rem;
+  background: #fff;
+  border: 1px solid #ededed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  height: 3rem; }
+
+.bx-authform-formgroup-container {
+  margin-bottom: 1.5rem; }
+
+.bx-authform-formgroup-container input[type="submit"]:hover {
+  background-color: #c80033;
+  border-color: #c80033; }
+
+.bx-filter-param-label input[type=checkbox] {
+  position: absolute;
+  margin-top: 2px; }
+
+.bx-filter-param-label input:checked:before,
+.bx-filter-param-label input:not(:checked):before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  cursor: pointer; }
+
+.bx-filter-param-label input:not(:checked):before {
+  background-color: #fff; }
+
+.bx-filter-param-label input:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 10px;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 1px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.bx-filter-param-label input:checked:after {
+  opacity: 1; }
+
+.bx-filter-param-label input:not(:checked):after {
+  opacity: 0; }
+
+.bx-filter-param-text {
+  padding-left: 25px;
+  font-size: 13px; }
+
+input.auth-btn {
+  color: #fff;
+  border-radius: 0;
+  padding: .5rem 1.5rem; }
+
+input.auth-btn:hover {
+  color: #fff; }
+
+input.auth-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.bx-authform-link-container {
+  margin-bottom: 0;
+  line-height: 13px; }
+
+.bx-authform-formgroup-container.bx-authform-formgroup-container--flat-remember .bx-filter-param-label {
+  padding-left: 0; }
+
+.bx-authform-formgroup-container.bx-authform-formgroup-container--flat-remember input[type="checkbox"] {
+  margin-left: 0; }
+
+/* AUTHORIZATION */
+.bx-authform-label-container_important-label {
+  display: inline-block;
+  color: #fb0040; }
+
+.bx-authform-formgroup-container .bx-filter-param-label input:not(:checked):before {
+  border: 1px solid #DADADA; }
+
+.bx-authform-formgroup-container .authform-pass_labels-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.bx-authform-formgroup-container.login_button {
+  margin-bottom: 13px; }
+
+.bx-authform1 .bx-authform-input-container {
+  max-height: 40px; }
+
+.bx-authform-input-container input[type="text"], .bx-authform-input-container input[type="password"] {
+  font-size: 13px; }
+
+.bx-authform-input-container > input::-webkit-input-placeholder {
+  color: #808080; }
+
+.bx-authform-input-container > input::-moz-placeholder {
+  color: #808080; }
+
+.bx-authform-input-container > input:-ms-input-placeholder {
+  color: #808080; }
+
+.bx-authform-input-container > input:-moz-placeholder {
+  color: #808080; }
+
+.auth-icon_password_hidden {
+  fill: #fff;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  stroke: #808080;
+  top: calc(50% - 9px);
+  right: 15px; }
+
+.auth-login_socials {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px; }
+  .auth-login_socials .login_social_icon {
+    background-color: #fb0040;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .auth-login_socials .login_social_icon:hover {
+      background-color: #c80033; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-fb {
+      width: 10px;
+      height: 20px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-vk {
+      width: 20px;
+      height: 12px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-tw {
+      width: 20px;
+      height: 16px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-google {
+      width: 16px;
+      height: 16px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-mailru {
+      width: 20px;
+      height: 20px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-ya {
+      width: 10px;
+      height: 20px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-telega {
+      width: 20px;
+      height: 16px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-ok {
+      width: 12px;
+      height: 20px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-boxc {
+      width: 26px;
+      height: 14px; }
+    .auth-login_socials .login_social_icon .login_social_icon_svg-24 {
+      width: 20px;
+      height: 14px; }
+
+.auth-title-center > h1 {
+  text-align: center; }
+
+.registration_form-wrapper .bx-authform .bx-authform-formgroup-container.btn-registration {
+  margin-bottom: 13px; }
+
+.bx-authform .registration-captcha_input-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -15px; }
+  .bx-authform .registration-captcha_input-wrapper div:first-child {
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 15px; }
+  .bx-authform .registration-captcha_input-wrapper .feedback_block__captcha_img {
+    max-height: 39px;
+    margin-left: 15px; }
+
+.bx-authform-formgroup-container.btn-registration > input {
+  min-width: 220px; }
+
+.registration_form-wrapper .bx-authform .feedback_block__captcha {
+  margin-bottom: 30px; }
+  .registration_form-wrapper .bx-authform .feedback_block__captcha .feedback_block__captcha_input {
+    -webkit-box-ordinal-group: 1;
+       -moz-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 0; }
+
+.puzzle_block.no-padding .registration_form-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .puzzle_block.no-padding .registration_form-wrapper .auth-login_socials {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px; }
+    .puzzle_block.no-padding .registration_form-wrapper .auth-login_socials .login_social_icon {
+      margin: 0 5px 10px 5px; }
+  .puzzle_block.no-padding .registration_form-wrapper .bx-authform {
+    max-width: 390px;
+    padding: 0 15px; }
+    .puzzle_block.no-padding .registration_form-wrapper .bx-authform .auth-login_socials {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .puzzle_block.no-padding .registration_form-wrapper .bx-authform .bx-authform-formgroup-container.login_button {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 13px; }
+    .puzzle_block.no-padding .registration_form-wrapper .bx-authform .bx-authform-formgroup-container.reset_pass-btn {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 13px; }
+    .puzzle_block.no-padding .registration_form-wrapper .bx-authform noindex > div {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+@media (max-width: 991px) {
+  .registration_form-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .registration_form-wrapper .auth-login_socials {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 15px; }
+      .registration_form-wrapper .auth-login_socials .login_social_icon {
+        margin: 0 5px 10px 5px; }
+    .registration_form-wrapper .bx-authform {
+      max-width: 390px;
+      padding: 0 15px;
+      margin-bottom: 0; }
+      .registration_form-wrapper .bx-authform .auth-login_socials {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .registration_form-wrapper .bx-authform .bx-authform-formgroup-container.login_button {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 13px; }
+      .registration_form-wrapper .bx-authform .bx-authform-formgroup-container.btn-registration {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 13px; }
+      .registration_form-wrapper .bx-authform .bx-authform-formgroup-container.reset_pass-btn {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .registration_form-wrapper .bx-authform noindex > div {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .registration_form-wrapper .bx-authform-link-container {
+      text-align: center; } }
+
+/* / END AUTHORIZATION */

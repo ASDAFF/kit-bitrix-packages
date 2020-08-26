@@ -1,0 +1,83 @@
+.puzzle_block_promotion_return {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 50px; }
+
+.puzzle_block_promotion_return .return {
+  border: 1px solid #ebebeb;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  display: inline-block; }
+
+.puzzle_block_promotion_return .return_inner {
+  display: inline-block;
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAQAAABDc27hAAAAb0lEQVQY03XMMQqCAACF4W8Ig/AGDtkBGhPabI7ATVrFrSV3B9eozQtIbtHSDRsCB7X/Hx68Bw9OaoEZ9t62ZvloHRWDpUImgl7n4DyYy928bFjrJJOvVAs7lXAyPn8RWPybxsTuruNy6aLx0Fh9AZSvErqrty7kAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px; }
+
+.promotions_list__tabs {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px; }
+
+.promotions_list__tab {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 20px; }
+
+.promotions_list__tab_active {
+  color: var(--main-color); }
+
+.promotions_list__text {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.6; }
+
+.promotions_list__text {
+  margin-bottom: 26px; }
+
+.puzzle_block-form-promotion-wrapper {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important; }
+
+.stocks__description-text-wrapper {
+  overflow: hidden;
+  -webkit-transition: height 0.2s linear;
+  transition: height 0.2s linear; }
+
+.stocks__collapse-btns {
+  display: none;
+  margin-top: 10px;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
+  .stocks__collapse-btns:hover {
+    color: var(--main-color-hover); }
+  .stocks__collapse-btns .stocks__collapse-btns-show {
+    display: inline-block;
+    cursor: pointer; }
+  .stocks__collapse-btns .stocks__collapse-btns-hide {
+    display: none; }
+  .stocks__collapse-btns[data-active='true'] .stocks__collapse-btns-show {
+    display: none; }
+  .stocks__collapse-btns[data-active='true'] .stocks__collapse-btns-hide {
+    display: inline-block;
+    cursor: pointer; }
+
+.stocks__description-text-wrapper {
+  font-size: 13px;
+  line-height: 20px; }
+
+.stocks__collapse-btns {
+  margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .promotions_list__text {
+    margin-bottom: 16px; }
+  .stocks__description-text-wrapper {
+    font-size: 12px;
+    line-height: 18px; } }

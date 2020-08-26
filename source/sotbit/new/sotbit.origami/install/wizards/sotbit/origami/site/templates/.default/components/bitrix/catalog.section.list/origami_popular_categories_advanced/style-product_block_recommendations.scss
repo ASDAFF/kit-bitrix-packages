@@ -1,0 +1,35 @@
+.popular_category__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popular_category_block-one_variant__tags_item {
+    display: inline-block;
+    color: #8b8b8b;
+    padding: 0 2rem 0 0;
+}
+
+.popular_category_block-one_variant__tags_item span {
+    color: #000000;
+}
+
+.popular_category_block-one_variant__canvas_title,
+.popular_category_block-one_variant__tags {
+    padding-bottom: 1rem;
+}
+
+.popular_category_block-one_variant__comment {
+    font-size: 0.93rem;
+}
+
+.popular_category_block-one_variant__canvas_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular_category_block-one_variant__canvas_link {
+    display: block;
+    overflow: hidden;
+}
+

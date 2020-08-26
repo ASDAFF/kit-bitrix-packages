@@ -1,0 +1,946 @@
+Array
+(
+    [bSimple] => Y
+    [bAdmin] => N
+    [arForm] => Array
+        (
+            [ID] => 4
+            [TIMESTAMP_X] => 11.09.2019 19:14:25
+            [NAME] => Заказать звонок
+            [SID] => CALLBACK
+            [BUTTON] => Перезвоните мне
+            [C_SORT] => 200
+            [FIRST_SITE_ID] => 
+            [IMAGE_ID] => 
+            [USE_CAPTCHA] => N
+            [DESCRIPTION] => 
+            [DESCRIPTION_TYPE] => text
+            [FORM_TEMPLATE] => 
+            [USE_DEFAULT_TEMPLATE] => Y
+            [SHOW_TEMPLATE] => 
+            [MAIL_EVENT_TYPE] => FORM_FILLING_CALLBACK
+            [SHOW_RESULT_TEMPLATE] => 
+            [PRINT_RESULT_TEMPLATE] => 
+            [EDIT_RESULT_TEMPLATE] => 
+            [FILTER_RESULT_TEMPLATE] => 
+            [TABLE_RESULT_TEMPLATE] => 
+            [USE_RESTRICTIONS] => N
+            [RESTRICT_USER] => 0
+            [RESTRICT_TIME] => 0
+            [RESTRICT_STATUS] => 
+            [STAT_EVENT1] => form
+            [STAT_EVENT2] => 
+            [STAT_EVENT3] => 
+            [LID] => 
+            [VARNAME] => CALLBACK
+            [C_FIELDS] => 0
+            [QUESTIONS] => 2
+            [STATUSES] => 1
+        )
+
+    [arQuestions] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [ID] => 12
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Ваше имя
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_245
+                    [C_SORT] => 100
+                    [ADDITIONAL] => N
+                    [REQUIRED] => N
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_245
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [ID] => 13
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Телефон
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_110
+                    [C_SORT] => 200
+                    [ADDITIONAL] => N
+                    [REQUIRED] => Y
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_110
+                )
+
+        )
+
+    [arAnswers] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 12
+                            [FIELD_ID] => 12
+                            [QUESTION_ID] => 12
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => 
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 13
+                            [FIELD_ID] => 13
+                            [QUESTION_ID] => 13
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => id="tel"
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+        )
+
+    [arDropDown] => Array
+        (
+        )
+
+    [arMultiSelect] => Array
+        (
+        )
+
+    [WEB_FORM_NAME] => CALLBACK
+    [F_RIGHT] => 10
+    [arrVALUES] => Array
+        (
+        )
+
+    [isFormErrors] => N
+    [isFormNote] => N
+    [isAccessFormParams] => N
+    [isStatisticIncluded] => Y
+    [FORM_HEADER] => <form name="CALLBACK" action="/include/ajax/callbackphone.php" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="5712597c3bb5811b06534a409a746b3c" /><input type="hidden" name="WEB_FORM_ID" value="4" />
+    [FORM_TITLE] => Заказать звонок
+    [FORM_DESCRIPTION] => 
+    [isFormTitle] => Y
+    [isFormDescription] => N
+    [isFormImage] => N
+    [isUseCaptcha] => 
+    [DATE_FORMAT] => DD.MM.YYYY
+    [REQUIRED_SIGN] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [FORM_FOOTER] => </form>
+    [QUESTIONS] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [CAPTION] => Ваше имя
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => N
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="text"  class="inputtext"  name="form_text_12" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 12
+                                    [FIELD_ID] => 12
+                                    [QUESTION_ID] => 12
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => text
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => 
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [CAPTION] => Телефон
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => Y
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="tel" pattern="[\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]" placeholder="+7(999)999-99-99" id="tel" name="form_text_13" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 13
+                                    [FIELD_ID] => 13
+                                    [QUESTION_ID] => 13
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => tel
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => id="tel"
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                    [PATTERN] => [\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]
+                                    [MASK] => +7(999)999-99-99
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+        )
+
+    [SUBMIT_BUTTON] => <input  type="submit" name="web_form_submit" value="Перезвоните мне" />
+    [APPLY_BUTTON] => <input type="hidden" name="web_form_apply" value="Y" /><input type="submit" name="web_form_apply" value="Применить" />
+    [RESET_BUTTON] => <input type="reset" value="Сбросить" />
+    [REQUIRED_STAR] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [CAPTCHA_IMAGE] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" />
+    [CAPTCHA_FIELD] => <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+    [CAPTCHA] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" /><br /><input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+)
+Array
+(
+    [bSimple] => Y
+    [bAdmin] => N
+    [arForm] => Array
+        (
+            [ID] => 4
+            [TIMESTAMP_X] => 11.09.2019 19:14:25
+            [NAME] => Заказать звонок
+            [SID] => CALLBACK
+            [BUTTON] => Перезвоните мне
+            [C_SORT] => 200
+            [FIRST_SITE_ID] => 
+            [IMAGE_ID] => 
+            [USE_CAPTCHA] => N
+            [DESCRIPTION] => 
+            [DESCRIPTION_TYPE] => text
+            [FORM_TEMPLATE] => 
+            [USE_DEFAULT_TEMPLATE] => Y
+            [SHOW_TEMPLATE] => 
+            [MAIL_EVENT_TYPE] => FORM_FILLING_CALLBACK
+            [SHOW_RESULT_TEMPLATE] => 
+            [PRINT_RESULT_TEMPLATE] => 
+            [EDIT_RESULT_TEMPLATE] => 
+            [FILTER_RESULT_TEMPLATE] => 
+            [TABLE_RESULT_TEMPLATE] => 
+            [USE_RESTRICTIONS] => N
+            [RESTRICT_USER] => 0
+            [RESTRICT_TIME] => 0
+            [RESTRICT_STATUS] => 
+            [STAT_EVENT1] => form
+            [STAT_EVENT2] => 
+            [STAT_EVENT3] => 
+            [LID] => 
+            [VARNAME] => CALLBACK
+            [C_FIELDS] => 0
+            [QUESTIONS] => 2
+            [STATUSES] => 1
+        )
+
+    [arQuestions] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [ID] => 12
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Ваше имя
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_245
+                    [C_SORT] => 100
+                    [ADDITIONAL] => N
+                    [REQUIRED] => N
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_245
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [ID] => 13
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Телефон
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_110
+                    [C_SORT] => 200
+                    [ADDITIONAL] => N
+                    [REQUIRED] => Y
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_110
+                )
+
+        )
+
+    [arAnswers] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 12
+                            [FIELD_ID] => 12
+                            [QUESTION_ID] => 12
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => 
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 13
+                            [FIELD_ID] => 13
+                            [QUESTION_ID] => 13
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => id="tel"
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+        )
+
+    [arDropDown] => Array
+        (
+        )
+
+    [arMultiSelect] => Array
+        (
+        )
+
+    [WEB_FORM_NAME] => CALLBACK
+    [F_RIGHT] => 10
+    [arrVALUES] => Array
+        (
+        )
+
+    [FORM_NOTE] => Заявка на обратный звонок успешно отправлена!
+    [isFormErrors] => N
+    [isFormNote] => Y
+    [isAccessFormParams] => N
+    [isStatisticIncluded] => Y
+    [FORM_HEADER] => <form name="CALLBACK" action="/include/ajax/callbackphone.php?WEB_FORM_ID=4&amp;RESULT_ID=2&amp;formresult=addok&amp;bxajaxid=491fc348faa82d4ca0a57bddcb42c2cb&amp;AJAX_CALL=Y" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="5712597c3bb5811b06534a409a746b3c" /><input type="hidden" name="WEB_FORM_ID" value="4" />
+    [FORM_TITLE] => Заказать звонок
+    [FORM_DESCRIPTION] => 
+    [isFormTitle] => Y
+    [isFormDescription] => N
+    [isFormImage] => N
+    [isUseCaptcha] => 
+    [DATE_FORMAT] => DD.MM.YYYY
+    [REQUIRED_SIGN] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [FORM_FOOTER] => </form>
+    [QUESTIONS] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [CAPTION] => Ваше имя
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => N
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="text"  class="inputtext"  name="form_text_12" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 12
+                                    [FIELD_ID] => 12
+                                    [QUESTION_ID] => 12
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => text
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => 
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [CAPTION] => Телефон
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => Y
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="tel" pattern="" placeholder="" id="tel" name="form_text_13" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 13
+                                    [FIELD_ID] => 13
+                                    [QUESTION_ID] => 13
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => tel
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => id="tel"
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                    [PATTERN] => 
+                                    [MASK] => 
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+        )
+
+    [SUBMIT_BUTTON] => <input  type="submit" name="web_form_submit" value="Перезвоните мне" />
+    [APPLY_BUTTON] => <input type="hidden" name="web_form_apply" value="Y" /><input type="submit" name="web_form_apply" value="Применить" />
+    [RESET_BUTTON] => <input type="reset" value="Сбросить" />
+    [REQUIRED_STAR] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [CAPTCHA_IMAGE] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" />
+    [CAPTCHA_FIELD] => <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+    [CAPTCHA] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" /><br /><input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+)
+Array
+(
+    [bSimple] => Y
+    [bAdmin] => N
+    [arForm] => Array
+        (
+            [ID] => 4
+            [TIMESTAMP_X] => 11.09.2019 19:14:25
+            [NAME] => Заказать звонок
+            [SID] => CALLBACK
+            [BUTTON] => Перезвоните мне
+            [C_SORT] => 200
+            [FIRST_SITE_ID] => 
+            [IMAGE_ID] => 
+            [USE_CAPTCHA] => N
+            [DESCRIPTION] => 
+            [DESCRIPTION_TYPE] => text
+            [FORM_TEMPLATE] => 
+            [USE_DEFAULT_TEMPLATE] => Y
+            [SHOW_TEMPLATE] => 
+            [MAIL_EVENT_TYPE] => FORM_FILLING_CALLBACK
+            [SHOW_RESULT_TEMPLATE] => 
+            [PRINT_RESULT_TEMPLATE] => 
+            [EDIT_RESULT_TEMPLATE] => 
+            [FILTER_RESULT_TEMPLATE] => 
+            [TABLE_RESULT_TEMPLATE] => 
+            [USE_RESTRICTIONS] => N
+            [RESTRICT_USER] => 0
+            [RESTRICT_TIME] => 0
+            [RESTRICT_STATUS] => 
+            [STAT_EVENT1] => form
+            [STAT_EVENT2] => 
+            [STAT_EVENT3] => 
+            [LID] => 
+            [VARNAME] => CALLBACK
+            [C_FIELDS] => 0
+            [QUESTIONS] => 2
+            [STATUSES] => 1
+        )
+
+    [arQuestions] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [ID] => 12
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Ваше имя
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_245
+                    [C_SORT] => 100
+                    [ADDITIONAL] => N
+                    [REQUIRED] => N
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_245
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [ID] => 13
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Телефон
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_110
+                    [C_SORT] => 200
+                    [ADDITIONAL] => N
+                    [REQUIRED] => Y
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_110
+                )
+
+        )
+
+    [arAnswers] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 12
+                            [FIELD_ID] => 12
+                            [QUESTION_ID] => 12
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => 
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 13
+                            [FIELD_ID] => 13
+                            [QUESTION_ID] => 13
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => id="tel"
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+        )
+
+    [arDropDown] => Array
+        (
+        )
+
+    [arMultiSelect] => Array
+        (
+        )
+
+    [WEB_FORM_NAME] => CALLBACK
+    [F_RIGHT] => 30
+    [arrVALUES] => Array
+        (
+        )
+
+    [isFormErrors] => N
+    [isFormNote] => N
+    [isAccessFormParams] => Y
+    [isStatisticIncluded] => Y
+    [FORM_HEADER] => <form name="CALLBACK" action="/include/ajax/callbackphone.php" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="cdb95bdc2372496352e3e02a2f5f24d6" /><input type="hidden" name="WEB_FORM_ID" value="4" />
+    [FORM_TITLE] => Заказать звонок
+    [FORM_DESCRIPTION] => 
+    [isFormTitle] => Y
+    [isFormDescription] => N
+    [isFormImage] => N
+    [isUseCaptcha] => 
+    [DATE_FORMAT] => DD.MM.YYYY
+    [REQUIRED_SIGN] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [FORM_FOOTER] => </form>
+    [QUESTIONS] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [CAPTION] => Ваше имя
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => N
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="text"  class="inputtext"  name="form_text_12" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 12
+                                    [FIELD_ID] => 12
+                                    [QUESTION_ID] => 12
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => text
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => 
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [CAPTION] => Телефон
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => Y
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="tel" pattern="[\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]" placeholder="+7(999)999-99-99" id="tel" name="form_text_13" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 13
+                                    [FIELD_ID] => 13
+                                    [QUESTION_ID] => 13
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => tel
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => id="tel"
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                    [PATTERN] => [\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]
+                                    [MASK] => +7(999)999-99-99
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+        )
+
+    [SUBMIT_BUTTON] => <input  type="submit" name="web_form_submit" value="Перезвоните мне" />
+    [APPLY_BUTTON] => <input type="hidden" name="web_form_apply" value="Y" /><input type="submit" name="web_form_apply" value="Применить" />
+    [RESET_BUTTON] => <input type="reset" value="Сбросить" />
+    [REQUIRED_STAR] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [CAPTCHA_IMAGE] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" />
+    [CAPTCHA_FIELD] => <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+    [CAPTCHA] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" /><br /><input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+)
+Array
+(
+    [bSimple] => Y
+    [bAdmin] => N
+    [arForm] => Array
+        (
+            [ID] => 4
+            [TIMESTAMP_X] => 11.09.2019 19:14:25
+            [NAME] => Заказать звонок
+            [SID] => CALLBACK
+            [BUTTON] => Перезвоните мне
+            [C_SORT] => 200
+            [FIRST_SITE_ID] => 
+            [IMAGE_ID] => 
+            [USE_CAPTCHA] => N
+            [DESCRIPTION] => 
+            [DESCRIPTION_TYPE] => text
+            [FORM_TEMPLATE] => 
+            [USE_DEFAULT_TEMPLATE] => Y
+            [SHOW_TEMPLATE] => 
+            [MAIL_EVENT_TYPE] => FORM_FILLING_CALLBACK
+            [SHOW_RESULT_TEMPLATE] => 
+            [PRINT_RESULT_TEMPLATE] => 
+            [EDIT_RESULT_TEMPLATE] => 
+            [FILTER_RESULT_TEMPLATE] => 
+            [TABLE_RESULT_TEMPLATE] => 
+            [USE_RESTRICTIONS] => N
+            [RESTRICT_USER] => 0
+            [RESTRICT_TIME] => 0
+            [RESTRICT_STATUS] => 
+            [STAT_EVENT1] => form
+            [STAT_EVENT2] => 
+            [STAT_EVENT3] => 
+            [LID] => 
+            [VARNAME] => CALLBACK
+            [C_FIELDS] => 0
+            [QUESTIONS] => 2
+            [STATUSES] => 1
+        )
+
+    [arQuestions] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [ID] => 12
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Ваше имя
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_245
+                    [C_SORT] => 100
+                    [ADDITIONAL] => N
+                    [REQUIRED] => N
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_245
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [ID] => 13
+                    [FORM_ID] => 4
+                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                    [ACTIVE] => Y
+                    [TITLE] => Телефон
+                    [TITLE_TYPE] => text
+                    [SID] => SOTBIT_FORM_QUESTION_110
+                    [C_SORT] => 200
+                    [ADDITIONAL] => N
+                    [REQUIRED] => Y
+                    [IN_FILTER] => N
+                    [IN_RESULTS_TABLE] => N
+                    [IN_EXCEL_TABLE] => Y
+                    [FIELD_TYPE] => 
+                    [IMAGE_ID] => 
+                    [COMMENTS] => 
+                    [FILTER_TITLE] => 
+                    [RESULTS_TABLE_TITLE] => 
+                    [VARNAME] => SOTBIT_FORM_QUESTION_110
+                )
+
+        )
+
+    [arAnswers] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 12
+                            [FIELD_ID] => 12
+                            [QUESTION_ID] => 12
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => 
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 13
+                            [FIELD_ID] => 13
+                            [QUESTION_ID] => 13
+                            [TIMESTAMP_X] => 11.09.2019 19:14:25
+                            [MESSAGE] =>  
+                            [VALUE] => 
+                            [FIELD_TYPE] => text
+                            [FIELD_WIDTH] => 0
+                            [FIELD_HEIGHT] => 0
+                            [FIELD_PARAM] => id="tel"
+                            [C_SORT] => 100
+                            [ACTIVE] => Y
+                        )
+
+                )
+
+        )
+
+    [arDropDown] => Array
+        (
+        )
+
+    [arMultiSelect] => Array
+        (
+        )
+
+    [WEB_FORM_NAME] => CALLBACK
+    [F_RIGHT] => 30
+    [FORM_NOTE] => 
+    [isFormNote] => N
+    [arrVALUES] => Array
+        (
+        )
+
+    [isFormErrors] => N
+    [isAccessFormParams] => Y
+    [isStatisticIncluded] => Y
+    [FORM_HEADER] => <form name="CALLBACK" action="/include/ajax/callbackphone.php" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="cdb95bdc2372496352e3e02a2f5f24d6" /><input type="hidden" name="WEB_FORM_ID" value="4" />
+    [FORM_TITLE] => Заказать звонок
+    [FORM_DESCRIPTION] => 
+    [isFormTitle] => Y
+    [isFormDescription] => N
+    [isFormImage] => N
+    [isUseCaptcha] => 
+    [DATE_FORMAT] => DD.MM.YYYY
+    [REQUIRED_SIGN] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [FORM_FOOTER] => </form>
+    [QUESTIONS] => Array
+        (
+            [SOTBIT_FORM_QUESTION_245] => Array
+                (
+                    [CAPTION] => Ваше имя
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => N
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="text"  class="inputtext"  name="form_text_12" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 12
+                                    [FIELD_ID] => 12
+                                    [QUESTION_ID] => 12
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => text
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => 
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+            [SOTBIT_FORM_QUESTION_110] => Array
+                (
+                    [CAPTION] => Телефон
+                    [IS_HTML_CAPTION] => N
+                    [REQUIRED] => Y
+                    [IS_INPUT_CAPTION_IMAGE] => N
+                    [HTML_CODE] => <input type="tel" pattern="[\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]" placeholder="+7(999)999-99-99" id="tel" name="form_text_13" value="" size="0" />
+                    [STRUCTURE] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 13
+                                    [FIELD_ID] => 13
+                                    [QUESTION_ID] => 13
+                                    [TIMESTAMP_X] => 11.09.2019 19:14:25
+                                    [MESSAGE] =>  
+                                    [VALUE] => 
+                                    [FIELD_TYPE] => tel
+                                    [FIELD_WIDTH] => 0
+                                    [FIELD_HEIGHT] => 0
+                                    [FIELD_PARAM] => id="tel"
+                                    [C_SORT] => 100
+                                    [ACTIVE] => Y
+                                    [PATTERN] => [\+]7\s?[(]{0,1}[0-9][0-9][0-9][)]{0,1}\s?[0-9][0-9][0-9][-]{0,1}[0-9][0-9][-]{0,1}[0-9][0-9]
+                                    [MASK] => +7(999)999-99-99
+                                )
+
+                        )
+
+                    [VALUE] => 
+                )
+
+        )
+
+    [SUBMIT_BUTTON] => <input  type="submit" name="web_form_submit" value="Перезвоните мне" />
+    [APPLY_BUTTON] => <input type="hidden" name="web_form_apply" value="Y" /><input type="submit" name="web_form_apply" value="Применить" />
+    [RESET_BUTTON] => <input type="reset" value="Сбросить" />
+    [REQUIRED_STAR] => <font color='red'><span class='form-required starrequired'>*</span></font>
+    [CAPTCHA_IMAGE] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" />
+    [CAPTCHA_FIELD] => <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+    [CAPTCHA] => <input type="hidden" name="captcha_sid" value="" /><img src="/bitrix/tools/captcha.php?captcha_sid=" width="180" height="40" /><br /><input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
+)

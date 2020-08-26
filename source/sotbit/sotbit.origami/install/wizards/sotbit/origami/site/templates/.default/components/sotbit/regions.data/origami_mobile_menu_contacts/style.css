@@ -1,0 +1,95 @@
+.mobile-menu-contact {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px solid #ededed; }
+  .mobile-menu-contact.mobile-menu-contact--address {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 10px 12px 15px; }
+    .mobile-menu-contact.mobile-menu-contact--address > .mobile-menu-contact__block {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      white-space: nowrap; }
+
+.mobile-menu-contact__item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 10px 12px 15px; }
+
+.mobile-menu-contact-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 22px;
+  fill: #fb0040; }
+  .mobile-menu-contact-icon.mobile-menu-contact-icon--arrow {
+    margin: 0;
+    fill: #000; }
+
+.mobile-menu-contact__block-popup {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 10px 12px 15px; }
+
+.mobile-menu-contact__block-btn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin-left: auto;
+  padding: 12px 22px; }
+  .mobile-menu-contact__block-btn .mobile-menu-contact-icon {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+  .mobile-menu-contact__block-btn.open .mobile-menu-contact-icon {
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1); }
+
+.mobile-menu-contact__block-more {
+  display: none;
+  overflow: hidden;
+  padding-left: 36px;
+  border-top: 1px solid #ededed; }
+
+.mobile-menu-contact__block {
+  width: 100%;
+  overflow-x: scroll; }

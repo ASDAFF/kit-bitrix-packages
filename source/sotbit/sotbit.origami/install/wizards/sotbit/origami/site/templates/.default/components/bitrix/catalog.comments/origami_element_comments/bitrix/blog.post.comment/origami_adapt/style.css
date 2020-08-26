@@ -1,0 +1,27 @@
+.blog-comments .blog-comment-line {
+    display: none;
+}
+
+.blog-comments .blog-comment {
+    border: 1px dotted #ededed;
+    padding: 3rem 7rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.blog-comments .blog-comment-date {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.blog-comments .blog-comment-content {
+    background: #fafafb;
+    padding: 5px !important;
+}
+
+@media (max-width: 768px) {
+    .blog-comments .blog-comment {
+        border: 1px dotted #ededed;
+        padding: 1rem !important;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,303 @@
+.feedback .feedback_block__captcha_input {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.feedback.puzzle_block-form-promotion .feedback_block__compliance {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback .form_row.captcha {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feedback .feedback_block__captcha-new-input-wrapper {
+    display: flex;
+}
+
+.feedback .feedback_block__captcha_input.main-input-md__wrapper {
+    width: auto;
+}
+
+.feedback .main-input-md__wrapper {
+    width: 100%;
+}
+
+.feedback .feedback_block__captcha {
+    margin-top: 18px;
+}
+
+.feedback .phone_input {
+    width: 100%;
+}
+
+.feedback .puzzle_block-form-promotion {
+    margin-top: 55px;
+    border-top: 1px solid #ebebeb;
+    padding-top: 45px;
+}
+
+.puzzle_block-form-promotion .feedback_block__text {
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.puzzle_block-form-promotion .form_blocks {
+    margin-bottom: 40px;
+}
+
+.puzzle_block-form-promotion .feedback_block__form_input {
+    padding: 0 15px;
+    border: 1px solid #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.feedback .puzzle_block__form_label_promotion.form_block_title {
+    margin-bottom: 0;
+}
+
+.feedback .main-textarea-md__wrapper {
+    margin-top: 18px;
+}
+
+.puzzle_block-form-promotion .form_block_title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+}
+
+.puzzle_block-form-promotion .form_row {
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.puzzle_block-form-promotion .form-block-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.puzzle_block-form-promotion .form-block-right textarea {
+    flex: 1;
+    min-height: 100px;
+    line-height: normal;
+}
+
+.puzzle_block-form-promotion .feedback_block__compliance {
+    color: #8b8b8b;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.puzzle_block-form-promotion .feedback_block__compliance_link {
+    color: #000;
+    text-decoration: underline;
+}
+
+.puzzle_block-form-promotion .feedback_block__compliance
+.feedback_block__input {
+    color: #000;
+    text-decoration: underline;
+}
+
+.puzzle_block-form-promotion input[type="submit"],
+.puzzle_block-form-promotion input[type="button"] {
+    width: 130px;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.puzzle_block-form-promotion input[type="reset"] {
+    width: 130px;
+    padding: 0;
+    text-align: center;
+    background: #ffffff;
+    font-weight: normal;
+    border: 1px solid #ededed;
+}
+
+.form_blocks__ok {
+    color: forestgreen;
+}
+
+.puzzle_block__form_label_promotion {
+    color: #7f7f7f;
+    font-size: 13px;
+    display: inline-block;
+    width: 140px;
+}
+
+textarea.feedback_block__form_input {
+    margin-top: 11px;
+}
+
+.captcha-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon_refresh {
+    transition: all 0.3s ease;
+}
+
+.feedback .feedback_block__captcha_img {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.feedback .feedback_block__captcha_img > img {
+    height: 100%;
+}
+
+.origami_foundcheaper {
+    max-width: 429px;
+}
+
+.puzzle_block-form-promotion .captcha-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    height: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.feedback_block__captcha_input::placeholder {
+    color: #fafafa;
+}
+
+.puzzle_block__form_label_promotion.captcha_title {
+    color: #7f7f7f;
+    font-size: 13px;
+    display: inline-block;
+    width: auto;
+}
+
+.captcha_form-2 {
+    margin-top: 18px;
+}
+
+.captcha_form-2 .form_row {
+    margin-top: 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.captcha_form-2 .feedback_block__compliance {
+    padding-left: 0;
+}
+
+.main_btn.button_feedback {
+    height: 3.5rem;
+    border: 2px solid var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .feedback .form-block-right .puzzle_block__form_label_promotion.form_block_title {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 430px) {
+    .feedback .feedback_block__captcha-new-input-wrapper {
+        flex-direction: column;
+    }
+
+    .feedback .feedback_block__captcha_input {
+        margin-right: 0;
+    }
+
+    .feedback .main_btn.button_feedback {
+        width: 100%;
+    }
+}
+
+.feedback_block__compliance_link {
+    color: var(--main-color);
+}
+
+.feedback_block__compliance_link:hover {
+    color: var(--main-color-hover);
+}
+
+.captcha-refresh .icon_refresh {
+    fill: var(--main-color);
+}
+
+.captcha-refresh:hover .icon_refresh {
+    fill: var(--main-color-hover);
+}
+
+.feedback_block__comment {
+    text-align: center;
+}
+
+.feedback_block__text {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.feedback_block__text .success-message {
+    color: green;
+}
+
+.feedback_block__input {
+    width: 100%;
+    padding-left: 2rem;
+    margin: 0 2rem 0 0;
+    border: 1px solid #ededed;
+}
+
+.feedback_block__input:last-child {
+    margin: 0;
+}
+
+.feedback_block__input::-webkit-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block__input::-moz-placeholder {
+    color: #747474;
+}
+
+.feedback_block__input:-ms-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block__input::-ms-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block__input::placeholder {
+    color: #747474;
+}
+
+.button_feedback {
+    border: 1px solid var(--main-color);
+}
+
+.feedback_block__compliance_link {
+    color: var(--main-color);
+}
+
+@media (max-width: 400px) {
+    .main_btn.button_feedback {
+        width: 100%;
+        min-width: auto;
+    }
+}

@@ -1,0 +1,112 @@
+//if sent form was empty
+
+.empty_search {
+    .search-page {
+
+        .catalog-search-title {
+            display: none;
+        }
+
+        .catalog-search-title_empty {
+            display: block;
+        }
+
+    }
+}
+
+//else
+
+.search-page {
+
+    .catalog-search-title {
+        font-size: 31px;
+        font-weight: bold;
+        margin-bottom: 22px;
+    }
+
+    .catalog-search-title_empty {
+        display: none;
+        font-size: 31px;
+        font-weight: bold;
+        margin-bottom: 22px;
+    }
+
+    .catalog-search-sub_title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .catalog-search-line {
+        display: flex;
+    }
+
+    .catalog-search-input {
+        width: 100%;
+        margin-right: 10px;
+        padding: 0 20px 0 15px;
+        color: #313131;
+        font-size: 13px;
+        border: 1px solid #ededed;
+
+        &::placeholder {
+            color: #808080;
+        }
+    }
+
+    .catalog-search-btn {
+        height: 40px;
+        padding: 0 50px;
+        color: #fff;
+        border: none;
+        background: #fb0040;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        .icon-search {
+            display: none;
+        }
+    }
+
+    .catalog-search-line {
+        margin-bottom: 40px;
+    }
+
+    .no-search_result {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        margin-bottom: 40px;
+        background-color: #f7f7f7;
+
+        .no-result_image {
+            margin-right: 30px;
+            width: 360px;
+            height: 200px;
+        }
+
+        .text_block {
+
+            .no-result_title {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .no-result_subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .site-navigation__item-icon {
+        fill: #fb0040;
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon_empty_search_result {
+        margin-right: 20px;
+    }
+}
+
+@import "mobile.scss";

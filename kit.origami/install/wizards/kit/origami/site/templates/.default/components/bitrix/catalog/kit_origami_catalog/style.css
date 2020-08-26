@@ -1,0 +1,12 @@
+.catalog_content__title {
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .catalog_content__title {
+        padding-top: 5px;
+        text-align: center;
+        padding-bottom: 22px;
+    }
+}

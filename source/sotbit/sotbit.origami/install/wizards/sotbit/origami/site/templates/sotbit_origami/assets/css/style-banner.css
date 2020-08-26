@@ -1,0 +1,46 @@
+/* ___________ 1. block news __________________ */
+.news_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news_block__content_img-block img {
+  width: 100%;
+  padding-bottom: 0.7rem;
+}
+
+.news_block__content_img-block_link {
+  display: block;
+}
+
+.news_block__content_date {
+  color: #807f7f;
+  padding-bottom: 0.5rem;
+}
+
+.news_block__content_name {
+  line-height: 1.2;
+}
+
+.news_block__content {
+  width: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.news_block__content_name_title:hover {
+  border-bottom: 1px solid #000000;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+/* ___________ end block news __________________ */

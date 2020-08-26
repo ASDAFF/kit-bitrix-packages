@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .brand_block_variant__wrapper-square .slick-slider .btn-slick-custom {
+        display: block !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .brand_block__item_square {
+        width: calc(100% - 31px) !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand_block__item_square {
+        width: calc(100% - 30px) !important;
+    }
+}

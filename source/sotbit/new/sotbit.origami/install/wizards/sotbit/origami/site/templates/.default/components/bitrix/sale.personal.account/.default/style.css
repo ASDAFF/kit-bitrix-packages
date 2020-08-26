@@ -1,0 +1,74 @@
+.sale-personal-account-wallet-container{
+	width:100%;
+	background: #f7f7f7;
+	padding: 1.5rem 4rem;
+}
+.sale-personal-account-wallet-title{
+	color: #313131;
+	opacity: 0.6;
+	font-size:12px;
+}
+
+.sale-personal-account-wallet-list{}
+.sale-personal-account-wallet-list-item{
+	position: relative;
+	font-size:15px;
+	overflow: hidden;
+	border-bottom: 1px solid #E39A20;
+}
+.sale-personal-account-wallet-list .sale-personal-account-wallet-list-item:last-child{
+	border-bottom: none;
+}
+
+.sale-personal-account-wallet-currency {
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: middle;
+	padding-left: 1rem;
+}
+
+.sale-personal-account-wallet-currency-item + .sale-personal-account-wallet-currency-item {
+	font-size: 10px;
+	color: #868585;
+	line-height: 10px;
+	font-weight: 300;
+}
+
+.sale-personal-account-wallet-sum {
+	display: inline-block;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+/* color and border */
+
+@media (max-width: 992px) {
+	.sale_account_pay__techno_block,
+	.sale-personal-account-wallet-container {
+		padding: 1rem !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.sale-acountpay-pp,
+	.sale-acountpay-pp-item-container {
+		max-width: none !important;
+	}
+	.account_techno_block {
+		margin-top: 30px;
+		border: none !important;
+	}
+	.sale-personal-section-account-sub-header,
+	.sale-personal-account-wallet-container {
+		text-align: center;
+	}
+}
+
+.sale-personal-account-wallet-currency-item {
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 700;
+    line-height: 13px;
+}

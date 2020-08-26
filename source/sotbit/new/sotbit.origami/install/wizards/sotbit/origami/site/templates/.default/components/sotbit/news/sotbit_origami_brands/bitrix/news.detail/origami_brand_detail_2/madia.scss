@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+    .brand-detail-info:not(.without-banner) .brand-detail-info__banner {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-detail-info:not(.without-banner) {
+        .brand-detail-info__description-text-wrapper {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .brand-detail-info__banner {
+            height: 124px;
+            margin-bottom: 20px;
+        }
+
+        .brand-detail-info__banner-logo {
+            width: 85px;
+            height: 85px;
+            padding: 10px;
+        }
+    }
+
+    .brand-detail-info.without-banner {
+        .brand-detail-info__banner {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-detail-info.without-banner {
+        .brand-detail-info__banner {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .brand-detail-info:not(.without-banner) {
+        .brand-detail-info__banner {
+            height: 110px;
+        }
+
+        .brand-detail-info__banner-logo-wrapper {
+            padding: 15px;
+        }
+
+        .brand-detail-info__banner-logo {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .brand-detail-info.without-banner {
+        .brand-detail-info__banner {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .brand-detail-info__banner-logo-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

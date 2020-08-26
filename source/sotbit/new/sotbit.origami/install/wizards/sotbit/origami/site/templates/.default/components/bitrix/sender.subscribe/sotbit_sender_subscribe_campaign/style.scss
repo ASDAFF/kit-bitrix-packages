@@ -1,0 +1,233 @@
+.sidebar-item {
+    margin-bottom: 30px;
+}
+
+.subscribe__types-size-wrapper {
+    height: auto;
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.bx_subscribe_response_container {
+    color: #35414E;
+    width: 428px;
+}
+
+.sender__sidebar-item-title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.popup-window-message-text {
+    font-size: 16px;
+}
+
+.bx_subscribe_checkbox_container {
+    line-height: 16px;
+    font-size: 13px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    color: #aaa;
+}
+
+.bx-sender-subscribe-agreement .main-user-consent-request a {
+    font-weight: 100;
+    font: 11px/10px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.popup-window .bx_subscribe_response_container {
+    color: #000;
+    min-width: 429px;
+}
+
+.popup-window-icon_warning_big {
+    width: 50px;
+    height: 50px;
+    fill: #FF0000;
+    margin: 4px 20px 0 0;
+}
+
+.popup-window-icon-check {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    fill: #00B02A;
+    margin: 10px 20px 0 0;
+}
+
+.popup-window-message-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.sotbit_order__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+    padding: 16px 45px 17px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    z-index: 2;
+    position: relative;
+}
+
+.footer-block__follow_input {
+    border: 1px solid #ededed;
+}
+
+.footer-block__follow_input_submit {
+    background-color: var(--main-color);
+
+    &:hover {
+        background-color: var(--main-color-hover);
+    }
+}
+
+.subscribe__types-title {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px 0 10px;
+}
+
+.subscribe__types-wrapper {
+    color: #808080;
+}
+
+.subscribe__input {
+    flex-grow: 1;
+    height: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border: 1px solid #ededed;
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 100%;
+    margin: 0;
+
+    border: 0;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe__button-icon {
+    fill: #ffffff;
+}
+
+.subscribe__input-wrapper {
+    display: flex;
+    height: 40px;
+}
+
+.blog-subscribe__handle {
+    margin: 0 5px;
+}
+
+@media (max-width: 990px) {
+    .subscribe__types-title {
+        cursor: pointer;
+    }
+
+    .subscribe__mobile-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-block .subscribe__input-wrapper {
+        width: 100%;
+    }
+
+    .subscribe__input-wrapper {
+        width: calc(100% / 3 * 2);
+    }
+
+    .sender__sidebar-item-title {
+        width: calc(100% / 3);
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .subscribe__types-size-wrapper {
+        height: 0;
+    }
+
+    .active + .subscribe__types-size-wrapper {
+        height: auto;
+    }
+
+    .active > .blog-subscribe__handle {
+        transform: rotate(180deg);
+    }
+
+    .blog-subscribe__handle {
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 20px;
+        transition: all 0.2s ease-in-out;
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-bottom: 1px solid #808080;
+            border-left: 1px solid #808080;
+            transform: rotate(-45deg);
+            transition: all 0.2s ease-in-out;
+        }
+
+    }
+
+    .subscribe__types-wrapper.active {
+        .blog-subscribe__handle {
+            transform: rotate(180deg);
+        }
+    }
+
+    .subscribe {
+        padding: 20px;
+        background: #F7F7F7;
+        border: 1px solid #EDEDED;
+    }
+
+    .footer-block .subscribe {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .subscribe__mobile-wrapper {
+        display: block;
+    }
+
+    .subscribe__input-wrapper {
+        width: 100%;
+    }
+
+    .sender__sidebar-item-title {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}

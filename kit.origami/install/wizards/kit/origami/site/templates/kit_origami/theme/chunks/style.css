@@ -1,0 +1,31 @@
+.sections_cnt__title {
+    font-size: 18px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+    background: #f7f7f7;
+    padding: 0 35px;
+}
+
+.sections_cnt__body {
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    padding: 0 35px;
+}
+
+.sections_cnt__row {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sections_cnt__cnt {
+    float: right;
+}
+
+.sections_cnt {
+    margin-bottom: 45px;
+}

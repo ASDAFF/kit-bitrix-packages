@@ -1,0 +1,41 @@
+.size {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.blog__wrapper {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.brand_block_variant__wrapper {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.catalog_section_block {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+@media screen and (max-width: 1390px) {
+  .news-slider-wrapper {
+    overflow: hidden; } }
+
+.news-block__wrapper {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.promotion-block__wrapper {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.header-two__main-nav {
+  max-width: 1344px !important; }
+
+.contacts-content-size-wrapper {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }

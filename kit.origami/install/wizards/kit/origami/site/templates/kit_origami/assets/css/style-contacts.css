@@ -1,0 +1,14 @@
+.block_main_left_menu__content .breadcrumb_block,
+.block_main_left_menu__content h1 {
+  max-width: 1344px;
+  margin: 0 auto; }
+
+@media (max-width: 1374px) {
+  .contacts-block {
+    margin: 0 -15px; }
+  .contacts-content-size-wrapper {
+    padding: 0 15px; } }
+
+@media (max-width: 1024px) {
+  .contacts-block {
+    margin: 0 -10px; } }

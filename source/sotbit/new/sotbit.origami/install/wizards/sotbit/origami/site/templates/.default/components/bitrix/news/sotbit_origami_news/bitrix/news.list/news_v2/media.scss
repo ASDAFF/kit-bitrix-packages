@@ -1,0 +1,111 @@
+@media (max-width: 990px) {
+    body {
+        .block_main_left_menu.right .block_main_left_menu__content.active {
+            padding-right: 0;
+        }
+
+        .puzzle_block.block_main_left_menu.main-container.left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .puzzle_block.block_main_left_menu.main-container.right {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .block_main_left_menu__container {
+            width: 100%;
+        }
+    }
+
+    .detail_blog__banner {
+        display: none;
+    }
+
+
+    .blog__sidebar-item:not(.subscribe) {
+        display: none;
+    }
+
+    .blog__sidebar-item.subscribe {
+        padding: 20px;
+        background: #F7F7F7;
+        border: 1px solid #EDEDED;
+    }
+
+    .blog__sidebar-item {
+        .subscribe__mobile-input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .blog__sidebar-item-title {
+                margin-bottom: 0;
+                margin-right: 20px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        .blog-subscribe .email-subscribe {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .news-list {
+
+        .news-list__item {
+            flex-direction: column;
+        }
+
+        .news-list__image-wrapper {
+            width: 100%;
+            height: 140px;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+
+        .news-list__content-title {
+            max-height: 40px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .news-list__content-text {
+            max-height: 72px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .news-list__content-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: auto;
+            font-size: 13px;
+            line-height: 20px;
+            color: #808080;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+
+    .blog__sidebar-item {
+        .subscribe__mobile-input {
+            display: block;
+        }
+    }
+
+    .blog__sidebar-item .subscribe__mobile-input .blog__sidebar-item-title {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .blog__sidebar-item .blog-subscribe .email-subscribe {
+        width: 100%;
+    }
+}

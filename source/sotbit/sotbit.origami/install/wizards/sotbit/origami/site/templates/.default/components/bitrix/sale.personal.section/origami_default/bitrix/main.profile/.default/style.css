@@ -1,0 +1,122 @@
+.bx_profile .main-profile-block-date-info{
+	margin-bottom: 2rem;
+	display: flex;
+}
+
+.bx_profile .main-profile-form-password-annotation{
+	color: #7f7f7f;
+	font-size: 11px;
+	margin-bottom: 0;
+}
+
+.bx_profile .main-profile-block-date-info, .bx_profile .form-group{
+	overflow-y: hidden;
+}
+
+.main-profile-block-date-info-title {
+	font-size: 13px;
+}
+
+.main-profile-block-date-info-title:first-child {
+	padding-right: 2rem;
+}
+
+.main-profile-block-content-info {
+	border: 1px solid #ededed;
+	padding: 2.5rem 3rem;
+}
+
+.text-md-left{
+	text-align: left;
+	font-size: 13px;
+	color: #7f7f7f;
+	line-height: 38px;
+}
+
+.form-group{
+	display: flex;
+	align-items: flex-end;
+}
+
+.form-group-password {
+	width: 100%;
+}
+
+.bx_profile .form-group .form-control{
+	height: 40px;
+	border-radius: 0;
+	border: 1px solid #ededed;
+}
+
+.bx_profile .form-group .form-control:focus {
+	box-shadow: none;
+}
+
+.main-profile-social-block,
+.main-profile-form-buttons-block {
+	padding: 2.5rem 0 2.5rem 4rem;
+	border: 1px solid #ededed;
+	margin-top: -1px;
+}
+
+.main-profile-social-block .bx-ss-icon {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.main-profile-social-block .bx-auth-serv-icons a {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.main-profile-social-block .bx-auth-serv-icons i {
+    margin: 1px;
+}
+
+@media (max-width: 576px) {
+    .bx_profile .main-profile-block-date-info {
+        flex-wrap: wrap;
+        padding: 15px 0;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .main-profile-block-date-info-title:first-child {
+        padding-right: 0;
+    }
+
+    .main-profile-block-content-info {
+        border: 1px solid #ededed;
+        padding: 1rem;
+    }
+
+    .bx_profile .form-group .main-profile-form-label {
+        line-height: 18px;
+    }
+
+    .bx_profile .form-group .form-control,
+    .main-profile-form-label {
+        width: 100%;
+    }
+
+    .main-profile-social-block,
+    .main-profile-form-buttons-block {
+        padding: 1rem;
+    }
+
+    .main-profile-form-buttons-block {
+        display: flex;
+    }
+
+    .bx-auth-serv-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-profile-social-block .bx-auth-serv-icons a {
+        padding: 0.8rem;
+    }
+}

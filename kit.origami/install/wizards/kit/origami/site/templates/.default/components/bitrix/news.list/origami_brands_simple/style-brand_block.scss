@@ -1,0 +1,96 @@
+//@import "variables.scss";
+
+
+/* ___________ brand_block __________________ */
+.brand_block__wrapper[style] {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.brand_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand_block__item {
+  order: 1;
+  margin: 0;
+  opacity: 0.5;
+  padding: 0 1rem;
+  text-align: center;
+
+  & .brand_block__item_link {
+      width: 100%;
+
+  }
+}
+
+.brand_block__item img {
+  max-width: 100%;
+  max-height: 3rem;
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
+.owl-item {
+  .brand_block__item_link {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+/* ___________ variant brand_block __________________ */
+
+.brand_block_variant.owl-carousel .owl-dots,
+.brand_block_variant.owl-carousel .owl-nav .owl-prev.disabled,
+.brand_block_variant.owl-carousel .owl-nav .owl-next.disabled,
+.brand_block_variant.owl-carousel .owl-nav .owl-prev ,
+.brand_block_variant.owl-carousel .owl-nav .owl-next {
+  display: none;
+}
+
+.brand_block_variant.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.brand_block_variant {
+
+  &:hover > .owl-nav .owl-prev {
+    display: block;
+  }
+
+  &:hover > .owl-nav .owl-next {
+    display: block;
+  }
+}
+
+///* ___________ variant two brand_block __________________ */
+//
+//
+//
+//.brand_block_variant_two__item {
+//  border: 1px solid #eeeeee;
+//  padding: 0 2rem;
+//  text-align: center;
+//  height: 15rem;
+//  line-height: 15rem;
+//
+//  &:hover img {
+//    opacity: 1;
+//  }
+//}
+//
+//.brand_block_variant_two__item_link {
+//  display: block;
+//}
+//
+//.brand_block_variant_two__item img {
+//  max-width: 100%;
+//  max-height: 6rem;
+//  display: inline-block;
+//  height: auto;
+//  opacity: 0;
+//}
+

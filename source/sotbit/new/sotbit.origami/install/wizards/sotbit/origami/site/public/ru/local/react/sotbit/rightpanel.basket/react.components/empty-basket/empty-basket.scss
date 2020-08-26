@@ -1,0 +1,56 @@
+.empty-basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.empty-basket__image {
+    margin-bottom: 20px;
+}
+
+.empty-basket__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.empty-basket__description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.empty-basket__link {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: var(--main-color);
+
+    &:hover {
+        color: #fff;
+        background-color: var(--main-color-hover);
+    }
+}
+
+
+
+.empty-basket__icon {
+    fill: var(--main-color);
+    &.hide {
+        display: none;
+    }
+}
+
+.empty-favorite__icon {
+    fill: var(--main-color);
+    &.hide {
+        display: none;
+    }
+}
+
+

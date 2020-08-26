@@ -1,0 +1,39 @@
+@import "../../../../../../../local/templates/sotbit_origami/assets/scss/variables.scss";
+.small-product__product-wrapper {
+    .swiper-button-disabled {
+        display: none;
+    }
+
+    &:hover {
+        .small-product__slider-button {
+            display: flex;
+        }
+
+        .swiper-button-disabled {
+            display: none;
+        }
+    }
+
+    &.swiper-container {
+        margin: -5px;
+        padding: 5px;
+
+        @media (max-width: 1344px) {
+            margin: -5px 0 -5px -5px;
+            padding: 5px 0 5px 5px;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        height: auto;
+
+        & > div {
+            display: flex;
+        }
+
+        @media (max-width: 1344px) {
+           width: 321px;
+        }
+    }
+}

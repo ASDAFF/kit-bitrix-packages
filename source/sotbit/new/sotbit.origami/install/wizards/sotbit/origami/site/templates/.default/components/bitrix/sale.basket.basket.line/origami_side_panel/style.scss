@@ -1,0 +1,216 @@
+
+.side-panel-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    cursor: url("/local/templates/sotbit_origami/assets/img/cursor close.png") 23 23, pointer;
+}
+.side-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    min-width: 400px;
+    background-color: #fff;
+    z-index: 10001;
+    cursor: auto;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    &.show {
+        transform: translateX(0%);
+    }
+}
+.side-panel__nav {
+    position: absolute;
+    top: 200px;
+    left: -60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+.side-panel-main__nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    border-bottom: 1px solid #DADADA;
+    z-index: 1;
+
+    &:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    &:last-child {
+        border: none;
+        border-radius: 0 0 0 4px;
+    }
+
+    svg {
+        fill: #CBCBCB;
+    }
+
+    &:hover {
+        background-color: #F7F7F7;
+        svg {
+            fill: var(--main-color);
+        }
+
+        .side-panel-main__nav-count {
+            color: #fff;
+            background-color: #BDBDBD;
+        }
+    }
+
+    &:hover.active {
+        svg {
+            fill: var(--main-color);
+        }
+        .side-panel-main__nav-count {
+            background-color: var(--main-color);
+        }
+    }
+
+    &.active {
+        svg {
+            fill: #000;
+        }
+        .side-panel-main__nav-count {
+            background-color: var(--main-color);
+        }
+    }
+
+    &.side-panel-main__nav-item--cart {
+        background-color: var(--main-color);
+
+        svg {
+            fill: rgba(255, 255, 255, 0.7);
+        }
+
+        .side-panel-main__nav-count {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        &:hover {
+            background-color: var(--main-color-hover);
+
+            svg {
+                fill: rgba(255, 255, 255, 0.6);
+            }
+
+            .side-panel-main__nav-count {
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    &.side-panel-main__nav-item--login {
+        svg {
+            fill: #000;
+        }
+    }
+
+    &.side-panel-main__nav-item--auth {
+        svg {
+            fill: none;
+            stroke: #000;
+        }
+    }
+}
+
+.side-panel-main__nav-count {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    min-width: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #CBCBCB;
+    border-radius: 10px;
+
+    &:last-child {
+        display: flex;
+    }
+
+    &.active {
+        color: #fff;
+        background-color: var(--main-color);
+    }
+}
+
+.side-panel__main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    width: 100%;
+    padding: 10px;
+    background-color: #F7F7F7;
+}
+
+.side-panel__main-title {
+    padding: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.side-panel__main-item {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.side-panel__main-auth {
+    height: 100vh;
+    width: 400px;
+}
+
+.side-panel__main-basket {
+    height: 100vh;
+
+    &.without-order .basket__footer-checkout {
+        display: none;
+    }
+}
+
+.side-panel__main-order {
+    width: 770px;
+    height: 100vh;
+
+
+    .side-panel__main-header {
+        padding: 30px;
+        justify-content: left;
+    }
+}
+
+.main-order__content {
+    height: 100%;
+    position: relative;
+    padding: 30px;
+}
+
+
+@media (max-width: 1023px) {
+    .side-panel {
+        display: none;
+    }
+}

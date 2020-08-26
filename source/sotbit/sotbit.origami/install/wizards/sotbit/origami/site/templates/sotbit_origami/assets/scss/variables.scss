@@ -1,0 +1,42 @@
+// main
+$main_color: #fb0040;
+$main_color_hover: darken($main_color, 10%);
+$main_color_weel: darken($main_color, 3%);
+$main_background: #ffffff;
+$main_width: 1344px;
+// end main
+
+// width left menu
+
+$left_menu_width: 264px;
+$left_menu_width_media: 230px;
+$left_menu_992: 210px;
+
+// end width left menu
+
+
+// fonts
+$main_font: 'Open Sans', Arial, sans-serif;
+$main_content_font_size: 14px;
+$main_content_font_size_mobile: 13px;
+// end fonts
+
+// transition
+$transition: .2s ease-out;
+//
+
+// color sticker
+
+$sticker_product__hit_color_background: #00b02a;
+$sticker_product__new_color_background: #0f7eda;
+$sticker_product__sale_color_background: #f7be13;
+$sticker_product__discount_color_background: #fb0040;
+
+
+// color radio
+
+$color_radio: #f4f4f4;
+
+$color_comment: #979797;
+
+$color_border: #ededed;

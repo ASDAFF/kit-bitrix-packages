@@ -1,0 +1,71 @@
+.popup-window-content {
+    max-width: 550px;
+    padding: 37px;
+}
+.stub__title {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.stub__message {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.stub__list-browser {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.stub__to_b2b-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.stub__to_b2b {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    background-color: #999999;
+}
+
+.stub__to_b2b:hover {
+    color: #fff;
+    background-color: #808080;
+}
+
+.stub__list-browser a {
+    max-width: 70px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.stub__browser-chrome {
+    background: url("/include/sotbit_origami/stub_for_ie/img/chrome.png") no-repeat center 0;
+}
+
+.stub__browser-opera {
+    background: url("/include/sotbit_origami/stub_for_ie/img/opera.png") no-repeat center 0;
+}
+
+.stub__browser-firefox {
+    background: url("/include/sotbit_origami/stub_for_ie/img/firefox.png") no-repeat center 0;
+}
+
+.stub__browser-edge {
+    background: url("/include/sotbit_origami/stub_for_ie/img/edge.png") no-repeat center 0;
+}

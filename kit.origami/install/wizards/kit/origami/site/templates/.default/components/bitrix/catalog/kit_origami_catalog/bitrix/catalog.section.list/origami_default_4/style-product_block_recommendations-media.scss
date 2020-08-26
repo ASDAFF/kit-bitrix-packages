@@ -1,0 +1,150 @@
+@import "../../../../../../../../kit_origami/assets/scss/variables.scss";
+
+@media screen and (max-width: 900px) {
+    .block_main_left_menu__content {
+        width: 100%;
+    }
+    .catalog-main_page {
+        .row {
+            flex-direction: column;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            .catalog-section_item {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px)
+
+{
+    .catalog-main_page {
+
+        .row {
+
+            .catalog-section_item {
+                background: none;
+
+                .items_links-mobile {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #FAFAFA;
+                    padding: 20px 10px 10px 70px;
+
+                    .catalog-items_links:hover {
+                        color: $main_color;
+                    }
+
+                    .catalog-items_links {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &.mobile_opened {
+
+                    .catalog_section-content_wrapper {
+                        position: relative;
+
+                        .items_titles {
+
+                            .catalog-section_item-title {
+                                color: $main_color;
+                                margin: 0;
+                            }
+                        }
+
+                        .icon-nav_button {
+                            transform: rotate(180deg);
+
+                            &:before {
+                                color: $main_color;
+                                border-color: $main_color;
+                            }
+                        }
+                    }
+                }
+
+                &.mobile_closed {
+                    .items_links-mobile {
+                        height: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .catalog_section-content_wrapper {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px;
+                    height: 70px;
+                    position: relative;
+
+                    .items_links-block {
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-grow: 1;
+                        max-width: calc(100% - 60px);
+
+                        .catalog-section_item-title_wrapper {
+                            max-width: calc(100% - 30px);
+                        }
+
+                        .catalog-section_item-title {
+                            margin: 0;
+                        }
+
+                        .icon-nav_button-mobile_wrapper {
+                            display: flex;
+                            justify-content: flex-end;
+                            flex-grow: 1;
+                        }
+
+                        .icon-nav_button {
+                            display: flex;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: none;
+
+                        .catalog-section_item-title {
+                            color: #000;
+                        }
+                    }
+
+                    .items_links {
+                        display: none;
+                    }
+
+                    .catalog-section_item-image {
+                        flex: 0 0 10%;
+                        height: 30px;
+                        width: 30px;
+                        max-width: 30px;
+                        margin-right: 20px;
+                        padding: 0;
+
+                        & > img {
+                            max-height: 40px;
+                            max-width: 40px
+                        }
+                    }
+
+                    .catalog-section_item-title {
+                        font-size: 15px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

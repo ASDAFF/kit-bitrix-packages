@@ -1,0 +1,121 @@
+
+/* ___________ advantage __________________ */
+.advantage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $main_width;
+}
+
+.block_main_advantage_item_link {
+  display: block;
+}
+
+.block_main_advantage_item {
+  display: flex;
+  align-items: center;
+}
+
+.block_main_advantage_icons {
+  margin-right: 1rem;
+}
+
+.block_main_advantage_icons img {
+  width: 4.2rem;
+}
+
+.block_main_advantage_item_link {
+    transition: all 0.2s;
+
+    .block_main_advantage_icons svg {
+        fill: #000;
+        transition: all 0.2s;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .block_main_advantage_icons svg {
+        fill: $main_color;
+    }
+}
+
+
+
+.block_main_advantage {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.block_main_advantage_variant__item_link {
+  display: block;
+  transition: all 0.2s;
+
+  & svg {
+      transition: all 0.2s;
+  }
+
+  & .block_main_advantage_variant__comment {
+      color: #000;
+  }
+
+  &:hover svg {
+    fill: $main_color !important;
+  }
+
+    &:hover {
+    color: $main_color !important;
+    }
+
+
+}
+
+/* ___________ 1 variant advantage __________________ */
+
+.block_main_advantage_variant_one {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $main_width;
+}
+
+.block_main_advantage_variant {
+  width: 25%;
+  padding-left: 1rem;
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.block_main_advantage_variant__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.block_main_advantage_variant__content {
+  padding-left: 1rem;
+}
+
+.block_main_advantage_variant__icons img {
+  width: 4.2rem;
+}
+
+.block_main_advantage_variant__comment {
+    padding-bottom: 0;
+}
+
+
+
+/* ___________________________ */
+/* ___________________________ */
+
+
+.block_main_advantage_variant__title.main_color {
+  color: $main_color;
+}
+
+

@@ -1,0 +1,35 @@
+.table_compare_product_close {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after, &:before {
+        position: absolute;
+        left: 8px;
+        content: ' ';
+        height: 14px;
+        width: 1px;
+        background-color: #BDBDBD;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        &:after, &:before {
+            background-color: #fb0040;
+        }
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}

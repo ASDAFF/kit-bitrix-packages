@@ -1,0 +1,19 @@
+.tabs_block__product_card.detail-product-gift .product_card__block_item_inner .product_card__block {
+    margin: 0;
+}
+
+.tabs_block__product_card.detail-product-gift .product_card__block__hidden {
+     position: initial;
+     opacity: 1;
+     visibility: visible;
+     height: auto;
+        width: 100%;
+}
+
+.detail-product-gift .owl-stage-outer {
+    padding: 0 2px;
+}
+
+.detail-product-gift .product_card__inner  {
+    width: 100%;
+}

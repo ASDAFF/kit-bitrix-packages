@@ -1,0 +1,78 @@
+@import "../../../../../sotbit_origami/assets/scss/variables.scss";
+
+.mobile-menu-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom: 1px solid #ededed;
+
+    &.mobile-menu-contact--address {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 12px 10px 12px 15px;
+
+        & > .mobile-menu-contact__block {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+    }
+}
+
+.mobile-menu-contact__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 12px 10px 12px 15px;
+}
+
+.mobile-menu-contact-icon {
+    // position: absolute;
+    flex-shrink: 0;
+    margin-right: 22px;
+    fill: $main_color;
+
+    &.mobile-menu-contact-icon--arrow {
+        margin: 0;
+        fill: #000;
+    }
+}
+
+.mobile-menu-contact__block-popup {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 10px 12px 15px;
+}
+
+.mobile-menu-contact__block-btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin-left: auto;
+    padding: 12px 22px;
+
+    .mobile-menu-contact-icon {
+        transition: transform 0.3s;
+    }
+
+    &.open {
+        .mobile-menu-contact-icon {
+            transform: scaleY(-1);
+        }
+    }
+}
+
+.mobile-menu-contact__block-more {
+    display: none;
+    overflow: hidden;
+    padding-left: 36px;
+    border-top: 1px solid #ededed;
+}
+
+.mobile-menu-contact__block {
+    width: 100%;
+    overflow-x: scroll;
+}

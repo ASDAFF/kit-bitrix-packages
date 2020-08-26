@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.opengraph/public/page_meta_edit.php");?>

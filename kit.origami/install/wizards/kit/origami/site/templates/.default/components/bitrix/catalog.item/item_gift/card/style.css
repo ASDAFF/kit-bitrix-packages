@@ -1,0 +1,22 @@
+.product-item-gift__block .product_card__path_to_basket .in_basket {
+    min-height: 40px !important;
+}
+
+.product-item-gift__block .product_card__path_to_basket {
+    padding: 0 !important;
+}
+
+.product-item-gift__block.product_card__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item-gift__block div[data-entity="buttons-block"] {
+    margin-top: auto;
+}
+
+.product-item-quantity {
+    color: #333;
+    font-weight: normal;
+    font-size: 12px;
+}

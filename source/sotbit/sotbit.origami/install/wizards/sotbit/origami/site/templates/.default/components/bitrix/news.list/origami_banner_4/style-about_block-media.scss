@@ -1,0 +1,29 @@
+@media screen and (max-width: 1000px) {
+
+    .main_page-small_banner {
+
+        & > a {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main_page-small_banner {
+        flex-direction: column;
+        max-height: none;
+
+        & > a {
+            width: 100%;
+            margin-right: 0;
+            max-height: 200px;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

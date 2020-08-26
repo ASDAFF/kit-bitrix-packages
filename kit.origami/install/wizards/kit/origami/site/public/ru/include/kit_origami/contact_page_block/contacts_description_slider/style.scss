@@ -1,0 +1,86 @@
+.contact-slider-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .contact-description-text {
+        width: 57%;
+        margin-right: 30px;
+    }
+
+    .show-description-wrapper {
+        height: 84px;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .collapse_btn {
+        display: block;
+    }
+
+    .show_btn {
+        display: none;
+    }
+
+    .show-description-wrapper[data-closed=true]
+    + .contacts-description-show_more_btn {
+
+        .collapse_btn {
+            display: none;
+        }
+
+        .show_btn {
+            display: block;
+        }
+    }
+
+    .text-wrapper {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .contact-description-slider-wrapper {
+        width: calc(43% - 30px);
+
+        .contacts-slider-image-wrapper {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0 5px;
+            cursor: zoom-in;
+            overflow: hidden;
+        }
+
+        img {
+            max-height: 100%;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .contacts-description-show_more_btn {
+        display: none;
+        margin-top: 9px;
+        cursor: pointer;
+        color: #fb0040;
+    }
+}
+
+div .pswp__bg {
+    background: #ffffff;
+}
+
+.btn-slick-custom {
+    cursor: pointer;
+}
+
+.slick-slider:hover .btn-slick-custom {
+    display: block !important;
+}
+
+@import "media";

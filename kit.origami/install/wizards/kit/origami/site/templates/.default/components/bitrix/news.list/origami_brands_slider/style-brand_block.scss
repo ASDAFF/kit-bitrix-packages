@@ -1,0 +1,41 @@
+//@import "variables.scss";
+
+
+/* ___________ brand_block __________________ */
+
+/* ___________ variant brand_block __________________ */
+
+.brand_block_variant__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.brand_block__item {
+    order: 1;
+    margin: 0;
+    opacity: 0.5;
+    padding: 0 1rem;
+
+    text-align: center;
+
+    & .brand_block__item_link {
+        width: 100%;
+
+    }
+  }
+
+  .brand_block__item img {
+    max-width: 100%;
+    max-height: 3rem;
+    display: inline;
+    width: auto;
+    height: auto;
+  }
+
+  .owl-item {
+    .brand_block__item_link {
+      display: block;
+      text-align: center;
+    }
+  }
+

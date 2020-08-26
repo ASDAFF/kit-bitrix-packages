@@ -1,0 +1,71 @@
+.sotbit_order_phone{
+  width:100%;font-size:14px;
+}
+.sotbit_order_phone p{
+  margin:0!important;padding:0!important;padding-bottom:5px!important
+}
+.sotbit_order_phone_form{
+  width:60%;margin:0 auto;
+}
+.sotbit_order_phone input[type=submit]{
+    /*border:none;background: #EFF6F7;border-radius: 5px;border:1px solid #017EC3;cursor:pointer;
+    height:26px;*/
+    background: #00afe4;
+	background: -moz-linear-gradient(top, #00afe4 0%, #0169b5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00afe4), color-stop(100%,#0169b5));
+	background: -webkit-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+	background: -o-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+	background: -ms-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+	background: linear-gradient(to bottom, #00afe4 0%,#0169b5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afe4', endColorstr='#0169b5',GradientType=0 );
+	margin:3px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0 1px 1px #006eaf;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	box-shadow:inset 0 1px 1px 0 #4ddff4;
+	border-radius:5px;
+	border-right:1px solid #0169b5;
+	border-top:1px solid #5aace5;
+	border-left:1px solid #308ccf;
+	border-bottom:1px solid #308ccf;
+	padding:10px 15px;
+	white-space: nowrap;cursor:pointer;
+}
+.sotbit_order_phone input[type=submit]:hover{
+  background: #33ace2;
+	background: -moz-linear-gradient(top, #33bfe9 0%, #3389d4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33bfe9), color-stop(100%,#3389d4));
+	background: -webkit-linear-gradient(top, #33bfe9 0%,#3389d4 100%);
+	background: -o-linear-gradient(top, #33bfe9 0%,#3389d4 100%);
+	background: -ms-linear-gradient(top, #33bfe9 0%,#3389d4 100%);
+	background: linear-gradient(to bottom, #33bfe9 0%,#3389d4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33bfe9', endColorstr='#3389d4',GradientType=0 );
+	box-shadow:inset 0 1px 1px 0 #4ddff4;
+	color:#fff;
+}
+
+
+.sotbit_order_phone input[type=text]{
+  border: 1px solid #AAAAAA;
+    height: 22px;
+    width: 268px;
+}
+.sotbit_order_phone .sotbit_order_success{
+  display:none;
+}
+.sotbit_order_phone .red{
+  border:1px solid red!important;
+}
+.sotbit_order_phone .sotbit_order_success{
+  color: #0175BD;font-weight:bold;font-size:12px;
+}
+.sotbit_order_phone table td{
+    padding-bottom:5px;
+}
+.sotbit_order_phone h5{
+    margin-bottom:10px;
+}
+

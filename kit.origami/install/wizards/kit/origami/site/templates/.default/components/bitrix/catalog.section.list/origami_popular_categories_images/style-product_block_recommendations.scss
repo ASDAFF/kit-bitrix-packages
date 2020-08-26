@@ -1,0 +1,32 @@
+
+/* ___________ variant 2 popular_category_block __________________ */
+.popular_category__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+//   margin-bottom: 60px;
+}
+
+.popular_category_block__canvas_img {
+  width: 100%;
+}
+
+.popular_category_block__canvas_link {
+  display: block;
+}
+
+.popular_category_block__canvas_block_img {
+  position: relative;
+}
+
+
+.popular_category_block__canvas_title {
+  position: absolute;
+  background: #ffffff;
+  padding: 0.3rem 1.5rem;
+  top: 0.8rem;
+}
+
+.popular_category_block_variant_canvas_link {
+  margin-bottom: 1rem;
+  display: block;
+}

@@ -1,0 +1,108 @@
+@import "../../../../../../../../kit_origami/assets/scss/variables.scss";
+
+.block_main_left_menu__content {
+    width: 100%;
+
+    .catalog-main_page {
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .catalog-section_item {
+            width: calc(50% - 30px);
+            margin: 15px;
+            border: 1px solid #EDEDED;
+            display: flex;
+            transition: all 0.2s ease-in-out;
+            flex-direction: column;
+            
+            &:hover {
+                box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+            }
+
+            .items_links-mobile {
+                display: none;
+            }
+        }
+
+        .catalog_section-content_wrapper {
+            display: flex;
+            padding: 20px;
+            position: relative;
+
+            .catalog-section_item-title_wrapper {
+                display: flex;
+            }
+
+            .catalog-section_item-image {
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 20%;
+
+                & > img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .catalog-section_item-title {
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .icon-nav_button {
+                align-items: center;
+                width: 15px;
+                min-width: 15px;
+                display: none;
+                height: 25px;
+                transition: all 0.2s ease-in-out;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    font-size: 7px;
+                    transform: rotate(45deg) translateY(-3px);
+                    color: #000;
+                    width: 10px;
+                    height: 10px;
+                    border-bottom: 2px solid #000;
+                    border-right: 2px solid #000;
+                    margin-top: 0;
+                    position: relative;
+                }
+            }
+
+            .catalog-items_links {
+                color: #808080;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                font-size: 13px;
+                margin-right: 5px;
+                white-space: nowrap;
+
+                & > b {
+                    color: #000;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:hover {
+                    color: $main_color;
+
+                    & > b {
+                        color: $main_color;
+                    }
+                }
+            }
+        }
+    }
+}

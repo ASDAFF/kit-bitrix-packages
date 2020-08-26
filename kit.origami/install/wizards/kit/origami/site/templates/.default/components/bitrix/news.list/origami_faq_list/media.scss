@@ -1,0 +1,139 @@
+@import "../../../../../kit_origami/assets/scss/variables.scss";
+
+@media screen and (max-width: 900px) {
+    .questions__manager-wrapper {
+        position: initial !important;
+        width: 100%;
+        height: auto;
+    }
+
+    .questions__manager {
+        flex-direction: row;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .questions__content_description {
+        margin-bottom: 20px;
+    }
+
+    .answer-text {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .question-wrapper {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .questions__manager_image {
+        width: 200px;
+        height: 200px;
+        margin-right: 34px;
+        margin-bottom: 0;
+    }
+
+    .questions__manager_wrapper {
+        display: none;
+    }
+
+    .questions__manager_info {
+        align-items: flex-start;
+    }
+
+    .questions__manager_message {
+        text-align: justify;
+    }
+
+    .questions__manager_name-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .questions__manager_profession {
+        margin: 0 0 10px;
+        text-align: left;
+    }
+
+    .questions__manager_name {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .questions__manager_message {
+        margin-bottom: 30px;
+        line-height: 18px;
+    }
+
+    .questions__content_title {
+        margin: 30px 0 15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body h1:not([class]) {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .questions__manager_name-wrapper {
+        display: none;
+    }
+
+    .questions__content {
+        .questions__content_description {
+            font-size: 11px;
+            line-height: 17px;
+        }
+    }
+
+    .questions__manager {
+        flex-direction: column;
+    }
+
+    .questions__manager_mobile-wrapper {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .questions__manager_image {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .questions__manager_name {
+        text-align: left;
+        font-size: 17px;
+    }
+
+    .mobile-questions__manager_name-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .questions__manager_message {
+        margin-bottom: 20px;
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .questions__content_title {
+        margin: 30px 0 20px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .questions__manager_button {
+        width: 100%;
+    }
+
+    body h1:not([class]) {
+        font-size: 24px;
+    }
+}

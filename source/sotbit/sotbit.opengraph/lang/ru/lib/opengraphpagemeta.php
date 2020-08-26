@@ -1,0 +1,38 @@
+<?
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_ID_FIELD'] = "ID записи";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_PAGE_URL_FIELD'] = "URL страницы";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_ACTIVE_OG_FIELD'] = "Активация opengraph meta-информации";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_ACTIVE_TW_FIELD'] = "Активация twitter meta-информации";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_OG_PROPS_ACTIVE_FIELD'] = "Активные opengraph поля";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_TW_PROPS_ACTIVE_FIELD'] = "Активные twitter поля";
+$MESS['SOTBIT_OPENGRAPH_ENTITY_CATEGORY_ID_FIELD'] = "ID категории";
+
+$MESS['SOTBIT_OPENGRAPH_OG_IMAGE_TYPE'] = "[OG] Тип изображения";
+$MESS['SOTBIT_OPENGRAPH_OG_IMAGE_WIDTH'] = "[OG] Длинна изображения";
+$MESS['SOTBIT_OPENGRAPH_OG_IMAGE_HEIGHT'] = "[OG] Высота изображения";
+$MESS['SOTBIT_OPENGRAPH_OG_IMAGE_SECURE_URL'] = "[OG] Альтернативный url-изображения";
+$MESS['SOTBIT_OPENGRAPH_OG_DESCRIPTION'] = "[OG] Описание";
+$MESS['SOTBIT_OPENGRAPH_OG_TITLE'] = "[OG] Заголовок";
+$MESS['SOTBIT_OPENGRAPH_OG_URL'] = "[OG] Url-страницы";
+$MESS['SOTBIT_OPENGRAPH_OG_TYPE'] = "[OG] Тип страницы";
+$MESS['SOTBIT_OPENGRAPH_OG_IMAGE'] = "[OG] Изображение";
+
+$MESS["SOTBIT_OPENGRAPH_TW_CARD"] = "[TW] Свойство страницы";
+$MESS["SOTBIT_OPENGRAPH_TW_TITLE"] = "[TW] Заглавие страницы";
+$MESS["SOTBIT_OPENGRAPH_TW_SITE"] = "[TW] Twitter пользователь";
+$MESS["SOTBIT_OPENGRAPH_TW_DESCRIPTION"] = "[TW] Описание страницы";
+$MESS["SOTBIT_OPENGRAPH_TW_IMAGE_ALT"] = "[TW] Alt изображения";
+$MESS["SOTBIT_OPENGRAPH_TW_CREATOR"] = "[TW] Создатель страницы";
+
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_ORDER_FIELD'] = "Этап выполнения";
+
+$MESS["SOTBIT_OPENGRAPH_SITE_ID"] = "ID сайта";
+
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_SITE_ID_FIELD'] = "Активация twitter meta-информации";
+
+
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_SITE_ID_FIELD'] = "ID сайта";
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_SORT_FIELD'] = "Сортировка";
+
+$MESS['SOTBIT_OPENGRAPH_PAGE_META_ENTITY_REQUIRED_FIELD_ERROR'] = "Не заполенено обязательное поле";
+?>

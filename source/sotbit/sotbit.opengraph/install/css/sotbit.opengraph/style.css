@@ -1,0 +1,17 @@
+.inline {
+    display: inline-block;
+}
+
+.inline.checkbox {
+    min-width: 70px;
+    text-align: right;
+}
+.inline.name {
+    min-width: 120px;
+    text-align: right;
+}
+
+a.sotbit-hide-show {
+    font-weight: 100;
+    float: right;
+}

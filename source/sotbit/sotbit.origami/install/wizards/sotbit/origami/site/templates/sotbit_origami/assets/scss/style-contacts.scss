@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.block_main_left_menu__content {
+    .breadcrumb_block,
+    h1 {
+        max-width: $main_width;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: $main_width + 30px) {
+    .contacts-block {
+        margin: 0 -15px;
+    }
+
+    .contacts-content-size-wrapper {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contacts-block {
+        margin: 0 -10px;
+    }
+}

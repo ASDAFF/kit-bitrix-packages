@@ -1,0 +1,23 @@
+.instagram_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.instagram_title > a {
+    font-size: 14px;
+}
+.instagram_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.instagram_item {
+    max-width: 20%;
+}
+.instagram_item > a {
+    display: block;
+}
+.instagram_item img {
+    width: 100%;
+}

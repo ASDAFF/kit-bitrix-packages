@@ -1,0 +1,25 @@
+.footer-link__phone {
+    display: inline-block;
+}
+
+.footer-link__phone a{
+    color: #fff;
+}
+@media (max-width: 576px) {
+
+    .dropdown_list::after {
+        color: var(--main-color);
+    }
+
+    .dropdown_list.active::after {
+        color: #fff;
+    }
+    .dropdown_list.active .footer-link__email-main::before,
+    .dropdown_list.active .footer-link__phone-main::before {
+        color: #fff;
+    }
+
+    .footer-link__phone-main::before {
+        color: var(--main-color);
+    }
+}

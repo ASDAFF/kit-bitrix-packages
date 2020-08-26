@@ -1,0 +1,178 @@
+.popup-window {
+    padding: 0 12px;
+    border: 1px solid #ededed;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.bx-filter-select-popup ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.bx-filter-select-popup ul li {
+    height: 42px;
+    border-bottom: 1px solid #ededed;
+}
+.bx-filter-select-popup ul li::before {
+    content: none;
+}
+.bx-filter-select-popup ul li:last-child {
+    border-bottom: none;
+}
+.bx-filter-select-popup ul li label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+}
+.bx-filter-select-popup ul li label.disabled {
+    color: #e4e4e4;
+}
+
+
+.bx_filter .bx_filter_block {
+    position: relative;
+}
+
+.bx_filter .block_main_left_menu__title {
+    margin-bottom: 0;
+}
+
+.bx_filter .block_main_left_menu__title {
+    position: relative;
+    padding: 18px 38px;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #ededed;
+}
+
+.bx_filter .bx_filter_block {
+    overflow: hidden;
+}
+.hidden_filter_props {
+    display: none;
+}
+
+
+.bx_filter_parameters_open_all.open .icon-nav_button:before {
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.bx_filter_wrapper {
+    margin-bottom: 37px;
+}
+
+.bx-filter-select-text {
+    border: 1px solid #e4e4e4;
+    padding: 8px 13px;
+    padding-right: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.bx-filter-select-text:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    top: 33%;
+    right: 39px;
+    margin-top: -3px;
+    border-bottom: 1px solid #b4b4b4;
+    border-right: 1px solid #b4b4b4;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.bx_filter .bx_filter_parameters_box_title .bx_filter_arrow {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 11px;
+    height: 10px;
+}
+
+.bx_filter .bx_filter_parameters_box.active .bx_filter_parameters_box_title .bx_filter_arrow {
+    transform: rotate(180deg);
+}
+
+.bx_filter .bx_filter_parameters_box_title .bx_filter_arrow:before {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    transform: rotate(-45deg);
+}
+
+.horizontal_filter-icon_cancel {
+    display: none;
+}
+
+.bx_filter .bx_filter_parameters_box_title.fonts__middle_text {
+    display: flex;
+    align-items: center;
+}
+
+.bx_filter .bx_filter_parameters_box_title .item_name {
+    margin-right: 5px;
+}
+
+.bx_filter .bx_filter_parameters_box {
+    border-bottom: 1px solid #ededed;
+}
+
+.bx-filter-param-btn-block label {
+    cursor: pointer;
+}
+
+.mobile_filter-icon_cancel_small {
+    display: none;
+}
+
+.bx_filter .block_main_left_menu__title .block_main_left_menu__title-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s ease;
+}
+
+.bx_filter .block_main_left_menu__title.active .block_main_left_menu__title-toggle {
+    transform: rotate(180deg);
+}
+
+.bx_filter .block_main_left_menu__title .block_main_left_menu__title-toggle:after {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    transform: rotate(-45deg);
+}

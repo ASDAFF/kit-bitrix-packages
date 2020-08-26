@@ -1,0 +1,293 @@
+/* ___________ feedback_block __________________ */
+/* ___________ feedback_block __________________ */
+.feedback_block {
+  background: #fafafa;
+  padding: 2rem 15px;
+  text-align: center; }
+
+.feedback_block__comment {
+  text-align: center; }
+
+.feedback_block__text {
+  padding-bottom: 2rem;
+  text-align: center; }
+  .feedback_block__text .success-message {
+    color: green; }
+
+.feedback_block__form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.3rem; }
+
+.feedback_block__input {
+  width: 100%;
+  padding-left: 2rem;
+  margin: 0 2rem 0 0;
+  border: 1px solid #ededed; }
+  .feedback_block__input:last-child {
+    margin: 0; }
+  .feedback_block__input::-webkit-input-placeholder {
+    color: #747474; }
+  .feedback_block__input::-moz-placeholder {
+    color: #747474; }
+  .feedback_block__input:-ms-input-placeholder {
+    color: #747474; }
+  .feedback_block__input::-ms-input-placeholder {
+    color: #747474; }
+  .feedback_block__input::placeholder {
+    color: #747474; }
+
+.button_feedback {
+  border: 1px solid #fb0040; }
+
+.feedback_block__compliance_link {
+  color: #fb0040; }
+
+.feedback_block__compliance {
+  text-align: left;
+  padding-left: 15px; }
+
+.feedback_block .feedback_block__form_input {
+  font-weight: 400; }
+  .feedback_block .feedback_block__form_input::-webkit-input-placeholder {
+    color: #747474; }
+  .feedback_block .feedback_block__form_input::-moz-placeholder {
+    color: #747474; }
+  .feedback_block .feedback_block__form_input:-ms-input-placeholder {
+    color: #747474; }
+  .feedback_block .feedback_block__form_input::-ms-input-placeholder {
+    color: #747474; }
+  .feedback_block .feedback_block__form_input::placeholder {
+    color: #747474; }
+
+/* ___________ variant feedback_block __________________ */
+.feedback_block_variant {
+  padding: 2rem 0;
+  background-size: cover;
+  text-align: center; }
+
+.feedback_block__compliance_title.variant,
+.feedback_block__comment.variant,
+.feedback_block__title.variant {
+  color: #ffffff; }
+
+/* ___________ checkbox feedback_block __________________ */
+.label-cbx {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: normal;
+  display: inline-block; }
+  .label-cbx input:checked + .checkbox {
+    border-color: #fb0040; }
+    .label-cbx input:checked + .checkbox svg,
+    .label-cbx input:checked + .checkbox path {
+      fill: #fb0040; }
+    .label-cbx input:checked + .checkbox polyline {
+      stroke-dashoffset: 0;
+      stroke: #FFF; }
+  .label-cbx:hover .checkbox svg, .label-cbx:hover .checkbox path {
+    stroke-dashoffset: 0; }
+  .label-cbx:hover .checkbox svg path {
+    stroke: #fb0040; }
+  .label-cbx .checkbox {
+    position: relative;
+    top: 1px;
+    float: left;
+    margin: 0 8px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C8CCD4;
+    border-radius: 3px; }
+    .label-cbx .checkbox svg {
+      position: absolute;
+      top: -2px;
+      left: -2px; }
+      .label-cbx .checkbox svg path {
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 71px;
+        stroke-dashoffset: 71px;
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease; }
+      .label-cbx .checkbox svg polyline {
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 18px;
+        stroke-dashoffset: 18px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease; }
+  .label-cbx > span {
+    pointer-events: none;
+    vertical-align: middle; }
+
+.label-cbx-2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin-bottom: 0; }
+  .label-cbx-2 input:checked + .checkbox {
+    border-color: #fb0040; }
+    .label-cbx-2 input:checked + .checkbox svg,
+    .label-cbx-2 input:checked + .checkbox path {
+      fill: #fb0040; }
+    .label-cbx-2 input:checked + .checkbox polyline {
+      stroke-dashoffset: 0;
+      stroke: #FFF; }
+  .label-cbx-2:hover .checkbox svg, .label-cbx-2:hover .checkbox path {
+    stroke-dashoffset: 0; }
+  .label-cbx-2:hover .checkbox svg path {
+    stroke: #fb0040; }
+  .label-cbx-2 .checkbox {
+    position: relative;
+    top: 2px;
+    float: left;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C8CCD4;
+    border-radius: 3px; }
+    .label-cbx-2 .checkbox svg {
+      position: absolute;
+      top: -2px;
+      left: -2px; }
+      .label-cbx-2 .checkbox svg path {
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 71px;
+        stroke-dashoffset: 71px;
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease; }
+      .label-cbx-2 .checkbox svg polyline {
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 18px;
+        stroke-dashoffset: 18px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease; }
+  .label-cbx-2 > span {
+    pointer-events: none;
+    vertical-align: middle; }
+
+.invisible {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0; }
+
+/* ___________ end checkbox feedback_block __________________ */
+/* ___________ variant_three feedback_block __________________ */
+.feedback_block_variant_three {
+  background: #fafafa;
+  padding: 2rem 0; }
+
+.feedback_block_variant_three__form {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 2rem; }
+  .feedback_block_variant_three__form .feedback_block__compliance {
+    padding-bottom: 2rem; }
+
+.feedback_block_variant_three__form_title {
+  padding-bottom: 2rem; }
+
+.feedback_block_variant_three__title {
+  padding-bottom: 1.3rem; }
+
+.feedback_block_variant_three.variant {
+  background-size: cover; }
+
+.feedback_block_variant_three__title.variant,
+.feedback_block_variant_three__comment.variant {
+  color: #ffffff; }
+
+/* ___________ end variant_three feedback_block __________________ */
+.puzzle_block__form_input {
+  margin-bottom: 1rem;
+  width: 100%; }
+
+.feedback_block__input_wrapper {
+  height: 4.85rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px; }
+
+.puzzle_block__form_label {
+  position: static;
+  display: block;
+  width: 100%;
+  min-height: 4.85rem; }
+  .puzzle_block__form_label .puzzle_block__form_input_placeholder {
+    position: absolute;
+    display: inline;
+    top: 1.85rem;
+    z-index: 2;
+    font-size: 1rem;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    cursor: text;
+    left: 0.75rem;
+    color: #747474;
+    padding: 0 0.5rem; }
+  .puzzle_block__form_label input {
+    position: relative;
+    top: 0.75rem;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ededed;
+    -webkit-transition: border-color 500ms ease-in-out;
+    transition: border-color 500ms ease-in-out;
+    outline: none;
+    padding: 0  0 0 2rem; }
+  .puzzle_block__form_label input {
+    height: 3.5rem; }
+  .puzzle_block__form_label input:focus,
+  .puzzle_block__form_label input:valid {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(251, 0, 64, 0.6);
+            box-shadow: 0px 0px 5px 0px rgba(251, 0, 64, 0.6); }
+    .puzzle_block__form_label input:focus + .puzzle_block__form_input_placeholder,
+    .puzzle_block__form_label input:valid + .puzzle_block__form_input_placeholder {
+      top: 0.3rem;
+      cursor: inherit;
+      font-size: 0.65rem;
+      color: #fb0040;
+      background: #ffffff;
+      display: inline; }
+
+.feedback_block_variant .puzzle_block__form_label input:focus,
+.feedback_block_variant .puzzle_block__form_label input:valid {
+  border-bottom: 2px solid #fb0040; }
+  .feedback_block_variant .puzzle_block__form_label input:focus + .puzzle_block__form_input_placeholder,
+  .feedback_block_variant .puzzle_block__form_label input:valid + .puzzle_block__form_input_placeholder {
+    top: 0.9rem;
+    cursor: inherit;
+    font-size: 0.65rem;
+    color: #fb0040;
+    background: transparent; }
+
+.feedback_block_variant .puzzle_block__form_label input {
+  padding: 0 0 0 1.2rem; }

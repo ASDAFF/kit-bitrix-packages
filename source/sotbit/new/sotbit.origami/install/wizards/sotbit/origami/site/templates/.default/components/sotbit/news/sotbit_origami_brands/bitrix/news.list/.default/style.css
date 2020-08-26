@@ -1,0 +1,44 @@
+
+.brand_list__item {
+    width: 20%;
+    border: 1px solid #eee;
+    padding: 0 2rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand_list__item img {
+    object-fit: contain;
+}
+
+.brand_list__item .brand_block_variant_two__item_link {
+    display: block;
+}
+
+.brand_list__item img {
+    max-width: 100%;
+    max-height: 6rem;
+    display: inline-block;
+    height: auto;
+    opacity: 0.5;
+}
+
+.brand_list_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .brand_list__item {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand_list__item {
+        width: 50%;
+        height: 10rem;
+    }
+}

@@ -1,0 +1,84 @@
+@import "../../../../../kit_origami/assets/scss/variables.scss";
+/* ___________ catalog pagination __________________ */
+
+.show_more_block {
+    position: relative;
+    border: 1px solid $main_color;
+    text-align: center;
+    padding: 1rem 0;
+    color: $main_color;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+
+    & .icon-nav_button {
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+
+    &:hover {
+      border-color: $main_color;
+      background-color: $main_color;
+      color: #fff;
+
+      &.btnLoaderCustom > .loader-btn {
+          fill: #fff;
+      }
+    }
+
+    &:hover .sk-wave .sk-rect {
+      color: #fff;
+      background-color: #fff;
+    }
+
+    &.btnLoaderCustom > .loader-btn {
+      left: calc(50% - 10px);
+      top: calc(50% - 10px);
+      fill: #fb0040;
+    }
+
+  }
+
+  .show_more_block.fonts__main_comment.loaderBtns {
+    color: transparent;
+
+    & i {
+      color: transparent;
+    }
+
+    & .sk-wave {
+      display: block;
+    }
+  }
+
+
+  .block_page_navigation {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    > span, > a {
+      padding: 0.3rem 0.7rem;
+      margin: 0 0.5rem;
+    }
+
+    .block_page_first,
+    .block_page_normal,
+    .block_page_last {
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    .block_page_previous,
+    .block_page_next {
+      display: none;
+    }
+
+  }
+
+  .block_page_current {
+    border: 1px solid $main_color;
+  }
+
+  /* ___________ end catalog pagination __________________ */

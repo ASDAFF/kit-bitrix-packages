@@ -1,0 +1,197 @@
+.news-slider__slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: calc(100% - 32px) !important;
+    background-color: #ffffff;
+
+    .news-slider__border-top,
+    .news-slider__border-right,
+    .news-slider__border-bottom,
+    .news-slider__border-left {
+        position: absolute;
+        z-index: 3;
+        opacity: 0;
+        background-color: #ededed;
+        transition: all 0.3s linear;
+    }
+
+    .news-slider__border-top {
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+    }
+
+    .news-slider__border-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+    }
+
+    .news-slider__border-bottom {
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+    }
+
+    .news-slider__border-left {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+    }
+
+    //1px solid #ededed
+
+    &:hover {
+        .news-slider__border-top,
+        .news-slider__border-right,
+        .news-slider__border-bottom,
+        .news-slider__border-left {
+            opacity: 1;
+        }
+
+        .news-slider__border-top {
+            left: 10px;
+            top: 10px;
+            height: 1px;
+            width: calc(100% - 20px);
+        }
+
+        .news-slider__border-right {
+            right: 10px;
+            top: 10px;
+            height: calc(100% - 20px);
+            width: 1px;
+        }
+
+        .news-slider__border-bottom {
+            left: 10px;
+            bottom: 10px;
+            height: 1px;
+            width: calc(100% - 20px);
+        }
+
+        .news-slider__border-left {
+            left: 10px;
+            top: 10px;
+            height: calc(100% - 20px);
+            width: 1px;
+        }
+
+        .news-description__text-wrapper {
+            color: #000000;
+        }
+    }
+}
+
+.news-slider-wrapper .slick-track {
+    padding-bottom: 15px;
+}
+
+.news-slider {
+    height: 521px;
+    width: 100%;
+    overflow: hidden;
+
+    .slick-list.draggable {
+        margin-right: -30px;
+    }
+
+    .btn-slick-custom {
+        cursor: pointer;
+    }
+}
+
+.news-slider__slide--border-wrapper {
+    position: relative;
+    border: 1px solid #ededed;
+}
+
+.news-slide__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    overflow: hidden;
+
+    .news-slide__image-wrapper--image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.news-slide__description {
+    height: calc(100% - 260px);
+}
+
+.news-slide {
+    cursor: pointer;
+}
+
+.news-description {
+    padding: 17px 30px 30px;
+
+    .news-description__title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        margin-bottom: 17px;
+        overflow: hidden;
+    }
+
+    .news-description__text-wrapper {
+        margin-bottom: 30px;
+        text-align: center;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .news-description__button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.news-description {
+
+    .news-description__title-wrapper--title {
+        max-height: 50px;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .news-description__text-wrapper--text {
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .news-description__button-wrapper--button {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 195px;
+        min-height: 40px;
+        background-color: #fb0040;
+        border: 0;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}

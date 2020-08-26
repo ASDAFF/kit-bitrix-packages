@@ -1,0 +1,7 @@
+.bx-basket {
+  display: inline-block;
+}
+
+.wrap-top-block-right1 .bx-closed .bx-basket-item-list {
+  height: 0;
+}

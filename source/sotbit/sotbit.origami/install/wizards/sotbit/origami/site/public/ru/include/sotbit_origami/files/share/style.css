@@ -1,0 +1,121 @@
+.product-detail-share-block .sharing-buttons li:before {
+    content: unset;
+}
+
+.catalog_section_block_tabs .product-detail-share-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.catalog_section_block_tabs .product-detail-share-block-button {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.catalog_section_block_tabs .product-detail-share {
+    padding: 0;
+}
+
+.product-detail-share-block-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.product-detail-share-block-button .product-detail-share-block-button-text {
+    margin-right: 6px;
+}
+
+.product-detail-share-block-button-text {
+    display: inline-block;
+}
+
+.product-detail-share-block {
+    position: relative;
+}
+
+.product-detail-share-block .sharing-buttons {
+    border: 1px solid #ededed;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.23);
+    min-width: 200px;
+    padding: 0 12px 0 12px;
+    position: absolute;
+    z-index: 99;
+    background: #ffffff;
+    top: calc(100% + 5px);
+    display: none;
+}
+
+.product-detail-share-block .sharing-buttons.active {
+    display: block;
+}
+
+.product-detail-share-block .sharing-buttons li {
+    list-style: none;
+    height: 42px;
+    border-bottom: 1px solid #ededed;
+    line-height: 42px;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.product-detail-share-block .sharing-buttons :last-child {
+    border-bottom: none;
+}
+
+.product-detail-share-block .sharing-buttons li a {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #545454;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon img {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon-vk {
+    background-color: #6695bd;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon-telega {
+    background-color: #2aa1da;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon-fb {
+    background-color: #3b5998;
+}
+
+.product-detail-share-block .sharing-buttons .share-icon-ok {
+    background-color: #ff9205;
+}
+
+@media (max-width: 768px) {
+    .product-detail-share-block .sharing-buttons {
+        text-align: center;
+        width: 289px;
+    }
+
+    .product-detail-share-block .sharing-buttons li {
+        text-align: center;
+    }
+
+    .product-detail-share-block .sharing-buttons li a {
+        justify-content: left;
+        padding-left: 60px;
+    }
+}

@@ -1,0 +1,126 @@
+.bx-authform-label-container {
+    font-size: 0.93rem;
+    color: #000;
+    padding-bottom: 0.5rem;
+}
+
+.bx-authform-content-container {
+    font-size: 0.93rem;
+    color: #000;
+    padding-bottom: 2rem;
+}
+
+.bx-authform-input-container input[type="text"],
+.bx-authform-input-container input[type="password"] {
+    font-size: 13px;
+    color: #495057;
+    padding: .375rem .75rem;
+    background: #fff;
+    border: 1px solid #ededed;
+    box-shadow: none;
+    border-radius: 0;
+    height: 3rem;
+}
+
+.bx-authform-formgroup-container {
+    margin-bottom: 1.5rem;
+}
+
+.bx-authform-formgroup-container input[type="submit"]:hover {
+    background-color: #c80033;
+    border-color: #c80033;
+}
+
+.bx-filter-param-label input[type=checkbox] {
+    position: absolute;
+    margin-top: 2px;
+}
+
+.bx-filter-param-label input:checked:before,
+.bx-filter-param-label input:not(:checked):before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.bx-filter-param-label input:not(:checked):before {
+    background-color: #fff;
+}
+
+.bx-filter-param-label input:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 10px;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 1px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.bx-filter-param-label input:checked:after {
+    opacity: 1;
+}
+
+.bx-filter-param-label input:not(:checked):after {
+    opacity: 0;
+}
+
+.bx-filter-param-text {
+    padding-left: 25px;
+    font-size: 13px;
+}
+
+input.auth-btn {
+    color: #fff;
+    border-radius: 0;
+    padding: .5rem 1.5rem;
+}
+
+input.auth-btn:hover {
+    color: #fff;
+}
+
+input.auth-btn:focus {
+    box-shadow: none;
+}
+
+.bx-authform-link-container {
+    margin-bottom: 0;
+    line-height: 13px;
+}
+
+.kit_order_phone input[name="captcha_word"] {
+    padding: 5px;
+    border: 1px solid #ededed;
+    height: 40px;
+    width: 148px;
+    float: left;
+    margin-right: 20px;
+}
+
+.feedback_block__captcha {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.feedback_block__captcha input[name="captcha_word"] {
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ededed;
+}
+
+.feedback_block__captcha_img > img {
+    width: 180px;
+    height: 40px;
+}

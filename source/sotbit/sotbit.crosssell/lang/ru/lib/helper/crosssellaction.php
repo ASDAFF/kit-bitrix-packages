@@ -1,0 +1,3 @@
+<?
+$MESS["SOTBIT_CROSSSELL_ACTION_YES"] = 'Да';
+?>

@@ -1,0 +1,623 @@
+.main_page-catalog_banner_instagram {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 1;
+      flex-shrink: 1; }
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 15px;
+    width: 50%; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 30px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:first-child {
+        margin-right: 30px;
+        width: calc(100% / 3 - 15px); }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:last-child {
+        width: calc((100% / 3) * 2); }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div {
+        display: block; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:first-child {
+          margin-bottom: 30px; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          position: relative; }
+          .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div > a > img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 0; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div {
+        display: block; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          position: relative; }
+          .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > a > img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 0; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div {
+        display: block;
+        width: calc(100% / 3); }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:first-child {
+          margin-right: 30px; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:last-child {
+          margin-left: 30px; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          position: relative; }
+          .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div > a > img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 0; }
+  .main_page-catalog_banner_instagram .insta_block-mobile_wrapper {
+    display: none;
+    margin-bottom: 20px; }
+    .main_page-catalog_banner_instagram .insta_block-mobile_wrapper > div > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative; }
+      .main_page-catalog_banner_instagram .insta_block-mobile_wrapper > div > a > img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 0; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 15px;
+    width: 50%; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 30px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div {
+        display: block;
+        width: calc(100% / 3); }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:first-child {
+          margin-right: 30px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:last-child {
+          margin-left: 30px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          position: relative; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div > a > img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 0; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 30px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-flex: 1;
+           -moz-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        border: 6px solid #f7f7f7;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 0 20px;
+        overflow: hidden; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block > div {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          text-align: center; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo {
+          height: 30%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-title {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 10px 0; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+          font-size: 16px;
+          text-align: center; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+          font-size: 16px;
+          font-weight: bold;
+          color: #fb0040;
+          margin: 15px 0;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: auto;
+          -webkit-box-flex: 1;
+             -moz-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe__link {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fb0040;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe__link .instagram-logo_icon {
+            fill: #fb0040;
+            stroke: #fb0040;
+            margin-left: 20px;
+            width: 42px;
+            height: 16px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe__link:hover {
+            color: #c80033; }
+            .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe__link:hover .instagram-logo_icon {
+              fill: #c80033;
+              stroke: #c80033; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div {
+        display: block; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          position: relative; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > a > img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 0; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:first-child {
+          margin-right: 30px;
+          width: calc((100% / 3) * 2); }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:last-child {
+          width: calc(100% / 3 - 15px); }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div {
+          display: block; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+            margin-bottom: 30px; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: relative; }
+            .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div > a > img {
+              width: 100%;
+              height: auto;
+              max-width: 100%;
+              max-height: 100%;
+              margin-bottom: 0; }
+
+.main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks {
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 1200px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo {
+    height: 20%;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-title {
+    font-size: 15px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+    font-size: 14px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+    font-size: 15px;
+    margin: 10px 0;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe .instagram-logo_icon {
+      width: 40px;
+      height: 14px; } }
+
+@media screen and (max-width: 1100px) {
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper {
+    margin-right: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks {
+      margin-bottom: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:first-child {
+        margin-right: 20px;
+        width: calc(100% / 3 - 10px); }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:last-child {
+        width: calc((100% / 3) * 2); }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:first-child {
+        margin-bottom: 20px; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:first-child {
+      margin-right: 20px; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:last-child {
+      margin-left: 20px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper {
+    margin-left: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks {
+      margin-bottom: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:first-child {
+        margin-right: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:last-child {
+        margin-left: 20px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks {
+      margin-bottom: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-title {
+        font-size: 15px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+        font-size: 14px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+        font-size: 15px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe .instagram-logo_icon {
+          width: 40px;
+          height: 14px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:first-child {
+        margin-right: 20px;
+        width: calc((100% / 3) * 2); }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:last-child {
+        width: calc(100% / 3 - 10px); }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+        margin-bottom: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks {
+    margin-bottom: 0; }
+  .main_page-catalog_banner_instagram {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks {
+        margin-bottom: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:first-child {
+          margin-right: 20px;
+          width: calc(100% / 3 - 10px); }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:last-child {
+          width: calc((100% / 3) * 2); }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:first-child {
+          margin-bottom: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div {
+        width: 50%; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:first-child {
+          margin-right: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:last-child {
+          margin-left: 20px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper {
+      margin-left: 0;
+      width: 100%; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks {
+        margin-bottom: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:first-child {
+          margin-right: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:last-child {
+          margin-left: 20px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks {
+        margin-bottom: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo img {
+            max-height: 108px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-title {
+          font-size: 18px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+          font-size: 16px;
+          margin: 10px 0; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+          font-size: 16px; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe .instagram-logo_icon {
+            width: 40px;
+            height: 14px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:first-child {
+          margin-right: 20px;
+          width: calc((100% / 3) * 2); }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:last-child {
+          width: calc(100% / 3 - 10px); }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+          margin-bottom: 20px; } }
+
+@media screen and (max-width: 560px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+    font-size: 13px; } }
+
+@media screen and (max-width: 500px) {
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+    margin-bottom: 0; }
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:first-child {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+         -moz-box-orient: horizontal;
+         -moz-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:last-child {
+      width: 100%; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div {
+      display: block; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:first-child {
+        margin-right: 10px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:last-child {
+        margin-left: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div {
+      display: block; }
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div {
+      display: block;
+      width: calc 40% px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:last-child {
+        display: none; }
+  .main_page-catalog_banner_instagram .insta_block-mobile_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .main_page-catalog_banner_instagram .insta_block-mobile_wrapper > div:first-child {
+      margin-right: 20px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div {
+        width: 50%; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:first-child {
+          display: none; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block {
+        padding: 20px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-logo img {
+          max-height: 100px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-title {
+          font-size: 15px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-text {
+          font-size: 13px; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe {
+          font-size: 15px; }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks .origami_instagram-block .origami_instagram-subscribe .instagram-logo_icon {
+            width: 40px;
+            height: 14px; }
+      .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div {
+        display: block;
+        width: 100%; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:first-child {
+          width: 100%;
+          margin-bottom: 20px;
+          margin-right: 0; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:last-child {
+          width: 100%;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div {
+          display: block;
+          width: calc(50% - 10px); }
+          .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+            margin-right: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .main_page-catalog_banner_instagram .insta_block-left_wrapper {
+    margin-bottom: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks {
+      margin-bottom: 10px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks .left-wrapper:first-child {
+        margin-right: 5px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks .left-wrapper:last-child {
+        margin-left: 5px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div:first-child {
+        margin-right: 5px; }
+      .main_page-catalog_banner_instagram .insta_block-left_wrapper .top_blocks > div > div:first-child {
+        margin-bottom: 10px;
+        margin-right: 0; }
+    .main_page-catalog_banner_instagram .insta_block-left_wrapper .bottom_blocks > div:first-child {
+      margin-right: 10px; }
+  .main_page-catalog_banner_instagram .insta_block-mobile_wrapper {
+    margin-bottom: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-mobile_wrapper > div:first-child {
+      margin-right: 10px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks {
+    margin-bottom: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks .left-wrapper:first-child {
+      margin-right: 5px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks .left-wrapper:last-child {
+      margin-left: 5px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:first-child {
+      margin-right: 0px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .top_blocks > div:last-child {
+      margin-left: 10px; }
+  .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks {
+    margin-bottom: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div:first-child {
+      margin-right: 0;
+      margin-bottom: 10px; }
+    .main_page-catalog_banner_instagram .insta_block-right_wrapper .bottom_blocks > div > div:first-child {
+      margin-bottom: 10px;
+      margin-right: 10px; } }

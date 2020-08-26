@@ -1,0 +1,103 @@
+
+
+///////////////////////////////////
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+  .tabs_product_detail_card  {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $color_border;
+
+    .tabs_sale_block__label {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .tabs_sale_block__label {
+      border: 1px solid #ced2d5;
+      margin-top: -1px;
+      position: relative;
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        right: 1.5rem;
+        top: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-top: -5px;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        background: #fff;
+        transform: rotate(225deg);
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    input[type="radio"]:checked + label {
+      border: 1px solid #ced2d5;
+      position: relative;
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        right: 1.5rem;
+        top: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-top: 0px;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        background: #fff;
+        transform: rotate(45deg);
+        transition: all .4s ease-in-out;
+      }
+    }
+    .tabs_sale_block__content_service__content {
+      width: 100%;
+      padding: 1rem;
+    }
+    .tabs_sale_block__content_service__photo {
+      width: 4rem;
+    }
+    .tabs_sale_block__content_service__text {
+      width: calc(100% - 4rem);
+    }
+    .tabs_sale_block__content {
+      padding: 1rem 0;
+    }
+    .tabs_sale_block__content_existence {
+      flex-wrap: wrap;
+    }
+    .rating-block {
+      width: 100%;
+    }
+
+  }
+  .tabs_product_detail_card.tabs_sale_block  {
+    display: block;
+  }
+  .tabs_block__product_card {
+    border-bottom: 1px solid $color_border;
+    // margin-bottom: 2rem;
+  }
+
+
+
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+.social_block__img_link {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.social_block__img_link img {
+    opacity: 1;
+    max-width: 100%;
+}
+
+
+.social_block__img_link::after {
+    width: 0;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_block__img_link figcaption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.social_block__img_link a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}

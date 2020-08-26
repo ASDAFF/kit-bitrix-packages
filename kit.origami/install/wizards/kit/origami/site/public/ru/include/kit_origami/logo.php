@@ -1,0 +1,1 @@
+<img alt="logo" src="<?=\Kit\Origami\Helper\Config::get('LOGO')?>">

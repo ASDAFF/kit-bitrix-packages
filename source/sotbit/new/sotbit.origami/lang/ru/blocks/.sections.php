@@ -1,0 +1,15 @@
+<?
+$MESS['LD_BLOCK_SECTION_MAINPAGE'] = 'Главная страница';
+$MESS['LD_BLOCK_SECTION_BANNERS'] = 'Баннеры';
+$MESS['LD_BLOCK_SECTION_POPULAR_CATEGORIES'] = 'Популярные категории';
+$MESS['LD_BLOCK_SECTION_SERVICES'] = 'Услуги';
+$MESS['LD_BLOCK_SECTION_BRANDS'] = 'Бренды';
+$MESS['LD_BLOCK_SECTION_ADVANTAGES'] = 'Преимущества';
+$MESS['LD_BLOCK_SECTION_BLOG'] = 'Блог';
+$MESS['LD_BLOCK_SECTION_NEWS'] = 'Новости';
+$MESS['LD_BLOCK_SECTION_PROMOTIONS'] = 'Акции';
+$MESS['LD_BLOCK_SECTION_PRODUCTS'] = 'Товары';
+$MESS['LD_BLOCK_SECTION_SOC'] = 'Социальные сервисы';
+$MESS['LD_BLOCK_SECTION_ABOUT'] = 'О компании';
+$MESS['LD_BLOCK_SECTION_OTHER'] = 'Прочее';
+?>

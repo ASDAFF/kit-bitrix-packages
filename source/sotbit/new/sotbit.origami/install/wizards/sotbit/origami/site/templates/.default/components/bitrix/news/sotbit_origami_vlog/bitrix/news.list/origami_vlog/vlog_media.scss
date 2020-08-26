@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+    .vlog .vlog__sidebar {
+        width: 234px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body h1:not([class]) {
+        font-size: 28px;
+    }
+
+    .vlog .video-container {
+        height: 305px;
+
+        .video-container__play-btn {
+            top: calc(50% - 21px);
+            left: calc(50% - 30px);
+            width: 60px;
+            height: 42px;
+        }
+
+        .icon_play {
+            width: 20px;
+            height: 20px;
+        }
+
+        .video-container__image-wrapper {
+            height: 145px;
+        }
+
+        .video-container__text-wrapper {
+            padding: 15px;
+        }
+
+        .video-container__text-wrapper {
+            height: calc(100% - 145px);
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .vlog {
+
+        .vlog__banner-wrapper {
+            height: 120px;
+        }
+
+        .vlog__sidebar {
+            display: none;
+        }
+
+        .vlog__content {
+            margin-right: -20px;
+        }
+
+        .video-container {
+            width: calc(100% / 3 - 20px);
+            height: 295px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            .video-container__image-wrapper {
+                height: 145px;
+
+            }
+        }
+
+        .video-container__text-wrapper {
+            height: calc(100% - 145px);
+        }
+    }
+
+    .vlog .video-container .video-container__title {
+        max-height: 63px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .vlog .vlog__banner-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .main-color_btn {
+        background-color: var(--main-color);
+
+        &:hover {
+            background-color: var(--main-color-hover);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body h1:not([class]) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .vlog .video-container {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 440px) {
+    body h1:not([class]) {
+        font-size: 24px;
+    }
+
+    .vlog .video-container {
+        width: 100%;
+        height: 328px;
+        margin-right: 0;
+    }
+
+    .vlog .vlog__content {
+        margin-right: 0;
+    }
+
+    .vlog .video-container .video-container__image-wrapper {
+        height: 180px;
+    }
+
+    .vlog .video-container .video-container__text-wrapper {
+        height: calc(100% - 180px);
+    }
+
+    .vlog .vlog__banner-wrapper {
+        height: 80px;
+    }
+}

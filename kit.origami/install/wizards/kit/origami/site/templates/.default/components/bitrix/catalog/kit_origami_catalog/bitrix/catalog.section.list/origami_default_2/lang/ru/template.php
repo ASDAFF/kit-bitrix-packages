@@ -1,0 +1,4 @@
+<?
+$MESS["ORIGAMI_SECT_TEMPLATE_2_MORE"] = "Подробнее";
+$MESS["ORIGAMI_SECT_TEMPLATE_2_MIN"] = "Свернуть";
+?>

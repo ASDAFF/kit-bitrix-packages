@@ -1,0 +1,241 @@
+@import "../../../../../sotbit_origami/assets/scss/variables.scss";
+
+body {
+    .puzzle_block.no-padding {
+        max-width: 100%;
+    }
+
+    .block_main_left_menu__content.active {
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .block_main_left_menu__container.mo-main {
+        display: none;
+    }
+}
+
+.breadcrumb_block,
+.puzzle_block h1 {
+    max-width: $main_width;
+    margin: 0 auto;
+}
+
+.puzzle_block.no-padding.main-container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.left {
+    .questions {
+        flex-direction: row-reverse;
+    }
+
+    .questions__manager_wrapper {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .questions__manager-wrapper {
+        left: 0;
+        right: auto;
+    }
+}
+
+.right {
+    .questions {
+        flex-direction: row;
+    }
+}
+
+.questions-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.questions {
+    position: relative;
+    display: flex;
+    max-width: $main_width;
+}
+
+.questions__content {
+    text-align: justify;
+}
+
+.questions__content_description {
+    display: block;
+    margin-bottom: 35px;
+}
+
+.questions__content_title {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.question-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.questions__content_question {
+    border: 1px solid #f7f7f7;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.questions__content_question[data-opened=true] {
+    .question-text {
+        color: #fb0040;
+    }
+
+    .question-icon_toggle {
+        fill: #fb0040;
+        transform: rotate(180deg);
+    }
+}
+
+.question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #f7f7f7;
+}
+
+.answer-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.answer-text {
+    padding: 20px 30px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.question-icon_toggle {
+    fill: #000000;
+    transition: all 0.3s ease;
+}
+
+.question-text {
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.questions__manager_wrapper {
+    position: relative;
+    width: 313px;
+    margin-left: 30px;
+    flex-shrink: 0;
+}
+
+.questions__manager-wrapper {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+}
+
+.questions__manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 313px;
+    padding: 30px;
+    flex-shrink: 0;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-questions__manager_name-wrapper {
+    display: none;
+}
+
+.questions__manager_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 17px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+
+    .questions__manager_photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.questions__manager_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.questions__manager_name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.questions__manager_profession {
+    margin: 8px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.questions__manager_message {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 100%;
+}
+
+.questions__manager_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fb0040;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.questions__form-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("questions_bg.png") center no-repeat;
+    background-size: cover;
+}
+
+.questions__form {
+    width: 100%;
+    max-width: $main_width;
+}
+
+.call-back-buttons p {
+    padding-left: 30px;
+}

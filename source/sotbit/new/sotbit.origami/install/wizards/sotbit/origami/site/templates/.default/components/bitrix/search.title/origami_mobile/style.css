@@ -1,0 +1,31 @@
+.search-block__input {
+    font-size: 0.875rem;
+    color: #b4b3b3;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 40px;
+}
+
+.search-block__input::placeholder {
+    color: #b4b3b3;
+}
+
+.wrap_input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 40px;
+}
+
+.search-block__submit {
+    font-size: 0.875rem;
+    border: none;
+    width: 100%;
+    line-height: 38px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAA40lEQVR42rWRJVSDURhA50s4JJyEXVwqDmnr5+BukUOPy7hbJOLuEnFruHvG0tv2W+SmT+7TTycgl1Gu+OGTbZrx0CnBlwlOqCMCPZ7kMsIDNrnkzxkOTJJaGucUSrVpHConRPJIrCstYB+jTgWqmXAlI1TqVMHKG4EiuSJMpwHj2EX4hUFT66JGhB94aWpDFItwnQxNbZ9UETbRryElco3BNYF70lUkI0s0uhdsnBOpkFqYl/0nJTxQj8XtuBXm2SRCfkQsEzwyRgeD7HBFA0YihCiBAOzUUkSquDhC1OYfxeE/0QNGvrOl0P0AAAAASUVORK5CYII=') no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}

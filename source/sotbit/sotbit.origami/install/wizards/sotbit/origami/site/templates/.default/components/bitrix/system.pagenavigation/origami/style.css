@@ -1,0 +1,51 @@
+/* ___________ catalog pagination __________________ */
+.show_more_block {
+  position: relative;
+  border: 1px solid #fb0040;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fb0040;
+  cursor: pointer;
+  margin-bottom: 2.5rem; }
+  .show_more_block .icon-nav_button {
+    display: inline-block;
+    position: relative;
+    top: -1px; }
+  .show_more_block:hover {
+    border-color: #fb0040;
+    background-color: #fb0040;
+    color: #fff; }
+    .show_more_block:hover.btnLoaderCustom > .loader-btn {
+      fill: #fff; }
+  .show_more_block:hover .sk-wave .sk-rect {
+    color: #fff;
+    background-color: #fff; }
+  .show_more_block.btnLoaderCustom > .loader-btn {
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    fill: #fb0040; }
+
+.show_more_block.fonts__main_comment.loaderBtns {
+  color: transparent; }
+  .show_more_block.fonts__main_comment.loaderBtns i {
+    color: transparent; }
+  .show_more_block.fonts__main_comment.loaderBtns .sk-wave {
+    display: block; }
+
+.block_page_navigation {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+  .block_page_navigation > span, .block_page_navigation > a {
+    padding: 0.3rem 0.7rem;
+    margin: 0 0.5rem; }
+
+@media (max-width: 768px) {
+  .block_page_previous,
+  .block_page_next {
+    display: none; } }
+
+.block_page_current {
+  border: 1px solid #fb0040; }
+
+/* ___________ end catalog pagination __________________ */

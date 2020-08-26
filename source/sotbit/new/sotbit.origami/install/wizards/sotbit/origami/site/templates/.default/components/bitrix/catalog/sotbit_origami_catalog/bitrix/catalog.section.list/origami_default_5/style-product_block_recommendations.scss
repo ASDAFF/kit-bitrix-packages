@@ -1,0 +1,271 @@
+@import "../../../../../../../../sotbit_origami/assets/scss/variables.scss";
+
+.block_main_left_menu__content {
+    width: 100%;
+
+    .catalog-main_page {
+
+        .row {
+            display: flex;
+            margin-right: -15px;
+            margin-left: -15px;
+            justify-content: space-between;
+
+            .catalog-section_item {
+                width: calc(50% - 30px);
+                margin: 15px;
+                display: flex;
+                transition: all 0.2s ease-in-out;
+                border: none;
+                min-height: 260px;
+                flex-direction: column;
+                background-color: #fafafa;
+                position: relative;
+
+                .items_links-mobile {
+                    display: none;
+                }
+
+                .catalog-section_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    flex-grow: 1;
+                    background-color: #fafafa;
+                    transition: all 0.2s ease;
+                    position: relative;
+                    min-height: 100%;
+
+                    .icon-nav_button {
+                        display: none;
+                    }
+
+                    .description_block {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        padding: 30px;
+                        border: 1px solid #EDEDED;
+                        transition: height 0.2s ease;
+                        background-color: #fafafa;
+
+                        .description_text-wrapper {
+                            height: 4.29rem;
+                            overflow: hidden;
+                            transition: height 0.4s ease;
+                        }
+
+                        .show_hide-buttons {
+                            cursor: pointer;
+                            display: inline-block;
+                            float: right;
+                            clear: right;
+                        }
+
+                        .show_more {
+
+                            &.opened {
+
+                                .description_text {
+                                    max-height: inherit;
+                                }
+
+                                .show_hide-buttons {
+
+                                    .icon-nav_button {
+                                        margin-left: 5px;
+                                        width: 15px;
+                                        min-width: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        height: 10px;
+                                        transition: all 0.2s ease-in-out;
+                                        transform: rotate(180deg);
+
+                                        &:before {
+                                            content: "";
+                                            display: inline-block;
+                                            font-size: 7px;
+                                            transform: rotate(45deg) translateY(-3px);
+                                            color: var(--main-color);
+                                            width: 6px;
+                                            height: 6px;
+                                            border-bottom: 1px solid var(--main-color);
+                                            border-right: 1px solid var(--main-color);
+                                            margin-top: 0;
+                                            position: relative;
+                                        }
+                                    }
+
+                                    .description-show_more-btn {
+                                        display: none;
+                                    }
+
+                                    .description-show_low-btn {
+                                        color: var(--main-color);
+                                        display: flex;
+                                        align-items: center;
+                                    }
+
+                                }
+
+                            }
+
+                            &.closed {
+
+                                .description_text {
+
+                                    &::before {
+                                        content: "";
+                                        float: right;
+                                        height: 2.86rem;
+                                        width: 1px;
+                                    }
+                                }
+
+                                .show_hide-buttons {
+                                    bottom: 14px;
+
+                                    .icon-nav_button {
+                                        margin-left: 5px;
+                                        width: 15px;
+                                        min-width: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        height: 10px;
+                                        transition: all 0.2s ease-in-out;
+
+                                        &:before {
+                                            content: "";
+                                            display: inline-block;
+                                            font-size: 7px;
+                                            transform: rotate(45deg) translateY(-3px);
+                                            color: var(--main-color);
+                                            width: 6px;
+                                            height: 6px;
+                                            border-bottom: 1px solid var(--main-color);
+                                            border-right: 1px solid var(--main-color);
+                                            margin-top: 0;
+                                            position: relative;
+                                        }
+                                    }
+
+                                    .description-show_more-btn {
+                                        color: var(--main-color);
+                                        display: flex;
+                                        align-items: center;
+                                        line-height: 1.42rem;
+
+                                        .dots {
+                                            color: #808080;
+                                            margin-right: 2rem;
+                                        }
+                                    }
+
+                                    .description-show_low-btn {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .description_text {
+                            color: #808080;
+                            line-height: 1.43rem;
+                            overflow: hidden;
+                            display: block;
+                            text-overflow: ellipsis;
+                            position: relative;
+                            text-align: justify;
+                            min-height: 4.29rem;
+                            transition: height 0.2s ease;
+                        }
+
+                        .description-show_more-btn {
+                            display: none;
+                        }
+
+                        .description-show_low-btn {
+                            display: none;
+                        }
+
+                    }
+
+                    .section_item-head {
+                        display: flex;
+                        padding: 30px;
+                        background: #fff;
+                        flex-grow: 1;
+                        border-top: 1px solid #ededed;
+                        border-left: 1px solid #ededed;
+                        border-right: 1px solid #ededed;
+                        flex-shrink: 0;
+
+                        .items-titles {
+                            flex-grow: 1;
+                        }
+
+                        .catalog-section_item-image {
+                            flex: 0 0 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 30px;
+
+                            & > img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .catalog-section_item-title {
+                            margin-bottom: 20px;
+                            font-size: 24px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: all 0.2s ease-in-out;
+                            display: block;
+                        }
+
+                        .catalog_links {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .catalog-items_links {
+                                cursor: pointer;
+                                font-size: 13px;
+                                margin-right: 10px;
+                                margin-bottom: 10px;
+                                display: inline-block;
+
+                                & > div {
+                                    white-space: nowrap;
+
+                                    &:hover {
+                                        color: var(--main-color);
+
+                                        .icon-nav_button:before {
+                                            color: var(--main-color);
+                                            border-bottom: 1px solid var(--main-color);
+                                            border-right: 1px solid var(--main-color);
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        position: absolute;
+                        z-index: 2;
+                        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+                    }
+                }
+
+            }
+        }
+    }
+}

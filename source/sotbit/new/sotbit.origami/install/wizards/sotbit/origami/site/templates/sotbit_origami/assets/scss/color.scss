@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+:root {
+    --main-color: #{$main-color};
+    --main-color-hover: #{$main-color-hover};
+}

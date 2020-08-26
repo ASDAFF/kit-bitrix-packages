@@ -1,0 +1,132 @@
+@media screen and (max-width: 1300px) {
+    .regional-manager {
+
+        .manager-contact-panel {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .manager-contacts {
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .regional-manager {
+
+        .manager-button .manage-get_mee {
+            font-size: 14px;
+        }
+
+        .manager-responsive-content {
+            flex-direction: column;
+        }
+
+        .manager-contacts {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+
+            & > div:not(:last-child) {
+                margin-bottom: 10px;
+                margin-right: 30px;
+            }
+
+            & > div {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+        }
+
+        .manager-information {
+            margin-right: 0;
+            margin-bottom: 20px;
+
+            .manager-information-title {
+                font-size: 11px;
+                line-height: 17px;
+            }
+
+            .manager-information-name {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .manager-information-message {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .regional-manager {
+        flex-direction: column;
+        padding: 20px;
+
+        .manager-name-wrapper {
+            display: none;
+        }
+
+        .manager-photo-wrapper {
+            display: flex;
+        }
+
+        .manager-name-wrapper-mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .manager-photo {
+            width: 90px;
+            height: 90px;
+            min-width: 90px;
+        }
+
+        .manager-information-title {
+            font-size: 11px;
+        }
+
+        .manager-information-name {
+            font-size: 17px;
+        }
+
+        .manager-information-message {
+            font-size: 11px;
+            line-height: 16px;
+        }
+        .manager-button .manage-get_meeting-button {
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .regional-manager .manager-contacts {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .regional-manager .manager-contacts {
+        margin-bottom: 0;
+    }
+
+    .manager-button {
+
+        .manage-get_meeting-button {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+    }
+}

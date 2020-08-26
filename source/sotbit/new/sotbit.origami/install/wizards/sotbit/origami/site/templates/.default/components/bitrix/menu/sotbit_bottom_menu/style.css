@@ -1,0 +1,5 @@
+.footer-block__contact_block_content .footer-block__item_name_link,
+.footer-block__contact_block_content .many_tels_wrapper .footer-block__item_name_link {
+    display: inline-block;
+    margin: 0 0 0.5rem 0;
+}
