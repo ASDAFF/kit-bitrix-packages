@@ -1,0 +1,1 @@
+<img alt="logo" src="<?=\Sotbit\Origami\Helper\Config::get('LOGO')?>">
