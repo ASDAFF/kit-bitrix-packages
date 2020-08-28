@@ -1,0 +1,19 @@
+.svg-social-icons {
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+    align-items: center;
+    fill: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.svg-social-icons:hover {
+    fill: #fff;
+}
+
+.share-icon .svg-social-icons {
+    fill: #fff;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+}

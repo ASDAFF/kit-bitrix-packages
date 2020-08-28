@@ -1,0 +1,30 @@
+.header-three ~ {
+
+    [class].main-container {
+        padding-left: 95px;
+    }
+
+    .footer-block .row {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .header-three ~ {
+        .footer-block,
+        .site-builder__hide,
+        .blocks-wrapper {
+            padding-left: 0;
+        }
+
+        [class].main-container {
+            padding-left: 10px;
+        }
+    }
+
+    .feedback_block {
+        padding-left: 15px;
+    }
+}
+

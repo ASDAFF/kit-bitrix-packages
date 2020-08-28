@@ -1,0 +1,70 @@
+@import "../../../../../../../local/templates/sotbit_origami/assets/scss/variables.scss";
+
+.menu-contact {
+
+}
+.menu-contact__title {
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #808080;
+}
+
+.menu-contact__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    padding: 0 20px;
+    font-size: 14px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &.menu-contact__item--contact {
+        margin-bottom: 20px;
+    }
+}
+
+
+.menu-contact__item-link {
+    font-size: 14px;
+    line-height: 21px;
+    color: $main_color;
+
+    &:hover {
+        color: $main_color_hover;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 6px;
+    }
+
+    &.menu-contact__item-link--phone {
+        font-weight: bold;
+    }
+}
+
+.menu-contact__item-text {
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:not(:first-of-type) {
+        margin-top: 6px;
+    }
+}
+
+.menu-contact__call-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    background-color: $main_color;
+}

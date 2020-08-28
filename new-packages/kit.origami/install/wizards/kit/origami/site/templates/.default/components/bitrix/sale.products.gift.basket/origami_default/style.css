@@ -1,0 +1,25 @@
+.sale-products-gift .product_card__block_item
+{
+	width:20%;
+}
+.sale-products-gift .product_card__block_item_inner
+{
+	width:100%;
+}
+
+.sale-products-gift .product-card-inner__img-view {
+    display: none !important;
+}
+
+.recommended-products__row.recommended-products__row--5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommended-products__row.recommended-products__row--5 p.puzzle_block__title.fonts__middle_title {
+    width: 100%;
+}
+
+.recommended-products__row--5 {
+    margin-bottom: 60px;
+}

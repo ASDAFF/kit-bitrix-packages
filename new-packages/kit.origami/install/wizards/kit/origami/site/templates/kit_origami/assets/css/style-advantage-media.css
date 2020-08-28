@@ -1,0 +1,47 @@
+@media (max-width: 1399.98px) {
+  .block_main_advantage {
+    padding: 0 15px; }
+  .block_main_advantage__one,
+  .block_main_advantage_variant__item {
+    padding: 0 1rem 0 0; } }
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .block_main_advantage_variant__comment {
+    font-size: 0.85rem; } }
+
+@media (max-width: 991.98px) {
+  .block_main_advantage_variant,
+  .block_main_advantage__one {
+    width: 50%;
+    margin-bottom: 1.5rem;
+    padding-left: 0; }
+  .block_main_advantage__one:last-child,
+  .block_main_advantage_variant:last-child {
+    margin-bottom: 0; }
+  .block_main_advantage_variant_one,
+  .block_main_advantage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media (max-width: 767.98px) {
+  .advantage {
+    margin-bottom: 40px; }
+  .block_main_advantage {
+    padding: 0 15px; }
+  .advantage_variant_one {
+    margin-bottom: 40px; }
+  .block_main_advantage_variant_one {
+    padding: 0 10px; }
+  .block_main_advantage_icons img {
+    width: 60px; }
+  .block_main_advantage__one {
+    margin-bottom: 30px; } }
+
+@media (max-width: 575.98px) {
+  .block_main_advantage_variant,
+  .block_main_advantage__one {
+    width: 100%; }
+  .block_main_advantage {
+    padding: 0 15px; }
+  .block_main_advantage_variant_one {
+    padding: 0 15px; } }
