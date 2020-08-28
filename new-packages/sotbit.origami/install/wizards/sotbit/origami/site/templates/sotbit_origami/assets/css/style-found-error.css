@@ -1,0 +1,391 @@
+.sotbit_order_phone_wrapper.found-error-popup {
+  max-width: 429px;
+  background: #F7F7F7;
+  min-width: 429px; }
+
+.found-error-popup .error-popup__file {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.found-error-popup .error-popup__remove-file {
+  margin: 0 10px 0 4px;
+  cursor: pointer; }
+  .found-error-popup .error-popup__remove-file:hover .icon_cancel_filter_small {
+    fill: #C80033; }
+
+.found-error-popup .icon_cancel_filter_small {
+  fill: #fb0040;
+  stroke: #fb0040; }
+
+.found-error-popup .error-popup__file-input {
+  position: relative;
+  display: block;
+  margin: 0 30px; }
+  .found-error-popup .error-popup__file-input:hover .icon_paperclip_small {
+    stroke: #C80033; }
+  .found-error-popup .error-popup__file-input:hover .error-popup__file-input-file-title {
+    color: #C80033; }
+
+.found-error-popup .error-popup__files-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4px 30px 0 31px;
+  padding-left: 20px;
+  font-size: 12px; }
+
+.found-error-popup .error-popup__file-input-icon-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 21px; }
+
+.found-error-popup .error-popup-description {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal; }
+
+.found-error-popup .error-popup__file-input {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 21px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.found-error-popup .error-popup__file-input-file-title {
+  position: relative;
+  margin-right: 7px;
+  color: #fb0040; }
+  .found-error-popup .error-popup__file-input-file-title .inputfile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer; }
+  .found-error-popup .error-popup__file-input-file-title label {
+    margin: 0;
+    padding-left: 20px;
+    cursor: pointer; }
+
+.found-error-popup .icon_paperclip_small {
+  fill: none;
+  stroke: #fb0040; }
+
+.found-error-popup .error-popup__file-input-file-types {
+  color: #808080; }
+
+.found-error-popup .inputtextarea {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 13px;
+  border: 1px solid #EDEDED; }
+  .found-error-popup .inputtextarea::-webkit-input-placeholder {
+    color: #808080; }
+  .found-error-popup .inputtextarea::-moz-placeholder {
+    color: #808080; }
+  .found-error-popup .inputtextarea:-ms-input-placeholder {
+    color: #808080; }
+  .found-error-popup .inputtextarea::-ms-input-placeholder {
+    color: #808080; }
+  .found-error-popup .inputtextarea::placeholder {
+    color: #808080; }
+
+.found-error-popup .captcha-refresh {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin-left: 10px;
+  cursor: pointer; }
+
+.found-error-popup .icon_refresh {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.found-error-popup .feedback_block__captcha_img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.found-error-popup .sotbit_order_phone__block input::-webkit-input-placeholder {
+  color: #808080; }
+
+.found-error-popup .sotbit_order_phone__block input::-moz-placeholder {
+  color: #808080; }
+
+.found-error-popup .sotbit_order_phone__block input:-ms-input-placeholder {
+  color: #808080; }
+
+.found-error-popup .sotbit_order_phone__block input::-ms-input-placeholder {
+  color: #808080; }
+
+.found-error-popup .sotbit_order_phone__block input::placeholder {
+  color: #808080; }
+
+.found-error-popup .popup-window .sotbit_order_phone__block .feedback_block__captcha_img {
+  height: 40px; }
+
+.found-error-popup .popup_resizeable_content {
+  position: relative;
+  z-index: 1; }
+
+.found-error-popup p > .errortext {
+  font-size: 12px;
+  padding: 0; }
+
+.found-error-popup .confidential-field {
+  margin: 0 30px; }
+
+.found-error-popup .confidential-field label {
+  min-height: 20px; }
+
+.found-error-popup .found-error-popup__textarea {
+  margin: 20px 30px; }
+
+.found-error-popup .popup-window-submit_button.found-error-popup__submit-button {
+  padding-bottom: 30px;
+  margin: 20px 30px 0; }
+
+.found-error-popup .accept_checkbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 30px; }
+
+.found-error-popup .feedback_block__compliance .fonts__middle_comment {
+  font-size: 13px;
+  line-height: 20px; }
+
+.found-error-popup .confidential-field .checkbox__label::before {
+  background-color: #ffffff; }
+
+.found-error-popup .popup-window-message-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 429px;
+  padding: 30px 30px 32px 30px; }
+
+.found-error-popup .popup-error-message p {
+  padding: 0;
+  margin: 20px 30px 0 30px;
+  color: red; }
+
+.found-error-popup .sotbit_order_phone .feedback_block__captcha_input input[name="captcha_word"] {
+  padding: 5px;
+  border: 1px solid #ededed;
+  height: 40px;
+  width: 148px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0; }
+
+.found-error-popup .feedback_block__captcha {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.found-error-popup .feedback_block__captcha_img > img {
+  width: 180px;
+  height: 40px; }
+
+.found-error-popup .popup-window-field_description {
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal; }
+
+.found-error-popup .popup-window-icon-check {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  fill: #00B02A;
+  margin: 10px 20px 0 0; }
+
+.found-error-popup .popup-window-message-title {
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 5px; }
+
+.found-error-popup .sotbit_order__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  padding: 16px 45px 20px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative; }
+
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__block:not(.error-popup__file-input) {
+  margin: 20px 30px; }
+
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__block input,
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__block textarea {
+  border: 1px solid #ededed;
+  width: 100%;
+  padding: 5px; }
+
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__block input {
+  height: 40px; }
+
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__block textarea {
+  height: 120px;
+  min-height: 40px;
+  max-height: 400px; }
+
+.found-error-popup .sotbit_order_phone .sotbit_order_phone__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  padding: 16px 45px 17px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 2; }
+
+.found-error-popup .sotbit_order_phone input[type="submit"],
+.found-error-popup .sotbit_order_phone input[type="button"] {
+  cursor: pointer;
+  outline: none;
+  line-height: 39px;
+  display: inline-block;
+  height: 40px;
+  padding: 0 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%; }
+
+.found-error-popup .sotbit_order_phone .feedback_block__compliance {
+  padding-left: 0; }
+
+.found-error-popup .sotbit_order_phone .feedback_block__compliance .cntr {
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 30px; }
+
+.found-error-popup .confidential-field .error {
+  border-bottom: 1px solid red; }
+
+.found-error-popup .popup-window .popup-error-message {
+  margin: 0; }
+
+@media (max-width: 768px) {
+  .found-error-popup .sotbit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
+    padding-left: 0.3rem; } }
+
+@media (max-width: 576px) {
+  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block_title {
+    padding-bottom: 12px; }
+  .found-error-popup .sotbit_order_phone .feedback_block__compliance {
+    margin-top: 21px; }
+  .found-error-popup .sotbit_order_phone .feedback_block__compliance .cntr {
+    -webkit-box-align: start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .found-error-popup .sotbit_order_phone input[type="button"] {
+    width: 100%; } }
+
+@media (max-width: 576px) {
+  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block {
+    margin-bottom: 15px; } }
+
+@media (max-width: 455px) {
+  .sotbit_order_phone_wrapper.found-error-popup {
+    min-width: 200px; }
+  body .popup-close {
+    right: 20px; }
+  .found-error-popup .sotbit_order__title {
+    padding: 16px 35px 20px 20px; }
+  .found-error-popup .found-error-popup__textarea {
+    margin: 20px; }
+  .found-error-popup .error-popup__file-input {
+    margin: 0 20px; }
+  .found-error-popup .error-popup__files-list {
+    margin: 4px 20px 0 21px;
+    padding-left: 20px; }
+  .feedback_block__captcha {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .feedback_block__captcha .feedback_block__captcha_input {
+    -webkit-box-ordinal-group: 2;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 12px; }
+  .sotbit_order_phone {
+    margin: 20px; }
+  .popup-window-submit_button.found-error-popup__submit-button {
+    margin: 20px 20px 0; }
+  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block:not(.error-popup__file-input) {
+    margin: 20px; }
+  .found-error-popup .popup-window-submit_button.found-error-popup__submit-button {
+    margin: 20px 20px 0; } }

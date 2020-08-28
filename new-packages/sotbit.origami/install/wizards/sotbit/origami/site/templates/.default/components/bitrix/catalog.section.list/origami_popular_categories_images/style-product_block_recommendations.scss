@@ -1,0 +1,33 @@
+.popular_category__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popular_category_block-two__canvas_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular_category_block-two__canvas_link {
+    display: block;
+}
+
+.popular_category_block-two__canvas_block_img {
+    position: relative;
+    z-index: 2;
+}
+
+.popular_category_block-two__canvas_title {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    padding: 0.3rem 1.5rem;
+    background: #ffffff;
+    z-index: 3;
+}
+
+.popular_category_block-two_variant_canvas_link {
+    margin-bottom: 1rem;
+    display: block;
+}

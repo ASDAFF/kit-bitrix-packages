@@ -1,0 +1,36 @@
+.detail_blog__banner {
+    margin-bottom: 45px;
+}
+
+.detail_blog__banner img {
+    max-width: 100%;
+}
+
+.detail_blog__banner a {
+    position: relative;
+    display: inline-block;
+}
+
+.detail_blog__banner .banner_button {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.block_main_left__feedback .footer-block__follow_input_email {
+    border: 1px solid #ededed;
+    width: calc(100% - 60px);
+    max-width: 200px;
+}
+
+.block_main_left__feedback .footer-block__follow_input_submit {
+    min-width: 66px;
+    color: #ffffff;
+}
+
+.block_main_left__feedback .footer-block__follow_input_submit .footer-block__follow_input_icon {
+    fill: #fff;
+    padding-top: 5px;
+}

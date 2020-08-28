@@ -1,0 +1,211 @@
+.search_title {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    left: 0;
+}
+.inline-search-show {
+	cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.inline-search-show:hover {
+    color: var(--main-color-hover);
+}
+.inline-search-block {
+	display: none;
+}
+.inline-search-block.show {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 126px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.13);
+	z-index: 10000;
+}
+
+.overlay-search {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1000;
+}
+.overlay-search.active {
+	display: block;
+}
+
+.title-search-result {
+	position: fixed !important;
+	top: 126px !important;
+	display: none;
+	background: #fff;
+	border-bottom: 1px solid #ededed;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1001;
+}
+
+.puzzle_block_mod {
+	padding: 0 30px;
+}
+
+
+.bx-searchtitle .bx-block-title {
+	font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 9px;
+	font-weight: 600;
+}
+.bx-searchtitle .bx-input-group {
+	display: flex;
+}
+.bx-searchtitle .bx-input-group .icon-search {
+	position: absolute;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+.bx-searchtitle .bx-input-group .bx-form-control {
+	display: block;
+	width: 100%;
+	height: 126px;
+	padding: 0 40px;
+	margin-right: 40px;
+	font-size: 22px;
+	color: #1d1d1d;
+	border: none;
+}
+.bx-searchtitle .bx-input-group .bx-form-control::placeholder {
+	color: #7d7d7d;
+}
+.bx-ios .bx-searchtitle .bx-input-group .bx-form-control {
+	/* Fix of input shadow for IOS browsers. */
+	background-image: -webkit-linear-gradient(#f8fafc 0%, #f8fafc 100%);
+	background-image: linear-gradient(#f8fafc 0%, #f8fafc 100%);
+}
+.bx-searchtitle .bx-input-group-btn {
+	display: flex;
+	align-items: center;
+}
+.bx-searchtitle .bx-input-group-btn button {
+	display: none;
+	background: #95a1a8;
+	border: none;
+	border-radius: 0;
+	font-size: 16px;
+	color: #fff;
+}
+.bx-searchtitle .bx-input-group-btn button:hover {
+	background: #fb0040;
+}
+.bx-searchtitle .bx-input-group-btn .icon-close {
+	width: 17px;
+	height: 17px;
+	background-image: url('images/icon_close.png');
+	cursor: pointer;
+}
+
+
+div.title-search-fader {
+	display:none;
+	background-image: url('images/fader.png');
+	background-position: right top;
+	background-repeat: repeat-y;
+	position:absolute;
+}
+p.title-search-preview {
+	font-size: 12px;
+}
+div.title-search-result td.title-search-price span {
+	font-size: 26px;
+}
+
+/*========================*/
+
+.bx_searche {
+	max-height: 444px;
+	overflow-y: scroll;
+}
+.bx_searche .bx_item_block {
+	border-top: 1px solid #ededed;
+}
+.bx_searche .bx_item_block_inline {
+	display: flex;
+	min-height: 110px;
+}
+.bx_searche .bx_img_element {
+	display: flex;
+	align-items: center;
+}
+.bx_searche .bx_image {
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bx_searche .bx_item_element {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 25px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+.bx_searche .bx_item_element hr {
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+.bx_searche .bx_item_element a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #1d1d1d;
+}
+.bx_searche .bx_price {
+	font-size: 17px;
+	font-weight: bold;
+	min-width: 120px;
+	text-align: right;
+}
+.bx_searche .bx_price .old {
+	font-weight: normal;
+	text-decoration: line-through;
+	color: #636363;
+}
+.bx_item_block.others_result {
+	display: none;
+	min-height: 0;
+}
+.bx_item_block.others_result .bx_item_element {
+	padding: 10px 0;
+}
+.bx_item_block.all_result .bx_item_element {
+	padding: 0;
+}
+.bx_item_block.all_result .all_result_title {
+
+}
+.bx_item_block.all_result .all_result_title a {
+	border: 1px solid #ced2d5;
+	padding: 10px 30px;
+	font-size: 15px;
+	color: #060606;
+}
+
+.basket-block__link {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+    color: #c3c3c3;
+}

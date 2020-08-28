@@ -1,0 +1,78 @@
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+
+.search-item-rate {font-size: 11px;}
+
+.mobile_filter-selected_number {
+    background: var(--main-color);
+}
+
+.mobile_filter_btn:hover  .mobile_filter-selected_number {
+    color: var(--main-color);
+    background: #ffffff;
+}
+
+.mobile_filter_form .catalog_content__filter_horizon_title.fonts__middle_text:hover svg {
+    fill: var(--main-color-hover);
+    stroke: var(--main-color-hover);
+}
+
+.mobile_filter_form .radio_container_wrapper input[type="radio"]:checked + .radio-label:before {
+    background-color: var(--main-color-hover);
+    border: 5px solid var(--main-color-hover);
+}
+
+.mobile_filter_form .radio_container_wrapper .radio_container:hover {
+    color: var(--main-color-hover);
+}
+
+.mobile_filter_form .bx-filter-param-btn-block .bx-filter-param-label:hover {
+    color: var(--main-color-hover);
+}
+
+.mobile_filter_form .bx-filter-param-btn-block .bx-filter-param-label:hover .bx-filter-param-btn.bx-color-sl {
+    border: 1px solid var(--main-color-hover);
+}
+
+.mobile_filter_form .bx-filter-param-btn-block .bx-filter-param-label.bx-active .bx-filter-param-btn.bx-color-sl {
+    border: 1px solid var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter_parameters_box_title:hover .item_name {
+    color: var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter_parameters_box_title:hover .icon-nav_button {
+    color: var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter .bx_filter_popup_result .popup_result_btns input[name="del_filter"] {
+    color: var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter .bx_filter_popup_result .popup_result_btns input[name="set_filter"] {
+    background: var(--main-color-hover);
+    border: 1px solid var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter .bx_filter_popup_result .popup_result_btns input[name="set_filter"]:hover {
+    background: var(--main-color-hover);
+    border: 1px solid var(--main-color-hover);
+}
+
+.mobile_filter_form .bx_filter .filter-size input:checked + label {
+    border: none;
+}
+
+.mobile_filter_form .bx_filter .filter-size input:hover + label {
+    border: none;
+}
+
+.mobile_filter_form .bx_filter .checkbox__label:hover:before {
+    border: 1px solid var(--main-color-hover);
+}

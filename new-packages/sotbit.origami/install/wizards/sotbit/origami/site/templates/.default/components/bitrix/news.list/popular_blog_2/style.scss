@@ -1,0 +1,33 @@
+.blog__sidebar-item {
+    margin-bottom: 30px;
+
+    .blog__sidebar-item-title {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &[data-active='true'] {
+        order: 0;
+        color: #ffffff;
+        background-color: var(--main-color);
+
+    }
+
+    .blog__sidebar-item-video-title {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ededed;
+            padding-bottom: 10px;
+        }
+    }
+}
+

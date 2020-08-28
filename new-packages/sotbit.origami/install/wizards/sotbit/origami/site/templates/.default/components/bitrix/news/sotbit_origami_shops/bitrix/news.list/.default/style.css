@@ -1,0 +1,144 @@
+.shops__info_payment_row {
+    display: flex;
+    background: #f6f4f4;
+    border-radius: 13px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+    height: 25px;
+    margin-right: 15px;
+    padding: 0 12px;
+}
+
+.shops__info_payment_row i {
+    margin-right: 3px;
+    color: var(--main-color);
+}
+
+.shops__info_payment {
+    display: flex;
+    justify-content: left;
+}
+
+.shops__info_shedule {
+    color: #8b8b8b;
+    font-size: 12px;
+}
+
+.shops__info_metro_row {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.shops__info_metro_row i {
+    margin-right: 5px;
+}
+
+.shops__info_phone_row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.shops__info_phone_row i {
+    transform: rotate(90deg);
+    margin-right: 4px;
+    color: var(--main-color);
+}
+
+
+.shops__section_name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.shops__column_title {
+    color: #8b8b8b;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.show__header {
+    border-bottom: 1px dashed #8b8b8b;
+    display: flex;
+}
+
+.show__body {
+    margin-top: 20px;
+}
+
+.show__body_under {
+    border-bottom: 1px dashed #8b8b8b;
+    margin-top: 25px;
+}
+
+.shops__content {
+    display: flex;
+}
+
+.shops__img {
+    margin-right: 25px;
+    width: 175px;
+    flex-shrink: 0;
+}
+
+.shops__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shops__info_name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shops__info_phone_row .contacts_phone-icon {
+    fill: var(--main-color);
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+}
+
+.shops__info_metro_row .contacts_icon_metro {
+    fill: var(--main-color);
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+}
+
+.shops__info_name .contacts_icon_location {
+    fill: #000;
+    margin-right: 3px;
+    width: 12px;
+    height: 12px;
+
+}
+
+@media (max-width: 992px) {
+    .show__header {
+        display: none;
+    }
+
+    .show__body {
+        flex-direction: column;
+    }
+
+    .shops__info_metro_row {
+        justify-content: left;
+    }
+
+    .shops__info_phone_row {
+        justify-content: left;
+    }
+
+    .shops__info_payment {
+        justify-content: left;
+    }
+}

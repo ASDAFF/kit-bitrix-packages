@@ -1,0 +1,231 @@
+textarea.feedback_block__form_input {
+    margin-top: 11px;
+}
+
+.row .puzzle_block__form_label input:focus,
+.row .puzzle_block__form_label input:valid {
+    box-shadow: none;
+}
+
+.feedback_block .main-input-md__wrapper {
+    width: 100%;
+}
+
+.main_checkbox.conf label:hover {
+    color: #000000 !important;
+}
+
+.main_checkbox.conf label .confidential {
+    transition: color 0.2s ease;
+}
+
+.main_checkbox.conf label .confidential:hover {
+    color: #fb0040;
+}
+
+.feedback_block .main-input-md::placeholder {
+    color: #808080;
+}
+
+.feedback_block .success-message {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.feedback_block .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.feedback_block .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.feedback_block__main-page {
+    padding: 40px 0 50px;
+    background: #F7F7F7;
+}
+
+.feedback_block__main-page .feedback_block__title,
+.feedback_block__main-page .feedback_block__comment {
+    text-align: center;
+}
+
+.feedback_block__main-page .feedback_block__title {
+    margin-bottom: 10px;
+}
+
+.feedback_block__main-page .feedback_block__compliance {
+    margin-top: 20px;
+}
+
+.feedback_block__main-page .feedback_block__comment {
+    margin-bottom: 40px;
+}
+
+.feedback_block__main-page.feedback_block .main_btn-big {
+    width: 100%;
+}
+
+.feedback_block__main-page.feedback_block .checkbox__label a {
+    vertical-align: inherit;
+}
+
+.feedback_block__main-page.feedback_block .feedback_block__compliance {
+    padding-left: 15px;
+}
+
+
+.feedback_block .phone_input_feedback .main-input-md__wrapper {
+    width: calc(100% - 60px);
+}
+
+.feedback_block .phone_input_feedback .main-input-md__wrapper.fullsize {
+    width: 100%;
+}
+
+.feedback_block .phone_input_feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback_block__select-country-popup {
+    position: absolute !important;
+}
+
+.feedback_block .phone_input__flag {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #DADADA;
+    border-radius: 4px 4px 0 0;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position-x: center !important;
+}
+
+.feedback_block .phone_input__flag:hover {
+    border-color: #BDBDBD;
+}
+
+.feedback_block .phone_input__flag .bx-flag-16::after,
+.feedback_block .phone_input__flag .bx-flag-24::after,
+.feedback_block .phone_input__flag .bx-flag-32::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.feedback_block .phone_input__flag .bx-flag-16::before,
+.feedback_block .phone_input__flag .bx-flag-24::before,
+.feedback_block .phone_input__flag .bx-flag-32::before {
+    content: '';
+    top: 36%;
+    right: 11px;
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    transform: rotate(-45deg);
+}
+
+.main_checkbox.conf label .confidential:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 900px) {
+    .feedback_block .row {
+        flex-direction: column;
+    }
+
+    .feedback_block .col-xl-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .feedback_block .feedback_block__compliance .cntr {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .feedback_block__main-page .feedback_block__comment {
+        margin-bottom: 20px;
+    }
+
+    .feedback_block__main-page {
+        padding: 20px 0 30px;
+    }
+}
+
+.main_checkbox.conf label .confidential:hover {
+    color: var(--main-color);
+}
+
+.feedback_block {
+    background: #fafafa;
+    padding: 2rem 15px;
+    text-align: center;
+}
+
+.feedback_block .feedback_block__form_input {
+    font-weight: 400;
+}
+
+.feedback_block .feedback_block__form_input::-webkit-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block .feedback_block__form_input::-moz-placeholder {
+    color: #747474;
+}
+
+.feedback_block .feedback_block__form_input:-ms-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block .feedback_block__form_input::-ms-input-placeholder {
+    color: #747474;
+}
+
+.feedback_block .feedback_block__form_input::placeholder {
+    color: #747474;
+}
+
+.feedback_block__comment {
+    text-align: center;
+}
+
+.feedback_block__text {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.feedback_block__text .success-message {
+    color: green;
+}

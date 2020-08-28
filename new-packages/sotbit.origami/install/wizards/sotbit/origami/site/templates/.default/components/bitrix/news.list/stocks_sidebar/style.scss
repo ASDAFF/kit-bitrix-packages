@@ -1,0 +1,83 @@
+.stocks__sidebar-item {
+    margin-bottom: 30px;
+
+    span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &[data-active='true'] {
+        order: 0;
+        color: #ffffff;
+        background-color: var(--main-color);
+
+    }
+
+    .stocks__sidebar-item-video-title {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ededed;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.stocks__sidebar-item {
+    margin-bottom: 30px;
+}
+
+.stocks__sidebar-item-title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.stocks-subscribe {
+
+    .email-subscribe {
+        display: flex;
+        align-items: center;
+
+        input {
+            height: 40px;
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 1px solid #ededed;
+
+            &::placeholder {
+                color: #808080;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 40px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 0;
+        }
+
+        .icon_mail {
+            fill: #ffffff;
+        }
+    }
+
+    .stocks-subscribe__types-title {
+        margin: 20px 0 10px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #808080;
+    }
+
+    .main_checkbox label {
+        margin-bottom: 10px;
+        color: #808080;
+    }
+}
+

@@ -1,0 +1,32 @@
+.brand-detail__text {
+    padding-right: 10px;
+}
+
+.brand-detail__picture {
+    width: 305px;
+    height: 305px;
+    border: 1px solid #ececec;
+    position: relative;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.brand-detail__picture img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    outline: 1px solid transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 450ms ease, width 450ms ease, height 450ms ease, outline 450ms ease;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.brand-detail__detail {
+    margin-bottom: 30px;
+}

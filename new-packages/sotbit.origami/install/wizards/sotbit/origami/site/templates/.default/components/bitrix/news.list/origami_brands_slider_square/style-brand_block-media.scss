@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .brand_block_variant__wrapper-square {
+        &:hover {
+            .btn-slider-main {
+                display: block;
+            }
+        }
+    }
+}

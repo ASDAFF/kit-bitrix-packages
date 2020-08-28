@@ -1,0 +1,96 @@
+.about__puzzle_block {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 60px;
+}
+
+.about-block__wrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.about_block {
+  display: flex;
+}
+
+.about_block__img-wrapper {
+    flex: 0 0 50%;
+}
+
+.about_block__img {
+    margin-right:31px;
+    flex-shrink: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.about_block__content_item {
+  padding-bottom: 2rem;
+}
+
+.about_block__title {
+  padding-bottom: 1.8rem;
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+
+.about_block__content-title {
+  padding-bottom: 6px;
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+
+.about__puzzle_block__title {
+  padding-bottom: 3.1rem;
+}
+
+.about_block__name {
+  margin-bottom: 1px;
+}
+
+.about_block__features {
+  margin-bottom: 3px;
+  font-size: 1.1rem;
+}
+
+.about_block__list {
+  padding-left: 16px !important;
+  margin-bottom: 18px;
+}
+
+.about_block__list .about_block__item {
+  position: relative;
+  margin-bottom: 0.28rem;
+  padding-left: 1.2rem;
+}
+
+.about_block__content li::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fb0040;
+}
+
+.about__fas {
+  font-weight: 400;
+  vertical-align: middle;
+  margin-left: -2px;
+}
+
+.about__more {
+  padding-left: 2px;
+  color: #807f7f;
+  font-size: 13px;
+}
+
+.about_block .about_block__content li::after {
+    background-color: var(--main-color);
+}

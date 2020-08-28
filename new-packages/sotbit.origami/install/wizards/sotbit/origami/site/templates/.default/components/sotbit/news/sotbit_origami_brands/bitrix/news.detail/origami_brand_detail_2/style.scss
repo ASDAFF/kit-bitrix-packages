@@ -1,0 +1,114 @@
+.brand-detail-info:not(.without-banner) {
+    .brand-detail-info__banner {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 140px;
+        margin-bottom: 30px;
+    }
+
+    .brand-detail-info__banner-logo-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .brand-detail-info__banner-bg-image {
+        width: 100%;
+        height: 100%;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .brand-detail-info__banner-logo {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .brand-detail-info__description-text-wrapper {
+        font-size: 14px;
+        line-height: 21px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .brand-detail-info__description-text {
+        display: block;
+    }
+
+    .brand-detail-info__collapse-btns {
+        display: none;
+        margin-top: 10px;
+        cursor: pointer;
+
+        .brand-detail-info__collapse-btns-show {
+            display: block;
+        }
+
+        .brand-detail-info__collapse-btns-hide {
+            display: none;
+        }
+
+        &[data-active='true'] {
+            .brand-detail-info__collapse-btns-show {
+                display: none;
+            }
+
+            .brand-detail-info__collapse-btns-hide {
+                display: block;
+            }
+        }
+    }
+}
+
+.brand-detail-info.without-banner {
+    .brand-detail-info__banner {
+        position: relative;
+        width: 305px;
+        height: 305px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        float: right;
+        border: 1px solid #ececec;
+    }
+
+    .brand-detail-info__banner-logo-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .brand-detail-info__banner-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@import "madia.scss";

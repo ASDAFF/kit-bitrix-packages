@@ -1,0 +1,42 @@
+//@import "variables.scss";
+
+///////////////////////////////////
+
+
+@media (max-width: 1024px) {
+    .blog_list__img_link {
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1199.98px) and (min-width: 992px){
+  .blog_block_big .blog_block__item {
+    overflow: hidden;
+    max-height: 480px;
+  }
+  .blog_block__content_title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .blog_block_big {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog__wrapper,
+  .blog_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog_wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

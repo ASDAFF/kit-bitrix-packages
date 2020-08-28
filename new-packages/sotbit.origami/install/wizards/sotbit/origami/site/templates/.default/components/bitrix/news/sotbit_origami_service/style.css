@@ -1,0 +1,25 @@
+.promotions_list__text {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.promotions_list__text {
+    margin-bottom: 26px;
+}
+
+.promotions_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.promotions_list__title {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 576px) {
+    .promotions_wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

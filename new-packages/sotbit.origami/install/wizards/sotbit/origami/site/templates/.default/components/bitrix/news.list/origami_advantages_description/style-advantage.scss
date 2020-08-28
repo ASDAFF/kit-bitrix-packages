@@ -1,0 +1,53 @@
+.advantage_variant_one {
+    .block_main_advantage_variant__item_link {
+        display: block;
+        transition: all 0.2s;
+
+        & svg {
+            transition: all 0.2s;
+        }
+
+        & .block_main_advantage_variant__comment {
+            color: #000;
+        }
+
+        &:hover svg {
+            fill: var(--main-color);
+        }
+
+        &:hover {
+            color: var(--main-color);
+        }
+    }
+
+    .block_main_advantage_variant_one {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block_main_advantage_variant__item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .block_main_advantage_variant__content {
+        padding-left: 1rem;
+    }
+
+    .block_main_advantage_variant__icons img {
+        width: 4.2rem;
+    }
+
+    .block_main_advantage_variant__comment {
+        padding-bottom: 0;
+    }
+
+    .fonts__small_weight_title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        font-family: $main_font, Arial, sans-serif;
+    }
+}

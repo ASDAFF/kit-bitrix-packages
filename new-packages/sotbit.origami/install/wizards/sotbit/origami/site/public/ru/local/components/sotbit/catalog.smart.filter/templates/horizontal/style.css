@@ -1,0 +1,103 @@
+.popup-window {
+    /*padding: 0 12px;*/
+    border: 1px solid #ededed;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.bx-filter-select-popup ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.bx-filter-select-popup ul li {
+    height: 42px;
+    border-bottom: 1px solid #ededed;
+}
+.bx-filter-select-popup ul li::before {
+    content: none;
+}
+.bx-filter-select-popup ul li:last-child {
+    border-bottom: none;
+}
+.bx-filter-select-popup ul li label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+}
+.bx-filter-select-popup ul li label.disabled {
+    color: #e4e4e4;
+}
+
+.icon-nav_button-rotate:before {
+    content: "\e914";
+    display: inline-block;
+    font-size: 7px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+@media (max-width: 575px) {
+    .bx_filter form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.bx-filter-mb {
+    margin-bottom: 20px;
+}
+
+.mobile_filter-icon_cancel_small {
+    display: none;
+}
+
+.catalog_content__filter_horizon .bx_filter .filter-size input:checked + label {
+    border: none;
+}
+
+.catalog_content__filter_horizon .bx_filter .filter-size input:hover + label {
+    border-color: transparent;
+}
+
+.catalog_content__filter_horizon .bx_filter .checkbox__label:hover:before {
+    border: 1px solid var(--main-color);
+}
+
+.catalog_content__filter_horizon .bx_filter .catalog_content__filter_horizon_item_inner .find_property_all_check {
+    color: var(--main-color);
+}
+
+.catalog_content__filter_horizon .bx_filter .catalog_content__filter_horizon_item_inner .find_property_all_check:hover {
+    color: var(--main-color-hover);
+}
+
+.catalog_content__filter_horizon .bx_filter .catalog_content__filter_horizon_item_inner .radio_container_wrapper .radio_container:hover {
+    color: var(--main-color);
+}
+
+.bx_filter .bx_filter_popup_result {
+    background-color: var(--main-color);
+}
+
+.bx_filter .bx_filter_popup_result .popup_result_btns {
+    background-color: var(--main-color);
+}
+
+.bx_filter .bx_filter_popup_result .popup_result_btns a {
+    background-color: var(--main-color);
+}
+
+.bx_filter .bx_filter_popup_result::after {
+    background-color: var(--main-color);
+}
+
+.popup_result_info {
+    display: inline-block;
+}

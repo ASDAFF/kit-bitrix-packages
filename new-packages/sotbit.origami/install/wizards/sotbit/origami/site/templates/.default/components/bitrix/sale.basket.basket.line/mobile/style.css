@@ -1,0 +1,35 @@
+.bx-basket {
+  display: inline-block;
+}
+
+.wrap-top-block-right1 .bx-closed .bx-basket-item-list {
+  height: 0;
+}
+
+.basket-block {
+    text-align: right;
+}
+
+.basket-block__link {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+    color: #c3c3c3;
+}
+
+.basket-block__link_basket_cal {
+    position: absolute;
+    background: var(--main-color);
+    display: block;
+    width: 1.33rem;
+    height: 1.33rem;
+    border-radius: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.33rem;
+    bottom: -0.3rem;
+    right: 0;
+}

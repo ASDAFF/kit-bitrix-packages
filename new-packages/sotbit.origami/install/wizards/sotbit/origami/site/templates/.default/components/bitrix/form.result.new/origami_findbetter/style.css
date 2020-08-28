@@ -1,0 +1,135 @@
+.captcha-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon_refresh {
+    transition: all 0.3s ease;
+}
+
+.feedback_block__captcha_img {
+    display: flex;
+}
+
+.origami_foundcheaper {
+    max-width: 429px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block {
+    margin: 22px 30px 20px 30px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block input,
+.sotbit_order_phone .sotbit_order_phone__block textarea {
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 5px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block input {
+    height: 40px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block textarea {
+    height: 120px;
+    margin-bottom: 10px;
+    min-height: 40px;
+    max-height: 400px;
+}
+
+.sotbit_order_phone .sotbit_order_phone__block_title {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.sotbit_order_phone .sotbit_order_phone__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 16px 45px 17px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.sotbit_order_phone input[type="submit"],
+.sotbit_order_phone input[type="button"] {
+    cursor: pointer;
+    outline: none;
+    line-height: 39px;
+    display: inline-block;
+    height: 40px;
+    padding: 0 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.sotbit_order_phone .feedback_block__compliance {
+    padding-left: 0;
+}
+
+.sotbit_order_phone .feedback_block__compliance .cntr {
+    justify-content: flex-start;
+    margin: 0 30px;
+}
+
+.feedback_block__compliance_link {
+    color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .sotbit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
+        padding-left: 0.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sotbit_order_phone .sotbit_order_phone__block_title {
+        padding-bottom: 12px;
+    }
+
+    .sotbit_order_phone .feedback_block__compliance {
+        margin-top: 21px;
+    }
+
+    .sotbit_order_phone .feedback_block__compliance .cntr {
+        align-items: flex-start;
+    }
+
+    .sotbit_order_phone input[type="button"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sotbit_order_phone .sotbit_order_phone__block {
+        margin-bottom: 15px;
+    }
+}
+
+.feedback_block__compliance_link {
+    color: var(--main-color);
+}
+
+.feedback_block__compliance_link:hover {
+    color: var(--main-color-hover);
+}
+
+.captcha-refresh .icon_refresh {
+    fill: var(--main-color);
+}
+
+.captcha-refresh:hover .icon_refresh {
+    fill: var(--main-color-hover);
+}

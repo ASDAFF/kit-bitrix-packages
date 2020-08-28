@@ -1,0 +1,178 @@
+@media (max-width: 1200px) {
+    .vlog-detail .vlog-detail__video-wrapper {
+        height: 378px;
+    }
+
+    .vlog-detail {
+
+        .vlog-detail__list-video-link {
+            width: 120px;
+            height: 67px;
+        }
+    }
+
+    .vlog-detail .vlog-detail__list-video-date {
+        font-size: 12px;
+    }
+
+    .vlog-detail .vlog-detail__list-video-title {
+        margin-bottom: 6px;
+    }
+
+    .vlog-detail .vlog-detail__list-video-date .icon_clock {
+        height: 12px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body h1:not([class]) {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 850px) {
+    .vlog-detail {
+
+        .vlog-detail__videos-list-title {
+            margin-bottom: 15px;
+        }
+
+        .vlog-detail__video-container {
+            height: 410px;
+        }
+
+        .vlog-detail__list-video-title {
+            white-space: normal;
+        }
+
+        .vlog-detail__list-video {
+            display: inline-block;
+            width: 180px;
+            margin-right: 20px;
+            font-size: 0;
+
+            & + .vlog-detail__list-video {
+                margin-top: 0;
+            }
+        }
+
+        .vlog-detail__video-wrapper {
+            flex-direction: column;
+            max-height: 670px;
+            height: auto;
+        }
+
+        .vlog-detail__videos-list-wrapper-outer {
+            max-height: 261px;
+            width: 100%;
+        }
+
+        .vlog-detail__sidebar {
+            display: none;
+        }
+
+        .vlog-detail__list-video-link {
+            width: 180px;
+            height: 100px;
+            max-height: 100px;
+            margin: 0 0 13px;
+        }
+
+        .vlog-detail__description-date {
+            font-size: 14px;
+        }
+
+        .vlog-detail__videos-list-title {
+            padding: 0 20px;
+        }
+
+        .vlog-detail__videos-list-wrapper {
+            padding: 20px 0 10px;
+        }
+
+        .vlog-detail__videos-list-wrapper-shadow {
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 20.38%, rgba(255, 255, 255, 0.73) 100%);
+            width: 8%;
+            right: 0;
+            left: auto;
+        }
+    }
+
+    .vlog-detail__videos-list-content {
+        display: inline-block;
+        padding: 0 0 10px 20px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    body h1:not([class]) {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    body h1:not([class]) {
+        padding-bottom: 20px;
+    }
+
+    .vlog-detail {
+        .vlog-detail__video-container {
+            height: 163px;
+        }
+
+        .vlog-detail__list-video {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .vlog-detail__list-video + .vlog-detail__list-video {
+            margin-top: 15px;
+        }
+
+        .vlog-detail__list-video-link {
+            margin: 0 10px 0 0;
+            width: 120px;
+            height: 67px;
+        }
+
+        .vlog-detail__videos-list-wrapper {
+            max-height: 261px;
+        }
+
+        .vlog-detail__videos-list-wrapper-shadow {
+            height: 8%;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20.38%, rgba(255, 255, 255, 0.73) 100%);
+        }
+
+        .vlog-detail__videos-list-title {
+            margin-bottom: 10px;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .vlog-detail__videos-list-wrapper {
+            margin-top: 15px;
+            padding: 0 10px 15px;
+        }
+
+        .vlog-detail__description-text {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    body h1:not([class]) {
+        font-size: 20px;
+    }
+
+    .vlog-detail__videos-list-content {
+        display: block;
+        padding: 0 0 15px;
+        white-space: normal;
+    }
+}

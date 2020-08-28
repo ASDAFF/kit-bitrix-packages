@@ -1,0 +1,3 @@
+<?
+$sSectionName="socserv.auth.form";
+?>

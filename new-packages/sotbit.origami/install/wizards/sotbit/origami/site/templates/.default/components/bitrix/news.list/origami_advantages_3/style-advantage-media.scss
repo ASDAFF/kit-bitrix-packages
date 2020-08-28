@@ -1,0 +1,72 @@
+@media (max-width: 1400px) {
+    .block_main_advantage_variant-three__item {
+        padding: 0 1rem 0 0;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .block_main_advantage_variant-three__comment {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .block_main_advantage_variant-three,
+    .block_main_advantage__one {
+        width: 50%;
+        margin-bottom: 1.5rem;
+        padding-left: 0;
+    }
+
+    .block_main_advantage__one:last-child,
+    .block_main_advantage_variant-three:last-child {
+        margin-bottom: 0;
+    }
+    .block_main_advantage_variant_three,
+    .block_main_advantage {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .block_main_advantage {
+        padding: 0 15px;
+    }
+
+    .block_main_advantage_variant_three {
+        padding: 0 10px;
+    }
+
+    .block_main_advantage_icons img {
+        width: 60px;
+    }
+
+    .block_main_advantage__one {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .block_main_advantage_variant-three,
+    .block_main_advantage__one {
+        width: 100%;
+    }
+
+    .block_main_advantage {
+        padding: 0 15px;
+    }
+
+    .block_main_advantage_variant_three {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+

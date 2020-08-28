@@ -1,0 +1,247 @@
+body h1:not([class]) {
+    display: none;
+    padding-bottom: 20px;
+    font-size: 31px;
+}
+
+.service-order {
+
+    .service-order__detail-description-show-more {
+        display: none;
+    }
+
+    .service-detail-item__content-hidden-counter {
+        display: inline-flex;
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .service-order__detail-description-text-wrapper {
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .service-detail-item__content-hidden-counter-btn {
+        height: 100%;
+        background: 0;
+        border: 1px solid #ededed;
+    }
+
+    .service-detail-item__content-hidden-counter-input {
+        width: 36px;
+        text-align: center;
+        border: 0;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+    }
+
+    .service-order__banner-buttons-byu-in-click-icon {
+        fill: #ffffff;
+        stroke: var(--main-color);
+        display: none;
+    }
+
+    .in_basket.main_btn-white {
+        margin-top: 10px;
+    }
+
+    .service-order__banner {
+        margin-bottom: 30px;
+        padding: 30px 40px;
+        border: 1px solid #EDEDED;
+
+        background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.95) 100%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%),
+        url('./banner_bg_5.png');
+
+        background-position: 0, 470px 0, center;
+        background-size: 470px 100%, 335px 100%, cover;
+        background-repeat: no-repeat;
+
+        .service-order__banner-content-mobile-banner {
+            display: none;
+        }
+
+        .service-order__banner-content {
+            max-width: 620px;
+        }
+
+        .service-order__banner-title {
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 37px;
+        }
+
+        .service-order__banner-description {
+            margin-bottom: 20px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .service-order__banner-price-title {
+            font-size: 12px;
+            line-height: 18px;
+            color: #808080;
+        }
+
+        .service-order__banner-price-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .service-order__banner-amount {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .service-order__banner-discount {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 25px;
+            text-decoration: line-through;
+            color: #808080;
+        }
+
+        .service-order__banner-economy {
+            margin-bottom: 20px;
+            font-size: 11px;
+            line-height: 17px;
+        }
+
+        .service-order__banner-economy-title {
+            display: inline-block;
+            margin-right: 5px;
+            color: #808080;
+        }
+
+        .service-order__banner-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service-order__banner-economy-amount {
+            display: inline-block;
+            padding: 0 5px;
+            color: #00B02A;
+            border: 1px solid;
+        }
+
+        .service-order__banner-buttons-add-wrapper {
+            display: inline-block;
+        }
+
+        .service-order__banner-buttons-add {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 160px;
+            height: 40px;
+            margin-right: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: var(--main-color);
+            border: 1px solid var(--main-color);
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: var(--main-color-hover);
+            }
+        }
+
+        .service-order__banner-buttons-byu-in-click {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 160px;
+            height: 40px;
+            margin-top: 10px;
+            color: var(--main-color);
+            background: none;
+            border: 1px solid var(--main-color);
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &.btnLoaderCustom {
+                color: transparent !important;
+            }
+
+            &:hover {
+                color: var(--main-color-hover);
+                border-color: var(--main-color-hover);
+            }
+
+            .loader-btn {
+                svg {
+                    fill: var(--main-color);
+                }
+            }
+        }
+    }
+
+    .service-order__detail {
+        display: flex;
+        margin-bottom: 40px;
+
+        .service-order__detail-description-title {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .service-order__detail-description-text {
+            text-align: justify;
+            line-height: 20px;
+
+            ul {
+
+                li {
+                    margin-bottom: 15px;
+                    color: var(--main-color);
+                }
+
+                span {
+                    color: #000000;
+                }
+            }
+        }
+
+        .service-order__detail-params {
+            width: 430px;
+            padding: 30px;
+            flex-shrink: 0;
+            margin-left: 30px;
+            background-color: #fafafa;
+        }
+
+        .service-order__detail-params-item {
+
+            & + .service-order__detail-params-item {
+                margin-top: 20px;
+            }
+        }
+
+        .service-order__detail-params-title {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #808080;
+        }
+
+        .service-order__detail-params-data {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+
+            & + .service-order__detail-params-title {
+                margin-top: 15px;
+            }
+        }
+    }
+}

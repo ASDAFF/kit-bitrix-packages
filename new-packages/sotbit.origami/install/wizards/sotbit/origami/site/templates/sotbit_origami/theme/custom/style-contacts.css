@@ -1,0 +1,12 @@
+
+@media (max-width: 1374px) {
+  .header-five .contacts-block {
+    margin: 0; }
+    .header-five .contacts-content-size-wrapper {
+      padding: 0; }
+
+  .contacts-block {
+    margin: 0 -15px; }
+
+  .contacts-content-size-wrapper {
+    padding: 0 15px; } }

@@ -1,0 +1,133 @@
+.brand-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.inner.logo-wrapper {
+    display: block;
+}
+
+.brand-list-wrapper__item {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: calc(25% - 30px);
+    height: 280px;
+    margin: 0 15px 30px;
+
+    &:hover {
+
+        .back {
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+
+        .front {
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform: rotateY(-180deg);
+            transform-style: preserve-3d;
+        }
+    }
+}
+
+.front,
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    border: 1px solid #EDEDED;
+
+    &:hover {
+        color: #000000;
+    }
+}
+
+.brand-list-wrapper__item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    .brand-list-wrapper__item-description-logo {
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .brand-list-wrapper__item-description-text {
+        max-height: 105px;
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 21px;
+        overflow: hidden;
+    }
+
+    .brand-list-wrapper__item-description-link {
+        font-size: 13px;
+        line-height: 20px;
+
+        span {
+            color: #808080;
+        }
+    }
+}
+
+.front {
+    background-color: #ffffff;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+
+    .inner p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #F7F7F7;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.logo-wrapper {
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateZ(60px) scale(0.94);
+}
+
+body .brands_list__text {
+    margin-top: 0;
+}
+
+@import "media.scss";

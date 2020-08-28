@@ -1,0 +1,108 @@
+.advantage {
+    margin-left: auto;
+    margin-right: auto;
+
+    .block_main_advantage_item {
+        display: flex;
+        align-items: center;
+    }
+
+    .block_main_advantage_icons {
+        margin-right: 1rem;
+    }
+
+    .block_main_advantage_icons img {
+        width: 4.2rem;
+    }
+
+    .block_main_advantage_item_link {
+        display: block;
+        transition: all 0.2s;
+
+        .block_main_advantage_icons svg {
+            fill: #000;
+            transition: all 0.2s;
+        }
+
+        &:hover {
+            color: var(--main-color);
+            cursor: pointer;
+        }
+
+        &:hover .block_main_advantage_icons svg {
+            fill: var(--main-color);
+        }
+    }
+
+    .block_main_advantage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block_main_advantage_variant__item_link {
+        display: block;
+        transition: all 0.2s;
+
+        & svg {
+            transition: all 0.2s;
+        }
+
+        & .block_main_advantage_variant__comment {
+            color: #000;
+        }
+
+        &:hover {
+            color: var(--main-color);
+
+            svg {
+                fill: var(--main-color);
+            }
+        }
+
+
+    }
+
+    .block_main_advantage_variant_one {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block_main_advantage_variant {
+        width: 25%;
+        padding-left: 1rem;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    .fonts__small_weight_title {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .block_main_advantage_variant__item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .block_main_advantage_variant__content {
+        padding-left: 1rem;
+    }
+
+    .block_main_advantage_variant__icons img {
+        width: 4.2rem;
+    }
+
+    .block_main_advantage_variant__comment {
+        padding-bottom: 0;
+    }
+
+    .block_main_advantage_variant__title.main_color {
+        color: var(--main-color);
+    }
+
+}

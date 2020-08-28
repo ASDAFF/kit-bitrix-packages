@@ -1,0 +1,114 @@
+@import "variables.scss";
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+/* ___________ left menu __________________ */
+
+.block_main_left_menu {
+    display: flex;
+
+    .fa-angle-left {
+        display: none;
+    }
+}
+
+.block_main_left_menu__container {
+    width: $left_menu_width;
+    margin-top: 28px;
+}
+
+.block_main_left_menu__content.active {
+    width: calc(100% - #{$left_menu_width}) !important;
+    padding-left: 2rem;
+
+    & .breadcrumb_block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .banter-loader {
+        position: fixed;
+        left: calc(50% + #{$left_menu_width / 2});
+    }
+
+    &.right {
+        padding-right: 2rem;
+        padding-left: 0;
+    }
+}
+
+/*change menu left or right*/
+
+.block_main_left_menu.right {
+    flex-direction: row-reverse;
+
+    .block_main_left_menu__content.active {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    .block_main_left_menu__list_child {
+        position: absolute;
+        right: 100%;
+        left: auto;
+        top: 0;
+        width: 265px;
+        margin-top: -1px;
+        margin-left: 0;
+        margin-right: 0;
+
+
+        & > li::after {
+            left: auto;
+            right: 0;
+        }
+
+        & .block_main_left_menu__list_child_link {
+            padding: 7px 15px;
+            padding-left: 45px;
+            min-height: 56px;
+        }
+    }
+
+    .block_main_left_menu__link-icon {
+        left: 1rem;
+    }
+
+    .block_main_left_menu__link-arrow {
+        transform: rotate(90deg);
+    }
+
+    .block_main_left_menu__link {
+        padding: 7px 15px;
+        padding-left: 45px;
+        min-height: 56px;
+    }
+
+    & .block_main_left_menu__list .bx-inclinkspersonal-selected::after {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        right: auto;
+        margin-top: -5px;
+        font-size: 11px;
+        content: "\e90b";
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        color: #fff;
+        transform: scaleX(-1);
+    }
+
+    .block_main_left_menu__list_item::after {
+        left: auto;
+        right: 0;
+    }
+
+}

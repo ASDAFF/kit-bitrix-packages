@@ -1,0 +1,33 @@
+.sale-paysystem-wrapper {
+    padding: 0;
+    font-family: unset;
+    border: none;
+}
+
+span.tablebodytext span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sale-paysystem-yandex-button-item {
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: unset;
+}
+
+.sale-paysystem-yandex-button-descrition {
+    font-size: 12px;
+    font-family: unset;
+    color: #8b8b8b;
+}
+
+.sale-paysystem-wrapper p {
+    padding: 0;
+}
+
+.sale-paysystem-description {
+    font-size: 12px;
+    font-family: unset;
+    color: #313131;
+}

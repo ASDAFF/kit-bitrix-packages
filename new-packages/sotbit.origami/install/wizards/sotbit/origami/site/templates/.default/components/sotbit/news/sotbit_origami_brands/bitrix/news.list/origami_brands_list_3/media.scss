@@ -1,0 +1,80 @@
+@media (max-width: 1024px) {
+    .brand-list-wrapper__item {
+        width: calc(100% / 3 - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .brand-list-wrapper {
+        margin: 0 -10px;
+    }
+
+    .front,
+    .back {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 840px) {
+    .brand-list-wrapper__item {
+
+        .back {
+            display: none;
+        }
+
+        &:hover {
+            .back,
+            .front {
+                transition: none;
+                transform: none;
+            }
+        }
+    }
+
+    .brand-list-wrapper__item-description .brand-list-wrapper__item-description-text {
+        max-height: 84px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .brand-list-wrapper__item {
+        height: 236px;
+    }
+
+    body .brands_list__text {
+        margin-bottom: 20px;
+
+        p {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .brand-list-wrapper__item {
+        width: calc(50% - 10px);
+        margin: 0 5px 10px;
+    }
+
+    .brand-list-wrapper {
+        margin: 0 -5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .brand-list-wrapper__item {
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .brand-list-wrapper__item {
+        height: 180px;
+    }
+}
+
+@media (max-width: 320px) {
+    .brand-list-wrapper__item {
+        height: 145px;
+    }
+}

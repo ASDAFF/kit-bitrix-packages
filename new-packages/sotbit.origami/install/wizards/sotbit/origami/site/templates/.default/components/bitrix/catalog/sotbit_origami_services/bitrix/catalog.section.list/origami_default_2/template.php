@@ -1,0 +1,46 @@
+<?php
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+    die();
+}
+use Sotbit\Origami\Helper\Config;
+global $sotbitSeoMetaBottomDesc;
+global $sotbitSeoMetaTopDesc;
+global $sotbitSeoMetaAddDesc;
+global $sotbitSeoMetaFile;
+global $issetCondition;
+global ${$arParams["FILTER_NAME"]};
+
+$this->setFrameMode(true);
+$hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
+$lazyLoad = (Config::get('LAZY_LOAD') == "Y");
+?>
+<div class="services-wrapper">
+
+    <?foreach ($arResult['SECTIONS'] as $SECTION):?>
+    <div class="service-item__wrapper">
+        <div class="service-item" <?if(isset($SECTION['DETAIL_PICTURE'])):?> style="background-image: url('<?=CFile::GetPath($SECTION['DETAIL_PICTURE'])?>')" <?endif;?> >
+            <div class="service-item__content-wrapper">
+                <div class="service-item__content">
+                    <a class="service-item__title" href="<?=$SECTION['SECTION_PAGE_URL']?>">
+                        <span><?=$SECTION['NAME'];?></span>
+                    </a>
+                    <div class="service-item__links-resizer">
+                        <div>
+                            <div class="service-item__links-wrapper">
+                                <?if(isset($SECTION['CHILDREN'])):?>
+                                    <?foreach ($SECTION['CHILDREN'] as $CHILD):?>
+                                        <a href="<?=$CHILD['SECTION_PAGE_URL']?>" class="service-item__link main-color-txt-hov">
+                                            <span><?=$CHILD['NAME']?></span>
+                                        </a>
+                                    <?endforeach;?>
+                                <?endif;?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?endforeach;?>
+
+</div>

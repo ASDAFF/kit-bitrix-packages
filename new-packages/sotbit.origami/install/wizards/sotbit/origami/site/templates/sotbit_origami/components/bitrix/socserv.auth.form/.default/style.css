@@ -1,0 +1,137 @@
+.bx-authform-social-popup{
+	display: none;
+	background: #fff;
+	width: auto;
+	padding: 15px;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.bx-authform-social-popup form{margin-bottom: 0;}
+
+.bx-authform-social-popup input[type="text"] {
+	display: inline-block;
+	max-width: 150px;
+	font-size: 18px;
+	height: 30px;
+	margin: 0;
+	padding: 0 4px;
+	border: 1px solid #CCD5DB;
+	border-radius: 2px;
+	background: #f8fafc;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.bx-authform-social ul {
+  	padding: 5px 0 12px;
+  	margin: 0 0 15px;
+  	display: block;
+}
+
+.bx-authform-social ul li {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+}
+.bx-authform-social ul li .bx-authform-social-icon {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	border-bottom: none;
+	background-color: var(--main-color);
+	border-radius: 50%;
+}
+
+.bx-authform-social ul li .bx-authform-social-icon:hover {
+    background-color: var(--main-color-hover);
+}
+.popup-window-angly:before {
+    border: 1px solid #ced2d5;
+}
+.bx-authform-social ul li .bx-authform-social-icon:hover{opacity: .9;}
+.bx-authform-social ul li .bx-authform-social-icon.box {
+    background-image: url(images/social-icon_box.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.dropbox {
+    background-image: url(images/social-icon_dropbox.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.bitrix24 {
+    background-image: url(images/social-icon_bitrix24.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.yandex {
+    background-image: url(images/social-icon_yandex.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.openid {
+    background-image: url(images/social-icon_openid.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.odnoklassniki {
+    background-image: url(images/social-icon_odnoklassniki.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.google {
+    background-image: url(images/social-icon_google.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.mymailru {
+    background-image: url(images/social-icon_mymailru.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.livejournal {
+    background-image: url(images/social-icon_livejournal.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.openid-mail-ru {
+    background-image: url(images/social-icon_openid-mail-ru.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.liveid {
+    background-image: url(images/social-icon_liveid.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.liveinternet {
+    background-image: url(images/social-icon_liveinternet.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.blogger {
+    background-image: url(images/social-icon_blogger.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.vkontakte {
+    background-image: url(images/social-icon_vkontakte.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.twitter {
+    background-image: url(images/social-icon_twitter.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.facebook {
+    background-image: url(images/social-icon_facebook.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.google-plus {
+    background-image: url(images/social-icon_google-plus.svg);
+    background-position: 50% 50%;
+}
+.bx-authform-social ul li .bx-authform-social-icon.office365 {
+    background-image: url(images/social-icon_office365.svg);
+    background-position: 50% 50%;
+}
+
+.bx-authform-social ul li .bx-authform-social-icon {
+    background-color: var(--main-color);
+}
+
+.bx-authform-social ul li .bx-authform-social-icon:hover {
+    background-color: var(--main-color-hover);
+}

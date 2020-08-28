@@ -1,0 +1,37 @@
+.blog-detail__top {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ced2d5;
+    margin-bottom: 25px;
+}
+
+.blog-detail {
+    overflow: hidden;
+}
+
+.blog-detail .blog-date-time {
+    color: #949393;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.blog-detail__tag {
+    font-size: 12px;
+    color: #3f3f3f;
+    background: #f7f7f7;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-detail .detail_picture {
+    max-height: 335px;
+    object-fit: cover;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.blog-detail .blog-detail__preview-text {
+    margin-bottom: 15px;
+}

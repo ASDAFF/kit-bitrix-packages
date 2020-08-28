@@ -1,0 +1,130 @@
+@media (max-width: 1250px) {
+    .services-wrapper .service-item:hover .service-item__content {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-wrapper {
+
+        .service-item__link + .service-item__link {
+            margin-top: 10px;
+        }
+
+        .service-item__links-wrapper {
+            padding-top: 20px;
+        }
+
+        .service-item__title {
+            max-height: 58px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .service-item__link {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body h1:not([class]) {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .services-wrapper {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .service-item:hover .service-item__content {
+            padding: 30px;
+        }
+
+        .service-item__content {
+            padding: 30px;
+        }
+
+        .service-item__wrapper {
+            width: calc(100% / 3 - 20px);
+            padding-bottom: calc(100% / 3 - 20px);
+            margin: 10px;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    body h1:not([class]) {
+        padding-bottom: 10px;
+    }
+
+    .services-wrapper {
+        margin-bottom: 40px;
+
+        .service-item a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .service-item__title {
+            max-height: 52px;
+        }
+
+        .service-item__content {
+            padding: 40px 20px 20px;
+        }
+
+        .service-item:hover {
+
+            .service-item__content {
+                padding: 40px 20px 20px;
+            }
+
+            .service-item__content-wrapper {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+            }
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    body h1:not([class]) {
+        font-size: 24px;
+    }
+
+    .services-wrapper {
+
+        .service-item a {
+            text-align: center;
+        }
+
+        .service-item__wrapper {
+            width: calc(100% / 2 - 20px);
+            padding-bottom: calc(100% / 2 - 20px)
+        }
+
+        .service-item__content {
+            padding: 40px 15px 20px;
+        }
+
+        .service-item:hover .service-item__content {
+            padding: 40px 15px 20px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+
+    .services-wrapper .service-item__wrapper {
+        width: 100%;
+        padding-bottom: 100%;
+        max-height: 180px;
+        margin: 5px;
+    }
+
+    .services-wrapper {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .container_menu_mobile__phone_block.active .many_tels_wrapper,
+    .container_menu_mobile__phone_block,
+    .container_menu_mobile__phone_block .many_tels_wrapper .container_menu_mobile__main_phone {
+        border-top: 1px solid #ededed;
+    }
+
+    .container_menu_mobile__main_phone::before {
+        color: var(--main-color);
+    }
+}
+
+.container_menu_mobile__phone_block .many_tels_wrapper {
+    right: 0;
+    display: none;
+}
+
+.container_menu_mobile__phone_block{
+    position: relative;
+    display: inline-block;
+}

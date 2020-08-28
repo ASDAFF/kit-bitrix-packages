@@ -1,0 +1,15 @@
+
+:root {
+  --main-width: 1344px; }
+
+.size {
+  max-width: 1344px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+@media screen and (max-width: 1390px) {
+  .news-slider-wrapper {
+    overflow: hidden; } }
+
+.header-two__main-nav {
+  max-width: 1344px !important; }

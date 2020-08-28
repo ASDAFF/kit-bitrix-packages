@@ -1,0 +1,284 @@
+.popup-subscribe__wrapper .popup-window {
+  border: 0; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share__overlay.overlay-black {
+  display: block;
+  opacity: 0.3; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__content {
+  background-color: var(--main-color); }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__share {
+  bottom: calc(100% + 20px);
+  left: 50%;
+  opacity: 1;
+  visibility: visible; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__error {
+  left: calc(100% + 20px);
+  bottom: 50%;
+  opacity: 1;
+  visibility: visible; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__content-icon-close {
+  opacity: 1;
+  visibility: visible; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__content-icons-wrapper {
+  opacity: 0;
+  visibility: hidden; }
+
+.btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share:hover .btn_error-share__content {
+  background-color: var(--main-color-hover); }
+
+.btn_error-share {
+  display: inline-block;
+  position: fixed;
+  bottom: 50px;
+  left: 65px;
+  z-index: 2000;
+  cursor: pointer; }
+  .btn_error-share:hover .btn_error-share__content {
+    background-color: var(--main-color-hover); }
+  .btn_error-share .btn_error-share__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; }
+  .btn_error-share .btn_error-share__background-opacity {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-color: var(--main-color);
+    border-radius: 50%; }
+  .btn_error-share .btn_error-share__content {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden; }
+  .btn_error-share .btn_error-share__content-icon-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 56px;
+    height: 56px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .btn_error-share .btn_error-share__icon-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 56px;
+    height: 56px; }
+  .btn_error-share .icon_share,
+  .btn_error-share .icon_close,
+  .btn_error-share .icon_mistake_big {
+    fill: #ffffff;
+    stroke: #ffffff; }
+  .btn_error-share .btn_error-share__share {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 15px;
+    z-index: 10000;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden; }
+    .btn_error-share .btn_error-share__share:hover {
+      background-color: var(--main-color-hover); }
+
+@-webkit-keyframes slideIcons {
+  0% {
+    bottom: 2px; }
+  40% {
+    bottom: 2px; }
+  50% {
+    bottom: -100%; }
+  90% {
+    bottom: -100%; }
+  100% {
+    bottom: 2px; } }
+
+@keyframes slideIcons {
+  0% {
+    bottom: 2px; }
+  40% {
+    bottom: 2px; }
+  50% {
+    bottom: -100%; }
+  90% {
+    bottom: -100%; }
+  100% {
+    bottom: 2px; } }
+  .btn_error-share .btn_error-share__content-icons-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    -webkit-animation: 6s infinite slideIcons;
+            animation: 6s infinite slideIcons; }
+  .btn_error-share .btn_error-share__error {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 15px;
+    z-index: 10000;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden; }
+    .btn_error-share .btn_error-share__error:hover {
+      background-color: var(--main-color-hover); }
+
+.btn_error-share__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  .btn_error-share__overlay.overlay-black {
+    display: none;
+    background-color: #000000;
+    opacity: 0;
+    z-index: 1900; }
+  .btn_error-share__overlay.overlay-white {
+    display: none;
+    background-color: #ffffff;
+    opacity: 0.9;
+    z-index: 1900; }
+
+@media (max-width: 768px) {
+  .btn_error-share {
+    left: 15px;
+    bottom: 60px; }
+  .btn_error-share .btn_error-share__content {
+    width: 39px;
+    height: 39px; }
+  .btn_error-share .btn_error-share__content-icon-close {
+    width: 39px;
+    height: 39px; }
+  .btn_error-share .btn_error-share__wrapper {
+    width: 49px;
+    height: 49px; }
+  .btn_error-share .btn_error-share__icon-wrapper {
+    width: 39px;
+    height: 39px; }
+    .btn_error-share .btn_error-share__icon-wrapper .icon_share {
+      width: 16px;
+      height: 18px; }
+    .btn_error-share .btn_error-share__icon-wrapper .icon_mistake_big {
+      width: 18px;
+      height: 16px; }
+  .btn_error-share__overlays-wrapper[data-active="true"] .btn_error-share .btn_error-share__content-icon-close .icon_close {
+    width: 13px;
+    height: 13px; } }

@@ -1,0 +1,339 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot?9f3wba');
+    src:  url('../fonts/icomoon/icomoon.eot?9f3wba#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?9f3wba') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?9f3wba') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?9f3wba#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-nav_left:before {
+    content: "\e950";
+  }
+  
+  .icon-woman:before {
+    content: "\e94e";
+  }
+  .icon-smartphone:before {
+    content: "\e94f";
+  }
+  
+  .icon-check .path1:before {
+    content: "\e94c";
+    color: rgb(0, 0, 0);
+  }
+  .icon-check .path2:before {
+    content: "\e94d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  
+  .icon-tick:before {
+    content: "\e94b";
+  }
+  
+  .icon-history:before {
+    content: "\e91f";
+  }
+  .icon-list:before {
+    content: "\e920";
+  }
+  .icon-mastercard:before {
+    content: "\e921";
+  }
+  .icon-money-bag1:before {
+    content: "\e922";
+  }
+  .icon-moscow-metro-logo:before {
+    content: "\e923";
+  }
+  .icon-new .path1:before {
+    content: "\e924";
+    /*color: rgb(255, 193, 7);*/
+  }
+  .icon-new .path2:before {
+    content: "\e925";
+  }
+  .icon-new .path3:before {
+    content: "\e926";
+  }
+  .icon-new .path4:before {
+    content: "\e927";
+  }
+  .icon-new .path5:before {
+    content: "\e928";
+  }
+  .icon-no-waiting1:before {
+    content: "\e929";
+  }
+  .icon-percentage-discount:before {
+    content: "\e92a";
+  }
+  .icon-placeholder:before {
+    content: "\e92b";
+  }
+  
+  .icon-phone-call,
+  .icon-new-email-outline,
+  .icon-clock {
+    position: relative;
+  }
+  
+  .icon-phone-call,
+  .icon-new-email-outline,
+  .icon-clock {
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+  .icon-phone-call:before {
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    font-family: 'icomoon_new' !important;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../img/contacts/phone-call.svg) no-repeat;
+  }
+  .icon-new-email-outline:before {
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    font-family: 'icomoon_new' !important;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../img/contacts/message.svg) no-repeat;
+  }
+  .icon-clock:before {
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    font-family: 'icomoon_new' !important;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../img/contacts/clock.svg) no-repeat;
+  }
+  
+  
+  
+  .icon-play-button1:before {
+    content: "\e92c";
+  }
+  .icon-play-button:before {
+    content: "\e92d";
+  }
+  .icon-plus-symbol:before {
+    content: "\e92e";
+  }
+  .icon-resize-width:before {
+    content: "\e92f";
+  }
+  .icon-return:before {
+    content: "\e930";
+  }
+  .icon-right-arrow:before {
+    content: "\e931";
+  }
+  .icon-ruler:before {
+    content: "\e932";
+  }
+  .icon-share:before {
+    content: "\e933";
+  }
+  .icon-share-variant:before {
+    content: "\e934";
+  }
+  .icon-shipped1:before {
+    content: "\e935";
+  }
+  .icon-shopping-bag:before {
+    content: "\e936";
+  }
+  .icon-shopping-basket:before {
+    content: "\e937";
+  }
+  .icon-sort:before {
+    content: "\e938";
+  }
+  .icon-success1:before {
+    content: "\e939";
+  }
+  .icon-success:before {
+    content: "\e93a";
+  }
+  .icon-thumbs-up:before {
+    content: "\e93b";
+  }
+  .icon-user1:before {
+    content: "\e93c";
+  }
+  .icon-user:before {
+    content: "\e93d";
+  }
+  .icon-users1:before {
+    content: "\e93e";
+  }
+  .icon-users:before {
+    content: "\e93f";
+  }
+  .icon-visa-pay-logo:before {
+    content: "\e940";
+  }
+  .icon-wallet1:before {
+    content: "\e941";
+  }
+  .icon-calculator:before {
+    content: "\e943";
+  }
+  .icon-credit-card:before {
+    content: "\e944";
+  }
+  .icon-danger1:before {
+    content: "\e945";
+  }
+  .icon-dollar-money-cash:before {
+    content: "\e946";
+  }
+  .icon-filter-filled-tool-symbol:before {
+    content: "\e947";
+  }
+  .icon-free-delivery:before {
+    content: "\e948";
+  }
+  .icon-hanger:before {
+    content: "\e949";
+  }
+  .icon-avatar1:before {
+    content: "\e94a";
+  }
+  .icon-shipped:before {
+    content: "\e91a";
+  }
+  .icon-money-bag:before {
+    content: "\e91b";
+  }
+  .icon-success_order:before {
+    content: "\e91c";
+  }
+  .icon-wallet:before {
+    content: "\e91d";
+  }
+  .icon-avatar:before {
+    content: "\e91e";
+  }
+  .icon-no-waiting:before {
+    content: "\e918";
+  }
+  .icon-danger:before {
+    content: "\e919";
+  }
+  .icon-search:before {
+    content: "\e916";
+  }
+  .icon-magnifying-glass:before {
+    content: "\e917";
+  }
+  .icon-left:before {
+    content: "\e915";
+  }
+  .icon-nav_button:before {
+    content: "\e914";
+  }
+  .icon-shoe:before {
+    content: "\e907";
+  }
+  .icon-multimedia:before {
+    content: "\e908";
+  }
+  .icon-computers:before {
+    content: "\e909";
+  }
+  .icon-appliances:before {
+    content: "\e90e";
+  }
+  .icon-camp:before {
+    content: "\e90f";
+  }
+  .icon-electronics:before {
+    content: "\e910";
+  }
+  .icon-sporting:before {
+    content: "\e911";
+  }
+  .icon-sanitary:before {
+    content: "\e912";
+  }
+  .icon-clothing:before {
+    content: "\e913";
+  }
+  .icon-advantage-02:before {
+    content: "\e901";
+  }
+  .icon-advantage-01:before {
+    content: "\e902";
+  }
+  .icon-locked:before {
+    content: "\e90d";
+    /*color: #fff;*/
+  }
+  .icon-nav_2:before {
+    content: "\e90b";
+  }
+  .icon-nav_1:before {
+    content: "\e90c";
+    vertical-align: middle;
+  }
+  .icon-star:before {
+    content: "\e900";
+  }
+  .icon-compare:before {
+    content: "\e903";
+  }
+  .icon-bbasket:before {
+    content: "\e904";
+  }
+  .icon-advantage-03:before {
+    content: "\e905";
+  }
+  .icon-advantage-04:before {
+    content: "\e906";
+  }
+  .icon-eye:before {
+    content: "\e90a";
+  }
+  
+  .icon-left,
+  .icon-nav_1,
+  .icon-nav_button,
+  .icon-nav_2 {
+    font-size: 7px;
+  }
+  
+  .icon-nav_1 {
+    font-size: 7px !important;
+    padding-left: 4px !important;
+  }

@@ -1,0 +1,27 @@
+@import "../account-pay.scss";
+
+@media (max-width: 576px) {
+    .sale-acountpay-fixedpay-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sale-acountpay-fixedpay-list .sale-acountpay-fixedpay-item {
+        padding: 15px 0;
+    }
+
+    .sale-acountpay-pp-company-smalltitle {
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .btn.sale-account-pay-button {
+        width: 100%;
+    }
+
+    .bx-sap .sale-acountpay-block,
+    .bx-sap .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

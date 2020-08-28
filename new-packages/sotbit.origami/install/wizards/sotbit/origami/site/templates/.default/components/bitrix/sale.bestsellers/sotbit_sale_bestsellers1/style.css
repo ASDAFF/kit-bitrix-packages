@@ -1,0 +1,36 @@
+.product-item-quantity {
+    color: #333;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.product_card__block__presence_product_value_many {
+    display: inline-block;
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.product_card__block__presence_product_value_many .product-card_icon-check {
+    padding-top: 3px;
+    fill: #28b843;
+}
+
+.product_card__block__presence_product_value_many i {
+    color: #28b843;
+}
+
+.sticker_product {
+    position: absolute;
+    left: 1rem;
+    z-index: 82;
+    text-align: left;
+}
+
+.sticker_product__hit {
+    padding: 0.1rem 0.5rem;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0.1rem;
+    background: #00b02a;
+}

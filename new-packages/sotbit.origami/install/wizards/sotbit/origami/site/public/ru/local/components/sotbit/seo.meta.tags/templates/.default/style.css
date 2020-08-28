@@ -1,0 +1,78 @@
+.seometa-tags__show,
+.seometa-tags__hide {
+    display: none;
+}
+
+.tags-container-hide {
+    max-height: none !important;
+    transition: 0.8s;
+}
+
+.sotbit-seometa-tags__hide {
+    cursor: pointer;
+}
+
+.sotbit-seometa-tags__hide i {
+    padding-top: 1rem;
+    padding-left: 0.4rem;
+}
+
+.sotbit-seometa-tags-wrapper a {
+    display: flex;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    line-height: 32px;
+    color: #000;
+}
+
+.sotbit-seometa-tag {
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    transition: 0.1s;
+}
+
+.sotbit-seometa-tag:hover {
+    border: 1px solid var(--main-color);
+}
+
+.sotbit-seometa-tag:hover a {
+    color: var(--main-color-hover);
+}
+
+.sotbit-seometa-tag.active {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+
+.sotbit-seometa-tag.active a {
+    color: #fff;
+}
+
+.sotbit-seometa-tag.active a:hover {
+    color: #fff;
+}
+
+.sotbit-seometa-tags-wrapper {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sotbit-seometa-tags__title {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 32px;
+    align-self: baseline;
+}
+
+.sotbit-seometa-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.sotbit-seometa-tags-row-container {
+    margin: 33px 0 11px;
+    padding: 0;
+}

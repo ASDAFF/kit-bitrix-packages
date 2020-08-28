@@ -1,0 +1,28 @@
+// personal pay
+
+.sale-acountpay-pp-company.bx-selected
+.sale-acountpay-pp-company-graf-container {
+    border-color: var(--main-color);
+}
+
+.btn.sale-account-pay-button {
+    padding: 0 28px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0;
+    background: var(--main-color);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn.sale-account-pay-button:hover {
+    background: var(--main-color-hover);
+    color: #fff;
+    -webkit-transition: background ease-out 0.5s;
+    -moz-transition: background ease-out 0.5s;
+    transition: background ease-out 0.5s;
+}
+
+// personal account

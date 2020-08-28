@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+@media (max-width: $main_width + 30px) {
+    .header-five {
+
+        .contacts-block {
+            margin: 0;
+        }
+
+        .contacts-content-size-wrapper {
+            padding: 0;
+        }
+    }
+
+    .contacts-block {
+        margin: 0 -15px;
+    }
+
+    .contacts-content-size-wrapper {
+        padding: 0 15px;
+    }
+}
