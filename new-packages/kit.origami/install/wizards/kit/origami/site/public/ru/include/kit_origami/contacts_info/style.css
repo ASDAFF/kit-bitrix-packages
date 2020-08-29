@@ -1,0 +1,11 @@
+.contact__techno_block__detail_item .contact__techno_block__detail_item__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__techno_block__detail_item .contact__techno_block__detail_item__img .contact__techno_block-icon {
+    width: 28px;
+    height: 28px;
+    fill: #000;
+}
