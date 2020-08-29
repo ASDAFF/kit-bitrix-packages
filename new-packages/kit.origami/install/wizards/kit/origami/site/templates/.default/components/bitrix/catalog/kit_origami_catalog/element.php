@@ -2,10 +2,10 @@
     die();
 }
 
-\SotbitOrigami::getOfferUrlComponentPath($this, $arResult, $arParams);
+\KitOrigami::getOfferUrlComponentPath($this, $arResult, $arParams);
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
@@ -18,13 +18,13 @@ if(!is_array($labelProps)){
 }
 $arParams['LABEL_PROPS'] = $labelProps;
 
-if (\SotbitOrigami::isUseRegions()) {
-    if ($_SESSION["SOTBIT_REGIONS"]["STORE"]) {
-        $arParams['STORES'] = $_SESSION["SOTBIT_REGIONS"]["STORE"];
+if (\KitOrigami::isUseRegions()) {
+    if ($_SESSION["KIT_REGIONS"]["STORE"]) {
+        $arParams['STORES'] = $_SESSION["KIT_REGIONS"]["STORE"];
     }
 }
 
-$template = \Sotbit\Origami\Helper\Config::get('DETAIL_TEMPLATE');
+$template = \Kit\Origami\Helper\Config::get('DETAIL_TEMPLATE');
 
 $rs = \CIBlockSection::GetList(
     ['SORT' => 'ASC'],
@@ -320,13 +320,13 @@ $componentElementParams = [
     'SEF_URL_TEMPLATES' => $arParams['SEF_URL_TEMPLATES'],
 
     /*Admin settings*/
-    'SHOW_TABS_BITRIX_BLOCKS' => \Sotbit\Origami\Helper\Config::get('SHOW_TABS_BITRIX_BLOCKS_' . $template),
+    'SHOW_TABS_BITRIX_BLOCKS' => \Kit\Origami\Helper\Config::get('SHOW_TABS_BITRIX_BLOCKS_' . $template),
 
-    'SHOW_CROSSSELL' => \Sotbit\Origami\Helper\Config::get('SHOW_CROSSSELL_' . $template),
-    'SHOW_RECOMMENDATIONS' => \Sotbit\Origami\Helper\Config::get('SHOW_RECOMMENDATION_' . $template),
-    'SHOW_BUY_WITH' => \Sotbit\Origami\Helper\Config::get('SHOW_BUY_WITH_' . $template),
-    'SHOW_BESTSELLER' => \Sotbit\Origami\Helper\Config::get('SHOW_BESTSELLER_' . $template),
-    'SHOW_VIEWED' => \Sotbit\Origami\Helper\Config::get('SHOW_VIEWED_' . $template),
+    'SHOW_CROSSSELL' => \Kit\Origami\Helper\Config::get('SHOW_CROSSSELL_' . $template),
+    'SHOW_RECOMMENDATIONS' => \Kit\Origami\Helper\Config::get('SHOW_RECOMMENDATION_' . $template),
+    'SHOW_BUY_WITH' => \Kit\Origami\Helper\Config::get('SHOW_BUY_WITH_' . $template),
+    'SHOW_BESTSELLER' => \Kit\Origami\Helper\Config::get('SHOW_BESTSELLER_' . $template),
+    'SHOW_VIEWED' => \Kit\Origami\Helper\Config::get('SHOW_VIEWED_' . $template),
 ];
 
 if (isset($arParams['USER_CONSENT'])) {

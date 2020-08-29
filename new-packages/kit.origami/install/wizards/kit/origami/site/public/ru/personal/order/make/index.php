@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 define("HIDE_SIDEBAR", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Заказы");

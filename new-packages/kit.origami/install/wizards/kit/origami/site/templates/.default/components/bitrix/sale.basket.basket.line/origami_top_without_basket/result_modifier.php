@@ -3,7 +3,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main,
     Bitrix\Sale;
-use Bitrix\Sale\Internals\BasketPropertyTable, Sotbit\Origami\Helper\Config;
+use Bitrix\Sale\Internals\BasketPropertyTable, Kit\Origami\Helper\Config;
 
 
 Main\Loader::includeModule('kit.origami');
@@ -15,7 +15,7 @@ $arResult["SHOW_COMPARE"] = Config::checkAction("COMPARE");
 //Bitrix\Currency;
 
 $arResult["NUM_PRODUCTS_COMPARE"] = 0;
-$compare = new \Sotbit\Origami\Sale\Basket\Compare();
+$compare = new \Kit\Origami\Sale\Basket\Compare();
 $arResult["NUM_PRODUCTS_COMPARE"] = $compare->getCompared();
 
 $arBasketID = $arDelayID = $arCompareID = $arID = $arProductID = $basketItems = $arrayRatio = array();
@@ -30,7 +30,7 @@ $arResult["TOTAL_PRICE_VALUE"] = str_replace($arResult["CURRENCY_FORMAT_STRING"]
 $arParams["TAB_ACTIVE"] = isset($arParams["TAB_ACTIVE"]) ? $arParams["TAB_ACTIVE"] : "BUY";
 $arResult["PROPS"] = array();
 
-$Item = new \Sotbit\Origami\Image\Item();
+$Item = new \Kit\Origami\Image\Item();
 
 
 // find products
@@ -119,7 +119,7 @@ if($arResult["ECONOM_ITOGO"]>0)
 }
 
 
-$Basket = new \Sotbit\Origami\Image\Basket();
+$Basket = new \Kit\Origami\Image\Basket();
 $Basket->setMediumHeight(70);
 $Basket->setMediumWidth(70);
 $images = [];

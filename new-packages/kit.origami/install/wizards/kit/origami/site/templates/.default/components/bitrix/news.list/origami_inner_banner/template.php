@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));

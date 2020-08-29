@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Личный кабинет");
 global $USER;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 if(!$USER->IsAuthorized())
 {
     //LocalRedirect('/');

@@ -1,7 +1,7 @@
 <?
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/regional_office_5/style.css");
@@ -9,7 +9,7 @@ Asset::getInstance()->addjs(SITE_DIR . "local/templates/kit_origami/assets/plugi
 Asset::getInstance()->addjs(SITE_DIR . "local/templates/kit_origami/assets/plugin/weel/script.js");
 Asset::getInstance()->addcss(SITE_DIR . "local/templates/kit_origami/assets/plugin/weel/style.css");
 Asset::getInstance()->addjs(SITE_DIR . "include/kit_origami/contact_page_block/regional_office_5/script.js");
-$shopId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
+$shopId = \Kit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
 $res = CIBlockElement::GetList("ASC", array("IBLOCK_ID" => $shopId));
 $rsSections = CIBlockSection::GetList("ASC", array("IBLOCK_ID" => $shopId));
 

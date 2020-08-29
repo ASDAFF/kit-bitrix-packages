@@ -13,21 +13,21 @@
 $this->setFrameMode(true);
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 
 $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 
-if(\SotbitOrigami::isUseRegions())
+if(\KitOrigami::isUseRegions())
 {
-    if($_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"])
+    if($_SESSION["KIT_REGIONS"]["PRICE_CODE"])
     {
-        $arParams['PRICE_CODE'] = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
-        $arParams['~PRICE_CODE'] = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
+        $arParams['PRICE_CODE'] = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
+        $arParams['~PRICE_CODE'] = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
     }
-    if($_SESSION["SOTBIT_REGIONS"]["STORE"])
+    if($_SESSION["KIT_REGIONS"]["STORE"])
     {
-        $arParams['STORES'] = $_SESSION["SOTBIT_REGIONS"]["STORE"];
+        $arParams['STORES'] = $_SESSION["KIT_REGIONS"]["STORE"];
     }
 }
 
@@ -186,11 +186,11 @@ if (!empty($arElements) && is_array($arElements))
 
     $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 
-    if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID'])
+    if ($useRegion && $_SESSION['KIT_REGIONS']['ID'])
     {
         $arFilter[] = array(
             "LOGIC" => "OR",
-            array("PROPERTY_REGIONS" => $_SESSION['SOTBIT_REGIONS']['ID']),
+            array("PROPERTY_REGIONS" => $_SESSION['KIT_REGIONS']['ID']),
             array("PROPERTY_REGIONS" => false)
         );
     }

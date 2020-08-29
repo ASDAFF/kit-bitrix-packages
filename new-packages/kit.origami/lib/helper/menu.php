@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 use Bitrix\Main\ArgumentException;
 use Bitrix\Main\Loader;
@@ -14,7 +14,7 @@ Loc::loadMessages(__FILE__);
 /**
  * Class Menu
  *
- * @package Sotbit\Origami\Helper
+ * @package Kit\Origami\Helper
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Menu
@@ -59,10 +59,10 @@ class Menu
             $arGlobalMenu['global_menu_kit'] = [
                 'menu_id'   => 'kit',
                 'text'      => Loc::getMessage(
-                    \SotbitOrigami::moduleId.'_GLOBAL_MENU'
+                    \KitOrigami::moduleId.'_GLOBAL_MENU'
                 ),
                 'title'     => Loc::getMessage(
-                    \SotbitOrigami::moduleId.'_GLOBAL_MENU'
+                    \KitOrigami::moduleId.'_GLOBAL_MENU'
                 ),
                 'sort'      => 1000,
                 'items_id'  => 'global_menu_kit_items',
@@ -73,7 +73,7 @@ class Menu
 
         $menu = [];
         if ($moduleInclude) {
-            if ($GLOBALS['APPLICATION']->GetGroupRight(\SotbitOrigami::moduleId)
+            if ($GLOBALS['APPLICATION']->GetGroupRight(\KitOrigami::moduleId)
                 >= 'R'
             ) {
                 $menu = [
@@ -82,10 +82,10 @@ class Menu
                     "sort"      => 1,
                     'id'        => 'origami',
                     "text"      => Loc::getMessage(
-                        \SotbitOrigami::moduleId.'_GLOBAL_MENU_ORIGAMI'
+                        \KitOrigami::moduleId.'_GLOBAL_MENU_ORIGAMI'
                     ),
                     "title"     => Loc::getMessage(
-                        \SotbitOrigami::moduleId.'_GLOBAL_MENU_ORIGAMI'
+                        \KitOrigami::moduleId.'_GLOBAL_MENU_ORIGAMI'
                     ),
                     "icon"      => "kit_origami_menu_icon",
                     "page_icon" => "",
@@ -93,10 +93,10 @@ class Menu
                     "items"     => [
                         [
                             'text'      => Loc::getMessage(
-                                \SotbitOrigami::moduleId.'_SETTINGS'
+                                \KitOrigami::moduleId.'_SETTINGS'
                             ),
                             'title'     => Loc::getMessage(
-                                \SotbitOrigami::moduleId.'_SETTINGS'
+                                \KitOrigami::moduleId.'_SETTINGS'
                             ),
                             'sort'      => 10,
                             'icon'      => '',
@@ -106,10 +106,10 @@ class Menu
                         ],
                         [
                             'text'      => Loc::getMessage(
-                                \SotbitOrigami::moduleId.'_DEVELOP'
+                                \KitOrigami::moduleId.'_DEVELOP'
                             ),
                             'title'     => Loc::getMessage(
-                                \SotbitOrigami::moduleId.'_DEVELOP'
+                                \KitOrigami::moduleId.'_DEVELOP'
                             ),
                             'sort'      => 20,
                             'icon'      => '',
@@ -206,7 +206,7 @@ class Menu
             $active = true;
 
         $arRootCatalog = array(
-            "TEXT" => Loc::getMessage('SOTBIT_MAIN_MENU_CATALOG'),
+            "TEXT" => Loc::getMessage('KIT_MAIN_MENU_CATALOG'),
             "DEPTH_LEVEL" => 0,
             "LINK" => $rootPage,
             "SELECTED" => $active

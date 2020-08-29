@@ -2,7 +2,7 @@
 /** @var array $templateData */
 /** @var @global CMain $APPLICATION */
 
-$oMenu = new \Sotbit\Origami\Helper\Menu();
+$oMenu = new \Kit\Origami\Helper\Menu();
 $arResult = $oMenu->getMenuRootCatalog($arResult, false, $arParams['IBLOCK_ID']);
 $request = \Bitrix\Main\Context::getCurrent()->getRequest();
 if($request->get('action_ccr')=="DELETE_FROM_COMPARE_RESULT" && $request->get('ID') == 'ALL;')

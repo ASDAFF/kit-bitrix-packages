@@ -59,4 +59,4 @@ if($arResult['ITEMS'])
 
 unset($tmp, $tmpD, $tmpPhoto);
 
-$arResult["ALL_PRICES_NAMES"] = \SotbitOrigami::getAllNamePrices($arResult);
+$arResult["ALL_PRICES_NAMES"] = \KitOrigami::getAllNamePrices($arResult);

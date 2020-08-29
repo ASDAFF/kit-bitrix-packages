@@ -1,6 +1,6 @@
 <?
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/2/style.css");
 CJSCore::Init(array("date"));
@@ -9,9 +9,9 @@ CJSCore::Init(array("date"));
 <div class="contact__techno_block">
 
     <?
-    if(\SotbitOrigami::isUseRegions() && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']){
+    if(\KitOrigami::isUseRegions() && $_SESSION['KIT_REGIONS']['MAP_YANDEX']){
         ?>
-	    #SOTBIT_REGIONS_MAP_YANDEX#
+	    #KIT_REGIONS_MAP_YANDEX#
         <?
     }
     else{

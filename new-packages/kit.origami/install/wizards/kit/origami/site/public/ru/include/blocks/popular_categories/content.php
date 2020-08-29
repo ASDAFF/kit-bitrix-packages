@@ -8,7 +8,7 @@ $arrFilter = array();
 $arrFilter[">UF_SHOW_ON_MAIN_PAGE"] = 0;
 $arrFilter[">" . $picture] = 0;
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 $APPLICATION->IncludeComponent(
     "bitrix:catalog.section.list",
     "origami_popular_categories_advanced",

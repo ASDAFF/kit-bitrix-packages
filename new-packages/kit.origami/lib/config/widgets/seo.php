@@ -6,10 +6,10 @@
  * Time: 2:15 PM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Config\Widget;
+use Kit\Origami\Config\Widget;
 use Bitrix\Main\Localization\Loc;
 
 class Seo extends Widget
@@ -151,7 +151,7 @@ class Seo extends Widget
             }
         </style>
         <script>
-            $(document).on('click','#SotbitSeoMenuButton',function(){
+            $(document).on('click','#KitSeoMenuButton',function(){
                 var NavMenu=$(this).siblings( '.navmenu-v' );
                 if(NavMenu.css('display')=='none')
                 {
@@ -224,7 +224,7 @@ class Seo extends Widget
         $return = '';
         
         // Find Iblocks product and offers
-        $return .= '<input type="button" value="..." id="SotbitSeoMenuButton" style="float:left;">
+        $return .= '<input type="button" value="..." id="KitSeoMenuButton" style="float:left;">
                 <div style="clear:both"></div>
                 <ul class="navmenu-v">';
         

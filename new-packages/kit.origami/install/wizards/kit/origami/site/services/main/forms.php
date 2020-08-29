@@ -22,14 +22,14 @@ $NEW_ID1 = CForm::Set($arFields1);
 
 if($NEW_ID1) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][1] = $NEW_ID1;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][1] = $NEW_ID1;
     CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/footers/1/content.php", Array("FORM_ID" => $NEW_ID1));
 
     $questions = array(
         array(
             'FORM_ID' => $NEW_ID1,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -47,7 +47,7 @@ if($NEW_ID1) {
         array(
             'FORM_ID' => $NEW_ID1,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -66,7 +66,7 @@ if($NEW_ID1) {
         array(
             'FORM_ID' => $NEW_ID1,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_EMAIL"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -85,7 +85,7 @@ if($NEW_ID1) {
         array(
             'FORM_ID' => $NEW_ID1,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -138,7 +138,7 @@ $arFields2 = array(
 $NEW_ID2 = CForm::Set($arFields2);
 
 if($NEW_ID2) {
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][2] = $NEW_ID2;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][2] = $NEW_ID2;
     CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/.default/components/bitrix/news/kit_origami_promotions/detail.php", Array("FORM2_ID" => $NEW_ID2));
     //CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/components/bitrix/news/kit_origami_shops/detail.php", Array("FORM2_IBLOCK_ID" => $NEW_ID2));
 
@@ -146,7 +146,7 @@ if($NEW_ID2) {
         array(
             'FORM_ID' => $NEW_ID2,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM1_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -164,7 +164,7 @@ if($NEW_ID2) {
         array(
             'FORM_ID' => $NEW_ID2,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM1_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -183,7 +183,7 @@ if($NEW_ID2) {
         array(
             'FORM_ID' => $NEW_ID2,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_EMAIL"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -201,7 +201,7 @@ if($NEW_ID2) {
         array(
             'FORM_ID' => $NEW_ID2,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_QUENST"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 400,
@@ -220,7 +220,7 @@ if($NEW_ID2) {
         array(
             'FORM_ID' => $NEW_ID2,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -274,7 +274,7 @@ $NEW_ID3 = CForm::Set($arFields3);
 
 if($NEW_ID3) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][3] = $NEW_ID3;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][3] = $NEW_ID3;
     CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/1/content.php", array("FORM3_ID" => $NEW_ID3));
     CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/2/content.php", array("FORM3_ID" => $NEW_ID3));
     CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/3/content.php", array("FORM3_ID" => $NEW_ID3));
@@ -284,7 +284,7 @@ if($NEW_ID3) {
         array(
             'FORM_ID' => $NEW_ID3,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM1_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -302,7 +302,7 @@ if($NEW_ID3) {
         array(
             'FORM_ID' => $NEW_ID3,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM1_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -321,7 +321,7 @@ if($NEW_ID3) {
         array(
             'FORM_ID' => $NEW_ID3,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_EMAIL"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -339,7 +339,7 @@ if($NEW_ID3) {
         array(
             'FORM_ID' => $NEW_ID3,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_COMMENT"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 400,
@@ -358,7 +358,7 @@ if($NEW_ID3) {
         array(
             'FORM_ID' => $NEW_ID3,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -412,12 +412,12 @@ $NEW_ID4 = CForm::Set($arFields4);
 
 if($NEW_ID4) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][4] = $NEW_ID4;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][4] = $NEW_ID4;
     $questions = array(
         array(
             'FORM_ID' => $NEW_ID4,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -435,7 +435,7 @@ if($NEW_ID4) {
         array(
             'FORM_ID' => $NEW_ID4,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM1_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -455,7 +455,7 @@ if($NEW_ID4) {
         array(
             'FORM_ID' => $NEW_ID4,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -512,12 +512,12 @@ $NEW_ID5 = CForm::Set($arFields5);
 
 if($NEW_ID5) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][5] = $NEW_ID5;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][5] = $NEW_ID5;
     $questions = array(
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -535,7 +535,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM5_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -554,7 +554,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM5_TITLE_EMAIL"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -572,7 +572,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM5_TITLE_PRODUCT_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -590,7 +590,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM5_TITLE_PRODUCT_LINK"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -608,7 +608,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM5_TITLE_MESSAGE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -627,7 +627,7 @@ if($NEW_ID5) {
         array(
             'FORM_ID' => $NEW_ID5,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -686,12 +686,12 @@ $NEW_ID6 = CForm::Set($arFields6);
 
 if($NEW_ID6) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][6] = $NEW_ID6;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][6] = $NEW_ID6;
     $questions = array(
         array(
             'FORM_ID' => $NEW_ID6,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -709,7 +709,7 @@ if($NEW_ID6) {
         array(
             'FORM_ID' => $NEW_ID6,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM6_TITLE_FRIEND_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -727,7 +727,7 @@ if($NEW_ID6) {
         array(
             'FORM_ID' => $NEW_ID6,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM6_TITLE_FRIEND_EMAIL"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -745,7 +745,7 @@ if($NEW_ID6) {
         array(
             'FORM_ID' => $NEW_ID6,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM6_TITLE_PRODUCT_LINK"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -764,7 +764,7 @@ if($NEW_ID6) {
         array(
             'FORM_ID' => $NEW_ID6,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -821,12 +821,12 @@ $NEW_ID7 = CForm::Set($arFields7);
 
 if($NEW_ID7) {
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][7] = $NEW_ID7;
+    $_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][7] = $NEW_ID7;
     $questions = array(
         array(
             'FORM_ID' => $NEW_ID7,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_TITLE_NAME2"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -844,7 +844,7 @@ if($NEW_ID7) {
         array(
             'FORM_ID' => $NEW_ID7,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM7_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -863,7 +863,7 @@ if($NEW_ID7) {
         array(
             'FORM_ID' => $NEW_ID7,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM7_PRODUCT"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -882,7 +882,7 @@ if($NEW_ID7) {
         array(
             'FORM_ID' => $NEW_ID7,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -944,7 +944,7 @@ if($NEW_ID8)
         array(
             'FORM_ID' => $NEW_ID8,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 900),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 900),
             'TITLE' => GetMessage("FORM8_TITLE_NAME"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 100,
@@ -962,7 +962,7 @@ if($NEW_ID8)
         array(
             'FORM_ID' => $NEW_ID8,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 900),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 900),
             'TITLE' => GetMessage("FORM8_TITLE_PHONE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 200,
@@ -981,7 +981,7 @@ if($NEW_ID8)
         array(
             'FORM_ID' => $NEW_ID8,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 900),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 900),
             'TITLE' => GetMessage("FORM8_TITLE_DATE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -999,7 +999,7 @@ if($NEW_ID8)
         array(
             'FORM_ID' => $NEW_ID8,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 900),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 900),
             'TITLE' => GetMessage("FORM8_TITLE_COMMENT"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,
@@ -1018,7 +1018,7 @@ if($NEW_ID8)
         array(
             'FORM_ID' => $NEW_ID8,
             'ACTIVE' => 'Y',
-            'SID' => 'SOTBIT_FORM_QUESTION_'.rand(50, 300),
+            'SID' => 'KIT_FORM_QUESTION_'.rand(50, 300),
             'TITLE' => GetMessage("FORM_ADDITIONAL_PAGE_TITLE"),
             'TITLE_TYPE' => 'text',
             'C_SORT' => 300,

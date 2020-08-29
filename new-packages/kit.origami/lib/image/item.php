@@ -1,12 +1,12 @@
 <?php
-namespace Sotbit\Origami\Image;
+namespace Kit\Origami\Image;
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 /**
  * Class Item
  *
- * @package Sotbit\Origami\Image
+ * @package Kit\Origami\Image
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Item extends Base{

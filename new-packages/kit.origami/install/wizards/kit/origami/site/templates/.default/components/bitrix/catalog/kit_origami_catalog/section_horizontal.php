@@ -3,7 +3,7 @@
 use Bitrix\Main\ModuleManager;
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 global $kitSeoMetaBottomDesc;
@@ -402,7 +402,7 @@ else
                 'DATA_LAYER_NAME' => (isset($arParams['DATA_LAYER_NAME']) ? $arParams['DATA_LAYER_NAME'] : ''),
                 'BRAND_PROPERTY' => (isset($arParams['BRAND_PROPERTY']) ? $arParams['BRAND_PROPERTY'] : ''),
 
-                'MOBILE_VIEW_MINIMAL' => ($arParams['MOBILE_VIEW_MINIMAL'] == 'ADMIN') ? \Sotbit\Origami\Helper\Config::get('MOBILE_VIEW_MINIMAL') : $arParams['MOBILE_VIEW_MINIMAL'],
+                'MOBILE_VIEW_MINIMAL' => ($arParams['MOBILE_VIEW_MINIMAL'] == 'ADMIN') ? \Kit\Origami\Helper\Config::get('MOBILE_VIEW_MINIMAL') : $arParams['MOBILE_VIEW_MINIMAL'],
 
                 'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : ''),
                 "ADD_SECTIONS_CHAIN" => "N",

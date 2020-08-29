@@ -1,6 +1,6 @@
 <?php
 
-use Sotbit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
@@ -147,7 +147,7 @@ $ElementID = $APPLICATION->IncludeComponent(
             "PAGER_TEMPLATE" => ".default",
             "PAGER_TITLE" => "������",
             "PARTIAL_PRODUCT_PROPERTIES" => "N",
-            "PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
+            "PRICE_CODE" => \KitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
             "OFFERS_FIELD_CODE"      => [
                 0 => "NAME",
                 1 => "PREVIEW_PICTURE",
@@ -234,10 +234,10 @@ $this->SetViewTarget('news_detail');
         ),
     ];
     $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-    if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+    if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
         $bannerFilter['PROPERTY_REGIONS'] = [
             false,
-            $_SESSION['SOTBIT_REGIONS']['ID']
+            $_SESSION['KIT_REGIONS']['ID']
         ];
     }
     $APPLICATION->IncludeComponent(

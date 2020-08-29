@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
@@ -100,7 +100,7 @@ $APPLICATION->IncludeComponent(
         "PAGER_TEMPLATE" => "origami",
         "PAGER_TITLE" => "Товары",
         "PARTIAL_PRODUCT_PROPERTIES" => "N",
-        "PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
+        "PRICE_CODE" => \KitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
         "PRICE_VAT_INCLUDE" => "Y",
         "PRODUCT_ID_VARIABLE" => "id",
         "PRODUCT_PROPERTIES" => array(),

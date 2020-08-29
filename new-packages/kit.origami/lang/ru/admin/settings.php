@@ -216,7 +216,7 @@ $MESS[$moduleId . '_WIDGET_SEO_DESCRIPTION'] = 'Скрывать основно�
 /* \SEO-tags */
 
 /*
- * SOTBIT_ORIGAMI_NO_TABS
+ * KIT_ORIGAMI_NO_TABS
  */
 $MESS[$moduleId . '_GROUP_ELEMENT_MAIN_NO_TABS'] = 'Карточка товара. Без табов';
 $MESS[$moduleId . '_DETAIL_TEMPLATE_NO_TABS'] = 'Без табов';

@@ -6,7 +6,7 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
 
@@ -17,7 +17,7 @@ class IblockId extends Select
     public function setValues($site = 's1')
     {
         if (Loader::includeModule('iblock')) {
-            $iblockType = \Sotbit\Origami\Config\Option::get(
+            $iblockType = \Kit\Origami\Config\Option::get(
                 $this->getIblockTypeCode(),
                 $site
             );

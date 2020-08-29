@@ -1,7 +1,7 @@
 <?
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/contacts_info_new/style.css");
@@ -9,10 +9,10 @@ Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/
 ?>
 
 <?
-if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_GOOGLE']) ) {
-    if ($_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) {
-        $yandex_lat = explode(',', $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX'][0]['VALUE'])[0];
-        $yandex_lon = explode(',', $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX'][0]['VALUE'])[1];
+if (($useRegion && $_SESSION['KIT_REGIONS']['MAP_YANDEX']) || ($useRegion && $_SESSION['KIT_REGIONS']['MAP_GOOGLE']) ) {
+    if ($_SESSION['KIT_REGIONS']['MAP_YANDEX']) {
+        $yandex_lat = explode(',', $_SESSION['KIT_REGIONS']['MAP_YANDEX'][0]['VALUE'])[0];
+        $yandex_lon = explode(',', $_SESSION['KIT_REGIONS']['MAP_YANDEX'][0]['VALUE'])[1];
         $position['yandex_lat'] = $yandex_lat;
         $position['yandex_lon'] = $yandex_lon;
         $position['yandex_scale'] = 14;
@@ -20,14 +20,14 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
             array(
                 'LON' => $yandex_lon,
                 'LAT' => $yandex_lat,
-                'TEXT' => $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX'][0]['DESCRIPTION']
+                'TEXT' => $_SESSION['KIT_REGIONS']['MAP_YANDEX'][0]['DESCRIPTION']
             )
         );
         $APPLICATION->IncludeComponent(
 	"bitrix:map.yandex.view",
 	".default",
             array(
-                "KEY" => $_SESSION["SOTBIT_REGIONS"]["MAP_YANDEX"]["API_KEY"],
+                "KEY" => $_SESSION["KIT_REGIONS"]["MAP_YANDEX"]["API_KEY"],
                 "INIT_MAP_TYPE" => "MAP",
                 "MAP_DATA" => serialize($position),
                 "MAP_WIDTH" => "100%",
@@ -45,13 +45,13 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                 ),
                 "MAP_ID" => "main_region",
                 "COMPONENT_TEMPLATE" => ".default",
-                "API_KEY" => $_SESSION["SOTBIT_REGIONS"]["MAP_YANDEX"]["API_KEY"]
+                "API_KEY" => $_SESSION["KIT_REGIONS"]["MAP_YANDEX"]["API_KEY"]
             ),
 	false
         );
-    } elseif ($_SESSION['SOTBIT_REGIONS']['MAP_GOOGLE']) {
-        $google_lat = explode(',', $_SESSION['SOTBIT_REGIONS']['MAP_GOOGLE'][0]['VALUE'])[0];
-        $google_lon = explode(',', $_SESSION['SOTBIT_REGIONS']['MAP_GOOGLE'][0]['VALUE'])[1];
+    } elseif ($_SESSION['KIT_REGIONS']['MAP_GOOGLE']) {
+        $google_lat = explode(',', $_SESSION['KIT_REGIONS']['MAP_GOOGLE'][0]['VALUE'])[0];
+        $google_lon = explode(',', $_SESSION['KIT_REGIONS']['MAP_GOOGLE'][0]['VALUE'])[1];
         $position['google_lat'] = $google_lat;
         $position['google_lon'] = $google_lon;
         $position['google_scale'] = 14;
@@ -59,14 +59,14 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
             array(
                 'LON' => $google_lon,
                 'LAT' => $google_lat,
-                'TEXT' => $_SESSION['SOTBIT_REGIONS']['MAP_GOOGLE'][0]['DESCRIPTION']
+                'TEXT' => $_SESSION['KIT_REGIONS']['MAP_GOOGLE'][0]['DESCRIPTION']
             )
         );
         $APPLICATION->IncludeComponent(
             "bitrix:map.google.view",
             ".default",
             array(
-                "KEY" => $_SESSION["SOTBIT_REGIONS"]["MAP_GOOGLE"]["API_KEY"],
+                "KEY" => $_SESSION["KIT_REGIONS"]["MAP_GOOGLE"]["API_KEY"],
                 "INIT_MAP_TYPE" => "MAP",
                 "MAP_DATA" => serialize($position),
                 "MAP_WIDTH" => "100%",
@@ -84,7 +84,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                 ),
                 "MAP_ID" => "main_region",
                 "COMPONENT_TEMPLATE" => ".default",
-                "API_KEY" => $_SESSION["SOTBIT_REGIONS"]["MAP_GOOGLE"]["API_KEY"]
+                "API_KEY" => $_SESSION["KIT_REGIONS"]["MAP_GOOGLE"]["API_KEY"]
             ),
             false
         );
@@ -111,8 +111,8 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                 <?= GetMessage('ADDRESS') ?>
             </div>
             <div class="contact-techno-content-text">
-                <? if ($useRegion && $_SESSION['SOTBIT_REGIONS']['UF_ADDRESS']) {
-                    echo $_SESSION["SOTBIT_REGIONS"]["NAME"] . ', ' . $_SESSION["SOTBIT_REGIONS"]["UF_ADDRESS"];
+                <? if ($useRegion && $_SESSION['KIT_REGIONS']['UF_ADDRESS']) {
+                    echo $_SESSION["KIT_REGIONS"]["NAME"] . ', ' . $_SESSION["KIT_REGIONS"]["UF_ADDRESS"];
                 } else {
                     $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
@@ -140,15 +140,15 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
             </div>
             <div class="contact-techno-content-text">
                 <?
-                if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"]) {
-                    if (is_array($_SESSION["SOTBIT_REGIONS"]["UF_PHONE"])) {
+                if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_PHONE"]) {
+                    if (is_array($_SESSION["KIT_REGIONS"]["UF_PHONE"])) {
                         foreach (
-                            $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"] as $numtel
+                            $_SESSION["KIT_REGIONS"]["UF_PHONE"] as $numtel
                         ) {
                             echo $numtel . '<br>';
                         }
                     } else {
-                        echo $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"];
+                        echo $_SESSION["KIT_REGIONS"]["UF_PHONE"];
                     }
                 } else {
                     $APPLICATION->IncludeComponent(
@@ -175,9 +175,9 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                 <?= GetMessage('EMAIL') ?>
             </div>
             <div class="contact-techno-content-text">
-                <? if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]) {
-                    if (is_array($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"])) {
-                        foreach ($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"] as $email) {
+                <? if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
+                    if (is_array($_SESSION["KIT_REGIONS"]["UF_EMAIL"])) {
+                        foreach ($_SESSION["KIT_REGIONS"]["UF_EMAIL"] as $email) {
                             if ($email) {
                                 ?>
                                 <a href="mailto:<?= $email ?>">
@@ -188,8 +188,8 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                         }
                     } else {
                         ?>
-                        <a href="mailto:<?= $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"] ?>">
-                            <?=$_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]; ?>
+                        <a href="mailto:<?= $_SESSION["KIT_REGIONS"]["UF_EMAIL"] ?>">
+                            <?=$_SESSION["KIT_REGIONS"]["UF_EMAIL"]; ?>
                         </a>
                         <?
                     }
@@ -221,15 +221,15 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
             </div>
             <div class="contact-techno-content-text">
                 <?
-                if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_WORKTIME"]) {
-                    if (is_array($_SESSION["SOTBIT_REGIONS"]["UF_WORKTIME"])) {
+                if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_WORKTIME"]) {
+                    if (is_array($_SESSION["KIT_REGIONS"]["UF_WORKTIME"])) {
                         foreach (
-                            $_SESSION["SOTBIT_REGIONS"]["UF_WORKTIME"] as $workTime
+                            $_SESSION["KIT_REGIONS"]["UF_WORKTIME"] as $workTime
                         ) {
                             echo $workTime . '<br>';
                         }
                     } else {
-                        echo $_SESSION["SOTBIT_REGIONS"]["UF_WORKTIME"];
+                        echo $_SESSION["KIT_REGIONS"]["UF_WORKTIME"];
                     }
                 } else {
                     $APPLICATION->IncludeComponent(

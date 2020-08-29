@@ -6,14 +6,14 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
 
 /**
  * Class Variables
- * @package Sotbit\Origami\Config\Widgets
+ * @package Kit\Origami\Config\Widgets
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Variables extends Text
@@ -26,7 +26,7 @@ class Variables extends Text
 	{
 		$settings = $this->getSettings();
 
-		$tags = \SotbitOrigami::getTags(array($settings['SITE_ID']));
+		$tags = \KitOrigami::getTags(array($settings['SITE_ID']));
 		file_put_contents(dirname(__FILE__).'/log.log', print_r($tags, true), FILE_APPEND);
 		foreach($tags as $tag)
 		{
@@ -52,19 +52,19 @@ class Variables extends Text
 		if($values)
 		{
 			echo '<tr><td style="text-align: center;" width="25%"><b>';
-			echo Loc::getMessage(\SotbitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_NAME');
+			echo Loc::getMessage(\KitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_NAME');
 			echo '</b></td><td style="text-align: center;" width="25%"><b>';
-			echo Loc::getMessage(\SotbitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_CODE');
+			echo Loc::getMessage(\KitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_CODE');
 			echo '</b></td><td style="text-align: center;" width="50%"><b>';
-			echo Loc::getMessage(\SotbitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_VARIABLE');
+			echo Loc::getMessage(\KitOrigami::moduleId.'_WIDGET_'.$this->getCode().'_VARIABLE');
 			echo '</b></td></tr>';
 		}
 		foreach($values as $code => $name)
 		{
 			echo '
 				<tr><td style="text-align: center;" width="25%">',$name,'</td>
-				<td style="text-align: center;" width="25%">',\SotbitOrigami::genCodeVariable($code),'</td>
-				<td style="text-align: center;" width="50%">$_SESSION["SOTBIT_REGIONS"]["',$code,'"]</td></tr>';
+				<td style="text-align: center;" width="25%">',\KitOrigami::genCodeVariable($code),'</td>
+				<td style="text-align: center;" width="50%">$_SESSION["KIT_REGIONS"]["',$code,'"]</td></tr>';
 		}
 	}
 

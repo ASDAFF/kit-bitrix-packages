@@ -3,7 +3,7 @@
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 

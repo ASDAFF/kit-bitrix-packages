@@ -2,12 +2,12 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $arComponentDescription = array(
-	"NAME" => GetMessage("SOTBIT_INSTAGRAM_TITLE"),
-	"DESCRIPTION" => GetMessage("SOTBIT_INSTAGRAM_DESCRIPTION"),
+	"NAME" => GetMessage("KIT_INSTAGRAM_TITLE"),
+	"DESCRIPTION" => GetMessage("KIT_INSTAGRAM_DESCRIPTION"),
 	"ICON" => "",
 	"PATH" => array(
         "ID" => "kit",
-        "NAME" => GetMessage("SOTBIT_COMPONENTS_TITLE")
+        "NAME" => GetMessage("KIT_COMPONENTS_TITLE")
 	),
 );
 

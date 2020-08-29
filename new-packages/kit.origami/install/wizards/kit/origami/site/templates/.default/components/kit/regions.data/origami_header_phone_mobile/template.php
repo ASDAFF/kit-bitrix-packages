@@ -4,7 +4,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     $phone = reset($arResult['FIELDS']['UF_PHONE']['VALUE']);
     ?>
     <div class="container_menu_mobile__phone_block">
-        <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>." class="container_menu_mobile__main_phone origami_icons_button">
+        <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>." class="container_menu_mobile__main_phone origami_icons_button">
             <svg class="" width="12" height="16">
                 <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
             </svg>
@@ -17,7 +17,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
                     if($i == 0){
                         continue;
                     }?>
-                    <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone origami_icons_button">
+                    <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone origami_icons_button">
                         <svg class="" width="12" height="16">
                             <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                         </svg>
@@ -32,7 +32,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     $phone = reset($arResult['FIELDS']['UF_PHONE']['VALUE']);
     ?>
     <div class="container_menu_mobile__phone_block">
-        <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone">
+        <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone">
             <?=$phone?>
         </a>
     </div>
@@ -40,7 +40,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     $phone = $arResult['FIELDS']['UF_PHONE']['VALUE'];
     ?>
     <div class="container_menu_mobile__phone_block">
-        <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone">
+        <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>" class="container_menu_mobile__main_phone">
             <?=$phone?>
         </a>
     </div>

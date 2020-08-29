@@ -2,7 +2,7 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $imgH = 42;
 $imgW = 42;
@@ -75,7 +75,7 @@ if($usePict == "Y" && !empty($arSectURL))
     }elseif ($obCache->StartDataCache())
     {
 
-        $ItemImg = new \Sotbit\Origami\Image\Item();
+        $ItemImg = new \Kit\Origami\Image\Item();
         $dbSections = CIBlockSection::GetList(array(), array("IBLOCK_ID" => $iblockID, "ACTIVE" => "Y", "GLOBAL_ACTIVE" => "Y"), false, array("ID", "SECTION_PAGE_URL", "PICTURE"));
         while($arSections = $dbSections->GetNext())
         {
@@ -120,7 +120,7 @@ if(!empty($arSectPict))
 }
 
 if ($arResult) {
-    $oMenu = new \Sotbit\Origami\Helper\Menu();
+    $oMenu = new \Kit\Origami\Helper\Menu();
     $menu = [];
 
     foreach ($arResult as $key => $arItem) {

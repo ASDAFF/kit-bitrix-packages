@@ -1,5 +1,5 @@
 <?
-use \Sotbit\Origami\Actions;
+use \Kit\Origami\Actions;
 class PromotionsBlockImagesAndListLeft extends Actions
 {
 	public function afterSaveContent()

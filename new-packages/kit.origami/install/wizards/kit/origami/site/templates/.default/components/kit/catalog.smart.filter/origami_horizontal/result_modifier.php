@@ -3,8 +3,8 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Filter;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Filter;
 
 if($arResult["ITEMS"])
 {

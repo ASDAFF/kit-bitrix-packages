@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
@@ -7,13 +7,13 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 
 $arParams["SECTION_ROOT_TEMPLATE"] = $template = Config::get('SECTION_ROOT_TEMPLATE_SERVICES');
 
-if(\SotbitOrigami::getOfferUrlComponentPath($this, $arResult, $arParams))
+if(\KitOrigami::getOfferUrlComponentPath($this, $arResult, $arParams))
 {
     include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/element.php");
     return;
 }
 
-\SotbitOrigami::process404($this, $arResult, $arParams);
+\KitOrigami::process404($this, $arResult, $arParams);
 
 $this->setFrameMode(true);
 
@@ -27,7 +27,7 @@ if($request->get('ajaxFilter') == 'Y')
 include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/sections_root.php");
 if($request->get('ajaxFilter') == 'Y')
 {
-    echo \SotbitOrigami::prepareJSData($this, $arParams);
+    echo \KitOrigami::prepareJSData($this, $arParams);
     die();
 }
 ?>

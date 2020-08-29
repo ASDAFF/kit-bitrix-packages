@@ -1,9 +1,9 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->createFrame()->begin();
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 use Bitrix\Main\Page\Asset;

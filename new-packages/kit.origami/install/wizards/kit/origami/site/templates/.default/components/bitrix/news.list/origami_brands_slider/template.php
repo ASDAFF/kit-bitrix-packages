@@ -12,9 +12,9 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 $idItem = \Bitrix\Main\Security\Random::getString(5);?>

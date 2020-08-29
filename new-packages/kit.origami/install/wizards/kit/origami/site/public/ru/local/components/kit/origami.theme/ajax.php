@@ -1,6 +1,6 @@
 <?
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 define('STOP_STATISTICS', true);
 
@@ -20,7 +20,7 @@ if(!$moduleIncluded)
 	return false;
 }
 
-$theme = new \Sotbit\Origami\Front\Theme($site);
+$theme = new \Kit\Origami\Front\Theme($site);
 $settings = $theme->getSettings();
 $dir = $theme->getFrontUser()->getFolder().'/theme';
 
@@ -62,7 +62,7 @@ switch ($action)
                 $settings['OPTIONS'][$code] = $val;
 			}
 		}
-		\SotbitOrigami::genTheme(
+		\KitOrigami::genTheme(
             $settings['OPTIONS'],
             $dir
         );
@@ -108,7 +108,7 @@ switch ($action)
 
             if ($settings['OPTIONS'])
             {
-                \SotbitOrigami::genTheme($settings['OPTIONS'], $dir);
+                \KitOrigami::genTheme($settings['OPTIONS'], $dir);
             }
             if (is_dir($_SERVER['DOCUMENT_ROOT'].$dir))
             {

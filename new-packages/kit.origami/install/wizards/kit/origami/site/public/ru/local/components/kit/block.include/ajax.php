@@ -30,7 +30,7 @@ try {
 } catch (\Bitrix\Main\LoaderException $e) {
 }
 
-$FrontBlock = new \Sotbit\Origami\Front\Block($site);
+$FrontBlock = new \Kit\Origami\Front\Block($site);
 $FrontBlock->setPage($page);
 $FrontBlock->setBlockCollection($part);
 $blockCollection = $FrontBlock->getBlockCollection($part);
@@ -47,7 +47,7 @@ switch ($action)
             {
                 if ($after == $block->getId() || $id === $block->getCopyOf())
                 {
-                    $block = new \Sotbit\Origami\Block([
+                    $block = new \Kit\Origami\Block([
                         'CODE' => $code,
                         'PART' => $part,
                     ], $page);
@@ -63,7 +63,7 @@ switch ($action)
                 }
             }
         } else {
-            $block = new \Sotbit\Origami\Block([
+            $block = new \Kit\Origami\Block([
                 'CODE' => $code,
                 'PART' => $part,
             ], $page);
@@ -255,7 +255,7 @@ switch ($action)
                         if ($cut) {
                             $newBlock = $needBlock;
                         } else {
-                            $newBlock = new \Sotbit\Origami\Block([
+                            $newBlock = new \Kit\Origami\Block([
                                 'CODE' => $needBlock->getCode(),
                                 'PART' => $needBlock->getPart(),
                             ], $page);

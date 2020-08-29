@@ -2,7 +2,7 @@
 
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
 
 $moduleLoaded = false;
@@ -16,7 +16,7 @@ catch (\Bitrix\Main\LoaderException $e)
 	echo $e->getMessage();
 }
 
-$theme = new \Sotbit\Origami\Front\Theme();
+$theme = new \Kit\Origami\Front\Theme();
 ?>
 <!DOCTYPE html>
 
@@ -84,7 +84,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
 //    Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.authorize/.default/style.css");
 //    Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.registration/.default/style.css");
 
-    $Files = new \Sotbit\Origami\Helper\Files();
+    $Files = new \Kit\Origami\Helper\Files();
     $Files->showCustomCss();
     $Files->showCustomJs();
     ?>
@@ -116,22 +116,22 @@ $theme = new \Sotbit\Origami\Front\Theme();
         $APPLICATION->IncludeComponent('kit:origami.theme','',[]);
     }
 
-    include $_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/content.php';    //<======== hard
+    include $_SERVER['DOCUMENT_ROOT'].'/'.\KitOrigami::headersDir.'/'.Config::get('HEADER').'/content.php';    //<======== hard
 
-    if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/style.css')) {
-        Asset::getInstance()->addCss(\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/style.css');
+    if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\KitOrigami::headersDir.'/'.Config::get('HEADER').'/style.css')) {
+        Asset::getInstance()->addCss(\KitOrigami::headersDir.'/'.Config::get('HEADER').'/style.css');
     }
 
-    if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/script.js')) {
-        Asset::getInstance()->addJs(\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/script.js');
+    if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\KitOrigami::headersDir.'/'.Config::get('HEADER').'/script.js')) {
+        Asset::getInstance()->addJs(\KitOrigami::headersDir.'/'.Config::get('HEADER').'/script.js');
     }
 
-    $page = \SotbitOrigami::getCurrentPage();
+    $page = \KitOrigami::getCurrentPage();
 
-    if(!\SotbitOrigami::needShowFullWidth($page)) {
-        if(\SotbitOrigami::needShowSide($page)) {
+    if(!\KitOrigami::needShowFullWidth($page)) {
+        if(\KitOrigami::needShowSide($page)) {
         ?>
-            <div class="puzzle_block block_main_left_menu main-container <?=\SotbitOrigami::getSide($page)?>">
+            <div class="puzzle_block block_main_left_menu main-container <?=\KitOrigami::getSide($page)?>">
                 <div class="block_main_left_menu__container mo-main">
                     <?
                     $APPLICATION->IncludeComponent(
@@ -165,7 +165,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
             <?
         }
 
-        if(\SotbitOrigami::showBreadCrumbs($page)) {
+        if(\KitOrigami::showBreadCrumbs($page)) {
             $APPLICATION->IncludeComponent('bitrix:breadcrumb', 'origami_default',
                 [
                     "START_FROM" => "0",

@@ -1,6 +1,6 @@
 <?
 
-namespace Sotbit\Origami\Sale\Basket;
+namespace Kit\Origami\Sale\Basket;
 
 use Bitrix\Catalog\GroupTable;
 use Bitrix\Highloadblock as HL;
@@ -12,7 +12,7 @@ use Bitrix\Sale\Basket;
 use Bitrix\Sale\BasketItem;
 use Bitrix\Sale\Fuser;
 use Bitrix\Main\Error;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 abstract class Base
 {
@@ -271,7 +271,7 @@ abstract class Base
                 }
             }
 
-            $Offer = new \Sotbit\Origami\Helper\Offer($this->lid);
+            $Offer = new \Kit\Origami\Helper\Offer($this->lid);
 
             $rs = \CIBlockElement::GetList(
                 [],

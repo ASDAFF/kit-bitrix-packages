@@ -1,4 +1,4 @@
-class SotbitRegionsDeliveryMini
+class KitRegionsDeliveryMini
 {
 	constructor(params) {
 

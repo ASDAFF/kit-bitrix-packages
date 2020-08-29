@@ -1,5 +1,5 @@
 <?
-namespace Sotbit\Origami\Sale\Basket;
+namespace Kit\Origami\Sale\Basket;
 
 use Bitrix\Main\ArgumentException;
 use Bitrix\Main\ArgumentOutOfRangeException;

@@ -1,10 +1,10 @@
 <?
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/4/style.css");
-$shopId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
+$shopId = \Kit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
 $mainSection = CIBlock::GetList("ASC", array("ID" => $shopId))->Fetch();
 CJSCore::Init(array("date"));
 ?>

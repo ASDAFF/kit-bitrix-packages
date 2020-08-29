@@ -11,7 +11,7 @@ $page = $APPLICATION->GetCurPage(false);
 <?if(!empty($arResult)):?>
 <nav class="top-bar responsive-hidden-nav category-main-menu" data-responsive-hidden-nav>
     <button class="responsive-hidden-button hidden fonts__small_text origami_icons_button">
-        <?=Loc::getMessage("SOTBIT_MAIN_MENU_MORE");?>
+        <?=Loc::getMessage("KIT_MAIN_MENU_MORE");?>
     </button>
     <ul class="visible-links">
 

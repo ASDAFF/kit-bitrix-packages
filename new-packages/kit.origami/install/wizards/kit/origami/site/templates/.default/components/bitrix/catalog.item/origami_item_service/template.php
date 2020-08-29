@@ -4,7 +4,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 ?>
 
 <?
@@ -279,7 +279,7 @@ if (isset($arResult['ITEM']))
                 'RELATIVE_QUANTITY_FEW' => $arParams['MESS_RELATIVE_QUANTITY_FEW'],
             );
 
-            \SotbitOrigami::clearJSParams($jsParams, $arParams, $showSKU);
+            \KitOrigami::clearJSParams($jsParams, $arParams, $showSKU);
 
             ?>
 			<script>

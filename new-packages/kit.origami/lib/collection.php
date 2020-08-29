@@ -1,5 +1,5 @@
 <?php
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
 use \Bitrix\Main\SystemException;
 

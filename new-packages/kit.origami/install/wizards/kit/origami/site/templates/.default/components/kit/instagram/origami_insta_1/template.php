@@ -3,7 +3,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 Loc::loadMessages(__FILE__);
 
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
@@ -179,7 +179,7 @@ global $settings;
                 <div class="bottom_blocks">
                     <div class="left-wrapper">
                         <div class="origami_instagram-block">
-                            <a href="<?=$arResult["SUBSCRIBE"]?>" title="<?=Loc::getMessage("SOTBIT_INSTAGRAM_SUBSCRIBE")?>" class="origami_instagram-logo">
+                            <a href="<?=$arResult["SUBSCRIBE"]?>" title="<?=Loc::getMessage("KIT_INSTAGRAM_SUBSCRIBE")?>" class="origami_instagram-logo">
                                 <img src="<?=Config::get('LOGO')?>">
                             </a>
                             <div class="origami_instagram-title"><?=$arParams["TITLE_TEXT"]?></div>
@@ -187,8 +187,8 @@ global $settings;
                                 <?=$arParams["TEXT"]?>
                             </div>
                             <div class="origami_instagram-subscribe">
-                                <a href="<?=$arResult["SUBSCRIBE"]?>" target="_blank" title="<?=Loc::getMessage("SOTBIT_INSTAGRAM_SUBSCRIBE")?>" class="origami_instagram-subscribe__link">
-                                    <?=Loc::getMessage("SOTBIT_INSTAGRAM_SUBSCRIBE")?>
+                                <a href="<?=$arResult["SUBSCRIBE"]?>" target="_blank" title="<?=Loc::getMessage("KIT_INSTAGRAM_SUBSCRIBE")?>" class="origami_instagram-subscribe__link">
+                                    <?=Loc::getMessage("KIT_INSTAGRAM_SUBSCRIBE")?>
                                     <svg class="instagram-logo_icon" width="42" height="16">
                                         <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow"></use>
                                     </svg>

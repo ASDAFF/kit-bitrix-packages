@@ -9,11 +9,11 @@
 $component = $this->__component;
 $component::scaleImages($arResult['JS_DATA'], $arParams['SERVICES_IMAGES_SCALING']);
 
-use Bitrix\Sale\Internals\BasketPropertyTable, Sotbit\Origami\Helper\Config;
+use Bitrix\Sale\Internals\BasketPropertyTable, Kit\Origami\Helper\Config;
 
 if (Config::get("IMAGE_FOR_OFFER") == 'PRODUCT' && $arResult["BASKET_ITEMS"] && $arResult['JS_DATA']['GRID']['ROWS'])
 {
-    $Basket = new \Sotbit\Origami\Image\Basket();
+    $Basket = new \Kit\Origami\Image\Basket();
     $Basket->setMediumHeight(80);
     $Basket->setMediumWidth(80);
     $arProductID = [];

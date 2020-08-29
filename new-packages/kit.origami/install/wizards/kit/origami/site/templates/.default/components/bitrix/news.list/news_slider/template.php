@@ -13,14 +13,14 @@
 $this->setFrameMode(true);
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 Loc::loadMessages(__FILE__);
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 ?>
@@ -30,8 +30,8 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
 
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["PAGER_TITLE"]?>
-        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" title="<?=Loc::getMessage("SOTBIT_NEWS_SIMPLE_LINK_TEXT");?>" class="puzzle_block__link fonts__small_text">
-            <?=Loc::getMessage("SOTBIT_NEWS_SIMPLE_LINK_TEXT");?>
+        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" title="<?=Loc::getMessage("KIT_NEWS_SIMPLE_LINK_TEXT");?>" class="puzzle_block__link fonts__small_text">
+            <?=Loc::getMessage("KIT_NEWS_SIMPLE_LINK_TEXT");?>
             <i class="icon-nav_1"></i>
         </a>
     </p>
@@ -101,7 +101,7 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
                             <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
                                 <div class="news-description__button-wrapper">
                                     <button class="news-description__button-wrapper--button">
-                                        <?=Loc::getMessage("SOTBIT_NEWS_SIMPLE_MORE_TEXT");?>
+                                        <?=Loc::getMessage("KIT_NEWS_SIMPLE_MORE_TEXT");?>
                                     </button>
                                 </div>
                             <?endif;?>

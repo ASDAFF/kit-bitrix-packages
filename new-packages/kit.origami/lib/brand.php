@@ -1,11 +1,11 @@
 <?
-namespace Sotbit\Origami;
-use Sotbit\Origami\Config\Option;
+namespace Kit\Origami;
+use Kit\Origami\Config\Option;
 use \Bitrix\Main\Data\Cache;
 /**
  * Class Brand
  *
- * @package Sotbit\Origami
+ * @package Kit\Origami
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Brand

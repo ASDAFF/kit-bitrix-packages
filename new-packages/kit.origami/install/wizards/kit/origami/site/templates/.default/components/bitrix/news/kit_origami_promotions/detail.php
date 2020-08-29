@@ -1,6 +1,6 @@
 <?php
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use \Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
@@ -313,7 +313,7 @@ $this->setFrameMode(true);
                 "DISPLAY_COMPARE"           => "Y",
                 "PAGE_ELEMENT_COUNT"        => 100,
                 "LINE_ELEMENT_COUNT"        => 5,
-                "PRICE_CODE"                => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
+                "PRICE_CODE"                => \KitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
                 "USE_PRICE_COUNT"           => "N",
                 "SHOW_PRICE_COUNT"          => "1",
 

@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
@@ -13,7 +13,7 @@ try {
 $arItem = $arResult["ITEM"];
 $img = isset($arItem["PREVIEW_PICTURE"]["ID"]) ? $arItem["PREVIEW_PICTURE"]["ID"] : $arItem["DETAIL_PICTURE"]["ID"];
 
-$obImg = new \Sotbit\Origami\Image\Item();
+$obImg = new \Kit\Origami\Image\Item();
 
 if($img)
 {

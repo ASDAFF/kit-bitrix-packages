@@ -1,13 +1,13 @@
 <?php
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
 
 global $analogProducts;
 
-$selectSectionMain = unserialize(\Sotbit\Origami\Config\Option::get('SECTIONS_'));
-$selectSectionNoTabs = unserialize(\Sotbit\Origami\Config\Option::get('SECTIONS_NO_TABS'));
+$selectSectionMain = unserialize(\Kit\Origami\Config\Option::get('SECTIONS_'));
+$selectSectionNoTabs = unserialize(\Kit\Origami\Config\Option::get('SECTIONS_NO_TABS'));
 $catalogId = Option::get('IBLOCK_ID', $site);
 $ar = array();
 $rsSection = \CIBlockSection::GetTreeList(Array("IBLOCK_ID" => $catalogId ), array("ID", "NAME", "DEPTH_LEVEL"));
@@ -70,7 +70,7 @@ $elementId = $APPLICATION->IncludeComponent(
     $component
 );
 
-\SotbitOrigami::setSeoOffer();
+\KitOrigami::setSeoOffer();
 
 $GLOBALS['CATALOG_CURRENT_ELEMENT_ID'] = $elementId;
 

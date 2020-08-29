@@ -29,7 +29,7 @@ Loc::loadMessages(__FILE__);
 <?endif;?>
 <script>
     if(!RegionsDeliveryMini) {
-        var RegionsDeliveryMini = new SotbitRegionsDeliveryMini({
+        var RegionsDeliveryMini = new KitRegionsDeliveryMini({
             'componentPath': '<?=CUtil::JSEscape($this->__component->__path)?>',
             'parameters': '<?=CUtil::JSEscape(base64_encode(serialize($arParams)))?>',
             'siteId': '<?=CUtil::JSEscape(SITE_ID)?>',

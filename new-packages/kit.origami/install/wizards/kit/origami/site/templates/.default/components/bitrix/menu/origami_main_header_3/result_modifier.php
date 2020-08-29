@@ -3,7 +3,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 use Bitrix\Main\Localization\Loc;
 
 if ($arResult) {
-    $oMenu = new \Sotbit\Origami\Helper\Menu();
+    $oMenu = new \Kit\Origami\Helper\Menu();
     $menu = [];
     $arSectURL = $arSectPict = array();
     $imgW = $imgH = 60;
@@ -11,7 +11,7 @@ if ($arResult) {
     if(isset($arParams["IBLOCK_ID"]))
         $iblockID = $arParams["IBLOCK_ID"];
     else
-        $iblockID = \Sotbit\Origami\Config\Option::get('IBLOCK_ID');
+        $iblockID = \Kit\Origami\Config\Option::get('IBLOCK_ID');
 
     foreach ($arResult as $key => $arItem) {
 
@@ -71,7 +71,7 @@ if ($arResult) {
         {
             $arSectPict = $obCache->GetVars();
         }elseif ($obCache->StartDataCache()){
-            $ItemImg = new \Sotbit\Origami\Image\Item();
+            $ItemImg = new \Kit\Origami\Image\Item();
             $dbSections = CIBlockSection::GetList(array(), array("IBLOCK_ID" => $iblockID, "ACTIVE" => "Y", "GLOBAL_ACTIVE" => "Y", "DEPTH_LEVEL" => 1), false, array("ID", "SECTION_PAGE_URL", "PICTURE"));
             while($arSections = $dbSections->GetNext())
             {

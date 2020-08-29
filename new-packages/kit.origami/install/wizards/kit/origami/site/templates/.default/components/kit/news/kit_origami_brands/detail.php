@@ -3,7 +3,7 @@
     die();
 }
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Page\Asset;
@@ -20,7 +20,7 @@ global $brandFilter;
 $brandFilter = array(
     "=ID" => false,
 );
-$iblockProd = \Sotbit\Origami\Helper\Config::get('IBLOCK_ID');
+$iblockProd = \Kit\Origami\Helper\Config::get('IBLOCK_ID');
 $arSections = $arElements = $arSectionsInfo = array();
 
 $t = Config::get('FILTER_TEMPLATE');
@@ -35,11 +35,11 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
     $arFilter = array("IBLOCK_ID" => $iblockProd, "ACTIVE" => "Y", 'PROPERTY_'.$arParams['BRAND_PROP_CODE'].'.CODE' => $arResult['VARIABLES']['ELEMENT_CODE']);
     $arSelect = array("ID", "IBLOCK_SECTION_ID");
 
-    if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID'])
+    if ($useRegion && $_SESSION['KIT_REGIONS']['ID'])
     {
         $arFilter[] = array(
             "LOGIC" => "OR",
-            array("PROPERTY_REGIONS" => $_SESSION['SOTBIT_REGIONS']['ID']),
+            array("PROPERTY_REGIONS" => $_SESSION['KIT_REGIONS']['ID']),
             array("PROPERTY_REGIONS" => false)
         );
     }
@@ -105,13 +105,13 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
             ?>
         <div class="d-xs-none"></div>
         <?
-        if (\SotbitOrigami::isUseRegions()) {
-            if ($_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"]) {
+        if (\KitOrigami::isUseRegions()) {
+            if ($_SESSION["KIT_REGIONS"]["PRICE_CODE"]) {
                 $arParams['~PRICE_CODE']
-                    = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
+                    = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
             }
-            if ($_SESSION["SOTBIT_REGIONS"]["STORE"]) {
-                $arParams['STORES'] = $_SESSION["SOTBIT_REGIONS"]["STORE"];
+            if ($_SESSION["KIT_REGIONS"]["STORE"]) {
+                $arParams['STORES'] = $_SESSION["KIT_REGIONS"]["STORE"];
             }
         }
         if($arParams['FILTER_VIEW_MODE'] == "VERTICAL")
@@ -311,7 +311,7 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
                     $sort = array();
                     $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/kit_origami/sort/sort.php", Array(), Array());
                 }
-                //include \Sotbit\Origami\Helper\Config::getChunkPath('sort');?>
+                //include \Kit\Origami\Helper\Config::getChunkPath('sort');?>
 			</div>
 			<?
             $intSectionID = $APPLICATION->IncludeComponent(

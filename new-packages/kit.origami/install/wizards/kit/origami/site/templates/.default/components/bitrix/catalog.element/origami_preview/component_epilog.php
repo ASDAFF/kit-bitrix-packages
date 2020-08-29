@@ -1,9 +1,9 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 use Bitrix\Main\Page\Asset;
 
 Loc::loadMessages(__FILE__);
@@ -22,7 +22,7 @@ $inBasket = array();
 $arResult['WISHES'] = $arIDs = array();
 if($arResult["SHOW_DELAY"])
 {
-    $wish = new \Sotbit\Origami\Sale\Basket\Wish();
+    $wish = new \Kit\Origami\Sale\Basket\Wish();
     $arResult['WISHES'] = $wish->findWishes();
 }
 

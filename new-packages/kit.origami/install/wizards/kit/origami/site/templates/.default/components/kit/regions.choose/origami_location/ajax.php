@@ -8,13 +8,13 @@ if (!\Bitrix\Main\Loader::includeModule('kit.regions')) {
 }
 
 Loc::loadMessages(__FILE__);
-$regions = \Sotbit\Regions\System\Location::getLocations();
+$regions = \Kit\Regions\System\Location::getLocations();
 ?>
 <div class="select-city__modal-wrap">
     <div class="select_city-modal-title">
         <div class="modal_title-text-wrapper">
-            <span class="title"><?= GetMessage("SOTBIT_REGIONS_MODAL_TITTLE") ?></span>
-            <span class="current_region-title"><?= GetMessage("SOTBIT_REGIONS_CURRENT_TITTLE") ?></span>
+            <span class="title"><?= GetMessage("KIT_REGIONS_MODAL_TITTLE") ?></span>
+            <span class="current_region-title"><?= GetMessage("KIT_REGIONS_CURRENT_TITTLE") ?></span>
             <span class="current_region">�����-���������</span>
         </div>
         <div class="select-city__close"></div>
@@ -46,7 +46,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
                 ?>
 
                 <input class="select-city__input" type="text" name="region-input" id="region-input"
-                       placeholder="<?= Loc::getMessage(SotbitRegions::moduleId . '_WRITE_SITY') ?>">
+                       placeholder="<?= Loc::getMessage(KitRegions::moduleId . '_WRITE_SITY') ?>">
                 <? if ($regions['TITLE_CITIES']) { ?>
                     <div class="input-example-wrapper">
                         <div class="select-city__wrapper__input">
@@ -80,7 +80,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
                                 if ($regions['FAVORITES']) {
                                     ?>
                                     <div class="select-city__tab_name_content__big_city">
-                                        <?= Loc::getMessage(SotbitRegions::moduleId . '_BIG_CITIES') ?>
+                                        <?= Loc::getMessage(KitRegions::moduleId . '_BIG_CITIES') ?>
                                     </div>
                                 <? } ?>
                                 <div class="select-city__list_wrapper_favorites">
@@ -99,7 +99,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
                             <? }
                             if ($region['CITY']) { ?>
                                 <div class="select-city__tab_name_content__village">
-                                    <?= Loc::getMessage(SotbitRegions::moduleId . '_CITIES') ?>
+                                    <?= Loc::getMessage(KitRegions::moduleId . '_CITIES') ?>
                                 </div>
                                 <div class="select-city__list_wrapper_cities">
                                     <?

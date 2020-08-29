@@ -10,8 +10,8 @@ $MESS ['FORM_NOT_FOUND'] = "Веб-форма не найдена.";
 
 $MESS ['FORM_SUBMIT'] = "Связаться с нами";
 
-$MESS ['SOTBIT_FORM_TEL'] = "Ваш номер";
-$MESS ['SOTBIT_FORM_I_AGREE'] = "Я согласен с условиями обработки";
-$MESS ['SOTBIT_FORM_I_AGREE2'] = "персональных данных";
+$MESS ['KIT_FORM_TEL'] = "Ваш номер";
+$MESS ['KIT_FORM_I_AGREE'] = "Я согласен с условиями обработки";
+$MESS ['KIT_FORM_I_AGREE2'] = "персональных данных";
 $MESS["CAPTCHA_TITLE"] = "Код подтверждения (символы на картинке) *";
 ?>

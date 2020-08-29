@@ -53,5 +53,5 @@ $this->setFrameMode(true);
 
 </div>
 <h2><?= \Bitrix\Main\Localization\Loc::getMessage
-    (\SotbitOrigami::moduleId . '_BRAND_TITLE', ['#BRAND#' => $arResult['NAME']]) ?>
+    (\KitOrigami::moduleId . '_BRAND_TITLE', ['#BRAND#' => $arResult['NAME']]) ?>
 </h2>

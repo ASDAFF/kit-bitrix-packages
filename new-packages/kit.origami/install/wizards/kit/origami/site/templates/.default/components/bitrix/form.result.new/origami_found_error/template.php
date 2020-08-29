@@ -2,7 +2,7 @@
 
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
@@ -11,7 +11,7 @@ Loader::includeModule('kit.origami');
 $APPLICATION->ShowAjaxHead();
 $this->addExternalCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_found_error/style.css");
 $this->addExternalJS(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_found_error/script.js");
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 ?>
 <div class="kit_order_phone_wrapper found-error-popup">
     <div class="kit_order_phone">

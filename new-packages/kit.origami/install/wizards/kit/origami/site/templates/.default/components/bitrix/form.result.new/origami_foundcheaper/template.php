@@ -1,7 +1,7 @@
 <?
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Page\Asset;
 

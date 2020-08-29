@@ -2,8 +2,8 @@
     die();
 }
 
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Filter;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Filter;
 
 /*$arResult['FACET_FILTER']['SECTION_ID'] = Array
 (

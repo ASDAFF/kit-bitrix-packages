@@ -1,13 +1,13 @@
 <?
 
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 /**
  * Class Resize
  *
- * @package Sotbit\Origami
+ * @package Kit\Origami
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Resize

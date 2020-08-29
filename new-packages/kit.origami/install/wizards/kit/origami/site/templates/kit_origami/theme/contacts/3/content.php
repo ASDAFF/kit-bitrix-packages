@@ -1,15 +1,15 @@
 <?
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/3/style.css");
 CJSCore::Init(array("date"));
 ?>
 <div class="contact__techno_block">
     <?
-    if(\SotbitOrigami::isUseRegions() && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']){
+    if(\KitOrigami::isUseRegions() && $_SESSION['KIT_REGIONS']['MAP_YANDEX']){
         ?>
-	    #SOTBIT_REGIONS_MAP_YANDEX#
+	    #KIT_REGIONS_MAP_YANDEX#
         <?
     }
     else{
@@ -32,10 +32,10 @@ CJSCore::Init(array("date"));
 
     global $arFilterNews;
     $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-    if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+    if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
         $arFilterNews['PROPERTY_REGIONS'] = [
             false,
-            $_SESSION['SOTBIT_REGIONS']['ID']
+            $_SESSION['KIT_REGIONS']['ID']
         ];
     }
 

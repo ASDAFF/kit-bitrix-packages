@@ -1,10 +1,10 @@
 <?php
 
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Front\User;
-use Sotbit\Origami\Internals\BlockTable;
+use Kit\Origami\Front\User;
+use Kit\Origami\Internals\BlockTable;
 
 class BlockCollection implements \IteratorAggregate
 {
@@ -50,7 +50,7 @@ class BlockCollection implements \IteratorAggregate
             echo '<div data-id="create_action" class="landing-ui-panel landing-ui-panel-create-action landing-ui-show">
 			<button type="button" class="landing-ui-button landing-ui-button-plus" data-id="insert_after">
 				<span class="landing-ui-button-text">
-					'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD').'
+					'.Loc::getMessage(\KitOrigami::moduleId.'_ADD').'
 				</span>
 			</button>
 		</div>';
@@ -65,7 +65,7 @@ class BlockCollection implements \IteratorAggregate
             {
                 if($bblock->getId() == $block->getId())
                 {
-                    $nBlock = new \Sotbit\Origami\Block([
+                    $nBlock = new \Kit\Origami\Block([
                         'CODE' => $block->getCode(),
                         'PART' => $block->getPart(),
                     ], $this->getPage());

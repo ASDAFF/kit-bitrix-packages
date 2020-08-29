@@ -3,7 +3,7 @@ global $APPLICATION;
 $APPLICATION->RestartBuffer();
 use Bitrix\Main,
     Bitrix\Sale;
-use Bitrix\Sale\Internals\BasketPropertyTable, Sotbit\Origami\Helper\Config;
+use Bitrix\Sale\Internals\BasketPropertyTable, Kit\Origami\Helper\Config;
 
 
 Main\Loader::includeModule('kit.origami');
@@ -43,7 +43,7 @@ $arResult['LANG'] = array(
 
 $arResult["NUM_PRODUCTS_COMPARE"] = 0;
 $arParams['IMAGE_FOR_OFFER'] = "PRODUCT";
-$compare = new \Sotbit\Origami\Sale\Basket\Compare();
+$compare = new \Kit\Origami\Sale\Basket\Compare();
 $arResult["NUM_PRODUCTS_COMPARE"] = $compare->getCompared();
 
 $arBasketID = $arDelayID = $arCompareID = $arID = $arProductID = $basketItems = $arrayRatio = array();
@@ -58,7 +58,7 @@ $arResult["TOTAL_PRICE_VALUE"] = str_replace($arResult["CURRENCY_FORMAT_STRING"]
 $arParams["TAB_ACTIVE"] = isset($arParams["TAB_ACTIVE"]) ? $arParams["TAB_ACTIVE"] : "BUY";
 $arResult["PROPS"] = array();
 
-$Item = new \Sotbit\Origami\Image\Item();
+$Item = new \Kit\Origami\Image\Item();
 
 $res = CIBlockSection::GetByID(Config::get('IBLOCK_ID'));
 $ar_res = $res->GetNext();
@@ -170,7 +170,7 @@ if ($arResult["OLD_PRICE_ITOGO_TOTAL"]) {
     $arResult["OLD_PRICE_ITOGO_TOTAL"] = \CCurrencyLang::CurrencyFormat( $arResult["OLD_PRICE_ITOGO_TOTAL"], $arResult["CURRENCY"], true);
 }
 
-$Basket = new \Sotbit\Origami\Image\Basket();
+$Basket = new \Kit\Origami\Image\Basket();
 $Basket->setMediumHeight(70);
 $Basket->setMediumWidth(70);
 $images = [];

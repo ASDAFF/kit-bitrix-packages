@@ -1,11 +1,11 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 /**
  * Class Phone
  *
- * @package Sotbit\Origami\Helper
+ * @package Kit\Origami\Helper
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Phone

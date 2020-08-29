@@ -16,11 +16,11 @@ if($arResult["GRID"]["ROWS"])
 
     $mod10 = $quantity % 10;
     $mod100 = $quantity % 100;
-    $quantityLabel = Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_DEFAULT");
+    $quantityLabel = Loc::getMessage("KIT_SOA_QUANTITY_LABEL_DEFAULT");
     if(($mod10 > 1 && $mod10 < 5) && ($mod100 < 12 || $mod100 > 14))
-        $quantityLabel .= Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_V1");
+        $quantityLabel .= Loc::getMessage("KIT_SOA_QUANTITY_LABEL_V1");
     elseif($mod10 == 0 || ($mod10 > 4 && $mod10 < 10) || ($mod100 > 10 && $mod100 < 15))
-        $quantityLabel .= Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_V2");
+        $quantityLabel .= Loc::getMessage("KIT_SOA_QUANTITY_LABEL_V2");
 }
 
 if($USER->IsAuthorized() || $arParams["ALLOW_AUTO_REGISTER"] == "Y")
@@ -383,7 +383,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                             <div class="order_block__ordering">
                                 <a class="order_block__ordering_link fonts__middle_comment" href="<?=$arParams["PATH_TO_BASKET"]?>">
                                     <i class="fas fa-angle-double-left"></i>
-                                    <?=Loc::getMessage("SOTBIT_SOA_BACK_TO_BASKET");?>
+                                    <?=Loc::getMessage("KIT_SOA_BACK_TO_BASKET");?>
                                 </a>
 
                                 <div class="cntr">

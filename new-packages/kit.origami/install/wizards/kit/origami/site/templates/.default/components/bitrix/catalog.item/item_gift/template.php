@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 use \Bitrix\Main;
 use \Bitrix\Main\Page\Asset;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 //$APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addCss(SITE_DIR ."local/templates/.default/components/bitrix/catalog.item/item_gift/style.css");
@@ -408,7 +408,7 @@ if (isset($arResult['ITEM']))
                 'RELATIVE_QUANTITY_FEW' => $arParams['MESS_RELATIVE_QUANTITY_FEW'],
             );
 
-            \SotbitOrigami::clearJSParams($jsParams, $arParams, $showSKU);
+            \KitOrigami::clearJSParams($jsParams, $arParams, $showSKU);
 
             ?>
 			<script>

@@ -20,7 +20,7 @@ Loc::loadMessages(__FILE__);
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["BLOCK_NAME"]?>
         <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text">
-            <?=Loc::getMessage("SOTBIT_SERVICES_ONE_WIDE_LINK_TEXT");?>
+            <?=Loc::getMessage("KIT_SERVICES_ONE_WIDE_LINK_TEXT");?>
             <i class="fas fa-angle-double-right"></i>
         </a>
     </p>

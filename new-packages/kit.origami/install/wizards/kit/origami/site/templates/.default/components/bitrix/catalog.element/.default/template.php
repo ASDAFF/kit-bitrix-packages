@@ -5,8 +5,8 @@
 global $analogProducts;
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Prop;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Prop;
 
 
 
@@ -29,7 +29,7 @@ if ($this->__name == '.default')
     $template = 'NO_TABS';
 }
 
-if(Config::get('OFFER_LANDING') == 'Y' && isset($arResult['JS_OFFERS']) && isset($arResult['JS_OFFERS']) && \SotbitOrigami::$checkOfferPage)
+if(Config::get('OFFER_LANDING') == 'Y' && isset($arResult['JS_OFFERS']) && isset($arResult['JS_OFFERS']) && \KitOrigami::$checkOfferPage)
 {
     foreach($arResult['OFFERS'] as $arOffer)
     {
@@ -1149,7 +1149,7 @@ $blockID = randString(8);
                             </div>
 
                             <?
-                            $addProps = unserialize(\Sotbit\Origami\Config\Option::get('DETAIL_ADD_PROPS_' . $template));
+                            $addProps = unserialize(\Kit\Origami\Config\Option::get('DETAIL_ADD_PROPS_' . $template));
                             if ($addProps && !empty($arResult['DISPLAY_PROPERTIES']))
                             {
                                 ?>

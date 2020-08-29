@@ -1,5 +1,5 @@
 <?php
-namespace Sotbit\Origami\Internals;
+namespace Kit\Origami\Internals;
 
 use Bitrix\Main,
 	Bitrix\Main\Localization\Loc;
@@ -22,7 +22,7 @@ Loc::loadMessages(__FILE__);
  * <li> DATE_MODIFY datetime optional
  * </ul>
  *
- * @package Sotbit\Origami
+ * @package Kit\Origami
  **/
 
 class BlockTable extends Main\Entity\DataManager

@@ -6,10 +6,10 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 class Sections extends Select
 {
     private $iblockId;
@@ -20,7 +20,7 @@ class Sections extends Select
         if (Loader::includeModule('iblock')) {
             $l = \CIBlockSection::GetTreeList(Array("IBLOCK_ID"=>$this->getIblockId()), array("ID", "NAME", "DEPTH_LEVEL"));
             if($this->isCanEmpty()){
-                $this->setValue('','Не привязывать');
+                $this->setValue('','пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');
             }
             while($ar_l = $l->GetNext()){
                 $this->setValue(

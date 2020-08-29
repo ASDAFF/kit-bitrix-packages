@@ -1,7 +1,7 @@
 <?
 use Bitrix\Main\Localization\Loc;
 $arTemplate = array(
-    'NAME' => Loc::getMessage("SOTBIT_DESCRIPTION_NAME"),
-    'DESCRIPTION' => Loc::getMessage("SOTBIT_DESCRIPTION_DESCRIPTION"),
+    'NAME' => Loc::getMessage("KIT_DESCRIPTION_NAME"),
+    'DESCRIPTION' => Loc::getMessage("KIT_DESCRIPTION_DESCRIPTION"),
 );
 ?>

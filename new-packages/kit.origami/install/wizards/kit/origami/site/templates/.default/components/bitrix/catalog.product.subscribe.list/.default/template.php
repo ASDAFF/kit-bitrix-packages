@@ -6,7 +6,7 @@
 /** @global CMain $APPLICATION */
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 CJSCore::init(array('popup'));
 

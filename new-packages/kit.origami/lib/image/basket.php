@@ -1,9 +1,9 @@
 <?php
-namespace Sotbit\Origami\Image;
+namespace Kit\Origami\Image;
 use Bitrix\Iblock\ElementTable;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Config\Option;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Config\Option;
+use Kit\Origami\Helper\Config;
 
 class Basket extends Base {
     public function __construct() {
@@ -162,7 +162,7 @@ class Basket extends Base {
                 $rowTmp['OFFERS'][0]['PROPERTIES'][Config::get('COLOR')]['VALUE'] = $images['PROP_COLOR'];
             }
 
-            $rowTmp = \SotbitOrigami::changeColorImages($rowTmp, 'preview');
+            $rowTmp = \KitOrigami::changeColorImages($rowTmp, 'preview');
 
 
             if($rowTmp['OFFERS'][0]['MORE_PHOTO'][0])

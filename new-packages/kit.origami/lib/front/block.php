@@ -1,10 +1,10 @@
 <?php
 
-namespace Sotbit\Origami\Front;
+namespace Kit\Origami\Front;
 
 use Bitrix\Main\Context;
-use Sotbit\Origami\BlockCollection;
-use Sotbit\Origami\Internals\BlockTable;
+use Kit\Origami\BlockCollection;
+use Kit\Origami\Internals\BlockTable;
 
 class Block
 {
@@ -95,7 +95,7 @@ class Block
             ]);
             $i = 0;
             while ($block = $rs->fetch()) {
-                $block = new \Sotbit\Origami\Block($block, $this->getPage());
+                $block = new \Kit\Origami\Block($block, $this->getPage());
                 $blockCollection->add($block, $i);
                 ++$i;
             }

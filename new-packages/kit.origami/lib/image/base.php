@@ -1,10 +1,10 @@
 <?php
-namespace Sotbit\Origami\Image;
+namespace Kit\Origami\Image;
 
 /**
  * Class Base
  *
- * @package Sotbit\Origami\Image
+ * @package Kit\Origami\Image
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 abstract class Base{

@@ -2,9 +2,9 @@
 global $APPLICATION;
 global $USER;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 
 
@@ -123,7 +123,7 @@ $page = $APPLICATION->GetCurPage(false);
             <?
                 if(
                     \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                    \SotbitOrigami::isUseRegions() &&
+                    \KitOrigami::isUseRegions() &&
                     is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
                 ):
                     $APPLICATION->IncludeComponent(
@@ -133,7 +133,7 @@ $page = $APPLICATION->GetCurPage(false);
                             "CACHE_TIME"    => "36000000",
                             "CACHE_TYPE"    => "A",
                             "REGION_FIELDS" => ['UF_ADDRESS', 'UF_EMAIL', 'UF_PHONE'],
-                            "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                            "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                         ]
                     );
                 else:?>
@@ -160,11 +160,11 @@ $page = $APPLICATION->GetCurPage(false);
         </div>
         <div class="container_menu__contact_soc">
             <?
-            $vk = \Sotbit\Origami\Helper\Config::get('VK');
-            $tw = \Sotbit\Origami\Helper\Config::get('TW');
-            $ok = \Sotbit\Origami\Helper\Config::get('OK');
-            $inst = \Sotbit\Origami\Helper\Config::get('INST');
-            $telega = \Sotbit\Origami\Helper\Config::get('TELEGA');
+            $vk = \Kit\Origami\Helper\Config::get('VK');
+            $tw = \Kit\Origami\Helper\Config::get('TW');
+            $ok = \Kit\Origami\Helper\Config::get('OK');
+            $inst = \Kit\Origami\Helper\Config::get('INST');
+            $telega = \Kit\Origami\Helper\Config::get('TELEGA');
             if($vk)
             {
                 ?>
@@ -238,7 +238,7 @@ $page = $APPLICATION->GetCurPage(false);
             <?
             if(
                 \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                \SotbitOrigami::isUseRegions() &&
+                \KitOrigami::isUseRegions() &&
                 is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
             ):
                 $APPLICATION->IncludeComponent(
@@ -248,7 +248,7 @@ $page = $APPLICATION->GetCurPage(false);
                         "CACHE_TIME"    => "36000000",
                         "CACHE_TYPE"    => "A",
                         "REGION_FIELDS" => ['UF_PHONE'],
-                        "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                        "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                     ]
                 );
             else:
@@ -300,7 +300,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <?
                         if(
                             \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                            \SotbitOrigami::isUseRegions() &&
+                            \KitOrigami::isUseRegions() &&
                             is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
@@ -310,7 +310,7 @@ $page = $APPLICATION->GetCurPage(false);
                                     "CACHE_TIME"    => "36000000",
                                     "CACHE_TYPE"    => "A",
                                     "REGION_FIELDS" => ['UF_PHONE'],
-                                    "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                                    "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                                 ]
                             );
                         else:
@@ -375,9 +375,9 @@ $page = $APPLICATION->GetCurPage(false);
 
                     <div class="select-city-wrap">
 		                <div class="select-city__block">
-			                <span class="select-city__block__text"><?=Loc::getMessage(SotbitRegions::moduleId.'_YOUR_CITY')?>: </span>
+			                <span class="select-city__block__text"><?=Loc::getMessage(KitRegions::moduleId.'_YOUR_CITY')?>: </span>
 
-                        <?if(\SotbitOrigami::isUseRegions())
+                        <?if(\KitOrigami::isUseRegions())
                         {
                         ?>
                             <svg class="product-presence__location-icon" width="13" height="16">
@@ -417,7 +417,7 @@ $page = $APPLICATION->GetCurPage(false);
 		                <div class="select-city__dropdown-wrap" style="<?=($arResult['SHOW_POPUP'] == 'Y')?'display:block;':'display:none;'?>">
 			                <div class="select-city__dropdown">
 				                <div class="select-city__dropdown__title-wrap">
-				                <span class="select-city__dropdown__title"><?=Loc::getMessage(SotbitRegions::moduleId.'_YOUR_CITY')?>
+				                <span class="select-city__dropdown__title"><?=Loc::getMessage(KitRegions::moduleId.'_YOUR_CITY')?>
                                     <?=$arResult['USER_REGION_NAME_LOCATION']?>?
 				                </span>
 				                </div>
@@ -426,10 +426,10 @@ $page = $APPLICATION->GetCurPage(false);
 						                class="select-city__dropdown__choose__yes select-city__dropdown__choose"
 						                data-id="<?=$arResult['USER_REGION_ID']?>"
 				                >
-					                <?=Loc::getMessage(SotbitRegions::moduleId.'_YES')?>
+					                <?=Loc::getMessage(KitRegions::moduleId.'_YES')?>
 				                </span>
 					                <span class="select-city__dropdown__choose__no select-city__dropdown__choose">
-					                <?=Loc::getMessage(SotbitRegions::moduleId.'_NO')?>
+					                <?=Loc::getMessage(KitRegions::moduleId.'_NO')?>
 				                </span>
 				                </div>
 			                </div>
@@ -441,7 +441,7 @@ $page = $APPLICATION->GetCurPage(false);
                             <?
                             if(
                                 \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                                \SotbitOrigami::isUseRegions() &&
+                                \KitOrigami::isUseRegions() &&
                                 is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
                             ):
                                 $APPLICATION->IncludeComponent(
@@ -451,7 +451,7 @@ $page = $APPLICATION->GetCurPage(false);
                                         "CACHE_TIME"    => "36000000",
                                         "CACHE_TYPE"    => "A",
                                         "REGION_FIELDS" => ['UF_ADDRESS'],
-                                        "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                                        "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                                     ]
                                 );
                             else:?>
@@ -483,7 +483,7 @@ $page = $APPLICATION->GetCurPage(false);
                     </div>
                 </div>
                 <div class="block__feedback_and_basket">
-                    <?if(\Sotbit\Origami\Helper\Config::get('HEADER_CALL') == 'Y' && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
+                    <?if(\Kit\Origami\Helper\Config::get('HEADER_CALL') == 'Y' && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                         <div class="header_info_block__item header_info_block__feedback">
                             <div class="header_info_block__feedback_button fonts__main_comment main_btn-white" onclick="callbackPhone('<?=SITE_DIR?>',
                                     '<?=SITE_ID?>', this)">

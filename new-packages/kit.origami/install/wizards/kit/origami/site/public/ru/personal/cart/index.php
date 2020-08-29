@@ -1,6 +1,6 @@
 <?
 
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 define("HIDE_SIDEBAR", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");

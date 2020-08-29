@@ -1,6 +1,6 @@
 <?php
 
-use Sotbit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();

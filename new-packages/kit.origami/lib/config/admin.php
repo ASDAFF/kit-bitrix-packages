@@ -1,16 +1,16 @@
 <?php
-namespace Sotbit\Origami\Config;
+namespace Kit\Origami\Config;
 
 use Bitrix\Main\Localization\Loc;
 /**
  * Class Admin
- * @package Sotbit\Origami\Config
+ * @package Kit\Origami\Config
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
-class Admin extends \SotbitOrigami
+class Admin extends \KitOrigami
 {
 	/**
-	 * @var \Sotbit\Origami\Collection
+	 * @var \Kit\Origami\Collection
 	 */
 	protected     $tabs;
 	/**
@@ -24,7 +24,7 @@ class Admin extends \SotbitOrigami
 	 */
 	public function __construct($site)
 	{
-		$this->tabs = new \Sotbit\Origami\Collection();
+		$this->tabs = new \Kit\Origami\Collection();
 		$this->site = $site;
 	}
 	public function show()
@@ -145,7 +145,7 @@ class Admin extends \SotbitOrigami
 				</form>';
 	}
 	/**
-	 * @return \Sotbit\Origami\Collection
+	 * @return \Kit\Origami\Collection
 	 */
 	public function getTabs()
 	{
@@ -181,10 +181,10 @@ class Admin extends \SotbitOrigami
 				}
 			}
 		}
-		\SotbitOrigami::genTheme(Option::$options,'/local/templates/kit_origami/theme/custom');
-		if($_SESSION['SOTBIT_ORIGAMI_THEME']['TMP'])
+		\KitOrigami::genTheme(Option::$options,'/local/templates/kit_origami/theme/custom');
+		if($_SESSION['KIT_ORIGAMI_THEME']['TMP'])
 		{
-			$files = scandir($_SERVER['DOCUMENT_ROOT'] .$_SESSION['SOTBIT_ORIGAMI_THEME']['TMP']);
+			$files = scandir($_SERVER['DOCUMENT_ROOT'] .$_SESSION['KIT_ORIGAMI_THEME']['TMP']);
 
 			foreach ($files as $file)
 			{
@@ -196,11 +196,11 @@ class Admin extends \SotbitOrigami
 				{
 					continue;
 				}
-				unlink($_SERVER['DOCUMENT_ROOT'] . $_SESSION['SOTBIT_ORIGAMI_THEME']['TMP'] . '/' . $file);
+				unlink($_SERVER['DOCUMENT_ROOT'] . $_SESSION['KIT_ORIGAMI_THEME']['TMP'] . '/' . $file);
 			}
-			rmdir($_SERVER['DOCUMENT_ROOT'] . $_SESSION['SOTBIT_ORIGAMI_THEME']['TMP']);
+			rmdir($_SERVER['DOCUMENT_ROOT'] . $_SESSION['KIT_ORIGAMI_THEME']['TMP']);
 		}
-		unset($_SESSION['SOTBIT_ORIGAMI_THEME']);
+		unset($_SESSION['KIT_ORIGAMI_THEME']);
 	}
 	/**
 	 * @return \CAdminTabControl

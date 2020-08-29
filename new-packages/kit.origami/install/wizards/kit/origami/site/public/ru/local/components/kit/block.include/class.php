@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 use Bitrix\Main\Loader;
 
-class SotbitBlockIncludeComponent extends \CBitrixComponent
+class KitBlockIncludeComponent extends \CBitrixComponent
 {
     /**
      * @param $arParams
@@ -28,7 +28,7 @@ class SotbitBlockIncludeComponent extends \CBitrixComponent
             echo $e->getMessage();
         }
 
-        $FrontBlock = new \Sotbit\Origami\Front\Block(
+        $FrontBlock = new \Kit\Origami\Front\Block(
             SITE_ID
         );
         global $APPLICATION;
@@ -55,12 +55,12 @@ class SotbitBlockIncludeComponent extends \CBitrixComponent
      */
     public function getAvailableBlocks()
     {
-        $dir = $_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::blockDir;
+        $dir = $_SERVER['DOCUMENT_ROOT'].\KitOrigami::blockDir;
         if (is_dir($dir)) {
             $sections = $this->getSections($dir);
             $this->arResult['AVAILABLE_SECTIONS'] = $sections;
             $avBlocks = scandir($dir);
-            $result = \SotbitOrigami::blockIncludeAvailable($avBlocks, $dir, $sections);
+            $result = \KitOrigami::blockIncludeAvailable($avBlocks, $dir, $sections);
         }
         return $result;
     }

@@ -1,9 +1,9 @@
 <?php
-namespace Sotbit\Origami\Config;
+namespace Kit\Origami\Config;
 
 /**
  * Class Tab
- * @package Sotbit\Origami\Config
+ * @package Kit\Origami\Config
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Tab
@@ -14,7 +14,7 @@ class Tab
 	protected $code;
 
 	/**
-	 * @var \Sotbit\Origami\Collection
+	 * @var \Kit\Origami\Collection
 	 */
 	protected $groups;
 
@@ -34,7 +34,7 @@ class Tab
 	 */
 	public function __construct($code)
 	{
-		$this->groups = new \Sotbit\Origami\Collection();
+		$this->groups = new \Kit\Origami\Collection();
 		$this->setCode($code);
 	}
 	/**
@@ -54,7 +54,7 @@ class Tab
 	}
 
 	/**
-	 * @return \Sotbit\Origami\Collection
+	 * @return \Kit\Origami\Collection
 	 */
 	public function getGroups()
 	{

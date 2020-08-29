@@ -4,7 +4,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->createFrame()->begin();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Regions\Config\Option;
+use Kit\Regions\Config\Option;
 
 Loc::loadMessages(__FILE__);
 
@@ -14,7 +14,7 @@ Loc::loadMessages(__FILE__);
 <svg width="18" height="18">
     <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
 </svg>
-<p><?= Loc::getMessage(SotbitRegions::moduleId . '_YOUR_CITY') ?></p>
+<p><?= Loc::getMessage(KitRegions::moduleId . '_YOUR_CITY') ?></p>
 */?>
 <a href="#" class="select-city__block__text-city__js" data-entity="open_region" onclick="event.preventDefault();">
     <?=$arResult['USER_REGION_NAME']?>
@@ -24,17 +24,17 @@ Loc::loadMessages(__FILE__);
 <div class="select-city__dropdown-wrap"  style="<?=($arResult['SHOW_POPUP'] == 'Y')?'display:block;':'display:none;'?>">
     <div class="select-city__dropdown">
         <div class="select-city__dropdown__title-wrap">
-				<span class="select-city__dropdown__title"><?= Loc::getMessage(SotbitRegions::moduleId . '_YOUR_CITY') ?>
+				<span class="select-city__dropdown__title"><?= Loc::getMessage(KitRegions::moduleId . '_YOUR_CITY') ?>
                     <?= $arResult['USER_REGION_NAME_LOCATION'] ?>?
 				</span>
         </div>
 
         <div class="select-city__dropdown__choose-wrap">
 				<span class="select-city__dropdown__choose__yes select-city__dropdown__choose" data-id="<?=$arResult['USER_REGION_ID']?>" data-region-id="<?=$arResult['USER_MULTI_REGION_ID']?>" data-code="<?= $arResult['USER_REGION_CODE']?>">
-					<?= Loc::getMessage(SotbitRegions::moduleId . '_YES') ?>
+					<?= Loc::getMessage(KitRegions::moduleId . '_YES') ?>
 				</span>
                 <span class="select-city__dropdown__choose__no select-city__dropdown__choose">
-					<?= Loc::getMessage(SotbitRegions::moduleId . '_NO') ?>
+					<?= Loc::getMessage(KitRegions::moduleId . '_NO') ?>
 				</span>
         </div>
 
@@ -55,7 +55,7 @@ Loc::loadMessages(__FILE__);
 <script data-skip-moving=true>
 
     document.addEventListener('DOMContentLoaded', function () {
-        var SotbitRegion = new SotbitRegions({
+        var KitRegion = new KitRegions({
             'list':<?=CUtil::PhpToJSObject($arResult['REGION_LIST'], false, true); ?>,
             'rootDomain':'<?=$arResult['ROOT_DOMAIN'][0]?>',
             //'rootDomain': 'kit.com',

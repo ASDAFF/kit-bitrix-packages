@@ -1,7 +1,7 @@
 <?
-//namespace Sotbit\Origami\Filter\Facet;
+//namespace Kit\Origami\Filter\Facet;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Filter\Facet;
+use Kit\Origami\Filter\Facet;
 use Bitrix\Main\Localization\Loc;
 
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
@@ -131,7 +131,7 @@ class CBitrixCatalogSmartFilter extends CBitrixComponent
 			}
 		}
 
-		$this->facet = new \Sotbit\Origami\Filter\Facet($this->IBLOCK_ID);
+		$this->facet = new \Kit\Origami\Filter\Facet($this->IBLOCK_ID);
 
 		return parent::executeComponent();
 	}

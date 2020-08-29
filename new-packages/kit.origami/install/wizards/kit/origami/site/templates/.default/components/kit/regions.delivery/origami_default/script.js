@@ -6,9 +6,9 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var SotbitRegionsDelivery = /*#__PURE__*/function () {
-  function SotbitRegionsDelivery(params) {
-    _classCallCheck(this, SotbitRegionsDelivery);
+var KitRegionsDelivery = /*#__PURE__*/function () {
+  function KitRegionsDelivery(params) {
+    _classCallCheck(this, KitRegionsDelivery);
 
     this.tabID = document.getElementById('TAB_DELIVERY');
     this.contentID = document.getElementById('DELIVERY_CONTENT');
@@ -115,7 +115,7 @@ var SotbitRegionsDelivery = /*#__PURE__*/function () {
     }
   }
 
-  _createClass(SotbitRegionsDelivery, [{
+  _createClass(KitRegionsDelivery, [{
     key: "toggleWaysDelivery",
     value: function toggleWaysDelivery() {
       var COUNT_VISIBLE_ITEM = 3;
@@ -314,5 +314,5 @@ var SotbitRegionsDelivery = /*#__PURE__*/function () {
     }
   }]);
 
-  return SotbitRegionsDelivery;
+  return KitRegionsDelivery;
 }();

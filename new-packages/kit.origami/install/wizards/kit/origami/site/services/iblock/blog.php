@@ -4,7 +4,7 @@
 if (!CModule::IncludeModule("kit.origami"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if (!CModule::IncludeModule("iblock"))
     return;
@@ -207,7 +207,7 @@ if($iblockID) {
     Option::Set('IBLOCK_ID_BLOG', $iblockID, WIZARD_SITE_ID);
 }
 
-$_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["BLOG"] = $iblockID;
+$_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["BLOG"] = $iblockID;
 
 $arP = \Bitrix\Iblock\PropertyTable::getList(array('filter' => ['IBLOCK_ID' => $iblockID],'select' => ['ID', 'CODE', 'NAME']))->fetchAll();
 

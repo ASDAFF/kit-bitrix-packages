@@ -226,7 +226,7 @@ if($arParams['AJAX'] != 'Y'){
         <div class="modal__overlay" data-entity="overlay"></div>
     </div>
     <script>
-        var RegionsDelivery = new SotbitRegionsDelivery({
+        var RegionsDelivery = new KitRegionsDelivery({
             'root':'kit-delivery-<?=$arResult['RAND']?>',
             'componentPath': '<?=CUtil::JSEscape($componentPath)?>',
             'parameters': '<?=CUtil::JSEscape($signedParams)?>',

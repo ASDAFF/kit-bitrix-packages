@@ -5,7 +5,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
 	?>
     <div class="header-link__phone fonts__middle_comment dropdown_list">
 	    <div class='main_element_wrapper'>
-		    <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="header-link__phone-main">
+		    <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>" class="header-link__phone-main">
                 <?=$phone?>
 		    </a>
 	    </div>
@@ -17,7 +17,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
                         continue;
                     }
                     ?>
-	                <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="header-link__phone-item">
+	                <a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>" class="header-link__phone-item">
                         <?=$phone?>
 	                </a>
 	                <?
@@ -32,7 +32,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     ?>
 	<div class='header-link__phone fonts__middle_comment'>
 		<div class='main_element_wrapper'>
-			<a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>">
+			<a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>">
                 <?=$phone?>
 			</a>
 		</div>
@@ -42,7 +42,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     ?>
 	<div class='header-link__phone fonts__middle_comment'>
 		<div class='main_element_wrapper'>
-			<a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>">
+			<a href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>">
                 <?=$phone?>
 			</a>
 		</div>

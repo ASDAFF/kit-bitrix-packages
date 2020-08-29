@@ -55,7 +55,7 @@ if($codes) {
         [
             'filter' => [
                 'CODE'      => $codes,
-                'IBLOCK_ID' => \Sotbit\Origami\Helper\Config::get('IBLOCK_ID')
+                'IBLOCK_ID' => \Kit\Origami\Helper\Config::get('IBLOCK_ID')
             ],
             'select' => ['CODE','NAME']
         ]
@@ -65,7 +65,7 @@ if($codes) {
     }
 }
 
-$Basket = new \Sotbit\Origami\Image\Basket();
+$Basket = new \Kit\Origami\Image\Basket();
 $images = [];
 if($this->arParams['IMAGE_FOR_OFFER'] == 'PRODUCT') {
     $images = $Basket->getImages($ids);

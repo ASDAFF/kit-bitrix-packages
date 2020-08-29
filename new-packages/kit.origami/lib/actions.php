@@ -1,5 +1,5 @@
 <?
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
 class Actions
 {

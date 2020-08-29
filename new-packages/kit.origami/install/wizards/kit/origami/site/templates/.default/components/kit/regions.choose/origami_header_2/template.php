@@ -2,7 +2,7 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Regions\Config\Option;
+use Kit\Regions\Config\Option;
 
 Loc::loadMessages(__FILE__);
 
@@ -12,13 +12,13 @@ $frame = $this->createFrame()->begin("");
 	<?/*<svg width="18" height="18">
 		<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
 	</svg>
-	<p><?=Loc::getMessage(SotbitRegions::moduleId.'_YOUR_CITY')?></p>*/?>
+	<p><?=Loc::getMessage(KitRegions::moduleId.'_YOUR_CITY')?></p>*/?>
 	<a href="javascript:return false;" class="select-city__block__text-city__js"><?=$arResult['USER_REGION_NAME']?></a>
 
 		<div class="select-city__dropdown-wrap" style="<?=($arResult['SHOW_POPUP'] == 'Y')?'display:block;':'display:none;'?>">
 			<div class="select-city__dropdown">
 				<div class="select-city__dropdown__title-wrap">
-				<span class="select-city__dropdown__title"><?=Loc::getMessage(SotbitRegions::moduleId.'_YOUR_CITY')?>
+				<span class="select-city__dropdown__title"><?=Loc::getMessage(KitRegions::moduleId.'_YOUR_CITY')?>
                     <?=$arResult['USER_REGION_NAME_LOCATION']?>
 				</span>
 				</div>
@@ -27,10 +27,10 @@ $frame = $this->createFrame()->begin("");
 						class="select-city__dropdown__choose__yes select-city__dropdown__choose"
 						data-id="<?=$arResult['USER_REGION_ID']?>"
 				>
-					<?=Loc::getMessage(SotbitRegions::moduleId.'_YES')?>
+					<?=Loc::getMessage(KitRegions::moduleId.'_YES')?>
 				</span>
 					<span class="select-city__dropdown__choose__no select-city__dropdown__choose">
-					<?=Loc::getMessage(SotbitRegions::moduleId.'_NO')?>
+					<?=Loc::getMessage(KitRegions::moduleId.'_NO')?>
 				</span>
 				</div>
 			</div>
@@ -72,7 +72,7 @@ $frame = $this->createFrame()->begin("");
 			       type="text"
 			       name="region-input"
 			       id="region-input"
-			       placeholder="<?=Loc::getMessage(SotbitRegions::moduleId.'_WRITE_SITY')?>">
+			       placeholder="<?=Loc::getMessage(KitRegions::moduleId.'_WRITE_SITY')?>">
             <?
 
             if($arResult['TITLE_CITIES']) {
@@ -98,11 +98,11 @@ $frame = $this->createFrame()->begin("");
                     <?php
                     if($arResult['FAVORITES']){
                         ?>
-						<div class="select-city__tab_name_content__big_city"><?=Loc::getMessage(SotbitRegions::moduleId.'_BIG_CITIES')?></div>
+						<div class="select-city__tab_name_content__big_city"><?=Loc::getMessage(KitRegions::moduleId.'_BIG_CITIES')?></div>
                         <?php
                     }
                     ?>
-					<div class="select-city__tab_name_content__village"><?=Loc::getMessage(SotbitRegions::moduleId.'_CITIES')?></div>
+					<div class="select-city__tab_name_content__village"><?=Loc::getMessage(KitRegions::moduleId.'_CITIES')?></div>
 				</div>
                 <?
                 foreach ($arResult['REGION_LIST_COUNTRIES'] as $id => $region){
@@ -173,7 +173,7 @@ $frame = $this->createFrame()->begin("");
 
 	<script>
     document.addEventListener('DOMContentLoaded', function () {
-		var SotbitRegion = new SotbitRegions({
+		var KitRegion = new KitRegions({
 			'list':<?=CUtil::PhpToJSObject($arResult['REGION_LIST'], false, true); ?>,
 			'rootDomain':'<?=$arResult['ROOT_DOMAIN'][0]?>',
 			'templateFolder':'<?=$templateFolder?>',

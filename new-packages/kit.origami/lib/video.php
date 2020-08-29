@@ -1,9 +1,9 @@
 <?
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
-use Sotbit\Origami\Video\Vimeo;
-use Sotbit\Origami\Video\Youtube;
-use Sotbit\Origami\Video\HTML;
+use Kit\Origami\Video\Vimeo;
+use Kit\Origami\Video\Youtube;
+use Kit\Origami\Video\HTML;
 
 class Video{
     /**

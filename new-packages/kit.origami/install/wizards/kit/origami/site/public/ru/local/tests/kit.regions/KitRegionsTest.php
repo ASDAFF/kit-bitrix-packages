@@ -25,7 +25,7 @@ class KitRegionsTest extends TestCase
 	 */
 	public function testIsDemoEnd()
 	{
-		$isDemoEnd = SotbitRegions::isDemoEnd();
+		$isDemoEnd = KitRegions::isDemoEnd();
 
 		$this->assertFalse($isDemoEnd);
 	}
@@ -34,7 +34,7 @@ class KitRegionsTest extends TestCase
 	 */
 	public function testGetDemo()
 	{
-		$demo = SotbitRegions::getDemo();
+		$demo = KitRegions::getDemo();
 		if(in_array($demo,array(0,1,2,3)))
 		{
 			$this->assertTrue(true);
@@ -49,7 +49,7 @@ class KitRegionsTest extends TestCase
 	 */
 	public function testGetSites()
 	{
-		$sites = SotbitRegions::getSites();
+		$sites = KitRegions::getSites();
 		if(is_array($sites) && count($sites) > 0 )
 		{
 			$this->assertTrue(true);
@@ -68,7 +68,7 @@ class KitRegionsTest extends TestCase
 
 		try
 		{
-			$return = SotbitRegions::getMenuParent($parent);
+			$return = KitRegions::getMenuParent($parent);
 			if(is_string($return) && strlen($return) > 0)
 			{
 				$this->assertTrue(true);
@@ -89,7 +89,7 @@ class KitRegionsTest extends TestCase
 	 */
 	public function testGenCodeVariable($code)
 	{
-		$return = SotbitRegions::genCodeVariable($code);
+		$return = KitRegions::genCodeVariable($code);
 		var_dump($return);
 		if(is_string($return) && strlen($return) > 0)
 		{

@@ -1,13 +1,13 @@
 <?php
-namespace Sotbit\Origami\Config;
+namespace Kit\Origami\Config;
 
 use Bitrix\Main\SystemException;
-use Sotbit\Origami\Internals\OptionsTable;
+use Kit\Origami\Internals\OptionsTable;
 use Bitrix\Main\Application;
 
 /**
  * Class Main
- * @package Sotbit\Origami\Config
+ * @package Kit\Origami\Config
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Option

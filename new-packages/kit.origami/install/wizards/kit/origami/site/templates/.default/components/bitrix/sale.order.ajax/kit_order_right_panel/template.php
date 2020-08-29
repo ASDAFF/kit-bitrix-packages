@@ -459,7 +459,7 @@ else
                     <div class="stiky-wrapper">
                         <div class="main_order_block__top_line top_line_all_price">
                             <span
-                                class="main_order_block__title fonts__main_text"><?= Loc::getMessage("SOTBIT_SOA_YOUR_ORDER") ?></span>
+                                class="main_order_block__title fonts__main_text"><?= Loc::getMessage("KIT_SOA_YOUR_ORDER") ?></span>
                             <!--	ORDER SAVE BLOCK	-->
                             <div id="bx-soa-orderSave">
                                 <div class="checkbox">

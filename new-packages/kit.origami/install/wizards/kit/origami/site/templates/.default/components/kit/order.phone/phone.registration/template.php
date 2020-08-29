@@ -1,10 +1,10 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-if (!CModule::IncludeModule("kit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
+if (!CModule::IncludeModule("kit.orderphone") || !CKitOrderphone::GetDemo()) return;
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/kit/order.phone/phone.registration/script.js");
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/kit/order.phone/phone.registration/style.css");

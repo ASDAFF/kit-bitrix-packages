@@ -6,12 +6,12 @@
  * Time: 2:15 PM
  */
 
-namespace Sotbit\Origami\Config;
+namespace Kit\Origami\Config;
 
 
 /**
  * Class Widget
- * @package Sotbit\Origami\Config
+ * @package Kit\Origami\Config
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 abstract class Widget

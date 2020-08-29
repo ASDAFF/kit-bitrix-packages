@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 class Filter
 {
@@ -85,7 +85,7 @@ class Filter
 
                             if($seoModule && $type == "seometa")
                             {
-                                $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                                $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                                 if(isset($arLink["NEW_URL"]))
                                     $link = $arLink["NEW_URL"];
                                 else
@@ -112,7 +112,7 @@ class Filter
 
                             if($seoModule && $type == "seometa")
                             {
-                                $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                                $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                                 if(isset($arLink["NEW_URL"]))
                                     $link = $arLink["NEW_URL"];
                                 else
@@ -133,7 +133,7 @@ class Filter
 
                             if($seoModule && $type == "seometa")
                             {
-                                $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                                $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                                 if(isset($arLink["NEW_URL"]))
                                     $link = $arLink["NEW_URL"];
                                 else
@@ -154,7 +154,7 @@ class Filter
 
                         if($seoModule && $type == "seometa")
                         {
-                            $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                            $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                             if(isset($arLink["NEW_URL"]))
                                 $link = $arLink["NEW_URL"];
                             else
@@ -172,7 +172,7 @@ class Filter
 
                         if($seoModule && $type == "seometa")
                         {
-                            $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                            $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                             if(isset($arLink["NEW_URL"]))
                                 $link = $arLink["NEW_URL"];
                             else
@@ -190,7 +190,7 @@ class Filter
 
                         if($seoModule && $type == "seometa")
                         {
-                            $arLink = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($link);
+                            $arLink = \Kit\Seometa\SeometaUrlTable::getByRealUrl($link);
                             if(isset($arLink["NEW_URL"]))
                                 $link = $arLink["NEW_URL"];
                             else

@@ -14,8 +14,8 @@ CModule::includeModule('catalog');
 $module = 'kit.crosssell';
 CModule::includeModule($module);
 
-use Sotbit\Crosssell\Orm\CrosssellCategoryTable;
-use Sotbit\Crosssell\Orm\CrosssellTable;
+use Kit\Crosssell\Orm\CrosssellCategoryTable;
+use Kit\Crosssell\Orm\CrosssellTable;
 
 $arFields['SITE_ID'] = WIZARD_SITE_ID;
 $arFields['SORT'] = 100;
@@ -43,7 +43,7 @@ $iblockID = $_SESSION["WIZARD_CATALOG_IBLOCK_ID"];
 
 if(!$iblockId)
 {
-    $iblockID = \Sotbit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
+    $iblockID = \Kit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
 }
 
 $arProp = CIBlock::GetProperties($iblockID, Array(), Array("CODE"=>"KHIT"))->Fetch();
@@ -448,7 +448,7 @@ if($catSoputID)
 
     if(!$newsIblockID)
     {
-        $newsIblockID = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_NEWS',WIZARD_SITE_ID);
+        $newsIblockID = \Kit\Origami\Config\Option::get('IBLOCK_ID_NEWS',WIZARD_SITE_ID);
     }
     $arRule1 = array (
         'CLASS_ID' => 'CondGroup',
@@ -515,7 +515,7 @@ if($catSoputID)
 
     if(!$blogIdlockID)
     {
-        $blogIdlockID = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_BLOG',WIZARD_SITE_ID);
+        $blogIdlockID = \Kit\Origami\Config\Option::get('IBLOCK_ID_BLOG',WIZARD_SITE_ID);
     }
     $arRule1 = array (
         'CLASS_ID' => 'CondGroup',
@@ -581,7 +581,7 @@ if($catSoputID)
 
 }
 
-$crossell = new \SotbitCrosssell();
+$crossell = new \KitCrosssell();
 $crossell->generateCondition();
 
 ?>

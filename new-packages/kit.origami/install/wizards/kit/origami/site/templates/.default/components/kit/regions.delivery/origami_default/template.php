@@ -261,7 +261,7 @@ if($arParams['AJAX'] != 'Y')
 <?}?>
 <script>
     if(!RegionsDelivery) {
-        var RegionsDelivery = new SotbitRegionsDelivery({
+        var RegionsDelivery = new KitRegionsDelivery({
             'root':'kit-delivery-<?=$arResult['RAND']?>',
             'componentPath': '<?=CUtil::JSEscape($this->__component->__path)?>',
             'parameters': '<?=CUtil::JSEscape(base64_encode(serialize($arParams)))?>',

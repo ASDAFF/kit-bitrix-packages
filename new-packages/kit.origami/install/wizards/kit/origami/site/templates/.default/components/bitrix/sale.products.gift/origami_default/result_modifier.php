@@ -48,7 +48,7 @@ if (!empty($arResult['ITEMS'])  && \Bitrix\Main\Loader::includeModule('kit.origa
         $rs = \CIBlockElement::GetList(
             [],
             [
-                'IBLOCK_ID' => \Sotbit\Origami\Config\Option::get('IBLOCK_ID_PROMOTION'),
+                'IBLOCK_ID' => \Kit\Origami\Config\Option::get('IBLOCK_ID_PROMOTION'),
                 'PROPERTY_LINK_PRODUCTS' => $ids
             ],
             false,

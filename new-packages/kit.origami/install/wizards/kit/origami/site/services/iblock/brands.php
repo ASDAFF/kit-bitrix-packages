@@ -4,7 +4,7 @@
 if (!CModule::IncludeModule("kit.origami"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if (!CModule::IncludeModule("iblock"))
     return;
@@ -202,7 +202,7 @@ if (strlen($lang) <= 0)
     $lang = "ru";
 
 
-$_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["BRANDS"] = $iblockID;
+$_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["BRANDS"] = $iblockID;
 
 if($iblockID) {
     Option::Set('IBLOCK_TYPE_BRANDS', "kit_origami_content", WIZARD_SITE_ID);

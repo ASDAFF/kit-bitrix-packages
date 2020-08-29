@@ -22,8 +22,8 @@ Loc::loadMessages(__FILE__);
 <div class="blog__wrapper main-container">
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["BLOCK_NAME"]?>
-        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("SOTBIT_BLOG_SIMPLE_LINK_TEXT");?>">
-            <?=Loc::getMessage("SOTBIT_BLOG_SIMPLE_LINK_TEXT");?>
+        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("KIT_BLOG_SIMPLE_LINK_TEXT");?>">
+            <?=Loc::getMessage("KIT_BLOG_SIMPLE_LINK_TEXT");?>
             <i class="icon-nav_1"></i>
         </a>
     </p>
@@ -104,7 +104,7 @@ Loc::loadMessages(__FILE__);
                                 <div class="blog_block-simple__item-data fonts__middle_comment"><?=$arItem["DISPLAY_ACTIVE_FROM"]?></div>
                             <?endif?>
                             <?/*<a class="main_url main_btn sweep-to-right" href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                                <?=Loc::getMessage("SOTBIT_BLOG_BUTTON_TEXT");?>
+                                <?=Loc::getMessage("KIT_BLOG_BUTTON_TEXT");?>
                                 <i class="icon-nav_1"></i>
                             </a>*/?>
                         </div>

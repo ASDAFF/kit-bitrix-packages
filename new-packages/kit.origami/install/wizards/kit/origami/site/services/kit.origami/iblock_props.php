@@ -17,7 +17,7 @@ $iblockId = $_SESSION["WIZARD_CATALOG_IBLOCK_ID"];
 
 if(!$iblockId)
 {
-    $iblockId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
+    $iblockId = \Kit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
 }
 
 

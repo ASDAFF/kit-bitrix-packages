@@ -2,7 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 $isConstructorMode = Config::get('SITE_BUILDER');
@@ -28,7 +28,7 @@ else
 	$this->setFrameMode(true);
 }
 
-$theme = new \Sotbit\Origami\Front\Theme();
+$theme = new \Kit\Origami\Front\Theme();
 $settings = $theme->getSettings();
 
 $curFont = Config::get('FONT_BASE');
@@ -106,24 +106,24 @@ if($arResult['CAN_CHANGE'] === true)
 			'HEADER' => [
 				'TYPE' => 'ISELECT',
 				'VALUES' => Config::getHeaders(),
-                'DIR' => \SotbitOrigami::headersDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_HEADER')
+                'DIR' => \KitOrigami::headersDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_OPTION_HEADER')
 			]
 		],
 		'footer' => [
 			'FOOTER' => [
 				'TYPE' => 'ISELECT',
 				'VALUES' => Config::getFooters(),
-                'DIR' => \SotbitOrigami::footersDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_FOOTER')
+                'DIR' => \KitOrigami::footersDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_OPTION_FOOTER')
 			]
 		],
 		'catalog' => [
             'SECTION_ROOT_TEMPLATE' => [
                 'TYPE' => 'ISELECT',
-                'DIR' => \SotbitOrigami::sectionRootTemplateDir,
+                'DIR' => \KitOrigami::sectionRootTemplateDir,
                 'VALUES' => Config::getSectionRootTemplate(),
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_SECTION_ROOT_TEMPLATE')
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_OPTION_SECTION_ROOT_TEMPLATE')
             ],
             'FILTER_TEMPLATE' => [
                 'TYPE' => 'SELECT',
@@ -166,8 +166,8 @@ if($arResult['CAN_CHANGE'] === true)
             'DETAIL_TEMPLATE' => [
                 'TYPE' => 'ISELECT',
                 'VALUES' => Config::getMainDetailTemplate(),
-                'DIR' => \SotbitOrigami::detailsDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_DETAIL_TEMPLATE')
+                'DIR' => \KitOrigami::detailsDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_OPTION_DETAIL_TEMPLATE')
             ],
             'SKU_TYPE_' => [
                 'TYPE' => 'SELECT',
@@ -206,34 +206,34 @@ if($arResult['CAN_CHANGE'] === true)
 			'ORDER_TEMPLATE' => [
 				'TYPE' => 'ISELECT',
 				'VALUES' => Config::getOrderTemplates(),
-                'DIR' => \SotbitOrigami::ordersDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_ORDER_TEMPLATE')
+                'DIR' => \KitOrigami::ordersDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_OPTION_ORDER_TEMPLATE')
 			]
 		],
         'sections' => [
             'CONTACTS' => [
                 'TYPE' => 'ISELECT',
                 'VALUES' => Config::getContacts(),
-	            'DIR' => \SotbitOrigami::contactsDir,
-	            'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_NAME_CONTACTS')
+	            'DIR' => \KitOrigami::contactsDir,
+	            'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_SECTION_NAME_CONTACTS')
             ],
             'PROMOTION_LIST_TEMPLATE' => [
                 'TYPE' => 'ISELECT',
                 'VALUES' => Config::getPromotionListTemplates(),
-	            'DIR' => \SotbitOrigami::promotionsDir,
-	            'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_NAME_PROMOTION_LIST_TEMPLATE')
+	            'DIR' => \KitOrigami::promotionsDir,
+	            'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_SECTION_NAME_PROMOTION_LIST_TEMPLATE')
             ],
             'IBLOCK_TEMPLATE_BLOG' => [
                 'TYPE' => 'ISELECT',
                 'VALUES' => Config::getIblockBlogTemplates(),
-                'DIR' => \SotbitOrigami::blogDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_NAME_BLOG_LIST_TEMPLATE')
+                'DIR' => \KitOrigami::blogDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_SECTION_NAME_BLOG_LIST_TEMPLATE')
             ],
             'IBLOCK_TEMPLATE_NEWS' => [
                 'TYPE' => 'ISELECT',
                 'VALUES' => Config::getIblockNewsTemplates(),
-                'DIR' => \SotbitOrigami::newsDir,
-                'TITLE' => Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_NAME_NEWS_LIST_TEMPLATE')
+                'DIR' => \KitOrigami::newsDir,
+                'TITLE' => Loc::getMessage(KitOrigami::moduleId . '_SECTION_NAME_NEWS_LIST_TEMPLATE')
             ],
         ],
 	];
@@ -263,8 +263,8 @@ if($arResult['CAN_CHANGE'] === true)
                 <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_constructor"></use>
             </svg>
             <div class=" theme-change__tooltip">
-                <p class="theme-change__tooltip-title"><?=Loc::getMessage(SotbitOrigami::moduleId . '_BUILDER_BLOCK_TITLE')?></p>
-                <p class="theme-change__tooltip-description"><?=Loc::getMessage(SotbitOrigami::moduleId . '_BUILDER_BLOCK_MESSAGE')?></p>
+                <p class="theme-change__tooltip-title"><?=Loc::getMessage(KitOrigami::moduleId . '_BUILDER_BLOCK_TITLE')?></p>
+                <p class="theme-change__tooltip-description"><?=Loc::getMessage(KitOrigami::moduleId . '_BUILDER_BLOCK_MESSAGE')?></p>
                 <img class="theme-change__tooltip-img" src="/local/components/kit/origami.theme/templates/.default/img/backgroung-constructor.jpg" alt="">
             </div>
         </div>
@@ -289,10 +289,10 @@ if($arResult['CAN_CHANGE'] === true)
     data-is-shown="true" <?= ($settings['OPEN'] == 'Y') ? '' : 'hidden' ?>>
 	<div class="landing-ui-panel-content-element landing-ui-panel-content-header">
 		<div class="landing-ui-panel-content-title">
-			<?= Loc::getMessage(SotbitOrigami::moduleId . '_EDIT') ?>
+			<?= Loc::getMessage(KitOrigami::moduleId . '_EDIT') ?>
         </div>
         <div class="landing-ui-panel-content-subtitle">
-			<?= Loc::getMessage(SotbitOrigami::moduleId . '_EDIT_SUBTITLE') ?>
+			<?= Loc::getMessage(KitOrigami::moduleId . '_EDIT_SUBTITLE') ?>
 		</div>
 	</div>
 	<div class="landing-ui-panel-content-element landing-ui-panel-content-body">
@@ -314,7 +314,7 @@ if($arResult['CAN_CHANGE'] === true)
 					?>
 					<button type="button" class="landing-ui-button landing-ui-button-sidebar landing-ui-button-sidebar-child <?=$active?>" data-id="<?=$key?>">
 						<span class="landing-ui-button-text">
-							<?= Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_' . $key) ?>
+							<?= Loc::getMessage(KitOrigami::moduleId . '_SECTION_' . $key) ?>
 						</span>
 					</button>
 					<?
@@ -342,7 +342,7 @@ if($arResult['CAN_CHANGE'] === true)
                     }
 					?>
                     <div class="options-section-name" data-id="<?=$key.'-name'?>" style="<?=$activeStyle?>">
-                        <?=Loc::getMessage(SotbitOrigami::moduleId . '_SECTION_' . $key)?>
+                        <?=Loc::getMessage(KitOrigami::moduleId . '_SECTION_' . $key)?>
                     </div>
 					<div class="options-section" data-id="<?=$key?>" style="<?=$activeStyle?>">
 						<?
@@ -362,7 +362,7 @@ if($arResult['CAN_CHANGE'] === true)
 										case 'COLOR':
 											?>
 											<div class="landing-ui-field landing-ui-field-button-group landing-ui-field-color" data-selector="">
-												<div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+												<div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
 												<div class="landing-ui-field-input options-block" data-code="<?= $code ?>">
                                                     <ul class="options-block__colors">
 													<?
@@ -384,10 +384,10 @@ if($arResult['CAN_CHANGE'] === true)
                                                     </ul>
                                                     <form class="option-block__form">
 													<input type="text" class="options-block-custom" minlength="4" maxlength="7"
-													       placeholder="<?=Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_CUSTOM_COLOR')?>"
+													       placeholder="<?=Loc::getMessage(KitOrigami::moduleId . '_OPTION_CUSTOM_COLOR')?>"
 													       name="CUSTOM[<?=$code?>]" value="<?=(!$was)?$value:''?>">
-                                                        <button class="option-btn-apply option notreload options-block-custom__btn-save" type="button"><?=Loc::getMessage(SotbitOrigami::moduleId . '_SAVE_UPLOAD')?></button>
-                                                        <button class="option-btn-reset option notreload options-block-custom__btn-reset" type="button"><?=Loc::getMessage(SotbitOrigami::moduleId . '_SAVE_CANCEL')?></button>
+                                                        <button class="option-btn-apply option notreload options-block-custom__btn-save" type="button"><?=Loc::getMessage(KitOrigami::moduleId . '_SAVE_UPLOAD')?></button>
+                                                        <button class="option-btn-reset option notreload options-block-custom__btn-reset" type="button"><?=Loc::getMessage(KitOrigami::moduleId . '_SAVE_CANCEL')?></button>
                                                     </form>
 												</div>
 											</div>
@@ -396,7 +396,7 @@ if($arResult['CAN_CHANGE'] === true)
 										case 'FONT':
 											?>
 											<div class="landing-ui-field landing-ui-field-button-group" data-selector="">
-												<div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+												<div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
 												<div class="options-block options-block-font" data-code="<?= $code ?>">
 													<?
 													$was = false;
@@ -416,7 +416,7 @@ if($arResult['CAN_CHANGE'] === true)
 													}
 													?>
 <!--													<input type="text" class="options-block-custom"-->
-<!--													       placeholder="--><?//=Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_CUSTOM')?><!--"-->
+<!--													       placeholder="--><?//=Loc::getMessage(KitOrigami::moduleId . '_OPTION_CUSTOM')?><!--"-->
 <!--													       name="CUSTOM[--><?//=$code?><!--]" value="--><?//=	(!$was) ? $value : ''?><!--">-->
 												</div>
 											</div>
@@ -425,7 +425,7 @@ if($arResult['CAN_CHANGE'] === true)
 										case 'SELECT':
 											?>
 											<div class="landing-ui-field landing-ui-field-button-group" data-selector="">
-												<div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+												<div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
 												<div class="options-block" data-code="<?= $code ?>">
 													<?
 													foreach ($option['VALUES'] as $key => $oValue)
@@ -459,7 +459,7 @@ if($arResult['CAN_CHANGE'] === true)
                                                 <div class="landing-ui-field-header">
                                                     <?
                                                         if($option['TITLE']) echo $option['TITLE'];
-                                                        else echo Loc::getMessage(SotbitOrigami::moduleId . '_CHOICE_OF_TEMPLATE');
+                                                        else echo Loc::getMessage(KitOrigami::moduleId . '_CHOICE_OF_TEMPLATE');
                                                     ?>
                                                 </div>
                                                 <ul class="options-block options-block-iselect options-block__list" data-code="<?= $code ?>">
@@ -501,14 +501,14 @@ if($arResult['CAN_CHANGE'] === true)
 											?>
                                             <? if($code == 'SITE_BUILDER'):?>
                                                 <div class="landing-ui-field landing-ui-field-button-group landing-ui-field-switch" data-selector="" style="display: none;">
-                                                    <div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+                                                    <div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
                                                     <div class="options-block <?=($option['DISABLED'] == 'Y') ? 'disabled' : ''?>" data-code="<?= $code ?>">
                                                         <div id="toggle-switches" class="option switch notreload <?=($value == 'Y') ? 'switch-on' : ''?> <?=($option['DISABLED'] == 'Y') ? 'disabled' : ''?>"></div>
                                                     </div>
                                                 </div>
                                             <? else: ?>
                                                 <div class="landing-ui-field landing-ui-field-button-group landing-ui-field-switch" data-selector="">
-                                                    <div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+                                                    <div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
                                                     <div class="options-block <?=($option['DISABLED'] == 'Y') ? 'disabled' : ''?>" data-code="<?= $code ?>">
                                                         <div id="toggle-switches" class="option switch <?=($value == 'Y') ? 'switch-on' : ''?> <?=($option['DISABLED'] == 'Y') ? 'disabled' : ''?>"></div>
                                                     </div>
@@ -532,7 +532,7 @@ if($arResult['CAN_CHANGE'] === true)
 										</button>
 									</div>
 											<div class="landing-ui-field landing-ui-field-button-group" data-selector="">
-												<div class="landing-ui-field-header"><?= Loc::getMessage(SotbitOrigami::moduleId . '_OPTION_' . $code) ?></div>
+												<div class="landing-ui-field-header"><?= Loc::getMessage(KitOrigami::moduleId . '_OPTION_' . $code) ?></div>
 													<ul id="sortable_<?=$code?>" class="tabs">
 														<?
 														foreach($tabs as $tab){
@@ -546,7 +546,7 @@ if($arResult['CAN_CHANGE'] === true)
 																<span>
 																	<?=(Config::get('NAME_TAB_'.$tab.'_'))
 																		?Config::get('NAME_TAB_'.$tab.'_')
-																		:Loc::getMessage(SotbitOrigami::moduleId.'_TAB_'.$tab)?>
+																		:Loc::getMessage(KitOrigami::moduleId.'_TAB_'.$tab)?>
 																</span>
 																<div class="options-block <?=($option['DISABLED'] == 'Y') ? 'disabled' : ''?>" data-code="ACTIVE_TAB_<?= $tab ?>_">
 																	<?
@@ -596,13 +596,13 @@ if($arResult['CAN_CHANGE'] === true)
         if($arResult['CAN_SAVE'] === true)
         {
             ?>
-            <button type="button" class="landing-ui-button landing-ui-panel-content-save" data-id="save" title="<?= Loc::getMessage(SotbitOrigami::moduleId . '_SAVE') ?>">
-                <span class="landing-ui-button-text"><?= Loc::getMessage(SotbitOrigami::moduleId . '_SAVE') ?></span>
+            <button type="button" class="landing-ui-button landing-ui-panel-content-save" data-id="save" title="<?= Loc::getMessage(KitOrigami::moduleId . '_SAVE') ?>">
+                <span class="landing-ui-button-text"><?= Loc::getMessage(KitOrigami::moduleId . '_SAVE') ?></span>
             </button>
             <?
         }
         ?>
-        <button type="button" class="landing-ui-button landing-ui-panel-content-close close-for-theme-change" data-id="close" title="<?= Loc::getMessage(SotbitOrigami::moduleId . '_CLOSE') ?>">
+        <button type="button" class="landing-ui-button landing-ui-panel-content-close close-for-theme-change" data-id="close" title="<?= Loc::getMessage(KitOrigami::moduleId . '_CLOSE') ?>">
             <svg class="constructor-switch__item-icon" width="18" height="18">
                 <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#gear_wheel_18"></use>
             </svg>

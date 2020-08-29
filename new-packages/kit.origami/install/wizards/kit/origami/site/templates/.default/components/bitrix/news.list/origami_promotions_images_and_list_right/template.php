@@ -13,7 +13,7 @@
 $this->createFrame()->begin();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 Loc::loadMessages(__FILE__);
 
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
@@ -24,8 +24,8 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 <div class="puzzle_block news-block__wrapper main-container stock-wrapper__left-navigation size">
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["BLOCK_NAME"]?>
-        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("SOTBIT_PROMOTIONS_IMAGES_AND_LIST_LINK_TEXT");?>">
-            <?=Loc::getMessage("SOTBIT_PROMOTIONS_IMAGES_AND_LIST_LINK_TEXT");?>
+        <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("KIT_PROMOTIONS_IMAGES_AND_LIST_LINK_TEXT");?>">
+            <?=Loc::getMessage("KIT_PROMOTIONS_IMAGES_AND_LIST_LINK_TEXT");?>
             <i class="icon-nav_1"></i>
         </a>
     </p>
@@ -114,7 +114,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
                 <?else:?>
                     <?if($i == 3):?>
                         <div class="news_block_three__others swiper-slide">
-                            <p class="news_block_three__others_title"><?=Loc::getMessage("SOTBIT_PROMOTIONS_ADDITIONAL_TEXT");?></p>
+                            <p class="news_block_three__others_title"><?=Loc::getMessage("KIT_PROMOTIONS_ADDITIONAL_TEXT");?></p>
                     <?endif;?>
                             <div class="news_block_three__others__content" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 

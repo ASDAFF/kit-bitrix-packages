@@ -2,7 +2,7 @@
 
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
@@ -11,7 +11,7 @@ Loader::includeModule('kit.origami');
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_contacts_callback_manager/script.js");
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_contacts_callback_manager/style.css");
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 Asset::getInstance()->addJs($templateFolder . "/js/jquery.maskedinput.min.js");
 $typeMask = (Config::get('TYPE_MASK_VIEW') == 'FLAGS') ? 'Y' : 'N';
 if ($typeMask == 'Y')

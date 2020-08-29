@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Front;
+namespace Kit\Origami\Front;
 
 class Theme
 {

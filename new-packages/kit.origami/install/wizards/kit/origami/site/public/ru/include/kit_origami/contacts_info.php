@@ -1,4 +1,4 @@
-<?use Sotbit\Origami\Helper\Config;
+<?use Kit\Origami\Helper\Config;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 ?>
 <div class="contact__techno_block__detail">
@@ -14,8 +14,8 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 				 Адрес:
 			</div>
 			<div class="contact__techno_block__detail_item__content_text">
-                <?if ($useRegion && $_SESSION['SOTBIT_REGIONS']['UF_ADDRESS']) {
-                    echo $_SESSION["SOTBIT_REGIONS"]["NAME"].', '.$_SESSION["SOTBIT_REGIONS"]["UF_ADDRESS"];
+                <?if ($useRegion && $_SESSION['KIT_REGIONS']['UF_ADDRESS']) {
+                    echo $_SESSION["KIT_REGIONS"]["NAME"].', '.$_SESSION["KIT_REGIONS"]["UF_ADDRESS"];
                 }
                 else{
                     $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_city.php"));
@@ -38,16 +38,16 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 			</div>
 			<div class="contact__techno_block__detail_item__content_text">
                 <?
-                if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"]) {
-                	if(is_array($_SESSION["SOTBIT_REGIONS"]["UF_PHONE"])) {
+                if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_PHONE"]) {
+                	if(is_array($_SESSION["KIT_REGIONS"]["UF_PHONE"])) {
                         foreach (
-                            $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"] as $numtel
+                            $_SESSION["KIT_REGIONS"]["UF_PHONE"] as $numtel
                         ) {
                             echo $numtel.'<br>';
                         }
                     }
                 	else{
-                        echo $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"];
+                        echo $_SESSION["KIT_REGIONS"]["UF_PHONE"];
 	                }
                 }
                 else{
@@ -70,9 +70,9 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 			</div>
 			<div class="contact__techno_block__detail_item__content_text">
 
-     <?if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]) {
-     	if(is_array($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"])){
-     		foreach($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"] as $email){
+     <?if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
+     	if(is_array($_SESSION["KIT_REGIONS"]["UF_EMAIL"])){
+     		foreach($_SESSION["KIT_REGIONS"]["UF_EMAIL"] as $email){
      			if($email) {
                     ?>
 			        <a href="mailto:<?= $email ?>">
@@ -84,8 +84,8 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
         }
      	else{
      		?>
-	        <a href="mailto:<?=$_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]?>">
-                <?echo $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"];?>
+	        <a href="mailto:<?=$_SESSION["KIT_REGIONS"]["UF_EMAIL"]?>">
+                <?echo $_SESSION["KIT_REGIONS"]["UF_EMAIL"];?>
 	        </a>
 	        <?
         }

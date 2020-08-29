@@ -9,7 +9,7 @@ Loc::loadMessages(__FILE__);
 <div>
     <div class="instagram_title">
         <?=$arResult["TITLE"]?>
-        <a href="https://www.instagram.com/<?=$arResult["LOGIN"]?>" target="_blank"><?=Loc::getMessage("SOTBIT_INSTAGRAM_GOTO")?></a>
+        <a href="https://www.instagram.com/<?=$arResult["LOGIN"]?>" target="_blank"><?=Loc::getMessage("KIT_INSTAGRAM_GOTO")?></a>
     </div>
     <div class="instagram_wrapper">
         <?foreach($arResult["MEDIA"] as $media):?>

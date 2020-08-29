@@ -1,3 +1,3 @@
 <?
-$MESS["SOTBIT_INSTAGRAM_SUBSCRIBE"] = "Подписаться";
+$MESS["KIT_INSTAGRAM_SUBSCRIBE"] = "Подписаться";
 ?>

@@ -1,13 +1,13 @@
 <?php
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
 
 global $analogProducts;
 
-$selectSectionMain = unserialize(\Sotbit\Origami\Config\Option::get('SECTIONS_'));
-$selectSectionNoTabs = unserialize(\Sotbit\Origami\Config\Option::get('SECTIONS_NO_TABS'));
+$selectSectionMain = unserialize(\Kit\Origami\Config\Option::get('SECTIONS_'));
+$selectSectionNoTabs = unserialize(\Kit\Origami\Config\Option::get('SECTIONS_NO_TABS'));
 $catalogId = Option::get('IBLOCK_ID', $site);
 $ar = array();
 $rsSection = \CIBlockSection::GetTreeList(Array("IBLOCK_ID" => $catalogId ), array("ID", "NAME", "DEPTH_LEVEL"));
@@ -68,10 +68,10 @@ if (in_array($sectionIdByCode, $arSectionsMain)) {
     $templateName = "origami_no_tabs";
     $template = "NO_TABS";
 } else {
-    if (\Sotbit\Origami\Config\Option::get('DETAIL_TEMPLATE') == "") {
+    if (\Kit\Origami\Config\Option::get('DETAIL_TEMPLATE') == "") {
         $templateName = "";
         $template = "";
-    } else if (\Sotbit\Origami\Config\Option::get('DETAIL_TEMPLATE') == "NO_TABS") {
+    } else if (\Kit\Origami\Config\Option::get('DETAIL_TEMPLATE') == "NO_TABS") {
         $templateName = "origami_no_tabs";
         $template = "NO_TABS";
     }
@@ -84,14 +84,14 @@ $elementId = $APPLICATION->IncludeComponent(
     $component
 );
 
-\SotbitOrigami::setSeoOffer();
+\KitOrigami::setSeoOffer();
 
 $GLOBALS['CATALOG_CURRENT_ELEMENT_ID'] = $elementId;
 
 if ($elementId > 0) {
     //////analog/////
 
-    $showCrosssell = (\Sotbit\Origami\Config\Option::get('SHOW_CROSSSELL_' . $template));
+    $showCrosssell = (\Kit\Origami\Config\Option::get('SHOW_CROSSSELL_' . $template));
     if (!in_array($showCrosssell, array('Y', 'N'))) {
         $showCrosssell = 'N';
     }
@@ -155,7 +155,7 @@ if ($elementId > 0) {
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
+		"PRICE_CODE" => \KitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
 		"PRICE_VAT_INCLUDE" => "N",
 		"PRODUCT_ID" => $elementId,
 		"PRODUCT_ID_VARIABLE" => $arParams["PRODUCT_ID_VARIABLE"],

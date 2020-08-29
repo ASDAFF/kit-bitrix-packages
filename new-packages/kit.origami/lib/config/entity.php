@@ -6,7 +6,7 @@
  * Time: 2:15 PM
  */
 
-namespace Sotbit\Origami\Options;
+namespace Kit\Origami\Options;
 
 
 abstract class Entity

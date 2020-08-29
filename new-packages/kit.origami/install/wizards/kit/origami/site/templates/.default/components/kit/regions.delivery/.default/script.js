@@ -1,4 +1,4 @@
-class SotbitRegionsDelivery
+class KitRegionsDelivery
 {
 	constructor(params) {
 		this.rootId = params.root;

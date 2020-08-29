@@ -1,4 +1,4 @@
-window.SotbitRegions = function(arParams) {
+window.KitRegions = function(arParams) {
 
 	var wrap = document.getElementsByClassName("select-city__dropdown-wrap");
 	var modal = document.getElementsByClassName("select-city__modal");

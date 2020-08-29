@@ -3,7 +3,7 @@
 }
 $this->createFrame()->begin();
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
 
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));

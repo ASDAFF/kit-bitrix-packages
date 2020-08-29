@@ -22,7 +22,7 @@ $CONFIG = array(
 	
 	// Access token granted to you by an Instagram app.
 	// If you use it, the widget will start sending requests through the official API (https://www.instagram.com/developer/)
-	'ACCESS_TOKEN' => \Sotbit\Origami\Config\Option::get('ACCESS_TOKEN'),
+	'ACCESS_TOKEN' => \Kit\Origami\Config\Option::get('ACCESS_TOKEN'),
 	
 	// Login and password of an Instagram account for authorization.
 	// Authorization is necessary for alternative methods of obtaining data and provides more stability when you using the undocumented API

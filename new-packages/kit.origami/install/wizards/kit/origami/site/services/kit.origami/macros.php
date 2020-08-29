@@ -55,9 +55,9 @@ function changeMacro($sitePath = '/', $dir = ''){
                                 foreach($matches[0] as $match)
                                 {
                                     preg_match('!\d+!', $match,$digitals);
-                                    if($digitals[0] && $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]])
+                                    if($digitals[0] && $_SESSION['KIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]])
                                     {
-                                        $matchnew = str_replace($digitals[0],$_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]],$match);
+                                        $matchnew = str_replace($digitals[0],$_SESSION['KIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]],$match);
                                         $text = str_replace($match,$matchnew,$text);
                                         $bool = true;
                                     }
@@ -151,9 +151,9 @@ function changeMacro($sitePath = '/', $dir = ''){
                                 foreach($matches[0] as $match)
                                 {
                                     preg_match('!\d+!', $match,$digitals);
-                                    if($digitals[0] && $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]])
+                                    if($digitals[0] && $_SESSION['KIT_ORIGAMI_WIZARD_CHANGE'][$digitals[0]])
                                     {
-                                        $matchnew = str_replace($digitals[0],$_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][$digitals[0]],$match);
+                                        $matchnew = str_replace($digitals[0],$_SESSION['KIT_ORIGAMI_WIZARD_FORMS'][$digitals[0]],$match);
                                         $text = str_replace($match,$matchnew,$text);
                                         $bool = true;
                                     }

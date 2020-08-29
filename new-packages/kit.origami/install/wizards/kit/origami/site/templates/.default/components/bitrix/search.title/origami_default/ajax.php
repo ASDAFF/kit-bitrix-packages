@@ -16,7 +16,7 @@ if (empty($arResult["CATEGORIES"]))
                 <div class="bx_item_block_inline puzzle_block puzzle_block_mod">
                     <div class="bx_img_element"></div>
                     <div class="bx_item_element">
-                        <span class="all_result_title"><a href="<?=$arItem["URL"]?>"><?=GetMessage('SOTBIT_SEARCH_ALL_RESULT_BUTTON')?></a></span>
+                        <span class="all_result_title"><a href="<?=$arItem["URL"]?>"><?=GetMessage('KIT_SEARCH_ALL_RESULT_BUTTON')?></a></span>
                     </div>
                 </div>
 			</div>

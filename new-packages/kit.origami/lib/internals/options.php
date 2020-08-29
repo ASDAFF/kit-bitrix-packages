@@ -1,5 +1,5 @@
 <?php
-namespace Sotbit\Origami\Internals;
+namespace Kit\Origami\Internals;
 
 use Bitrix\Main,
 	Bitrix\Main\Localization\Loc,
@@ -44,17 +44,17 @@ class OptionsTable extends Main\Entity\DataManager
 				'data_type' => 'string',
 				'primary' => true,
 				'validation' => array(__CLASS__, 'validateCode'),
-				'title' => Loc::getMessage(\SotbitOrigami::moduleId.'_OPTIONS_ENTITY_CODE_FIELD'),
+				'title' => Loc::getMessage(\KitOrigami::moduleId.'_OPTIONS_ENTITY_CODE_FIELD'),
 			),
 			'VALUE' => array(
 				'data_type' => 'text',
-				'title' => Loc::getMessage(\SotbitOrigami::moduleId.'_OPTIONS_ENTITY_VALUE_FIELD'),
+				'title' => Loc::getMessage(\KitOrigami::moduleId.'_OPTIONS_ENTITY_VALUE_FIELD'),
 			),
 			'SITE_ID' => array(
 				'data_type' => 'string',
 				'primary' => true,
 				'validation' => array(__CLASS__, 'validateSiteId'),
-				'title' => Loc::getMessage(\SotbitOrigami::moduleId.'_OPTIONS_ENTITY_SITE_ID_FIELD'),
+				'title' => Loc::getMessage(\KitOrigami::moduleId.'_OPTIONS_ENTITY_SITE_ID_FIELD'),
 			),
 		);
 	}

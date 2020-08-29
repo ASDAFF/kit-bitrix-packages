@@ -2,7 +2,7 @@
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $APPLICATION;
 
@@ -42,7 +42,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         </div>
                         <? if (
                             \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                            \SotbitOrigami::isUseRegions() &&
+                            \KitOrigami::isUseRegions() &&
                             is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
@@ -52,7 +52,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                     "CACHE_TIME" => "36000000",
                                     "CACHE_TYPE" => "A",
                                     "REGION_FIELDS" => ['UF_ADDRESS'],
-                                    "REGION_ID" => $_SESSION['SOTBIT_REGIONS']['ID']
+                                    "REGION_ID" => $_SESSION['KIT_REGIONS']['ID']
                                 ]
                             );
                         else:?>
@@ -77,7 +77,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         <?
                         if (
                             \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                            \SotbitOrigami::isUseRegions() &&
+                            \KitOrigami::isUseRegions() &&
                             is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
@@ -87,7 +87,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                     "CACHE_TIME" => "36000000",
                                     "CACHE_TYPE" => "A",
                                     "REGION_FIELDS" => ['UF_EMAIL'],
-                                    "REGION_ID" => $_SESSION['SOTBIT_REGIONS']['ID']
+                                    "REGION_ID" => $_SESSION['KIT_REGIONS']['ID']
                                 ]
                             );
                         else:
@@ -110,7 +110,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         <?
                         if (
                             \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                            \SotbitOrigami::isUseRegions() &&
+                            \KitOrigami::isUseRegions() &&
                             is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
@@ -120,7 +120,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                     "CACHE_TIME" => "36000000",
                                     "CACHE_TYPE" => "A",
                                     "REGION_FIELDS" => ['UF_PHONE'],
-                                    "REGION_ID" => $_SESSION['SOTBIT_REGIONS']['ID']
+                                    "REGION_ID" => $_SESSION['KIT_REGIONS']['ID']
                                 ]
                             );
                         else:
@@ -203,14 +203,14 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         Array(
                             "COMPOSITE_FRAME_MODE" => "A",
                             "COMPOSITE_FRAME_TYPE" => "AUTO",
-                            "FACEBOOK" => \Sotbit\Origami\Helper\Config::get('FB'),
-                            "VKONTAKTE" => \Sotbit\Origami\Helper\Config::get('VK'),
-                            "TWITTER" => \Sotbit\Origami\Helper\Config::get('TW'),
-                            "GOOGLE" => \Sotbit\Origami\Helper\Config::get('GOOGLE'),
-                            "INSTAGRAM" => \Sotbit\Origami\Helper\Config::get('INST'),
-                            "YOUTUBE" => \Sotbit\Origami\Helper\Config::get('YOUTUBE'),
-                            "ODNOKLASSNIKI" => \Sotbit\Origami\Helper\Config::get('OK'),
-                            "TELEGRAM" => \Sotbit\Origami\Helper\Config::get('TELEGA'),
+                            "FACEBOOK" => \Kit\Origami\Helper\Config::get('FB'),
+                            "VKONTAKTE" => \Kit\Origami\Helper\Config::get('VK'),
+                            "TWITTER" => \Kit\Origami\Helper\Config::get('TW'),
+                            "GOOGLE" => \Kit\Origami\Helper\Config::get('GOOGLE'),
+                            "INSTAGRAM" => \Kit\Origami\Helper\Config::get('INST'),
+                            "YOUTUBE" => \Kit\Origami\Helper\Config::get('YOUTUBE'),
+                            "ODNOKLASSNIKI" => \Kit\Origami\Helper\Config::get('OK'),
+                            "TELEGRAM" => \Kit\Origami\Helper\Config::get('TELEGA'),
                         )
                     ); ?>
                 </div>
@@ -225,7 +225,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                     <a class="copy_text_block__item_img" target="_blank" href="https://www.kit.ru">
                         <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/main_logo_kit.png" alt="">
                     </a>
-                    <?= Loc::getMessage("SOTBIT_FOOTER_ABOUT_COMPANY"); ?>
+                    <?= Loc::getMessage("KIT_FOOTER_ABOUT_COMPANY"); ?>
                 </div>
                 <div class="footer-block__payment_img">
                     <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/payment_images.php")); ?>

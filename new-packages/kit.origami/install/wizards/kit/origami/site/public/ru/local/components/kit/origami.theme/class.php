@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 use Bitrix\Main\Loader;
 
-class SotbitOrigamiThemeComponent extends \CBitrixComponent
+class KitOrigamiThemeComponent extends \CBitrixComponent
 {
     /**
      * @var bool
@@ -33,7 +33,7 @@ class SotbitOrigamiThemeComponent extends \CBitrixComponent
             return false;
         }
 
-        $FrontUser = \SotbitOrigami::FrontUser();
+        $FrontUser = \KitOrigami::FrontUser();
         if (empty($FrontUser)) {
             return false;
         }

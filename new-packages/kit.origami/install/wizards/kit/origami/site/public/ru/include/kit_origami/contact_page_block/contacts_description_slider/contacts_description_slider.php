@@ -1,7 +1,7 @@
 <?
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/contacts_description_slider/style.css");
@@ -11,9 +11,9 @@ Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plug
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 //$useRegion = false;
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 ?>
@@ -23,8 +23,8 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
             <div class="text-wrapper">
                 <span>
                     <?
-                    if ($useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_REGIONS_DESCRIPT"]) {
-                        echo $_SESSION["SOTBIT_REGIONS"]["UF_REGIONS_DESCRIPT"];
+                    if ($useRegion && $_SESSION["KIT_REGIONS"]["UF_REGIONS_DESCRIPT"]) {
+                        echo $_SESSION["KIT_REGIONS"]["UF_REGIONS_DESCRIPT"];
                     } else {
                         $APPLICATION->IncludeComponent(
                             "bitrix:main.include",
@@ -43,7 +43,7 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     </div>
     <div class="contact-description-slider-wrapper swiper-container">
         <div class="contact-description-slider swiper-wrapper">
-            <? if (!$useRegion && $_SESSION["SOTBIT_REGIONS"]["UF_REGIONS_PHOTOS"]): ?>
+            <? if (!$useRegion && $_SESSION["KIT_REGIONS"]["UF_REGIONS_PHOTOS"]): ?>
                 <!-- REGIONS -->
             <? else:
                 $APPLICATION->IncludeComponent(

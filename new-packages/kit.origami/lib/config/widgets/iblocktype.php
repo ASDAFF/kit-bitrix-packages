@@ -6,7 +6,7 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
 

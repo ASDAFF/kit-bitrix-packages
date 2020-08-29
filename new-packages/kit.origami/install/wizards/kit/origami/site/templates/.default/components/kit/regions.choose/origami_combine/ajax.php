@@ -20,16 +20,16 @@ $request = \Bitrix\Main\Context::getCurrent()->getRequest();
 
 if($request->get('action') == 'getAutoRegion')
 {
-    \Sotbit\Regions\Location\Domain::$autoDef = true;
-    $arRegion = \Sotbit\Regions\Location\Domain::getAutoRegion(true);
+    \Kit\Regions\Location\Domain::$autoDef = true;
+    $arRegion = \Kit\Regions\Location\Domain::getAutoRegion(true);
     exit(\Bitrix\Main\Web\Json::encode($arRegion));
 }
 
 if ($request->get('type') == 'regions')
-    $randRegions = \Sotbit\Regions\Region::getRandRegions(2);
+    $randRegions = \Kit\Regions\Region::getRandRegions(2);
 
 if ($request->get('type') == 'location')
-    $randRegions = \Sotbit\Regions\System\Location::getRandLocations(2);
+    $randRegions = \Kit\Regions\System\Location::getRandLocations(2);
 
 if($randRegions)
     $randRegions = array_values($randRegions);
@@ -39,7 +39,7 @@ $path = $APPLICATION->GetCurDir();
     $template = '
     <div class="select-city__modal-wrap region_choose">
         <!-- POPUP TITTLE -->
-        <div class="select-city__modal-title">' . Loc::getMessage(SotbitRegions::moduleId . "_TITLE") . '<div class="select-city__close"></div>
+        <div class="select-city__modal-title">' . Loc::getMessage(KitRegions::moduleId . "_TITLE") . '<div class="select-city__close"></div>
         </div>
         <!--/ POPUP TITTLE -->
         <div class="select-city-content-wrapper">
@@ -51,7 +51,7 @@ $path = $APPLICATION->GetCurDir();
                 <div class="select-city__response_wrapper">
                     <div class="main-input-md__wrapper">
                         <input class="select-city__input main-input-md" type="text" name="" id="region-input" onchange="isInputFilled(this)">
-                           <label for="region-input" class="main-label-md">' . Loc::getMessage(SotbitRegions::moduleId . "_WRITE_SITY") . '</label>
+                           <label for="region-input" class="main-label-md">' . Loc::getMessage(KitRegions::moduleId . "_WRITE_SITY") . '</label>
                     </div>
                     <div class="select-city__response">
                     </div>
@@ -79,12 +79,12 @@ $path = $APPLICATION->GetCurDir();
             <div class="select-city-button-wrapper">
                 <div>
                     <button type="submit" class="btn select-city-button regions_choose"
-                          disabled>' . Loc::getMessage(SotbitRegions::moduleId . "CHOOSE_REG_BUTTON_TITTLE") . '</button>
+                          disabled>' . Loc::getMessage(KitRegions::moduleId . "CHOOSE_REG_BUTTON_TITTLE") . '</button>
                 </div>
             </div>
             <!-- / BUTTON -->
             <div class="select-city__automatic">
-                <a href="#">' . Loc::getMessage(SotbitRegions::moduleId . "CHOOSE_AUTOMATIC") . '</a>
+                <a href="#">' . Loc::getMessage(KitRegions::moduleId . "CHOOSE_AUTOMATIC") . '</a>
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@ $path = $APPLICATION->GetCurDir();
     if ($request->get('type') == 'regions')
     {
         if($request->get('getBase') == 'Y')
-            $arRegions = \Sotbit\Regions\Region::getAllRegions();
+            $arRegions = \Kit\Regions\Region::getAllRegions();
 
         exit(\Bitrix\Main\Web\Json::encode(array(
             'TEMPLATE' => $template,
@@ -104,7 +104,7 @@ $path = $APPLICATION->GetCurDir();
     {
         $arLocations = [];
         if($request->get('getBase') == 'Y')
-            $arLocations = \Sotbit\Regions\System\Location::getAllLocations();
+            $arLocations = \Kit\Regions\System\Location::getAllLocations();
         exit(\Bitrix\Main\Web\Json::encode(array(
             'TEMPLATE' => $template,
             'LOCATION' => $arLocations

@@ -60,4 +60,4 @@ if($arResult['ITEMS'])
     }
 }
 
-$arResult = \SotbitOrigami::getAllPrices($arResult);
+$arResult = \KitOrigami::getAllPrices($arResult);

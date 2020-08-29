@@ -4,7 +4,7 @@
 if (!CModule::IncludeModule("kit.origami"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 use Bitrix\Sender\MailingTable;
 
 if (!CModule::IncludeModule("iblock"))
@@ -235,7 +235,7 @@ $id = MailingTable::add(
     )
 );
 
-$_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["VLOG"] = $iblockID;
+$_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["VLOG"] = $iblockID;
 
 /*
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH."/promotions/index.php", array("SALES_IBLOCK_ID" => $iblockID));

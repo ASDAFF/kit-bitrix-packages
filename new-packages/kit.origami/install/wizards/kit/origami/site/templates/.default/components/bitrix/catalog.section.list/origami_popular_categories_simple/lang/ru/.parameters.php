@@ -1,6 +1,6 @@
 <?
-$MESS["SOTBIT_POPULAR_CATEGORIES_LINK_TO_THE_CATALOG"] = "Ссылка на каталог";
-$MESS["SOTBIT_POPULAR_CATEGORIES_BLOCK_NAME"] = "Название блока";
+$MESS["KIT_POPULAR_CATEGORIES_LINK_TO_THE_CATALOG"] = "Ссылка на каталог";
+$MESS["KIT_POPULAR_CATEGORIES_BLOCK_NAME"] = "Название блока";
 $MESS["POPULAR_CATEGORIES_BLOCK_NAME_DEFAULT_VALUE"] = "Популярные категории";
-$MESS["SOTBIT_POPULAR_CATEGORIES_COUNT_SECTIONS"] = "Количество выводимых разделов";
+$MESS["KIT_POPULAR_CATEGORIES_COUNT_SECTIONS"] = "Количество выводимых разделов";
 ?>

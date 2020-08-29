@@ -1,8 +1,8 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
 
 ?>
 <div class="small-product-blocks">
@@ -213,10 +213,10 @@ use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
         global $productFilter;
         $productFilter = ['=ID' => $productIds];
         $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-        if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+        if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
             $productFilter['PROPERTY_REGIONS'] = [
                 false,
-                $_SESSION['SOTBIT_REGIONS']['ID']
+                $_SESSION['KIT_REGIONS']['ID']
             ];
         }
 
@@ -337,10 +337,10 @@ use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
         global $productFilter;
         $productFilter = ['=ID' => $productIds];
         $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-        if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+        if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
             $productFilter['PROPERTY_REGIONS'] = [
                 false,
-                $_SESSION['SOTBIT_REGIONS']['ID']
+                $_SESSION['KIT_REGIONS']['ID']
             ];
         }
 
@@ -419,10 +419,10 @@ use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
         global $productFilter;
         $productFilter = ['ACTIVE' => 'Y'];
         $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-        if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+        if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
             $productFilter['PROPERTY_REGIONS'] = [
                 false,
-                $_SESSION['SOTBIT_REGIONS']['ID']
+                $_SESSION['KIT_REGIONS']['ID']
             ];
         }
         $APPLICATION->IncludeComponent(
@@ -502,7 +502,7 @@ use Sotbit\Origami\Config\Option, \Bitrix\Main\Localization\Loc;
 </div>
 <?
 ?>
-<?if(\Sotbit\Origami\Config\Option::get('SHOW_TABS_BITRIX_BLOCKS_' . $arParams['TEMPLATE_NAMED']) == 'Y'):?>
+<?if(\Kit\Origami\Config\Option::get('SHOW_TABS_BITRIX_BLOCKS_' . $arParams['TEMPLATE_NAMED']) == 'Y'):?>
     <script>
         if (buildTabsProductBlock) {
             buildTabsProductBlock();

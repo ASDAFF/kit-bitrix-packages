@@ -2,9 +2,9 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_webform_2/style.css");
 $prefix = \Bitrix\Main\Security\Random::getString(5);
 ?>
@@ -30,7 +30,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
         <div class="row">
             <div class="col-md-6 form-block-left">
                 <div class="form_block_title">
-                    <?= GetMessage('SOTBIT_FORM_TITLE_1'); ?>
+                    <?= GetMessage('KIT_FORM_TITLE_1'); ?>
                 </div>
                 <?
                 foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion) {
@@ -109,7 +109,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                     } else {
                         ?>
                         <label class="puzzle_block__form_label_promotion form_block_title" for="">
-                            <?= $arQuestion["CAPTION"] ?> <?= ($arQuestion['REQUIRED'] == 'Y') ? '<span class="required">*</span>' : '(' . GetMessage('SOTBIT_NOT_REQUIRED') . ')' ?>
+                            <?= $arQuestion["CAPTION"] ?> <?= ($arQuestion['REQUIRED'] == 'Y') ? '<span class="required">*</span>' : '(' . GetMessage('KIT_NOT_REQUIRED') . ')' ?>
                         </label>
 
                         <div class="main-textarea-md__wrapper">
@@ -150,7 +150,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                             width="180" height="40"/>
                         <div class="captcha-refresh" onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                             <svg class="icon_refresh" width="16" height="14"
-                                 style="color: <?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>; ">
+                                 style="color: <?= \Kit\Origami\Helper\Config::get('COLOR_BASE') ?>; ">
                                 <use
                                     xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                             </svg>
@@ -170,7 +170,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                     <span></span>
                     <span> <?= GetMessage('FORM_CONFIDENTIAL_1') ?>
                              <a class="feedback_block__compliance_link"
-                                href="<?= \Sotbit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>"><?= GetMessage('FORM_CONFIDENTIAL_2') ?>
+                                href="<?= \Kit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>"><?= GetMessage('FORM_CONFIDENTIAL_2') ?>
                             </a>
                         </span>
                 </label>
@@ -182,7 +182,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                 class="feedback_block__input main_btn button_feedback sweep-to-right"
                 name="web_form_submit"
                 value="<?= GetMessage("FORM_SUBMIT") ?>"
-                onclick="sendForm('<?= $arResult['arForm']['SID'] ?>','<?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
+                onclick="sendForm('<?= $arResult['arForm']['SID'] ?>','<?= \Kit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
             >
             <input style="display: none" type="reset" class="feedback_block__input main_btn
 					button_feedback sweep-to-right" name="web_form_submit"

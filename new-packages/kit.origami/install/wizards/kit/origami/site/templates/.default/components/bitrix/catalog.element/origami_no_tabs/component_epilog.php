@@ -1,9 +1,9 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 use Bitrix\Main\Page\Asset;
 
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
@@ -23,15 +23,15 @@ Loc::loadMessages(__FILE__);
 
 global $analogProducts;
 
-\SotbitOrigami::checkOfferPage($arResult, $arParams);
-\SotbitOrigami::getOffersSelected($arResult, $arParams);
-\SotbitOrigami::checkOfferLanding($arResult, $arParams);
+\KitOrigami::checkOfferPage($arResult, $arParams);
+\KitOrigami::getOffersSelected($arResult, $arParams);
+\KitOrigami::checkOfferLanding($arResult, $arParams);
 
 
 // get products in the current user's basket
 if( \Bitrix\Main\Loader::includeModule('kit.schemaorg') && strpos($APPLICATION->GetCurPage(), "bitrix") === false )
 {
-    Sotbit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'Product');
+    Kit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'Product');
     $data = SchemaMain::getData();
     if(!empty($data))
     {
@@ -266,7 +266,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 				</div>
 			</div>
 			<?
-            $Offer = new \Sotbit\Origami\Helper\Offer(SITE_ID);
+            $Offer = new \Kit\Origami\Helper\Offer(SITE_ID);
 			foreach ($arResult['OFFERS'] as $offer){
 			    ?>
 				<div class="product-presence" data-id="<?=$offer['ID']?>">
@@ -650,7 +650,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 					                            <?
 					                            foreach($store['UF_PHONE'] as $phone){
 					                                ?>
-						                            <a class="product-presence__address-link" href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>"><?=$phone?></a>
+						                            <a class="product-presence__address-link" href="tel:<?=\KitOrigami::showDigitalPhone($phone)?>"><?=$phone?></a>
 						                            <?
 					                            }
 					                            ?>
@@ -1018,10 +1018,10 @@ if (isset($templateData['JS_OBJ']))
 global $filterAdvantages;
 $filterAdvantages = ['PROPERTY_SECTION' => $arResult['ADVANTAGES_SECTIONS']];
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     $filterAdvantages['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID'],
+        $_SESSION['KIT_REGIONS']['ID'],
     ];
 }
 //$this->__template->SetViewTarget("element_advantages");

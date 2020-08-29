@@ -11,7 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 
@@ -180,6 +180,6 @@ unset($basketAction);
 
 if($request->get('ajaxFilter') == 'Y')
 {
-    echo \SotbitOrigami::prepareJSData($this, $arParams);
+    echo \KitOrigami::prepareJSData($this, $arParams);
     die();
 }

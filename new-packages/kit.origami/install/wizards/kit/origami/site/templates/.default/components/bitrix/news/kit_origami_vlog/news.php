@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);

@@ -1,8 +1,8 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Prop;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Prop;
 $arParams['SHOW_BUY'] = "Y";
 $labelProps = unserialize(Config::get('LABEL_PROPS'));
 $arParams['LABEL_PROP'] = $labelProps;

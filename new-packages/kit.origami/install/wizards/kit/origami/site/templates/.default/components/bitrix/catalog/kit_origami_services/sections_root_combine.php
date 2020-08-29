@@ -3,7 +3,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $kitSeoMetaBottomDesc;
 global $kitSeoMetaTopDesc;
@@ -22,10 +22,10 @@ $arParams['LABEL_PROPS'] = $labelProps;
 
 global ${$arParams['FILTER_NAME']};
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     ${$arParams['FILTER_NAME']}['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 
@@ -42,16 +42,16 @@ $arParams['SECTION_DESCRIPTION'] = Config::get('SECTION_DESCRIPTION');
 $arParams['SECTION_DESCRIPTION_TOP'] = Config::get('SECTION_DESCRIPTION_TOP');
 $arParams['SECTION_DESCRIPTION_BOTTOM'] = Config::get('SECTION_DESCRIPTION_BOTTOM');
 
-if(\SotbitOrigami::isUseRegions())
+if(\KitOrigami::isUseRegions())
 {
-    if($_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"])
+    if($_SESSION["KIT_REGIONS"]["PRICE_CODE"])
     {
-        $arParams['PRICE_CODE'] = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
-        $arParams['~PRICE_CODE'] = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
+        $arParams['PRICE_CODE'] = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
+        $arParams['~PRICE_CODE'] = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
     }
-    if($_SESSION["SOTBIT_REGIONS"]["STORE"])
+    if($_SESSION["KIT_REGIONS"]["STORE"])
     {
-        $arParams['STORES'] = $_SESSION["SOTBIT_REGIONS"]["STORE"];
+        $arParams['STORES'] = $_SESSION["KIT_REGIONS"]["STORE"];
     }
 }
 

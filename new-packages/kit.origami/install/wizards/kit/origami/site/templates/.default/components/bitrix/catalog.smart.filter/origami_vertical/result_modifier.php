@@ -2,8 +2,8 @@
     die();
 }
 
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Filter;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Filter;
 
 if($arResult["ITEMS"])
 {
@@ -84,8 +84,8 @@ if($linkMode != 'DISABLED')
 
                 if($seoModule && $linkMode == 'SEOMETA_MODE')
                 {
-                    if(!$seoUrl = \Sotbit\Seometa\SeometaUrlTable::getByNewUrl($curSec))
-                        $seoUrl = \Sotbit\Seometa\SeometaUrlTable::getByRealUrl($url);
+                    if(!$seoUrl = \Kit\Seometa\SeometaUrlTable::getByNewUrl($curSec))
+                        $seoUrl = \Kit\Seometa\SeometaUrlTable::getByRealUrl($url);
 
                     if(empty($arResult['ISSET_SEO_RULE']) && !empty($seoUrl))
                         $arResult['ISSET_SEO_RULE'] = true;

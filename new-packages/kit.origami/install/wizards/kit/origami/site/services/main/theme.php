@@ -31,13 +31,13 @@ if(!is_dir($_SERVER['DOCUMENT_ROOT'] .$dir))
 
 switch (WIZARD_THEME_ID) {
     case 1:
-        SotbitOrigami::genTheme(['COLOR_BASE' => '#fb0040','FONT_BASE' => 'Open Sans','WIDTH' => '1344px'],$dir);
+        KitOrigami::genTheme(['COLOR_BASE' => '#fb0040','FONT_BASE' => 'Open Sans','WIDTH' => '1344px'],$dir);
         break;
     case 2:
-        SotbitOrigami::genTheme(['COLOR_BASE' => '#6610f2','FONT_BASE' => 'Open Sans','WIDTH' => '100%'],$dir);
+        KitOrigami::genTheme(['COLOR_BASE' => '#6610f2','FONT_BASE' => 'Open Sans','WIDTH' => '100%'],$dir);
         break;
     case 3:
-        SotbitOrigami::genTheme(['COLOR_BASE' => '#343a40','FONT_BASE' => 'Arial','WIDTH' => '1500px'],$dir);
+        KitOrigami::genTheme(['COLOR_BASE' => '#343a40','FONT_BASE' => 'Arial','WIDTH' => '1500px'],$dir);
         break;
 }*/
 

@@ -44,7 +44,7 @@ $inBasket = array_values(array_unique($arIDs));
 	</script>
 
 <?
-$wish = new \Sotbit\Origami\Sale\Basket\Wish();
+$wish = new \Kit\Origami\Sale\Basket\Wish();
 $wishes = array_values($wish->findWishes());
 ?>
 	<script>

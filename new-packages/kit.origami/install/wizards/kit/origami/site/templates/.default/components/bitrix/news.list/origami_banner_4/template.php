@@ -1,7 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->createFrame()->begin();
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");

@@ -1,3 +1,3 @@
 <?
-$MESS["SOTBIT_SEARCH_ALL_RESULT_BUTTON"] = "Показать все";
+$MESS["KIT_SEARCH_ALL_RESULT_BUTTON"] = "Показать все";
 ?>

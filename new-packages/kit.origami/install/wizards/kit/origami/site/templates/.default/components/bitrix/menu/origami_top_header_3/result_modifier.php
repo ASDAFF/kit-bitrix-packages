@@ -29,7 +29,7 @@ if ($arResult) {
             $arResult[$arParents[$i]]['CHILD_SELECTED'] = true;
     }
 
-    $oMenu = new \Sotbit\Origami\Helper\Menu();
+    $oMenu = new \Kit\Origami\Helper\Menu();
     $menu = [];
     foreach ($arResult as $i => $li) {
         if ($li['DEPTH_LEVEL'] == 1) {

@@ -1,7 +1,7 @@
 <?php
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
-use Sotbit\Origami\Config\Widget;
+use Kit\Origami\Config\Widget;
 
 class Select extends Widget
 {

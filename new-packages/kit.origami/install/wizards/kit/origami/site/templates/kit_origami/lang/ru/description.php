@@ -1,4 +1,4 @@
 <?
-$MESS["SOTBIT_DESCRIPTION_NAME"] = "Сотбит.Оригами – универсальный интернет-магазин";
-$MESS["SOTBIT_DESCRIPTION_DESCRIPTION"] = "Мастер создания интернет-магазина любой тематики";
+$MESS["KIT_DESCRIPTION_NAME"] = "Kit.Оригами – универсальный интернет-магазин";
+$MESS["KIT_DESCRIPTION_DESCRIPTION"] = "Мастер создания интернет-магазина любой тематики";
 ?>

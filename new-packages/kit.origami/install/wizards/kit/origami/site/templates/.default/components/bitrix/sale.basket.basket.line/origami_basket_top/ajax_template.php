@@ -1,12 +1,12 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (! defined( 'B_PROLOG_INCLUDED' ) || B_PROLOG_INCLUDED !== true) die();
 
 $this->IncludeLangFile( 'template.php' );
 $cartId = $arParams['cartId'];
 
-switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
+switch (\Kit\Origami\Helper\Config::get('HEADER'))
 {
     case 1:
         require (realpath( dirname( __FILE__ ) ) . '/top_template_1.php');

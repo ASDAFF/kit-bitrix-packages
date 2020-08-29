@@ -31,7 +31,7 @@ if (!empty($_SESSION[$arParams['COMPARE_NAME']][$iblockId])) {
 
 $inBasket = array_values(array_unique($arIDs));
 
-$Wish = new \Sotbit\Origami\Sale\Basket\Wish();
+$Wish = new \Kit\Origami\Sale\Basket\Wish();
 $wishes = $Wish->findWishes();
 
 ?>

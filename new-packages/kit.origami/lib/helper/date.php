@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 use Bitrix\Main\Localization\Loc;
 
@@ -9,7 +9,7 @@ Loc::loadMessages(__FILE__);
 /**
  * Class Date
  *
- * @package Sotbit\Origami\Helper
+ * @package Kit\Origami\Helper
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Date
@@ -23,18 +23,18 @@ class Date
     public function dateFormatFromTo($fromDate, $toDate)
     {
         $monthsList = [
-            "1"  => Loc::getMessage(\SotbitOrigami::moduleId.'_JANUARY'),
-            "2"  => Loc::getMessage(\SotbitOrigami::moduleId.'_FEBRUARY'),
-            "3"  => Loc::getMessage(\SotbitOrigami::moduleId.'_MARCH'),
-            "4"  => Loc::getMessage(\SotbitOrigami::moduleId.'_APRIL'),
-            "5"  => Loc::getMessage(\SotbitOrigami::moduleId.'_MAY'),
-            "6"  => Loc::getMessage(\SotbitOrigami::moduleId.'_JUNE'),
-            "7"  => Loc::getMessage(\SotbitOrigami::moduleId.'_JULY'),
-            "8"  => Loc::getMessage(\SotbitOrigami::moduleId.'_AUGUST'),
-            "9"  => Loc::getMessage(\SotbitOrigami::moduleId.'_SEPTEMBER'),
-            "10" => Loc::getMessage(\SotbitOrigami::moduleId.'_OCTOBER'),
-            "11" => Loc::getMessage(\SotbitOrigami::moduleId.'_NOVEMBER'),
-            "12" => Loc::getMessage(\SotbitOrigami::moduleId.'_DECEMBER'),
+            "1"  => Loc::getMessage(\KitOrigami::moduleId.'_JANUARY'),
+            "2"  => Loc::getMessage(\KitOrigami::moduleId.'_FEBRUARY'),
+            "3"  => Loc::getMessage(\KitOrigami::moduleId.'_MARCH'),
+            "4"  => Loc::getMessage(\KitOrigami::moduleId.'_APRIL'),
+            "5"  => Loc::getMessage(\KitOrigami::moduleId.'_MAY'),
+            "6"  => Loc::getMessage(\KitOrigami::moduleId.'_JUNE'),
+            "7"  => Loc::getMessage(\KitOrigami::moduleId.'_JULY'),
+            "8"  => Loc::getMessage(\KitOrigami::moduleId.'_AUGUST'),
+            "9"  => Loc::getMessage(\KitOrigami::moduleId.'_SEPTEMBER'),
+            "10" => Loc::getMessage(\KitOrigami::moduleId.'_OCTOBER'),
+            "11" => Loc::getMessage(\KitOrigami::moduleId.'_NOVEMBER'),
+            "12" => Loc::getMessage(\KitOrigami::moduleId.'_DECEMBER'),
         ];
 
         $fromTimestamp = strtotime($fromDate);
@@ -50,10 +50,10 @@ class Date
                 $monthFromDate = "";
             }
 
-            $toString = " ".Loc::getMessage(\SotbitOrigami::moduleId.'_TO')." ".$dayToDate." ".$monthToDate;
+            $toString = " ".Loc::getMessage(\KitOrigami::moduleId.'_TO')." ".$dayToDate." ".$monthToDate;
         }
 
-        $fromString = Loc::getMessage(\SotbitOrigami::moduleId.'_FROM')." ".$dayFromDate.($monthFromDate ? " ".$monthFromDate
+        $fromString = Loc::getMessage(\KitOrigami::moduleId.'_FROM')." ".$dayFromDate.($monthFromDate ? " ".$monthFromDate
                 : "");
         $dateString = $fromString.$toString;
 

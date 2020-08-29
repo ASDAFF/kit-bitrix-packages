@@ -1,7 +1,7 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 /**
  * @global CMain $APPLICATION
@@ -116,9 +116,9 @@ $generalParams = array(
 $obName = 'ob' . preg_replace('/[^a-zA-Z0-9_]/', 'x', $this->GetEditAreaId($this->randString()));
 $containerName = 'sale-products-gift-container';
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 

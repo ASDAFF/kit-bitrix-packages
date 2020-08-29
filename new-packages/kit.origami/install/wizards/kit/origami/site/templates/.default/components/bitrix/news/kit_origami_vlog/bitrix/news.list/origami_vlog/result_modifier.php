@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 $arFilter = array(
     'IBLOCK_ID' => Config::get("IBLOCK_ID_VLOG"),
     "ACTIVE" => "Y"

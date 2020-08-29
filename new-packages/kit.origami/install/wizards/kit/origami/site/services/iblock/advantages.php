@@ -7,7 +7,7 @@ if (!CModule::IncludeModule("iblock"))
 if (!CModule::IncludeModule("kit.origami"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if(!defined("WIZARD_SITE_ID")) return;
 if(!defined("WIZARD_SITE_DIR")) return;
@@ -239,7 +239,7 @@ if($iblockID) {
 if (strlen($lang) <= 0)
     $lang = "ru";
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["ADVANTAGES"] = $iblockID;
+    $_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["ADVANTAGES"] = $iblockID;
 
 $arP = \Bitrix\Iblock\PropertyTable::getList(array('filter' => ['IBLOCK_ID' => $iblockID],'select' => ['ID', 'CODE', 'NAME']))->fetchAll();
 

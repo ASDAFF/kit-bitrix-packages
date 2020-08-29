@@ -36,7 +36,7 @@ Loc::loadMessages(__FILE__);
         </div>
 <?else:?>
     <a class="header_top_block_cabinet__title fonts__small_text"
-           href="<?=\Sotbit\Origami\Helper\Config::get('PERSONAL_PAGE')?>">
+           href="<?=\Kit\Origami\Helper\Config::get('PERSONAL_PAGE')?>">
             <span class="icon-locked"></span>
             <?=GetMessage('ORIGAMI_PERSONAL')?>
     </a>

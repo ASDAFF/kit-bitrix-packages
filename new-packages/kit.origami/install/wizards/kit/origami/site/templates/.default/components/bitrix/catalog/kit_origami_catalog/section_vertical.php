@@ -6,7 +6,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\ModuleManager;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 global $kitSeoMetaBottomDesc;
@@ -392,7 +392,7 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
                         ? $arParams['~MESS_BTN_COMPARE'] : ''),
 // Mobile view card
 
-                    'MOBILE_VIEW_MINIMAL' => ($arParams['MOBILE_VIEW_MINIMAL'] == 'ADMIN') ? \Sotbit\Origami\Helper\Config::get('MOBILE_VIEW_MINIMAL') : $arParams['MOBILE_VIEW_MINIMAL'],
+                    'MOBILE_VIEW_MINIMAL' => ($arParams['MOBILE_VIEW_MINIMAL'] == 'ADMIN') ? \Kit\Origami\Helper\Config::get('MOBILE_VIEW_MINIMAL') : $arParams['MOBILE_VIEW_MINIMAL'],
 
                     'USE_ENHANCED_ECOMMERCE' => (isset($arParams['USE_ENHANCED_ECOMMERCE'])
                         ? $arParams['USE_ENHANCED_ECOMMERCE'] : ''),

@@ -6,7 +6,7 @@ if(!\Bitrix\Main\Loader::includeModule('kit.regions')){
 }
 
 Loc::loadMessages(__FILE__);
-$regions = \Sotbit\Regions\System\Location::getLocations();
+$regions = \Kit\Regions\System\Location::getLocations();
 ?>
 <div class="select-city__modal-wrap">
     <div class="select-city__close"></div>
@@ -40,7 +40,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
         </p>
     </div>
 
-    <input class="select-city__input" type="text" name="region-input" id="region-input" placeholder="<?=Loc::getMessage(SotbitRegions::moduleId.'_WRITE_SITY')?>">
+    <input class="select-city__input" type="text" name="region-input" id="region-input" placeholder="<?=Loc::getMessage(KitRegions::moduleId.'_WRITE_SITY')?>">
 
     <?
     if($regions['TITLE_CITIES']) {
@@ -66,11 +66,11 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
             <?php
             if($regions['FAVORITES']){
                 ?>
-			    <div class="select-city__tab_name_content__big_city"><?=Loc::getMessage(SotbitRegions::moduleId.'_BIG_CITIES')?></div>
+			    <div class="select-city__tab_name_content__big_city"><?=Loc::getMessage(KitRegions::moduleId.'_BIG_CITIES')?></div>
                 <?php
             }
             ?>
-		    <div class="select-city__tab_name_content__village"><?=Loc::getMessage(SotbitRegions::moduleId.'_CITIES')?></div>
+		    <div class="select-city__tab_name_content__village"><?=Loc::getMessage(KitRegions::moduleId.'_CITIES')?></div>
 	    </div>
 	    <?
         foreach ($regions['REGION_LIST_COUNTRIES'] as $id => $region){

@@ -2,7 +2,7 @@
     die();
 }
 $this->setFrameMode(true);
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 ?>
 <div class="news_list">

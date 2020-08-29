@@ -81,7 +81,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_TEMPLATE" => "origami",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "150",
-		"REGION" => $_SESSION["SOTBIT_REGIONS"]["ID"],
+		"REGION" => $_SESSION["KIT_REGIONS"]["ID"],
 		"SEF_FOLDER" => "/blog/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",

@@ -12,8 +12,8 @@ use Bitrix\Main\ModuleManager;
 use Bitrix\Main\Web\Json;
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config;
-use Sotbit\Origami\Helper;
+use Kit\Origami\Config;
+use Kit\Origami\Helper;
 
 if (!Loader::includeModule('iblock'))
 	return;
@@ -26,7 +26,7 @@ $arVaraintListView = array_merge(array("ADMIN" => GetMessage('CP_BC_TPL_FROM_ADM
 
 $arTemplateParameters['VARIANT_LIST_VIEW'] = array(
     'PARENT' => 'VISUAL',
-    'NAME' => GetMessage("SOTBIT_CROSSSELL_VARIANT_LIST_VIEW"),
+    'NAME' => GetMessage("KIT_CROSSSELL_VARIANT_LIST_VIEW"),
     'TYPE' => 'LIST',
     'VALUES' => $arVaraintListView,
     'DEFAULT' => 'template_3',
@@ -37,7 +37,7 @@ $arActionProducts = array_merge(array("ADMIN" => GetMessage('CP_BC_TPL_FROM_ADMI
 
 $arTemplateParameters['ACTION_PRODUCTS'] = array(
     'PARENT' => 'ACTION_SETTINGS',
-    'NAME' => GetMessage('SOTBIT_CROSSSELL_ACTION_PRODUCTS'),
+    'NAME' => GetMessage('KIT_CROSSSELL_ACTION_PRODUCTS'),
     'TYPE' => 'LIST',
     'MULTIPLE' => 'Y',
     'DEFAULT' => 'ADMIN',

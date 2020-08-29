@@ -1,7 +1,7 @@
 <?
 
 use Bitrix\Main\Context;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
@@ -37,10 +37,10 @@ if ($value == 'y') {
 ${$arParams['FILTER_NAME']}['IBLOCK_ID'] = $arParams['IBLOCK_ID'];
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     ${$arParams['FILTER_NAME']}['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 

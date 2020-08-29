@@ -2,9 +2,9 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 Asset::getInstance()->addJs($templateFolder . "/js/jquery.maskedinput.min.js");
 $typeMask = (Config::get('TYPE_MASK_VIEW') == 'FLAGS') ? 'Y' : 'N';
 if ($typeMask == 'Y')
@@ -26,7 +26,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
     <?= $arResult["FORM_HEADER"] ?>
     <div>
         <div class="form_block_title">
-            <?= GetMessage('SOTBIT_FORM_TITLE_1'); ?>
+            <?= GetMessage('KIT_FORM_TITLE_1'); ?>
         </div>
         <? if ($_REQUEST["formresult"] == "addok"): ?>
             <div class="success-message">
@@ -152,7 +152,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                             width="180" height="40"/>
                         <div class="captcha-refresh" onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                             <svg class="icon_refresh" width="16" height="14"
-                                 style="color: <?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>; ">
+                                 style="color: <?= \Kit\Origami\Helper\Config::get('COLOR_BASE') ?>; ">
                                 <use
                                     xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                             </svg>
@@ -173,7 +173,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                         <span></span>
                         <span> <?= GetMessage('FORM_CONFIDENTIAL_1') ?>
                              <a class="feedback_block__compliance_link"
-                                href="<?= \Sotbit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>"><?= GetMessage('FORM_CONFIDENTIAL_2') ?>
+                                href="<?= \Kit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>"><?= GetMessage('FORM_CONFIDENTIAL_2') ?>
                             </a>
                         </span>
                     </label>
@@ -186,7 +186,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                     class="main_btn"
                     name="web_form_submit"
                     value="<?= GetMessage("FORM_SUBMIT") ?>"
-                    onclick="sendForm('<?= $arResult['arForm']['SID'] ?>','<?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
+                    onclick="sendForm('<?= $arResult['arForm']['SID'] ?>','<?= \Kit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
                 >
                 <input type="submit" style="display:none"
                        name="web_form_submit" id="submit">

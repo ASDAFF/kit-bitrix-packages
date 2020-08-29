@@ -1,9 +1,9 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 use \Bitrix\Main\Data\Cache;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Loc::loadMessages(__FILE__);
 global $analogProducts;
@@ -47,23 +47,23 @@ if($arResult['OFFERS'])
     $arResult['SKU'] = $arResult['OFFERS'][0]['ID'];
 }
 
-\SotbitOrigami::checkPriceDiscount($arResult);
+\KitOrigami::checkPriceDiscount($arResult);
 
-$arResult = \SotbitOrigami::changeColorImages($arResult);
+$arResult = \KitOrigami::changeColorImages($arResult);
 
-$Element = new \Sotbit\Origami\Image\Element($template);
+$Element = new \Kit\Origami\Image\Element($template);
 $arResult = $Element->prepareImages($arResult);
 
-$color = \Sotbit\Origami\Helper\Color::getInstance(SITE_ID);
+$color = \Kit\Origami\Helper\Color::getInstance(SITE_ID);
 $arResult = $color::changePropColorView($arResult, $arParams)['RESULT'];
 
 
-//$arResult["ITEM_PRICE_DELTA"] = \SotbitOrigami::getPriceDelta($arResult, $template);
+//$arResult["ITEM_PRICE_DELTA"] = \KitOrigami::getPriceDelta($arResult, $template);
 
 
 $arResult['BRAND'] = [];
 if($arParams['BRAND_USE'] && $arParams['BRAND_PROP_CODE']){
-    $Brand = new \Sotbit\Origami\Brand($template);
+    $Brand = new \Kit\Origami\Brand($template);
     $Brand->setBrandProps($arParams['BRAND_PROP_CODE']);
     $Brand->setResize(['width' => 205,'height' => 50,'type' => BX_RESIZE_IMAGE_PROPORTIONAL]);
     $arResult['BRAND'] = $Brand->findBrandsForElement($arResult['PROPERTIES']);
@@ -74,7 +74,7 @@ $arResult['VIDEO'] = [];
 $videoProp = Option::get('PROP_VIDEO_'.$template);
 if($arResult['PROPERTIES'][$videoProp]['VALUE']){
     foreach($arResult['PROPERTIES'][$videoProp]['VALUE'] as $url){
-        $Video = new \Sotbit\Origami\Video($url);
+        $Video = new \Kit\Origami\Video($url);
         $arResult['VIDEO'][] = $Video->getContent();
     }
 }
@@ -117,7 +117,7 @@ if($arResult['OFFERS'] && $arResult['SKU_PROPS']) {
 }
 
 
-$colorCode = \Sotbit\Origami\Helper\Config::get('COLOR');
+$colorCode = \Kit\Origami\Helper\Config::get('COLOR');
 if($arResult['SKU_PROPS'][$colorCode]) {
     $tmp = [$colorCode => $arResult['SKU_PROPS'][$colorCode]];
     foreach($arResult['SKU_PROPS'] as $code => $prop){
@@ -131,11 +131,11 @@ if($arResult['SKU_PROPS'][$colorCode]) {
 
 if (Bitrix\Main\Loader::includeModule( "kit.price" ))
 {
-    //$arResult = SotbitPrice::ChangeMinPrice( $arResult );
+    //$arResult = KitPrice::ChangeMinPrice( $arResult );
 }
 if (Bitrix\Main\Loader::includeModule( "kit.regions" ))
 {
-    //$arResult = \Sotbit\Regions\Sale\Price::change( $arResult );
+    //$arResult = \Kit\Regions\Sale\Price::change( $arResult );
 }
 
 $arResult["SHOW_BUY"] = 0;

@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 if(Config::get("BTN_TOP") == "Y"):
 ?>
 <div class ="btn_go-top" id="btn_go-top">

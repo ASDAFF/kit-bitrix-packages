@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST" && strlen($_POST["action"])>0 && check_bi
 {
 	$APPLICATION->RestartBuffer();
 
-    $Buy = new \Sotbit\Origami\Sale\Basket\Buy();
+    $Buy = new \Kit\Origami\Sale\Basket\Buy();
 	switch ($_POST["action"])
 	{
 		case "catalogSetAdd2Basket":

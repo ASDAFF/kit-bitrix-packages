@@ -1,9 +1,9 @@
 <?php
-namespace Sotbit\Origami\Config;
+namespace Kit\Origami\Config;
 
 /**
  * Class Group
- * @package Sotbit\Origami\Config
+ * @package Kit\Origami\Config
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Group
@@ -13,7 +13,7 @@ class Group
 	protected $settings = array('COLSPAN' => 2);
 	public function __construct($code, $settings = array())
 	{
-		$this->widgets = new \Sotbit\Origami\Collection();
+		$this->widgets = new \Kit\Origami\Collection();
 		$this->setCode($code);
 		$this->settings = array_merge($this->settings,$settings);
 	}
@@ -35,7 +35,7 @@ class Group
 	}
 
 	/**
-	 * @return \Sotbit\Origami\Collection
+	 * @return \Kit\Origami\Collection
 	 */
 	public function getWidgets()
 	{

@@ -10,7 +10,7 @@ Loc::loadMessages(__FILE__);
 $module = 'kit.opengraph';
 CModule::includeModule($module);
 
-use Sotbit\Opengraph\OpengraphPageMetaTable;
+use Kit\Opengraph\OpengraphPageMetaTable;
 
 $arFields['SITE_ID'] = WIZARD_SITE_ID;
 $arFields['ACTIVE_OG'] = 'Y';
@@ -51,8 +51,8 @@ $arFields['TW_PROPS_ACTIVE'] = serialize($arFields['TW_PROPS_ACTIVE']);
 $arFields['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/delivery.png';
 $arFields['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/delivery.png';
 
-$arFields['OG_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['OG_IMAGE']);
-$arFields['TW_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['TW_IMAGE'], 'TW_IMAGE');
+$arFields['OG_IMAGE'] = \Kit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['OG_IMAGE']);
+$arFields['TW_IMAGE'] = \Kit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['TW_IMAGE'], 'TW_IMAGE');
 
 $result = OpengraphPageMetaTable::Add($arFields);
 
@@ -70,8 +70,8 @@ $arField['TW_IMAGE_ALT'] = GetMessage('WZD_TITLE_DEFAULT_OPGR');
 $arField['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/default.png';
 $arField['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/default.png';
 
-$arField['OG_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arField['OG_IMAGE']);
-$arField['TW_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arField['TW_IMAGE'], 'TW_IMAGE');
+$arField['OG_IMAGE'] = \Kit\Opengraph\Helper\OpengraphHelper::saveImage($arField['OG_IMAGE']);
+$arField['TW_IMAGE'] = \Kit\Opengraph\Helper\OpengraphHelper::saveImage($arField['TW_IMAGE'], 'TW_IMAGE');
 
-Bitrix\Main\Config\Option::set(SotbitOpengraph::MODULE_ID, 'OPENGRAPH_SETTINGS', serialize($arField), $arFields['SITE_ID']);
+Bitrix\Main\Config\Option::set(KitOpengraph::MODULE_ID, 'OPENGRAPH_SETTINGS', serialize($arField), $arFields['SITE_ID']);
 ?>

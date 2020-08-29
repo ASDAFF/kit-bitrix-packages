@@ -1,14 +1,14 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 global $settings;
 global $filterBrands;
 $filterBrands = ['ACTIVE' => 'Y'];
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     $filterBrands['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 

@@ -11,7 +11,7 @@ if($arResult["SECTIONS"] && !empty($arResult["SECTIONS"]))
         {
             $arSection["PICTURE"]["ALT"] = "";
             $arSection["PICTURE"]["TITLE"] = "";
-            $image = new Sotbit\Origami\Image\Item();
+            $image = new Kit\Origami\Image\Item();
             $arSection["PICTURE"]["SRC"] = $image->getNoImageMedium();
         }
     }

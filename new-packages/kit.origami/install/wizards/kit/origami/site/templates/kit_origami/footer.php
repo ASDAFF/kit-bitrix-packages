@@ -2,15 +2,15 @@
 
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 Loc::loadMessages(__FILE__);
 
-$page = \SotbitOrigami::getCurrentPage();
+$page = \KitOrigami::getCurrentPage();
 
-if(!\SotbitOrigami::needShowFullWidth($page)) {
-    if(\SotbitOrigami::needShowSide($page)) {
+if(!\KitOrigami::needShowFullWidth($page)) {
+    if(\KitOrigami::needShowSide($page)) {
     ?>
         </div>
     </div>
@@ -29,11 +29,11 @@ if(!\SotbitOrigami::needShowFullWidth($page)) {
 
 <!-- footer -->
 <?
-include $_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::footersDir.'/'.Config::get('FOOTER').'/content.php';
-if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::footersDir.'/'
+include $_SERVER['DOCUMENT_ROOT'].'/'.\KitOrigami::footersDir.'/'.Config::get('FOOTER').'/content.php';
+if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\KitOrigami::footersDir.'/'
     .Config::get('FOOTER').'/style.css')
 ) {
-    Asset::getInstance()->addCss(\SotbitOrigami::footersDir.'/'
+    Asset::getInstance()->addCss(\KitOrigami::footersDir.'/'
         .Config::get('FOOTER').'/style.css');
 }
 ?>
@@ -41,7 +41,7 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::footersDir.'/'
 <?
 //Schema org breadcrumb
 if( \Bitrix\Main\Loader::includeModule('kit.schemaorg') && (strpos($APPLICATION->GetCurPage(), "bitrix") === false) ) {
-    Sotbit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'breadcrumblist');
+    Kit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'breadcrumblist');
 
     $data = SchemaMain::getData();
     if($data) {

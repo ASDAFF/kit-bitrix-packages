@@ -1,5 +1,5 @@
 <?
-namespace Sotbit\Origami\Video;
+namespace Kit\Origami\Video;
 
 class Vimeo{
     public function prepareUrl($url = ''){

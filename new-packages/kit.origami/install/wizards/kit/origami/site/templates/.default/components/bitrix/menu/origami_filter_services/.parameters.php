@@ -21,7 +21,7 @@ while ($arr = $rsIBlock->Fetch())
 }
 
 $arTemplateParameters['IBLOCK_ID'] = array(
-    'NAME' => GetMessage('SOTBIT_ORIGAMU_LEFT_MENU_IBLOCK_ID'),
+    'NAME' => GetMessage('KIT_ORIGAMU_LEFT_MENU_IBLOCK_ID'),
     'TYPE' => 'LIST',
     'MULTIPLE' => 'N',
     'VALUES' => $arIBlock

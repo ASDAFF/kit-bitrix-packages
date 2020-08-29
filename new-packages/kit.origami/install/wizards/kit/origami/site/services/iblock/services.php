@@ -92,7 +92,7 @@ if($arSite = $dbSite -> Fetch())
 if(strlen($lang) <= 0)
 	$lang = "ru";
 
-	$_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE'][5] = $iblockID;
+	$_SESSION['KIT_ORIGAMI_WIZARD_CHANGE'][5] = $iblockID;
 
 /*
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH."/services/index.php", array("SERVICES_IBLOCK_ID" => $iblockID));

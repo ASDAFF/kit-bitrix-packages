@@ -1,5 +1,5 @@
 <?
-use \Sotbit\Origami\Actions;
+use \Kit\Origami\Actions;
 class NewsImagesAndList extends Actions
 {
 	public function afterSaveContent()

@@ -16,11 +16,11 @@ if($arResult["GRID"]["ROWS"])
 
     $mod10 = $quantity % 10;
     $mod100 = $quantity % 100;
-    $quantityLabel = Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_DEFAULT");
+    $quantityLabel = Loc::getMessage("KIT_SOA_QUANTITY_LABEL_DEFAULT");
     if(($mod10 > 1 && $mod10 < 5) && ($mod100 < 12 || $mod100 > 14))
-        $quantityLabel .= Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_V1");
+        $quantityLabel .= Loc::getMessage("KIT_SOA_QUANTITY_LABEL_V1");
     elseif($mod10 == 0 || ($mod10 > 4 && $mod10 < 10) || ($mod100 > 10 && $mod100 < 15))
-        $quantityLabel .= Loc::getMessage("SOTBIT_SOA_QUANTITY_LABEL_V2");
+        $quantityLabel .= Loc::getMessage("KIT_SOA_QUANTITY_LABEL_V2");
 }
 
 if($USER->IsAuthorized() || $arParams["ALLOW_AUTO_REGISTER"] == "Y")
@@ -288,7 +288,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                             <li class="slide_bar_tab1">
                                                 <a href="#" name="tab1">
                                                     <span class="step_icons_item icon-wallet"></span>
-                                                    <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_PAYMENT_INFORMATION")?></p>
+                                                    <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_PAYMENT_INFORMATION")?></p>
                                                 </a>
                                             </li>
                                             <?
@@ -298,13 +298,13 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                                 <li class="slide_bar_tab2">
                                                     <a href="#" name="tab2">
                                                         <span class="step_icons_item icon-shipped"></span>
-                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_DELIVERY")?></p>
+                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_DELIVERY")?></p>
                                                     </a>
                                                 </li>
                                                 <li class="slide_bar_tab3">
                                                     <a href="#" name="tab3">
                                                         <span class="step_icons_item icon-money-bag"></span>
-                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_PAYMENT")?></p>
+                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_PAYMENT")?></p>
                                                     </a>
                                                 </li>
                                                 <?
@@ -315,13 +315,13 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                                 <li class="slide_bar_tab2">
                                                     <a href="#" name="tab2">
                                                         <span class="step_icons_item icon-money-bag"></span>
-                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_PAYMENT")?></p>
+                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_PAYMENT")?></p>
                                                     </a>
                                                 </li>
                                                 <li class="slide_bar_tab3">
                                                     <a href="#" name="tab3">
                                                         <span class="step_icons_item icon-shipped"></span>
-                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_DELIVERY")?></p>
+                                                        <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_DELIVERY")?></p>
                                                     </a>
                                                 </li>
                                                 <?
@@ -330,7 +330,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                             <li class="slide_bar_tab4">
                                                 <a href="#" name="tab4">
                                                     <span class="step_icons_item icon-success_order"></span>
-                                                    <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_ORDERING")?></p>
+                                                    <p class="step_icons_comment fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_ORDERING")?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -356,7 +356,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                         ?>
 
                                         <div class="slide_bar_block__content_item" id="tab4">
-                                            <p class="pay_info_block__step_title fonts__main_text"><?=Loc::getMessage("SOTBIT_SOA_ORDERING")?></p>
+                                            <p class="pay_info_block__step_title fonts__main_text"><?=Loc::getMessage("KIT_SOA_ORDERING")?></p>
 
                                             <div class="slide_bar_block__content_item__info">
 
@@ -400,7 +400,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                         </div>
 
                                         <p id="blink" class="slide_bar_block__content__button_next">
-                                            <span><?=Loc::getMessage("SOTBIT_SOA_GO_TO_NEXT_STEP")?></span>
+                                            <span><?=Loc::getMessage("KIT_SOA_GO_TO_NEXT_STEP")?></span>
                                         </p>
                                     </div>
                                 </div>
@@ -416,8 +416,8 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-12 main_order_all_price">
                             <div class="main_order_block__top_line top_line_all_price">
-                                <span class="main_order_block__title fonts__main_text"><?=Loc::getMessage("SOTBIT_SOA_YOUR_ORDER")?></span>
-                                <a class="main_order_block__link" href="<?=$arParams["PATH_TO_BASKET"]?>"><?=Loc::getMessage("SOTBIT_SOA_CHANGE")?></a>
+                                <span class="main_order_block__title fonts__main_text"><?=Loc::getMessage("KIT_SOA_YOUR_ORDER")?></span>
+                                <a class="main_order_block__link" href="<?=$arParams["PATH_TO_BASKET"]?>"><?=Loc::getMessage("KIT_SOA_CHANGE")?></a>
                             </div>
                             <div class="main_order_block_feedback price_item">
                                 <div class="main_order_block_feedback__price_item fonts__small_text">
@@ -516,7 +516,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                             <div class="order_block__basket_link">
                                 <a class="order_block__ordering_link fonts__middle_comment" href="<?=$arParams["PATH_TO_BASKET"]?>">
                                     <i class="fas fa-angle-double-left"></i>
-                                    <?=Loc::getMessage("SOTBIT_SOA_BACK_TO_BASKET");?>
+                                    <?=Loc::getMessage("KIT_SOA_BACK_TO_BASKET");?>
                                 </a>
                             </div>
 

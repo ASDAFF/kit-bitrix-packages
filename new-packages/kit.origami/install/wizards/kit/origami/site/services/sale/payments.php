@@ -496,10 +496,10 @@ if( $bRus || COption::GetOptionString( "kit.origami", "wizard_installed", "N", W
 	{
 		$arPaySystems[] = array(
 				'PAYSYSTEM' => array(
-						"NAME" => GetMessage( "SALE_WIZARD_PS_SOTBIT_BILL" ),
+						"NAME" => GetMessage( "SALE_WIZARD_PS_KIT_BILL" ),
 						"SORT" => 100,
 						"DESCRIPTION" => "",
-						"PSA_NAME" => GetMessage( "SALE_WIZARD_PS_SOTBIT_BILL" ),
+						"PSA_NAME" => GetMessage( "SALE_WIZARD_PS_KIT_BILL" ),
 						"ACTION_FILE" => "billkit",
 						"RESULT_FILE" => "",
 						"NEW_WINDOW" => "Y",
@@ -514,67 +514,67 @@ if( $bRus || COption::GetOptionString( "kit.origami", "wizard_installed", "N", W
 				),
 				"BIZVAL" => array(
 						$arGeneralInfo["personType"]["ur"] => array(
-								"PAYMENT_DATE_INSERT_SOTBIT" => Array(
+								"PAYMENT_DATE_INSERT_KIT" => Array(
 										"TYPE" => "PAYMENT",
 										"VALUE" => "DATE_BILL_DATE"
 								),
-								"SELLER_COMPANY_NAME_SOTBIT" => Array(
+								"SELLER_COMPANY_NAME_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopOfName
 								),
-								"SELLER_COMPANY_ADDRESS_SOTBIT" => Array(
+								"SELLER_COMPANY_ADDRESS_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopAdr
 								),
-								"SELLER_COMPANY_PHONE_SOTBIT" => Array(
+								"SELLER_COMPANY_PHONE_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $siteTelephone
 								),
-								"SELLER_COMPANY_INN_SOTBIT" => Array(
+								"SELLER_COMPANY_INN_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopINN
 								),
-								"SELLER_COMPANY_KPP_SOTBIT" => Array(
+								"SELLER_COMPANY_KPP_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopKPP
 								),
-								"SELLER_COMPANY_BANK_ACCOUNT_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_ACCOUNT_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopNS
 								),
-								"SELLER_COMPANY_BANK_ACCOUNT_CORR_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_ACCOUNT_CORR_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopKS
 								),
-								"SELLER_COMPANY_BANK_BIC_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_BIC_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopBANKREKV
 								),
-								"BUYER_PERSON_COMPANY_NAME_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_NAME_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "COMPANY_NAME"
 								),
-								"BUYER_PERSON_COMPANY_INN_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_INN_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "INN"
 								),
-								"BUYER_PERSON_COMPANY_ADDRESS_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_ADDRESS_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "COMPANY_ADR"
 								),
-								"BUYER_PERSON_COMPANY_PHONE_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_PHONE_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "PHONE"
 								),
-								"BUYER_PERSON_COMPANY_FAX_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_FAX_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "FAX"
 								),
-								"BUYER_PERSON_COMPANY_NAME_CONTACT_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_NAME_CONTACT_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "CONTACT_PERSON"
 								),
-								"BILL_PATH_TO_STAMP_SOTBIT" => Array(
+								"BILL_PATH_TO_STAMP_KIT" => Array(
 										"TYPE" => "FILE",
 										"VALUE" => $siteStamp
 								)
@@ -587,10 +587,10 @@ if( $bRus || COption::GetOptionString( "kit.origami", "wizard_installed", "N", W
 	{
 		$arPaySystems[] = array(
 				'PAYSYSTEM' => array(
-						"NAME" => GetMessage( "SALE_WIZARD_PS_SOTBIT_BILL" ),
+						"NAME" => GetMessage( "SALE_WIZARD_PS_KIT_BILL" ),
 						"SORT" => 100,
 						"DESCRIPTION" => "",
-						"PSA_NAME" => GetMessage( "SALE_WIZARD_PS_SOTBIT_BILL" ),
+						"PSA_NAME" => GetMessage( "SALE_WIZARD_PS_KIT_BILL" ),
 						"ACTION_FILE" => "billkit",
 						"RESULT_FILE" => "",
 						"NEW_WINDOW" => "Y",
@@ -605,67 +605,67 @@ if( $bRus || COption::GetOptionString( "kit.origami", "wizard_installed", "N", W
 				),
 				"BIZVAL" => array(
 						$arGeneralInfo["personType"]["ip"] => array(
-								"PAYMENT_DATE_INSERT_SOTBIT" => Array(
+								"PAYMENT_DATE_INSERT_KIT" => Array(
 										"TYPE" => "PAYMENT",
 										"VALUE" => "DATE_BILL_DATE"
 								),
-								"SELLER_COMPANY_NAME_SOTBIT" => Array(
+								"SELLER_COMPANY_NAME_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopOfName
 								),
-								"SELLER_COMPANY_ADDRESS_SOTBIT" => Array(
+								"SELLER_COMPANY_ADDRESS_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopAdr
 								),
-								"SELLER_COMPANY_PHONE_SOTBIT" => Array(
+								"SELLER_COMPANY_PHONE_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $siteTelephone
 								),
-								"SELLER_COMPANY_INN_SOTBIT" => Array(
+								"SELLER_COMPANY_INN_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopINN
 								),
-								"SELLER_COMPANY_KPP_SOTBIT" => Array(
+								"SELLER_COMPANY_KPP_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopKPP
 								),
-								"SELLER_COMPANY_BANK_ACCOUNT_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_ACCOUNT_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopNS
 								),
-								"SELLER_COMPANY_BANK_ACCOUNT_CORR_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_ACCOUNT_CORR_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopKS
 								),
-								"SELLER_COMPANY_BANK_BIC_SOTBIT" => Array(
+								"SELLER_COMPANY_BANK_BIC_KIT" => Array(
 										"TYPE" => "VALUE",
 										"VALUE" => $shopBANKREKV
 								),
-								"BUYER_PERSON_COMPANY_NAME_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_NAME_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "COMPANY_NAME"
 								),
-								"BUYER_PERSON_COMPANY_INN_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_INN_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "INN"
 								),
-								"BUYER_PERSON_COMPANY_ADDRESS_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_ADDRESS_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "COMPANY_ADR"
 								),
-								"BUYER_PERSON_COMPANY_PHONE_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_PHONE_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "PHONE"
 								),
-								"BUYER_PERSON_COMPANY_FAX_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_FAX_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "FAX"
 								),
-								"BUYER_PERSON_COMPANY_NAME_CONTACT_SOTBIT" => Array(
+								"BUYER_PERSON_COMPANY_NAME_CONTACT_KIT" => Array(
 										"TYPE" => "PROPERTY",
 										"VALUE" => "CONTACT_PERSON"
 								),
-								"BILL_PATH_TO_STAMP_SOTBIT" => Array(
+								"BILL_PATH_TO_STAMP_KIT" => Array(
 										"TYPE" => "FILE",
 										"VALUE" => $siteStamp
 								)

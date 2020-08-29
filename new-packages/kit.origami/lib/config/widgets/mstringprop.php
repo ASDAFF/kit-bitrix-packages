@@ -6,7 +6,7 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 use Bitrix\Iblock\PropertyTable;
 use Bitrix\Main\Loader;
 
@@ -14,7 +14,7 @@ class MStringProp extends Select
 {
 	public function setValues()
 	{
-		$iblockId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID');
+		$iblockId = \Kit\Origami\Config\Option::get('IBLOCK_ID');
 		$filter = array(
 			'ACTIVE' => 'Y',
 			'PROPERTY_TYPE' => 'S',

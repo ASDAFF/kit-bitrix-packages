@@ -2,8 +2,8 @@
 global $APPLICATION;
 global $USER;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option;
 use Bitrix\Main\Page\Asset;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 $page = $APPLICATION->GetCurPage(false);
@@ -81,7 +81,7 @@ Loc::loadMessages(__FILE__);
                 </svg>
                 <p><?= Loc::getMessage('YOUR_CITY')?></p>
                 <?
-                if(\SotbitOrigami::isUseRegions())
+                if(\KitOrigami::isUseRegions())
                 {
                     $template = Config::get('REGION_TEMPLATE');
                     if(!$template)
@@ -126,7 +126,7 @@ Loc::loadMessages(__FILE__);
 		"SHOW_INPUT" => "Y",
 		"INPUT_ID" => "title-search-input",
 		"CONTAINER_ID" => "search",
-		"PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
+		"PRICE_CODE" => \KitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
 		"SHOW_PREVIEW" => "Y",
 		"PREVIEW_WIDTH" => "75",
 		"PREVIEW_HEIGHT" => "75",
@@ -148,7 +148,7 @@ Loc::loadMessages(__FILE__);
                 <?
                 if(
                     \Bitrix\Main\Loader::includeModule('kit.regions') &&
-                    \SotbitOrigami::isUseRegions() &&
+                    \KitOrigami::isUseRegions() &&
                     is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
                 ):
                     $APPLICATION->IncludeComponent(
@@ -158,7 +158,7 @@ Loc::loadMessages(__FILE__);
                             "CACHE_TIME"    => "36000000",
                             "CACHE_TYPE"    => "A",
                             "REGION_FIELDS" => ['UF_ADDRESS','UF_PHONE','UF_WORKTIME','UF_EMAIL'],
-                            "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                            "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                         ]
                     );
                 else:?>

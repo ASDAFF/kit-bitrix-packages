@@ -2,11 +2,11 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 ?>
 <div class="block_main_left_menu">
     <?
-    include \Sotbit\Origami\Helper\Config::getChunkPath('side');
+    include \Kit\Origami\Helper\Config::getChunkPath('side');
     ?>
     <div class="block_main_left_menu__content">
         <div class="row personal_block_component">

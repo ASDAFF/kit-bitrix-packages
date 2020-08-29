@@ -1,10 +1,10 @@
 <?
-$MESS[SotbitOrigami::moduleId.'_TITLE'] = 'Добавить блок';
-$MESS[SotbitOrigami::moduleId.'_SAVE'] = 'Сохранить';
-$MESS[SotbitOrigami::moduleId.'_CLOSE'] = 'Закрыть';
-$MESS[SotbitOrigami::moduleId.'_SHOW'] = 'Показать';
-$MESS[SotbitOrigami::moduleId.'_HIDE'] = 'Скрыть';
-$MESS[SotbitOrigami::moduleId.'_COPY'] = 'Копировать';
-$MESS[SotbitOrigami::moduleId.'_PASTE'] = 'Вставить';
-$MESS[SotbitOrigami::moduleId.'_CUT'] = 'Вырезать';
+$MESS[KitOrigami::moduleId.'_TITLE'] = 'Добавить блок';
+$MESS[KitOrigami::moduleId.'_SAVE'] = 'Сохранить';
+$MESS[KitOrigami::moduleId.'_CLOSE'] = 'Закрыть';
+$MESS[KitOrigami::moduleId.'_SHOW'] = 'Показать';
+$MESS[KitOrigami::moduleId.'_HIDE'] = 'Скрыть';
+$MESS[KitOrigami::moduleId.'_COPY'] = 'Копировать';
+$MESS[KitOrigami::moduleId.'_PASTE'] = 'Вставить';
+$MESS[KitOrigami::moduleId.'_CUT'] = 'Вырезать';
 ?>

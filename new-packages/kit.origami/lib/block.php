@@ -1,12 +1,12 @@
 <?
 
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\SiteTable;
-use Sotbit\Origami\Front\User;
+use Kit\Origami\Front\User;
 use Bitrix\Main\Type\DateTime;
-use Sotbit\Origami\Internals\BlockTable;
+use Kit\Origami\Internals\BlockTable;
 use Bitrix\Conversion\Internals\MobileDetect;
 use Bitrix\Main\Page\Asset;
 
@@ -163,18 +163,18 @@ class Block
 		data-is-shown="true" data-id="'.$this->getId().'">
 			<div class="landing-ui-panel-content-element landing-ui-panel-content-header">
 				<div class="landing-ui-panel-content-title">'
-            .Loc::getMessage(\SotbitOrigami::moduleId.'_STYLE').'</div>
+            .Loc::getMessage(\KitOrigami::moduleId.'_STYLE').'</div>
 			</div>
 			<div class="landing-ui-panel-content-element landing-ui-panel-content-body">
 				<div class="landing-ui-panel-content-body-sidebar"></div>
 				<div class="landing-ui-panel-content-body-content">
 					<div class="landing-ui-form landing-ui-form-style">
 						<div class="landing-ui-form-header">'
-            .Loc::getMessage(\SotbitOrigami::moduleId.'_SETTINGS').'</div>
+            .Loc::getMessage(\KitOrigami::moduleId.'_SETTINGS').'</div>
 					<div class="landing-ui-form-body">
 						<div class="landing-ui-field landing-ui-display-button-group landing-ui-field-button-group" data-selector="#block110 > :first-child">
 							<div class="landing-ui-field-header">'
-            .Loc::getMessage(\SotbitOrigami::moduleId.'_VIEW').'</div>
+            .Loc::getMessage(\KitOrigami::moduleId.'_VIEW').'</div>
 							<div class="landing-ui-field-input" data-placeholder="">
 								<button type="button" class="'.$lgnone.' landing-ui-button" data-id="l-d-lg-none"
 								value="l-d-lg-none">
@@ -209,7 +209,7 @@ class Block
                 $val = $this->getSettings()['style'][$padding]['value'];
             }
             echo '<label for="amount'.$padding.$this->getId().'">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_'.$padding).':</label>
+                .Loc::getMessage(\KitOrigami::moduleId.'_'.$padding).':</label>
 			  <input type="text" id="amount'.$padding.$this->getId().'" readonly style="border:0; color:#f6931f; font-weight:bold;">
 			<div id="'.$padding.$this->getId().'"></div>
 
@@ -264,7 +264,7 @@ class Block
 
         echo '</div></div>';
 
-        echo '<div><div style="margin-top:30px" class="landing-ui-field-header">'.Loc::getMessage(\SotbitOrigami::moduleId.'_BACKGROUND').'</div>';
+        echo '<div><div style="margin-top:30px" class="landing-ui-field-header">'.Loc::getMessage(\KitOrigami::moduleId.'_BACKGROUND').'</div>';
 
         $background = [
             'background-color',
@@ -329,25 +329,25 @@ class Block
 
                         </script>';
                     echo '<div class="landing-ui-field"><label for="'.$back.$this->getId().'">'
-                        .Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).':</label>';
+                        .Loc::getMessage(\KitOrigami::moduleId.'_'.$back).':</label>';
                     $APPLICATION->IncludeComponent(
                         "bitrix:main.colorpicker",
                         "origami.colorpicker",
                         Array(
                             "SHOW_BUTTON" => "Y",
                             "ID" => "color_picker_".$this->getId(),
-                            "NAME" => Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_select'),
+                            "NAME" => Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_select'),
                             "ONSELECT" => "OnSelectBGColor".$this->getId()
                         ),
                         $component, array("HIDE_ICONS" => "Y")
                     );
-                    echo '<input type="text" class="options-block-custom" id="'.$back.$this->getId().'" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_descr').'" value="'.$val.'"></div>';
+                    echo '<input type="text" class="options-block-custom" id="'.$back.$this->getId().'" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_descr').'" value="'.$val.'"></div>';
 
 
                     break;
 
                 case 'background-image':
-                    echo '<div class="landing-ui-field">'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back);
+                    echo '<div class="landing-ui-field">'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back);
                     $APPLICATION->IncludeComponent("bitrix:main.file.input", "origami_block",
                         array(
                             "INPUT_NAME"=>"BACKGROUND_IMAGE_".$this->getId(),
@@ -356,7 +356,7 @@ class Block
                             "MAX_FILE_SIZE"=>"2097152",
                             "ALLOW_UPLOAD"=>"I",
                             "ALLOW_UPLOAD_EXT"=>"",
-                            "INPUT_CAPTION" => Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_add'),
+                            "INPUT_CAPTION" => Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_add'),
                             "INPUT_VALUE" => $val,
                             "id" => $this->getId(),
                             "code" =>  $this->getCode(),
@@ -414,16 +414,16 @@ class Block
 
                 case 'background-position':
                     echo '<div class="landing-ui-field"><label for="'.$back.$this->getId().'">'
-                        .Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).':</label>
-			            <input type="text" class="options-block-custom" id="'.$back.$this->getId().'" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_descr').'" value="'.$val.'">
-			            <button class="landing-ui-design__btn_apply" id="but_'.$back.$this->getId().'" type="button">'.Loc::getMessage(\SotbitOrigami::moduleId.'_APPLY').'</button></div>';
+                        .Loc::getMessage(\KitOrigami::moduleId.'_'.$back).':</label>
+			            <input type="text" class="options-block-custom" id="'.$back.$this->getId().'" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_descr').'" value="'.$val.'">
+			            <button class="landing-ui-design__btn_apply" id="but_'.$back.$this->getId().'" type="button">'.Loc::getMessage(\KitOrigami::moduleId.'_APPLY').'</button></div>';
                     break;
 
                 case 'background-repeat':
                     $options = array(
                         "no-repeat", "repeat", "repeat-x", "repeat-y", ""
                     );
-                    echo '<div class="landing-ui-field">'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).'
+                    echo '<div class="landing-ui-field">'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back).'
                                         <select id="'.$back.$this->getId().'" class="landing-ui-field-select">';
 
                     foreach($options as $v)
@@ -439,7 +439,7 @@ class Block
                     $options = array(
                         "cover", "contain", "auto"
                     );
-                    echo '<div class="landing-ui-field">'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).'
+                    echo '<div class="landing-ui-field">'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back).'
                                         <select id="'.$back.$this->getId().'" class="landing-ui-field-select">';
 
                     foreach($options as $v)
@@ -451,16 +451,16 @@ class Block
                     echo '</select>';
 
                     echo '<label for="'.$back.$this->getId().'_abs">'
-                        .Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_abs').':</label>
-			            <input type="text" class="options-block-custom" id="'.$back.$this->getId().'_abs" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back.'_abs_descr').'" name="" value="">
-			            <button class="landing-ui-design__btn_apply" id="but_'.$back.$this->getId().'" type="button">'.Loc::getMessage(\SotbitOrigami::moduleId.'_APPLY').'</button></div>';
+                        .Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_abs').':</label>
+			            <input type="text" class="options-block-custom" id="'.$back.$this->getId().'_abs" minlength="4" maxlength="7" placeholder="'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back.'_abs_descr').'" name="" value="">
+			            <button class="landing-ui-design__btn_apply" id="but_'.$back.$this->getId().'" type="button">'.Loc::getMessage(\KitOrigami::moduleId.'_APPLY').'</button></div>';
                     break;
 
                 case 'background-attachment':
                     $options = array(
                         "fixed", "scroll", "local", ""
                     );
-                    echo '<div class="landing-ui-field">'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).'
+                    echo '<div class="landing-ui-field">'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back).'
                                         <select id="'.$back.$this->getId().'" class="landing-ui-field-select">';
 
                     foreach($options as $v)
@@ -477,7 +477,7 @@ class Block
                     $options = array(
                         "padding-box", "border-box", "content-box", ""
                     );
-                    echo '<div class="landing-ui-field">'.Loc::getMessage(\SotbitOrigami::moduleId.'_'.$back).'
+                    echo '<div class="landing-ui-field">'.Loc::getMessage(\KitOrigami::moduleId.'_'.$back).'
                                         <select id="'.$back.$this->getId().'" class="landing-ui-field-select">';
 
                     foreach($options as $v)
@@ -566,7 +566,7 @@ class Block
 
         echo '</div></div>
 			<button type="button" class="landing-ui-button landing-ui-panel-content-close" data-id="close" title="'
-            .Loc::getMessage(\SotbitOrigami::moduleId.'_CLOSE')
+            .Loc::getMessage(\KitOrigami::moduleId.'_CLOSE')
             .'"><span class="landing-ui-button-text"></span></button></div></div>';
 
 
@@ -698,7 +698,7 @@ class Block
             echo '
 			<div data-id="content_actions" class="landing-ui-panel landing-ui-panel-content-action landing-ui-show">
 				<button type="button" class="landing-ui-button landing-ui-button-action" data-id="collapse" title="'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_COLLAPSE').'">
+                .Loc::getMessage(\KitOrigami::moduleId.'_COLLAPSE').'">
 					<span class="landing-ui-button-text">
 						<span class="fa fa-caret-right"></span>
 					</span>
@@ -706,19 +706,19 @@ class Block
             if ($this->getSettings()['groups']) {
                 echo '
 				<button type="button" class="landing-ui-button landing-ui-button-action" data-id="content" title="'
-                    .Loc::getMessage(\SotbitOrigami::moduleId
+                    .Loc::getMessage(\KitOrigami::moduleId
                         .'_EDIT_TITLE').'">
 					<span class="landing-ui-button-text">'
-                    .Loc::getMessage(\SotbitOrigami::moduleId
+                    .Loc::getMessage(\KitOrigami::moduleId
                         .'_EDIT_CONTENT').'</span>
 				</button>';
             }
             echo '
 				<button type="button" class="landing-ui-button landing-ui-button-action" data-id="style" title="'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_EDIT_STYLE_TITLE')
+                .Loc::getMessage(\KitOrigami::moduleId.'_EDIT_STYLE_TITLE')
                 .'">
 					<span class="landing-ui-button-text">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_EDIT_STYLE').'</span>
+                .Loc::getMessage(\KitOrigami::moduleId.'_EDIT_STYLE').'</span>
 				</button>
 				<button type="button" class="landing-ui-button landing-ui-button-action" data-id="block_display_info">
 					<span class="landing-ui-button-text">&nbsp;</span>
@@ -731,7 +731,7 @@ class Block
 class="landing-ui-panel landing-ui-panel-content landing-ui-panel-content-with-subtitle landing-ui-panel-content-edit landing-ui-hide landing-ui-hidden" data-is-shown="true">
 <div class="landing-ui-panel-content-element landing-ui-panel-content-header">
 <div class="landing-ui-panel-content-title">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_EDIT').'</div>
+                .Loc::getMessage(\KitOrigami::moduleId.'_EDIT').'</div>
 <div class="landing-ui-panel-content-subtitle">'
                 .$this->getSettings()['block']['name'].'</div></div>
 <div class="landing-ui-panel-content-element landing-ui-panel-content-body"><div class="landing-ui-panel-content-body-sidebar">';
@@ -802,15 +802,15 @@ class="landing-ui-panel landing-ui-panel-content landing-ui-panel-content-with-s
             echo '
 </div><div class="landing-ui-form-footer"></div></div>
 </div></div><div class="landing-ui-panel-content-element landing-ui-panel-content-footer"><button type="button" class="landing-ui-button landing-ui-button-content-save" data-id="save_block_content" title="'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_SAVE')
+                .Loc::getMessage(\KitOrigami::moduleId.'_SAVE')
                 .'"><span class="landing-ui-button-text">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_SAVE').'</span></button>
+                .Loc::getMessage(\KitOrigami::moduleId.'_SAVE').'</span></button>
 <button type="button" class="landing-ui-button landing-ui-button-content-cancel" data-id="cancel_block_content" title="'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_CLOSE')
+                .Loc::getMessage(\KitOrigami::moduleId.'_CLOSE')
                 .'"><span class="landing-ui-button-text">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_CLOSE').'</span></button></div>
+                .Loc::getMessage(\KitOrigami::moduleId.'_CLOSE').'</span></button></div>
 <button type="button" class="landing-ui-button landing-ui-panel-content-close" data-id="close" title="'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_CLOSE').'"><span class="landing-ui-button-text"></span></button></div>
+                .Loc::getMessage(\KitOrigami::moduleId.'_CLOSE').'"><span class="landing-ui-button-text"></span></button></div>
 </form>';
 
 
@@ -819,22 +819,22 @@ class="landing-ui-panel landing-ui-panel-content landing-ui-panel-content-with-s
 <div data-id="block_action" class="landing-ui-panel landing-ui-panel-block-action landing-ui-show">
 <button type="button" class="landing-ui-button landing-ui-button-action" data-id="down" title="'
                 .Loc::getMessage
-                (\SotbitOrigami::moduleId.'_DOWN').'">
+                (\KitOrigami::moduleId.'_DOWN').'">
 <span class="landing-ui-button-text">&nbsp;</span></button>
 <button type="button" class="landing-ui-button landing-ui-button-action" data-id="up" title="'
                 .Loc::getMessage
-                (\SotbitOrigami::moduleId.'_UP').'"><span class="landing-ui-button-text">&nbsp;</span></button>
+                (\KitOrigami::moduleId.'_UP').'"><span class="landing-ui-button-text">&nbsp;</span></button>
 <button type="button" class="landing-ui-button landing-ui-button-action" data-id="actions"
-title="'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD_ACTIONS')
+title="'.Loc::getMessage(\KitOrigami::moduleId.'_ADD_ACTIONS')
                 .'" id="actions_'.$this->getId()
                 .'"><span class="landing-ui-button-text">'
-                .Loc::getMessage(\SotbitOrigami::moduleId.'_ACTIONS').'</span></button>
+                .Loc::getMessage(\KitOrigami::moduleId.'_ACTIONS').'</span></button>
 <button type="button" class="landing-ui-button landing-ui-button-action" data-id="remove" title="'
                 .Loc::getMessage
-                (\SotbitOrigami::moduleId.'_DELETE').'"><span class="landing-ui-button-text">&nbsp;</span></button>
+                (\KitOrigami::moduleId.'_DELETE').'"><span class="landing-ui-button-text">&nbsp;</span></button>
 <button type="button" class="landing-ui-button landing-ui-button-action" data-id="collapse" title="'
                 .Loc::getMessage
-                (\SotbitOrigami::moduleId.'_COLLAPSE').'">
+                (\KitOrigami::moduleId.'_COLLAPSE').'">
 <span class="landing-ui-button-text">
 <span class="fa fa-caret-right"></span></span>
 </button></div>
@@ -845,7 +845,7 @@ title="'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD_ACTIONS')
 <div data-id="create_action" class="landing-ui-panel landing-ui-panel-create-action landing-ui-show">
 			<button type="button" class="landing-ui-button landing-ui-button-plus" data-id="insert_after">
 				<span class="landing-ui-button-text">
-					'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD').'
+					'.Loc::getMessage(\KitOrigami::moduleId.'_ADD').'
 				</span>
 			</button>
 		</div>';
@@ -1178,7 +1178,7 @@ title="'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD_ACTIONS')
     public function setClass()
     {
         self::includeClass();
-        $classFile = $_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::blockDir.'/'
+        $classFile = $_SERVER['DOCUMENT_ROOT'].\KitOrigami::blockDir.'/'
             .$this->getCode().'/class.php';
         if (file_exists($classFile)) {
             $fp = fopen($classFile, 'r');
@@ -1210,7 +1210,7 @@ title="'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD_ACTIONS')
         }
 
         if (!$this->class) {
-            $this->class = '\\Sotbit\\Origami\\Actions';
+            $this->class = '\\Kit\\Origami\\Actions';
         }
     }
 
@@ -1226,7 +1226,7 @@ title="'.Loc::getMessage(\SotbitOrigami::moduleId.'_ADD_ACTIONS')
 
     private function includeClass()
     {
-        $classFile = $_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::blockDir.'/'
+        $classFile = $_SERVER['DOCUMENT_ROOT'].\KitOrigami::blockDir.'/'
             .$this->getCode().'/class.php';
         if (file_exists($classFile)) {
             include_once $classFile;

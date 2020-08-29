@@ -76,8 +76,8 @@ class KitOrigami
     public static function showAddress()
     {
 
-        if (self::isUseRegions() && $_SESSION['SOTBIT_REGIONS']['UF_ADDRESS']) {
-            echo $_SESSION['SOTBIT_REGIONS']['UF_ADDRESS'];
+        if (self::isUseRegions() && $_SESSION['KIT_REGIONS']['UF_ADDRESS']) {
+            echo $_SESSION['KIT_REGIONS']['UF_ADDRESS'];
         } else {
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_address.php',]);
@@ -87,24 +87,24 @@ class KitOrigami
     public static function showPhone($_171918145 = '')
     {
 
-        if (self::isUseRegions() && $_SESSION['SOTBIT_REGIONS']['UF_PHONE']) {
-            if (is_array($_SESSION['SOTBIT_REGIONS']['UF_PHONE'])) {
-                $_SESSION['SOTBIT_REGIONS']['UF_PHONE'] = array_diff($_SESSION['SOTBIT_REGIONS']['UF_PHONE'], ['', null]);
+        if (self::isUseRegions() && $_SESSION['KIT_REGIONS']['UF_PHONE']) {
+            if (is_array($_SESSION['KIT_REGIONS']['UF_PHONE'])) {
+                $_SESSION['KIT_REGIONS']['UF_PHONE'] = array_diff($_SESSION['KIT_REGIONS']['UF_PHONE'], ['', null]);
             }
-            if (is_array($_SESSION['SOTBIT_REGIONS']['UF_PHONE']) && count($_SESSION['SOTBIT_REGIONS']['UF_PHONE']) > 1) {
+            if (is_array($_SESSION['KIT_REGIONS']['UF_PHONE']) && count($_SESSION['KIT_REGIONS']['UF_PHONE']) > 1) {
                 if (strpos($_171918145, 'footer') !== false) {
-                    foreach ($_SESSION['SOTBIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
+                    foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
                         if ($_1960288759 == 0) {
                             continue;
                         }
                         echo '' . self::showDigitalPhone($_276922068) . '" class="' . $_171918145 . '">' . $_276922068 . '';
                     }
                 } else {
-                    $_276922068 = reset($_SESSION['SOTBIT_REGIONS']['UF_PHONE']);
+                    $_276922068 = reset($_SESSION['KIT_REGIONS']['UF_PHONE']);
                     echo '' . self::showDigitalPhone($_276922068) . '" class="' . $_171918145 . ' origami_icons_button">' . $_276922068 . '';
-                    if (!empty($_SESSION['SOTBIT_REGIONS']['UF_PHONE'])) {
+                    if (!empty($_SESSION['KIT_REGIONS']['UF_PHONE'])) {
                         echo '';
-                        foreach ($_SESSION['SOTBIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
+                        foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
                             if ($_1960288759 == 0) {
                                 continue;
                             }
@@ -113,10 +113,10 @@ class KitOrigami
                         echo '';
                     }
                 }
-            } elseif (is_array($_SESSION['SOTBIT_REGIONS']['UF_PHONE'])) {
-                echo '' . self::showDigitalPhone(reset($_SESSION['SOTBIT_REGIONS']['UF_PHONE'])) . '" class="' . $_171918145 . '">' . reset($_SESSION['SOTBIT_REGIONS']['UF_PHONE']) . '';
+            } elseif (is_array($_SESSION['KIT_REGIONS']['UF_PHONE'])) {
+                echo '' . self::showDigitalPhone(reset($_SESSION['KIT_REGIONS']['UF_PHONE'])) . '" class="' . $_171918145 . '">' . reset($_SESSION['KIT_REGIONS']['UF_PHONE']) . '';
             } else {
-                echo '' . self::showDigitalPhone($_SESSION['SOTBIT_REGIONS']['UF_PHONE']) . '" class="' . $_171918145 . '">' . $_SESSION['SOTBIT_REGIONS']['UF_PHONE'] . '';
+                echo '' . self::showDigitalPhone($_SESSION['KIT_REGIONS']['UF_PHONE']) . '" class="' . $_171918145 . '">' . $_SESSION['KIT_REGIONS']['UF_PHONE'] . '';
             }
         } else {
             $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
@@ -129,8 +129,8 @@ class KitOrigami
 
     public static function showDropDownPhones($_1334522753 = '', $_1592436967 = '', $_1313454871 = "")
     {
-        if (self::isUseRegions() && $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"]) {
-            self::showDropDownBlock($_SESSION["SOTBIT_REGIONS"]["UF_PHONE"], $_1334522753, $_1592436967, $_1313454871, "tel:");
+        if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_PHONE"]) {
+            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_PHONE"], $_1334522753, $_1592436967, $_1313454871, "tel:");
         } else {
             $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
             echo '' . $_1334522753 . '">';
@@ -142,8 +142,8 @@ class KitOrigami
 
     public static function showDropDownEmails($_1334522753 = '', $_1592436967 = '', $_1313454871 = "")
     {
-        if (self::isUseRegions() && $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]) {
-            self::showDropDownBlock($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"], $_1334522753, $_1592436967, $_1313454871, "mailto:");
+        if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
+            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_EMAIL"], $_1334522753, $_1592436967, $_1313454871, "mailto:");
         } else {
             $_410007577 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
             echo '' . $_1334522753 . '">';
@@ -245,8 +245,8 @@ class KitOrigami
         }
         $_420697642 = [];
         if (\KitOrigami::isUseRegions()) {
-            if ($_SESSION['SOTBIT_REGIONS']['PRICE_CODE']) {
-                $_420697642 = $_SESSION['SOTBIT_REGIONS']['PRICE_CODE'];
+            if ($_SESSION['KIT_REGIONS']['PRICE_CODE']) {
+                $_420697642 = $_SESSION['KIT_REGIONS']['PRICE_CODE'];
             }
         }
         if ($_735641757 && $_1341982944) {
@@ -799,8 +799,8 @@ class KitOrigami
     public static function GetComponentPrices($_65703936 = [])
     {
         if (\KitOrigami::isUseRegions()) {
-            if ($_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"]) {
-                $_65703936 = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
+            if ($_SESSION["KIT_REGIONS"]["PRICE_CODE"]) {
+                $_65703936 = $_SESSION["KIT_REGIONS"]["PRICE_CODE"];
             }
         }
         return $_65703936;

@@ -3,7 +3,7 @@
 /** @var array $arParams */
 /** @var array $arResult */
 use Bitrix\Main;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Main\Loader::includeModule('kit.origami');
 
@@ -91,7 +91,7 @@ if ('' == $arParams['TEMPLATE_THEME'])
                     ]
                 ];
 
-                $Offer = new \Sotbit\Origami\Helper\Offer(SITE_ID);
+                $Offer = new \Kit\Origami\Helper\Offer(SITE_ID);
                 $newName = $Offer->changeText($tmpResult, $props);
                 $arItem["NAME"] = $newName;
                 $arItem["~NAME"] = $newName;

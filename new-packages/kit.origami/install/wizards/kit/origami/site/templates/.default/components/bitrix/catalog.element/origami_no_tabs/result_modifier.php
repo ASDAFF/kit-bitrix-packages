@@ -1,9 +1,9 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 use \Bitrix\Main\Data\Cache;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 
 Loc::loadMessages(__FILE__);
@@ -79,31 +79,31 @@ $typeCharacteristics = Config::get('PROP_FILTER_MODE_'.$template);
 
 if($typeCharacteristics != '')
 {
-    $Filter = new \Sotbit\Origami\Helper\Filter();
+    $Filter = new \Kit\Origami\Helper\Filter();
     $arResult['DISPLAY_PROPERTIES'] = $Filter->getCharacteristics($arResult["SECTION"]["IBLOCK_ID"], $arResult["SECTION"]["ID"], $arResult["SECTION"]["SECTION_PAGE_URL"], $arResult['DISPLAY_PROPERTIES'], $typeCharacteristics, $arParams);
 }
 
-$arResult["ALL_PRICES_NAMES"] = \SotbitOrigami::getAllNamePrices($arResult);
+$arResult["ALL_PRICES_NAMES"] = \KitOrigami::getAllNamePrices($arResult);
 
-\SotbitOrigami::checkPriceDiscount($arResult);
+\KitOrigami::checkPriceDiscount($arResult);
 
-$arResult = \SotbitOrigami::changeColorImages($arResult);
+$arResult = \KitOrigami::changeColorImages($arResult);
 
-$Element = new \Sotbit\Origami\Image\Element($template);
+$Element = new \Kit\Origami\Image\Element($template);
 $arResult = $Element->prepareImages($arResult);
 
-$color = \Sotbit\Origami\Helper\Color::getInstance(SITE_ID);
+$color = \Kit\Origami\Helper\Color::getInstance(SITE_ID);
 $arResult = $color::changePropColorView($arResult, $arParams)['RESULT'];
 
 
-$arResult["ITEM_PRICE_DELTA"] = \SotbitOrigami::getPriceDelta($arResult, $template);
+$arResult["ITEM_PRICE_DELTA"] = \KitOrigami::getPriceDelta($arResult, $template);
 
 
 
 $arResult['BRAND'] = [];
 if($arParams['BRAND_USE'] && $arParams['BRAND_PROP_CODE'])
 {
-    $Brand = new \Sotbit\Origami\Brand($template);
+    $Brand = new \Kit\Origami\Brand($template);
     $Brand->setBrandProps($arParams['BRAND_PROP_CODE']);
     $Brand->setResize(['width' => 205,'height' => 50,'type' => BX_RESIZE_IMAGE_PROPORTIONAL]);
     $arResult['BRAND'] = $Brand->findBrandsForElement($arResult['PROPERTIES']);
@@ -127,7 +127,7 @@ $arResult['VIDEO'] = [];
 $videoProp = Option::get('PROP_VIDEO_'.$template);
 if($arResult['PROPERTIES'][$videoProp]['VALUE']){
     foreach($arResult['PROPERTIES'][$videoProp]['VALUE'] as $url){
-        $Video = new \Sotbit\Origami\Video($url);
+        $Video = new \Kit\Origami\Video($url);
         $arResult['VIDEO'][] = $Video->getContent();
     }
 }
@@ -169,7 +169,7 @@ if($arResult['OFFERS'] && $arResult['SKU_PROPS']) {
     }
 }
 
-$colorCode = \Sotbit\Origami\Helper\Config::get('COLOR');
+$colorCode = \Kit\Origami\Helper\Config::get('COLOR');
 if($arResult['SKU_PROPS'][$colorCode]) {
     $tmp = [$colorCode => $arResult['SKU_PROPS'][$colorCode]];
     foreach($arResult['SKU_PROPS'] as $code => $prop){
@@ -232,7 +232,7 @@ if($tabs){
                     foreach($arResult['PROPERTIES'][$propDoc]['VALUE'] as $doc){
                         if(file_exists($_SERVER['DOCUMENT_ROOT'].$doc)){
                             $arResult['DOCS'][] = [
-                                'SIZE' => \SotbitOrigami::FormatFileSize(filesize($_SERVER['DOCUMENT_ROOT'].$doc)),
+                                'SIZE' => \KitOrigami::FormatFileSize(filesize($_SERVER['DOCUMENT_ROOT'].$doc)),
                                 'PATH' => $doc,
                                 'NAME' => end(explode('/',$doc)),
                                 'LINK' => $link.$doc
@@ -250,7 +250,7 @@ if($tabs){
                 if($propVideo && $arResult['PROPERTIES'][$propVideo]['VALUE']){
                     foreach ($arResult['PROPERTIES'][$propVideo]['VALUE'] as $url)
                     {
-                        $Video = new \Sotbit\Origami\Video($url);
+                        $Video = new \Kit\Origami\Video($url);
                         $arResult['VIDEO_CONTENT'][] = $Video->getContent();
                     }
                 }
@@ -269,11 +269,11 @@ if($tabs){
 
 if (Bitrix\Main\Loader::includeModule( "kit.price" ))
 {
-    //$arResult = SotbitPrice::ChangeMinPrice( $arResult );
+    //$arResult = KitPrice::ChangeMinPrice( $arResult );
 }
 if (Bitrix\Main\Loader::includeModule( "kit.regions" ))
 {
-    //$arResult = \Sotbit\Regions\Sale\Price::change( $arResult );
+    //$arResult = \Kit\Regions\Sale\Price::change( $arResult );
 }
 
 $arResult["SHOW_BUY"] = 0;
@@ -293,9 +293,9 @@ if(isset($arParams['ACTION_PRODUCTS']))
 }
 
 $arResult['FIRST_OFFERS_SELECTED'] = $arResult['OFFERS_SELECTED'];
-\SotbitOrigami::checkOfferPage($arResult, $arParams);
-$arResult['OFFERS_SELECTED'] = \SotbitOrigami::getOffersSelected($arResult, $arParams);
-$arResult['IPROPERTY_VALUES'] = \SotbitOrigami::getSeoOffer($arResult);
+\KitOrigami::checkOfferPage($arResult, $arParams);
+$arResult['OFFERS_SELECTED'] = \KitOrigami::getOffersSelected($arResult, $arParams);
+$arResult['IPROPERTY_VALUES'] = \KitOrigami::getSeoOffer($arResult);
 
 $template = $this->__name;
 if ($this->__name == '.default')

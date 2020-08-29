@@ -6,7 +6,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loader::IncludeModule('kit.origami');
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if(!CModule::IncludeModule("iblock") || !CModule::IncludeModule("catalog"))
     return;

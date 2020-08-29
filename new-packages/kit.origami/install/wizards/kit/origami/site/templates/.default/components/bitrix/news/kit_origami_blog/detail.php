@@ -1,6 +1,6 @@
 <?php
 
-use Sotbit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
+use Kit\Origami\Helper\Config, \Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
@@ -143,7 +143,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "������",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
+		"PRICE_CODE" => \KitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRODUCT_ID" => $ElementID,
 		"PRODUCT_ID_VARIABLE" => "id",
@@ -1004,7 +1004,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 //        "DISPLAY_COMPARE"           => "Y",
 //        "PAGE_ELEMENT_COUNT"        => 12,
 //        "LINE_ELEMENT_COUNT"        => 4,
-//        "PRICE_CODE"                => \SotbitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
+//        "PRICE_CODE"                => \KitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
 //        "USE_PRICE_COUNT"           => "N",
 //        "SHOW_PRICE_COUNT"          => "1",
 //

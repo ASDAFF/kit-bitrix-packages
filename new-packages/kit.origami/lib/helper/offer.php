@@ -1,9 +1,9 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 use Bitrix\Iblock\PropertyTable;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Config\Option;
 
 class Offer
 {

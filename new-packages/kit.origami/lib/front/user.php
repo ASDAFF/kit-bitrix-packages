@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Front;
+namespace Kit\Origami\Front;
 
 class User
 {
@@ -19,7 +19,7 @@ class User
             $this->setId();
         }
         else{
-            unset($_SESSION['SOTBIT_ORIGAMI']);
+            unset($_SESSION['KIT_ORIGAMI']);
         }
     }
 
@@ -36,17 +36,17 @@ class User
      */
     public function setId()
     {
-        if (!isset($_SESSION['SOTBIT_ORIGAMI']))
+        if (!isset($_SESSION['KIT_ORIGAMI']))
         {
             global $USER;
-            $_SESSION['SOTBIT_ORIGAMI'] = rand();
+            $_SESSION['KIT_ORIGAMI'] = rand();
             $userId = $USER->GetID();
             if ($userId > 0)
             {
-                $_SESSION['SOTBIT_ORIGAMI'] = $_SESSION['SOTBIT_ORIGAMI'].'_'.$userId;
+                $_SESSION['KIT_ORIGAMI'] = $_SESSION['KIT_ORIGAMI'].'_'.$userId;
             }
         }
-        $this->id = $_SESSION['SOTBIT_ORIGAMI'];
+        $this->id = $_SESSION['KIT_ORIGAMI'];
         $this->makeDirs();
     }
 
@@ -96,7 +96,7 @@ class User
         global $USER;
         if ($USER->isAdmin()){
             $this->canSave = true;
-        } elseif (\Sotbit\Origami\Config\Option::get('DEMO', $this->getSite()))
+        } elseif (\Kit\Origami\Config\Option::get('DEMO', $this->getSite()))
         {
             $this->canSave = false;
         } else {
@@ -129,7 +129,7 @@ class User
         if ($USER->isAdmin())
         {
             $this->canChange = true;
-        } elseif (\Sotbit\Origami\Config\Option::get('DEMO', $this->getSite()))
+        } elseif (\Kit\Origami\Config\Option::get('DEMO', $this->getSite()))
         {
             $this->canChange = true;
         } else {

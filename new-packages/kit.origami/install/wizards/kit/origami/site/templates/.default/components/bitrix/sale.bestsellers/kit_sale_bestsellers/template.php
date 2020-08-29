@@ -6,7 +6,7 @@
 /** @global CDatabase $DB */
 
 use \Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $this->setFrameMode(true);
 

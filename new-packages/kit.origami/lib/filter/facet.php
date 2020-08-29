@@ -5,7 +5,7 @@
  * @subpackage iblock
  */
 //namespace Bitrix\Iblock\PropertyIndex;
-namespace Sotbit\Origami\Filter;
+namespace Kit\Origami\Filter;
 
 use Bitrix\Catalog;
 use Bitrix\Iblock\PropertyIndex\Dictionary;

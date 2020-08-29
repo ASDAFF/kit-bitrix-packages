@@ -1,5 +1,5 @@
 <?
-use \Sotbit\Origami\Actions;
+use \Kit\Origami\Actions;
 class PromotionsVertical extends Actions
 {
 	public function afterSaveContent()

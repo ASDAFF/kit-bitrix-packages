@@ -44,7 +44,7 @@ $rs = \Bitrix\Sale\Internals\PersonTypeTable::getList(
 	]
 );
 while ($personalType = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('PERSON_TYPE',$personalType['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('PERSON_TYPE',$personalType['ID'],WIZARD_SITE_ID);
 }
 
 $rs = \Bitrix\Sale\Delivery\Services\Table::getList(
@@ -61,7 +61,7 @@ $rs = \Bitrix\Sale\Delivery\Services\Table::getList(
 	]
 );
 while ($delivery = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('DELIVERY',$delivery['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('DELIVERY',$delivery['ID'],WIZARD_SITE_ID);
 }
 
 
@@ -74,7 +74,7 @@ $rs = \Bitrix\Sale\Internals\PaySystemActionTable::getList([
 	'limit' => 1
 ]);
 while ($payment = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('PAYMENT',$payment['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('PAYMENT',$payment['ID'],WIZARD_SITE_ID);
 }
 
 $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
@@ -89,7 +89,7 @@ $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
 	]
 );
 while ($prop = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('PROP_NAME',$prop['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('PROP_NAME',$prop['ID'],WIZARD_SITE_ID);
 }
 
 $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
@@ -104,7 +104,7 @@ $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
 	]
 );
 while ($prop = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('PROP_PHONE',$prop['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('PROP_PHONE',$prop['ID'],WIZARD_SITE_ID);
 }
 
 $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
@@ -119,7 +119,7 @@ $rs = \Bitrix\Sale\Internals\OrderPropsTable::getList(
 	]
 );
 while ($prop = $rs->fetch()) {
-	\Sotbit\Origami\Config\Option::set('PROP_EMAIL',$prop['ID'],WIZARD_SITE_ID);
+	\Kit\Origami\Config\Option::set('PROP_EMAIL',$prop['ID'],WIZARD_SITE_ID);
 }
 
 
@@ -135,7 +135,7 @@ $iblockId = $_SESSION["WIZARD_CATALOG_IBLOCK_ID"];
 
 if(!$iblockId)
 {
-    $iblockId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
+    $iblockId = \Kit\Origami\Config\Option::get('IBLOCK_ID',WIZARD_SITE_ID);
 }
 if($iblockId > 0)
 {
@@ -348,8 +348,8 @@ if(!isset($arSiteOrigami['SITE_ID'])) {
 }
 
 if(CModule::includeModule('kit.origami')) {
-    \Sotbit\Origami\Config\Option::set('ACTION_PRODUCTS', serialize(['BUY', 'DELAY', 'COMPARE']), $arSiteOrigami['SITE_ID']);
-    \Sotbit\Origami\Config\Option::set('VARIANT_LIST_VIEW', 'template_3', $arSiteOrigami['SITE_ID']);
+    \Kit\Origami\Config\Option::set('ACTION_PRODUCTS', serialize(['BUY', 'DELAY', 'COMPARE']), $arSiteOrigami['SITE_ID']);
+    \Kit\Origami\Config\Option::set('VARIANT_LIST_VIEW', 'template_3', $arSiteOrigami['SITE_ID']);
 }
 
 $arIblockAdv = CIBlock::GetList(array(), array(
@@ -360,12 +360,12 @@ $arIblockAdv = CIBlock::GetList(array(), array(
 //add advantages default settings
 if(is_array($arIblockAdv)) {
     try {
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_ID_ADVANTAGES',
             'VALUE' => $arIblockAdv['ID'],
             'SITE_ID' => $arIblockAdv['LID']
         ));
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_ADVANTAGES',
             'VALUE' => 'kit_origami_content',
             'SITE_ID' => $arIblockAdv['LID']
@@ -383,12 +383,12 @@ $arIblockBanner = CIBlock::GetList(array(), array(
 
 if(is_array($arIblockBanner)) {
     try {
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_ID_BANNERS',
             'VALUE' => $arIblockBanner['ID'],
             'SITE_ID' => $arIblockBanner['LID']
         ));
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_BANNERS',
             'VALUE' => 'kit_origami_advertising',
             'SITE_ID' => $arIblockBanner['LID']
@@ -405,12 +405,12 @@ $arIblockPromotion = CIBlock::GetList(array(), array(
 
 if(is_array($arIblockPromotion)) {
     try {
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_ID_PROMOTION',
             'VALUE' => $arIblockPromotion['ID'],
             'SITE_ID' => $arIblockPromotion['LID']
         ));
-        \Sotbit\Origami\Internals\OptionsTable::add(array(
+        \Kit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_PROMOTION',
             'VALUE' => 'kit_origami_content',
             'SITE_ID' => $arIblockPromotion['LID']

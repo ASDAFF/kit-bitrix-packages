@@ -83,7 +83,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PRICE_CODE" => \KitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
-		"REGION" => $_SESSION["SOTBIT_REGIONS"]["ID"],
+		"REGION" => $_SESSION["KIT_REGIONS"]["ID"],
 		"SEF_FOLDER" => "/brands/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",

@@ -13,74 +13,74 @@ $module = 'kit.origami';
 
 CModule::includeModule($module);
 
-$blockCollection = new \Sotbit\Origami\BlockCollection('main_' . WIZARD_SITE_ID);
+$blockCollection = new \Kit\Origami\BlockCollection('main_' . WIZARD_SITE_ID);
 $blockCollection->setPage(WIZARD_SITE_PATH);
 $blockCollection->setSite(WIZARD_SITE_ID);
 
-$block = new \Sotbit\Origami\Block([
+$block = new \Kit\Origami\Block([
     'CODE' => 'advantages',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block->setActive('Y');
 $block = $blockCollection->add($block, 0);
 
-$block1 = new \Sotbit\Origami\Block([
+$block1 = new \Kit\Origami\Block([
     'CODE' => 'popular_categories_simple',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block1->setActive('Y');
 $block1 = $blockCollection->add($block1, 1);
 
-$block2 = new \Sotbit\Origami\Block([
+$block2 = new \Kit\Origami\Block([
     'CODE' => 'products',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block2->setActive('Y');
 $block2 = $blockCollection->add($block2, 2);
 
-$block3 = new \Sotbit\Origami\Block([
+$block3 = new \Kit\Origami\Block([
     'CODE' => 'promotions_vertical',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block3->setActive('Y');
 $block3 = $blockCollection->add($block3, 3);
 
-$block4 = new \Sotbit\Origami\Block([
+$block4 = new \Kit\Origami\Block([
     'CODE' => 'news_images_and_list',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block4->setActive('Y');
 $block4 = $blockCollection->add($block4, 4);
 
-$block5 = new \Sotbit\Origami\Block([
+$block5 = new \Kit\Origami\Block([
     'CODE' => 'blog',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block5->setActive('Y');
 $block5 = $blockCollection->add($block5, 5);
 
-$block6 = new \Sotbit\Origami\Block([
+$block6 = new \Kit\Origami\Block([
     'CODE' => 'banner_mini',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block6->setActive('Y');
 $block6 = $blockCollection->add($block6, 6);
 
-$block7 = new \Sotbit\Origami\Block([
+$block7 = new \Kit\Origami\Block([
     'CODE' => 'about',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block7->setActive('Y');
 $block7 = $blockCollection->add($block7, 7);
 
-$block8 = new \Sotbit\Origami\Block([
+$block8 = new \Kit\Origami\Block([
     'CODE' => 'brands_slider_square',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
 $block8->setActive('Y');
 $block8 = $blockCollection->add($block8, 8);
 
-$block9 = new \Sotbit\Origami\Block([
+$block9 = new \Kit\Origami\Block([
     'CODE' => 'liked_offer_form',
     'PART' => 'main_' . WIZARD_SITE_ID
 ],WIZARD_SITE_DIR);
@@ -114,5 +114,5 @@ $content = str_replace("#ORIGAMI_BACKGROUND_ABOUT#", $fileID, $content);
 
 file_put_contents($pathBlock, $content);
 
-unset($_SESSION['SOTBIT_ORIGAMI']);
+unset($_SESSION['KIT_ORIGAMI']);
 ?>

@@ -4,7 +4,7 @@ use Bitrix\Main\Localization\Loc;
 
 
 if ($arResult) {
-    $oMenu = new \Sotbit\Origami\Helper\Menu();
+    $oMenu = new \Kit\Origami\Helper\Menu();
     $menu = [];
     $arSectURL = $arSectPict = array();
     $imgW = $imgH = 60;
@@ -12,7 +12,7 @@ if ($arResult) {
     if(isset($arParams["IBLOCK_ID"]))
         $iblockID = $arParams["IBLOCK_ID"];
     else
-        $iblockID = \Sotbit\Origami\Config\Option::get('IBLOCK_ID');
+        $iblockID = \Kit\Origami\Config\Option::get('IBLOCK_ID');
 
     foreach ($arResult as $key => $arItem) {
 

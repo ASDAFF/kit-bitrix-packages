@@ -1,5 +1,5 @@
 <?
-use \Sotbit\Origami\Actions;
+use \Kit\Origami\Actions;
 class AdvantagesDescription extends Actions
 {
 	public function afterSaveContent()

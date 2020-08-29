@@ -1,3 +1,3 @@
 <?
-$MESS[SotbitOrigami::moduleId.'_ADD'] = 'Добавить';
+$MESS[KitOrigami::moduleId.'_ADD'] = 'Добавить';
 ?>

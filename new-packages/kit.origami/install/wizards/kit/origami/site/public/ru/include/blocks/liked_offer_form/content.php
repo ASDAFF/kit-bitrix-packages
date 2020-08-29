@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 global $APPLICATION, $settings;
 
 CModule::IncludeModule('form');

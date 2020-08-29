@@ -1,9 +1,9 @@
 <?
-namespace Sotbit\Origami\Sale\Basket;
+namespace Kit\Origami\Sale\Basket;
 
 /**
  * Class Compare
- * @package Sotbit\Origami\Sale\Basket
+ * @package Kit\Origami\Sale\Basket
  * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Compare extends Base

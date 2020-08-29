@@ -13,10 +13,10 @@ $MESS ['FORM_RESET'] = "Отмена";
 $MESS ['FORM_CONFIDENTIAL_1'] = "Я даю согласие на обработку персональных данных и соглашаюсь с";
 $MESS ['FORM_CONFIDENTIAL_2'] = "политикой конфиденциальности";
 
-$MESS ['SOTBIT_FORM_TEL'] = "Ваш номер";
-$MESS ['SOTBIT_FORM_TITLE_1'] = "Ваши данные";
-$MESS ['SOTBIT_FORM_TITLE_2'] = "Ваш вопрос";
-$MESS ['SOTBIT_NOT_REQUIRED'] = "необязательно";
+$MESS ['KIT_FORM_TEL'] = "Ваш номер";
+$MESS ['KIT_FORM_TITLE_1'] = "Ваши данные";
+$MESS ['KIT_FORM_TITLE_2'] = "Ваш вопрос";
+$MESS ['KIT_NOT_REQUIRED'] = "необязательно";
 $MESS ['OK_MESSAGE'] = "Ваши данные отправлены";
 $MESS["CAPTCHA_TITLE"] = "Введите код *";
 

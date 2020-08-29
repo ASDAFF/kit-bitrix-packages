@@ -11,7 +11,7 @@ if($arResult["SECTIONS"] && !empty($arResult["SECTIONS"]))
         {
             $arSection["PICTURE"]["ALT"] = "";
             $arSection["PICTURE"]["TITLE"] = "";
-            $image = new Sotbit\Origami\Image\Item();
+            $image = new Kit\Origami\Image\Item();
             $arSection["PICTURE"]["SRC"] = $image->getNoImageMedium();
         }
     }
@@ -36,7 +36,7 @@ if($arResult["SECTIONS"]) {
         $rsParentSection = CIBlockSection::GetByID($SECTION['ID']);
         if ($arParentSection = $rsParentSection->GetNext())
         {
-            $arFilter = array('IBLOCK_ID' => $arParentSection['IBLOCK_ID'],'>LEFT_MARGIN' => $arParentSection['LEFT_MARGIN'],'<RIGHT_MARGIN' => $arParentSection['RIGHT_MARGIN'],'>DEPTH_LEVEL' => $arParentSection['DEPTH_LEVEL']); // выберет потомков без учета активности
+            $arFilter = array('IBLOCK_ID' => $arParentSection['IBLOCK_ID'],'>LEFT_MARGIN' => $arParentSection['LEFT_MARGIN'],'<RIGHT_MARGIN' => $arParentSection['RIGHT_MARGIN'],'>DEPTH_LEVEL' => $arParentSection['DEPTH_LEVEL']); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             $rsSect = CIBlockSection::GetList(array('left_margin' => 'asc'),$arFilter);
             while ($arSect = $rsSect->GetNext())
             {

@@ -1,3 +1,3 @@
 <?
-$MESS["SOTBIT_INSTAGRAM_GOTO"] = "Перейти в профиль";
+$MESS["KIT_INSTAGRAM_GOTO"] = "Перейти в профиль";
 ?>

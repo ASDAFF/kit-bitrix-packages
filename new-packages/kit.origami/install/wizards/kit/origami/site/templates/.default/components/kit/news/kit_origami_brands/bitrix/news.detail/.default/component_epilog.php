@@ -25,12 +25,12 @@ if($arParams['BRAND_PROP_CODE']) {
         global $addFilter;
         global $brands;
         $addFilter = $brands;
-        include \Sotbit\Origami\Helper\Config::getChunkPath('sections');
+        include \Kit\Origami\Helper\Config::getChunkPath('sections');
         ?>
     </div>
     <?
 }
 ?>
 <h2><?=\Bitrix\Main\Localization\Loc::getMessage
-    (\SotbitOrigami::moduleId.'_BRAND_TITLE',['#BRAND#' => $arResult['NAME']])?>
+    (\KitOrigami::moduleId.'_BRAND_TITLE',['#BRAND#' => $arResult['NAME']])?>
 </h2>

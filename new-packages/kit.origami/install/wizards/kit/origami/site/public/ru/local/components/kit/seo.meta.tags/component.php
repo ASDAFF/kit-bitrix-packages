@@ -31,8 +31,8 @@ elseif($cache->startDataCache())
 {
 	$strict_relinking = false;
 	$Conditions = array();
-	$sections = \Sotbit\Seometa\Tags::findNeedSections($arParams['SECTION_ID'], $arParams['INCLUDE_SUBSECTIONS']); // list of all sections
-	$SectionConditions = \Sotbit\Seometa\ConditionTable::GetConditionsBySections($sections); // list of all conditions by sections
+	$sections = \Kit\Seometa\Tags::findNeedSections($arParams['SECTION_ID'], $arParams['INCLUDE_SUBSECTIONS']); // list of all sections
+	$SectionConditions = \Kit\Seometa\ConditionTable::GetConditionsBySections($sections); // list of all conditions by sections
 
 	// if condition is active
 	if($SeoMetaWorkingConditions)
@@ -62,7 +62,7 @@ elseif($cache->startDataCache())
 		}
 	}
 
-	$WorkingConditions = \Sotbit\Seometa\ConditionTable::GetConditionsFromWorkingConditions($SeoMetaWorkingConditions); // conditions selected in relinking
+	$WorkingConditions = \Kit\Seometa\ConditionTable::GetConditionsFromWorkingConditions($SeoMetaWorkingConditions); // conditions selected in relinking
 
 	if(is_array($SectionConditions) && is_array($WorkingConditions))
 	{
@@ -86,7 +86,7 @@ elseif($cache->startDataCache())
 		$Conditions = $WorkingConditions;
 	}
 
-	$TagsObject = new \Sotbit\Seometa\Tags();
+	$TagsObject = new \Kit\Seometa\Tags();
 	$Tags = $TagsObject->GenerateTags($Conditions, $SeoMetaWorkingConditions);
 
 	if($strict_relinking)

@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 use Bitrix\Main\Loader;
 Loader::IncludeModule('kit.origami');
 CModule::IncludeModule("iblock");
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $arIMAGE = CFile::MakeFileArray(WIZARD_SERVICE_RELATIVE_PATH . "/users_files/b288d31525e72e384edd9c8838327fb7.jpg");
 $arIMAGE["MODULE_ID"] = "main";
@@ -30,7 +30,7 @@ $ID = $user->Add($arFields);
 
 $obUserField = new CUserTypeEntity();
 $arFields = Array(
-    'ENTITY_ID' => 'SOTBIT_REGIONS',
+    'ENTITY_ID' => 'KIT_REGIONS',
     'FIELD_NAME' => 'UF_REGION_MNGR',
     'USER_TYPE_ID' => 'string',
     "EDIT_FORM_LABEL" => GetMessage("REGIONAL_MANAGER"),

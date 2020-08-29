@@ -6,11 +6,11 @@
  * @var SaleOrderAjax $component
  */
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (Config::get("IMAGE_FOR_OFFER") == 'PRODUCT' && $arResult["BASKET_ITEMS"] && $arResult['GRID']['ROWS'])
 {
-    $Basket = new \Sotbit\Origami\Image\Basket();
+    $Basket = new \Kit\Origami\Image\Basket();
     $Basket->setMediumHeight(190);
     $Basket->setMediumWidth(190);
     $arProductID = [];

@@ -1,6 +1,6 @@
 <?
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
@@ -32,25 +32,25 @@ if($showSkuBlock && (!isset($arResult['TEMPLATE']) || $arResult['TEMPLATE'] == "
         }
     }
 
-    $arResult['ITEM'] = \SotbitOrigami::changeColorImages($arResult['ITEM'], 'preview');
+    $arResult['ITEM'] = \KitOrigami::changeColorImages($arResult['ITEM'], 'preview');
 
-    $Item = new \Sotbit\Origami\Image\Item();
+    $Item = new \Kit\Origami\Image\Item();
     $arResult['ITEM'] = $Item->prepareImages($arResult['ITEM']);
 
-    $color = \Sotbit\Origami\Helper\Color::getInstance(SITE_ID);
+    $color = \Kit\Origami\Helper\Color::getInstance(SITE_ID);
     $arParams = $color::changePropColorView($arResult, $arParams)['PARAMS'];
 }else{
-    $arResult['ITEM'] = \SotbitOrigami::changeColorImages($arResult['ITEM'], 'preview', false);
-    $Item = new \Sotbit\Origami\Image\Item();
+    $arResult['ITEM'] = \KitOrigami::changeColorImages($arResult['ITEM'], 'preview', false);
+    $Item = new \Kit\Origami\Image\Item();
     $arResult['ITEM'] = $Item->prepareImages($arResult['ITEM']);
 }
 
-\SotbitOrigami::checkPriceDiscount($arResult['ITEM']);
+\KitOrigami::checkPriceDiscount($arResult['ITEM']);
 
 if (Bitrix\Main\Loader::includeModule("kit.price")) {
-    //$arResult['ITEM'] = SotbitPrice::ChangeMinPrice($arResult['ITEM']);
+    //$arResult['ITEM'] = KitPrice::ChangeMinPrice($arResult['ITEM']);
 }
 if (Bitrix\Main\Loader::includeModule("kit.regions")) {
-    //$arResult['ITEM'] = \Sotbit\Regions\Sale\Price::change($arResult['ITEM']);
+    //$arResult['ITEM'] = \Kit\Regions\Sale\Price::change($arResult['ITEM']);
 }
 ?>

@@ -3,13 +3,13 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 $this->setFrameMode(true);
 //CJSCore::Init(['phone_number']);
 
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 $prefix = '_' . \Bitrix\Main\Security\Random::getString(3);
 $bxajaxid = CAjax::GetComponentID($component->__name, $component->__template->__name, $arParams['AJAX_OPTION_ADDITIONAL']);
 if ($_REQUEST['formresult'] == 'addok')
@@ -47,7 +47,7 @@ if ($typeMask == 'Y')
                     ?>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-12">
 
-                        <? if ($arQuestion['CAPTION'] == GetMessage("SOTBIT_FORM_TEL")): ?>
+                        <? if ($arQuestion['CAPTION'] == GetMessage("KIT_FORM_TEL")): ?>
                         <div class="phone_input_feedback">
                             <? if ($typeMask == 'Y'): ?>
                                 <span class="phone_input__flag">
@@ -58,10 +58,10 @@ if ($typeMask == 'Y')
 
                             <label class="main-input-md__wrapper <?= ($typeMask == 'N') ? 'fullsize' : '' ?> ">
                                 <input
-                                    type="<?= $arQuestion["CAPTION"] == GetMessage("SOTBIT_FORM_TEL") ? "text" : $fieldType ?>"
+                                    type="<?= $arQuestion["CAPTION"] == GetMessage("KIT_FORM_TEL") ? "text" : $fieldType ?>"
                                     name="form_<?= $fieldType ?>_<?= $arQuestion['STRUCTURE'][0]['ID'] ?>"
 
-                                    <? if ($arQuestion['CAPTION'] == GetMessage("SOTBIT_FORM_TEL")): ?>
+                                    <? if ($arQuestion['CAPTION'] == GetMessage("KIT_FORM_TEL")): ?>
                                         class="main-input-md js-phone filled"
                                         placeholder="<?= $telMask ?>"
                                         id='number<?= $arResult['arForm']['SID'] ?>'
@@ -79,7 +79,7 @@ if ($typeMask == 'Y')
                                        for="<?= $fieldType ?>__<?= $arQuestion['STRUCTURE'][0]['ID'] . $prefix ?>"><?= $arQuestion["CAPTION"] ?>  <?= ($arQuestion['REQUIRED'] == 'Y') ? '*' : '' ?></label>
                             </label>
 
-                            <? if ($arQuestion['CAPTION'] == GetMessage("SOTBIT_FORM_TEL")): ?>
+                            <? if ($arQuestion['CAPTION'] == GetMessage("KIT_FORM_TEL")): ?>
                         </div>
                     <? endif; ?>
 
@@ -91,7 +91,7 @@ if ($typeMask == 'Y')
             <div class="col-xl-3 col-lg-3 col-md-3 col-12">
                 <input type="button" class="main_btn-big" name="web_form_submit"
                        value="<?= GetMessage("FORM_SUBMIT") ?>"
-                       onclick="sendForm('<?= $bxajaxid ?>','<?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
+                       onclick="sendForm('<?= $bxajaxid ?>','<?= \Kit\Origami\Helper\Config::get('COLOR_BASE') ?>')"
                     <? if ($_REQUEST['formresult'] == 'addok'): ?>
                         disabled="disabled"
                     <? endif; ?>
@@ -106,10 +106,10 @@ if ($typeMask == 'Y')
                     <span></span>
                     <span>
                         <span class="confidential">
-                            <?= GetMessage('SOTBIT_FORM_I_AGREE') ?>
+                            <?= GetMessage('KIT_FORM_I_AGREE') ?>
                         </span>
-                        <a href="<?= \Sotbit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>" target="_blank">
-                            <?= GetMessage('SOTBIT_FORM_I_AGREE2') ?>
+                        <a href="<?= \Kit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE') ?>" target="_blank">
+                            <?= GetMessage('KIT_FORM_I_AGREE2') ?>
                         </a>
                     </span>
                 </label>

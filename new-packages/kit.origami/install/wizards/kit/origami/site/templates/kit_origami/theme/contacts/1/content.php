@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
 Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/1/style.css");

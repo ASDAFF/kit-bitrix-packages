@@ -16,7 +16,7 @@ else
 }
 
 $orderAjaxInclude = false;
-if ($_SERVER['REQUEST_URI'] == \Sotbit\Origami\Helper\Config::get('ORDER_PAGE'))
+if ($_SERVER['REQUEST_URI'] == \Kit\Origami\Helper\Config::get('ORDER_PAGE'))
     $orderAjaxInclude = true;
 
 ?>
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_URI'] == \Sotbit\Origami\Helper\Config::get('ORDER_PAGE'))
             </svg>
             <span class="side-panel-main__nav-count"><?=($arResult['NUM_PRODUCTS_DELAY']) ? $arResult['NUM_PRODUCTS_DELAY'] : 0;?></span>
         </a>
-        <a href="<?=\Sotbit\Origami\Helper\Config::get('COMPARE_PAGE')?>" <?if($arResult['NUM_PRODUCTS_COMPARE'] == 0): ?> onclick="return false;" <?endif;?> class="side-panel-main__nav-item side-panel-main__nav-item--compare">
+        <a href="<?=\Kit\Origami\Helper\Config::get('COMPARE_PAGE')?>" <?if($arResult['NUM_PRODUCTS_COMPARE'] == 0): ?> onclick="return false;" <?endif;?> class="side-panel-main__nav-item side-panel-main__nav-item--compare">
             <svg width="21" height="21">
                 <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
             </svg>

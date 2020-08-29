@@ -6,7 +6,7 @@
  * Time: 9:59 AM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 use Bitrix\Main\Loader;
 use Bitrix\Highloadblock\HighloadBlockTable;
@@ -50,7 +50,7 @@ class HL extends Select
 		{
 			echo '<br><a href="/bitrix/admin/highloadblock_rows_list.php?ENTITY_ID='.$this->getCurrentValue().'&lang='
 				.LANGUAGE_ID.'" target="_blank">';
-			echo Loc::getMessage(\SotbitOrigami::moduleId.'_CURRENT_HL');
+			echo Loc::getMessage(\KitOrigami::moduleId.'_CURRENT_HL');
 			echo '</a>';
 		}
 	}

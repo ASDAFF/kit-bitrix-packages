@@ -1,5 +1,5 @@
 <?
-namespace Sotbit\Origami\Video;
+namespace Kit\Origami\Video;
 
 class Youtube{
     public function prepareUrl($url = ''){

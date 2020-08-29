@@ -13,11 +13,11 @@
 $this->createFrame()->begin();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 Loc::loadMessages(__FILE__);
 \Bitrix\Main\Loader::includeModule('kit.origami');
-$date = new \Sotbit\Origami\Helper\Date();
+$date = new \Kit\Origami\Helper\Date();
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 ?>
@@ -27,9 +27,9 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
     <p class="puzzle_block__title fonts__middle_title">
         <?= $arParams["BLOCK_NAME"] ?>
         <a href="<?= ($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"] ?>"
-           title="<?= Loc::getMessage("SOTBIT_PROMOTIONS_VERTICAL_LINK_TEXT"); ?>"
+           title="<?= Loc::getMessage("KIT_PROMOTIONS_VERTICAL_LINK_TEXT"); ?>"
            class="puzzle_block__link fonts__small_text">
-            <?= Loc::getMessage("SOTBIT_PROMOTIONS_VERTICAL_LINK_TEXT"); ?>
+            <?= Loc::getMessage("KIT_PROMOTIONS_VERTICAL_LINK_TEXT"); ?>
             <i class="icon-nav_1"></i>
         </a>
     </p>

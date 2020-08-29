@@ -6,10 +6,10 @@
  * Time: 2:15 PM
  */
 
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 
-use Sotbit\Origami\Config\Widget;
+use Kit\Origami\Config\Widget;
 
 class Text extends Widget
 {

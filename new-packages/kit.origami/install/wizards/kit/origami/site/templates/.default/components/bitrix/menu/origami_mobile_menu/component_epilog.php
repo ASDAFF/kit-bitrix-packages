@@ -4,8 +4,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 global $APPLICATION;
 global $USER;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 Loc::loadMessages(__FILE__);
 $page = $APPLICATION->GetCurPage(false);
@@ -213,7 +213,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
 
             <?if(
             \Bitrix\Main\Loader::includeModule('kit.regions') &&
-            \SotbitOrigami::isUseRegions() &&
+            \KitOrigami::isUseRegions() &&
             is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
             ):?>
             <?
@@ -224,7 +224,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                         "CACHE_TIME"    => "36000000",
                         "CACHE_TYPE"    => "A",
                         "REGION_FIELDS" => ['UF_ADDRESS', 'UF_EMAIL', 'UF_PHONE'],
-                        "REGION_ID"     => $_SESSION['SOTBIT_REGIONS']['ID']
+                        "REGION_ID"     => $_SESSION['KIT_REGIONS']['ID']
                     ]
                 );
             ?>
@@ -253,11 +253,11 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
         </div>
         <div class="container_menu__contact_soc">
             <?
-            $vk = \Sotbit\Origami\Helper\Config::get('VK');
-            $tw = \Sotbit\Origami\Helper\Config::get('TW');
-            $ok = \Sotbit\Origami\Helper\Config::get('OK');
-            $inst = \Sotbit\Origami\Helper\Config::get('INST');
-            $telega = \Sotbit\Origami\Helper\Config::get('TELEGA');
+            $vk = \Kit\Origami\Helper\Config::get('VK');
+            $tw = \Kit\Origami\Helper\Config::get('TW');
+            $ok = \Kit\Origami\Helper\Config::get('OK');
+            $inst = \Kit\Origami\Helper\Config::get('INST');
+            $telega = \Kit\Origami\Helper\Config::get('TELEGA');
             if($vk)
             {
                 ?>

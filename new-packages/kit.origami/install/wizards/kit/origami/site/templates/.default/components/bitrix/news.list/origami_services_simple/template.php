@@ -20,7 +20,7 @@ Loc::loadMessages(__FILE__);
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["BLOCK_NAME"]?>
         <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text">
-            <?=Loc::getMessage("SOTBIT_SERVICES_SIMPLE_LINK_TEXT");?>
+            <?=Loc::getMessage("KIT_SERVICES_SIMPLE_LINK_TEXT");?>
             <i class="fas fa-angle-double-right"></i>
         </a>
     </p>
@@ -69,7 +69,7 @@ Loc::loadMessages(__FILE__);
                         <?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
                             <p class="service_block__content_comment fonts__small_text"><?=$arItem["PREVIEW_TEXT"];?></p>
                         <?endif;?>
-                        <a class="main_url main_btn sweep-to-right" href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=Loc::getMessage("SOTBIT_SERVICES_BUTTON_TEXT");?>
+                        <a class="main_url main_btn sweep-to-right" href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=Loc::getMessage("KIT_SERVICES_BUTTON_TEXT");?>
                             <i class="fas fa-angle-double-right"></i>
                         </a>
                     </div>

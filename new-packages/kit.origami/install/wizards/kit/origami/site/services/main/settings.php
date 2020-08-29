@@ -7,7 +7,7 @@ use Bitrix\Main\Loader;
 Loader::IncludeModule('kit.origami');
 Loader::IncludeModule('fileman');
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 $arIMAGE = CFile::MakeFileArray(WIZARD_SITE_DIR.'include/kit_origami/images/footer_bg.png');
 $arIMAGE["MODULE_ID"] = "main";
 $footerBg = CFile::SaveFile($arIMAGE, 'footer');
@@ -291,7 +291,7 @@ if(!is_dir($_SERVER['DOCUMENT_ROOT'] .$dir))
 {
     mkdir($_SERVER['DOCUMENT_ROOT'] .$dir);
 }
-SotbitOrigami::genTheme(['COLOR_BASE' => '#fb0040','FONT_BASE' => 'Open Sans','WIDTH' => '1344px'],$dir);
+KitOrigami::genTheme(['COLOR_BASE' => '#fb0040','FONT_BASE' => 'Open Sans','WIDTH' => '1344px'],$dir);
 
 COption::SetOptionString("sale", "SHOP_SITE_".WIZARD_SITE_ID, WIZARD_SITE_ID);
 //COption::SetOptionString("main", "auth_components_template", "flat");

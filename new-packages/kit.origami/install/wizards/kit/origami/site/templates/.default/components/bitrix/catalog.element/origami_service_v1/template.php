@@ -5,8 +5,8 @@
 global $analogProducts;
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Prop;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Prop;
 
 $this->setFrameMode(true);
 

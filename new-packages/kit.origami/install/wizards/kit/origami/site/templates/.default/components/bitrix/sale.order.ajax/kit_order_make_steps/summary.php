@@ -110,7 +110,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                 <div class="main_order_block__item_slide">
                     <div class="main_order_block__item_col fonts__middle_comment">
                         <span class="main_order_block__item_col_name main_order_block__property_one_color">
-                            <?=Loc::getMessage("SOTBIT_SOA_QUANTITY_TEXT")?>
+                            <?=Loc::getMessage("KIT_SOA_QUANTITY_TEXT")?>
                         </span>
                         <?=$arItem["QUANTITY"]?> <?=$arItem["MEASURE_NAME"]?>
                     </div>

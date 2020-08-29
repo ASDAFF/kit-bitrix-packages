@@ -2,7 +2,7 @@
 
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 use Bitrix\Main\Loader;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
@@ -14,7 +14,7 @@ Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bit
 
 CJSCore::Init(['phone_number']);
 
-$telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
+$telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);
 ?>
 <div class="kit_order_phone_wrapper checkstock-pop_up">
     <div class="kit_order_phone">

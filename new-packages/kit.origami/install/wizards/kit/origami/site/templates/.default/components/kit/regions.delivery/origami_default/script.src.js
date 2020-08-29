@@ -1,4 +1,4 @@
-class SotbitRegionsDelivery
+class KitRegionsDelivery
 {
     constructor(params) {
         this.tabID = document.getElementById('TAB_DELIVERY');

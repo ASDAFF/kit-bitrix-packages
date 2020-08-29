@@ -7,7 +7,7 @@ if (!CModule::IncludeModule("kit.origami"))
 if (!CModule::IncludeModule("iblock"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if(!defined("WIZARD_SITE_ID")) return;
 if(!defined("WIZARD_SITE_DIR")) return;
@@ -208,7 +208,7 @@ if($iblockID) {
     Option::Set('IBLOCK_ID_SHOP', $iblockID, WIZARD_SITE_ID);
 }
 
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["SHOPS"] = $iblockID;
+    $_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["SHOPS"] = $iblockID;
 /*
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/1/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/3/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));

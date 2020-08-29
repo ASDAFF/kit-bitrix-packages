@@ -1,10 +1,10 @@
 <?php
-namespace Sotbit\Origami\Config\Widgets;
+namespace Kit\Origami\Config\Widgets;
 
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config\Option;
-use Sotbit\Origami\Config\Widget;
+use Kit\Origami\Config\Option;
+use Kit\Origami\Config\Widget;
 
 class TabSort extends Widget
 {

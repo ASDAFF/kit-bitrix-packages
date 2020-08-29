@@ -11,6 +11,6 @@ $module = 'kit.regions';
 CModule::includeModule($module);
 CModule::includeModule('main');
 
-\Sotbit\Regions\Config\Option::set('MODE_LOCATION', 'Y', WIZARD_SITE_ID);
-\Sotbit\Regions\Config\Option::set('FIND_USER_METHOD', 'ipgeobase', WIZARD_SITE_ID);
+\Kit\Regions\Config\Option::set('MODE_LOCATION', 'Y', WIZARD_SITE_ID);
+\Kit\Regions\Config\Option::set('FIND_USER_METHOD', 'ipgeobase', WIZARD_SITE_ID);
 ?>

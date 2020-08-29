@@ -12,8 +12,8 @@ $MESS[$idModule.'_BIG_CITIES'] = 'Крупные города';
 $MESS[$idModule.'_CITIES'] = 'Населенные пункты';
 $MESS[$idModule.'_WRITE_SITY'] = 'Введите Ваш город';
 $MESS[$idModule.'_TITLE'] = 'Выбор региона';
-$MESS['SOTBIT_REGIONS_SP'] = 'Санкт-Петербург';
-$MESS['SOTBIT_REGIONS_MOSCOW'] = 'Москва';
+$MESS['KIT_REGIONS_SP'] = 'Санкт-Петербург';
+$MESS['KIT_REGIONS_MOSCOW'] = 'Москва';
 $MESS[$idModule.'CHOOSE_REG_BUTTON_TITTLE'] = 'Продолжить с выбранным регионом';
 $MESS[$idModule.'CHOOSE_AUTOMATIC'] = 'Определить автоматически';
 ?>

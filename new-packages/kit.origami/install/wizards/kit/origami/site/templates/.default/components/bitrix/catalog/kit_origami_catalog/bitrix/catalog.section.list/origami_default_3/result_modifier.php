@@ -4,7 +4,7 @@ if(count($arResult['SECTIONS']) > 0)
 {
     $arID = $childCategories = $arID_2 = array();
 
-    $obImg = new \Sotbit\Origami\Image\Item();
+    $obImg = new \Kit\Origami\Image\Item();
 
     foreach($arResult['SECTIONS'] as &$arSection)
     {

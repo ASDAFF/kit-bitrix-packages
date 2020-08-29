@@ -15,7 +15,7 @@ global $addFilter;
 
 $filter = [
     'ACTIVE'    => 'Y',
-    "IBLOCK_ID" => \Sotbit\Origami\Helper\Config::get('IBLOCK_ID'),
+    "IBLOCK_ID" => \Kit\Origami\Helper\Config::get('IBLOCK_ID'),
 ];
 
 if (!$addFilter) {
@@ -61,7 +61,7 @@ if ($sections) {
     ?>
     <div class="sections_cnt">
         <div class="sections_cnt__title">
-            <?= Loc::getMessage(\SotbitOrigami::moduleId
+            <?= Loc::getMessage(\KitOrigami::moduleId
                 .'_SECTIONS_CNT_TITLE') ?>
         </div>
         <div class="sections_cnt__body">

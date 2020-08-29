@@ -79,20 +79,20 @@ $MESS['SOA_LOCATION_NOT_FOUND_PROMPT'] = "Нажмите #ANCHOR#добавит�
 $MESS['SOA_NOT_SELECTED_ALT'] = "При необходимости уточнить местоположение";
 $MESS['SOA_TEMPL_ORDER_PS_ERROR'] = "Ошибка выбранного способа оплаты. Обратитесь к Администрации сайта, либо выберите другой способ оплаты.";
 
-$MESS['SOTBIT_SOA_BACK_TO_BASKET'] = "Вернуться к корзине";
-$MESS['SOTBIT_SOA_QUANTITY_TEXT'] = "Количество:";
+$MESS['KIT_SOA_BACK_TO_BASKET'] = "Вернуться к корзине";
+$MESS['KIT_SOA_QUANTITY_TEXT'] = "Количество:";
 
-$MESS['SOTBIT_SOA_QUANTITY_LABEL_DEFAULT'] = "товар";
-$MESS['SOTBIT_SOA_QUANTITY_LABEL_V1'] = "а";
-$MESS['SOTBIT_SOA_QUANTITY_LABEL_V2'] = "ов";
+$MESS['KIT_SOA_QUANTITY_LABEL_DEFAULT'] = "товар";
+$MESS['KIT_SOA_QUANTITY_LABEL_V1'] = "а";
+$MESS['KIT_SOA_QUANTITY_LABEL_V2'] = "ов";
 
-$MESS['SOTBIT_SOA_PAYMENT_INFORMATION'] = "Платежная информация";
-$MESS['SOTBIT_SOA_DELIVERY'] = "Доставка";
-$MESS['SOTBIT_SOA_PAYMENT'] = "Оплата";
-$MESS['SOTBIT_SOA_ORDERING'] = "Оформление заказа";
-$MESS['SOTBIT_SOA_GO_TO_NEXT_STEP'] = "Перейти к следующему шагу";
-$MESS['SOTBIT_SOA_YOUR_ORDER'] = "Ваш заказ";
-$MESS['SOTBIT_SOA_CHANGE'] = "Изменить";
+$MESS['KIT_SOA_PAYMENT_INFORMATION'] = "Платежная информация";
+$MESS['KIT_SOA_DELIVERY'] = "Доставка";
+$MESS['KIT_SOA_PAYMENT'] = "Оплата";
+$MESS['KIT_SOA_ORDERING'] = "Оформление заказа";
+$MESS['KIT_SOA_GO_TO_NEXT_STEP'] = "Перейти к следующему шагу";
+$MESS['KIT_SOA_YOUR_ORDER'] = "Ваш заказ";
+$MESS['KIT_SOA_CHANGE'] = "Изменить";
 ?>
 
 <?

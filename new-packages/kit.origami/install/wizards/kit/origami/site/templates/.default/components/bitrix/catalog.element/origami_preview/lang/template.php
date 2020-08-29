@@ -3,8 +3,8 @@
 }
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Helper\Prop;
+use Kit\Origami\Helper\Config;
+use \Kit\Origami\Helper\Prop;
 
 $this->setFrameMode(true);
 
@@ -527,7 +527,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
 
                                 <?
                                 $addProps
-                                    = unserialize(\Sotbit\Origami\Config\Option::get('DETAIL_ADD_PROPS_'
+                                    = unserialize(\Kit\Origami\Config\Option::get('DETAIL_ADD_PROPS_'
                                     .$template));
                                 if ($addProps
                                     && !empty($arResult['DISPLAY_PROPERTIES'])

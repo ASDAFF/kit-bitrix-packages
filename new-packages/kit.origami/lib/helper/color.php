@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 use Bitrix\Iblock\PropertyTable;
 use Bitrix\Main\ArgumentException;
@@ -300,7 +300,7 @@ class Color
         {
             $codePropColor = Config::get('COLOR');
             $idPropColor = self::getPropId();
-            $Img = new \Sotbit\Origami\Image\Item();
+            $Img = new \Kit\Origami\Image\Item();
             foreach ($arResult['ITEM']['OFFERS'] as $offer)
             {
                 $img = $Img->resize(

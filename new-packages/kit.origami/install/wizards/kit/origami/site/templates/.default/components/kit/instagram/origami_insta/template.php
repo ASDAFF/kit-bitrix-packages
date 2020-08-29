@@ -3,7 +3,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 Loc::loadMessages(__FILE__);
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 ?>
@@ -14,7 +14,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
     <p class="puzzle_block__title fonts__middle_title">
         <?=$arResult["TITLE"]?>
         <a href="https://www.instagram.com/<?=$arResult["LOGIN"]?>" target="_blank" class="puzzle_block__link fonts__small_text">
-            <?=Loc::getMessage("SOTBIT_INSTAGRAM_GOTO")?>
+            <?=Loc::getMessage("KIT_INSTAGRAM_GOTO")?>
             <i class="icon-nav_1"></i>
         </a>
     </p>

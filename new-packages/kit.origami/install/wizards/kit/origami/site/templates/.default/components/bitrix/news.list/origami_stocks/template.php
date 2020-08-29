@@ -13,15 +13,15 @@
 $this->createFrame()->begin();
 
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 Loc::loadMessages(__FILE__);
-$date = new \Sotbit\Origami\Helper\Date();
+$date = new \Kit\Origami\Helper\Date();
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 $sliderButtons = "";
-if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
+if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--one";
-} else if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
+} else if (\Kit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'circle') {
     $sliderButtons = "btn-slider-main--two";
 }
 ?>
@@ -32,8 +32,8 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     <div class="stocks-block">
         <p class="puzzle_block__title fonts__middle_title">
             <?=$arParams["BLOCK_NAME"]?>
-            <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("SOTBIT_PROMOTIONS_STOCKS_LINK_TEXT");?>">
-                <?=Loc::getMessage("SOTBIT_PROMOTIONS_STOCKS_LINK_TEXT");?>
+            <a href="<?=($arResult["ITEMS"][0]["LIST_PAGE_URL"]) ? $arResult["ITEMS"][0]["LIST_PAGE_URL"] : $arParams["LINK_TO_THE_FULL_LIST"]?>" class="puzzle_block__link fonts__small_text" title="<?=Loc::getMessage("KIT_PROMOTIONS_STOCKS_LINK_TEXT");?>">
+                <?=Loc::getMessage("KIT_PROMOTIONS_STOCKS_LINK_TEXT");?>
             </a>
         </p>
 
@@ -100,7 +100,7 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
                                 <?=$arItem['PREVIEW_TEXT']?>
                         </span>
                             <div class="stocks-slide__description-wrapper--link">
-                                <span><?=Loc::getMessage('SOTBIT_PROMOTIONS_STOCKS_MORE_TEXT')?></span>
+                                <span><?=Loc::getMessage('KIT_PROMOTIONS_STOCKS_MORE_TEXT')?></span>
                             </div>
                         </div>
                         <?if (isset($arItem["DATE_ACTIVE_TO"]) && !empty($arItem["DATE_ACTIVE_TO"])): ?>

@@ -10,8 +10,8 @@
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 use Bitrix\Main\Web\Json;
-use Sotbit\Origami\Config;
-use Sotbit\Origami\Helper;
+use Kit\Origami\Config;
+use Kit\Origami\Helper;
 
 if (!Loader::includeModule('iblock') || !Loader::includeModule('kit.origami'))
 	return;

@@ -1,14 +1,14 @@
 <?php
 
-namespace Sotbit\Origami;
+namespace Kit\Origami;
 
 use Bitrix\Main;
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Menu;
+use Kit\Origami\Helper\Menu;
 use Bitrix\Main\Application;
-use Sotbit\Origami\Helper\Config;
-use Sotbit\Origami\Config\Option;
-use Sotbit\Origami\Sale\Basket;
+use Kit\Origami\Helper\Config;
+use Kit\Origami\Config\Option;
+use Kit\Origami\Sale\Basket;
 use CFormResult;
 use CEvent;
 use CForm;
@@ -33,7 +33,7 @@ class EventHandlers
     {
         $content = str_replace(" type=\"text/javascript\"", false, $content);
 
-        \SotbitOrigami::DoInlineCss($content);
+        \KitOrigami::DoInlineCss($content);
     }
 
     /**
@@ -50,7 +50,7 @@ class EventHandlers
     {
         if(!$request->isAdminSection())
         {
-            if(\SotbitOrigami::isUseRegions() && $_SESSION['SOTBIT_REGIONS']['LOCATION']['CODE'] && Config::get('INSERT_LOCATION_IN_ORDER') == 'Y')
+            if(\KitOrigami::isUseRegions() && $_SESSION['KIT_REGIONS']['LOCATION']['CODE'] && Config::get('INSERT_LOCATION_IN_ORDER') == 'Y')
             {
                 $prop = \Bitrix\Sale\Internals\OrderPropsTable::getList(
                     [
@@ -66,7 +66,7 @@ class EventHandlers
                 )->fetch();
                 if($prop['ID'] > 0)
                 {
-                    $arUserResult['ORDER_PROP'][$prop['ID']] = $_SESSION['SOTBIT_REGIONS']['LOCATION']['CODE'];
+                    $arUserResult['ORDER_PROP'][$prop['ID']] = $_SESSION['KIT_REGIONS']['LOCATION']['CODE'];
                 }
             }
         }
@@ -115,7 +115,7 @@ class EventHandlers
                 {
                     $priceCode = '"'.$priceCode.'"';
                 }
-                $_POST['PRICE_CODE'] = '={\SotbitOrigami::GetComponentPrices(['.implode(',',$_POST['PRICE_CODE']).'])}';
+                $_POST['PRICE_CODE'] = '={\KitOrigami::GetComponentPrices(['.implode(',',$_POST['PRICE_CODE']).'])}';
             }
         }
     }
@@ -225,7 +225,7 @@ class EventHandlers
                                             ]
                                         ];
 
-                                        $Offer = new \Sotbit\Origami\Helper\Offer($site_id);
+                                        $Offer = new \Kit\Origami\Helper\Offer($site_id);
                                         $newName = $Offer->changeText($tmpResult, $props);
 
                                         $event->addResult(
@@ -331,7 +331,7 @@ class EventHandlers
                                         ]
                                     ];
 
-                                    $Offer = new \Sotbit\Origami\Helper\Offer($site_id);
+                                    $Offer = new \Kit\Origami\Helper\Offer($site_id);
                                     $newName = $Offer->changeText($tmpResult, $props);
                                     $basketItem->setField('NAME', $newName);
                                     //printr(array("ID" => $ID));

@@ -72,7 +72,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
 
                         <?if(in_array("DISCOUNT_PRICE_PERCENT_FORMATED", $arHeaders)):?>
                             <div class="discount_block">
-                                <span class="discount_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_DISCOUNT_TEXT")?>&nbsp;</span>
+                                <span class="discount_block_hidden fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_DISCOUNT_TEXT")?>&nbsp;</span>
                                 <div class="kit_soa_discount_price_<?=$arItem["ID"]?>">
                                     <?=$arItem["DISCOUNT_PRICE_PERCENT_FORMATED"]?>
                                 </div>
@@ -81,7 +81,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
 
                         <?if(in_array("PRICE_FORMATED", $arHeaders)):?>
                             <div class="kit_soa_price_block_<?=$arItem["ID"]?> price_block">
-                                <span class="price_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_PRICE_TEXT")?>&nbsp;</span>
+                                <span class="price_block_hidden fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_PRICE_TEXT")?>&nbsp;</span>
                                 <div class="kit_soa_price_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__middle_text">
                                     <?=$arItem["PRICE_FORMATED"]?>
                                 </div>
@@ -94,12 +94,12 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                         <?endif?>
 
                         <div class="number_block">
-                            <span class="number_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_QUANTITY_TEXT")?>&nbsp;</span>
+                            <span class="number_block_hidden fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_QUANTITY_TEXT")?>&nbsp;</span>
                             <?=$arItem["QUANTITY"]?> <?=$arItem["MEASURE_NAME"]?>
                         </div>
 
                         <div class="kit_soa_product_sum_block_<?=$arItem["ID"]?> sum_block">
-                            <span class="sum_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_SUM_TEXT")?>&nbsp;</span>
+                            <span class="sum_block_hidden fonts__middle_comment"><?=Loc::getMessage("KIT_SOA_SUM_TEXT")?>&nbsp;</span>
                             <div class="kit_soa_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
                                 <?=$arItem["SUM"]?>
                             </div>
@@ -170,6 +170,6 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
 <div class="order_block__basket_link">
     <a class="order_block__ordering_link fonts__middle_comment" href="<?=$arParams["PATH_TO_BASKET"]?>">
         <i class="fas fa-angle-double-left"></i>
-        <?=Loc::getMessage("SOTBIT_SOA_BACK_TO_BASKET");?>
+        <?=Loc::getMessage("KIT_SOA_BACK_TO_BASKET");?>
     </a>
 </div>

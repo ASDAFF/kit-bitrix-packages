@@ -12,7 +12,7 @@
 
 /** @var CBitrixComponent $component */
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $isAjax = false;
 

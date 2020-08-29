@@ -11,6 +11,6 @@ $MESS[$idModule.'_EXAMPLE'] = 'Например, <span data-location-id="#ID0#">
 $MESS[$idModule.'_BIG_CITIES'] = 'Крупные города';
 $MESS[$idModule.'_CITIES'] = 'Населенные пункты';
 $MESS[$idModule.'_WRITE_SITY'] = 'Введите Ваш город';
-$MESS['SOTBIT_REGIONS_SP'] = 'Санкт-Петербург';
-$MESS['SOTBIT_REGIONS_MOSCOW'] = 'Москва';
+$MESS['KIT_REGIONS_SP'] = 'Санкт-Петербург';
+$MESS['KIT_REGIONS_MOSCOW'] = 'Москва';
 ?>

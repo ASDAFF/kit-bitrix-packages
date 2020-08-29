@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 \Bitrix\Main\Loader::includeModule('kit.origami');
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 /**
@@ -17,7 +17,7 @@ if (!$arResult["DISABLE_USE_BASKET"])
 		<a class="basket-block__link basket-block__compare" href="<?=Config::get('COMPARE_PAGE')?>">
             <svg height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M424 352h16c4.4 0 8-3.6 8-8V104c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v240c0 4.4 3.6 8 8 8zm-96 0h16c4.4 0 8-3.6 8-8V200c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm-192 0h16c4.4 0 8-3.6 8-8v-80c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8zm96 0h16c4.4 0 8-3.6 8-8V136c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v208c0 4.4 3.6 8 8 8zm272 64H32V72c0-4.42-3.58-8-8-8H8c-4.42 0-8 3.58-8 8v360c0 8.84 7.16 16 16 16h488c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8z"/></svg>
 			<span class="basket-block__link_basket_cal" ><?
-				$compare = new \Sotbit\Origami\Sale\Basket\Compare();
+				$compare = new \Kit\Origami\Sale\Basket\Compare();
 				echo $compare->getCompared();
 				?>
 			</span>
@@ -28,7 +28,7 @@ if (!$arResult["DISABLE_USE_BASKET"])
                 <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z"/></svg>
 			<span class="basket-block__link_basket_cal" >
 				<?
-				$wish = new \Sotbit\Origami\Sale\Basket\Wish();
+				$wish = new \Kit\Origami\Sale\Basket\Wish();
 				echo count(array_unique($wish->findWishes()));
 				?>
 			</span>

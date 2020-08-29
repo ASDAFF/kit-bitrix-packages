@@ -1,4 +1,4 @@
-window.SotbitRegions = function(arParams) {
+window.KitRegions = function(arParams) {
 	var list = [];
 	//var regions = JSON.parse(arParams.list);
 	for(var i = 0; i < arParams.list.length; ++i)

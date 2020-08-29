@@ -1,8 +1,8 @@
 <?php
 $moduleId = 'kit.origami';
-$MESS[$moduleId."_MODULE_NAME"] = "Сотбит: Оригами – интернет-магазин";
-$MESS[$moduleId."_MODULE_DESC"] = "Мастер создания интернет-магазина «Сотбит: Оригами – интернет-магазин»";
-$MESS[$moduleId."_PARTNER_NAME"] = "Сотбит";
-$MESS[$moduleId."_PARTNER_URI"] = "www.kit.ru";
+$MESS[$moduleId."_MODULE_NAME"] = "Kit: Оригами – интернет-магазин";
+$MESS[$moduleId."_MODULE_DESC"] = "Мастер создания интернет-магазина «Kit: Оригами – интернет-магазин»";
+$MESS[$moduleId."_PARTNER_NAME"] = "ASDAFF";
+$MESS[$moduleId."_PARTNER_URI"] = "https://asdaff.github.io/";
 $MESS["INSTALL_TITLE"] = "Установка модуля";
 ?>

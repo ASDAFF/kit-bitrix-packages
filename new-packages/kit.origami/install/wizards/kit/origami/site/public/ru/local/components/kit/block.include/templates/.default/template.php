@@ -1,7 +1,7 @@
 <?php
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
@@ -31,7 +31,7 @@ if($arResult['CAN_CHANGE'])
         ?>
 <!--		<div class="landing-ui-panel landing-ui-panel-top">-->
 <!--			<div class="ui-btn landing-ui-button ui-btn-primary" data-id="save">-->
-<!--                --><?//= Loc::getMessage(SotbitOrigami::moduleId.'_SAVE') ?>
+<!--                --><?//= Loc::getMessage(KitOrigami::moduleId.'_SAVE') ?>
 <!--            </div>-->
 <!--		</div>-->
         <?
@@ -40,7 +40,7 @@ if($arResult['CAN_CHANGE'])
 	   landing-ui-hide" data-is-shown="true" data-part="<?=$arParams['PART']?>" hidden>
 		<div class="landing-ui-panel-content-element landing-ui-panel-content-header">
 			<div class="landing-ui-panel-content-title">
-                <?=Loc::getMessage(SotbitOrigami::moduleId.'_TITLE')?>
+                <?=Loc::getMessage(KitOrigami::moduleId.'_TITLE')?>
 			</div>
 		</div>
 		<div class="landing-ui-panel-content-element landing-ui-panel-content-body no-footer">
@@ -95,7 +95,7 @@ if($arResult['CAN_CHANGE'])
 		</div>
 		<div class="landing-ui-panel-content-element landing-ui-panel-content-footer"></div>
 		<button type="button" class="landing-ui-button landing-ui-panel-content-close" data-id="close"
-		        title="<?=Loc::getMessage(SotbitOrigami::moduleId.'_CLOSE')?>">
+		        title="<?=Loc::getMessage(KitOrigami::moduleId.'_CLOSE')?>">
 			<span class="landing-ui-button-text"></span>
 		</button>
 	</div>
@@ -113,11 +113,11 @@ if($arResult['CAN_CHANGE'])
 <script>
 	BX.message(
 		{
-			'show':'<?=Loc::getMessage(SotbitOrigami::moduleId.'_SHOW')?>',
-			'hide':'<?=Loc::getMessage(SotbitOrigami::moduleId.'_HIDE')?>',
-			'cut':'<?=Loc::getMessage(SotbitOrigami::moduleId.'_CUT')?>',
-			'copy':'<?=Loc::getMessage(SotbitOrigami::moduleId.'_COPY')?>',
-			'paste':'<?=Loc::getMessage(SotbitOrigami::moduleId.'_PASTE')?>',
+			'show':'<?=Loc::getMessage(KitOrigami::moduleId.'_SHOW')?>',
+			'hide':'<?=Loc::getMessage(KitOrigami::moduleId.'_HIDE')?>',
+			'cut':'<?=Loc::getMessage(KitOrigami::moduleId.'_CUT')?>',
+			'copy':'<?=Loc::getMessage(KitOrigami::moduleId.'_COPY')?>',
+			'paste':'<?=Loc::getMessage(KitOrigami::moduleId.'_PASTE')?>',
 		}
 	);
 	var Block = new Blocks({

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sotbit\Origami\Helper;
+namespace Kit\Origami\Helper;
 
 use Bitrix\Iblock\PropertyTable;
 use Bitrix\Main\ArgumentException;
@@ -12,15 +12,15 @@ use Bitrix\Main\SystemException;
 use Bitrix\Main\Context;
 use Bitrix\Sale\Delivery\Services\Table;
 use Bitrix\Sale\Internals\PersonTypeTable;
-use Sotbit\Origami\Config\Option;
-use Sotbit\Origami\Front\Theme;
+use Kit\Origami\Config\Option;
+use Kit\Origami\Front\Theme;
 
 Loc::loadMessages(__FILE__);
 
 /**
  * Class Config
  *
- * @package Sotbit\Origami\Helper
+ * @package Kit\Origami\Helper
  * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Config
@@ -125,7 +125,7 @@ class Config
     public static function getHeaders()
     {
         $return = [];
-        $files = scandir($_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::headersDir);
+        $files = scandir($_SERVER['DOCUMENT_ROOT'].\KitOrigami::headersDir);
         foreach ($files as $file) {
             if (in_array($file, [
                 '.',
@@ -137,10 +137,10 @@ class Config
 
             $name = $file;
             if (file_exists($_SERVER['DOCUMENT_ROOT'].
-                \SotbitOrigami::headersDir.'/'.$file.'/settings.php')
+                \KitOrigami::headersDir.'/'.$file.'/settings.php')
             ) {
                 $settings = include $_SERVER['DOCUMENT_ROOT'].
-                    \SotbitOrigami::headersDir.'/'.$file.'/settings.php';
+                    \KitOrigami::headersDir.'/'.$file.'/settings.php';
                 $name = $settings['title']['name'];
             }
 
@@ -156,7 +156,7 @@ class Config
     public static function getFooters()
     {
         $return = [];
-        $files = scandir($_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::footersDir);
+        $files = scandir($_SERVER['DOCUMENT_ROOT'].\KitOrigami::footersDir);
         foreach ($files as $file) {
             if (in_array($file, [
                 '.',
@@ -168,10 +168,10 @@ class Config
 
             $name = $file;
             if (file_exists($_SERVER['DOCUMENT_ROOT'].
-                \SotbitOrigami::footersDir.'/'.$file.'/settings.php')
+                \KitOrigami::footersDir.'/'.$file.'/settings.php')
             ) {
                 $settings = include $_SERVER['DOCUMENT_ROOT'].
-                    \SotbitOrigami::footersDir.'/'.$file.'/settings.php';
+                    \KitOrigami::footersDir.'/'.$file.'/settings.php';
                 $name = $settings['title']['name'];
             }
 
@@ -189,7 +189,7 @@ class Config
     {
         $return = [];
         $files = scandir($_SERVER['DOCUMENT_ROOT'].
-            \SotbitOrigami::contactsDir);
+            \KitOrigami::contactsDir);
         foreach ($files as $file) {
             if (in_array($file, [
                 '.',
@@ -200,10 +200,10 @@ class Config
             }
             $name = $file;
             if (file_exists($_SERVER['DOCUMENT_ROOT'].
-                \SotbitOrigami::contactsDir.'/'.$file.'/settings.php')
+                \KitOrigami::contactsDir.'/'.$file.'/settings.php')
             ) {
                 $settings = include $_SERVER['DOCUMENT_ROOT'].
-                    \SotbitOrigami::contactsDir.'/'.$file.'/settings.php';
+                    \KitOrigami::contactsDir.'/'.$file.'/settings.php';
                 $name = $settings['title']['name'];
             }
             $return[$file] = $name;
@@ -355,13 +355,13 @@ class Config
     public static function getCaptcha()
     {
         return [
-            'NO'    => Loc::getMessage(\SotbitOrigami::moduleId
+            'NO'    => Loc::getMessage(\KitOrigami::moduleId
                 .'_CAPTCHA_NO'),
-            'BITRIX'    => Loc::getMessage(\SotbitOrigami::moduleId
+            'BITRIX'    => Loc::getMessage(\KitOrigami::moduleId
                 .'_CAPTCHA_BITRIX'),
-            'RECAPTCHA' => Loc::getMessage(\SotbitOrigami::moduleId
+            'RECAPTCHA' => Loc::getMessage(\KitOrigami::moduleId
                 .'_CAPTCHA_RECAPTCHA'),
-            'HIDE'      => Loc::getMessage(\SotbitOrigami::moduleId
+            'HIDE'      => Loc::getMessage(\KitOrigami::moduleId
                 .'_CAPTCHA_HIDE'),
         ];
     }
@@ -369,11 +369,11 @@ class Config
     public static function getHeaderBgColors()
     {
         return [
-            'header-three--black' =>  Loc::getMessage(\SotbitOrigami::moduleId
+            'header-three--black' =>  Loc::getMessage(\KitOrigami::moduleId
                 .'_HEADER_BG_COLOR_1'),
-            'header-three--white' =>  Loc::getMessage(\SotbitOrigami::moduleId
+            'header-three--white' =>  Loc::getMessage(\KitOrigami::moduleId
                 .'_HEADER_BG_COLOR_2'),
-            'header-three--gray' =>  Loc::getMessage(\SotbitOrigami::moduleId
+            'header-three--gray' =>  Loc::getMessage(\KitOrigami::moduleId
                 .'_HEADER_BG_COLOR_3'),
         ];
     }
@@ -384,9 +384,9 @@ class Config
     public static function getMasksTypes()
     {
         return [
-            'FLAGS'    => Loc::getMessage(\SotbitOrigami::moduleId
+            'FLAGS'    => Loc::getMessage(\KitOrigami::moduleId
                 .'_FLAGS'),
-            'NO_FLAGS'    => Loc::getMessage(\SotbitOrigami::moduleId
+            'NO_FLAGS'    => Loc::getMessage(\KitOrigami::moduleId
                 .'_NO_FLAGS'),
         ];
     }
@@ -397,9 +397,9 @@ class Config
     public static function getFilterTemplate()
     {
         return [
-            'VERTICAL'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'VERTICAL'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_VERTICAL'),
-            'HORIZONTAL' => Loc::getMessage(\SotbitOrigami::moduleId
+            'HORIZONTAL' => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_HORIZONTAL'),
         ];
     }
@@ -410,14 +410,14 @@ class Config
     public static function getSectionRootTemplate()
     {
         return [
-            'sections'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS'),
-            'sections_1'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_1'),
-            'sections_2'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_2'),
-            'sections_3'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_3'),
-            'sections_4'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_4'),
-            'sections_5'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_5'),
-            'products'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_PRODUCTS'),
-            'combine'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_COMBINE'),
+            'sections'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS'),
+            'sections_1'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_1'),
+            'sections_2'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_2'),
+            'sections_3'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_3'),
+            'sections_4'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_4'),
+            'sections_5'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_5'),
+            'products'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_PRODUCTS'),
+            'combine'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_COMBINE'),
         ];
     }
 
@@ -427,8 +427,8 @@ class Config
     public static function getSectionRootTemplateServices()
     {
         return [
-            'sections_1'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_SERVICES_1'),
-            'sections_2'   => Loc::getMessage(\SotbitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_SERVICES_2'),
+            'sections_1'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_SERVICES_1'),
+            'sections_2'   => Loc::getMessage(\KitOrigami::moduleId.'_SECTION_ROOT_TEMPLATE_SECTIONS_SERVICES_2'),
         ];
     }
 
@@ -438,9 +438,9 @@ class Config
     public static function getRegionTemplate()
     {
         return [
-            'kit_regions'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_1'),
-            'origami_location'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_2'),
-            'origami_combine'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_3'),
+            'kit_regions'   => Loc::getMessage(\KitOrigami::moduleId.'_REGION_TEMPLATE_1'),
+            'origami_location'   => Loc::getMessage(\KitOrigami::moduleId.'_REGION_TEMPLATE_2'),
+            'origami_combine'   => Loc::getMessage(\KitOrigami::moduleId.'_REGION_TEMPLATE_3'),
         ];
     }
 
@@ -450,9 +450,9 @@ class Config
     public static function getTemplateListView()
     {
         return [
-            'card'   => Loc::getMessage(\SotbitOrigami::moduleId.'_TEMPLATE_LIST_CARD'),
-            'list'   => Loc::getMessage(\SotbitOrigami::moduleId.'_TEMPLATE_LIST_LIST'),
-            'column'   => Loc::getMessage(\SotbitOrigami::moduleId.'_TEMPLATE_LIST_COLUMN'),
+            'card'   => Loc::getMessage(\KitOrigami::moduleId.'_TEMPLATE_LIST_CARD'),
+            'list'   => Loc::getMessage(\KitOrigami::moduleId.'_TEMPLATE_LIST_LIST'),
+            'column'   => Loc::getMessage(\KitOrigami::moduleId.'_TEMPLATE_LIST_COLUMN'),
         ];
     }
 
@@ -462,15 +462,15 @@ class Config
     public static function getVariantListView()
     {
         return [
-            'template_1'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'template_1'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_VARIANT_1'),
-            'template_2'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'template_2'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_VARIANT_2'),
-            'template_3'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'template_3'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_VARIANT_3'),
-            'template_4'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'template_4'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_VARIANT_4'),
-            'template_5'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'template_5'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_VARIANT_5'),
         ];
     }
@@ -481,11 +481,11 @@ class Config
     public static function getActionProducts()
     {
         return [
-            'BUY'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'BUY'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_ACTION_BUY'),
-            'DELAY' => Loc::getMessage(\SotbitOrigami::moduleId
+            'DELAY' => Loc::getMessage(\KitOrigami::moduleId
                 .'_ACTION_DELAY'),
-            'COMPARE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'COMPARE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_ACTION_COMPARE'),
         ];
     }
@@ -496,14 +496,14 @@ class Config
     public static function getShareHandlers()
     {
         return [
-            "facebook" => Loc::getMessage(\SotbitOrigami::moduleId .'_FACEBOOK'),
-            "mailru" => Loc::getMessage(\SotbitOrigami::moduleId .'_MAILRU'),
-            "ok" => Loc::getMessage(\SotbitOrigami::moduleId .'_OK'),
-            "telegram" => Loc::getMessage(\SotbitOrigami::moduleId .'_TELEGRAM'),
-            "twitter" => Loc::getMessage(\SotbitOrigami::moduleId .'_TWITTER'),
-            "viber" => Loc::getMessage(\SotbitOrigami::moduleId .'_VIBER'),
-            "vk" => Loc::getMessage(\SotbitOrigami::moduleId .'_VK'),
-            "whatsapp" => Loc::getMessage(\SotbitOrigami::moduleId .'_WHATSAPP'),
+            "facebook" => Loc::getMessage(\KitOrigami::moduleId .'_FACEBOOK'),
+            "mailru" => Loc::getMessage(\KitOrigami::moduleId .'_MAILRU'),
+            "ok" => Loc::getMessage(\KitOrigami::moduleId .'_OK'),
+            "telegram" => Loc::getMessage(\KitOrigami::moduleId .'_TELEGRAM'),
+            "twitter" => Loc::getMessage(\KitOrigami::moduleId .'_TWITTER'),
+            "viber" => Loc::getMessage(\KitOrigami::moduleId .'_VIBER'),
+            "vk" => Loc::getMessage(\KitOrigami::moduleId .'_VK'),
+            "whatsapp" => Loc::getMessage(\KitOrigami::moduleId .'_WHATSAPP'),
         ];
     }
 
@@ -525,13 +525,13 @@ class Config
     public static function getSeoMode()
     {
         return [
-            'DISABLED'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'DISABLED'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_SEO_MODE_DISABLED'),
-            'SINGLE_LEVEL' => Loc::getMessage(\SotbitOrigami::moduleId
+            'SINGLE_LEVEL' => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_SEO_MODE_SINGLE_LEVEL'),
-            'MULTIPLE_LEVEL' => Loc::getMessage(\SotbitOrigami::moduleId
+            'MULTIPLE_LEVEL' => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_SEO_MODE_MULTIPLE_LEVEL'),
-            'SEOMETA_MODE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'SEOMETA_MODE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_FILTER_SEO_MODE_SEOMETA_MODE'),
         ];
     }
@@ -542,9 +542,9 @@ class Config
     public static function getFilterMode()
     {
         return [
-            'PAGE_RELOAD_MODE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'PAGE_RELOAD_MODE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_PAGE_RELOAD_MODE'),
-            'AJAX_MODE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'AJAX_MODE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_AJAX_MODE'),
         ];
     }
@@ -567,11 +567,11 @@ class Config
     public static function getHideNotAvailable()
     {
         return [
-            'Y' => Loc::getMessage(\SotbitOrigami::moduleId
+            'Y' => Loc::getMessage(\KitOrigami::moduleId
                 .'_HIDE_NOT_AVAILABLE_Y'),
-            'N' => Loc::getMessage(\SotbitOrigami::moduleId
+            'N' => Loc::getMessage(\KitOrigami::moduleId
                 .'_HIDE_NOT_AVAILABLE_N'),
-            'L' => Loc::getMessage(\SotbitOrigami::moduleId
+            'L' => Loc::getMessage(\KitOrigami::moduleId
                 .'_HIDE_NOT_AVAILABLE_L'),
         ];
     }
@@ -579,9 +579,9 @@ class Config
     public static function getIblockBlogTemplates()
     {
         return [
-            '.default' => Loc::getMessage(\SotbitOrigami::moduleId
+            '.default' => Loc::getMessage(\KitOrigami::moduleId
                 .'_TEMPLATE_BLOG_VARIANT1'),
-            'blog_2' => Loc::getMessage(\SotbitOrigami::moduleId
+            'blog_2' => Loc::getMessage(\KitOrigami::moduleId
                 .'_TEMPLATE_BLOG_VARIANT2'),
         ];
     }
@@ -589,9 +589,9 @@ class Config
     public static function getIblockNewsTemplates()
     {
         return [
-            '.default' => Loc::getMessage(\SotbitOrigami::moduleId
+            '.default' => Loc::getMessage(\KitOrigami::moduleId
                 .'_TEMPLATE_NEWS_VARIANT1'),
-            'news_v2' => Loc::getMessage(\SotbitOrigami::moduleId
+            'news_v2' => Loc::getMessage(\KitOrigami::moduleId
                 .'_TEMPLATE_NEWS_VARIANT2'),
         ];
     }
@@ -707,7 +707,7 @@ class Config
      */
     public static function getChunkPath($name = '')
     {
-        return $_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::chunksDir.'/'.$name
+        return $_SERVER['DOCUMENT_ROOT'].\KitOrigami::chunksDir.'/'.$name
             .'.php';
     }
 
@@ -737,9 +737,9 @@ class Config
     public static function getBasketTypes()
     {
         return [
-            'origami_basket_top' => Loc::getMessage(\SotbitOrigami::moduleId
+            'origami_basket_top' => Loc::getMessage(\KitOrigami::moduleId
                 .'_BASKET_FIRST'),
-            'origami_top_without_basket' => Loc::getMessage(\SotbitOrigami::moduleId
+            'origami_top_without_basket' => Loc::getMessage(\KitOrigami::moduleId
                 .'_BASKET_SECOND'),
         ];
     }
@@ -750,7 +750,7 @@ class Config
 
 
         $dirs = [
-            $_SERVER['DOCUMENT_ROOT'].\SotbitOrigami::templateDir.'/components/bitrix/sale.order.ajax',
+            $_SERVER['DOCUMENT_ROOT'].\KitOrigami::templateDir.'/components/bitrix/sale.order.ajax',
             $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/bitrix/sale.order.ajax',
         ];
 
@@ -852,11 +852,11 @@ class Config
     public static function getPromotionListTemplates()
     {
         return [
-            'horizontal' => Loc::getMessage(\SotbitOrigami::moduleId
+            'horizontal' => Loc::getMessage(\KitOrigami::moduleId
                 .'_PROMOTION_LIST_TEMPLATE_HORIZONTAL'),
-            'vertical'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'vertical'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_PROMOTION_LIST_TEMPLATE_VERTICAL'),
-            'stocks_2'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'stocks_2'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_PROMOTION_LIST_TEMPLATE_VARIANT3'),
         ];
     }
@@ -864,7 +864,7 @@ class Config
     public static function getBlogListTemplates()
     {
         return [
-            'popular' => Loc::getMessage(\SotbitOrigami::moduleId.'_BLOG_LIST_TEMPLATE_POPULAR'),
+            'popular' => Loc::getMessage(\KitOrigami::moduleId.'_BLOG_LIST_TEMPLATE_POPULAR'),
         ];
     }
 
@@ -896,10 +896,10 @@ class Config
     public static function getHoverEffect()
     {
         return [
-            '' => Loc::getMessage(\SotbitOrigami::moduleId.'_HOVER_NO'),
-            'hover-highlight' => Loc::getMessage(\SotbitOrigami::moduleId.'_HOVER_1'),
-            'hover-zoom' => Loc::getMessage(\SotbitOrigami::moduleId.'_HOVER_2'),
-            'hover-square' => Loc::getMessage(\SotbitOrigami::moduleId.'_HOVER_3'),
+            '' => Loc::getMessage(\KitOrigami::moduleId.'_HOVER_NO'),
+            'hover-highlight' => Loc::getMessage(\KitOrigami::moduleId.'_HOVER_1'),
+            'hover-zoom' => Loc::getMessage(\KitOrigami::moduleId.'_HOVER_2'),
+            'hover-square' => Loc::getMessage(\KitOrigami::moduleId.'_HOVER_3'),
         ];
     }
 
@@ -909,17 +909,17 @@ class Config
     public static function getMenuSide()
     {
         return [
-            'left' => Loc::getMessage(\SotbitOrigami::moduleId.'_MENU_SIDE_LEFT'),
-            'right' => Loc::getMessage(\SotbitOrigami::moduleId.'_MENU_SIDE_RIGHT'),
+            'left' => Loc::getMessage(\KitOrigami::moduleId.'_MENU_SIDE_LEFT'),
+            'right' => Loc::getMessage(\KitOrigami::moduleId.'_MENU_SIDE_RIGHT'),
         ];
     }
 
     public static function getSliderButtons()
     {
         return [
-            'default' => Loc::getMessage(\SotbitOrigami::moduleId.'_SLIDER_DEFAULT'),
-            'square' => Loc::getMessage(\SotbitOrigami::moduleId.'_SLIDER_SQUARE'),
-            'circle' => Loc::getMessage(\SotbitOrigami::moduleId.'_SLIDER_CIRCLE'),
+            'default' => Loc::getMessage(\KitOrigami::moduleId.'_SLIDER_DEFAULT'),
+            'square' => Loc::getMessage(\KitOrigami::moduleId.'_SLIDER_SQUARE'),
+            'circle' => Loc::getMessage(\KitOrigami::moduleId.'_SLIDER_CIRCLE'),
         ];
     }
 
@@ -929,9 +929,9 @@ class Config
     public static function getPropFilterMode()
     {
         return [
-            '' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_FILTER_MODE_TEXT'),
-            'link' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_FILTER_MODE_LINK'),
-            'seometa' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_FILTER_MODE_SEOMETA'),
+            '' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_FILTER_MODE_TEXT'),
+            'link' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_FILTER_MODE_LINK'),
+            'seometa' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_FILTER_MODE_SEOMETA'),
         ];
     }
 
@@ -941,8 +941,8 @@ class Config
     public static function getPropDisplayMode()
     {
         return [
-            'border' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_DISPLAY_MODE_BORDER'),
-            'dropdown' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_DISPLAY_MODE_DROPDOWN'),
+            'border' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_DISPLAY_MODE_BORDER'),
+            'dropdown' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_DISPLAY_MODE_DROPDOWN'),
         ];
     }
 
@@ -952,9 +952,9 @@ class Config
     public static function getPropColorMode()
     {
         return [
-            //'color_square' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_COLOR_MODE_COLOR_SQUARE'),
-            'color_image' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_COLOR_MODE_COLOR_IMAGE'),
-            'offer_image' => Loc::getMessage(\SotbitOrigami::moduleId.'_PROP_COLOR_MODE_OFFER_IMAGE'),
+            //'color_square' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_COLOR_MODE_COLOR_SQUARE'),
+            'color_image' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_COLOR_MODE_COLOR_IMAGE'),
+            'offer_image' => Loc::getMessage(\KitOrigami::moduleId.'_PROP_COLOR_MODE_OFFER_IMAGE'),
         ];
     }
 
@@ -964,10 +964,10 @@ class Config
     public static function getPagination()
     {
         return [
-            'origami' => Loc::getMessage(\SotbitOrigami::moduleId.'_PAGINATION_ORIGAMI'),
-            'origami_more' => Loc::getMessage(\SotbitOrigami::moduleId.'_PAGINATION_ORIGAMI_MORE'),
-            'origami_both' => Loc::getMessage(\SotbitOrigami::moduleId.'_PAGINATION_ORIGAMI_BOTH'),
-            'origami_auto' => Loc::getMessage(\SotbitOrigami::moduleId.'_PAGINATION_ORIGAMI_AUTO'),
+            'origami' => Loc::getMessage(\KitOrigami::moduleId.'_PAGINATION_ORIGAMI'),
+            'origami_more' => Loc::getMessage(\KitOrigami::moduleId.'_PAGINATION_ORIGAMI_MORE'),
+            'origami_both' => Loc::getMessage(\KitOrigami::moduleId.'_PAGINATION_ORIGAMI_BOTH'),
+            'origami_auto' => Loc::getMessage(\KitOrigami::moduleId.'_PAGINATION_ORIGAMI_AUTO'),
         ];
     }
 
@@ -977,8 +977,8 @@ class Config
     public static function getDetailTemplates()
     {
         return [
-            '' => Loc::getMessage(\SotbitOrigami::moduleId.'_DETAIL_TEMPLATE_BASE'),
-            'NO_TABS' => Loc::getMessage(\SotbitOrigami::moduleId.'_DETAIL_TEMPLATE_NO_TABS'),
+            '' => Loc::getMessage(\KitOrigami::moduleId.'_DETAIL_TEMPLATE_BASE'),
+            'NO_TABS' => Loc::getMessage(\KitOrigami::moduleId.'_DETAIL_TEMPLATE_NO_TABS'),
         ];
     }
 
@@ -988,7 +988,7 @@ class Config
     public static function getMainDetailTemplate()
     {
         return [
-            '' => Loc::getMessage(\SotbitOrigami::moduleId.'_DETAIL_TEMPLATE_BASE'),
+            '' => Loc::getMessage(\KitOrigami::moduleId.'_DETAIL_TEMPLATE_BASE'),
         ];
     }
 
@@ -1020,10 +1020,10 @@ class Config
     public static function getResizeTypes()
     {
         return [
-            "" => Loc::getMessage(\SotbitOrigami::moduleId.'_BX_RESIZE_IMAGE_NO'),
-            BX_RESIZE_IMAGE_EXACT => Loc::getMessage(\SotbitOrigami::moduleId.'_BX_RESIZE_IMAGE_EXACT'),
-            BX_RESIZE_IMAGE_PROPORTIONAL => Loc::getMessage(\SotbitOrigami::moduleId.'_BX_RESIZE_IMAGE_PROPORTIONAL'),
-            BX_RESIZE_IMAGE_PROPORTIONAL_ALT => Loc::getMessage(\SotbitOrigami::moduleId.'_BX_RESIZE_IMAGE_PROPORTIONAL_ALT'),
+            "" => Loc::getMessage(\KitOrigami::moduleId.'_BX_RESIZE_IMAGE_NO'),
+            BX_RESIZE_IMAGE_EXACT => Loc::getMessage(\KitOrigami::moduleId.'_BX_RESIZE_IMAGE_EXACT'),
+            BX_RESIZE_IMAGE_PROPORTIONAL => Loc::getMessage(\KitOrigami::moduleId.'_BX_RESIZE_IMAGE_PROPORTIONAL'),
+            BX_RESIZE_IMAGE_PROPORTIONAL_ALT => Loc::getMessage(\KitOrigami::moduleId.'_BX_RESIZE_IMAGE_PROPORTIONAL_ALT'),
         ];
     }
 
@@ -1033,9 +1033,9 @@ class Config
     public static function getSkuDisplayTypes()
     {
         return [
-            'ENUMERATION' => Loc::getMessage(\SotbitOrigami::moduleId.'_SKU_DISPLAY_TYPE_ENUMERATION'),
-            'LIST_OF_MODIFICATIONS' => Loc::getMessage(\SotbitOrigami::moduleId.'_SKU_DISPLAY_TYPE_LIST_OF_MODIFICATIONS'),
-            'COMBINED' => Loc::getMessage(\SotbitOrigami::moduleId.'_SKU_DISPLAY_TYPE_COMBINED'),
+            'ENUMERATION' => Loc::getMessage(\KitOrigami::moduleId.'_SKU_DISPLAY_TYPE_ENUMERATION'),
+            'LIST_OF_MODIFICATIONS' => Loc::getMessage(\KitOrigami::moduleId.'_SKU_DISPLAY_TYPE_LIST_OF_MODIFICATIONS'),
+            'COMBINED' => Loc::getMessage(\KitOrigami::moduleId.'_SKU_DISPLAY_TYPE_COMBINED'),
         ];
     }
 
@@ -1045,8 +1045,8 @@ class Config
     public static function getDetailPictureDisplayTypes()
     {
         return [
-            'popup' => Loc::getMessage(\SotbitOrigami::moduleId.'_DETAIL_PICTURE_DISPLAY_TYPE_POPUP'),
-            'magnifier' => Loc::getMessage(\SotbitOrigami::moduleId.'_DETAIL_PICTURE_DISPLAY_TYPE_MAGNIFIER'),
+            'popup' => Loc::getMessage(\KitOrigami::moduleId.'_DETAIL_PICTURE_DISPLAY_TYPE_POPUP'),
+            'magnifier' => Loc::getMessage(\KitOrigami::moduleId.'_DETAIL_PICTURE_DISPLAY_TYPE_MAGNIFIER'),
         ];
     }
 
@@ -1056,21 +1056,21 @@ class Config
     public static function getDropdownSideMenuViews()
     {
         return [
-            'SIDE' => Loc::getMessage(\SotbitOrigami::moduleId.'_DROPDOWN_SIDE_MENU_VIEW_SIDE'),
-            'BOTTOM' => Loc::getMessage(\SotbitOrigami::moduleId.'_DROPDOWN_SIDE_MENU_VIEW_BOTTOM'),
+            'SIDE' => Loc::getMessage(\KitOrigami::moduleId.'_DROPDOWN_SIDE_MENU_VIEW_SIDE'),
+            'BOTTOM' => Loc::getMessage(\KitOrigami::moduleId.'_DROPDOWN_SIDE_MENU_VIEW_BOTTOM'),
         ];
     }
 
      public static function getSectionDescription()
     {
         return [
-            'ABOVE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'ABOVE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_ABOVE'),
-            'BELOW' => Loc::getMessage(\SotbitOrigami::moduleId
+            'BELOW' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_BELOW'),
-            'BOTH' => Loc::getMessage(\SotbitOrigami::moduleId
+            'BOTH' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_BOTH'),
-            'HIDE' => Loc::getMessage(\SotbitOrigami::moduleId
+            'HIDE' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_HIDE'),
         ];
     }
@@ -1078,9 +1078,9 @@ class Config
     public static function getSectionDescriptionPosition()
     {
         return [
-            'SECTION_DESC' => Loc::getMessage(\SotbitOrigami::moduleId
+            'SECTION_DESC' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_SECTION'),
-            'UF_DESCR_BOTTOM'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'UF_DESCR_BOTTOM'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_UF_DESCR_BOTTOM'),
         ];
     }
@@ -1088,11 +1088,11 @@ class Config
     public static function getDescriptionPosition()
     {
         return [
-            /*'RATHER' => Loc::getMessage(\SotbitOrigami::moduleId
+            /*'RATHER' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_POSITION_RATHER'),*/
-            'RATHER_ALL' => Loc::getMessage(\SotbitOrigami::moduleId
+            'RATHER_ALL' => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_POSITION_RATHER_ALL'),
-            'UNDER'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'UNDER'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_DESCRIPTION_POSITION_UNDER'),
         ];
     }
@@ -1100,9 +1100,9 @@ class Config
     public static function getTagTemlate()
     {
         return [
-            'ROW'   => Loc::getMessage(\SotbitOrigami::moduleId
+            'ROW'   => Loc::getMessage(\KitOrigami::moduleId
                 .'_TAG_ROW'),
-            'COLUMN' => Loc::getMessage(\SotbitOrigami::moduleId
+            'COLUMN' => Loc::getMessage(\KitOrigami::moduleId
                 .'_TAG_COLUMN'),
         ];
     }
@@ -1110,18 +1110,18 @@ class Config
     public static function getShowStockMode()
     {
         return [
-            'N' => Loc::getMessage(\SotbitOrigami::moduleId .'_SHOW_STOCK_MODE_N'),
-            'Y' => Loc::getMessage(\SotbitOrigami::moduleId .'_SHOW_STOCK_MODE_Y'),
-            'M' => Loc::getMessage(\SotbitOrigami::moduleId .'_SHOW_STOCK_MODE_M'),
+            'N' => Loc::getMessage(\KitOrigami::moduleId .'_SHOW_STOCK_MODE_N'),
+            'Y' => Loc::getMessage(\KitOrigami::moduleId .'_SHOW_STOCK_MODE_Y'),
+            'M' => Loc::getMessage(\KitOrigami::moduleId .'_SHOW_STOCK_MODE_M'),
         ];
     }
 
     public static function getPropertyGrouperType()
     {
         return [
-            'NO' => Loc::getMessage(\SotbitOrigami::moduleId .'_PROPERTY_GROUPER_NO'),
-            'GRUPPER' => Loc::getMessage(\SotbitOrigami::moduleId .'_PROPERTY_GROUPER_GRUPPER'),
-            'WEBDEBUG' => Loc::getMessage(\SotbitOrigami::moduleId .'_PROPERTY_GROUPER_WEBDEBUG'),
+            'NO' => Loc::getMessage(\KitOrigami::moduleId .'_PROPERTY_GROUPER_NO'),
+            'GRUPPER' => Loc::getMessage(\KitOrigami::moduleId .'_PROPERTY_GROUPER_GRUPPER'),
+            'WEBDEBUG' => Loc::getMessage(\KitOrigami::moduleId .'_PROPERTY_GROUPER_WEBDEBUG'),
         ];
     }
 
@@ -1139,25 +1139,25 @@ class Config
 
     public static function getImgOffer(){
         return [
-            'PRODUCT' => Loc::getMessage(\SotbitOrigami::moduleId.'_PRODUCT'),
-            'OFFER' => Loc::getMessage(\SotbitOrigami::moduleId.'_OFFER'),
+            'PRODUCT' => Loc::getMessage(\KitOrigami::moduleId.'_PRODUCT'),
+            'OFFER' => Loc::getMessage(\KitOrigami::moduleId.'_OFFER'),
         ];
     }
 
     public function getOfferNames(){
         return [
-            'OFFER_NAME' => Loc::getMessage(\SotbitOrigami::moduleId.'_OFFER_NAME'),
-            'PRODUCT_NAME' => Loc::getMessage(\SotbitOrigami::moduleId.'_PRODUCT_NAME'),
-            'PRODUCT_OFFERS_NAME' => Loc::getMessage(\SotbitOrigami::moduleId.'_PRODUCT_OFFERS_NAME'),
-            'PRODUCT_PROPS_NAME' => Loc::getMessage(\SotbitOrigami::moduleId.'_PRODUCT_PROPS_NAME'),
+            'OFFER_NAME' => Loc::getMessage(\KitOrigami::moduleId.'_OFFER_NAME'),
+            'PRODUCT_NAME' => Loc::getMessage(\KitOrigami::moduleId.'_PRODUCT_NAME'),
+            'PRODUCT_OFFERS_NAME' => Loc::getMessage(\KitOrigami::moduleId.'_PRODUCT_OFFERS_NAME'),
+            'PRODUCT_PROPS_NAME' => Loc::getMessage(\KitOrigami::moduleId.'_PRODUCT_PROPS_NAME'),
         ];
     }
     public static function getTagsPosition()
     {
         return
         [
-            'TOP' => Loc::getMessage(\SotbitOrigami::moduleId .'_TAGS_POSITION_TOP'),
-            'BOTTOM' => Loc::getMessage(\SotbitOrigami::moduleId .'_TAGS_POSITION_BOTTOM'),
+            'TOP' => Loc::getMessage(\KitOrigami::moduleId .'_TAGS_POSITION_TOP'),
+            'BOTTOM' => Loc::getMessage(\KitOrigami::moduleId .'_TAGS_POSITION_BOTTOM'),
         ];
     }
 
@@ -1165,10 +1165,10 @@ class Config
     {
         return
             [
-                '404' => Loc::getMessage(\SotbitOrigami::moduleId .'_OFFER_LANDING_404_404'),
-                'ELEMENT' => Loc::getMessage(\SotbitOrigami::moduleId .'_OFFER_LANDING_404_ELEMENT'),
-                'OFFER' => Loc::getMessage(\SotbitOrigami::moduleId .'_OFFER_LANDING_404_OFFER'),
-                'IGNORE' => Loc::getMessage(\SotbitOrigami::moduleId .'_OFFER_LANDING_404_IGNORE'),
+                '404' => Loc::getMessage(\KitOrigami::moduleId .'_OFFER_LANDING_404_404'),
+                'ELEMENT' => Loc::getMessage(\KitOrigami::moduleId .'_OFFER_LANDING_404_ELEMENT'),
+                'OFFER' => Loc::getMessage(\KitOrigami::moduleId .'_OFFER_LANDING_404_OFFER'),
+                'IGNORE' => Loc::getMessage(\KitOrigami::moduleId .'_OFFER_LANDING_404_IGNORE'),
             ];
     }
 
@@ -1176,9 +1176,9 @@ class Config
     {
         return
             [
-                'NOT_HIDE' => Loc::getMessage(\SotbitOrigami::moduleId .'_NOT_HIDE'),
-                'ANY_FILTERED_PAGE' => Loc::getMessage(\SotbitOrigami::moduleId .'_ANY_FILTERED_PAGE'),
-                'HIDE_IF_RULE_EXIST' => Loc::getMessage(\SotbitOrigami::moduleId .'_HIDE_IF_RULE_EXIST'),
+                'NOT_HIDE' => Loc::getMessage(\KitOrigami::moduleId .'_NOT_HIDE'),
+                'ANY_FILTERED_PAGE' => Loc::getMessage(\KitOrigami::moduleId .'_ANY_FILTERED_PAGE'),
+                'HIDE_IF_RULE_EXIST' => Loc::getMessage(\KitOrigami::moduleId .'_HIDE_IF_RULE_EXIST'),
             ];
     }
 

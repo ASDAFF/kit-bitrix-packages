@@ -11,7 +11,7 @@ Loc::loadMessages(__FILE__);
 	<p class="puzzle_block__title fonts__middle_title">
         <?=$arParams["TITLE"]?>
 		<a href="https://www.youtube.com/channel/<?=$arParams["CHANEL_ID"]?>" class="puzzle_block__link fonts__small_text" target="_blank">
-            <?=Loc::getMessage("SOTBIT_YOUTUBE_GOTO")?>
+            <?=Loc::getMessage("KIT_YOUTUBE_GOTO")?>
 			<i class="icon-nav_1"></i>
 		</a>
 	</p>
@@ -30,7 +30,7 @@ Loc::loadMessages(__FILE__);
                           <div class="social_block__content">
                             <p class="social_block__content_comment fonts__middle_text">' . $video["TITLE"] . '</p>
                             <p class="social_block__content_date fonts__middle_comment">' .
-                        Loc::getMessage("SOTBIT_YOUTUBE_PUBLISHED").' '.$video["DATE"] . '</p>
+                        Loc::getMessage("KIT_YOUTUBE_PUBLISHED").' '.$video["DATE"] . '</p>
                           </div>
                         </div>
                     ';
@@ -38,7 +38,7 @@ Loc::loadMessages(__FILE__);
             }
             else
             {
-                echo '<div class="col-12">'.Loc::getMessage('SOTBIT_YOUTUBE_ERROR').'</div>';
+                echo '<div class="col-12">'.Loc::getMessage('KIT_YOUTUBE_ERROR').'</div>';
             }
             ?>
 		</div>

@@ -1,5 +1,5 @@
 <?
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Новости");
 $APPLICATION->IncludeComponent(
@@ -80,7 +80,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_TEMPLATE" => "origami",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"REGION" => $_SESSION["SOTBIT_REGIONS"]["ID"],
+		"REGION" => $_SESSION["KIT_REGIONS"]["ID"],
 		"SEF_FOLDER" => "/news/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",

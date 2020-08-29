@@ -4,10 +4,10 @@ use Kit\Origami\Helper\Config;
 
 global $filterSideFilter;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     $filterSideFilter['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 $APPLICATION->ShowViewContent('blog_tags');
@@ -84,10 +84,10 @@ $bannerFilter = [
     ),
 ];
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     $bannerFilter['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 $APPLICATION->IncludeComponent(

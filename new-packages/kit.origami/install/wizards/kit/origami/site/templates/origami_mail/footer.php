@@ -6,7 +6,7 @@ global $phone;
 global $email;
 
 CModule::IncludeModule('kit.origami');
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 $vk = Option::get('VK', SITE_ID);
 $fb = Option::get('FB', SITE_ID);

@@ -1,4 +1,4 @@
-<? use Sotbit\Origami\Config\Option;
+<? use Kit\Origami\Config\Option;
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 $PREVIEW_WIDTH = intval($arParams["PREVIEW_WIDTH"]);
 if ($PREVIEW_WIDTH <= 0)
@@ -118,7 +118,7 @@ if (!empty($arResult["ELEMENTS"]) && CModule::IncludeModule("iblock"))
 	$rsElements = CIBlockElement::GetList(array(), $arFilter, false, false, $arSelect);
 	while($arElement = $rsElements->Fetch())
 	{
-	    if($arElement['PROPERTY_REGIONS_VALUE'] > 0 && $arElement['PROPERTY_REGIONS_VALUE'] != $_SESSION['SOTBIT_REGIONS']['ID'])
+	    if($arElement['PROPERTY_REGIONS_VALUE'] > 0 && $arElement['PROPERTY_REGIONS_VALUE'] != $_SESSION['KIT_REGIONS']['ID'])
         {
             continue;
         }

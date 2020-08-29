@@ -7,7 +7,7 @@ if(!\Bitrix\Main\Loader::includeModule('kit.regions')){
     return false;
 }
 
-$regions = \Sotbit\Regions\System\Location::getLocations();
+$regions = \Kit\Regions\System\Location::getLocations();
 $arResult['REGION_LIST_COUNTRIES'] = $regions['REGION_LIST_COUNTRIES'];
 
 if($arResult["PRODUCT"])

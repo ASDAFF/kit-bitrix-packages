@@ -1,13 +1,13 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $filterAdvantages;
 $filterAdvantages = ['PROPERTY_SHOW_ON_MAINPAGE_VALUE' => 'Y'];
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
+if ($useRegion && $_SESSION['KIT_REGIONS']['ID']) {
     $filterAdvantages['PROPERTY_REGIONS'] = [
         false,
-        $_SESSION['SOTBIT_REGIONS']['ID']
+        $_SESSION['KIT_REGIONS']['ID']
     ];
 }
 

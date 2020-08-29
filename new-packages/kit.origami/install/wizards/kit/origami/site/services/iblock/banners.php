@@ -7,7 +7,7 @@ if (!CModule::IncludeModule("iblock"))
 if (!CModule::IncludeModule("kit.origami"))
     return;
 
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Config\Option;
 
 if(!defined("WIZARD_SITE_ID")) return;
 if(!defined("WIZARD_SITE_DIR")) return;
@@ -235,7 +235,7 @@ if ($arSite = $dbSite->Fetch())
     $lang = $arSite["LANGUAGE_ID"];
 if (strlen($lang) <= 0)
     $lang = "ru";
-    $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["BANNERS"] = $iblockID;
+    $_SESSION['KIT_ORIGAMI_WIZARD_CHANGE']["BANNERS"] = $iblockID;
     /*
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/include/blocks/banner/content.php", array("BANNERS_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/banner/content.php", array("BANNERS_IBLOCK_ID" => $iblockID));*/
