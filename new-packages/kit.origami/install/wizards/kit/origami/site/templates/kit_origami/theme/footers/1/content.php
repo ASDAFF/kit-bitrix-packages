@@ -108,7 +108,6 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                 if(
                                     \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
                                     \SotbitOrigami::isUseRegions() &&
-                                    !\SotbitOrigami::isDemoEnd() &&
                                     is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
                                 ):
                                     $APPLICATION->IncludeComponent(
@@ -143,7 +142,6 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                             if(
                                 \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
                                 \SotbitOrigami::isUseRegions() &&
-                                !\SotbitOrigami::isDemoEnd() &&
                                 is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
                             ):
                                 $APPLICATION->IncludeComponent(
@@ -178,7 +176,6 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                             if(
                                 \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
                                 \SotbitOrigami::isUseRegions() &&
-                                !\SotbitOrigami::isDemoEnd() &&
                                 is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
                             ):
                                 $APPLICATION->IncludeComponent(

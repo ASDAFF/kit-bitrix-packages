@@ -87,14 +87,14 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                     "CHECK_DATES" => "N",
                     "SHOW_OTHERS" => "N",
                     "PAGE" => SITE_DIR."catalog/",
-                    "CATEGORY_0_TITLE" => "Òîâàðû",
+                    "CATEGORY_0_TITLE" => "Ð¢Ð¾Ð²Ð°Ñ€Ñ‹",
                     "CATEGORY_0" => array(
                         0 => "iblock_sotbit_origami_catalog",
                     ),
                     "CATEGORY_0_iblock_catalog" => array(
                         0 => Option::get("IBLOCK_ID"),
                     ),
-                    "CATEGORY_OTHERS_TITLE" => "Ïðî÷åå",
+                    "CATEGORY_OTHERS_TITLE" => "ÐŸÑ€Ð¾Ñ‡ÐµÐµ",
                     "SHOW_INPUT" => "Y",
                     "INPUT_ID" => "title-search-input",
                     "CONTAINER_ID" => "search",
@@ -121,7 +121,6 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
             if(
                 \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
                 \SotbitOrigami::isUseRegions() &&
-                !\SotbitOrigami::isDemoEnd() &&
                 is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
             ):
                 $APPLICATION->IncludeComponent(

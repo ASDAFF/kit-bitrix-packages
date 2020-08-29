@@ -20,10 +20,6 @@ try {
 } catch (\Bitrix\Main\LoaderException $e) {
     echo $e->getMessage();
 }
-if (!$moduleLoaded || \SotbitOrigami::isDemoEnd()) {
-    echo Loc::getMessage('sotbit.origami_DEMO_END');
-    return false;
-}
 
 $Site = CSite::GetByID($site)->Fetch();
 

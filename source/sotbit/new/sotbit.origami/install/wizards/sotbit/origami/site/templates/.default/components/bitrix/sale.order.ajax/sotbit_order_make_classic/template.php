@@ -3,9 +3,6 @@
 use Bitrix\Main,
 	Bitrix\Main\Localization\Loc;
 
-if(\SotbitOrigami::isDemoEnd())
-    return false;
-
 /**
  * @var array $arParams
  * @var array $arResult

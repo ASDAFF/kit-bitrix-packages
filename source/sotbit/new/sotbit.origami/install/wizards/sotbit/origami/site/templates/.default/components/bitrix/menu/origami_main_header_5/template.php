@@ -114,8 +114,7 @@ $page = $APPLICATION->GetCurPage(false);
             <ul class="menu__nav menu-nav">
                 <?if(
                     \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
-                    \SotbitOrigami::isUseRegions() &&
-                    !\SotbitOrigami::isDemoEnd()):?>
+                    \SotbitOrigami::isUseRegions()):?>
                     <li class="menu-nav__item">
                         <a class="menu-nav__item-link select-city__block__text-city__js" href="javascript:void(0);">
                             <div class="menu-nav__item-logo">
@@ -189,7 +188,6 @@ $page = $APPLICATION->GetCurPage(false);
                 if(
                     \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
                     \SotbitOrigami::isUseRegions() &&
-                    !\SotbitOrigami::isDemoEnd() &&
                     is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
                 ):
                     $APPLICATION->IncludeComponent(

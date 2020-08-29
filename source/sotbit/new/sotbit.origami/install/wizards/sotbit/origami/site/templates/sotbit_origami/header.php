@@ -16,11 +16,6 @@ catch (\Bitrix\Main\LoaderException $e)
 	echo $e->getMessage();
 }
 
-if (!$moduleLoaded || \SotbitOrigami::isDemoEnd()) {
-    echo Loc::getMessage('sotbit.origami_DEMO_END',['#MODULE#' => 'sotbit.origami']);
-    die;
-}
-
 $theme = new \Sotbit\Origami\Front\Theme();
 ?>
 <!DOCTYPE html>

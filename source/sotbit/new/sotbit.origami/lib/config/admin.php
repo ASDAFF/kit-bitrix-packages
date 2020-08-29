@@ -51,10 +51,7 @@ class Admin extends \SotbitOrigami
 			</div>
 			<?
 		}
-		if(parent::isDemoEnd())
-		{
-			return false;
-		}
+
         $tabControl = $this->getAdminTabControl();
 		global $APPLICATION;
 		if($_REQUEST['update'] == 'Y' && $_REQUEST['mid'] == parent::moduleId)

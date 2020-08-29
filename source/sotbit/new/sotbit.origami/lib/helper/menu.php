@@ -72,7 +72,7 @@ class Menu
         }
 
         $menu = [];
-        if ($moduleInclude && !\SotbitOrigami::isDemoEnd()) {
+        if ($moduleInclude) {
             if ($GLOBALS['APPLICATION']->GetGroupRight(\SotbitOrigami::moduleId)
                 >= 'R'
             ) {
