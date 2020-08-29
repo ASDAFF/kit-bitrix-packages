@@ -20,17 +20,17 @@ $buttonId = $this->randString();
     <? if (isset($arResult['MESSAGE'])): CJSCore::Init(array("popup")); ?>
         <div id="sender-subscribe-response-cont" style="display: none;">
             <div class="bx_subscribe_response_container">
-                <div class="sotbit_order__title">
+                <div class="kit_order__title">
                     <?=GetMessage('subscr_form_title')?>
                 </div>
                 <div class="popup-window-message-content">
                     <? if ($arResult['MESSAGE']['TYPE'] == 'ERROR'): ?>
                         <svg class="popup-window-icon_warning_big">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_warning_big"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_warning_big"></use>
                         </svg>
                     <? else: ?>
                         <svg class="popup-window-icon-check">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                         </svg>
                     <? endif; ?>
                     <div>
@@ -135,7 +135,7 @@ $buttonId = $this->randString();
             <button class="footer-block__follow_input_submit" id="bx_subscribe_btn_<?= $buttonId ?>"
                     title="<?= GetMessage("subscr_form_button") ?>">
                 <svg class="footer-block__follow_input_icon" width="25" height="25">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>
                 </svg>
             </button>
         </div>
@@ -253,7 +253,7 @@ $buttonId = $this->randString();
             <button class="footer-block__follow_input_submit" id="bx_subscribe_btn_<?= $buttonId ?>"
                     title="<?= GetMessage("subscr_form_button") ?>">
                 <svg class="footer-block__follow_input_icon" width="25" height="25">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>
                 </svg>
             </button>
         </div>

@@ -1,26 +1,26 @@
 <?
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Config\Option;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Config\Option;
+use Kit\Origami\Helper\Config;
 
-class SotbitOrigami
+class KitOrigami
 {
-    const moduleId = 'sotbit.origami';
+    const moduleId = 'kit.origami';
     const blockDir = SITE_DIR . 'include/blocks';
-    const scssDir = '/local/templates/sotbit_origami/assets/scss';
-    const defaultTheme = '/local/templates/sotbit_origami/assets/css';
-    const customTheme = '/local/templates/sotbit_origami/assets/themes/custom';
-    const headersDir = '/local/templates/sotbit_origami/theme/headers';
-    const footersDir = '/local/templates/sotbit_origami/theme/footers';
-    const contactsDir = '/local/templates/sotbit_origami/theme/contacts';
-    const promotionsDir = '/local/templates/sotbit_origami/theme/promotions';
-    const blogDir = '/local/templates/sotbit_origami/theme/blog';
-    const ordersDir = '/local/templates/sotbit_origami/theme/orders';
-    const filtersDir = '/local/templates/sotbit_origami/theme/filters';
-    const detailsDir = '/local/templates/sotbit_origami/theme/details';
-    const chunksDir = '/local/templates/sotbit_origami/theme/chunks';
-    const templateDir = '/local/templates/sotbit_origami';
-    const sectionRootTemplateDir = '/local/templates/sotbit_origami/theme/category_root';
+    const scssDir = '/local/templates/kit_origami/assets/scss';
+    const defaultTheme = '/local/templates/kit_origami/assets/css';
+    const customTheme = '/local/templates/kit_origami/assets/themes/custom';
+    const headersDir = '/local/templates/kit_origami/theme/headers';
+    const footersDir = '/local/templates/kit_origami/theme/footers';
+    const contactsDir = '/local/templates/kit_origami/theme/contacts';
+    const promotionsDir = '/local/templates/kit_origami/theme/promotions';
+    const blogDir = '/local/templates/kit_origami/theme/blog';
+    const ordersDir = '/local/templates/kit_origami/theme/orders';
+    const filtersDir = '/local/templates/kit_origami/theme/filters';
+    const detailsDir = '/local/templates/kit_origami/theme/details';
+    const chunksDir = '/local/templates/kit_origami/theme/chunks';
+    const templateDir = '/local/templates/kit_origami';
+    const sectionRootTemplateDir = '/local/templates/kit_origami/theme/category_root';
     public static $_1258532776 = 0;
     public static $_1227326863 = false;
     public static $_140594632 = false;
@@ -37,9 +37,9 @@ class SotbitOrigami
     public static function genTheme($_1025411178 = [], $_910798875 = '')
     {
 
-        require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . \SotbitOrigami::moduleId . '/classes/scss.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . \KitOrigami::moduleId . '/classes/scss.php';
         $_1420397029 = new scssc();
-        $_117692537 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \SotbitOrigami::scssDir . '/variables.scss');
+        $_117692537 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir . '/variables.scss');
         foreach ($_1025411178 as $_1187391137 => $_1156836584) {
             switch ($_1187391137) {
                 case 'COLOR_BASE':
@@ -58,12 +58,12 @@ class SotbitOrigami
                     break;
             }
         }
-        $_1745162285 = scandir($_SERVER['DOCUMENT_ROOT'] . \SotbitOrigami::scssDir);
+        $_1745162285 = scandir($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir);
         foreach ($_1745162285 as $_113718537) {
             if (in_array($_113718537, ['.', '..', 'variables.scss',]) || strpos($_113718537, '.scss') === false) {
                 continue;
             }
-            $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SotbitOrigami::scssDir . '/' . $_113718537);
+            $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $_113718537);
             $_449085564 = $_1420397029->compile($_117692537 . $_143942720);
             if (!is_dir($_SERVER['DOCUMENT_ROOT'] . $_910798875)) {
                 mkdir($_SERVER['DOCUMENT_ROOT'] . $_910798875);
@@ -80,7 +80,7 @@ class SotbitOrigami
             echo $_SESSION['SOTBIT_REGIONS']['UF_ADDRESS'];
         } else {
             global $APPLICATION;
-            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/sotbit_origami/contacts_address.php',]);
+            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_address.php',]);
         }
     }
 
@@ -119,10 +119,10 @@ class SotbitOrigami
                 echo '' . self::showDigitalPhone($_SESSION['SOTBIT_REGIONS']['UF_PHONE']) . '" class="' . $_171918145 . '">' . $_SESSION['SOTBIT_REGIONS']['UF_PHONE'] . '';
             }
         } else {
-            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/sotbit_origami/contacts_phone.php');
+            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
             echo '' . $_171918145 . '" href="tel:' . self::showDigitalPhone($_276922068) . '">';
             global $APPLICATION;
-            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/sotbit_origami/contacts_phone.php',]);
+            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_phone.php',]);
             echo '';
         }
     }
@@ -132,10 +132,10 @@ class SotbitOrigami
         if (self::isUseRegions() && $_SESSION["SOTBIT_REGIONS"]["UF_PHONE"]) {
             self::showDropDownBlock($_SESSION["SOTBIT_REGIONS"]["UF_PHONE"], $_1334522753, $_1592436967, $_1313454871, "tel:");
         } else {
-            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/sotbit_origami/contacts_phone.php');
+            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
             echo '' . $_1334522753 . '">';
             global $APPLICATION;
-            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/sotbit_origami/contacts_phone.php',]);
+            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_phone.php',]);
             echo '';
         }
     }
@@ -145,10 +145,10 @@ class SotbitOrigami
         if (self::isUseRegions() && $_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"]) {
             self::showDropDownBlock($_SESSION["SOTBIT_REGIONS"]["UF_EMAIL"], $_1334522753, $_1592436967, $_1313454871, "mailto:");
         } else {
-            $_410007577 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/sotbit_origami/contacts_email.php');
+            $_410007577 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
             echo '' . $_1334522753 . '">';
             global $APPLICATION;
-            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/sotbit_origami/contacts_email.php',]);
+            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_email.php',]);
             echo '';
         }
     }
@@ -200,7 +200,7 @@ class SotbitOrigami
     public static function isUseRegions($_14188243 = SITE_ID)
     {
 
-        if (Loader::includeModule('sotbit.regions')/* && Config::get('USE_REGIONS') == 'Y'*/) {
+        if (Loader::includeModule('kit.regions')/* && Config::get('USE_REGIONS') == 'Y'*/) {
             return true;
         } else {
             return false;
@@ -244,7 +244,7 @@ class SotbitOrigami
             }
         }
         $_420697642 = [];
-        if (\SotbitOrigami::isUseRegions()) {
+        if (\KitOrigami::isUseRegions()) {
             if ($_SESSION['SOTBIT_REGIONS']['PRICE_CODE']) {
                 $_420697642 = $_SESSION['SOTBIT_REGIONS']['PRICE_CODE'];
             }
@@ -601,7 +601,7 @@ class SotbitOrigami
     {
         if (!$_1864100049) $_252352283 = Config::get('IBLOCK_ID');
         $_110167465 = new \CPHPCache();
-        if ($_110167465->InitCache(36000, serialize(array($_1864100049)), '/sotbit.origami/iblock_offer')) {
+        if ($_110167465->InitCache(36000, serialize(array($_1864100049)), '/kit.origami/iblock_offer')) {
             $_1704156904 = $_110167465->GetVars();
         } elseif ($_110167465->StartDataCache()) {
             $_1704156904 = CCatalogSKU::GetInfoByProductIBlock($_252352283);
@@ -653,10 +653,10 @@ class SotbitOrigami
             } elseif ($_1851368466['DETAIL_PICTURE']) {
                 array_unshift($_1851368466['MORE_PHOTO'], $_1851368466['DETAIL_PICTURE']);
             }
-            $_1475010966 = \Sotbit\Origami\Helper\Color::getInstance(SITE_ID);
+            $_1475010966 = \Kit\Origami\Helper\Color::getInstance(SITE_ID);
             if ($type == 'preview') $_214952677 = $_1475010966->findColors($_1851368466['MORE_PHOTO'], false); else $_214952677 = $_1475010966->findColors($_1851368466['MORE_PHOTO'], true);
             if ($_214952677) {
-                $_102239898 = \Sotbit\Origami\Helper\Config::get('COLOR');
+                $_102239898 = \Kit\Origami\Helper\Config::get('COLOR');
                 foreach ($_1851368466['OFFERS'] as &$_911141999) {
                     $_399380824 = $_911141999['PROPERTIES'][$_102239898]['VALUE'];
                     if ($_399380824 && $_214952677[$_399380824]) {
@@ -751,7 +751,7 @@ class SotbitOrigami
             if (is_dir($_617195126 . '/' . $_286888804) && !in_array($_286888804, ['.', '..', 'lang'])) {
                 $_205907113['CONTENT'] = file_get_contents($_617195126 . '/' . $_286888804 . '/content.php');
                 $_205907113['CODE'] = $_286888804;
-                $_205907113['PREVIEW'] = \SotbitOrigami::blockDir . '/' . $_286888804 . '/preview.jpg';
+                $_205907113['PREVIEW'] = \KitOrigami::blockDir . '/' . $_286888804 . '/preview.jpg';
                 $_205907113['SETTINGS'] = include $_617195126 . '/' . $_286888804 . '/settings.php';
                 $_711692109 = $_205907113['SETTINGS']['block']['section'];
                 if (!in_array($_711692109, array_keys($_1080113230))) {
@@ -770,23 +770,23 @@ class SotbitOrigami
     public static function FrontUser()
     {
 
-        $_1028488268 = new \Sotbit\Origami\Front\User(SITE_ID);
+        $_1028488268 = new \Kit\Origami\Front\User(SITE_ID);
         return $_1028488268;
     }
 
     public static function ClearTmp($_29826423 = '')
     {
         if (!$_29826423) {
-            $_29826423 = $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/sotbit_origami';
+            $_29826423 = $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/kit_origami';
         }
         $_1745162285 = glob($_29826423 . '/*');
         foreach ($_1745162285 as $_113718537) {
-            is_dir($_113718537) ? \SotbitOrigami::ClearTmp($_113718537) : unlink($_113718537);
+            is_dir($_113718537) ? \KitOrigami::ClearTmp($_113718537) : unlink($_113718537);
         }
-        if ($_29826423 != $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/sotbit_origami') {
+        if ($_29826423 != $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/kit_origami') {
             rmdir($_29826423);
         }
-        return 'SotbitOrigami::ClearTmp();';
+        return 'KitOrigami::ClearTmp();';
     }
 
     public static function FormatFileSize($_2038695769, $_354791801 = 2)
@@ -798,7 +798,7 @@ class SotbitOrigami
 
     public static function GetComponentPrices($_65703936 = [])
     {
-        if (\SotbitOrigami::isUseRegions()) {
+        if (\KitOrigami::isUseRegions()) {
             if ($_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"]) {
                 $_65703936 = $_SESSION["SOTBIT_REGIONS"]["PRICE_CODE"];
             }

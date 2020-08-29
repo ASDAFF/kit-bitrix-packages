@@ -12,7 +12,7 @@
     let popupResizeableContent = wrapper.querySelector(".popup_resizeable_content"),
         popupWindow = wrapper.querySelector(".popup-window"),
         popupContent = wrapper.querySelector(".popup-content"),
-        popupTitle = wrapper.querySelector(".sotbit_order_phone__title"),
+        popupTitle = wrapper.querySelector(".kit_order_phone__title"),
         submitBtn = wrapper.querySelector(".popup-window-submit_button");
 
     resizePopupContent();

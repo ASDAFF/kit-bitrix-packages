@@ -19,7 +19,7 @@ if (isset($_REQUEST['siteTemplate'])) {
 require($_SERVER["DOCUMENT_ROOT"]
     ."/bitrix/modules/main/include/prolog_before.php");
 
-if (!Loader::includeModule('sotbit.origami')) {
+if (!Loader::includeModule('kit.origami')) {
     return false;
 }
 

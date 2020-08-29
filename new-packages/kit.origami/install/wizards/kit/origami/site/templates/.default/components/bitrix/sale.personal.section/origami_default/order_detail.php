@@ -41,7 +41,7 @@ foreach($arParams as $key => $val)
 
 $APPLICATION->IncludeComponent(
 	"bitrix:sale.personal.order.detail",
-	"sotbit_order_detail",
+	"kit_order_detail",
 	$arDetParams,
 	$component
 );

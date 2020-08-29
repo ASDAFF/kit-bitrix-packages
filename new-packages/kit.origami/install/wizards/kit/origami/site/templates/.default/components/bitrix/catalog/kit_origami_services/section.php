@@ -25,10 +25,10 @@ if($request->get('ajaxFilter') == 'Y')
 
 }
 
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 
 $this->setFrameMode(true);
 
@@ -158,36 +158,36 @@ if ($isFilter)
 
 include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_horizontal.php");
 
-global $sotbitSeoMetaTitle;
-global $sotbitSeoMetaKeywords;
-global $sotbitSeoMetaDescription;
-global $sotbitSeoMetaH1;
+global $kitSeoMetaTitle;
+global $kitSeoMetaKeywords;
+global $kitSeoMetaDescription;
+global $kitSeoMetaH1;
 
-if(isset( $sotbitSeoMetaTitle) && !empty($sotbitSeoMetaTitle))
+if(isset( $kitSeoMetaTitle) && !empty($kitSeoMetaTitle))
 {
-    $APPLICATION->SetPageProperty('title', $sotbitSeoMetaTitle);
+    $APPLICATION->SetPageProperty('title', $kitSeoMetaTitle);
 }
-if( isset($sotbitSeoMetaKeywords) && !empty($sotbitSeoMetaKeywords))
+if( isset($kitSeoMetaKeywords) && !empty($kitSeoMetaKeywords))
 {
-    $APPLICATION->SetPageProperty('keywords', $sotbitSeoMetaKeywords);
+    $APPLICATION->SetPageProperty('keywords', $kitSeoMetaKeywords);
 }
-if( isset($sotbitSeoMetaDescription) && !empty($sotbitSeoMetaDescription))
+if( isset($kitSeoMetaDescription) && !empty($kitSeoMetaDescription))
 {
-    $APPLICATION->SetPageProperty('description', $sotbitSeoMetaDescription);
+    $APPLICATION->SetPageProperty('description', $kitSeoMetaDescription);
 }
-if( isset($sotbitSeoMetaH1) && !empty($sotbitSeoMetaH1))
+if( isset($kitSeoMetaH1) && !empty($kitSeoMetaH1))
 {
-    $APPLICATION->SetTitle($sotbitSeoMetaH1);
-}
-
-global $sotbitSeoMetaBreadcrumbLink;
-global $sotbitSeoMetaBreadcrumbTitle;
-if( isset( $sotbitSeoMetaBreadcrumbTitle ) && !empty( $sotbitSeoMetaBreadcrumbTitle ) )
-{
-    $APPLICATION->AddChainItem( $sotbitSeoMetaBreadcrumbTitle, $sotbitSeoMetaBreadcrumbLink );
+    $APPLICATION->SetTitle($kitSeoMetaH1);
 }
 
-if(Bitrix\Main\Loader::includeModule('sotbit.opengraph'))
+global $kitSeoMetaBreadcrumbLink;
+global $kitSeoMetaBreadcrumbTitle;
+if( isset( $kitSeoMetaBreadcrumbTitle ) && !empty( $kitSeoMetaBreadcrumbTitle ) )
+{
+    $APPLICATION->AddChainItem( $kitSeoMetaBreadcrumbTitle, $kitSeoMetaBreadcrumbLink );
+}
+
+if(Bitrix\Main\Loader::includeModule('kit.opengraph'))
 {
     OpengraphMain::setImageMeta('og:image', $ar_section["PICTURE"]["SRC"]);
     OpengraphMain::setImageMeta('twitter:image', $ar_section["PICTURE"]["SRC"]);

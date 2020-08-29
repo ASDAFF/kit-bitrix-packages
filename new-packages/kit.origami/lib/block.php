@@ -226,7 +226,7 @@ class Block
 
 					$.ajax({
 								type: "POST",
-								url: "/local/components/sotbit/block.include/ajax.php",
+								url: "/local/components/kit/block.include/ajax.php",
 								async:false,
 								data: {
 									"id": "'.$this->getId().'",
@@ -297,7 +297,7 @@ class Block
 
                                $.ajax({
                                     type: "POST",
-                                    url: "/local/components/sotbit/block.include/ajax.php",
+                                    url: "/local/components/kit/block.include/ajax.php",
                                     async:false,
                                     data: {
                                         "id": "'.$this->getId().'",
@@ -352,7 +352,7 @@ class Block
                         array(
                             "INPUT_NAME"=>"BACKGROUND_IMAGE_".$this->getId(),
                             "MULTIPLE"=>"N",
-                            "MODULE_ID"=>"sotbit.origami",
+                            "MODULE_ID"=>"kit.origami",
                             "MAX_FILE_SIZE"=>"2097152",
                             "ALLOW_UPLOAD"=>"I",
                             "ALLOW_UPLOAD_EXT"=>"",
@@ -380,7 +380,7 @@ class Block
 
 	                        $.ajax({
 								type: "POST",
-								url: "/local/components/sotbit/block.include/ajax.php",
+								url: "/local/components/kit/block.include/ajax.php",
 								async:false,
 								data: {
 									"id": "'.$this->getId().'",
@@ -496,7 +496,7 @@ class Block
 
                             $.ajax({
 								type: "POST",
-								url: "/local/components/sotbit/block.include/ajax.php",
+								url: "/local/components/kit/block.include/ajax.php",
 								async:false,
 								data: {
 									"id": "'.$this->getId().'",
@@ -529,7 +529,7 @@ class Block
                         $( "#but_'.$back.$this->getId().'").click(function(){
                             $.ajax({
 								type: "POST",
-								url: "/local/components/sotbit/block.include/ajax.php",
+								url: "/local/components/kit/block.include/ajax.php",
 								async:false,
 								data: {
 									"id": "'.$this->getId().'",

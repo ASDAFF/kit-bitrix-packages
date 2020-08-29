@@ -7,7 +7,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 }
 $this->setFrameMode(true);
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/sotbit_origami_brands/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/kit_origami_brands/style.css");
 
 global ${$arParams['FILTER_NAME']};
 

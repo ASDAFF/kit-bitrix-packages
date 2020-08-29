@@ -9,7 +9,7 @@ $APPLICATION->IncludeComponent(
     [
         'AREA_FILE_SHOW' => 'file',
         'PATH' => SITE_DIR
-            . "include/sotbit_origami/files/origami_subscribe/template.php",
+            . "include/kit_origami/files/origami_subscribe/template.php",
         'AREA_FILE_RECURSIVE' => 'N',
         'EDIT_MODE' => 'html',
         'URL_PAGE' => $_POST['url']
@@ -17,4 +17,4 @@ $APPLICATION->IncludeComponent(
     false,
     ['HIDE_ICONS' => 'Y']
 );
-//W:\domains\origami.local\include\sotbit_origami\files\origami_subscribe\template.php
+//W:\domains\origami.local\include\kit_origami\files\origami_subscribe\template.php

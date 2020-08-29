@@ -2,8 +2,8 @@
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config;
-use Sotbit\Origami\Helper;
+use Kit\Origami\Config;
+use Kit\Origami\Helper;
 
 require_once($_SERVER["DOCUMENT_ROOT"]
     ."/bitrix/modules/main/include/prolog_admin_before.php");
@@ -16,7 +16,7 @@ if ($APPLICATION->GetGroupRight("main") < "R") {
 }
 $moduleLoaded = false;
 try {
-    $moduleLoaded = Loader::includeModule('sotbit.origami');
+    $moduleLoaded = Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
     echo $e->getMessage();
 }
@@ -24,20 +24,20 @@ try {
 $Site = CSite::GetByID($site)->Fetch();
 
 $css = new Config\Widgets\Code('CUSTOM_CSS');
-$css->setPath($Site['DIR'].'include/sotbit_origami/files/custom_style.css');
+$css->setPath($Site['DIR'].'include/kit_origami/files/custom_style.css');
 $scss = new Config\Widgets\Code('CUSTOM_SCSS');
-$scss->setPath('/local/templates/sotbit_origami/assets/scss/custom.scss');
+$scss->setPath('/local/templates/kit_origami/assets/scss/custom.scss');
 $js = new Config\Widgets\Code('CUSTOM_JS');
-$js->setPath($Site['DIR'].'include/sotbit_origami/files/custom.js');
+$js->setPath($Site['DIR'].'include/kit_origami/files/custom.js');
 $metric = new Config\Widgets\Code('CUSTOM_METRIC');
-$metric->setPath($Site['DIR'].'include/sotbit_origami/files/metric.php');
+$metric->setPath($Site['DIR'].'include/kit_origami/files/metric.php');
 
 /* css-inline */
 $inlineCss = new Config\Widgets\CheckBox('INLINE_CSS_CHECKBOX');
 $excludeFileSize = new Config\Widgets\Str('INLINE_CSS_EXCLUDE_FILE');
-$inlineCssAdmin = new Config\Widgets\CheckBox('INLINE_CSS_ADMIN_CHECKBOX', array('NOTE'=>Loc::getMessage('sotbit.origami_INLINE_CSS_FIRST_MSG')));
+$inlineCssAdmin = new Config\Widgets\CheckBox('INLINE_CSS_ADMIN_CHECKBOX', array('NOTE'=>Loc::getMessage('kit.origami_INLINE_CSS_FIRST_MSG')));
 $inlineCssAdmin->setCurrentValue(Helper\Config::getInlineCssAdmin());
-$removeKernelCssJs = new Config\Widgets\CheckBox('INLINE_CSS_REMOVE_KERNEL_CSS_JS', array('NOTE'=>Loc::getMessage('sotbit.origami_INLINE_CSS_SECOND_MSG')));
+$removeKernelCssJs = new Config\Widgets\CheckBox('INLINE_CSS_REMOVE_KERNEL_CSS_JS', array('NOTE'=>Loc::getMessage('kit.origami_INLINE_CSS_SECOND_MSG')));
 /* \css-inline */
 
 $Group = new Config\Group('MAIN_SETTINGS');

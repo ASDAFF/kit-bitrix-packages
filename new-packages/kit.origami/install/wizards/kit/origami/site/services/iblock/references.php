@@ -25,7 +25,7 @@ if (!CModule::IncludeModule("highloadblock"))
     return;
 
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
     return;
 
 

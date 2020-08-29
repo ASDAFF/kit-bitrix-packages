@@ -3,14 +3,14 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Localization\Loc;
 
-global $sotbitSeoMetaH1;
+global $kitSeoMetaH1;
 
 ?>
 
 <div class="search-page">
     <div class="catalog-search-title">
-        <? if (\Bitrix\Main\Loader::includeModule('sotbit.seosearch') && $sotbitSeoMetaH1)
-            echo $sotbitSeoMetaH1;
+        <? if (\Bitrix\Main\Loader::includeModule('kit.seosearch') && $kitSeoMetaH1)
+            echo $kitSeoMetaH1;
         else {
             echo Loc::getMessage("CATALOG_SEARCH_TITLE") . "" .
                 $arResult["REQUEST"]["~QUERY"] . "" .
@@ -54,7 +54,7 @@ global $sotbitSeoMetaH1;
                     <?= Loc::getMessage("SEARCH_GO") ?>
                 </span>
                 <svg class="icon-search" width="21" height="21">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
                 </svg>
             </button>
         </div>
@@ -67,7 +67,7 @@ global $sotbitSeoMetaH1;
             <div class="icon_empty_search_result">
                 <svg class="site-navigation__item-icon">
                     <use
-                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_empty_search_result"></use>
+                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_empty_search_result"></use>
                 </svg>
             </div>
             <div class="text_block">

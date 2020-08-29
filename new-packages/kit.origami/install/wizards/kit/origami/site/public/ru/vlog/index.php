@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Влог");
 
 $APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"sotbit_origami_vlog",
+	"kit_origami_vlog",
 	array(
         "IBLOCK_TYPE" => Config::get("IBLOCK_TYPE_VLOG"),
         "IBLOCK_ID" => Config::get("IBLOCK_ID_VLOG"),
@@ -77,7 +77,7 @@ $APPLICATION->IncludeComponent(
 			4 => "",
 		),
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_vlog",
+		"COMPONENT_TEMPLATE" => "kit_origami_vlog",
 		"FILTER_FIELD_CODE" => array(
 			0 => "",
 			1 => "",

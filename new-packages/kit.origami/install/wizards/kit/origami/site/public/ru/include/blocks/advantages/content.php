@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $filterAdvantages;
 $filterAdvantages = ['PROPERTY_SHOW_ON_MAINPAGE_VALUE' => 'Y'];
@@ -74,7 +74,7 @@ $APPLICATION->IncludeComponent(
         "SORT_ORDER1"                     => "DESC",
         "SORT_ORDER2"                     => "ASC",
         "STRICT_SECTION_CHECK"            => "N",
-        "COMPONENT_TEMPLATE"              => "sotbit_advantages_simple",
+        "COMPONENT_TEMPLATE"              => "kit_advantages_simple",
     ],
     false
 );

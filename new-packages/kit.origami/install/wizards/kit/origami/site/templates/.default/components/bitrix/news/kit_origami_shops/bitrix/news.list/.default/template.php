@@ -68,7 +68,7 @@ if($arResult['SECTIONS'] && $arResult['ITEMS'])
 								<div class="shops__info">
 									<div class="shops__info_name">
                                         <svg class="contacts_icon_location" width="12" height="12">
-                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location_filled"></use>
+                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location_filled"></use>
                                         </svg>
 										<!-- <i class="fas fa-map-marker-alt"></i> -->
                                         <?=$item['PROPERTIES']['ADDRESS']['VALUE']?>
@@ -89,7 +89,7 @@ if($arResult['SECTIONS'] && $arResult['ITEMS'])
 	                                	?>
 										<div class="shops__info_metro_row">
                                             <svg class="contacts_icon_metro" width="14" height="14">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_metro"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_metro"></use>
                                             </svg>
 											<!-- <i class="icon-moscow-metro-logo"></i> -->
                                             <?=$metro?>
@@ -110,7 +110,7 @@ if($arResult['SECTIONS'] && $arResult['ITEMS'])
                                         ?>
 										<div class="shops__info_phone_row">
                                             <svg class="contacts_phone-icon" width="12" height="12">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                                             </svg>
 											<!-- <i class="fas fa-phone"></i> -->
                                             <?=$phone?>

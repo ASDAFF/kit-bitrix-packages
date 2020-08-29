@@ -98,7 +98,7 @@ if ($elementId > 0) {
 
     if ($showCrosssell == 'Y') {
         $APPLICATION->IncludeComponent(
-	"sotbit:crosssell.crosssell.list", 
+	"kit:crosssell.crosssell.list", 
 	"origami_default", 
 	array(
 		"ACTION_VARIABLE" => $arParams["ACTION_VARIABLE"],
@@ -134,7 +134,7 @@ if ($elementId > 0) {
 		"FILTER_NAME" => "arrFilter",
 		"HIDE_NOT_AVAILABLE" => "N",
 		"HIDE_NOT_AVAILABLE_OFFERS" => "N",
-		"IBLOCK_TYPE" => "sotbit_origami_catalog",
+		"IBLOCK_TYPE" => "kit_origami_catalog",
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"LINE_ELEMENT_COUNT" => "5",
@@ -211,7 +211,7 @@ if ($elementId > 0) {
 $componentElementParams += array('TEMPLATE_NAMED' => $template);
 
 $APPLICATION->IncludeComponent(
-    'sotbit:catalog.bitrix.resale',
+    'kit:catalog.bitrix.resale',
     'origami_default',
     $componentElementParams,
     $component

@@ -15,7 +15,7 @@ if(!is_integer($productsNumber))
     $productsNumber = 0;
 
 $APPLICATION->IncludeComponent(
-    "sotbit:crosssell.collection",
+    "kit:crosssell.collection",
     "origami_default",
     Array(
         "ACTION_VARIABLE" => "action",

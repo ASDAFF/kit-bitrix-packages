@@ -4444,7 +4444,7 @@ input::-webkit-inner-spin-button {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 20px;
-  background-image: url("/local/templates/sotbit_origami/assets/img/svg/icon_no_photo.svg");
+  background-image: url("/local/templates/kit_origami/assets/img/svg/icon_no_photo.svg");
   background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -5030,7 +5030,7 @@ p.detailed-tabs__availability-time-item {
   stroke: #fff; }
 
 .btn-round-menu-open.detail-menu-open {
-  background-image: url("/local/templates/sotbit_origami/assets/img/svg/icon_mobile_tabs_filled.svg"); }
+  background-image: url("/local/templates/kit_origami/assets/img/svg/icon_mobile_tabs_filled.svg"); }
 
 .product_detail__nav-items {
   display: -webkit-box;

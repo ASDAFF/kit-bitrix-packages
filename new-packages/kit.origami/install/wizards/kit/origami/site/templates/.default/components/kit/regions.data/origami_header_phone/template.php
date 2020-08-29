@@ -6,7 +6,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
     <div class="container_menu_mobile__phone_block">
         <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>." class="header_top_block__phone__number origami_icons_button">
             <svg class="" width="12" height="16">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
             </svg>
             <?=$phone?>
         </a>
@@ -19,7 +19,7 @@ if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE']) && count($arResult['FIELDS
                     }?>
                     <a href="tel:<?=\SotbitOrigami::showDigitalPhone($phone)?>" class="header_top_block__phone__number origami_icons_button">
                         <svg class="" width="12" height="16">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                         </svg>
                         <?=$phone?>
                     </a>

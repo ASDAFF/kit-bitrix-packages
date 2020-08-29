@@ -92,10 +92,10 @@ if ($isFilter)
         $arCurSection = array();
 }
 //*******************
-if (\Bitrix\Main\Loader::includeModule('sotbit.seosearch'))
+if (\Bitrix\Main\Loader::includeModule('kit.seosearch'))
 {
     $APPLICATION->IncludeComponent(
-        "sotbit:seo.search",
+        "kit:seo.search",
         "",
         Array(
             "CACHE_TYPE" => $arParams["CACHE_TYPE"],
@@ -211,7 +211,7 @@ if (!empty($arElements) && is_array($arElements))
     if($arParams['FILTER_TEMPLATE'] == 'VERTICAL')
     {
         $APPLICATION->IncludeComponent(
-            "sotbit:catalog.smart.filter",
+            "kit:catalog.smart.filter",
             "origami_vertical",
             [
                 "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
@@ -245,9 +245,9 @@ if (!empty($arElements) && is_array($arElements))
             ['HIDE_ICONS' => 'Y']
         );
 
-        if(\Bitrix\Main\Loader::includeModule('sotbit.seosearch'))
+        if(\Bitrix\Main\Loader::includeModule('kit.seosearch'))
         {
-            $APPLICATION->ShowViewContent('sotbit_seosearch_add_desc');
+            $APPLICATION->ShowViewContent('kit_seosearch_add_desc');
         }
 
 
@@ -276,7 +276,7 @@ if (!empty($arElements) && is_array($arElements))
         if($arParams['FILTER_TEMPLATE'] == 'HORIZONTAL')
         {
             $APPLICATION->IncludeComponent(
-                "sotbit:catalog.smart.filter",
+                "kit:catalog.smart.filter",
                 "origami_horizontal",
                 [
                     "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
@@ -310,10 +310,10 @@ if (!empty($arElements) && is_array($arElements))
             );
         }
 
-        if(\Bitrix\Main\Loader::includeModule('sotbit.seosearch'))
+        if(\Bitrix\Main\Loader::includeModule('kit.seosearch'))
         {
             $APPLICATION->IncludeComponent(
-                "sotbit:seo.search.tags",
+                "kit:seo.search.tags",
                 "",
                 Array(
                     "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
@@ -328,7 +328,7 @@ if (!empty($arElements) && is_array($arElements))
                 )
             );
 
-            $APPLICATION->ShowViewContent('sotbit_seosearch_top_desc');
+            $APPLICATION->ShowViewContent('kit_seosearch_top_desc');
         }
         ?>
 
@@ -336,7 +336,7 @@ if (!empty($arElements) && is_array($arElements))
         <div class="panel_filter_sort">
             <div class="mobile_filter_btn">
                  <svg class="icon-filter-mobile" width="12" height="12">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
                  </svg>
                 <span><?=Loc::getMessage("MOBILE_FILTER_TITLE")?></span>
                 <span class="mobile_filter-selected_number"></span>
@@ -356,9 +356,9 @@ if (!empty($arElements) && is_array($arElements))
                             };
              </script>
             <?
-            if(Loader::includeModule('sotbit.origami')){
+            if(Loader::includeModule('kit.origami')){
                 $sort = array();
-                $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/sotbit_origami/sort/sort.php", Array(), Array());
+                $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/kit_origami/sort/sort.php", Array(), Array());
             }
         ?>
         </div>
@@ -484,9 +484,9 @@ if (!empty($arElements) && is_array($arElements))
             array('HIDE_ICONS' => 'Y')
         );
 
-        if(\Bitrix\Main\Loader::includeModule('sotbit.seosearch'))
+        if(\Bitrix\Main\Loader::includeModule('kit.seosearch'))
         {
-            $APPLICATION->ShowViewContent('sotbit_seosearch_bottom_desc');
+            $APPLICATION->ShowViewContent('kit_seosearch_bottom_desc');
         }
         ?>
 

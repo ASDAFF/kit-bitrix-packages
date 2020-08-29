@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
 try {
-    \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    \Bitrix\Main\Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
     print_r($e->getMessage());
 }

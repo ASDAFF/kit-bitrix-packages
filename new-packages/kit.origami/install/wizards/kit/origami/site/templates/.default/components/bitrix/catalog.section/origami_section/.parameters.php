@@ -13,7 +13,7 @@ use Bitrix\Main\Web\Json;
 use Sotbit\Origami\Config;
 use Sotbit\Origami\Helper;
 
-if (!Loader::includeModule('iblock') || !Loader::includeModule('sotbit.origami'))
+if (!Loader::includeModule('iblock') || !Loader::includeModule('kit.origami'))
 	return;
 
 $boolCatalog = Loader::includeModule('catalog');

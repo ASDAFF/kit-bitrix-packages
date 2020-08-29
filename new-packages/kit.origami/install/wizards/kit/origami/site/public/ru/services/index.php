@@ -6,7 +6,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог услуг");
 $APPLICATION->IncludeComponent(
 	"bitrix:catalog",
-	"sotbit_origami_services",
+	"kit_origami_services",
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "Y",
@@ -45,7 +45,7 @@ $APPLICATION->IncludeComponent(
 		"COMPARE_POSITION_FIXED" => "Y",
 		"COMPARE_PROPERTY_CODE" => "",
 		"COMPATIBLE_MODE" => "N",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_services",
+		"COMPONENT_TEMPLATE" => "kit_origami_services",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"CONVERT_CURRENCY" => "N",

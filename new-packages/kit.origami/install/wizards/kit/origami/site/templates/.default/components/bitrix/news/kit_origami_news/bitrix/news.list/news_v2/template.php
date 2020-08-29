@@ -54,7 +54,7 @@ $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
                             <? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]): ?>
                                 <span class="news-list__content-info-date">
                                      <svg class="news-list__content-info-icon" width="11" height="11">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                                     </svg>
                                     <span><?= $arItem['DISPLAY_ACTIVE_FROM'] ?></span>
                                 </span>
@@ -62,14 +62,14 @@ $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 
                         <span class="news-list__content-info-comments border-between" style="display: none">
                                  <svg class="news-list__content-info-icon" width="12" height="11">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_comment"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_comment"></use>
                                 </svg>
                                 <span>100</span>
                             </span>
 
                         <span class="news-list__content-info-views" style="display: none">
                                  <svg class="news-list__content-info-icon" width="16" height="9">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_eye"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_eye"></use>
                                 </svg>
                                 <span>75</span>
                             </span>

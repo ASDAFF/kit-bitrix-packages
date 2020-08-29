@@ -75,7 +75,7 @@ $APPLICATION->IncludeComponent(
         "SORT_ORDER1"                     => "DESC",
         "SORT_ORDER2"                     => "ASC",
         "STRICT_SECTION_CHECK"            => "N",
-        "COMPONENT_TEMPLATE"              => "sotbit_advantages_simple",
+        "COMPONENT_TEMPLATE"              => "kit_advantages_simple",
     ],
     false
 );

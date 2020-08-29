@@ -23,7 +23,7 @@ $NEW_ID1 = CForm::Set($arFields1);
 if($NEW_ID1) {
 
     $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][1] = $NEW_ID1;
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/footers/1/content.php", Array("FORM_ID" => $NEW_ID1));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/footers/1/content.php", Array("FORM_ID" => $NEW_ID1));
 
     $questions = array(
         array(
@@ -139,8 +139,8 @@ $NEW_ID2 = CForm::Set($arFields2);
 
 if($NEW_ID2) {
     $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][2] = $NEW_ID2;
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/.default/components/bitrix/news/sotbit_origami_promotions/detail.php", Array("FORM2_ID" => $NEW_ID2));
-    //CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/components/bitrix/news/sotbit_origami_shops/detail.php", Array("FORM2_IBLOCK_ID" => $NEW_ID2));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/.default/components/bitrix/news/kit_origami_promotions/detail.php", Array("FORM2_ID" => $NEW_ID2));
+    //CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/components/bitrix/news/kit_origami_shops/detail.php", Array("FORM2_IBLOCK_ID" => $NEW_ID2));
 
     $questions = array(
         array(
@@ -275,10 +275,10 @@ $NEW_ID3 = CForm::Set($arFields3);
 if($NEW_ID3) {
 
     $_SESSION['SOTBIT_ORIGAMI_WIZARD_FORMS'][3] = $NEW_ID3;
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/1/content.php", array("FORM3_ID" => $NEW_ID3));
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/2/content.php", array("FORM3_ID" => $NEW_ID3));
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/3/content.php", array("FORM3_ID" => $NEW_ID3));
-    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/4/content.php", array("FORM3_ID" => $NEW_ID3));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/1/content.php", array("FORM3_ID" => $NEW_ID3));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/2/content.php", array("FORM3_ID" => $NEW_ID3));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/3/content.php", array("FORM3_ID" => $NEW_ID3));
+    CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/4/content.php", array("FORM3_ID" => $NEW_ID3));
 
     $questions = array(
         array(

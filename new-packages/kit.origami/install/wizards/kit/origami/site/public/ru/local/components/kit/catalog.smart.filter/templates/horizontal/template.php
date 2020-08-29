@@ -19,7 +19,7 @@ $this->addExternalCss($templateFolder."/mobile.css");
             <div class="catalog_content__filter_horizon_title fonts__middle_text">
                 <div><?=GetMessage('CT_BCSF_FILTER')?>
                     <svg class="mobile_filter-icon_cancel_small" width="12px" height="12px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_small"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_small"></use>
                     </svg>
                 </div>
             </div>
@@ -62,7 +62,7 @@ $this->addExternalCss($templateFolder."/mobile.css");
                                 <span class="item_name"><?=$arItem["NAME"]?></span>
                                  <span class="number_selected_items"></span>
                                             <svg class="horizontal_filter-icon_cancel" width="8px" height="8px">
-                                                                         <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                                                         <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                                                                      </svg>
                                 <span class="selected_items"></span>
                             </span>
@@ -206,7 +206,7 @@ $this->addExternalCss($templateFolder."/mobile.css");
                             </span>
                              <span class="number_selected_items"></span>
                                    <svg class="horizontal_filter-icon_cancel" width="8px" height="8px">
-                                                              <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                                              <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                                                            </svg>
                             <span class="selected_items"></span>
                         </span>
@@ -684,7 +684,7 @@ $this->addExternalCss($templateFolder."/mobile.css");
                 <div class="popup_result__close"></div>
                 <div class="popup_result_info">
                     <svg class="product-card_icon-check" width="11px" height="12px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                     </svg>
                     <?=GetMessage("CT_BCSF_FILTER_COUNT", array("#ELEMENT_COUNT#" => '<span id="modef_num">'.intval($arResult["ELEMENT_COUNT"]).'</span>'));?>
                     <span class="arrow"></span>
@@ -706,7 +706,7 @@ $this->addExternalCss($templateFolder."/mobile.css");
 
             <div class="filter_horizontal-reset-all-filters" id="del_filter" name="del_filter">
                 <svg class="horizontal_filter-icon_cancel" width="8px" height="8px" style="display: inline-block;">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                 </svg>
                 <span>Сбросить фильтры<span>
             </div>

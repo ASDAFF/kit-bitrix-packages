@@ -14,7 +14,7 @@ if (is_array($arResult["SOCSERV"]) && !empty($arResult["SOCSERV"])) {
                 <svg class="svg-social-icons social-icon-<?= htmlspecialcharsbx($socserv["CLASS"]) ?>" width="28"
                      height="28">
                     <use
-                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#<?= htmlspecialcharsbx($socserv["CLASS"]) ?>"></use>
+                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#<?= htmlspecialcharsbx($socserv["CLASS"]) ?>"></use>
                 </svg>
             </a>
         </div>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2020-05-07T23:42:07">
 	<Классификатор>
-		<Ид>sotbit_origami_promotions</Ид>
+		<Ид>kit_origami_promotions</Ид>
 		<Наименование>Акции</Наименование>
 		<Свойства>
 			<Свойство>
@@ -286,10 +286,10 @@
 		</Группы>
 	</Классификатор>
 	<Каталог>
-		<Ид>sotbit_origami_promotions</Ид>
-		<ИдКлассификатора>sotbit_origami_promotions</ИдКлассификатора>
+		<Ид>kit_origami_promotions</Ид>
+		<ИдКлассификатора>kit_origami_promotions</ИдКлассификатора>
 		<Наименование>Акции</Наименование>
-		<БитриксКод>sotbit_origami_promotions</БитриксКод>
+		<БитриксКод>kit_origami_promotions</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
 		<БитриксURLСписок>#SITE_DIR#/promotions/</БитриксURLСписок>
 		<БитриксURLДеталь>#SITE_DIR#/promotions/#ELEMENT_CODE#/</БитриксURLДеталь>

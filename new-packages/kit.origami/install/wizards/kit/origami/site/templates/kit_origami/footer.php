@@ -40,7 +40,7 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::footersDir.'/'
 
 <?
 //Schema org breadcrumb
-if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && (strpos($APPLICATION->GetCurPage(), "bitrix") === false) ) {
+if( \Bitrix\Main\Loader::includeModule('kit.schemaorg') && (strpos($APPLICATION->GetCurPage(), "bitrix") === false) ) {
     Sotbit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'breadcrumblist');
 
     $data = SchemaMain::getData();
@@ -73,7 +73,7 @@ if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && (strpos($APPLICATI
     "",
     array(
         "AREA_FILE_SHOW" => "file",
-        "PATH" => SITE_DIR."include/sotbit_origami/after_footer.php"
+        "PATH" => SITE_DIR."include/kit_origami/after_footer.php"
     )
 );?>
 
@@ -83,7 +83,7 @@ if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && (strpos($APPLICATI
     "",
     array(
         "AREA_FILE_SHOW" => "file",
-        "PATH" => SITE_DIR."include/sotbit_origami/btn_go_top/btn_top.php"
+        "PATH" => SITE_DIR."include/kit_origami/btn_go_top/btn_top.php"
     )
 );?>
 
@@ -92,7 +92,7 @@ if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && (strpos($APPLICATI
     "",
     array(
         "AREA_FILE_SHOW" => "file",
-        "PATH" => SITE_DIR."include/sotbit_origami/files/btn_error-share/btn_error-share.php"
+        "PATH" => SITE_DIR."include/kit_origami/files/btn_error-share/btn_error-share.php"
     )
 );?>
 
@@ -101,15 +101,15 @@ if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && (strpos($APPLICATI
     "",
     array(
         "AREA_FILE_SHOW" => "file",
-        "PATH" => SITE_DIR."include/sotbit_origami/files/metric.php"
+        "PATH" => SITE_DIR."include/kit_origami/files/metric.php"
     )
 );?>
 <!-- end btn go top -->
 
 <?
 if (Config::get('BASKET_TYPE') == 'origami_top_without_basket') {
-    Asset::getInstance()->addJs(SITE_DIR . "local/react/sotbit/rightpanel.basket/dist/main.js");
-    Asset::getInstance()->addCss(SITE_DIR . "local/react/sotbit/rightpanel.basket/dist/main.css");
+    Asset::getInstance()->addJs(SITE_DIR . "local/react/kit/rightpanel.basket/dist/main.js");
+    Asset::getInstance()->addCss(SITE_DIR . "local/react/kit/rightpanel.basket/dist/main.css");
 }
 ?>
 

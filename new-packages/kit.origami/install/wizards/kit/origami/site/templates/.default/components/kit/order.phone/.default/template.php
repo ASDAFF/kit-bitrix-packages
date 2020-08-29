@@ -1,34 +1,34 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 use Bitrix\Main\Localization\Loc;
 use Sotbit\Origami\Helper\Config;
-if(!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
+if(!CModule::IncludeModule("kit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
 \Bitrix\Main\Page\Asset::getInstance()->addJs($templateFolder."/js/jquery.maskedinput.min.js");
 \Bitrix\Main\Page\Asset::getInstance()->addcss($templateFolder."/style.css");
 ?>
-<div class="sotbit_order_phone">
-	<div class="sotbit_order_phone__title"><?=Loc::getMessage('OK_TITLE')?></div>
-    <form action="" class="sotbit_order_phone_form">
-        <div class="sotbit_order_success"><?=GetMessage('OK_SUCCESS')?></div>
-        <div class="sotbit_order_error"></div>
+<div class="kit_order_phone">
+	<div class="kit_order_phone__title"><?=Loc::getMessage('OK_TITLE')?></div>
+    <form action="" class="kit_order_phone_form">
+        <div class="kit_order_success"><?=GetMessage('OK_SUCCESS')?></div>
+        <div class="kit_order_error"></div>
         <?foreach($arParams as $param=>$val):
         if(strpos($param, "~")!==false || is_array($val)) continue;
         ?>
         <input type="hidden" name="<?=$param?>" value="<?=$val?>" />
         <?endforeach?>
-	    <div class="sotbit_order_phone__block">
-		    <p class="sotbit_order_phone__block_title"><?=Loc::getMessage('OK_NAME')?>*</p>
+	    <div class="kit_order_phone__block">
+		    <p class="kit_order_phone__block_title"><?=Loc::getMessage('OK_NAME')?>*</p>
 		    <input type="text" name="order_name" value="<?=$arResult['USER']['NAME']?>" />
 	    </div>
-	    <div class="sotbit_order_phone__block">
-		    <p class="sotbit_order_phone__block_title"><?=Loc::getMessage('OK_PHONE')?>*</p>
+	    <div class="kit_order_phone__block">
+		    <p class="kit_order_phone__block_title"><?=Loc::getMessage('OK_PHONE')?>*</p>
 		    <input type="text" name="order_phone" value="<?=$arResult['USER']['PHONE']?>" />
 	    </div>
-	    <div class="sotbit_order_phone__block">
-		    <p class="sotbit_order_phone__block_title"><?=Loc::getMessage('OK_EMAIL')?></p>
+	    <div class="kit_order_phone__block">
+		    <p class="kit_order_phone__block_title"><?=Loc::getMessage('OK_EMAIL')?></p>
 		    <input type="text" name="order_email" value="<?=$arResult['USER']['EMAIL']?>" />
 	    </div>
-	    <div class="sotbit_order_phone__block">
-		    <p class="sotbit_order_phone__block_title"><?=Loc::getMessage('OK_COMMENT')?></p>
+	    <div class="kit_order_phone__block">
+		    <p class="kit_order_phone__block_title"><?=Loc::getMessage('OK_COMMENT')?></p>
 		    <textarea name="order_comment"></textarea>
 	    </div>
         <?if($arParams['USE_CAPTCHA'] == 'Y'):?>
@@ -58,11 +58,11 @@ if(!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()
 <script>
 	$(function()
 	{
-		$(".sotbit_order_phone").on("submit", "form", submitOrderPhone);
+		$(".kit_order_phone").on("submit", "form", submitOrderPhone);
 
-		maska = $(".sotbit_order_phone form input[name='TEL_MASK']").eq(0).val();
+		maska = $(".kit_order_phone form input[name='TEL_MASK']").eq(0).val();
 		maska = $.trim(maska);
-		if(maska!="")$(".sotbit_order_phone form input[name='order_phone']").mask(maska, {placeholder:"_"});
+		if(maska!="")$(".kit_order_phone form input[name='order_phone']").mask(maska, {placeholder:"_"});
 		function submitOrderPhone(e)
 		{
 			e.preventDefault();
@@ -76,8 +76,8 @@ if(!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()
 
 			$(this).find('input').removeClass('error');
 			$(this).find('.checkbox__label').removeClass('error');
-			$(this).find(".sotbit_order_error").hide();
-			$(this).find(".sotbit_order_success").hide();
+			$(this).find(".kit_order_error").hide();
+			$(this).find(".kit_order_success").hide();
 
 			var error = false;
 			if(name.length <= 0)
@@ -110,13 +110,13 @@ if(!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()
 			{
 				$(this).find("input[type='text']").removeClass("red");
 				ser = $(this).serialize();
-				$.post("/bitrix/components/sotbit/order.phone/ajax.php", ser, function(data)
+				$.post("/bitrix/components/kit/order.phone/ajax.php", ser, function(data)
 				{
 					data = $.trim(data);
 					if(data.indexOf("SUCCESS")>=0)
 					{
-						_this.find(".sotbit_order_success").show();
-						_this.find(".sotbit_order_error").hide();
+						_this.find(".kit_order_success").show();
+						_this.find(".kit_order_error").hide();
 						id = data.replace("SUCCESS", "");
 						localHref = $('input[name="LOCAL_REDIRECT"]').val();
 						orderID = $('input[name="ORDER_ID"]').val();
@@ -127,8 +127,8 @@ if(!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()
 					}
 					else
 					{
-						_this.find(".sotbit_order_success").hide();
-						_this.find(".sotbit_order_error").show().html(data);
+						_this.find(".kit_order_success").hide();
+						_this.find(".kit_order_error").show().html(data);
 					}
 				})
 			}

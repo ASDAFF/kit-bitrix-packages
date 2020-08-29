@@ -69,7 +69,7 @@ if($usePict == "Y" && !empty($arSectURL))
         $iblockID = Config::get("IBLOCK_ID_SERVICES");
 
     $obCache = new CPHPCache();
-    if ($obCache->InitCache(36000, serialize(array($arSectURL, $usePict)), "/sotbit.origami/left_menu"))
+    if ($obCache->InitCache(36000, serialize(array($arSectURL, $usePict)), "/kit.origami/left_menu"))
     {
         $arSectPict = $obCache->GetVars();
     }elseif ($obCache->StartDataCache())
@@ -98,7 +98,7 @@ if($usePict == "Y" && !empty($arSectURL))
         if(defined("BX_COMP_MANAGED_CACHE"))
         {
             global $CACHE_MANAGER;
-            $CACHE_MANAGER->StartTagCache("/sotbit.origami/left_menu");
+            $CACHE_MANAGER->StartTagCache("/kit.origami/left_menu");
             $CACHE_MANAGER->RegisterTag("iblock_id_".$iblockID);
             $CACHE_MANAGER->EndTagCache();
         }

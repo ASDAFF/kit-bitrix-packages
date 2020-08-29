@@ -19,7 +19,7 @@ return [
 					'name' => \Bitrix\Main\Localization\Loc::getMessage('INSTAGRAM_FIELD_LOGIN'),
 					'type' => 'input',
 					'group' => 'config',
-					'value' => 'sotbit_ru',
+					'value' => 'kit_ru',
                 ],
             'count' =>
 				[

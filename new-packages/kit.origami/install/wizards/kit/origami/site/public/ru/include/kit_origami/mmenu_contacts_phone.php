@@ -16,7 +16,7 @@
 <div class="mobile-menu-contact-default__phone">
     <span class="mobile-menu-contact-icon-default">
         <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--phone" width="14" height="14">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
         </svg>
     </span>
     <a class="mobile-menu-contact-default__link" href="tel:88003339220">8 (800) 333-9-220</a>

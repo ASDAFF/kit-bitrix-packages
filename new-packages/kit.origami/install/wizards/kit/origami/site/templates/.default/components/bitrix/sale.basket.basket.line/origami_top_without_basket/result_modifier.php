@@ -6,7 +6,7 @@ use Bitrix\Main,
 use Bitrix\Sale\Internals\BasketPropertyTable, Sotbit\Origami\Helper\Config;
 
 
-Main\Loader::includeModule('sotbit.origami');
+Main\Loader::includeModule('kit.origami');
 
 $arResult["SHOW_BASKET"] = Config::checkAction("BUY");
 $arResult["SHOW_DELAY"] = Config::checkAction("DELAY");

@@ -9,38 +9,38 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_wantgift/script.js");
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_wantgift/style.css");
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 ?>
 
-<div class="sotbit_want_gift_wrapper">
-    <div class="sotbit_order_phone__title_narrowly">
+<div class="kit_want_gift_wrapper">
+    <div class="kit_order_phone__title_narrowly">
 
         <? if ($arResult["isFormTitle"]) { ?>
-            <div class="sotbit_order_phone__title"><?= $arResult["FORM_TITLE"] ?>
+            <div class="kit_order_phone__title"><?= $arResult["FORM_TITLE"] ?>
             </div>
         <? } ?>
 
     </div>
     <div class="want_gift-resizeable_content">
         <? if ($arResult["IMG_PRODUCT"]["SRC"]) : ?>
-            <div class="sotbit_want_gift_image">
+            <div class="kit_want_gift_image">
                 <img src="<?= $arResult["IMG_PRODUCT"]["SRC"] ?>" alt="<?= $arResult["IMG_PRODUCT"]["NAME"] ?>">
-                <div class="sotbit_want_gift_name"><?= $arResult["IMG_PRODUCT"]["NAME"] ?></div>
-                <div class="sotbit_want_gift_price">
+                <div class="kit_want_gift_name"><?= $arResult["IMG_PRODUCT"]["NAME"] ?></div>
+                <div class="kit_want_gift_price">
                     <?= $arResult["IMG_PRODUCT"]["PRICE"] ?>
                 </div>
                 <? if ($arResult["IMG_PRODUCT"]["OLD_PRICE"]): ?>
-                    <div class="sotbit_want_gift_oldprice">
+                    <div class="kit_want_gift_oldprice">
                         <?= $arResult["IMG_PRODUCT"]["OLD_PRICE"] ?>
                     </div>
                 <? endif; ?>
             </div>
         <? endif; ?>
 
-        <div class="sotbit_order_phone">
-            <div class="sotbit_order_phone__title_wide">
+        <div class="kit_order_phone">
+            <div class="kit_order_phone__title_wide">
                 <? if ($arResult["isFormTitle"]) { ?>
-                    <div class="sotbit_order_phone__title"><?= $arResult["FORM_TITLE"] ?>
+                    <div class="kit_order_phone__title"><?= $arResult["FORM_TITLE"] ?>
                     </div>
                 <? } ?>
             </div>
@@ -48,14 +48,14 @@ Loader::includeModule('sotbit.origami');
                 <div class="popup-error-message">
                     <? if ($arResult["isFormErrors"] == "Y"): ?><?= $arResult["FORM_ERRORS_TEXT"]; ?><? endif; ?>
                 </div>
-                <div class="sotbit_order_success_show">
+                <div class="kit_order_success_show">
 
                     <? if ($arResult["FORM_NOTE"]) : ?>
                         <div class="popup-window-message-content">
 
                             <svg class="popup-window-icon-check">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                             </svg>
 
                             <div>
@@ -75,7 +75,7 @@ Loader::includeModule('sotbit.origami');
                 foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion) {
                     ?>
 
-                    <div class="sotbit_order_phone__block main-input-md__wrapper">
+                    <div class="kit_order_phone__block main-input-md__wrapper">
                         <? if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] != 'textarea'): ?>
                             <input
                                 type="<?= ($arQuestion['CAPTION'] !== Loc::getMessage('OK_LINK_PRODUCT')) ? $arQuestion['STRUCTURE'][0]['FIELD_TYPE'] : 'text' ?>"
@@ -105,7 +105,7 @@ Loader::includeModule('sotbit.origami');
 
                 <? if ($arResult["isUseCaptcha"] == "Y") {
                     ?>
-                    <div class="sotbit_order_phone__block">
+                    <div class="kit_order_phone__block">
                         <div class="feedback_block__captcha">
                             <div class="feedback_block__captcha_input main-input-md__wrapper">
                                 <input type="text" class="main-input-md" name="captcha_word"
@@ -125,7 +125,7 @@ Loader::includeModule('sotbit.origami');
                                      onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                     <svg class="icon_refresh" width="16" height="14">
                                         <use
-                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@ Loader::includeModule('sotbit.origami');
         }
     }
 
-    let image = document.querySelector(".sotbit_want_gift_image > img");
+    let image = document.querySelector(".kit_want_gift_image > img");
     image.addEventListener("load", function () {
         window.resizeWGPopup();
     })

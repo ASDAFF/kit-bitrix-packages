@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'share';
-  src:  url('/local/templates/sotbit_origami/assets/fonts/share/share.eot');
-  src:  url('/local/templates/sotbit_origami/assets/fonts/share/share.eot') format('embedded-opentype'),
-    url('/local/templates/sotbit_origami/assets/fonts/share/share.ttf') format('truetype'),
-    url('/local/templates/sotbit_origami/assets/fonts/share/share.woff') format('woff'),
-    url('/local/templates/sotbit_origami/assets/fonts/share/share.svg') format('svg');
+  src:  url('/local/templates/kit_origami/assets/fonts/share/share.eot');
+  src:  url('/local/templates/kit_origami/assets/fonts/share/share.eot') format('embedded-opentype'),
+    url('/local/templates/kit_origami/assets/fonts/share/share.ttf') format('truetype'),
+    url('/local/templates/kit_origami/assets/fonts/share/share.woff') format('woff'),
+    url('/local/templates/kit_origami/assets/fonts/share/share.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

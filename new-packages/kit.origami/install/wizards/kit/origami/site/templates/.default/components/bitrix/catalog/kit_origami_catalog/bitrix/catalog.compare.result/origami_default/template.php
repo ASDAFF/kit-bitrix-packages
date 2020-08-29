@@ -102,7 +102,7 @@ $templateData = array(
                            href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&ID=ALL;">
                             <svg class="icon-clear-cart" width="18" height="22">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
                             </svg>
                             <span><?= GetMessage("CATALOG_CLEAR_COMPARE") ?></span>
                         </a>
@@ -139,7 +139,7 @@ $templateData = array(
                                                 <!--do not remove. Set inline (display:none) if there are no description -->
                                                 <svg class="icon_question_small" width="20" height="20">
                                                     <use
-                                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small"></use>
+                                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_question_small"></use>
                                                 </svg>
                                                 <div class="compare-property_title-description">
                                                     <span class="descripption-title"><?= $arProperty["NAME"] ?></span>
@@ -155,7 +155,7 @@ $templateData = array(
                                             </div>
                                             <svg class="icon_cancel_comparison_small" width="20" height="20">
                                                 <use
-                                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small"></use>
+                                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_comparison_small"></use>
                                             </svg>
                                         </div>
                                     </div>
@@ -201,7 +201,7 @@ $templateData = array(
                            href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&ID=ALL;">
                             <svg class="icon-clear-cart" width="18" height="22">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
                             </svg>
                             <span><?= GetMessage("CATALOG_CLEAR_COMPARE") ?></span>
                         </a>
@@ -321,12 +321,12 @@ $templateData = array(
                                                 <!--do not remove. Set inline (display:none) if there are no description -->
                                                 <svg class="mobile-icon_question_small" width="20" height="20">
                                                     <use
-                                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_question_small"></use>
+                                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_question_small"></use>
                                                 </svg>
                                                 <!-- //// -->
                                                 <svg class="mobile-icon_cancel_comparison_small" width="20" height="20">
                                                     <use
-                                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_comparison_small"></use>
+                                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_comparison_small"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -491,7 +491,7 @@ $templateData = array(
                                href="/catalog/compare/?action_ccr=DELETE_FROM_COMPARE_RESULT&ID=ALL;">
                                 <svg class="icon-clear-cart" width="18" height="22">
                                     <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clear_cart"></use>
                                 </svg>
                                 <span><?= GetMessage("CATALOG_CLEAR_COMPARE") ?></span>
                             </a>

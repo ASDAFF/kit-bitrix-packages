@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $settings;
 global $blogFilter;
@@ -75,7 +75,7 @@ $APPLICATION->IncludeComponent(
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "sotbit_blog_square_right",
+		"COMPONENT_TEMPLATE" => "kit_blog_square_right",
 		"TEMPLATE_THEME" => "blue",
 		"MEDIA_PROPERTY" => "",
 		"SLIDER_PROPERTY" => "",

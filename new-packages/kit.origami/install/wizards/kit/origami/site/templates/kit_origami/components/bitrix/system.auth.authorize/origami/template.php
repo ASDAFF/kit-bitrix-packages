@@ -20,7 +20,7 @@ else
     $APPLICATION->ShowHead();
 
 //one css for all system.auth.* forms
-$this->addExternalCss(SITE_DIR."local/templates/sotbit_origami/components/bitrix/system.auth.authorize/origami/style.css");
+$this->addExternalCss(SITE_DIR."local/templates/kit_origami/components/bitrix/system.auth.authorize/origami/style.css");
 if (ToLower(SITE_CHARSET) == 'windows-1251') {
     foreach ($arResult as $key => &$it) {
         $it = iconv('utf-8', 'windows-1251', $it);
@@ -91,7 +91,7 @@ document.getElementById('bx_auth_secure').style.display = '';
 				<input id="USER_PASSWORD" type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" class="main-input-bg main-input-bg--gray" onchange="isInputFilled(this)" />
                 <label for="USER_PASSWORD" class="main-label-bg"><?=GetMessage("AUTH_PASSWORD")?></label>
                 <svg class="auth-icon_password_hidden" width="18px" height="18px" onmousedown=TogglePasswordVisibility() ontouchstart=TogglePasswordVisibility() onmouseup=TogglePasswordVisibility() ontouchend=TogglePasswordVisibility() onmouseout=TogglePasswordVisibilityOff()>
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
                 </svg>
 			</div>
             <?if($arParams["NOT_SHOW_LINKS"] != "Y"):?>

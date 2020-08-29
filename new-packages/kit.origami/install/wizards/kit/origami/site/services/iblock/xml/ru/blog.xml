@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2020-05-07T23:42:55">
 	<Классификатор>
-		<Ид>sotbit_origami_blog</Ид>
+		<Ид>kit_origami_blog</Ид>
 		<Наименование>Блог</Наименование>
 		<Свойства>
 			<Свойство>
@@ -136,10 +136,10 @@
 		</Группы>
 	</Классификатор>
 	<Каталог>
-		<Ид>sotbit_origami_blog</Ид>
-		<ИдКлассификатора>sotbit_origami_blog</ИдКлассификатора>
+		<Ид>kit_origami_blog</Ид>
+		<ИдКлассификатора>kit_origami_blog</ИдКлассификатора>
 		<Наименование>Блог</Наименование>
-		<БитриксКод>sotbit_origami_blog</БитриксКод>
+		<БитриксКод>kit_origami_blog</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
 		<БитриксURLСписок>#SITE_DIR#/blog/</БитриксURLСписок>
 		<БитриксURLДеталь>#SITE_DIR#/blog/#SECTION_CODE#/#ELEMENT_CODE#/</БитриксURLДеталь>
@@ -303,7 +303,7 @@
 	 Не знаю, как они решились бросить результаты многолетнего труда, но реальность такова, что сейчас почти нет активных модных блогов. Осталось совсем немного блоггеров, которые продолжают регулярно писать публикации и размещать новые фото.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;691&quot; alt=&quot;Instagram&quot; src=&quot;/include/sotbit_origami/images/Instagram.jpg&quot; height=&quot;899&quot; title=&quot;Instagram&quot;&gt;
+ &lt;img width=&quot;691&quot; alt=&quot;Instagram&quot; src=&quot;/include/kit_origami/images/Instagram.jpg&quot; height=&quot;899&quot; title=&quot;Instagram&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Назвать данное явление развитием никак нельзя. Модные блоги на собственном домене и даже в ЖЖ или blogspot серьезно развивают автора, ведь для содержания таких проектов требуется прилагать немало усилий и постоянно чему-то учиться. Для блога надо регулярно писать тексты, делать фотосессии, снимать видео. А еще в блоге возможно полноценное общение в комментариях.
@@ -471,7 +471,7 @@
 	 При выключенном ассистенте, электровелосипед практически ничем не отличается от обычного велосипеда.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;718&quot; src=&quot;/include/sotbit_origami/images/velosiped.jpg&quot; height=&quot;479&quot; title=&quot;велосипед&quot; alt=&quot;велосипед&quot;&gt;
+ &lt;img width=&quot;718&quot; src=&quot;/include/kit_origami/images/velosiped.jpg&quot; height=&quot;479&quot; title=&quot;велосипед&quot; alt=&quot;велосипед&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 XX веке стал веком взлёта и апогея технологического совершенства велосипеда. Т.е. всё то, что можно было улучшить – было улучшено.
@@ -639,7 +639,7 @@
 &lt;/p&gt;
 &lt;h3&gt;1. Xiaomi Redmi 4X&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;279&quot; alt=&quot;Redmi 4X&quot; src=&quot;/include/sotbit_origami/images/telefon 1.jpg&quot; height=&quot;315&quot; title=&quot;Redmi 4X&quot;&gt;
+ &lt;img width=&quot;279&quot; alt=&quot;Redmi 4X&quot; src=&quot;/include/kit_origami/images/telefon 1.jpg&quot; height=&quot;315&quot; title=&quot;Redmi 4X&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Культовый бюджетник от Xiaomi, который уже второй год остается популярным благодаря отличному балансу характеристик, дизайна и стоимости. Ваш ребенок сможет без проблем запускать все приложения и большинство современных игр. При средней нагрузке смартфон сможет обходиться без зарядки до двух суток. А прочный корпус с алюминиевыми вставками не так просто повредить даже без
@@ -647,7 +647,7 @@
 &lt;h3&gt;
 2. Xiaomi Redmi 4A &lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;206&quot; alt=&quot;Redmi 4A&quot; src=&quot;/include/sotbit_origami/images/telefon 2.jpg&quot; height=&quot;315&quot; title=&quot;Redmi 4A&quot;&gt;
+ &lt;img width=&quot;206&quot; alt=&quot;Redmi 4A&quot; src=&quot;/include/kit_origami/images/telefon 2.jpg&quot; height=&quot;315&quot; title=&quot;Redmi 4A&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Xiaomi Redmi 4A — младший брат предыдущей модели. Чуть менее производительный, не такой автономный и с пластиковым корпусом. Зато он дешевле.
@@ -657,7 +657,7 @@
 &lt;/p&gt;
 &lt;h3&gt;3. Elephone P8 Mini&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;294&quot; alt=&quot;Elephone P8 Mini&quot; src=&quot;/include/sotbit_origami/images/telefon 3.jpg&quot; height=&quot;315&quot; title=&quot;Elephone P8 Mini&quot;&gt;
+ &lt;img width=&quot;294&quot; alt=&quot;Elephone P8 Mini&quot; src=&quot;/include/kit_origami/images/telefon 3.jpg&quot; height=&quot;315&quot; title=&quot;Elephone P8 Mini&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Яркий, стильный и очень хорошо укомплектованный для своего ценника аппарат. К достоинствам Elephone P8 Mini можно отнести экран высокого разрешения, внушительный запас встроенной памяти и мощную начинку, которой хватит даже для требовательных игр.
@@ -667,7 +667,7 @@
 &lt;/p&gt;
 &lt;h3&gt;4. Blackview BV7000 Pro&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;263&quot; alt=&quot;Blackview BV7000 Pro&quot; src=&quot;/include/sotbit_origami/images/telefon 4.jpg&quot; height=&quot;315&quot; title=&quot;Blackview BV7000 Pro&quot;&gt;
+ &lt;img width=&quot;263&quot; alt=&quot;Blackview BV7000 Pro&quot; src=&quot;/include/kit_origami/images/telefon 4.jpg&quot; height=&quot;315&quot; title=&quot;Blackview BV7000 Pro&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Дети энергичны и не всегда осторожны, поэтому часто ломают хрупкие вещи. Если вы боитесь, что ваше чадо разобьёт или утопит телефон, обратите внимание на Blackview BV7000 Pro. Это противоударный и водонепроницаемый аппарат.
@@ -677,21 +677,21 @@
 &lt;/p&gt;
 &lt;h3&gt;5. Lenovo K6 Power&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;439&quot; alt=&quot;Lenovo K6 Power&quot; src=&quot;/include/sotbit_origami/images/telefon 5.jpg&quot; height=&quot;315&quot; title=&quot;Lenovo K6 Power&quot;&gt;
+ &lt;img width=&quot;439&quot; alt=&quot;Lenovo K6 Power&quot; src=&quot;/include/kit_origami/images/telefon 5.jpg&quot; height=&quot;315&quot; title=&quot;Lenovo K6 Power&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Этот телефон, как и Redmi 4X, понравится родителям, которые не хотят терять связь с детьми ни на минуту. Емкий аккумулятор позволяет использовать K6 Power без ежедневных подзарядок. Так что, если ребёнок отправится, к примеру, в поход, вы не будете переживать из-за севшей батареи. При экономном использовании K6 Power проработает несколько суток.
 &lt;/p&gt;
 &lt;h3&gt;6. Huawei Nova Lite&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;164&quot; alt=&quot;Huawei Nova Lite&quot; src=&quot;/include/sotbit_origami/images/telefon 6.jpg&quot; height=&quot;315&quot; title=&quot;Huawei Nova Lite&quot;&gt;
+ &lt;img width=&quot;164&quot; alt=&quot;Huawei Nova Lite&quot; src=&quot;/include/kit_origami/images/telefon 6.jpg&quot; height=&quot;315&quot; title=&quot;Huawei Nova Lite&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Этот стильный аппарат в тонком корпусе из пластика как будто создан для небольших рук девушки или ребёнка. Помимо эргономичного дизайна, к плюсам Huawei Nova Lite можно отнести хорошую автономность, качество сборки, достойную производительность и наличие сканера отпечатков пальцев. И всё это доступно по выгодной цене.
 &lt;/p&gt;
 &lt;h3&gt;7. Motorola Moto E4&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;141&quot; alt=&quot;Motorola Moto E4&quot; src=&quot;/include/sotbit_origami/images/telefon 7.jpg&quot; height=&quot;315&quot; title=&quot;Motorola Moto E4&quot;&gt;
+ &lt;img width=&quot;141&quot; alt=&quot;Motorola Moto E4&quot; src=&quot;/include/kit_origami/images/telefon 7.jpg&quot; height=&quot;315&quot; title=&quot;Motorola Moto E4&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Motorola Moto E4 — хороший экономвариант. Этот аппарат не может похвастать высокой мощностью или какими-то нетривиальными фишками. Тем не менее он отлично подходит для общения, просмотра видео и других базовых функций, которые нужны ребёнку от смартфона.
@@ -701,7 +701,7 @@
 &lt;/p&gt;
 &lt;h3&gt;8. Meizu M5s&lt;/h3&gt;
 &lt;p&gt;
- &lt;img width=&quot;269&quot; alt=&quot;Meizu M5s&quot; src=&quot;/include/sotbit_origami/images/telefon 8.jpg&quot; height=&quot;315&quot; title=&quot;Meizu M5s&quot;&gt;
+ &lt;img width=&quot;269&quot; alt=&quot;Meizu M5s&quot; src=&quot;/include/kit_origami/images/telefon 8.jpg&quot; height=&quot;315&quot; title=&quot;Meizu M5s&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Второй достойный вариант для тех, у кого жёстко ограничен бюджет. M5s тоже не хватает звёзд с неба, но предлагает базовый набор функций за выгодную цену. Более того, по сравнению с Moto E4, у M5s слегка увеличенный (но всё ещё компактный) дисплей, больше оперативной памяти и вместительнее батарея. При этом стоимость обеих моделей примерно одинакова.

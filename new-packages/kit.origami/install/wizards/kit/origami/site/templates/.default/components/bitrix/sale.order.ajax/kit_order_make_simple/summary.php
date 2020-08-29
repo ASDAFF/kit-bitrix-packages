@@ -16,7 +16,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                     <?=Loc::getMessage("SALE_PRODUCTS")?>
                 </span>
                 <span class="main_order_block__col_buy">
-                    <b><?=$quantity?></b> <?=$quantityLabel?> <?=Loc::getMessage("SOA_TEMPL_SUM_SUMMARY")?> <b class="sotbit_soa_order_price"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
+                    <b><?=$quantity?></b> <?=$quantityLabel?> <?=Loc::getMessage("SOA_TEMPL_SUM_SUMMARY")?> <b class="kit_soa_order_price"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
                 </span>
             </div>
             <?
@@ -34,7 +34,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                     elseif(strlen($arItem["DETAIL_PICTURE_SRC"]) > 0)
                         $url = $arItem["DETAIL_PICTURE_SRC"];
                     else
-                        $url = '/upload/sotbit.origami/no_photo_small.svg';
+                        $url = '/upload/kit.origami/no_photo_small.svg';
 
                     if(strlen($arItem["DETAIL_PAGE_URL"]) > 0)
                         $detailPageUrl = $arItem["DETAIL_PAGE_URL"];
@@ -65,12 +65,12 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                         </div>
 
                         <?if(in_array("PRICE_FORMATED", $arHeaders)):?>
-                            <div class="sotbit_soa_price_block_<?=$arItem["ID"]?> main_order_block__item_price">
-                                <div class="sotbit_soa_price_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
+                            <div class="kit_soa_price_block_<?=$arItem["ID"]?> main_order_block__item_price">
+                                <div class="kit_soa_price_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
                                     <?=$arItem["PRICE_FORMATED"]?>
                                 </div>
                                 <?if(doubleval($arItem["DISCOUNT_PRICE"]) > 0):?>
-                                    <div class="sotbit_soa_old_price_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
+                                    <div class="kit_soa_old_price_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
                                         <?=SaleFormatCurrency($arItem["PRICE"] + $arItem["DISCOUNT_PRICE"], $arItem["CURRENCY"]);?>
                                     </div>
                                 <?endif?>
@@ -79,7 +79,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
 
                         <?if(in_array("DISCOUNT_PRICE_PERCENT_FORMATED", $arHeaders)):?>
                             <div class="main_order_block__item_price">
-                                <div class="sotbit_soa_discount_price_<?=$arItem["ID"]?>">
+                                <div class="kit_soa_discount_price_<?=$arItem["ID"]?>">
                                     <?=$arItem["DISCOUNT_PRICE_PERCENT_FORMATED"]?>
                                 </div>
                             </div>
@@ -98,12 +98,12 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                             <?=$arItem["QUANTITY"]?> <?=$arItem["MEASURE_NAME"]?>
                         </div>
 
-                        <div class="sotbit_soa_product_sum_block_<?=$arItem["ID"]?> main_order_block__item_price">
-                            <div class="sotbit_soa_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
+                        <div class="kit_soa_product_sum_block_<?=$arItem["ID"]?> main_order_block__item_price">
+                            <div class="kit_soa_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
                                 <?=$arItem["SUM"]?>
                             </div>
                             <?if(doubleval($arItem["DISCOUNT_PRICE"]) > 0):?>
-                                <div class="sotbit_soa_old_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
+                                <div class="kit_soa_old_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
                                     <?=$arItem["SUM_BASE_FORMATED"]?>
                                 </div>
                             <?endif?>
@@ -142,7 +142,7 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
         <div id="coupon_block" class="main_order_block_feedback">
             <div class="bx-soa-section-content"></div>
         </div>
-        <div id="sotbit_soa_total" style="display: none;"></div>
+        <div id="kit_soa_total" style="display: none;"></div>
     </div>
 </div>
 <div class="order_block__basket_link">

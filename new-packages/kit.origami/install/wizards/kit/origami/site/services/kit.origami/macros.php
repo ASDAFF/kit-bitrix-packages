@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 
 CModule::includeModule($module);
 
@@ -20,7 +20,7 @@ function changeMacro($sitePath = '/', $dir = ''){
         $arFolderName = [
             $_SERVER["DOCUMENT_ROOT"].'/local'
         ];
-        $public = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sotbit.origami/install/wizards/sotbit/origami/site/public/ru';
+        $public = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/kit.origami/install/wizards/kit/origami/site/public/ru';
         $dir = opendir($public);
         while (($file = readdir($dir)) !== false)
         {

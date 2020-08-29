@@ -24,11 +24,11 @@ function addSortIcons() {
             wrapper = document.querySelectorAll(".sorting__svg-icons");
 
         mobileFilterSorting_SortingIcon.innerHTML = `<svg class="mobile_filter_icon_sorting_mobile" width="12" height="12">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_sorting_mobile"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_sorting_mobile"></use>
                 </svg>`;
 
         mobileFilterSorting_ListIcon.innerHTML = `<svg class="mobile_filter_icon_list_mobile" width="12" height="14">
-               <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_list_mobile"></use>
+               <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_list_mobile"></use>
                 </svg>`;
 
         wrapper[0].appendChild(mobileFilterSorting_SortingIcon);

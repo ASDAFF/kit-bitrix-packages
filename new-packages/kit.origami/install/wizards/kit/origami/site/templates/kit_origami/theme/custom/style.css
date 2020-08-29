@@ -1005,7 +1005,7 @@ textarea, input {
     transform: rotate(-45deg);
     bottom: 25%;
     left: 100%;
-    background: url("/local/templates/sotbit_origami/assets/img/edge_blick.png") no-repeat;
+    background: url("/local/templates/kit_origami/assets/img/edge_blick.png") no-repeat;
     background-size: cover;
     z-index: 50;
     transition: 0.7s;

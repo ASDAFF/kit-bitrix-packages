@@ -5,7 +5,7 @@
 use Bitrix\Main;
 use Sotbit\Origami\Helper\Config;
 
-Main\Loader::includeModule('sotbit.origami');
+Main\Loader::includeModule('kit.origami');
 
 $defaultParams = array(
 	'TEMPLATE_THEME' => 'blue'

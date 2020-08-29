@@ -245,12 +245,12 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                             </a>
                         </div>
 
-<!--                        --><?//if(\Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+<!--                        --><?//if(\Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                             <button class="service-order__banner-buttons-byu-in-click main-color_btn-transparent" id="modal_oc">
                                 <span><?=Loc::getMessage('SERVICES_BUY_ONE_CLICK')?></span>
                                 <svg class="service-order__banner-buttons-byu-in-click-icon" width="20" height="20">
                                     <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_one_click"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_one_click"></use>
                                 </svg>
                             </button>
 <!--                        --><?//endif;?>

@@ -125,8 +125,8 @@ $generalParams = array(
 	'~BASKET_URL' => $arParams['~BASKET_URL'],
 	'~ADD_URL_TEMPLATE' => $arResult['~ADD_URL_TEMPLATE'],
 	'~BUY_URL_TEMPLATE' => $arResult['~BUY_URL_TEMPLATE'],
-    '~COMPARE_URL_TEMPLATE' => str_replace('/bitrix/components/sotbit/crosssell.collection/ajax.php', '', $arResult['~COMPARE_URL_TEMPLATE']),
-    '~COMPARE_DELETE_URL_TEMPLATE' => str_replace('/bitrix/components/sotbit/crosssell.collection/ajax.php', '', $arResult['~COMPARE_DELETE_URL_TEMPLATE']),
+    '~COMPARE_URL_TEMPLATE' => str_replace('/bitrix/components/kit/crosssell.collection/ajax.php', '', $arResult['~COMPARE_URL_TEMPLATE']),
+    '~COMPARE_DELETE_URL_TEMPLATE' => str_replace('/bitrix/components/kit/crosssell.collection/ajax.php', '', $arResult['~COMPARE_DELETE_URL_TEMPLATE']),
 	'TEMPLATE_THEME' => $arParams['TEMPLATE_THEME'],
 	'USE_ENHANCED_ECOMMERCE' => $arParams['USE_ENHANCED_ECOMMERCE'],
 	'DATA_LAYER_NAME' => $arParams['DATA_LAYER_NAME'],
@@ -217,7 +217,7 @@ $containerName = 'container-'.$navParams['NavNum'];
                 $APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
-                    array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/empty_filter/empty_filter.php")
+                    array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/empty_filter/empty_filter.php")
                 );
             }
         }

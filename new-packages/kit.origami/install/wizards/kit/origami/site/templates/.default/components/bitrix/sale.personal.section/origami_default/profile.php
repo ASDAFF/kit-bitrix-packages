@@ -16,7 +16,7 @@ if (strlen($arParams["MAIN_CHAIN_NAME"]) > 0)
 $APPLICATION->AddChainItem(Loc::getMessage("SPS_CHAIN_PROFILE"));
 $APPLICATION->IncludeComponent(
 	"bitrix:sale.personal.profile.list",
-	"sotbit_profile_list",
+	"kit_profile_list",
 	array(
 		"PATH_TO_DETAIL" => $arResult['PATH_TO_PROFILE_DETAIL'],
 		"PATH_TO_DELETE" => $arResult['PATH_TO_PROFILE_DELETE'],

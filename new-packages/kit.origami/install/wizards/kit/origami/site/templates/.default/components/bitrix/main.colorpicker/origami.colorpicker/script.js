@@ -31,11 +31,11 @@ BXColorPicker.prototype.BeforeCreate = function()
     });
 
     this.pWnd.innerHTML=  '<svg class="colorpicker-icon" width="18" height="18">' +
-                                '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#color"></use>' +
+                                '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#color"></use>' +
                             '</svg>';
 
     // this.pWnd = '<svg class="site-navigation__item-icon" width="18" height="18">' +
-    //                 '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon-search"></use>' +
+    //                 '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon-search"></use>' +
     //             '</svg>'
 
 	this.pWnd.onmouseover = function(e){_this.OnMouseOver(e, this)};

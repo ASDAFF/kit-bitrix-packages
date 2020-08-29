@@ -10,7 +10,7 @@ $this->setFrameMode(true);
 $frame = $this->createFrame()->begin("");
 ?>
 	<?/*<svg width="18" height="18">
-		<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location"></use>
+		<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
 	</svg>
 	<p><?=Loc::getMessage(SotbitRegions::moduleId.'_YOUR_CITY')?></p>*/?>
 	<a href="javascript:return false;" class="select-city__block__text-city__js"><?=$arResult['USER_REGION_NAME']?></a>
@@ -44,7 +44,7 @@ $frame = $this->createFrame()->begin("");
             if($arResult['REGION_LIST_COUNTRIES']){
                 ?>
 				<div class="select-city__tabs_wrapper">
-					<ul class="select-city__tabs" id="sotbit-regions-tabs">
+					<ul class="select-city__tabs" id="kit-regions-tabs">
                         <?
                         foreach ($arResult['REGION_LIST_COUNTRIES'] as $idCountry => $region){
                             if($region['SALE_LOCATION_LOCATION_NAME_NAME']) {
@@ -80,7 +80,7 @@ $frame = $this->createFrame()->begin("");
 				<div class="select-city__wrapper__input">
 					<div class="select-city__input__comment select-city__under_input">
 	                    <?= Loc::getMessage(
-	                        'sotbit.regions_EXAMPLE',
+	                        'kit.regions_EXAMPLE',
 	                        [
 	                            '#ID0#'   => $arResult['TITLE_CITIES'][0]['ID'],
 	                            '#ID1#'   => $arResult['TITLE_CITIES'][1]['ID'],

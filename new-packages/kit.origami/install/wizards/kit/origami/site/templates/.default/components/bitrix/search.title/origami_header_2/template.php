@@ -21,7 +21,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
 		<input id="<?echo $INPUT_ID?>" type="text" name="q" value="<?=htmlspecialcharsbx($_REQUEST["q"])?>" autocomplete="off" placeholder="<?=Loc::getMessage('CT_BST_SEARCH_BUTTON')?>">
 		<button type="submit" name="s">
 			<svg width="18" height="18">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
 			</svg>
 		</button>
 	</form>

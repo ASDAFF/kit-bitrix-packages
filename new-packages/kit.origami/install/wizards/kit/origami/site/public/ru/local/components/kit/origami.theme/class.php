@@ -26,7 +26,7 @@ class SotbitOrigamiThemeComponent extends \CBitrixComponent
     {
         $moduleIncluded = false;
         try {
-            $moduleIncluded = Loader::includeModule('sotbit.origami');
+            $moduleIncluded = Loader::includeModule('kit.origami');
         } catch (\Bitrix\Main\LoaderException $e) {
         }
         if (!$moduleIncluded) {

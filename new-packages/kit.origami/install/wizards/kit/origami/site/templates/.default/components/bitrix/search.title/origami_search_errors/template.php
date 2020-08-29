@@ -31,7 +31,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
             <button class="block_search_404__btn main_btn sweep-to-right btn-sm" name="s" type="submit">
                 <span><?=GetMessage("CT_BST_SEARCH_BUTTON");?></span>
                 <svg class="site-navigation__item-icon" width="21" height="21">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
                 </svg>
             </button>
         </form>

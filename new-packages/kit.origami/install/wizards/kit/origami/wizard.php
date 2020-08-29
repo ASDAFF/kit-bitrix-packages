@@ -11,7 +11,7 @@ class SelectSiteStep extends CSelectSiteWizardStep
         parent::InitStep();
 
         $wizard =& $this->GetWizard();
-        $wizard->solutionName = "sotbit.origami";
+        $wizard->solutionName = "kit.origami";
     }
 
     function ShowStep() {
@@ -51,15 +51,15 @@ class SelectTemplateStep extends CSelectTemplateWizardStep
 
         if ($wizard->IsNextButtonClick())
         {
-            $arTemplates = array("sotbit_origami");
+            $arTemplates = array("kit_origami");
 
             $templateID = $wizard->GetVar("wizTemplateID");
 
             if (!in_array($templateID, $arTemplates))
                 $this->SetError(GetMessage("wiz_template"));
 
-            if (in_array($templateID,  array("sotbit_origami")))
-                $wizard->SetVar("templateID", "sotbit_origami");
+            if (in_array($templateID,  array("kit_origami")))
+                $wizard->SetVar("templateID", "kit_origami");
         }
     }
 
@@ -72,25 +72,25 @@ class SelectTemplateStep extends CSelectTemplateWizardStep
 
         $arTemplateOrder = array();
 
-        if (in_array("sotbit_origami", array_keys($arTemplates)))
+        if (in_array("kit_origami", array_keys($arTemplates)))
         {
-            $arTemplateOrder[] = "sotbit_origami";
+            $arTemplateOrder[] = "kit_origami";
         }
 
-        $defaultTemplateID = COption::GetOptionString("main", "wizard_template_id", "sotbit_origami", $wizard->GetVar("siteID"));
-        if (!in_array($defaultTemplateID, array("sotbit_origami"))) $defaultTemplateID = "sotbit_origami";
+        $defaultTemplateID = COption::GetOptionString("main", "wizard_template_id", "kit_origami", $wizard->GetVar("siteID"));
+        if (!in_array($defaultTemplateID, array("kit_origami"))) $defaultTemplateID = "kit_origami";
         $wizard->SetDefaultVar("wizTemplateID", $defaultTemplateID);
 
         $arTemplateInfo = array(
-            "sotbit_origami" => array(
+            "kit_origami" => array(
                 "NAME" => GetMessage("WIZ_TEMPLATE_ADAPT_HORIZONTAL"),
                 "DESCRIPTION" => "",
-                "PREVIEW" => $wizard->GetPath()."/site/templates/sotbit_origami/lang/".LANGUAGE_ID."/screen.gif",
-                "SCREENSHOT" => $wizard->GetPath()."/site/templates/sotbit_origami/lang/".LANGUAGE_ID."/screen.gif",
+                "PREVIEW" => $wizard->GetPath()."/site/templates/kit_origami/lang/".LANGUAGE_ID."/screen.gif",
+                "SCREENSHOT" => $wizard->GetPath()."/site/templates/kit_origami/lang/".LANGUAGE_ID."/screen.gif",
             ),
         );
 
-        //	$this->content .= "<input type='hidden' value='eshop' name='templateID' id='templateID'>";//$this->ShowInputField('hidden', 'templateID', array("id" => "templateID", "value" => "sotbit.origami"));
+        //	$this->content .= "<input type='hidden' value='eshop' name='templateID' id='templateID'>";//$this->ShowInputField('hidden', 'templateID', array("id" => "templateID", "value" => "kit.origami"));
 
         global $SHOWIMAGEFIRST;
         $SHOWIMAGEFIRST = true;
@@ -132,16 +132,16 @@ class SiteSettingsStep extends CSiteSettingsWizardStep
     function InitStep()
     {
         $wizard =& $this->GetWizard();
-        $wizard->solutionName = "sotbit.origami";
+        $wizard->solutionName = "kit.origami";
         parent::InitStep();
 
         $this->SetNextCaption(GetMessage("NEXT_BUTTON"));
         $this->SetTitle(GetMessage("WIZ_STEP_SITE_SET"));
 
         $siteID = $wizard->GetVar("siteID");
-        $isWizardInstalled = COption::GetOptionString("sotbit.origami", "wizard_installed", "N", $siteID) == "Y";
+        $isWizardInstalled = COption::GetOptionString("kit.origami", "wizard_installed", "N", $siteID) == "Y";
 
-        if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", $siteID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+        if(COption::GetOptionString("kit.origami", "wizard_installed", "N", $siteID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
             $this->SetNextStep("data_install");
         else
         {
@@ -155,18 +155,18 @@ class SiteSettingsStep extends CSiteSettingsWizardStep
             Array(
                 "siteName" => $this->GetFileContent(WIZARD_SITE_PATH."include/company_name.php", GetMessage("WIZ_COMPANY_NAME_DEF")),
                 "siteSchedule" => $this->GetFileContent(WIZARD_SITE_PATH."include/schedule.php", GetMessage("WIZ_COMPANY_SCHEDULE_DEF")),
-                "siteTelephone" => COption::GetOptionString('sotbit.origami','TEL',GetMessage("WIZ_COMPANY_TELEPHONE_DEF")),
-                "siteCopy" => COption::GetOptionString('sotbit.origami','COPYRIGHT',GetMessage("WIZ_COMPANY_COPY_DEF")),
-                "shopEmail" => COption::GetOptionString('sotbit.origami','MAIL',GetMessage("WIZ_COMPANY_EMAIL_DEF")),
-                "shopAdress" => COption::GetOptionString('sotbit.origami','ADRESS',GetMessage("WIZ_COMPANY_ADRESS_DEF")),
-                "shopVk" => COption::GetOptionString('sotbit.origami','VK',GetMessage("WIZ_SHOP_VK_DEF")),
-                "shopFb" => COption::GetOptionString('sotbit.origami','FACEBOOK',GetMessage("WIZ_SHOP_FACEBOOK_DEF")),
-                "shopInst" => COption::GetOptionString('sotbit.origami','INST',GetMessage("WIZ_SHOP_INST_DEF")),
-                "shopYTb" => COption::GetOptionString('sotbit.origami','YOUTUBE',GetMessage("WIZ_SHOP_UTB_DEF")),
-                "shopOd" => COption::GetOptionString('sotbit.origami','OK',GetMessage("WIZ_SHOP_OD_DEF")),
-                "shopTm" => COption::GetOptionString('sotbit.origami','TELEGA',GetMessage("WIZ_SHOP_TM_DEF")),
-                "shopTw" => COption::GetOptionString('sotbit.origami','TW',GetMessage("WIZ_SHOP_TWITTER_DEF")),
-                "shopGoogle" => COption::GetOptionString('sotbit.origami','GOOGLE',GetMessage("WIZ_SHOP_GOOGLE_PLUS_DEF")),
+                "siteTelephone" => COption::GetOptionString('kit.origami','TEL',GetMessage("WIZ_COMPANY_TELEPHONE_DEF")),
+                "siteCopy" => COption::GetOptionString('kit.origami','COPYRIGHT',GetMessage("WIZ_COMPANY_COPY_DEF")),
+                "shopEmail" => COption::GetOptionString('kit.origami','MAIL',GetMessage("WIZ_COMPANY_EMAIL_DEF")),
+                "shopAdress" => COption::GetOptionString('kit.origami','ADRESS',GetMessage("WIZ_COMPANY_ADRESS_DEF")),
+                "shopVk" => COption::GetOptionString('kit.origami','VK',GetMessage("WIZ_SHOP_VK_DEF")),
+                "shopFb" => COption::GetOptionString('kit.origami','FACEBOOK',GetMessage("WIZ_SHOP_FACEBOOK_DEF")),
+                "shopInst" => COption::GetOptionString('kit.origami','INST',GetMessage("WIZ_SHOP_INST_DEF")),
+                "shopYTb" => COption::GetOptionString('kit.origami','YOUTUBE',GetMessage("WIZ_SHOP_UTB_DEF")),
+                "shopOd" => COption::GetOptionString('kit.origami','OK',GetMessage("WIZ_SHOP_OD_DEF")),
+                "shopTm" => COption::GetOptionString('kit.origami','TELEGA',GetMessage("WIZ_SHOP_TM_DEF")),
+                "shopTw" => COption::GetOptionString('kit.origami','TW',GetMessage("WIZ_SHOP_TWITTER_DEF")),
+                "shopGoogle" => COption::GetOptionString('kit.origami','GOOGLE',GetMessage("WIZ_SHOP_GOOGLE_PLUS_DEF")),
                 "siteMetaDescription" => GetMessage("wiz_site_desc"),
                 "siteMetaKeywords" => GetMessage("wiz_keywords"),
                 "siteregion" => GetMessage("WIZ_SITEREGION"),
@@ -349,8 +349,8 @@ class CatalogSettings extends CWizardStep
 
         $wizard->SetDefaultVars(
             Array(
-                "catalogSubscribe" => (isset($arSubscribe[$siteID])) ? ($arSubscribe[$siteID]['use'] == "Y" ? "Y" : false) : "Y",//COption::GetOptionString("sotbit.origami", "catalogSubscribe", "Y", $siteID),
-                "catalogView" => COption::GetOptionString("sotbit.origami", "catalogView", "list", $siteID),
+                "catalogSubscribe" => (isset($arSubscribe[$siteID])) ? ($arSubscribe[$siteID]['use'] == "Y" ? "Y" : false) : "Y",//COption::GetOptionString("kit.origami", "catalogSubscribe", "Y", $siteID),
+                "catalogView" => COption::GetOptionString("kit.origami", "catalogView", "list", $siteID),
                 "useStoreControl" => COption::GetOptionString("catalog", "default_use_store_control", "Y"),
                 "productReserveCondition" => COption::GetOptionString("sale", "product_reserve_condition", "P")
             )
@@ -411,35 +411,35 @@ class ShopSettings extends CWizardStep
 
         $wizard->SetDefaultVars(
             Array(
-                "shopLocalization" => COption::GetOptionString("sotbit.origami", "shopLocalization", "ru", $siteID),
-                "shopEmail" => COption::GetOptionString("sotbit.origami", "shopEmail", "sale@".$_SERVER["SERVER_NAME"], $siteID),
-                "shopOfName" => COption::GetOptionString("sotbit.origami", "shopOfName", GetMessage("WIZ_SHOP_OF_NAME_DEF"), $siteID),
-                "shopLocation" => COption::GetOptionString("sotbit.origami", "shopLocation", GetMessage("WIZ_SHOP_LOCATION_DEF"), $siteID),
+                "shopLocalization" => COption::GetOptionString("kit.origami", "shopLocalization", "ru", $siteID),
+                "shopEmail" => COption::GetOptionString("kit.origami", "shopEmail", "sale@".$_SERVER["SERVER_NAME"], $siteID),
+                "shopOfName" => COption::GetOptionString("kit.origami", "shopOfName", GetMessage("WIZ_SHOP_OF_NAME_DEF"), $siteID),
+                "shopLocation" => COption::GetOptionString("kit.origami", "shopLocation", GetMessage("WIZ_SHOP_LOCATION_DEF"), $siteID),
                 //"shopZip" => 101000,
-                "shopAdr" => COption::GetOptionString("sotbit.origami", "shopAdr", GetMessage("WIZ_SHOP_ADR_DEF"), $siteID),
-                "shopINN" => COption::GetOptionString("sotbit.origami", "shopINN", "1234567890", $siteID),
-                "shopKPP" => COption::GetOptionString("sotbit.origami", "shopKPP", "123456789", $siteID),
-                "shopNS" => COption::GetOptionString("sotbit.origami", "shopNS", "0000 0000 0000 0000 0000", $siteID),
-                "shopBANK" => COption::GetOptionString("sotbit.origami", "shopBANK", GetMessage("WIZ_SHOP_BANK_DEF"), $siteID),
-                "shopBANKREKV" => COption::GetOptionString("sotbit.origami", "shopBANKREKV", GetMessage("WIZ_SHOP_BANKREKV_DEF"), $siteID),
-                "shopKS" => COption::GetOptionString("sotbit.origami", "shopKS", "30101 810 4 0000 0000225", $siteID),
-                "siteStamp" => COption::GetOptionString("sotbit.origami", "siteStamp", $siteStamp, $siteID),
+                "shopAdr" => COption::GetOptionString("kit.origami", "shopAdr", GetMessage("WIZ_SHOP_ADR_DEF"), $siteID),
+                "shopINN" => COption::GetOptionString("kit.origami", "shopINN", "1234567890", $siteID),
+                "shopKPP" => COption::GetOptionString("kit.origami", "shopKPP", "123456789", $siteID),
+                "shopNS" => COption::GetOptionString("kit.origami", "shopNS", "0000 0000 0000 0000 0000", $siteID),
+                "shopBANK" => COption::GetOptionString("kit.origami", "shopBANK", GetMessage("WIZ_SHOP_BANK_DEF"), $siteID),
+                "shopBANKREKV" => COption::GetOptionString("kit.origami", "shopBANKREKV", GetMessage("WIZ_SHOP_BANKREKV_DEF"), $siteID),
+                "shopKS" => COption::GetOptionString("kit.origami", "shopKS", "30101 810 4 0000 0000225", $siteID),
+                "siteStamp" => COption::GetOptionString("kit.origami", "siteStamp", $siteStamp, $siteID),
 
-                //"shopCompany_ua" => COption::GetOptionString("sotbit.origami", "shopCompany_ua", "", $siteID),
-                "shopOfName_ua" => COption::GetOptionString("sotbit.origami", "shopOfName_ua", GetMessage("WIZ_SHOP_OF_NAME_DEF_UA"), $siteID),
-                "shopLocation_ua" => COption::GetOptionString("sotbit.origami", "shopLocation_ua", GetMessage("WIZ_SHOP_LOCATION_DEF_UA"), $siteID),
-                "shopAdr_ua" => COption::GetOptionString("sotbit.origami", "shopAdr_ua", GetMessage("WIZ_SHOP_ADR_DEF_UA"), $siteID),
-                "shopEGRPU_ua" =>  COption::GetOptionString("sotbit.origami", "shopEGRPU_ua", "", $siteID),
-                "shopINN_ua" =>  COption::GetOptionString("sotbit.origami", "shopINN_ua", "", $siteID),
-                "shopNDS_ua" =>  COption::GetOptionString("sotbit.origami", "shopNDS_ua", "", $siteID),
-                "shopNS_ua" =>  COption::GetOptionString("sotbit.origami", "shopNS_ua", "", $siteID),
-                "shopBank_ua" =>  COption::GetOptionString("sotbit.origami", "shopBank_ua", "", $siteID),
-                "shopMFO_ua" =>  COption::GetOptionString("sotbit.origami", "shopMFO_ua", "", $siteID),
-                "shopPlace_ua" =>  COption::GetOptionString("sotbit.origami", "shopPlace_ua", "", $siteID),
-                "shopFIO_ua" =>  COption::GetOptionString("sotbit.origami", "shopFIO_ua", "", $siteID),
-                "shopTax_ua" =>  COption::GetOptionString("sotbit.origami", "shopTax_ua", "", $siteID),
+                //"shopCompany_ua" => COption::GetOptionString("kit.origami", "shopCompany_ua", "", $siteID),
+                "shopOfName_ua" => COption::GetOptionString("kit.origami", "shopOfName_ua", GetMessage("WIZ_SHOP_OF_NAME_DEF_UA"), $siteID),
+                "shopLocation_ua" => COption::GetOptionString("kit.origami", "shopLocation_ua", GetMessage("WIZ_SHOP_LOCATION_DEF_UA"), $siteID),
+                "shopAdr_ua" => COption::GetOptionString("kit.origami", "shopAdr_ua", GetMessage("WIZ_SHOP_ADR_DEF_UA"), $siteID),
+                "shopEGRPU_ua" =>  COption::GetOptionString("kit.origami", "shopEGRPU_ua", "", $siteID),
+                "shopINN_ua" =>  COption::GetOptionString("kit.origami", "shopINN_ua", "", $siteID),
+                "shopNDS_ua" =>  COption::GetOptionString("kit.origami", "shopNDS_ua", "", $siteID),
+                "shopNS_ua" =>  COption::GetOptionString("kit.origami", "shopNS_ua", "", $siteID),
+                "shopBank_ua" =>  COption::GetOptionString("kit.origami", "shopBank_ua", "", $siteID),
+                "shopMFO_ua" =>  COption::GetOptionString("kit.origami", "shopMFO_ua", "", $siteID),
+                "shopPlace_ua" =>  COption::GetOptionString("kit.origami", "shopPlace_ua", "", $siteID),
+                "shopFIO_ua" =>  COption::GetOptionString("kit.origami", "shopFIO_ua", "", $siteID),
+                "shopTax_ua" =>  COption::GetOptionString("kit.origami", "shopTax_ua", "", $siteID),
 
-                "installPriceBASE" => COption::GetOptionString("sotbit.origami", "installPriceBASE", "Y", $siteID),
+                "installPriceBASE" => COption::GetOptionString("kit.origami", "installPriceBASE", "Y", $siteID),
             )
         );
     }
@@ -679,7 +679,7 @@ class PersonType extends CWizardStep
             $wizard->SetDefaultVars(
                 Array(
                     "personType" => Array(
-                        "fiz" =>  COption::GetOptionString("sotbit.origami", "personTypeFiz", "Y", $siteID),
+                        "fiz" =>  COption::GetOptionString("kit.origami", "personTypeFiz", "Y", $siteID),
                         "ur" => "Y"
                     )
                 )
@@ -934,7 +934,7 @@ class PaySystem extends CWizardStep
             LANGUAGE_ID != "ru" ||
             LANGUAGE_ID == "ru" &&
             (
-                COption::GetOptionString("sotbit.origami", "wizard_installed", "N", $siteID) != "Y"
+                COption::GetOptionString("kit.origami", "wizard_installed", "N", $siteID) != "Y"
                 || $shopLocalization == "ru" && ($arAutoDeliveries["rus_post"] != "Y")
                 || $shopLocalization == "ua" && ($arAutoDeliveries["ua_post"] != "Y")
                 || $shopLocalization == "kz" && ($arAutoDeliveries["kaz_post"] != "Y")
@@ -944,7 +944,7 @@ class PaySystem extends CWizardStep
             $deliveryNotes = array();
             $deliveryContent = '<div class="wizard-input-form-field wizard-input-form-field-checkbox">';
 
-            if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", $siteID) != "Y")
+            if(COption::GetOptionString("kit.origami", "wizard_installed", "N", $siteID) != "Y")
             {
                 $deliveryContent .= '<div class="wizard-catalog-form-item">
 					'.$this->ShowCheckboxField('delivery[courier]', 'Y', (array("id" => "deliveryC"))).
@@ -1134,7 +1134,7 @@ class DataCollection extends CWizardStep
                         'SITE' => $site,
                         'KEY' => md5("BITRIX" . CUpdateClientPartner::GetLicenseKey() . "LICENCE"),
                         'LICENSE' => $arUpdateList["CLIENT"][0]["@"]["LICENSE"],
-                        'MODULE' => 'sotbit.origami',
+                        'MODULE' => 'kit.origami',
                         'NAME' => $dataCollection['Name'],
                         'EMAIL' => $dataCollection['Email'],
                         'PHONE' => $dataCollection['Phone'],
@@ -1150,7 +1150,7 @@ class DataCollection extends CWizardStep
                     );
 
                     $context = stream_context_create($options);
-                    $answer = file_get_contents('https://www.sotbit.ru:443/api/datacollection/index.php', 0, $context);
+                    $answer = file_get_contents('https://www.kit.ru:443/api/datacollection/index.php', 0, $context);
                 }
                 else
                 {
@@ -1272,14 +1272,14 @@ class FinishStep extends CFinishWizardStep
         if ($wizard->GetVar("installDemoData") == "Y")
             $this->content .= GetMessage("FINISH_STEP_REINDEX");
 
-        if(IsModuleInstalled('sotbit.b2bshop') && (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sotbit.b2bshop/") || file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/sotbit/b2bshop/"))) {
+        if(IsModuleInstalled('kit.b2bshop') && (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.b2bshop/") || file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/kit/b2bshop/"))) {
             if ((isset($_SERVER['REQUEST_SCHEME']) AND $_SERVER['REQUEST_SCHEME'] === 'https') OR (isset($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] === 'on'))
                 $protocol = 'https';
             else
                 $protocol = 'http';
 
 
-            header('Location: ' . $protocol . '://' . $_SERVER['HTTP_HOST'] . '/bitrix/admin/wizard_install.php?' . bitrix_sessid_get() . '&lang=' . LANGUAGE_ID . '&wizardName=sotbit:b2bcabinet');
+            header('Location: ' . $protocol . '://' . $_SERVER['HTTP_HOST'] . '/bitrix/admin/wizard_install.php?' . bitrix_sessid_get() . '&lang=' . LANGUAGE_ID . '&wizardName=kit:b2bcabinet');
         }
 
     }

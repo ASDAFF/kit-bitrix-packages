@@ -9,7 +9,7 @@ $moduleLoaded = false;
 
 try
 {
-	$moduleLoaded = Loader::includeModule('sotbit.origami');
+	$moduleLoaded = Loader::includeModule('kit.origami');
 }
 catch (\Bitrix\Main\LoaderException $e)
 {
@@ -25,7 +25,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
     <?php
     $APPLICATION->ShowHead();
     Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-    Asset::getInstance()->addString("<meta name='author' content='sotbit.ru'>");
+    Asset::getInstance()->addString("<meta name='author' content='kit.ru'>");
 
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/vendor/jquery.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/script.js");
@@ -79,10 +79,10 @@ $theme = new \Sotbit\Origami\Front\Theme();
     Asset::getInstance()->addCss($theme->getTheme() . "/color.css");
     Asset::getInstance()->addCss($theme->getTheme() . "/size.css");
     Asset::getInstance()->addCss($theme->getTheme() . "/custom.css");
-    Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/files/custom_style.css");
+    Asset::getInstance()->addCss(SITE_DIR . "include/kit_origami/files/custom_style.css");
 
-//    Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/system.auth.authorize/.default/style.css");
-//    Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/system.auth.registration/.default/style.css");
+//    Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.authorize/.default/style.css");
+//    Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.registration/.default/style.css");
 
     $Files = new \Sotbit\Origami\Helper\Files();
     $Files->showCustomCss();
@@ -96,7 +96,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
    if (Config::get('IE_STUB') == "Y") {
        if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE ||
     strpos($_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE) {
-        include $_SERVER['DOCUMENT_ROOT'].'/include/sotbit_origami/stub_for_ie/content.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/include/kit_origami/stub_for_ie/content.php';
     }
    }
 
@@ -113,7 +113,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
     $APPLICATION->ShowPanel();
 
     if(Config::get('FRONT_CHANGE') == 'Y') {
-        $APPLICATION->IncludeComponent('sotbit:origami.theme','',[]);
+        $APPLICATION->IncludeComponent('kit:origami.theme','',[]);
     }
 
     include $_SERVER['DOCUMENT_ROOT'].'/'.\SotbitOrigami::headersDir.'/'.Config::get('HEADER').'/content.php';    //<======== hard
@@ -139,7 +139,7 @@ $theme = new \Sotbit\Origami\Front\Theme();
                         "",
                         Array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR."include/sotbit_origami/left_block.php"
+                            "PATH" => SITE_DIR."include/kit_origami/left_block.php"
                         ),
                         false,
                         Array('HIDE_ICONS' => 'Y')

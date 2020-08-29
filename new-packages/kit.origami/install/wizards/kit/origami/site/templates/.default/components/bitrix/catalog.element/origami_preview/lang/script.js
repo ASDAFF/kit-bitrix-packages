@@ -4239,7 +4239,7 @@ $(document).mouseup(function(e) {
 //                 createLoadersMore($('#DELIVERY_CONTENT'));
 
 //                 BX.ajax({
-//                     url: '/bitrix/components/sotbit/regions.delivery/ajax.php' + (document.location.href.indexOf('clear_cache=Y') !== -1 ? '?clear_cache=Y' : ''),
+//                     url: '/bitrix/components/kit/regions.delivery/ajax.php' + (document.location.href.indexOf('clear_cache=Y') !== -1 ? '?clear_cache=Y' : ''),
 //                     method: 'POST',
 //                     dataType: 'html',
 //                     timeout: 60,

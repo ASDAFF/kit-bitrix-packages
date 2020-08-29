@@ -16,8 +16,8 @@
     function resizeWantGiftPopup() {
         let popupResizeableContentWide = wrapper.querySelector(".want_gift-resizeable_content_wide"),
             popupResizeableContentNarrowly = wrapper.querySelector(".want_gift-resizeable_content"),
-            titleWide = wrapper.querySelector(".sotbit_order_phone__title_wide"),
-            titleNarrowly = wrapper.querySelector(".sotbit_order_phone__title_narrowly"),
+            titleWide = wrapper.querySelector(".kit_order_phone__title_wide"),
+            titleNarrowly = wrapper.querySelector(".kit_order_phone__title_narrowly"),
             popupContent = wrapper.querySelector(".popup-content"),
             popupWindow = wrapper.querySelector(".popup-window");
 
@@ -38,7 +38,7 @@
         }
 
         function resizePopUp() {
-            let wantGiftImage = wrapper.querySelector(".sotbit_want_gift_image");
+            let wantGiftImage = wrapper.querySelector(".kit_want_gift_image");
 
             if (titleWide.clientHeight > titleNarrowly.clientHeight) {
                 resizePopupContent(popupResizeableContentWide, titleWide, popupResizeableContentNarrowly);

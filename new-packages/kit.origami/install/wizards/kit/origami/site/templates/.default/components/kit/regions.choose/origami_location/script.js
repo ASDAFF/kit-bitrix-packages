@@ -65,8 +65,8 @@ window.SotbitRegions = function (arParams) {
                     var idLocation = this.dataset.locationId;
                     if (idLocation !== undefined && idLocation > 0) {
                         if (params.FROM_LOCATION == 'Y') {
-                            SetCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                            SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                            SetCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                            SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                             var xhr = new XMLHttpRequest();
                             var body = 'id=' + idLocation + '&action=getDomainByLocation';
@@ -77,7 +77,7 @@ window.SotbitRegions = function (arParams) {
                                 if (this.readyState != 4) return;
                                 var answer = JSON.parse(this.responseText);
                                 if (answer.ID) {
-                                    SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                    SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                                     if (arParams.singleDomain == 'Y') {
                                         location.reload();
                                     } else {
@@ -103,8 +103,8 @@ window.SotbitRegions = function (arParams) {
                     if (idLocation !== undefined && idLocation > 0) {
                         if (params.FROM_LOCATION == 'Y') {
 
-                            SetCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                            SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                            SetCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                            SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                             var xhr = new XMLHttpRequest();
                             var body = 'id=' + idLocation + '&action=getDomainByLocation';
@@ -115,7 +115,7 @@ window.SotbitRegions = function (arParams) {
                                 if (this.readyState != 4) return;
                                 var answer = JSON.parse(this.responseText);
                                 if (answer.ID) {
-                                    SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                    SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                                     if (arParams.singleDomain == 'Y') {
                                         location.reload();
                                     } else {
@@ -139,8 +139,8 @@ window.SotbitRegions = function (arParams) {
 
             if (params.FROM_LOCATION == 'Y') {
                 var idLocation = yes[0].dataset.id;
-                SetCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                SetCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                 var xhr = new XMLHttpRequest();
                 var body = 'id=' + idLocation + '&action=getDomainByLocation';
@@ -151,7 +151,7 @@ window.SotbitRegions = function (arParams) {
                     if (this.readyState != 4) return;
                     var answer = JSON.parse(this.responseText);
                     if (answer.ID) {
-                        SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                        SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                         if (arParams.singleDomain == 'Y') {
                             //location.reload();
                         } else {
@@ -161,8 +161,8 @@ window.SotbitRegions = function (arParams) {
                 }
                 xhr.send(body);
             } else {
-                SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                SetCookie('sotbit_regions_id', yes[0].dataset.id, {'domain': arParams.rootDomain});
+                SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                SetCookie('kit_regions_id', yes[0].dataset.id, {'domain': arParams.rootDomain});
                 if (arParams.singleDomain != 'Y') {
                     var url = '';
                     for (var i = 0; i < arParams.list.length; ++i) {
@@ -285,8 +285,8 @@ window.SotbitRegions = function (arParams) {
                             var idLocation = this.dataset.index;
                             if (idLocation !== undefined && idLocation > 0) {
                                 if (params.FROM_LOCATION == 'Y') {
-                                    SetCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                                    SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                                    SetCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                                    SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                                     var xhr = new XMLHttpRequest();
                                     var body = 'id=' + idLocation + '&action=getDomainByLocation';
@@ -297,7 +297,7 @@ window.SotbitRegions = function (arParams) {
                                         if (this.readyState != 4) return;
                                         var answer = JSON.parse(this.responseText);
                                         if (answer.ID) {
-                                            SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                            SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                                             if (arParams.singleDomain == 'Y') {
                                                 location.reload();
                                             } else {
@@ -323,8 +323,8 @@ window.SotbitRegions = function (arParams) {
                             if (idLocation !== undefined && idLocation > 0) {
                                 if (params.FROM_LOCATION == 'Y') {
 
-                                    SetCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                                    SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                                    SetCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                                    SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                                     var xhr = new XMLHpRequest();
                                     var body = 'id=' + idLocation + '&action=getDomainByLocation';
@@ -335,7 +335,7 @@ window.SotbitRegions = function (arParams) {
                                         if (this.readyState != 4) return;
                                         var answer = JSON.parse(this.responseText);
                                         if (answer.ID) {
-                                            SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                            SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                                             if (arParams.singleDomain == 'Y') {
                                                 location.reload();
                                             } else {
@@ -356,8 +356,8 @@ window.SotbitRegions = function (arParams) {
                 item[i].addEventListener('click', function () {
                     if (params.FROM_LOCATION == 'Y') {
                         var id = this.getAttribute('data-index');
-                        SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                        SetCookie('sotbit_regions_location_id', id, {'domain': arParams.rootDomain});
+                        SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                        SetCookie('kit_regions_location_id', id, {'domain': arParams.rootDomain});
 
                         var xhr = new XMLHttpRequest();
                         var body = 'id=' + encodeURIComponent(id) + '&action=getDomainByLocation';
@@ -368,7 +368,7 @@ window.SotbitRegions = function (arParams) {
                             if (this.readyState != 4) return;
                             let answer = JSON.parse(this.responseText);
                             if (answer.ID) {
-                                SetCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                SetCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
                                 if (arParams.singleDomain == 'Y') {
                                     location.reload();
                                 } else {
@@ -379,8 +379,8 @@ window.SotbitRegions = function (arParams) {
                         xhr.send(body);
                     } else {
                         var id = this.getAttribute('data-index');
-                        SetCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                        SetCookie('sotbit_regions_id', id, {'domain': arParams.rootDomain});
+                        SetCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                        SetCookie('kit_regions_id', id, {'domain': arParams.rootDomain});
                         if (arParams.singleDomain == 'Y') {
                             location.reload();
                         } else {

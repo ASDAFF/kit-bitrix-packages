@@ -5,7 +5,7 @@ if( !defined( "B_PROLOG_INCLUDED" ) || B_PROLOG_INCLUDED !== true )
 use Bitrix\Main\Localization\Loc;
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 CModule::includeModule('sale');
 CModule::includeModule($module);
 CModule::IncludeModule("iblock");

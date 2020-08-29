@@ -12,10 +12,10 @@ $page = $APPLICATION->GetCurPage(false);
 	<div class="header-two__main-nav-catalog header-two__main-nav-catalog--one <?if($arResult[0]["SELECTED"]):?>active<?endif;?> <?if(isset($arResult[0]["CHILD_SELECTED"])):?>current<?endif;?>">
 		<a href="<?=$arResult[0]["LINK"]?>"><?=$arResult[0]["TEXT"]?>
 			<svg class="header-two__menu-icon" width="18" height="18">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_menu"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_menu"></use>
 			</svg>
 			<svg class="site-navigation__item-icon" width="14" height="8">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
 			</svg>
 		</a>
 		<div class="header-two__menu-catalog menu-catalog-one">
@@ -29,7 +29,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <a href="<?=$item['LINK']?>" title="<?=$item['TEXT']?>"><?=$item['TEXT']?>
                             <?if($item["IS_PARENT"]):?>
                             <svg class="menu-catalog-one__menu-item-icon" width="8" height="12">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                             </svg>
                             <?endif;?>
                         </a>
@@ -40,7 +40,7 @@ $page = $APPLICATION->GetCurPage(false);
                                 <a href="<?=$children['LINK']?>" title="<?=$children['TEXT']?>"><?=$children['TEXT']?>
                                     <?if($children["IS_PARENT"]):?>
                                     <svg class="menu-catalog-one__menu-item-icon" width="8" height="12">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                     </svg>
                                     <?endif;?>
                                 </a>
@@ -60,17 +60,17 @@ $page = $APPLICATION->GetCurPage(false);
                         <?/*?>
                         <div class="main-menu-wrapper__submenu-banner">
                             <div class="main-menu-wrapper__submenu-banner-img-wrapper">
-                                <img src="/local/templates/sotbit_origami/assets/img/catalog/tovar/4.png" alt="banner">
+                                <img src="/local/templates/kit_origami/assets/img/catalog/tovar/4.png" alt="banner">
                             </div>
                             <div class="main-menu-wrapper__submenu-banner-content">
-                                <p class="main-menu-wrapper__submenu-banner-title">Предложения магазина</p>
+                                <p class="main-menu-wrapper__submenu-banner-title">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</p>
                                 <div class="main-menu-wrapper__submenu-banner-labels">
                                     <a href="#" class="main-menu-wrapper__submenu-banner-label">-10%</a>
-                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">Акция</a>
-                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">Хит</a>
-                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">Новинка</a>
-                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">Хит</a>
-                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">Новинка</a>
+                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">пїЅпїЅпїЅпїЅпїЅ</a>
+                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">пїЅпїЅпїЅ</a>
+                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
+                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">пїЅпїЅпїЅ</a>
+                                    <a href="#" class="main-menu-wrapper__submenu-banner-label">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
                                 </div>
                             </div>
                         </div>

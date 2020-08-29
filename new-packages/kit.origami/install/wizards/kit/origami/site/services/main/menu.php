@@ -16,11 +16,11 @@ $menuTypes=array(
     'left'=>GetMessage("WIZ_MENU_left"),
     'top'=>GetMessage("WIZ_MENU_top"),
     'bottom'=>GetMessage("WIZ_MENU_bottom"),
-    'sotbit_left' => GetMessage("WIZ_MENU_sotbit_left"),
-    'sotbit_top' => GetMessage("WIZ_MENU_sotbit_top"),
-    'sotbit_side' => GetMessage("WIZ_MENU_sotbit_side"),
-    'sotbit_bottom1' => GetMessage("WIZ_MENU_sotbit_bottom_1"),
-    'sotbit_bottom2' => GetMessage("WIZ_MENU_sotbit_bottom_2")
+    'kit_left' => GetMessage("WIZ_MENU_kit_left"),
+    'kit_top' => GetMessage("WIZ_MENU_kit_top"),
+    'kit_side' => GetMessage("WIZ_MENU_kit_side"),
+    'kit_bottom1' => GetMessage("WIZ_MENU_kit_bottom_1"),
+    'kit_bottom2' => GetMessage("WIZ_MENU_kit_bottom_2")
 );
 
 $armt=array();

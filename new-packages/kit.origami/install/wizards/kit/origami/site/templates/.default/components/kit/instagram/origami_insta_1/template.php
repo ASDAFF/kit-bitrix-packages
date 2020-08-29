@@ -190,7 +190,7 @@ global $settings;
                                 <a href="<?=$arResult["SUBSCRIBE"]?>" target="_blank" title="<?=Loc::getMessage("SOTBIT_INSTAGRAM_SUBSCRIBE")?>" class="origami_instagram-subscribe__link">
                                     <?=Loc::getMessage("SOTBIT_INSTAGRAM_SUBSCRIBE")?>
                                     <svg class="instagram-logo_icon" width="42" height="16">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow"></use>
                                     </svg>
                                 </a>
                             </div>

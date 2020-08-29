@@ -12,7 +12,7 @@
     let popupResizeableContent = wrapper.querySelector(".popup_resizeable_content"),
         popupWindow = wrapper.querySelector(".popup-window"),
         popupContent = wrapper.querySelector(".popup-content"),
-        popupTitle = wrapper.querySelector(".sotbit_order_phone__title"),
+        popupTitle = wrapper.querySelector(".kit_order_phone__title"),
         submitBtn = wrapper.querySelector(".popup-window-submit_button");
 
     resizePopupContent();
@@ -101,7 +101,7 @@ function EventsAfterClose(){
 	popup_wrap.addEventListener("click", function(e) {
 		if (e.target == close_modal || e.target == popup_bg) {
 
-			BX.ajax.post("/bitrix/components/sotbit/order.phone/ajax.php",
+			BX.ajax.post("/bitrix/components/kit/order.phone/ajax.php",
 				{'SMS_CLEAR':'Y'}, function (response) {
 
 				})

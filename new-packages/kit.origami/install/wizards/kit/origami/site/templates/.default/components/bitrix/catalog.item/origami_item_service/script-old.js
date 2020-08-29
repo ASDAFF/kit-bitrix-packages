@@ -2662,10 +2662,10 @@
 					// strContent = '<div style="width: 100%; margin: 0; text-align: center;"><img src="'
 					// 	+ strPict + '" height="130" style="max-height: 130px; max-width: 350px;" alt="" title=""><p style="padding-top: 15px;">' + this.product.name + '</p></div>';
 
-					strContent = '<div class="sotbit_order_success_show" style="max-width: 429px">\n' +
+					strContent = '<div class="kit_order_success_show" style="max-width: 429px">\n' +
 						'<div class="popup-window-message-content">\n' +
 						'<svg class="popup-window-icon-check">\n' +
-						'<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>\n' +
+						'<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>\n' +
 						'</svg>\n' +
 						'<div>\n' +
 						'<div class="popup-window-message-title">' + this.successThanksText + '</div>\n' +

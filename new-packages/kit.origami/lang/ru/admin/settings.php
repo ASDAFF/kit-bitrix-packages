@@ -1,5 +1,5 @@
 <?
-$moduleId = 'sotbit.origami';
+$moduleId = 'kit.origami';
 $MESS[$moduleId . '_MAIN_SAVE'] = 'Сохранить';
 
 $MESS[$moduleId . '_TAB_MAIN'] = 'Общие настройки';

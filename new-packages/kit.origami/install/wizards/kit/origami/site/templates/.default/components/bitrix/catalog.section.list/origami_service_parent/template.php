@@ -3,10 +3,10 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 global $issetCondition;
 global ${$arParams["FILTER_NAME"]};
 

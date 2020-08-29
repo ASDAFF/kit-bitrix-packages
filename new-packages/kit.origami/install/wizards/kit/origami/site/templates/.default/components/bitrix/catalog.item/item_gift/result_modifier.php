@@ -6,7 +6,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
 try {
-    \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    \Bitrix\Main\Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
     print_r($e->getMessage());
 }
@@ -47,10 +47,10 @@ if($showSkuBlock && (!isset($arResult['TEMPLATE']) || $arResult['TEMPLATE'] == "
 
 \SotbitOrigami::checkPriceDiscount($arResult['ITEM']);
 
-if (Bitrix\Main\Loader::includeModule("sotbit.price")) {
+if (Bitrix\Main\Loader::includeModule("kit.price")) {
     //$arResult['ITEM'] = SotbitPrice::ChangeMinPrice($arResult['ITEM']);
 }
-if (Bitrix\Main\Loader::includeModule("sotbit.regions")) {
+if (Bitrix\Main\Loader::includeModule("kit.regions")) {
     //$arResult['ITEM'] = \Sotbit\Regions\Sale\Price::change($arResult['ITEM']);
 }
 ?>

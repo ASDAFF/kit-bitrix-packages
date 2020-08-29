@@ -3,7 +3,7 @@
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Sale\PriceMaths;
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 /**
  *
  * This file modifies result for every request (including AJAX).

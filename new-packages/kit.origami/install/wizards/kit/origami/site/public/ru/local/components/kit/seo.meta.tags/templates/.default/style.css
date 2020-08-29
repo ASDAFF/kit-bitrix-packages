@@ -8,16 +8,16 @@
     transition: 0.8s;
 }
 
-.sotbit-seometa-tags__hide {
+.kit-seometa-tags__hide {
     cursor: pointer;
 }
 
-.sotbit-seometa-tags__hide i {
+.kit-seometa-tags__hide i {
     padding-top: 1rem;
     padding-left: 0.4rem;
 }
 
-.sotbit-seometa-tags-wrapper a {
+.kit-seometa-tags-wrapper a {
     display: flex;
     padding: 0 10px;
     font-size: 0.9rem;
@@ -25,39 +25,39 @@
     color: #000;
 }
 
-.sotbit-seometa-tag {
+.kit-seometa-tag {
     border: 1px solid #ededed;
     border-radius: 2px;
     transition: 0.1s;
 }
 
-.sotbit-seometa-tag:hover {
+.kit-seometa-tag:hover {
     border: 1px solid var(--main-color);
 }
 
-.sotbit-seometa-tag:hover a {
+.kit-seometa-tag:hover a {
     color: var(--main-color-hover);
 }
 
-.sotbit-seometa-tag.active {
+.kit-seometa-tag.active {
     border-color: var(--main-color);
     background-color: var(--main-color);
 }
 
-.sotbit-seometa-tag.active a {
+.kit-seometa-tag.active a {
     color: #fff;
 }
 
-.sotbit-seometa-tag.active a:hover {
+.kit-seometa-tag.active a:hover {
     color: #fff;
 }
 
-.sotbit-seometa-tags-wrapper {
+.kit-seometa-tags-wrapper {
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.sotbit-seometa-tags__title {
+.kit-seometa-tags__title {
     margin-right: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -65,14 +65,14 @@
     align-self: baseline;
 }
 
-.sotbit-seometa-tags-container {
+.kit-seometa-tags-container {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     transition: 0.8s;
 }
 
-.sotbit-seometa-tags-row-container {
+.kit-seometa-tags-row-container {
     margin: 33px 0 11px;
     padding: 0;
 }

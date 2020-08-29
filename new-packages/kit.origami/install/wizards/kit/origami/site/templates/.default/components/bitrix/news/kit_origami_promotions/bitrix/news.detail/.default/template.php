@@ -47,7 +47,7 @@ style="<?=($arResult['BACKGROUND'])?"background-image:url('".$arResult['BACKGROU
         <?
         if (Config::get('TIMER_PROMOTIONS') == 'Y') {
             $APPLICATION->IncludeComponent(
-                "sotbit:origami.timer",
+                "kit:origami.timer",
                 "origami_default",
                 array(
                     "COMPONENT_TEMPLATE" => "origami_default",

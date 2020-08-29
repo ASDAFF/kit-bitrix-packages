@@ -12,7 +12,7 @@ if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
 }
 $APPLICATION->IncludeComponent(
 	"bitrix:news.list",
-	"sotbit_services_images",
+	"kit_services_images",
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -44,7 +44,7 @@ $APPLICATION->IncludeComponent(
 		"FILTER_NAME" => "filterNews",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "3",
-		"IBLOCK_TYPE" => "sotbit_origami_content",
+		"IBLOCK_TYPE" => "kit_origami_content",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",

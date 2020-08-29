@@ -1,5 +1,5 @@
 <?php
-$moduleId = 'sotbit.origami';
+$moduleId = 'kit.origami';
 $MESS[$moduleId.'_JANUARY'] = 'января';
 $MESS[$moduleId.'_FEBRUARY'] = 'февраля';
 $MESS[$moduleId.'_MARCH'] = 'марта';

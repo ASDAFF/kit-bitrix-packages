@@ -12,7 +12,7 @@ global $USER;
 $cache_id = serialize(array($arParams, ($arParams['CACHE_GROUPS']==='N'? false: $USER->GetGroups())));
 $obCache = new CPHPCache;
 
-if ($obCache->InitCache($arParams['CACHE_TIME'], $cache_id, 'sotbit.crosssell'))
+if ($obCache->InitCache($arParams['CACHE_TIME'], $cache_id, 'kit.crosssell'))
 {
     $vars = $obCache->GetVars();
     $promoIds = $vars['promoIds'];

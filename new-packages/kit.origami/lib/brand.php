@@ -6,7 +6,7 @@ use \Bitrix\Main\Data\Cache;
  * Class Brand
  *
  * @package Sotbit\Origami
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Brand
 {
@@ -32,7 +32,7 @@ class Brand
         
         $idBrands = array_filter($idBrands);
         
-        if ($cache->initCache(36000000, 'detail_brands_'.md5(serialize($idBrands)), '/sotbit.origami')) {
+        if ($cache->initCache(36000000, 'detail_brands_'.md5(serialize($idBrands)), '/kit.origami')) {
             $return = $cache->getVars();
         }
         elseif($cache->startDataCache())

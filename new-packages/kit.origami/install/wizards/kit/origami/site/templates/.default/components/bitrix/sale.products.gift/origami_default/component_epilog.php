@@ -3,9 +3,9 @@
 global $APPLICATION;
 use Bitrix\Main\Page\Asset;
 
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/css/style-swiper-custom.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 
 $arIDs = array();
 $basketRes = \Bitrix\Sale\Internals\BasketTable::getList(array(

@@ -199,7 +199,7 @@ $rnd = "or".randString(4);
 								<?
 								else:
 								?>
-									<img src="/upload/sotbit.origami/no_photo_small.svg" />
+									<img src="/upload/kit.origami/no_photo_small.svg" />
 								<?
 								endif;
 								?>

@@ -35,7 +35,7 @@ if($arResult['ITEMS']) {
     }
 }
 
-if (!empty($arResult['ITEMS'])  && \Bitrix\Main\Loader::includeModule('sotbit.origami')){
+if (!empty($arResult['ITEMS'])  && \Bitrix\Main\Loader::includeModule('kit.origami')){
     foreach ($arResult['ITEMS'] as $i => $item){
         if(empty($item['OFFERS'])){
             /*unset($arResult['ITEMS'][$i]);

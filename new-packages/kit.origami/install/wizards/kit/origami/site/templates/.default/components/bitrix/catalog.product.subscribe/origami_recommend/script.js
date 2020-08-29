@@ -502,7 +502,7 @@
                 this.elemButtonSubscribe.className = this.elemButtonSubscribe.className.replace('sweep-to-right', '');
                 this.elemButtonSubscribe.innerHTML = '<div class="product-card-inner__product-subscribe-btn product-card-inner__product-subscribe-btn--active">' +
                     '<svg class="icon_mail" width="18" height="14" style="display: none">' +
-                    '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>' +
+                    '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>' +
                     '</svg>' +
                     '<span>' + BX.message('CPST_TITLE_ALREADY_SUBSCRIBED2') + '</span>' +
                     '</div>';
@@ -513,7 +513,7 @@
                 this.elemButtonSubscribe.className = this.elemButtonSubscribe.className.replace('sweep-to-right', '');
                 this.elemButtonSubscribe.innerHTML = '<div class="product-card-inner__product-subscribe-btn product-card-inner__product-subscribe-btn--active">' +
                     '<svg class="icon_mail" width="18" height="14" style="display: none">' +
-                    '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>' +
+                    '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>' +
                     '</svg>' +
                     '<span>' + BX.message('CPST_TITLE_ALREADY_SUBSCRIBED') + '</span></div>';
                 BX.unbind(this.elemButtonSubscribe, 'click', this._elemButtonSubscribeClickHandler);
@@ -523,7 +523,7 @@
                 this.elemButtonSubscribe.className = this.buttonClass + ' ' + this.defaultButtonClass;
                 this.elemButtonSubscribe.innerHTML = '<div class="product-card-inner__product-subscribe-btn">' +
                     '<svg class="icon_mail" width="18" height="14" style="display: none">' +
-                    '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>' +
+                    '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>' +
                     '</svg>' +
                     '<span>' + BX.message('CPST_SUBSCRIBE_BUTTON_NAME') + '</span></div>';
                 BX.bind(this.elemButtonSubscribe, 'click', this._elemButtonSubscribeClickHandler);

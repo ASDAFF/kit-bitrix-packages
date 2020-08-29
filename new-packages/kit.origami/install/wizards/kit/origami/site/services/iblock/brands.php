@@ -1,7 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 
 use \Sotbit\Origami\Config\Option;
@@ -17,9 +17,9 @@ if(!defined("WIZARD_TEMPLATE_ABSOLUTE_PATH")) return;
 if(!defined("WIZARD_THEME_ID")) return;
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH . "/xml/" . LANGUAGE_ID . "/brands.xml";
-$iblockCode = "sotbit_origami_brands_" . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = "sotbit_origami_brands_" . WIZARD_SITE_ID;
+$iblockCode = "kit_origami_brands_" . WIZARD_SITE_ID;
+$iblockType = "kit_origami_content";
+$iblockXMLID = "kit_origami_brands_" . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;
@@ -205,7 +205,7 @@ if (strlen($lang) <= 0)
 $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["BRANDS"] = $iblockID;
 
 if($iblockID) {
-    Option::Set('IBLOCK_TYPE_BRANDS', "sotbit_origami_content", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE_BRANDS', "kit_origami_content", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID_BRANDS', $iblockID, WIZARD_SITE_ID);
 }
 
@@ -241,8 +241,8 @@ CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/include/blocks/brands_squares/co
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/brands/content.php", array("BRANDS_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/brands_slider/content.php", array("BRANDS_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/brands_squares/content.php", array("BRANDS_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/local/templates/sotbit_origami/components/bitrix/catalog.element/.default/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/sotbit_origami/components/bitrix/catalog.element/.default/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/sotbit_origami/components/bitrix/catalog.element/techno/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/local/templates/kit_origami/components/bitrix/catalog.element/.default/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/kit_origami/components/bitrix/catalog.element/.default/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/kit_origami/components/bitrix/catalog.element/techno/template.php", array("BRANDS_IBLOCK_ID" => $iblockID));
 */
 ?>

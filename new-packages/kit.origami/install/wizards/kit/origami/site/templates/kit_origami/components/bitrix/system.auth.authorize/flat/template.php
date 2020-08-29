@@ -14,7 +14,7 @@ use Bitrix\Main\Page\Asset;
 //one css for all system.auth.* forms
 $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/system.auth.registration/flat/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/components/bitrix/system.auth.registration/flat/style.css");
 
 ?>
 
@@ -66,61 +66,61 @@ $APPLICATION->IncludeComponent("bitrix:socserv.auth.form",
             <div class="auth-login_socials">
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-fb" width="10px" height="20px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_facebook"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_facebook"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-vk" width="20px" height="12px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_vk"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_vk"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-tw" width="20px" height="16px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_twitter"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_twitter"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-google" width="16px" height="16px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_google"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_google"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-mailru" width="20px" height="20px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mailru"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mailru"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-ya" width="10px" height="20px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_yandex"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_yandex"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-telega" width="20px" height="16px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_telegram"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_telegram"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-ok" width="12px" height="20px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_odnoklassniki"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_odnoklassniki"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-boxc" width="26px" height="14px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_box_company"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_box_company"></use>
                     </svg>
                 </div>
 
                 <div class="login_social_icon">
                     <svg class="login_social_icon_svg-24" width="20px" height="14px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_bitrix24"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_bitrix24"></use>
                     </svg>
                 </div>
             </div>
@@ -180,7 +180,7 @@ $APPLICATION->IncludeComponent("bitrix:socserv.auth.form",
                            autocomplete="off"
                            placeholder="<? echo GetMessage("AUTH_PASS_PLACEHOLDER") ?>"/>
                     <svg class="auth-icon_password_hidden" width="18px" height="18px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
                     </svg>
                 </div>
                 <!-- / PASS INPUT -->

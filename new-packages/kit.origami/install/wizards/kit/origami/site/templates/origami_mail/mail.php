@@ -20,8 +20,8 @@ $serverName = $_SERVER["SERVER_NAME"];
                              style="padding-top: 2px; padding-right: 5px; border:0; outline:none; text-decoration:none; display:block;">
                     </td>
                     <td align="left" rowspan="2">
-                        <a href="mailto:sale@sotbit.ru" value="sale@sotbit.ru"
-                           style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; text-decoration: none;">sale@sotbit.ru</a>
+                        <a href="mailto:sale@kit.ru" value="sale@kit.ru"
+                           style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; text-decoration: none;">sale@kit.ru</a>
                     </td>
                     <td rowspan="2" align="center">
                         <a href=""><img src="/img/logo.png" alt="" border="0" width="165" height="45"
@@ -75,34 +75,34 @@ $serverName = $_SERVER["SERVER_NAME"];
                             <tr>
                                 <td>
                                     <h1 style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: bold; padding-bottom: 30px;">
-                                        Вы кажется что-то забыли?</h1>
+                                        пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?</h1>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-bottom: 25px;">
-                                        Приветствуем Вас, Иван Иванов. Мыхотим вам напомнить, что вы забыли в корзине
-                                        на сайте нашего магазина. Хотим убедиться, что все в порядке, и это всего-лишь
-                                        случайное
-                                        недоразумение.</p>
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</p>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-bottom: 25px;">
-                                        Если вам необходимо помощь при оформление заказа, Вы всегда можете нам позвонить
-                                        или написать на почту, и мы окажем Вам необходимую поддержку в тот час, как мы
-                                        получим ваше сообщение</p>
+                                        пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</p>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-bottom: 25px;">
-                                        Мы дарим Вам купон на 5% скидки, который будет действовать 2 дня, успейте купить
+                                        пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 5% пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                                         :</p>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; padding-bottom: 25px;">
-                                        Номер купона:</p>
+                                        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px;">
-                                        Колличество позиций: <span style="color: #000000; font-weight: bold;">1</span>
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <span style="color: #000000; font-weight: bold;">1</span>
                                     </p>
                                     <p style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px;">
-                                        Общая стоимость позиций: <span style="color: #000000; font-weight: bold;">24 990 руб.</span>
+                                        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <span style="color: #000000; font-weight: bold;">24 990 пїЅпїЅпїЅ.</span>
                                     </p>
                                 </td>
                             </tr>
@@ -110,8 +110,8 @@ $serverName = $_SERVER["SERVER_NAME"];
                                 <td style="padding-top: 40px; padding-bottom: 40px;">
                                     <div style="width: 150px; background-color: #fb0040; line-height: 36px; text-align: center;">
                                         <a href=""
-                                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: block;">Оформить
-                                            заказ</a></div>
+                                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: block;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                            пїЅпїЅпїЅпїЅпїЅ</a></div>
                                 </td>
                             </tr>
                             <tr>
@@ -125,7 +125,7 @@ $serverName = $_SERVER["SERVER_NAME"];
                             <tr>
                                 <td bgcolor="#f7f7f7" height="40" colspan="4">
                                     <p style="color: #252525; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; padding-left: 25px;">
-                                        4 <span style="color: #8b8b8b; font-weight: normal;">товара на сумму </span>62
+                                        4 <span style="color: #8b8b8b; font-weight: normal;">пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ </span>62
                                         790 &#8381;</p>
                                 </td>
                             </tr>
@@ -140,14 +140,14 @@ $serverName = $_SERVER["SERVER_NAME"];
                                 </td>
                                 <td style="border-bottom: 1px solid #f2f2f2;">
                                     <p style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold;">
-                                        Умные часы Smart Watch X6 Black </p>
+                                        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ Smart Watch X6 Black </p>
                                     <p>
-                                        <span style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-right: 40px;">Цвет: Черный </span>
+                                        <span style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-right: 40px;">пїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅ </span>
                                     </p>
                                 </td>
                                 <td align="center" style="border-bottom: 1px solid #f2f2f2;">
                                     <p style="color: #313131; font-family: 'Open Sans', sans-serif; font-size: 13px; padding-right: 40px;">
-                                        1 шт.</p>
+                                        1 пїЅпїЅ.</p>
                                 </td>
                                 <td align="center"
                                     style="border-bottom: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2;">
@@ -168,13 +168,13 @@ $serverName = $_SERVER["SERVER_NAME"];
                                     <p style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold;">
                                         Nike Air Max 270 Flyknit</p>
                                     <p>
-                                        <span style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-right: 40px;">Цвет: Серый</span><span
-                                                style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px;">Размер: 41</span>
+                                        <span style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-right: 40px;">пїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅ</span><span
+                                                style="color: #060606; font-family: 'Open Sans', sans-serif; font-size: 14px;">пїЅпїЅпїЅпїЅпїЅпїЅ: 41</span>
                                     </p>
                                 </td>
                                 <td align="center" style="border-bottom: 1px solid #f2f2f2;">
                                     <p style="color: #313131; font-family: 'Open Sans', sans-serif; font-size: 13px; padding-right: 40px;">
-                                        1 шт.</p>
+                                        1 пїЅпїЅ.</p>
                                 </td>
                                 <td align="center"
                                     style="border-bottom: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2;">
@@ -186,8 +186,8 @@ $serverName = $_SERVER["SERVER_NAME"];
                                 <td style="padding-top: 35px; padding-bottom: 60px;">
                                     <div style="width: 150px; background-color: #fb0040; line-height: 36px; text-align: center;">
                                         <a href=""
-                                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: block;">Оформить
-                                            заказ</a></div>
+                                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: block;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                            пїЅпїЅпїЅпїЅпїЅ</a></div>
                                 </td>
                             </tr>
                         </table>
@@ -199,7 +199,7 @@ $serverName = $_SERVER["SERVER_NAME"];
                 <tr>
                     <td valign="top">
                         <div style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 25px;">
-                            Мы в соц. сетях
+                            пїЅпїЅ пїЅ пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ
                         </div>
                         <table align="left" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000">
                             <tr>
@@ -224,48 +224,48 @@ $serverName = $_SERVER["SERVER_NAME"];
                     </td>
                     <td valign="top">
                         <div style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 25px;">
-                            О компании
+                            пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         </div>
                         <table align="left" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000">
                             <tr>
                                 <td style="padding-bottom: 20px;">
                                     <a href=""
-                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">Каталог
-                                        товаров</a>
+                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="padding-bottom: 20px;">
                                     <a href=""
-                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">Смотреть
-                                        акции</a>
+                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅ</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="padding-bottom: 20px;">
                                     <a href=""
-                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">Наши
-                                        услуги</a>
+                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">пїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅ</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href=""
-                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">Новости
-                                        компании</a>
+                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                                        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td valign="top" align="right">
                         <div style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 25px;">
-                            Контактная информация
+                            пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         </div>
                         <table align="right" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000">
                             <tr align="right">
                                 <td style="padding-bottom: 20px;">
                                     <p style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">
-                                        Косой переулок, дом 147</p>
+                                        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ 147</p>
                                 </td>
                             </tr>
                             <tr align="right">
@@ -277,8 +277,8 @@ $serverName = $_SERVER["SERVER_NAME"];
                             </tr>
                             <tr align="right">
                                 <td style="padding-bottom: 20px;">
-                                    <a href="mailto:sale@sotbit.ru"
-                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">sale@sotbit.ru</a>
+                                    <a href="mailto:sale@kit.ru"
+                                       style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">sale@kit.ru</a>
                                 </td>
                             </tr>
                         </table>

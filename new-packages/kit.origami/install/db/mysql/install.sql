@@ -1,11 +1,11 @@
-CREATE TABLE IF NOT EXISTS `sotbit_origami_options` (
+CREATE TABLE IF NOT EXISTS `kit_origami_options` (
 	`CODE` VARCHAR(50) not null,
 	`VALUE` TEXT,
 	`SITE_ID` CHAR(2),
 	UNIQUE ix_option(CODE, SITE_ID),
 	INDEX ix_option_name(CODE)
 );
-CREATE TABLE IF NOT EXISTS `sotbit_origami_blocks` (
+CREATE TABLE IF NOT EXISTS `kit_origami_blocks` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `CODE` varchar(255) NOT NULL,
   `PART` varchar(255) NOT NULL,

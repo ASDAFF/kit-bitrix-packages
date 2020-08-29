@@ -1,14 +1,14 @@
 <?php
 define("STOP_STATISTICS", true);
 define("NOT_CHECK_PERMISSIONS", true);
-use \Sotbit\Origami\Helper\Config;
-use \Sotbit\Origami\Config\Option;
+use \Kit\Origami\Helper\Config;
+use \Kit\Origami\Config\Option;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
 $moduleIncluded = false;
 try
 {
-	\Bitrix\Main\Loader::includeModule('sotbit.origami');
-	\Bitrix\Main\Loader::includeModule('sotbit.orderphone');
+	\Bitrix\Main\Loader::includeModule('kit.origami');
+	\Bitrix\Main\Loader::includeModule('kit.orderphone');
 }
 catch (\Bitrix\Main\LoaderException $e)
 {
@@ -20,7 +20,7 @@ if(!is_array($props))
 	$props = [];
 }
 
-$APPLICATION->IncludeComponent("sotbit:order.phone", "origami_default", array(
+$APPLICATION->IncludeComponent("kit:order.phone", "origami_default", array(
     "PRODUCT_ID" => $id,
     "IBLOCK_ID" => $iblockId,
     "SELECT_USER" => Config::get('SOP_SELECT_USER', $site_id),

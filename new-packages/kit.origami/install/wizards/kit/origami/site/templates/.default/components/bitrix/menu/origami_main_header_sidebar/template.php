@@ -18,7 +18,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <?if(isset($item["PARAMS"]["ICON"])):?>
                             <div class="sidebar__item-logo">
                                 <svg class="sidebar__item-logo-icon" width="24" height="24">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#<?=$item["PARAMS"]["ICON"];?>"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#<?=$item["PARAMS"]["ICON"];?>"></use>
                                 </svg>
                             </div>
                         <?endif;?>
@@ -31,12 +31,12 @@ $page = $APPLICATION->GetCurPage(false);
         </ul>
         <div class="sidebar__slider-button sidebar__slider-button--next">
             <svg class="sidebar__slider-button-icon" width="8" height="12">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_small"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_small"></use>
             </svg>
         </div>
         <div class="sidebar__slider-button sidebar__slider-button--prev">
             <svg class="sidebar__slider-button-icon" width="8" height="12">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_left_small"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_left_small"></use>
             </svg>
         </div>
     </div>

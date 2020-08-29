@@ -7,10 +7,10 @@ Loc::loadMessages(__FILE__);
 require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/update_client.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/update_client_partner.php');
 
-class sotbit_origami extends CModule
+class kit_origami extends CModule
 {
-    const MODULE_ID = 'sotbit.origami';
-    var $MODULE_ID = 'sotbit.origami';
+    const MODULE_ID = 'kit.origami';
+    var $MODULE_ID = 'kit.origami';
     var $MODULE_VERSION;
     var $MODULE_VERSION_DATE;
     var $MODULE_NAME;
@@ -26,35 +26,35 @@ class sotbit_origami extends CModule
         $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
         $this->MODULE_NAME = Loc::getMessage(self::MODULE_ID . '_MODULE_NAME');
         $this->MODULE_DESCRIPTION = Loc::getMessage(self::MODULE_ID . '_MODULE_DESC');
-        $this->PARTNER_NAME = GetMessage('sotbit.origami_PARTNER_NAME');
-        $this->PARTNER_URI = GetMessage('sotbit.origami_PARTNER_URI');
+        $this->PARTNER_NAME = GetMessage('kit.origami_PARTNER_NAME');
+        $this->PARTNER_URI = GetMessage('kit.origami_PARTNER_URI');
     }
 
     function InstallEvents()
     {
-        EventManager::getInstance()->registerEventHandler('main', 'OnBuildGlobalMenu', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnBuildGlobalMenuHandler');
-        EventManager::getInstance()->registerEventHandler('main', 'OnEndBufferContent', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnEndBufferContentHandler');
-        EventManager::getInstance()->registerEventHandler('sale', 'OnSaleComponentOrderProperties', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnSaleComponentOrderPropertiesHandler');
-        EventManager::getInstance()->registerEventHandler('main', 'OnBeforeProlog', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnBeforePrologHandler');
-        EventManager::getInstance()->registerEventHandler('sale', 'OnSaleBasketItemSetField', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'onChangeOfferNameBasket');
-        EventManager::getInstance()->registerEventHandler('iblock', 'OnAfterIBlockElementUpdate', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->registerEventHandler('iblock', 'OnAfterIBlockElementAdd', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->registerEventHandler('catalog', 'OnPriceAdd', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->registerEventHandler('catalog', 'OnPriceUpdate', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->registerEventHandler('main', 'OnBuildGlobalMenu', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnBuildGlobalMenuHandler');
+        EventManager::getInstance()->registerEventHandler('main', 'OnEndBufferContent', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnEndBufferContentHandler');
+        EventManager::getInstance()->registerEventHandler('sale', 'OnSaleComponentOrderProperties', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnSaleComponentOrderPropertiesHandler');
+        EventManager::getInstance()->registerEventHandler('main', 'OnBeforeProlog', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnBeforePrologHandler');
+        EventManager::getInstance()->registerEventHandler('sale', 'OnSaleBasketItemSetField', 'kit.origami', '\Kit\Origami\EventHandlers', 'onChangeOfferNameBasket');
+        EventManager::getInstance()->registerEventHandler('iblock', 'OnAfterIBlockElementUpdate', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->registerEventHandler('iblock', 'OnAfterIBlockElementAdd', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->registerEventHandler('catalog', 'OnPriceAdd', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->registerEventHandler('catalog', 'OnPriceUpdate', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
         return true;
     }
 
     function UnInstallEvents()
     {
-        EventManager::getInstance()->unRegisterEventHandler('main', 'OnBuildGlobalMenu', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnBuildGlobalMenuHandler');
-        EventManager::getInstance()->unRegisterEventHandler('main', 'OnEndBufferContent', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnEndBufferContentHandler');
-        EventManager::getInstance()->unRegisterEventHandler('sale', 'OnSaleComponentOrderProperties', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnSaleComponentOrderPropertiesHandler');
-        EventManager::getInstance()->unRegisterEventHandler('main', 'OnBeforeProlog', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'OnBeforePrologHandler');
-        EventManager::getInstance()->unRegisterEventHandler('sale', 'OnSaleBasketItemSetField', 'sotbit.origami', '\Sotbit\Origami\EventHandlers', 'onChangeOfferNameBasket');
-        EventManager::getInstance()->unRegisterEventHandler('iblock', 'OnAfterIBlockElementUpdate', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->unRegisterEventHandler('iblock', 'OnAfterIBlockElementAdd', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->unRegisterEventHandler('catalog', 'OnPriceAdd', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
-        EventManager::getInstance()->unRegisterEventHandler('catalog', 'OnPriceUpdate', 'sotbit.origami', 'SotbitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->unRegisterEventHandler('main', 'OnBuildGlobalMenu', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnBuildGlobalMenuHandler');
+        EventManager::getInstance()->unRegisterEventHandler('main', 'OnEndBufferContent', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnEndBufferContentHandler');
+        EventManager::getInstance()->unRegisterEventHandler('sale', 'OnSaleComponentOrderProperties', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnSaleComponentOrderPropertiesHandler');
+        EventManager::getInstance()->unRegisterEventHandler('main', 'OnBeforeProlog', 'kit.origami', '\Kit\Origami\EventHandlers', 'OnBeforePrologHandler');
+        EventManager::getInstance()->unRegisterEventHandler('sale', 'OnSaleBasketItemSetField', 'kit.origami', '\Kit\Origami\EventHandlers', 'onChangeOfferNameBasket');
+        EventManager::getInstance()->unRegisterEventHandler('iblock', 'OnAfterIBlockElementUpdate', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->unRegisterEventHandler('iblock', 'OnAfterIBlockElementAdd', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->unRegisterEventHandler('catalog', 'OnPriceAdd', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
+        EventManager::getInstance()->unRegisterEventHandler('catalog', 'OnPriceUpdate', 'kit.origami', 'KitOrigami', 'DoIBlockAfterSave');
         return true;
     }
 
@@ -78,7 +78,7 @@ class sotbit_origami extends CModule
     {
         DeleteDirFiles($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . self::MODULE_ID . '/install/themes/.default/', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default');
         DeleteDirFiles($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . self::MODULE_ID . '/install/admin', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/admin');
-        DeleteDirFilesEx($_SERVER['DOCUMENT_ROOT'] . '/bitrix/wizards/sotbit');
+        DeleteDirFilesEx($_SERVER['DOCUMENT_ROOT'] . '/bitrix/wizards/kit');
         if (is_dir($_2093502418 = $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . self::MODULE_ID . '/install/components')) {
             if ($_1193811113 = opendir($_2093502418)) {
                 while (false !== $_1264003444 = readdir($_1193811113)) {
@@ -126,7 +126,7 @@ class sotbit_origami extends CModule
         $this->UnInstallDB();
         $this->UnInstallEvents();
         $this->UnInstallAgents();
-        $this->DeleteWizard($_SERVER['DOCUMENT_ROOT'] . '/bitrix/wizards/sotbit');
+        $this->DeleteWizard($_SERVER['DOCUMENT_ROOT'] . '/bitrix/wizards/kit');
         ModuleManager::unRegisterModule(self::MODULE_ID);
     }
 

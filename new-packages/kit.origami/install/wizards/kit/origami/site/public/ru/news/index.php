@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Новости");
 $APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"sotbit_origami_news",
+	"kit_origami_news",
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -102,7 +102,7 @@ $APPLICATION->IncludeComponent(
 		"USE_RSS" => "Y",
 		"USE_SEARCH" => "N",
 		"YANDEX" => "N",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_news",
+		"COMPONENT_TEMPLATE" => "kit_origami_news",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

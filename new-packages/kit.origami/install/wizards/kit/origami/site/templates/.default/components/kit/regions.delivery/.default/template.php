@@ -12,22 +12,22 @@ $signedParams = $signer->sign(base64_encode(serialize($arParams)), 'regions.deli
 
 if($arParams['AJAX'] != 'Y'){
     ?>
-    <div id="sotbit-delivery-<?=$arResult['RAND']?>" class="detailed-tabs__delivery-wrapper sotbit-delivery-root">
+    <div id="kit-delivery-<?=$arResult['RAND']?>" class="detailed-tabs__delivery-wrapper kit-delivery-root">
         <div class="detailed-tabs__delivery-detail">
             <div class="detailed-tabs__delivery-region">
                 <p class="detailed-tabs__delivery-title">
-                    <?=Loc::getMessage('sotbit.regions_DELIVERY_REGION')?>
+                    <?=Loc::getMessage('kit.regions_DELIVERY_REGION')?>
                 </p>
                 <p class="detailed-tabs__delivery-description"><?=$arResult['USER_REGION_FULL_NAME']?></p>
                 <span class="detailed-tabs__delivery-change" data-entity="change-region">
-		        <?=Loc::getMessage('sotbit.regions_DELIVERY_REGION_CHANGE')?></span>
+		        <?=Loc::getMessage('kit.regions_DELIVERY_REGION_CHANGE')?></span>
             </div>
             <?
             if($arResult['PAYMENT']){
                 ?>
                 <div class="detailed-tabs__delivery-pay">
                     <p class="detailed-tabs__delivery-title">
-                        <?=Loc::getMessage('sotbit.regions_DELIVERY_PAYMENTS')?>
+                        <?=Loc::getMessage('kit.regions_DELIVERY_PAYMENTS')?>
                     </p>
                     <div class="detailed-tabs__delivery-pay-img">
                         <?
@@ -45,20 +45,20 @@ if($arParams['AJAX'] != 'Y'){
                 ?>
                 <div class="detailed-tabs__delivery-box">
                     <p class="detailed-tabs__delivery-title detailed-tabs__delivery-title--box">
-                        <?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_TITLE')?>
+                        <?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_TITLE')?>
                     </p>
                     <?if($arResult['PRODUCT']['MEASURE']['SYMBOL_RUS']):?>
                         <p class="detailed-tabs__delivery-box-item">
-                            <?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_MEASURE')?>: <span><?=$arResult['PRODUCT']['MEASURE']['SYMBOL_RUS']?></span>
+                            <?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_MEASURE')?>: <span><?=$arResult['PRODUCT']['MEASURE']['SYMBOL_RUS']?></span>
                         </p>
                     <?endif;
                     if($arResult['PRODUCT']['WIDTH'] && $arResult['PRODUCT']['HEIGHT'] && $arResult['PRODUCT']['LENGTH']):
                         ?>
-                        <p class="detailed-tabs__delivery-box-item"><?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_SIZE')?>: <span><?=$arResult['PRODUCT']['WIDTH']?><?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_SM')?> � <?=$arResult['PRODUCT']['HEIGHT']?><?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_SM')?> � <?=$arResult['PRODUCT']['LENGTH']?><?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_SM')?></span></p>
+                        <p class="detailed-tabs__delivery-box-item"><?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_SIZE')?>: <span><?=$arResult['PRODUCT']['WIDTH']?><?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_SM')?> � <?=$arResult['PRODUCT']['HEIGHT']?><?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_SM')?> � <?=$arResult['PRODUCT']['LENGTH']?><?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_SM')?></span></p>
                     <?endif;
                     if($arResult['PRODUCT']['WEIGHT']):
                         ?>
-                        <p class="detailed-tabs__delivery-box-item"><?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_WEIGHT')?>: <span><?=$arResult['PRODUCT']['WEIGHT']?> <?=Loc::getMessage('sotbit.regions_DELIVERY_PRODUCT_KG')?></span></p>
+                        <p class="detailed-tabs__delivery-box-item"><?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_WEIGHT')?>: <span><?=$arResult['PRODUCT']['WEIGHT']?> <?=Loc::getMessage('kit.regions_DELIVERY_PRODUCT_KG')?></span></p>
                     <?endif;?>
                 </div>
                 <?
@@ -93,7 +93,7 @@ if($arParams['AJAX'] != 'Y'){
                                 <p class="delivery-way-item__title"><?=$delivery['NAME']?></p>
                             <?endif;?>
                             <?if($delivery['TIME']):?>
-                                <p class="delivery-way-item__time"><?=Loc::getMessage('sotbit.regions_DELIVERY_TIME')?>: <span><?=$delivery['TIME']?></span></p>
+                                <p class="delivery-way-item__time"><?=Loc::getMessage('kit.regions_DELIVERY_TIME')?>: <span><?=$delivery['TIME']?></span></p>
                             <?endif;?>
                             <?if($delivery['DESCRIPTION']):?>
                                 <p class="delivery-way-item__message"><?=$delivery['DESCRIPTION']?></p>
@@ -119,7 +119,7 @@ if($arParams['AJAX'] != 'Y'){
                 if($arResult['REGION_LIST_COUNTRIES']){
                     ?>
                     <div class="select-city__tabs_wrapper">
-                        <ul class="select-city__tabs" id="sotbit-regions-tabs">
+                        <ul class="select-city__tabs" id="kit-regions-tabs">
                             <?
                             foreach ($arResult['REGION_LIST_COUNTRIES'] as $idCountry => $region){
                                 if($region['SALE_LOCATION_LOCATION_NAME_NAME']) {
@@ -152,7 +152,7 @@ if($arParams['AJAX'] != 'Y'){
                     <div class="select-city__wrapper__input">
                         <div class="select-city__input__comment select-city__under_input">
                             <?= Loc::getMessage(
-                                'sotbit.regions_DELIVERY_EXAMPLE',
+                                'kit.regions_DELIVERY_EXAMPLE',
                                 [
                                     '#ID0#'   => $arResult['TITLE_CITIES'][0]['ID'],
                                     '#ID1#'   => $arResult['TITLE_CITIES'][1]['ID'],
@@ -227,7 +227,7 @@ if($arParams['AJAX'] != 'Y'){
     </div>
     <script>
         var RegionsDelivery = new SotbitRegionsDelivery({
-            'root':'sotbit-delivery-<?=$arResult['RAND']?>',
+            'root':'kit-delivery-<?=$arResult['RAND']?>',
             'componentPath': '<?=CUtil::JSEscape($componentPath)?>',
             'parameters': '<?=CUtil::JSEscape($signedParams)?>',
             'siteId': '<?=CUtil::JSEscape($component->getSiteId())?>',

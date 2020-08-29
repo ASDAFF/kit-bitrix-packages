@@ -1,16 +1,16 @@
 <?
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $aMenuLinks = Array(
 	Array(
 		"Мой кабинет",
-        \Sotbit\Origami\Helper\Config::get('PERSONAL_PAGE'),
+        \Kit\Origami\Helper\Config::get('PERSONAL_PAGE'),
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Текущие заказы",
-        \Sotbit\Origami\Helper\Config::get('PERSONAL_ORDER_PAGE'),
+        \Kit\Origami\Helper\Config::get('PERSONAL_ORDER_PAGE'),
 		Array(), 
 		Array(), 
 		"" 
@@ -31,7 +31,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"История заказов",
-        \Sotbit\Origami\Helper\Config::get('PERSONAL_ORDER_PAGE')."?filter_history=Y",
+        \Kit\Origami\Helper\Config::get('PERSONAL_ORDER_PAGE')."?filter_history=Y",
 		Array(), 
 		Array(), 
 		"" 
@@ -45,7 +45,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Корзина",
-        \Sotbit\Origami\Helper\Config::get('BASKET_PAGE'),
+        \Kit\Origami\Helper\Config::get('BASKET_PAGE'),
 		Array(), 
 		Array(), 
 		"" 

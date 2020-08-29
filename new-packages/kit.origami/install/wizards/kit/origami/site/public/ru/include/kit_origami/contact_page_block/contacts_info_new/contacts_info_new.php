@@ -4,7 +4,7 @@ use Bitrix\Main\Page\Asset;
 use Sotbit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-Asset::getInstance()->addcss(SITE_DIR . "include/sotbit_origami/contact_page_block/contacts_info_new/style.css");
+Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/contacts_info_new/style.css");
 //$useRegion = false;
 ?>
 
@@ -93,7 +93,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
     $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contacts_map.php")
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contacts_map.php")
     );
 }
 
@@ -103,7 +103,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
     <div class="contact-techno_block-item">
         <div class="contact-techno_block-img">
             <svg class="contact__techno_block-icon contacts_icon_location">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_pin"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_pin"></use>
             </svg>
         </div>
         <div class="contact-techno-item_content">
@@ -119,7 +119,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_address.php"
+                            "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_address.php"
                         )
                     );
                 }
@@ -131,7 +131,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
     <div class="contact-techno_block-item">
         <div class="contact-techno_block-img">
             <svg class="contact__techno_block-icon contacts_icon_phone">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_phone"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_phone"></use>
             </svg>
         </div>
         <div class="contact-techno-item_content">
@@ -156,7 +156,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_phone.php"
+                            "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_phone.php"
                         )
                     );
                 }
@@ -167,7 +167,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
     <div class="contact-techno_block-item">
         <div class="contact-techno_block-img">
             <svg class="contact__techno_block-icon contacts_icon_mail">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_mail"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_mail"></use>
             </svg>
         </div>
         <div class="contact-techno-item_content">
@@ -201,7 +201,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_email.php"
+                            "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_email.php"
                         )
                     );
                 }
@@ -212,7 +212,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
     <div class="contact-techno_block-item">
         <div class="contact-techno_block-img">
             <svg class="contact__techno_block-icon contacts_icon_clock">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_clock"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_clock"></use>
             </svg>
         </div>
         <div class="contact-techno-item_content">
@@ -237,7 +237,7 @@ if (($useRegion && $_SESSION['SOTBIT_REGIONS']['MAP_YANDEX']) || ($useRegion && 
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_timework.php"
+                            "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_timework.php"
                         )
                     );
                 }

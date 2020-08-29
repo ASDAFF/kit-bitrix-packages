@@ -18,7 +18,7 @@ else
     $APPLICATION->ShowHead();
 
 //one css for all system.auth.* forms
-$this->addExternalCss(SITE_DIR."local/templates/sotbit_origami/components/bitrix/system.auth.forgotpasswd/origami/style.css");
+$this->addExternalCss(SITE_DIR."local/templates/kit_origami/components/bitrix/system.auth.forgotpasswd/origami/style.css");
 //$APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
 if (ToLower(SITE_CHARSET) == 'windows-1251') {
     foreach ($arResult as $key => &$it) {
@@ -26,7 +26,7 @@ if (ToLower(SITE_CHARSET) == 'windows-1251') {
     }
 }
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/system.auth.forgotpasswd/origami/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/components/bitrix/system.auth.forgotpasswd/origami/style.css");
 ?>
 <div class="side-panel__main-header">
     <p class="side-panel__main-title"><?=GetMessage('FORGOT_H1');?></p>

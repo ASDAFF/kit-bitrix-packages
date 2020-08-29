@@ -8,7 +8,7 @@ $MESS["SERVICE_CATALOG_SETTINGS"] = "Настройка каталога";
 $MESS["SERVICE_FORUM"] = "Настройка форума для отзывов";
 $MESS["SERVICE_ESHOPAPP"] = "Установка мобильного приложения";
 $MESS["SERVICE_ADVERTISING"] = "Реклама";
-$MESS["SERVICE_OPENGRAPH"] = "Настройка sotbit.opengraph";
-$MESS["SERVICE_CROSSSELL"] = "Настройка sotbit.crosssell";
+$MESS["SERVICE_OPENGRAPH"] = "Настройка kit.opengraph";
+$MESS["SERVICE_CROSSSELL"] = "Настройка kit.crosssell";
 $MESS["SERVICE_ORIGAMI"] = "Настройка Оригами";
 ?>

@@ -4,14 +4,14 @@
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
 
-Loader::IncludeModule('sotbit.origami');
+Loader::IncludeModule('kit.origami');
 
 use \Sotbit\Origami\Config\Option;
 
 if(!CModule::IncludeModule("iblock") || !CModule::IncludeModule("catalog"))
 	return;
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 //catalog iblock import
@@ -47,10 +47,10 @@ if($arUpdateList["CLIENT"][0]["@"]['L1'] == 'Small') //small business
     $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH."/xml/".LANGUAGE_ID."/catalog_sb.xml";
 }
 
-$iblockCode = "sotbit_origami_catalog_" . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_catalog";
+$iblockCode = "kit_origami_catalog_" . WIZARD_SITE_ID;
+$iblockType = "kit_origami_catalog";
 //$iblockXMLID = 'catalog_origami';
-$iblockXMLID = 'sotbit_origami_catalog_' . WIZARD_SITE_ID;
+$iblockXMLID = 'kit_origami_catalog_' . WIZARD_SITE_ID;
 
 set_time_limit(0);
 
@@ -318,7 +318,7 @@ else
 }
 
 if($IBLOCK_CATALOG_ID) {
-    Option::Set('IBLOCK_TYPE', "sotbit_origami_catalog", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE', "kit_origami_catalog", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID', $IBLOCK_CATALOG_ID, WIZARD_SITE_ID);
 }
 

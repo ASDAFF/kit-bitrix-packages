@@ -4,7 +4,7 @@ namespace Sotbit\Origami\Sale\Basket;
 /**
  * Class Compare
  * @package Sotbit\Origami\Sale\Basket
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Compare extends Base
 {

@@ -6,7 +6,7 @@ namespace Sotbit\Origami\Helper;
  * Class Phone
  *
  * @package Sotbit\Origami\Helper
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Phone
 {

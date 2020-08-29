@@ -1,7 +1,7 @@
 <?
 global $settings;
 $APPLICATION->IncludeComponent(
-	"sotbit:youtube",
+	"kit:youtube",
 	"origami_youtube",
 	array(
         "CHANEL_ID" => $settings['fields']['chanelId']['value'],

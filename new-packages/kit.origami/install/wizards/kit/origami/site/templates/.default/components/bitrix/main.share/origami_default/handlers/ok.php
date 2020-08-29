@@ -17,7 +17,7 @@ $icon_url_template = "<script>\n" .
     "<a class=\"subscribe-popup__button ok\" href=\"https://connect.ok.ru/offer?url=#PAGE_URL#\" onclick=\"return ok_click('#PAGE_URL#');\" target=\"_blank\" title=\"" . $title . "\">" .
     "<div class=\"subscribe-popup__button-icon-wrapper\">" .
     "<svg class=\"subscribe-popup__button-icon\" width=\"20\" height=\"32\">" .
-    "<use xlink:href = \"/local/templates/sotbit_origami/assets/img/sprite.svg#icon_odnoklassniki\"></use>" .
+    "<use xlink:href = \"/local/templates/kit_origami/assets/img/sprite.svg#icon_odnoklassniki\"></use>" .
     "</svg>" .
     "</div>" .
     "<div class=\"subscribe-popup__button-description\"><span>" .

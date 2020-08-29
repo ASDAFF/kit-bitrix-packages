@@ -6,9 +6,9 @@ use Bitrix\Main\Localization\Loc;
 use Sotbit\Origami\Config\Option;
 use Bitrix\Main\Page\Asset;
 
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/js/custom-slider.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/js/custom-slider.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
 
 Loc::loadMessages(__FILE__);
 
@@ -29,7 +29,7 @@ global $analogProducts;
 
 
 // get products in the current user's basket
-if( \Bitrix\Main\Loader::includeModule('sotbit.schemaorg') && strpos($APPLICATION->GetCurPage(), "bitrix") === false )
+if( \Bitrix\Main\Loader::includeModule('kit.schemaorg') && strpos($APPLICATION->GetCurPage(), "bitrix") === false )
 {
     Sotbit\Schemaorg\EventHandlers::makeContent($APPLICATION->GetCurPage(false), 'Product');
     $data = SchemaMain::getData();
@@ -186,7 +186,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 				else{
 	                $qnt['AMOUNT'] = '<div class="product_card__block__presence_product_value_many">'.
 						Loc::getMessage('DETAIL_MODIFICATION_AMOUNT').':
-						<span><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+						<span><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
 						</svg> '.\Bitrix\Main\Localization\Loc::getMessage('CT_BCE_CATALOG_RELATIVE_QUANTITY_MANY').'</span>
 					</div>';
 				}
@@ -198,7 +198,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 	            else{
 	                $qnt['AMOUNT'] = '<div class="product_card__block__presence_product_value_many">'.
 	                    Loc::getMessage('DETAIL_MODIFICATION_AMOUNT').':
-						<span><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+						<span><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg> '.$qnt['AMOUNT'].' '.$offer['ITEM_MEASURE']['TITLE'].'</span>
 					</div>';
 	            }
@@ -277,7 +277,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 			                    ?>
 				                <div class="product-presence__buttom">
                                     <svg class="product-presence__buttom-icon" width="14" height="12">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                     </svg>
                                 </div>
 				                <?
@@ -312,7 +312,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 			                            $qnt = '<span class="product_card__block__presence_product_value_sufficient"><i class="fas fa-check"></i> '.\Bitrix\Main\Localization\Loc::getMessage('CT_BCE_CATALOG_RELATIVE_QUANTITY_FEW').'</span>';
 			                        }
 			                        else{
-			                            $qnt = '<span class="product_card__block__presence_product_value_many"><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+			                            $qnt = '<span class="product_card__block__presence_product_value_many"><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg> '.\Bitrix\Main\Localization\Loc::getMessage('CT_BCE_CATALOG_RELATIVE_QUANTITY_MANY').'</span>';
 			                        }
 			                    }
@@ -321,7 +321,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 			                            $qnt= '<span class="product_card__block__presence_product_value_no"><i class="icon-no-waiting"></i> '.$offer['CATALOG_QUANTITY'].' '.$offer['ITEM_MEASURE']['TITLE'].'</span>';
 			                        }
 			                        else{
-			                            $qnt= '<span class="product_card__block__presence_product_value_many"><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+			                            $qnt= '<span class="product_card__block__presence_product_value_many"><svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg> '.$offer['CATALOG_QUANTITY'].' '.$offer['ITEM_MEASURE']['TITLE'].'</span>';
 			                        }
 			                    }
@@ -353,7 +353,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
 								<div class="product-presence__property-block origami_main_scroll">
                                     <div class="product-presence__property-btn"><?=Loc::getMessage('CT_BCE_CATALOG_PROPERTIES')?>
                                         <svg class="site-navigation__item-icon" width="7" height="7">
-                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                         </svg>
                                     </div>
 									<div class="product-presence__property-wrapper">
@@ -460,7 +460,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
                                             ?>
                                             <span class="product-presence__icons-bar" data-entity="compare-checkbox-modification">
                                                 <svg width="16" height="16">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                                                 </svg>
 
                                             </span>
@@ -471,7 +471,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
                                             <span class="product-presence__icons-heart"
                                             data-entity="wish_modification">
                                                 <svg width="16" height="16">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                                                 </svg>
                                             </span>
                                         <?endif;?>
@@ -540,7 +540,7 @@ if(Config::get('SHOW_PRICE_'.$template) == 'Y' && in_array(Config::get('SKU_TYPE
                                         }
                                         ?>
 
-                                        <? if ($offer['CAN_BUY'] && Config::get('SHOW_BUY_OC_'.$template) == 'Y' && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')): ?>
+                                        <? if ($offer['CAN_BUY'] && Config::get('SHOW_BUY_OC_'.$template) == 'Y' && \Bitrix\Main\Loader::includeModule('kit.orderphone')): ?>
                                                 <div
                                                     class="product-detail-info-block-one-click-basket product-detail-info-block-basket-item"
                                                     data-entity="modification-buyoc">
@@ -742,7 +742,7 @@ if(Config::get('ACTIVE_TAB_AVAILABLE_'.$template) == 'Y'){         //<===HARD
                     <p class="availability-item__content-title"><?=($store['ADDRESS']) ? $store['ADDRESS'] : '-';?></p>
                     <a href="#map-test" class="availability-item__content-link-map">
                         <svg class="availability-item__content-link-icon" width="18" height="18">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location_small"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location_small"></use>
                         </svg>
                         <?=Loc::getMessage('DETAIL_AVAILABILITY_ON_MAP');?>
                     </a>
@@ -753,7 +753,7 @@ if(Config::get('ACTIVE_TAB_AVAILABLE_'.$template) == 'Y'){         //<===HARD
                         <p class="availability-item__content-title"><?=($store['ADDRESS']) ? $store['ADDRESS'] : '-';?></p>
                         <a href="#map-test" class="availability-item__content-link-map">
                             <svg class="availability-item__content-link-icon" width="18" height="18">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location_small"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location_small"></use>
                             </svg>
                             <?=Loc::getMessage('DETAIL_AVAILABILITY_ON_MAP');?>
                         </a>
@@ -775,7 +775,7 @@ if(Config::get('ACTIVE_TAB_AVAILABLE_'.$template) == 'Y'){         //<===HARD
                             <p class="availability-item__title">'.Loc::getMessage('DETAIL_MODIFICATION_AMOUNT').'</p>
                             <p class="availability-item__amount-content">
                             <svg class="availability-item__amount-content-icon" width="10" height="10">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_not_available"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_not_available"></use>
                             </svg>'.\Bitrix\Main\Localization\Loc::getMessage('CT_BCE_CATALOG_RELATIVE_QUANTITY_FEW').'</p>
                         </div>';
                         }
@@ -785,7 +785,7 @@ if(Config::get('ACTIVE_TAB_AVAILABLE_'.$template) == 'Y'){         //<===HARD
                         <p class="availability-item__title">'.Loc::getMessage('DETAIL_MODIFICATION_AMOUNT').'</p>
                         <p class="availability-item__amount-content">
                            <svg class="availability-item__amount-content-icon" width="10" height="10">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_availability_small"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_availability_small"></use>
                             </svg>'.\Bitrix\Main\Localization\Loc::getMessage('CT_BCE_CATALOG_RELATIVE_QUANTITY_MANY').'
                            </p>
                     </div>';
@@ -870,7 +870,7 @@ if(Config::get('ACTIVE_TAB_AVAILABLE_'.$template) == 'Y'){         //<===HARD
                         <span class="availability-item__btn-more-open"><?=Loc::getMessage('DETAIL_AVAILABILITY_BTN_MORE')?></span>
                         <span class="availability-item__btn-more-close"><?=Loc::getMessage('DETAIL_AVAILABILITY_BTN_LESS')?></span>
                         <svg class="availability-item__btn-more-icon" width="10" height="6">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_up_small"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_up_small"></use>
                         </svg>
                     </div>
                 </div>
@@ -1071,7 +1071,7 @@ $APPLICATION->IncludeComponent(
         "PAGER_SHOW_ALL"                  => "N",
         "PAGER_SHOW_ALWAYS"               => "N",
         "PAGER_TEMPLATE"                  => ".default",
-        "PAGER_TITLE"                     => "Преимущества",
+        "PAGER_TITLE"                     => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         "PARENT_SECTION"                  => "",
         "PARENT_SECTION_CODE"             => "",
         "PREVIEW_TRUNCATE_LEN"            => "",
@@ -1091,7 +1091,7 @@ $APPLICATION->IncludeComponent(
         "SORT_ORDER1"                     => "DESC",
         "SORT_ORDER2"                     => "ASC",
         "STRICT_SECTION_CHECK"            => "N",
-        "COMPONENT_TEMPLATE"              => "sotbit_advantages_simple",
+        "COMPONENT_TEMPLATE"              => "kit_advantages_simple",
     ],
     false
 );
@@ -1215,7 +1215,7 @@ $APPLICATION->IncludeComponent(
 
 	</script>
 <?
-if(Bitrix\Main\Loader::includeModule('sotbit.opengraph')) {
+if(Bitrix\Main\Loader::includeModule('kit.opengraph')) {
     OpengraphMain::setImageMeta('og:image', $templateData["ITEM"]["JS_OFFERS"][0]["DETAIL_PICTURE"]["SRC"]);
     OpengraphMain::setImageMeta('twitter:image', $templateData["ITEM"]["JS_OFFERS"][0]["DETAIL_PICTURE"]["SRC"]);
     OpengraphMain::setMeta('og:type', 'product');

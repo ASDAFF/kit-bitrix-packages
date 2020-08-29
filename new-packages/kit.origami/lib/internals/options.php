@@ -29,7 +29,7 @@ class OptionsTable extends Main\Entity\DataManager
 	 */
 	public static function getTableName()
 	{
-		return 'sotbit_origami_options';
+		return 'kit_origami_options';
 	}
 
 	/**

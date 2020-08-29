@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 
 CModule::includeModule($module);
 CModule::includeModule('iblock');

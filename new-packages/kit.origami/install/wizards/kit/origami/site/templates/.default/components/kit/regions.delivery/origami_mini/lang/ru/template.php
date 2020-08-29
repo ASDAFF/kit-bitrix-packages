@@ -1,5 +1,5 @@
 <?php
-$idModule = 'sotbit.regions';
+$idModule = 'kit.regions';
 $MESS[$idModule.'_DELIVERY_AFTER_DAY'] = 'через';
 $MESS[$idModule.'_DELIVERY_DAY_1'] = 'день';
 $MESS[$idModule.'_DELIVERY_DAY_2'] = 'дня';

@@ -2,7 +2,7 @@
 use Bitrix\Main\Page\Asset;
 use Sotbit\Origami\Helper\Config;
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/theme/contacts/2/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/2/style.css");
 CJSCore::Init(array("date"));
 ?>
 
@@ -20,7 +20,7 @@ CJSCore::Init(array("date"));
             "",
             [
                 "AREA_FILE_SHOW" => "file",
-                "PATH"           => SITE_DIR."include/sotbit_origami/contacts_map.php",
+                "PATH"           => SITE_DIR."include/kit_origami/contacts_map.php",
             ]
         );
     }
@@ -28,7 +28,7 @@ CJSCore::Init(array("date"));
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_info/contacts_info.php"));
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_info/contacts_info.php"));
     ?>
 
     <?php

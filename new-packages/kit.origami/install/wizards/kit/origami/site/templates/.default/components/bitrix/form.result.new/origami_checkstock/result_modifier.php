@@ -9,7 +9,7 @@ global $USER;
 $userName = $USER->GetFullName();
 
 try {
-    \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    \Bitrix\Main\Loader::includeModule('kit.origami');
     $Phone = new \Sotbit\Origami\Helper\Phone();
     $Phone->setMask(\Sotbit\Origami\Config\Option::get(
         'MASK',

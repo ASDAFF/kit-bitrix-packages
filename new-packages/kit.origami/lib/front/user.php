@@ -8,7 +8,7 @@ class User
     private $site      = 's1';
     private $canSave   = false;
     private $canChange = false;
-    const TMP_DIR = '/bitrix/tmp/sotbit_origami';
+    const TMP_DIR = '/bitrix/tmp/kit_origami';
 
     public function __construct($site = SITE_ID)
     {

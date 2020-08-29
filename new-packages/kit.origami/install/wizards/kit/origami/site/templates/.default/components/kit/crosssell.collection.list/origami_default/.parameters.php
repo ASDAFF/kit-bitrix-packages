@@ -18,7 +18,7 @@ use Sotbit\Origami\Helper;
 if (!Loader::includeModule('iblock'))
 	return;
 
-if (!Loader::includeModule('sotbit.origami'))
+if (!Loader::includeModule('kit.origami'))
     return;
 
 

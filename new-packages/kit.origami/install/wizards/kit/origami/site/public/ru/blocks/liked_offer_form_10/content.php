@@ -1,5 +1,5 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 global $APPLICATION, $settings;
 
 CModule::IncludeModule('form');
@@ -8,7 +8,7 @@ $rsForm = CForm::GetBySID($FORM_SID);
 $arForm = $rsForm->Fetch();
 $APPLICATION->IncludeComponent(
     "bitrix:form.result.new",
-    "sotbit_webform_1",
+    "kit_webform_1",
     array(
         "CACHE_TIME" => "3600",
         "CACHE_TYPE" => "A",

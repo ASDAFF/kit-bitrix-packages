@@ -40,7 +40,7 @@ $APPLICATION->IncludeComponent(
 
 $APPLICATION->IncludeComponent(
 	"bitrix:sender.subscribe", 
-	"sotbit_sender_subscribe_campaign", 
+	"kit_sender_subscribe_campaign", 
 	array(
 		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -49,7 +49,7 @@ $APPLICATION->IncludeComponent(
 		"AJAX_OPTION_STYLE" => "Y",
 		"CACHE_TIME" => "3600",
 		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => "sotbit_sender_subscribe_campaign",
+		"COMPONENT_TEMPLATE" => "kit_sender_subscribe_campaign",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"CONFIRMATION" => "N",

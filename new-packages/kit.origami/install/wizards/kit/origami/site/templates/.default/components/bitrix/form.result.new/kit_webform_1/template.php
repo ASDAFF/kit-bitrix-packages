@@ -152,7 +152,7 @@ if ($typeMask == 'Y')
         let maska = "<?=Config::get('MASK')?>";
         maska = $.trim(maska);
         if (maska != "")
-            $(".sotbit_order_phone form input.phone-callback--form").mask(maska, {placeholder: "_"});
+            $(".kit_order_phone form input.phone-callback--form").mask(maska, {placeholder: "_"});
     });
 
     <?endif;?>

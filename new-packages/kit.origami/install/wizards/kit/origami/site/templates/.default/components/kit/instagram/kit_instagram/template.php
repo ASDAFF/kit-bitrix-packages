@@ -23,8 +23,8 @@ Loc::loadMessages(__FILE__);
                         <a href="<?=$media["LINK"]?>" target="_blank" class="social_block__img_link">
                             <? if ($arParams["IMG_DEFAULT"] == 'Y'){?>
                             <picture>
-                                <source srcset="/upload/sotbit.instagram/370/<?=$key ?>/<?=$arResult["LOGIN"]?>.jpg" media="(min-width: 576px)">
-                                <source srcset="/upload/sotbit.instagram/540/<?=$key ?>/<?=$arResult["LOGIN"]?>.jpg" media="(max-width: 575px)">
+                                <source srcset="/upload/kit.instagram/370/<?=$key ?>/<?=$arResult["LOGIN"]?>.jpg" media="(min-width: 576px)">
+                                <source srcset="/upload/kit.instagram/540/<?=$key ?>/<?=$arResult["LOGIN"]?>.jpg" media="(max-width: 575px)">
                                 <img src="<?=$media["IMAGE"]?>" alt="<?=$arResult["TITLE"]?>" title="<?=$arResult["TITLE"]?>">
                             </picture>
                             <?} else {?>

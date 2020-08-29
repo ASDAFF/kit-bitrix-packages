@@ -6,19 +6,19 @@ use Bitrix\Main\Loader;
 use Sotbit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 global $issetCondition;
 global $origamiSectionDescription;
 global $origamiSectionDescriptionBottom;
 
-$moduleRegions = CModule::IncludeModule("sotbit.regions");
-$moduleSeo = CModule::IncludeModule("sotbit.seometa");
+$moduleRegions = CModule::IncludeModule("kit.regions");
+$moduleSeo = CModule::IncludeModule("kit.seometa");
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/catalog/sotbit_origami_services/style.css");
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/catalog/sotbit_origami_services/script.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/catalog/kit_origami_services/style.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/catalog/kit_origami_services/script.css");
 
 $sectionData = CIBlockSection::GetList(array("SORT" => "ASC"), array("ID" => $arResult['VARIABLES']['SECTION_ID']), false)->GetNext();
 $sectionDataProps = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $sectionData['IBLOCK_ID'], "ID" => $arResult['VARIABLES']['SECTION_ID'], 'GLOBAL_ACTIVE'=>'Y'), false, array('UF_*'))->GetNext();
@@ -208,10 +208,10 @@ while (count($popularServices) <= 4 && count($productIds) > $i) {
 
         {
             ?>
-            <?$APPLICATION->ShowViewContent('sotbit_origami_sections_horizontal__descr');?>
+            <?$APPLICATION->ShowViewContent('kit_origami_sections_horizontal__descr');?>
             <?
             if ($arParams['TAGS_POSITION'] == 'TOP') {
-                $APPLICATION->ShowViewContent('sotbit_origami_meta_tags');
+                $APPLICATION->ShowViewContent('kit_origami_meta_tags');
             }
 
         }
@@ -238,9 +238,9 @@ while (count($popularServices) <= 4 && count($productIds) > $i) {
              </script>
 
             <?
-            if(Loader::includeModule('sotbit.origami')){
+            if(Loader::includeModule('kit.origami')){
                 $sort = array();
-                $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/sotbit_origami/sort/sort.php", Array(), Array());
+                $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/kit_origami/sort/sort.php", Array(), Array());
             }
             ?>
         </div>
@@ -391,7 +391,7 @@ while (count($popularServices) <= 4 && count($productIds) > $i) {
 
         <?
         if ($arParams['TAGS_POSITION'] == 'BOTTOM') {
-            $APPLICATION->ShowViewContent('sotbit_origami_meta_tags');
+            $APPLICATION->ShowViewContent('kit_origami_meta_tags');
         }
 
         if($arParams['SECTION_DESCRIPTION'] == "BELOW" || $arParams['SECTION_DESCRIPTION'] == "BOTH")
@@ -404,9 +404,9 @@ while (count($popularServices) <= 4 && count($productIds) > $i) {
                     echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $origamiSectionDescriptionBottom . '</div>';
             }
         }
-        if(!empty($sotbitSeoMetaBottomDesc))
+        if(!empty($kitSeoMetaBottomDesc))
         {
-            echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $sotbitSeoMetaBottomDesc . '</div>';
+            echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $kitSeoMetaBottomDesc . '</div>';
         }
 
 		$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;

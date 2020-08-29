@@ -7,7 +7,7 @@ use Bitrix\Main\Page\Asset;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_foundcheaper/script.js");
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_foundcheaper/style.css");
@@ -16,22 +16,22 @@ $typeMask = (Config::get('TYPE_MASK_VIEW') == 'FLAGS') ? 'Y' : 'N';
 if($typeMask == 'Y')
     CJSCore::Init(['phone_number']);
 ?>
-<div class="sotbit_order_phone_wrapper found-cheaper origami_foundcheaper">
-    <div class="sotbit_order_phone">
+<div class="kit_order_phone_wrapper found-cheaper origami_foundcheaper">
+    <div class="kit_order_phone">
         <? if ($arResult["isFormTitle"]) { ?>
-            <div class="sotbit_order_phone__title"
+            <div class="kit_order_phone__title"
                  style="position: relative; z-index: 2"><?= $arResult["FORM_TITLE"] ?></div>
         <? } ?>
         <div class="popup_resizeable_content">
             <div class="popup-error-message">
                 <? if ($arResult["isFormErrors"] == "Y"): ?><?= $arResult["FORM_ERRORS_TEXT"]; ?><? endif; ?>
             </div>
-            <div class="sotbit_order_success_show">
+            <div class="kit_order_success_show">
                 <? if (!empty($arResult["FORM_NOTE"])) : ?>
                     <div class="popup-window-message-content">
                         <svg class="popup-window-icon-check">
                             <use
-                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                         </svg>
                         <div>
                             <div class="popup-window-message-title"> <?= GetMessage('OK_THANKS') ?></div>
@@ -46,7 +46,7 @@ if($typeMask == 'Y')
                     <?
                 } ?>
                 <? foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion) { ?>
-                    <div class="sotbit_order_phone__block">
+                    <div class="kit_order_phone__block">
                         <? if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'tel'): ?>
                         <div class="phone_input">
                                 <?if($typeMask == 'Y'):?>
@@ -121,7 +121,7 @@ if($typeMask == 'Y')
                 <? } ?>
 
                 <? if ($arResult["isUseCaptcha"] == "Y") { ?>
-                    <div class="sotbit_order_phone__block">
+                    <div class="kit_order_phone__block">
                         <div class="feedback_block__captcha">
                             <div class="feedback_block__captcha_input main-input-md__wrapper">
                                 <input type="text" class="main-input-md" name="captcha_word"
@@ -140,7 +140,7 @@ if($typeMask == 'Y')
                                 <div class="captcha-refresh" onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                     <svg class="icon_refresh" width="16" height="14">
                                         <use
-                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@ if($typeMask == 'Y')
         let maska = "<?=Config::get('MASK')?>";
         maska = $.trim(maska);
         if (maska != "")
-            $(".sotbit_order_phone form input.popup-phone_input").mask(maska, {placeholder: "_"});
+            $(".kit_order_phone form input.popup-phone_input").mask(maska, {placeholder: "_"});
     });
 
     <?endif;?>

@@ -22,7 +22,7 @@ $arComponentParameters = array(
             "PARENT" => "SETTINGS",
             "NAME" => GetMessage('TIMER_DATE_END'),
             "TYPE" => 'CUSTOM',
-            'JS_FILE' => SITE_DIR . '/local/components/sotbit/origami.timer/templates/origami_default/settings/settings.js',
+            'JS_FILE' => SITE_DIR . '/local/components/kit/origami.timer/templates/origami_default/settings/settings.js',
             // функция из подключенного скрипта JS_FILE, вызывается при отрисовке окна настроек
             'JS_EVENT' => 'OnMySettingsEdit',
             // доп. данные, передаются в функцию из JS_EVENT

@@ -1,11 +1,11 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Бренды");
 $APPLICATION->IncludeComponent(
-	"sotbit:news",
-	"sotbit_origami_brands",
+	"kit:news",
+	"kit_origami_brands",
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -20,7 +20,7 @@ $APPLICATION->IncludeComponent(
 		"CACHE_TIME" => "100000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_brands",
+		"COMPONENT_TEMPLATE" => "kit_origami_brands",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"CONVERT_CURRENCY" => "N",
@@ -82,7 +82,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_TEMPLATE" => "origami",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
+		"PRICE_CODE" => \KitOrigami::GetComponentPrices(["OPT","SMALL_OPT","BASE"]),
 		"REGION" => $_SESSION["SOTBIT_REGIONS"]["ID"],
 		"SEF_FOLDER" => "/brands/",
 		"SEF_MODE" => "Y",

@@ -4,11 +4,11 @@ class YoutubeBlock extends Actions
 {
 	public function afterSaveContent()
 	{
-		\CBitrixComponent::clearComponentCache('sotbit:youtube', '');
+		\CBitrixComponent::clearComponentCache('kit:youtube', '');
 	}
 	public function afterAdd()
 	{
-		\CBitrixComponent::clearComponentCache('sotbit:youtube', '');
+		\CBitrixComponent::clearComponentCache('kit:youtube', '');
 	}
 }
 ?>

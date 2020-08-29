@@ -8,7 +8,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
  * @global string $cartId
  */
 $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STUB'] == 'Y');
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 if (!$compositeStub && $arParams['SHOW_AUTHOR'] == 'Y'):?>
 	<div class="bx-basket-block">
 		<i class="fa fa-user"></i>

@@ -41,7 +41,7 @@ $APPLICATION->IncludeComponent(
         "LINK_TO_THE_CATALOG" => $settings['fields']['link_catalog']['value'],
         "BLOCK_NAME" => $settings['fields']['title']['value'],
         "COUNT_SECTIONS" => $settings['fields']['count_sections']['value'],
-        "COMPONENT_TEMPLATE" => "sotbit_popular_categories_advanced"
+        "COMPONENT_TEMPLATE" => "kit_popular_categories_advanced"
     ),
     false
 );

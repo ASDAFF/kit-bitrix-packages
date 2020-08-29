@@ -130,7 +130,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                     "origami_mobile_menu_top",
                     array(
                         "ALLOW_MULTI_SELECT" => "N",
-                        "CHILD_MENU_TYPE" => "sotbit_top",
+                        "CHILD_MENU_TYPE" => "kit_top",
                         "COMPOSITE_FRAME_MODE" => "A",
                         "COMPOSITE_FRAME_TYPE" => "AUTO",
                         "DELAY" => "N",
@@ -140,7 +140,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                         "MENU_CACHE_TIME" => "36000000",
                         "MENU_CACHE_TYPE" => "A",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_top",
+                        "ROOT_MENU_TYPE" => "kit_top",
                         "USE_EXT" => "N",
                         "COMPONENT_TEMPLATE" => "",
                         "MENU_THEME" => "site"
@@ -160,7 +160,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                 <a class="container_menu_mobile__item_link" href="<?=Config::get('COMPARE_PAGE')?>">
                     <span class="mobile_icon_chart-bar">
                         <svg class="" width="14" height="14">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                         </svg>
                     </span>
                     <?=Loc::getMessage('MENU_COMPARISON');?>
@@ -173,7 +173,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                 <a class="container_menu_mobile__item_link" href="<?=Config::get('BASKET_PAGE')?>">
                     <span class="mobile_icon_heart">
                         <svg class="" width="14" height="14">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                         </svg>
                     </span>
                     <?=Loc::getMessage('MENU_FAVOURITES');?>
@@ -186,7 +186,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                 <a class="container_menu_mobile__item_link" href="<?=Config::get('BASKET_PAGE')?>">
                     <span class="mobile_icon_shopping-basket">
                         <svg class="" width="14" height="14">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
                         </svg>
                     </span>
                     <?=Loc::getMessage('MENU_CART');?>
@@ -199,7 +199,7 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
                     <a class="container_menu_mobile__item_link" href="?logout=yes">
                         <span class="mobile_icon_login">
                             <svg class="" width="14" height="14">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_login"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_login"></use>
                             </svg>
                         </span>
                         <?=Loc::getMessage('MENU_LOGOUT');?>
@@ -212,13 +212,13 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
             <p class="container_menu__contact_title fonts__main_text"><?=GetMessage('MENU_CONTACT_INFO');?></p>
 
             <?if(
-            \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+            \Bitrix\Main\Loader::includeModule('kit.regions') &&
             \SotbitOrigami::isUseRegions() &&
-            is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
+            is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
             ):?>
             <?
                 $APPLICATION->IncludeComponent(
-                    "sotbit:regions.data",
+                    "kit:regions.data",
                     "origami_mobile_menu_contacts",
                     [
                         "CACHE_TIME"    => "36000000",
@@ -233,20 +233,20 @@ $arParams["SHOW_COMPARE"] = Config::checkAction("COMPARE");
             <?$APPLICATION->IncludeComponent("bitrix:main.include", "", [
                         "AREA_FILE_SHOW" => "file",
                         "PATH"           =>
-                            SITE_DIR."include/sotbit_origami/mmenu_contacts_address.php",
+                            SITE_DIR."include/kit_origami/mmenu_contacts_address.php",
                     ]);?>
 
                     <?
                     $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                         "AREA_FILE_SHOW" => "file",
                         "PATH"           =>
-                            SITE_DIR."include/sotbit_origami/mmenu_contacts_email.php",
+                            SITE_DIR."include/kit_origami/mmenu_contacts_email.php",
                     ]);
 
                     $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                         "AREA_FILE_SHOW" => "file",
                         "PATH"           =>
-                            SITE_DIR."include/sotbit_origami/mmenu_contacts_phone.php",
+                            SITE_DIR."include/kit_origami/mmenu_contacts_phone.php",
                     ]);
                 ?>
             <?endif;?>

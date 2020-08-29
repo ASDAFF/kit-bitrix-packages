@@ -2,27 +2,27 @@
 use Sotbit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/theme/contacts/1/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/1/style.css");
 CJSCore::Init(array("date"));
 ?>
 <div class="contact__techno_block">
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_map.php"));
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_map.php"));
     ?>
 
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_info/contacts_info.php"));
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_info/contacts_info.php"));
     ?>
     <h2><?=GetMessage('TITLE_CONTACTS_H2')?></h2>
     <p><?=GetMessage('DESCRIPTION_CONTACTS_H2')?></p>
     <?php
     $APPLICATION->IncludeComponent(
         "bitrix:news",
-        "sotbit_origami_shops",
+        "kit_origami_shops",
         array(
             "IBLOCK_TYPE" => Config::get("IBLOCK_TYPE_SHOP"),
             "IBLOCK_ID" => Config::get("IBLOCK_ID_SHOP"),

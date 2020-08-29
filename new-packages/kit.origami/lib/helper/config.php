@@ -21,7 +21,7 @@ Loc::loadMessages(__FILE__);
  * Class Config
  *
  * @package Sotbit\Origami\Helper
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Config
 {
@@ -438,7 +438,7 @@ class Config
     public static function getRegionTemplate()
     {
         return [
-            'sotbit_regions'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_1'),
+            'kit_regions'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_1'),
             'origami_location'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_2'),
             'origami_combine'   => Loc::getMessage(\SotbitOrigami::moduleId.'_REGION_TEMPLATE_3'),
         ];
@@ -758,7 +758,7 @@ class Config
             if (is_dir($dir)) {
                     $files = scandir($dir);
                     foreach ($files as $file) {
-                        if ($file != "sotbit_order_right_panel") {
+                        if ($file != "kit_order_right_panel") {
                             if (in_array($file, ['.','..',])
                                 ||  !is_file($dir.'/'.$file.'/description.php')
                             ) {
@@ -1007,7 +1007,7 @@ class Config
             'DOCS'
         ];
 		foreach($return as $k => $r){
-			if($r == 'DELIVERY' && !file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.delivery/class.php')){
+			if($r == 'DELIVERY' && !file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.delivery/class.php')){
 				unset($return[$k]);
 			}
 		}

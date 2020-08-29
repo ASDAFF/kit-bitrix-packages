@@ -27,7 +27,7 @@ if (ToLower(SITE_CHARSET) == 'windows-1251') {
     }
 }
 
-$this->addExternalCss(SITE_DIR."local/templates/sotbit_origami/components/bitrix/system.auth.registration/origami/style.css");
+$this->addExternalCss(SITE_DIR."local/templates/kit_origami/components/bitrix/system.auth.registration/origami/style.css");
 
 if($arResult["SHOW_SMS_FIELD"] == true)
 {
@@ -225,7 +225,7 @@ if($arResult["SHOW_SMS_FIELD"] == true)
                 <img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["CAPTCHA_CODE"]?>" width="180" height="40" alt="CAPTCHA" />
                 <div class="feedback_block__captcha_reload" onclick="reloadCaptcha(this,'<?=SITE_DIR?>');return false;">
                     <svg class="icon_refresh" width="16" height="14">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                     </svg>
                 </div>
             </div>

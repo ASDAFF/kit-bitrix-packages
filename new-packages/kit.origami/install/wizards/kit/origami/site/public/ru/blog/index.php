@@ -1,10 +1,10 @@
 <?php
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Блог");
 $APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"sotbit_origami_blog",
+	"kit_origami_blog",
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -103,7 +103,7 @@ $APPLICATION->IncludeComponent(
 		"USE_RSS" => "Y",
 		"USE_SEARCH" => "N",
 		"YANDEX" => "N",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_blog",
+		"COMPONENT_TEMPLATE" => "kit_origami_blog",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

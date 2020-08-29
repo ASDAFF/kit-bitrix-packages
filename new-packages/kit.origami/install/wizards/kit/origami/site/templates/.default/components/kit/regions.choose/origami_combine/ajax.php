@@ -2,14 +2,14 @@
 define("STOP_STATISTICS", true);
 define("NOT_CHECK_PERMISSIONS", true);
 /**
- * type - работа с местоположением или регионами
- * key - строка фильтрации списка местоположений (регионов)
+ * type - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+ * key - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
  */
 
 use Bitrix\Main\Localization\Loc;
 
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
-if (!\Bitrix\Main\Loader::includeModule('sotbit.regions')) {
+if (!\Bitrix\Main\Loader::includeModule('kit.regions')) {
     return false;
 }
 
@@ -61,7 +61,7 @@ $path = $APPLICATION->GetCurDir();
             <!-- CITY FOR EXAMPLE -->
             <div class="select-city__wrapper__input">
                 <div class="select-city__input__comment select-city__under_input">' . Loc::getMessage(
-                    'sotbit.regions_EXAMPLE',
+                    'kit.regions_EXAMPLE',
                     [
                         '#ID0#'   => $randRegions[0]['ID'],
                         '#ID1#'   => $randRegions[1]['ID'],

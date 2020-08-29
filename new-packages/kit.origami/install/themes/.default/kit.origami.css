@@ -1,7 +1,7 @@
-#global_menu_sotbit .adm-main-menu-item-icon{
-    background: url("icons/sotbit/icon.png") no-repeat 50% 55%;
+#global_menu_kit .adm-main-menu-item-icon{
+    background: url("icons/kit/icon.png") no-repeat 50% 55%;
 }
-.sotbit_origami_menu_icon{
-    background: url("icons/sotbit.origami/icon.png") no-repeat center;
+.kit_origami_menu_icon{
+    background: url("icons/kit.origami/icon.png") no-repeat center;
     margin-top:0!important;
 }

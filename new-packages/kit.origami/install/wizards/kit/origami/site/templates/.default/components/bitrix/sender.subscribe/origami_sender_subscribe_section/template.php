@@ -65,7 +65,7 @@ $buttonId = $this->randString();
                     subscr_form_button
             ") ?>">
                 <svg class="footer-block__follow_input_icon" width="25" height="25">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>
                 </svg>
             </button>
         </div>
@@ -82,7 +82,7 @@ $buttonId = $this->randString();
                     <label for="SENDER_SUBSCRIBE_RUB_ID_<?= $itemValue["ID"] ?>">
                         <span class="subscribe_checkbox_checked">
                             <svg class="subscribe_checkbox_checked__icon" width="12" height="8">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                             </svg>
                         </span>
                         <span ><?= htmlspecialcharsbx($itemValue["NAME"]) ?></span>

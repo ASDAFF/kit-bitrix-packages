@@ -20,7 +20,7 @@ $templateData = array(
 );
 $curJsId = $this->randString();
 ?>
-<div class="sotbit_set">
+<div class="kit_set">
 
 <div class="bx-modal-small-title puzzle_block__title fonts__middle_title">
     <?=GetMessage("CATALOG_SET_BUY_SET")?>

@@ -29,7 +29,7 @@ function ___writeToAreasFile($path, $text)
 if (COption::GetOptionString("main", "upload_dir") == "")
 	COption::SetOptionString("main", "upload_dir", "upload");
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "N" || WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "N" || WIZARD_INSTALL_DEMO_DATA)
 {
     $bitrixLocalDir = $_SERVER["DOCUMENT_ROOT"] ."/local/";
 
@@ -68,19 +68,19 @@ if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SI
     }
 }
 
-COption::SetOptionString("sotbit.origami",'TEL',$wizard->GetVar("siteTelephone"));
-COption::SetOptionString("sotbit.origami",'COPYRIGHT',$wizard->GetVar("siteCopy"));
-COption::SetOptionString("sotbit.origami",'EMAIL',$wizard->GetVar("shopEmail"));
+COption::SetOptionString("kit.origami",'TEL',$wizard->GetVar("siteTelephone"));
+COption::SetOptionString("kit.origami",'COPYRIGHT',$wizard->GetVar("siteCopy"));
+COption::SetOptionString("kit.origami",'EMAIL',$wizard->GetVar("shopEmail"));
 
 
 
-COption::SetOptionString("sotbit.origami",'URL_CART',WIZARD_SITE_DIR.'personal/cart/');
-COption::SetOptionString("sotbit.origami",'URL_ORDER',WIZARD_SITE_DIR.'personal/order/make/');
-COption::SetOptionString("sotbit.origami",'URL_PERSONAL',WIZARD_SITE_DIR.'personal/');
-COption::SetOptionString("sotbit.origami",'URL_PAYMENT',WIZARD_SITE_DIR.'personal/order/payment/');
-COption::SetOptionString("sotbit.origami",'URL_PAGE_ORDER',WIZARD_SITE_DIR.'personal/order/');
-COption::SetOptionString("sotbit.origami",'TABLE_SIZE_URL',WIZARD_SITE_DIR.'clients/table_sizes/#table');
-COption::SetOptionString("sotbit.origami", 'DETAIL_TEXT_INCLUDE', GetMessage('DETAIL_TEXT_INCLUDE', array('#SITE_DIR#' => WIZARD_SITE_DIR)));
+COption::SetOptionString("kit.origami",'URL_CART',WIZARD_SITE_DIR.'personal/cart/');
+COption::SetOptionString("kit.origami",'URL_ORDER',WIZARD_SITE_DIR.'personal/order/make/');
+COption::SetOptionString("kit.origami",'URL_PERSONAL',WIZARD_SITE_DIR.'personal/');
+COption::SetOptionString("kit.origami",'URL_PAYMENT',WIZARD_SITE_DIR.'personal/order/payment/');
+COption::SetOptionString("kit.origami",'URL_PAGE_ORDER',WIZARD_SITE_DIR.'personal/order/');
+COption::SetOptionString("kit.origami",'TABLE_SIZE_URL',WIZARD_SITE_DIR.'clients/table_sizes/#table');
+COption::SetOptionString("kit.origami", 'DETAIL_TEXT_INCLUDE', GetMessage('DETAIL_TEXT_INCLUDE', array('#SITE_DIR#' => WIZARD_SITE_DIR)));
 
 
 
@@ -93,7 +93,7 @@ ___writeToAreasFile(WIZARD_SITE_PATH."include/telephone.php", $wizard->GetVar("s
 */
 
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 WizardServices::PatchHtaccess(WIZARD_SITE_PATH);
@@ -114,8 +114,8 @@ WizardServices::ReplaceMacrosRecursive(WIZARD_SITE_PATH."vlog/", Array("SITE_DIR
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH."_index.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH.".top.menu.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH."sect_search.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
-CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH.".sotbit_bottom1.menu.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
-CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH.".sotbit_bottom2.menu.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
+CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH.".kit_bottom1.menu.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
+CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH.".kit_bottom2.menu.php", Array("SITE_DIR" => WIZARD_SITE_DIR));
 
 WizardServices::ReplaceMacrosRecursive(WIZARD_SITE_PATH."about/", Array("SALE_EMAIL" => $wizard->GetVar("shopEmail")));
 WizardServices::ReplaceMacrosRecursive(WIZARD_SITE_PATH."about/delivery/", Array("SALE_PHONE" => $wizard->GetVar("siteTelephone")));

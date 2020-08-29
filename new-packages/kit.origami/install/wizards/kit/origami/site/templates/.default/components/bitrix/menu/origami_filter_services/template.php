@@ -29,7 +29,7 @@ $page = $APPLICATION->GetCurPage(false);
                 <?if($li['CHILDREN']):?>
                     <span class="block_main_left_menu__link-icon">
                         <svg class="block_main_left_menu__link-arrow" width="8" height="12">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                         </svg>
                     </span>
                 <?endif;?>
@@ -58,7 +58,7 @@ $page = $APPLICATION->GetCurPage(false);
                             <?if($li2['CHILDREN']):?>
                                 <span class="block_main_left_menu__link-icon">
                                     <svg class="block_main_left_menu__link-arrow" width="8" height="12">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                     </svg>
                                 </span>
                             <?endif;?>
@@ -86,7 +86,7 @@ $page = $APPLICATION->GetCurPage(false);
                                                 <?if($li3['CHILDREN']):?>
                                                     <span class="block_main_left_menu__link-icon">
                                                         <svg class="block_main_left_menu__link-arrow" width="8" height="12">
-                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                                         </svg>
                                                     </span>
                                                 <?endif;?>

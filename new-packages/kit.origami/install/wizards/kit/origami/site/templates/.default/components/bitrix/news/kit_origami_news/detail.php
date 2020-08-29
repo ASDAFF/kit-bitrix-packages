@@ -9,7 +9,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 \Bitrix\Main\Loader::includeModule('currency');
 CJSCore::Init(array('currency'));
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/sotbit_origami_news/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/kit_origami_news/style.css");
 
 $this->setFrameMode(true);
 
@@ -80,7 +80,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 
 
     $APPLICATION->IncludeComponent(
-	"sotbit:crosssell.crosssell.list",
+	"kit:crosssell.crosssell.list",
 	"origami_default",
     array(
             "ACTION_VARIABLE" => "action",
@@ -145,7 +145,7 @@ $ElementID = $APPLICATION->IncludeComponent(
             "PAGER_SHOW_ALL" => "N",
             "PAGER_SHOW_ALWAYS" => "N",
             "PAGER_TEMPLATE" => ".default",
-            "PAGER_TITLE" => "Товары",
+            "PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅ",
             "PARTIAL_PRODUCT_PROPERTIES" => "N",
             "PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
             "OFFERS_FIELD_CODE"      => [

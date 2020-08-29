@@ -1,7 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 
 use \Sotbit\Origami\Config\Option;
@@ -17,9 +17,9 @@ if(!defined("WIZARD_TEMPLATE_ABSOLUTE_PATH")) return;
 if(!defined("WIZARD_THEME_ID")) return;
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH . "/xml/" . LANGUAGE_ID . "/blog.xml";
-$iblockCode = "sotbit_origami_blog_" . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = "sotbit_origami_blog_" . WIZARD_SITE_ID;
+$iblockCode = "kit_origami_blog_" . WIZARD_SITE_ID;
+$iblockType = "kit_origami_content";
+$iblockXMLID = "kit_origami_blog_" . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;
@@ -203,7 +203,7 @@ if (strlen($lang) <= 0)
     $lang = "ru";
 
 if($iblockID) {
-    Option::Set('IBLOCK_TYPE_BLOG', "sotbit_origami_content", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE_BLOG', "kit_origami_content", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID_BLOG', $iblockID, WIZARD_SITE_ID);
 }
 

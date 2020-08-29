@@ -6,7 +6,7 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("SOTBIT_YOUTUBE_DESCRIPTION"),
 	"ICON" => "",
 	"PATH" => array(
-        "ID" => "sotbit",
+        "ID" => "kit",
         "NAME" => GetMessage("SOTBIT_COMPONENTS_TITLE")
 	),
 );

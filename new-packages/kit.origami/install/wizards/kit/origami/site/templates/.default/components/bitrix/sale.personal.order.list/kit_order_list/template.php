@@ -546,7 +546,7 @@ else
 		$javascriptParams = array(
 			"url" => CUtil::JSEscape($this->__component->GetPath().'/ajax.php'),
 			"templateFolder" => CUtil::JSEscape($templateFolder),
-			"templateName" => 'sotbit_order_detail', //$this->__component->GetTemplateName(),
+			"templateName" => 'kit_order_detail', //$this->__component->GetTemplateName(),
 			"paymentList" => $paymentChangeData
 		);
 		$javascriptParams = CUtil::PhpToJSObject($javascriptParams);

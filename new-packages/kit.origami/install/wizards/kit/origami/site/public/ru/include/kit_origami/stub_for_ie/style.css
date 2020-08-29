@@ -55,17 +55,17 @@
 }
 
 .stub__browser-chrome {
-    background: url("/include/sotbit_origami/stub_for_ie/img/chrome.png") no-repeat center 0;
+    background: url("/include/kit_origami/stub_for_ie/img/chrome.png") no-repeat center 0;
 }
 
 .stub__browser-opera {
-    background: url("/include/sotbit_origami/stub_for_ie/img/opera.png") no-repeat center 0;
+    background: url("/include/kit_origami/stub_for_ie/img/opera.png") no-repeat center 0;
 }
 
 .stub__browser-firefox {
-    background: url("/include/sotbit_origami/stub_for_ie/img/firefox.png") no-repeat center 0;
+    background: url("/include/kit_origami/stub_for_ie/img/firefox.png") no-repeat center 0;
 }
 
 .stub__browser-edge {
-    background: url("/include/sotbit_origami/stub_for_ie/img/edge.png") no-repeat center 0;
+    background: url("/include/kit_origami/stub_for_ie/img/edge.png") no-repeat center 0;
 }

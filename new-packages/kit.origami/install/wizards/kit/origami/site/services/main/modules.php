@@ -7,18 +7,18 @@ if (!defined("WIZARD_SITE_ID") || !defined("WIZARD_SITE_DIR"))
 
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_before.php");
 
-$moduleName = 'sotbit.origami';
+$moduleName = 'kit.origami';
 
 //START
-if (!IsModuleInstalled("sotbit.origami") && file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sotbit.origami/"))
+if (!IsModuleInstalled("kit.origami") && file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.origami/"))
 {
-    $installFile = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sotbit.origami/install/index.php";
+    $installFile = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.origami/install/index.php";
     if (!file_exists($installFile))
         return false;
 
     include_once($installFile);
 
-    $moduleIdTmp = str_replace(".", "_", "sotbit.origami");
+    $moduleIdTmp = str_replace(".", "_", "kit.origami");
     if (!class_exists($moduleIdTmp))
         return false;
 
@@ -26,7 +26,7 @@ if (!IsModuleInstalled("sotbit.origami") && file_exists($_SERVER["DOCUMENT_ROOT"
     $module->InstallFiles();
     $module->InstallDB();
     $module->InstallAgents();
-    RegisterModule("sotbit.origami");
+    RegisterModule("kit.origami");
 }
 //END
 
@@ -35,11 +35,11 @@ if (!IsModuleInstalled("sotbit.origami") && file_exists($_SERVER["DOCUMENT_ROOT"
 
 
 $modulesThear = array(
-    'sotbit.regions',
-    'sotbit.schemaorg',
-    'sotbit.orderphone',
-    'sotbit.opengraph',
-    'sotbit.crosssell',
+    'kit.regions',
+    'kit.schemaorg',
+    'kit.orderphone',
+    'kit.opengraph',
+    'kit.crosssell',
 );
 
 $modulesStrangers = array(

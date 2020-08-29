@@ -230,7 +230,7 @@ if (empty($arResult['ERROR_MESSAGE']))
 									placeholder="<?=Loc::getMessage('SBB_BASKET_FILTER')?>"
                                     data-entity="basket-filter-input">
                                     <svg class="form-control-feedback basket-clear" data-entity="basket-filter-clear-btn" width="10px" height="10px">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
                                     </svg>
 								<!-- <span class="form-control-feedback basket-clear" data-entity="basket-filter-clear-btn"></span> -->
 							</div>
@@ -271,7 +271,7 @@ if (empty($arResult['ERROR_MESSAGE']))
                         </script>
 						<div class="basket-items__clear" onclick="clearBasket('<?=SITE_ID?>','<?=SITE_DIR?>');return false;">
                             <svg width="18" height="18">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clear_cart_backet"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clear_cart_backet"></use>
                             </svg>
 							<span class="basket-items__clear-title">
 								<?=Loc::getMessage('SBB_CLEAR_BASKET')?>

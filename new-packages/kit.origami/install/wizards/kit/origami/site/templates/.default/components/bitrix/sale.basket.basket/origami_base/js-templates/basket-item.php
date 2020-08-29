@@ -83,7 +83,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 							{{/DETAIL_PAGE_URL}}
 
 							<img class="basket-item-image" alt="{{NAME}}"
-								src="{{{IMAGE_URL}}}{{^IMAGE_URL}}/upload/sotbit.origami/no_photo_small.svg{{/IMAGE_URL}}">
+								src="{{{IMAGE_URL}}}{{^IMAGE_URL}}/upload/kit.origami/no_photo_small.svg{{/IMAGE_URL}}">
 
 							{{#SHOW_LABEL}}
 								<div class="sticker_product
@@ -151,7 +151,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 								<div class="alert text-center">
                                 <div class="basket-items-list-item-icon">
                                     <svg  width="18" height="18">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite_backet"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite_backet"></use>
                                     </svg>
                                 </div>
 									<?=Loc::getMessage('SBB_BASKET_ITEM_DELAYED')?>.&nbsp;
@@ -253,7 +253,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 													<div class="alert alert-info alert-dismissable text-center">
                                                     <div class="basket-items-list-item-icon">
                                                         <svg  width="18" height="18">
-                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart_backet"></use>
+                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart_backet"></use>
                                                         </svg>
                                                     </div>
 														{{#USE_FILTER}}
@@ -454,7 +454,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 
 						<span class="basket-item-actions-remove" data-entity="basket-item-delete">
                             <svg class="basket-item-actions-remove" width="18" height="18">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
                             </svg>
                         </span>
 						{{#SHOW_LOADING}}

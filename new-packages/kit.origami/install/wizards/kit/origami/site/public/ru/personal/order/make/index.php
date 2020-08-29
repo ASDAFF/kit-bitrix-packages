@@ -100,7 +100,7 @@ $APPLICATION->IncludeComponent(
 		"ADDITIONAL_PICT_PROP_5" => "-",
 		"ADDITIONAL_PICT_PROP_23" => "-",
 		"ADDITIONAL_PICT_PROP_24" => "-",
-		"COMPONENT_TEMPLATE" => "sotbit_order_make_classic"
+		"COMPONENT_TEMPLATE" => "kit_order_make_classic"
 	),
 	false
 );

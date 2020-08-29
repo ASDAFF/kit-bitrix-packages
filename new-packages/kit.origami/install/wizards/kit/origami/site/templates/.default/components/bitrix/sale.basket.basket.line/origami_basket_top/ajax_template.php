@@ -58,7 +58,7 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                                     <div class="open-basket-origami__tab-not-products">
                                         <div class="open-basket-origami__tab-not-products-logo">
                                             <svg width="93" height="93">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart_big"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart_big"></use>
                                             </svg>
                                         </div>
                                         <div class="open-basket-origami__tab-not-products-content">
@@ -89,10 +89,10 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                                                 <div class="open-basket-product-block__item open-basket-product__picture">
                                                     <?if($arCart["DETAIL_PAGE_URL"]):?>
                                                         <a href="<?=$arCart["DETAIL_PAGE_URL"]?>">
-                                                            <img src="<?=( empty($arCart["PICTURE_SRC"]) ? "/upload/sotbit.origami/no_photo_small.svg" : $arCart["PICTURE_SRC"] )?>" alt="<?=$arCart["NAME"]?>" title="<?=$arCart["NAME"]?>">
+                                                            <img src="<?=( empty($arCart["PICTURE_SRC"]) ? "/upload/kit.origami/no_photo_small.svg" : $arCart["PICTURE_SRC"] )?>" alt="<?=$arCart["NAME"]?>" title="<?=$arCart["NAME"]?>">
                                                         </a>
                                                     <?else:?>
-                                                        <img src="<?=( empty($arCart["PICTURE_SRC"]) ? "/upload/sotbit.origami/no_photo_small.svg" : $arCart["PICTURE_SRC"] )?>" alt="<?=$arCart["NAME"]?>" title="<?=$arCart["NAME"]?>">
+                                                        <img src="<?=( empty($arCart["PICTURE_SRC"]) ? "/upload/kit.origami/no_photo_small.svg" : $arCart["PICTURE_SRC"] )?>" alt="<?=$arCart["NAME"]?>" title="<?=$arCart["NAME"]?>">
                                                     <?endif;?>
 
                                                 </div>
@@ -190,7 +190,7 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                                     <div class="open-basket-origami__tab-not-products">
                                         <div class="open-basket-origami__tab-not-products-logo">
                                             <svg width="93" height="93">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart_big"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart_big"></use>
                                             </svg>
                                         </div>
                                         <div class="open-basket-origami__tab-not-products-content">
@@ -219,7 +219,7 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                                             </svg>
                                             <div class="open-basket-product-block__item open-basket-product__picture">
                                                 <a href="<?=$arDelay["DETAIL_PAGE_URL"]?>">
-                                                    <img src="<?=( empty($arDelay["PICTURE_SRC"]) ? "/upload/sotbit.origami/no_photo_small.svg" : $arDelay["PICTURE_SRC"] )?>" alt="<?=$arDelay["NAME"]?>" title="<?=$arDelay["NAME"]?>">
+                                                    <img src="<?=( empty($arDelay["PICTURE_SRC"]) ? "/upload/kit.origami/no_photo_small.svg" : $arDelay["PICTURE_SRC"] )?>" alt="<?=$arDelay["NAME"]?>" title="<?=$arDelay["NAME"]?>">
                                                 </a>
                                             </div>
                                             <div class="open-basket-product-block__item open-basket-product__info">
@@ -296,7 +296,7 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                             <div class="open-basket-product-btn">
                                 <a href="#" class="open-basket-product-btn__more-buy">
                                     <svg  width="10" height="10">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
                                     </svg>
                                     <?=GetMessage('ORIGAMI_BASKET_RETURN_BUY')?></a>
                                 <a href="<?=$arParams["PATH_TO_BASKET"]?>" class="open-basket-product-btn__basket">
@@ -323,7 +323,7 @@ switch (\Sotbit\Origami\Helper\Config::get('HEADER'))
                                     <?
                                     $props = ($arResult['PROPS'])?array_keys(reset($arResult['PROPS'])):[];
                                     ?>
-                                    <? if(\Bitrix\Main\Loader::includeModule('sotbit.orderphone')): ?>
+                                    <? if(\Bitrix\Main\Loader::includeModule('kit.orderphone')): ?>
                                         <button
                                             class="basket-line-btn-oc"
                                             id="order_oc_top"

@@ -6,7 +6,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 try {
-    \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    \Bitrix\Main\Loader::includeModule('kit.origami');
     $Phone = new \Sotbit\Origami\Helper\Phone();
     $Phone->setMask(\Sotbit\Origami\Config\Option::get(
         'MASK',

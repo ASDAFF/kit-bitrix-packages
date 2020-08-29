@@ -22,12 +22,12 @@
 			this.totalBlockNode = BX(parameters.totalBlockId);
 			
 			this.savedFilesBlockNode = BX('bx-soa-saved-files');
-			this.orderSaveBlockNode = BX('sotbit-bx-soa-orderSave');
+			this.orderSaveBlockNode = BX('kit-bx-soa-orderSave');
 			//this.mainErrorsNode = BX('bx-soa-main-notifications');
 
             this.basketBlockNode = BX(parameters.basketBlockId);
             this.basketRowsNode = BX(parameters.basketRowsId);
-            this.sotbitSoaBlock = BX(parameters.sotbitSoaBlockId);
+            this.kitSoaBlock = BX(parameters.kitSoaBlockId);
 
 			if (this.result.SHOW_AUTH)
 			{
@@ -380,15 +380,15 @@
             basketContent = node.querySelector('.bx-soa-section-content');
 
             // update all blocks with order price
-            var orderPrice = this.sotbitSoaBlock.querySelectorAll('.sotbit_soa_order_price');
+            var orderPrice = this.kitSoaBlock.querySelectorAll('.kit_soa_order_price');
             if (orderPrice.length)
                 for (var i = 0; i < orderPrice.length; i++)
                     orderPrice[i].innerHTML = this.result.TOTAL.ORDER_PRICE_FORMATED;
 
             // update discount in total block
-            var priceOrderBlock = this.sotbitSoaBlock.querySelector('.price_item');
-            var discountTotalBlock = this.sotbitSoaBlock.querySelector('.sotbit_soa_discount_total_block');
-            var discountValue = this.sotbitSoaBlock.querySelector('.sotbit_soa_discount_value');
+            var priceOrderBlock = this.kitSoaBlock.querySelector('.price_item');
+            var discountTotalBlock = this.kitSoaBlock.querySelector('.kit_soa_discount_total_block');
+            var discountValue = this.kitSoaBlock.querySelector('.kit_soa_discount_value');
 
             if (this.result.TOTAL.DISCOUNT_PRICE > 0)
             {
@@ -398,7 +398,7 @@
                 {
                     priceOrderBlock.insertBefore(
                         BX.create('DIV', {
-                            props: {className: 'sotbit_soa_discount_total_block main_order_block_feedback__price_item fonts__small_text'},
+                            props: {className: 'kit_soa_discount_total_block main_order_block_feedback__price_item fonts__small_text'},
                             children: [
                                 BX.create('span', {
                                     props: {className: 'main_order_block_feedback__price_title'},
@@ -408,7 +408,7 @@
                                     props: {className: 'main_order_block_feedback__price_title main_order_price_title_sale'},
                                     children: [
                                         BX.create('b', {
-                                            props: {className: 'sotbit_soa_discount_value'},
+                                            props: {className: 'kit_soa_discount_value'},
                                             text: this.result.TOTAL.DISCOUNT_PRICE_FORMATED
                                         })
                                     ]
@@ -425,7 +425,7 @@
             }
 
             // update block with order total price
-            var orderTotalPrice = this.sotbitSoaBlock.querySelector('.sotbit_soa_order_total_price');
+            var orderTotalPrice = this.kitSoaBlock.querySelector('.kit_soa_order_total_price');
             orderTotalPrice.innerHTML = this.result.TOTAL.ORDER_TOTAL_PRICE_FORMATED;
             
 
@@ -436,15 +436,15 @@
             {
                 //console.log(products[key]);
 
-                var productSumBlock = this.basketRowsNode.querySelector('div.sotbit_soa_product_sum_block_' + key);
-                var productSum = this.basketRowsNode.querySelector('div.sotbit_soa_product_sum_' + key);
-                var oldProductSum = this.basketRowsNode.querySelector('div.sotbit_soa_old_product_sum_' + key);
+                var productSumBlock = this.basketRowsNode.querySelector('div.kit_soa_product_sum_block_' + key);
+                var productSum = this.basketRowsNode.querySelector('div.kit_soa_product_sum_' + key);
+                var oldProductSum = this.basketRowsNode.querySelector('div.kit_soa_old_product_sum_' + key);
 
-                var discountPrice = this.basketRowsNode.querySelector('div.sotbit_soa_discount_price_' + key);
+                var discountPrice = this.basketRowsNode.querySelector('div.kit_soa_discount_price_' + key);
 
-                var priceBlock = this.basketRowsNode.querySelector('div.sotbit_soa_price_block_' + key);
-                var price = this.basketRowsNode.querySelector('div.sotbit_soa_price_' + key);
-                var oldPrice = this.basketRowsNode.querySelector('div.sotbit_soa_old_price_' + key);
+                var priceBlock = this.basketRowsNode.querySelector('div.kit_soa_price_block_' + key);
+                var price = this.basketRowsNode.querySelector('div.kit_soa_price_' + key);
+                var oldPrice = this.basketRowsNode.querySelector('div.kit_soa_old_price_' + key);
 
                 productSum.innerHTML = products[key].data.SUM;
                 discountPrice.innerHTML = products[key].data.DISCOUNT_PRICE_PERCENT_FORMATED;
@@ -458,7 +458,7 @@
                     {
                         priceBlock.appendChild(
                             BX.create('DIV', {
-                                props: {className: 'sotbit_soa_old_price_' + key + ' main_order_block__item_price_old fonts__middle_comment'},
+                                props: {className: 'kit_soa_old_price_' + key + ' main_order_block__item_price_old fonts__middle_comment'},
                                 text: products[key].data.BASE_PRICE_FORMATED
                             })
                         );
@@ -477,7 +477,7 @@
                     {
                         productSumBlock.appendChild(
                             BX.create('DIV', {
-                                props: {className: 'sotbit_soa_old_product_sum_' + key + ' main_order_block__item_price_old fonts__middle_comment'},
+                                props: {className: 'kit_soa_old_product_sum_' + key + ' main_order_block__item_price_old fonts__middle_comment'},
                                 text: products[key].data.SUM_BASE_FORMATED
                             })
                         );

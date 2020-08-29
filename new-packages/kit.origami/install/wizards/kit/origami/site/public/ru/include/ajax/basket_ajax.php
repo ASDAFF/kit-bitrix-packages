@@ -18,7 +18,7 @@ use Bitrix\Main,
     \Bitrix\Main\Loader,
     Bitrix\Sale,
     Bitrix\Sale\Basket,
-    Sotbit\Origami\Helper\Config;
+    Kit\Origami\Helper\Config;
 ;
 
 

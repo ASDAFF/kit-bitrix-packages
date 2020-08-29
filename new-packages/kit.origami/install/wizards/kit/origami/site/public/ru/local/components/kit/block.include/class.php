@@ -20,7 +20,7 @@ class SotbitBlockIncludeComponent extends \CBitrixComponent
     public function executeComponent()
     {
         try {
-            $moduleIncluded = Loader::includeModule('sotbit.origami');
+            $moduleIncluded = Loader::includeModule('kit.origami');
             if (!$moduleIncluded) {
                 return false;
             }

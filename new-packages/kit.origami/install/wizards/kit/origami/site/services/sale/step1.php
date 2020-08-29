@@ -44,7 +44,7 @@ if( $lang == "ru" )
 
 $shopLocalization = $wizard->GetVar( "shopLocalization" );
 
-COption::SetOptionString( "sotbit.origami", "shopLocalization", $shopLocalization, "ru", WIZARD_SITE_ID );
+COption::SetOptionString( "kit.origami", "shopLocalization", $shopLocalization, "ru", WIZARD_SITE_ID );
 if( $shopLocalization == "kz" )
 	$shopLocalization = "ru";
 
@@ -70,7 +70,7 @@ while ( $arLanguage = $rsLanguage->Fetch() )
 
 WizardServices::IncludeServiceLang( "step1.php", $lang );
 
-if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
+if( $bRus || COption::GetOptionString( "kit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
 {
 	$personType = $wizard->GetVar( "personType" );
 	$paysystem = $wizard->GetVar( "paysystem" );
@@ -89,27 +89,27 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 			) );
 
 		$shopLocation = $wizard->GetVar( "shopLocation" );
-		COption::SetOptionString( "sotbit.origami", "shopLocation", $shopLocation, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopLocation", $shopLocation, false, WIZARD_SITE_ID );
 		$shopOfName = $wizard->GetVar( "shopOfName" );
-		COption::SetOptionString( "sotbit.origami", "shopOfName", $shopOfName, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopOfName", $shopOfName, false, WIZARD_SITE_ID );
 		$shopAdr = $wizard->GetVar( "shopAdr" );
-		COption::SetOptionString( "sotbit.origami", "shopAdr", $shopAdr, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopAdr", $shopAdr, false, WIZARD_SITE_ID );
 
 		$shopINN = $wizard->GetVar( "shopINN" );
-		COption::SetOptionString( "sotbit.origami", "shopINN", $shopINN, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopINN", $shopINN, false, WIZARD_SITE_ID );
 		$shopKPP = $wizard->GetVar( "shopKPP" );
-		COption::SetOptionString( "sotbit.origami", "shopKPP", $shopKPP, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopKPP", $shopKPP, false, WIZARD_SITE_ID );
 		$shopNS = $wizard->GetVar( "shopNS" );
-		COption::SetOptionString( "sotbit.origami", "shopNS", $shopNS, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopNS", $shopNS, false, WIZARD_SITE_ID );
 		$shopBANK = $wizard->GetVar( "shopBANK" );
-		COption::SetOptionString( "sotbit.origami", "shopBANK", $shopBANK, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopBANK", $shopBANK, false, WIZARD_SITE_ID );
 		$shopBANKREKV = $wizard->GetVar( "shopBANKREKV" );
-		COption::SetOptionString( "sotbit.origami", "shopBANKREKV", $shopBANKREKV, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopBANKREKV", $shopBANKREKV, false, WIZARD_SITE_ID );
 		$shopKS = $wizard->GetVar( "shopKS" );
-		COption::SetOptionString( "sotbit.origami", "shopKS", $shopKS, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopKS", $shopKS, false, WIZARD_SITE_ID );
 		$siteStamp = $wizard->GetVar( "siteStamp" );
 		if( $siteStamp == "" )
-			$siteStamp = COption::GetOptionString( "sotbit.origami", "siteStamp", "", WIZARD_SITE_ID );
+			$siteStamp = COption::GetOptionString( "kit.origami", "siteStamp", "", WIZARD_SITE_ID );
 	}
 	elseif( $shopLocalization == "ua" )
 	{
@@ -125,38 +125,38 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 			) );
 
 		$shopLocation = $wizard->GetVar( "shopLocation_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopLocation_ua", $shopLocation, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopLocation_ua", $shopLocation, false, WIZARD_SITE_ID );
 		$shopOfName = $wizard->GetVar( "shopOfName_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopOfName_ua", $shopOfName, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopOfName_ua", $shopOfName, false, WIZARD_SITE_ID );
 		$shopAdr = $wizard->GetVar( "shopAdr_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopAdr_ua", $shopAdr, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopAdr_ua", $shopAdr, false, WIZARD_SITE_ID );
 
 		$shopEGRPU_ua = $wizard->GetVar( "shopEGRPU_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopEGRPU_ua", $shopEGRPU_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopEGRPU_ua", $shopEGRPU_ua, false, WIZARD_SITE_ID );
 		$shopINN_ua = $wizard->GetVar( "shopINN_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopINN_ua", $shopINN_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopINN_ua", $shopINN_ua, false, WIZARD_SITE_ID );
 		$shopNDS_ua = $wizard->GetVar( "shopNDS_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopNDS_ua", $shopNDS_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopNDS_ua", $shopNDS_ua, false, WIZARD_SITE_ID );
 		$shopNS_ua = $wizard->GetVar( "shopNS_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopNS_ua", $shopNS_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopNS_ua", $shopNS_ua, false, WIZARD_SITE_ID );
 		$shopBank_ua = $wizard->GetVar( "shopBank_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopBank_ua", $shopBank_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopBank_ua", $shopBank_ua, false, WIZARD_SITE_ID );
 		$shopMFO_ua = $wizard->GetVar( "shopMFO_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopMFO_ua", $shopMFO_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopMFO_ua", $shopMFO_ua, false, WIZARD_SITE_ID );
 		$shopPlace_ua = $wizard->GetVar( "shopPlace_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopPlace_ua", $shopPlace_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopPlace_ua", $shopPlace_ua, false, WIZARD_SITE_ID );
 		$shopFIO_ua = $wizard->GetVar( "shopFIO_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopFIO_ua", $shopFIO_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopFIO_ua", $shopFIO_ua, false, WIZARD_SITE_ID );
 		$shopTax_ua = $wizard->GetVar( "shopTax_ua" );
-		COption::SetOptionString( "sotbit.origami", "shopTax_ua", $shopTax_ua, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "shopTax_ua", $shopTax_ua, false, WIZARD_SITE_ID );
 	}
 
 	$siteTelephone = $wizard->GetVar( "siteTelephone" );
-	COption::SetOptionString( "sotbit.origami", "siteTelephone", $siteTelephone, false, WIZARD_SITE_ID );
+	COption::SetOptionString( "kit.origami", "siteTelephone", $siteTelephone, false, WIZARD_SITE_ID );
 	$shopEmail = $wizard->GetVar( "shopEmail" );
-	COption::SetOptionString( "sotbit.origami", "shopEmail", $shopEmail, false, WIZARD_SITE_ID );
+	COption::SetOptionString( "kit.origami", "shopEmail", $shopEmail, false, WIZARD_SITE_ID );
 	$siteName = $wizard->GetVar( "siteName" );
-	COption::SetOptionString( "sotbit.origami", "siteName", $siteName, false, WIZARD_SITE_ID );
+	COption::SetOptionString( "kit.origami", "siteName", $siteName, false, WIZARD_SITE_ID );
 
 	$obSite = new CSite();
 	$obSite->Update( WIZARD_SITE_ID, Array(
@@ -176,7 +176,7 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 				@copy( $strOldFile, WIZARD_SITE_PATH . "include/stamp.gif" );
 				CFile::Delete( $zr["ID"] );
 				$siteStamp = WIZARD_SITE_DIR . "include/stamp.gif";
-				COption::SetOptionString( "sotbit.origami", "siteStamp", $siteStamp, false, WIZARD_SITE_ID );
+				COption::SetOptionString( "kit.origami", "siteStamp", $siteStamp, false, WIZARD_SITE_ID );
 			}
 		}
 	}
@@ -207,9 +207,9 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 	$fizUaExist = in_array( GetMessage( "SALE_WIZARD_PERSON_3" ), $arPersonTypeNames );
 
 	$personTypeFiz = (isset( $personType["fiz"] ) && $personType["fiz"] == "Y" ? "Y" : "N");
-	COption::SetOptionString( "sotbit.origami", "personTypeFiz", $personTypeFiz, false, WIZARD_SITE_ID );
+	COption::SetOptionString( "kit.origami", "personTypeFiz", $personTypeFiz, false, WIZARD_SITE_ID );
 	$personTypeUr = (isset( $personType["ur"] ) && $personType["ur"] == "Y" ? "Y" : "N");
-	COption::SetOptionString( "sotbit.origami", "personTypeUr", $personTypeUr, false, WIZARD_SITE_ID );
+	COption::SetOptionString( "kit.origami", "personTypeUr", $personTypeUr, false, WIZARD_SITE_ID );
 
 	if( in_array( GetMessage( "SALE_WIZARD_PERSON_1" ), $arPersonTypeNames ) )
 	{
@@ -268,7 +268,7 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 	if( $shopLocalization == "ua" )
 	{
 		$personTypeFizUa = (isset( $personType["fiz_ua"] ) && $personType["fiz_ua"] == "Y" ? "Y" : "N");
-		COption::SetOptionString( "sotbit.origami", "personTypeFizUa", $personTypeFizUa, false, WIZARD_SITE_ID );
+		COption::SetOptionString( "kit.origami", "personTypeFizUa", $personTypeFizUa, false, WIZARD_SITE_ID );
 
 		if( in_array( GetMessage( "SALE_WIZARD_PERSON_3" ), $arPersonTypeNames ) )
 		{
@@ -299,7 +299,7 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 		}
 	}
 
-	if( COption::GetOptionString( "sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
+	if( COption::GetOptionString( "kit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
 	{
 		$dbCurrency = Bitrix\Sale\Internals\SiteCurrencyTable::getList( array(
 				"filter" => array(
@@ -389,8 +389,8 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 				else
 				{
 					// city were not found, create it
-                    if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/sotbit/origami/site/services/main/locations/pro/country_codes.php"))
-                        require ($_SERVER['DOCUMENT_ROOT'] . "/bitrix/wizards/sotbit/origami/site/services/main/locations/pro/country_codes.php");
+                    if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/kit/origami/site/services/main/locations/pro/country_codes.php"))
+                        require ($_SERVER['DOCUMENT_ROOT'] . "/bitrix/wizards/kit/origami/site/services/main/locations/pro/country_codes.php");
                     else
 					    require ($_SERVER['DOCUMENT_ROOT'] . WIZARD_SERVICE_RELATIVE_PATH . "/locations/pro/country_codes.php");
 
@@ -3101,7 +3101,7 @@ if( $bRus || COption::GetOptionString( "sotbit.origami", "wizard_installed", "N"
 		}
 	}
 
-	if( COption::GetOptionString( "sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
+	if( COption::GetOptionString( "kit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
 	{
 		if( $saleConverted15 )
 		{

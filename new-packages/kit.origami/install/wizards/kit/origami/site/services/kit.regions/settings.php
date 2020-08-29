@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.regions';
+$module = 'kit.regions';
 CModule::includeModule($module);
 CModule::includeModule('main');
 

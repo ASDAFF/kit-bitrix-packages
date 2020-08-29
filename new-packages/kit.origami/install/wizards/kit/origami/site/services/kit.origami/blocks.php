@@ -9,7 +9,7 @@ use \Bitrix\Main\UI\FileInputUtility;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 
 CModule::includeModule($module);
 
@@ -92,9 +92,9 @@ $blockCollection->setPage(WIZARD_SITE_DIR);
 
 $blockCollection->save();
 
-CopyDirFiles( $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sotbit.origami/install/wizards/sotbit/origami/site/public/ru/blocks', $_SERVER["DOCUMENT_ROOT"].WIZARD_SITE_DIR."blocks", true, true);
+CopyDirFiles( $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/kit.origami/install/wizards/kit/origami/site/public/ru/blocks', $_SERVER["DOCUMENT_ROOT"].WIZARD_SITE_DIR."blocks", true, true);
 
-$path = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sotbit.origami/install/wizards/sotbit/origami/images/new_bg_about.jpg";
+$path = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.origami/install/wizards/kit/origami/images/new_bg_about.jpg";
 $arFile = CFile::MakeFileArray($path);
 
 $arFile = array(
@@ -102,10 +102,10 @@ $arFile = array(
     "size" => $arFile["size"],
     "tmp_name" => $arFile["tmp_name"],
     "type" => $arFile["type"],
-    "MODULE_ID" => "sotbit.origami"
+    "MODULE_ID" => "kit.origami"
 );
 
-$fileID = CFile::SaveFile($arFile, "sotbit.origami");
+$fileID = CFile::SaveFile($arFile, "kit.origami");
 
 $pathBlock = $_SERVER["DOCUMENT_ROOT"].WIZARD_SITE_DIR."blocks/about_8/settings.php";
 

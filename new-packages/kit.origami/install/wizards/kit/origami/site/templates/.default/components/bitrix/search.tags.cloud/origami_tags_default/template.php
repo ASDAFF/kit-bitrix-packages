@@ -27,7 +27,7 @@ $this->setFrameMode(true);
                         <a class="blog__sidebar-tag main-color_bg-on-hover" data-active="true" href="<?=$tags["TAG_WITHOUT"]?>"><?=$tags["TAG_NAME"]?>
                         <svg class="icon_cancel_filter_small" width="6" height="6">
                             <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                         </svg>
                         </a>
                     <?endforeach;?>
@@ -38,7 +38,7 @@ $this->setFrameMode(true);
                         <a class="blog__sidebar-tag main-color_bg-on-hover" href="<?=$res["URL"]?>" rel="nofollow"><?=$res["NAME"]?>
                             <svg class="icon_cancel_filter_small" width="6" height="6">
                                 <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                             </svg>
                         </a>
                         <?endif;?>

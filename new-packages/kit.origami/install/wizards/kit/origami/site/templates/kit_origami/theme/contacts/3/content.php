@@ -2,7 +2,7 @@
 use Bitrix\Main\Page\Asset;
 use Sotbit\Origami\Helper\Config;
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/theme/contacts/3/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/3/style.css");
 CJSCore::Init(array("date"));
 ?>
 <div class="contact__techno_block">
@@ -18,7 +18,7 @@ CJSCore::Init(array("date"));
             "",
             [
                 "AREA_FILE_SHOW" => "file",
-                "PATH"           => SITE_DIR."include/sotbit_origami/contacts_map.php",
+                "PATH"           => SITE_DIR."include/kit_origami/contacts_map.php",
             ]
         );
     }
@@ -26,7 +26,7 @@ CJSCore::Init(array("date"));
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_info/contacts_info.php"));
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_info/contacts_info.php"));
     ?>
     <?php
 
@@ -41,7 +41,7 @@ CJSCore::Init(array("date"));
 
     $APPLICATION->IncludeComponent(
         "bitrix:news",
-        "sotbit_origami_shops",
+        "kit_origami_shops",
         array(
             "IBLOCK_TYPE" => Config::get("IBLOCK_TYPE_SHOP"),
             "IBLOCK_ID" => Config::get("IBLOCK_ID_SHOP"),
@@ -111,13 +111,13 @@ CJSCore::Init(array("date"));
             ),
             "DETAIL_DISPLAY_TOP_PAGER" => "N",
             "DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
-            "DETAIL_PAGER_TITLE" => "Контакты",
+            "DETAIL_PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
             "DETAIL_PAGER_TEMPLATE" => "",
             "DETAIL_PAGER_SHOW_ALL" => "Y",
             "PAGER_TEMPLATE" => ".default",
             "DISPLAY_TOP_PAGER" => "N",
             "DISPLAY_BOTTOM_PAGER" => "Y",
-            "PAGER_TITLE" => "Контакты",
+            "PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
             "PAGER_SHOW_ALWAYS" => "N",
             "PAGER_DESC_NUMBERING" => "N",
             "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",

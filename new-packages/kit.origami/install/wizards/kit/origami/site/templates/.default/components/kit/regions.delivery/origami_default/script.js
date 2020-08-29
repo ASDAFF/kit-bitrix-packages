@@ -28,7 +28,7 @@ var SotbitRegionsDelivery = /*#__PURE__*/function () {
       var _this2 = this;
 
       this.rootId = params.root;
-      this.root = document.querySelector('.detailed-tabs__tabs-content [id^="sotbit-delivery"]') || document.querySelector('.detailed-feat__item-content [id^="sotbit-delivery"]'); // this.changeRegion = this.root.querySelector('[data-entity="change-region"]');
+      this.root = document.querySelector('.detailed-tabs__tabs-content [id^="kit-delivery"]') || document.querySelector('.detailed-feat__item-content [id^="kit-delivery"]'); // this.changeRegion = this.root.querySelector('[data-entity="change-region"]');
 
       this.modal = this.root.querySelector('[data-entity="modal"]');
       this.overlay = this.root.querySelector('[data-entity="overlay"]');

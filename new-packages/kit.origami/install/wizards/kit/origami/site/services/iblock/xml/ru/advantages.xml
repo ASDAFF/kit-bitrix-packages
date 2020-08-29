@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2020-05-07T23:41:26">
 	<Классификатор>
-		<Ид>sotbit_origami_advantages</Ид>
+		<Ид>kit_origami_advantages</Ид>
 		<Наименование>Преимущества магазина</Наименование>
 		<Свойства>
 			<Свойство>
@@ -203,14 +203,14 @@
 		</Группы>
 	</Классификатор>
 	<Каталог>
-		<Ид>sotbit_origami_advantages</Ид>
-		<ИдКлассификатора>sotbit_origami_advantages</ИдКлассификатора>
+		<Ид>kit_origami_advantages</Ид>
+		<ИдКлассификатора>kit_origami_advantages</ИдКлассификатора>
 		<Наименование>Преимущества магазина</Наименование>
-		<БитриксКод>sotbit_origami_advantages</БитриксКод>
+		<БитриксКод>kit_origami_advantages</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
-		<БитриксURLСписок>#SITE_DIR#/sotbit_techno_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
-		<БитриксURLДеталь>#SITE_DIR#/sotbit_techno_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
-		<БитриксURLРаздел>#SITE_DIR#/sotbit_techno_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
+		<БитриксURLСписок>#SITE_DIR#/kit_techno_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/kit_techno_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/kit_techno_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
 		<БитриксURLКанонический></БитриксURLКанонический>
 		<БитриксКартинка></БитриксКартинка>
 		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
@@ -653,9 +653,9 @@
 					</ЗначенияСвойства>
 					<ЗначенияСвойства>
 						<Ид>417</Ид>
-						<Значение>http://origami-last.devsotbit.ru/help/delivery/</Значение>
+						<Значение>http://origami-last.devkit.ru/help/delivery/</Значение>
 						<ЗначениеСвойства>
-							<Значение>http://origami-last.devsotbit.ru/help/delivery/</Значение>
+							<Значение>http://origami-last.devkit.ru/help/delivery/</Значение>
 							<Описание></Описание>
 						</ЗначениеСвойства>
 					</ЗначенияСвойства>
@@ -744,9 +744,9 @@
 					</ЗначенияСвойства>
 					<ЗначенияСвойства>
 						<Ид>417</Ид>
-						<Значение>http://origami-last.devsotbit.ru/help/payment/index.php</Значение>
+						<Значение>http://origami-last.devkit.ru/help/payment/index.php</Значение>
 						<ЗначениеСвойства>
-							<Значение>http://origami-last.devsotbit.ru/help/payment/index.php</Значение>
+							<Значение>http://origami-last.devkit.ru/help/payment/index.php</Значение>
 							<Описание></Описание>
 						</ЗначениеСвойства>
 					</ЗначенияСвойства>
@@ -841,9 +841,9 @@
 					</ЗначенияСвойства>
 					<ЗначенияСвойства>
 						<Ид>417</Ид>
-						<Значение>http://origami-last.devsotbit.ru/about/contacts/</Значение>
+						<Значение>http://origami-last.devkit.ru/about/contacts/</Значение>
 						<ЗначениеСвойства>
-							<Значение>http://origami-last.devsotbit.ru/about/contacts/</Значение>
+							<Значение>http://origami-last.devkit.ru/about/contacts/</Значение>
 							<Описание></Описание>
 						</ЗначениеСвойства>
 					</ЗначенияСвойства>
@@ -934,9 +934,9 @@
 					</ЗначенияСвойства>
 					<ЗначенияСвойства>
 						<Ид>417</Ид>
-						<Значение>http://origami-last.devsotbit.ru/promotions/</Значение>
+						<Значение>http://origami-last.devkit.ru/promotions/</Значение>
 						<ЗначениеСвойства>
-							<Значение>http://origami-last.devsotbit.ru/promotions/</Значение>
+							<Значение>http://origami-last.devkit.ru/promotions/</Значение>
 							<Описание></Описание>
 						</ЗначениеСвойства>
 					</ЗначенияСвойства>

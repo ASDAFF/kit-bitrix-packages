@@ -14,7 +14,7 @@ use Sotbit\Origami\Helper;
 if (!Loader::includeModule('iblock'))
 	return;
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 
 $boolCatalog = Loader::includeModule('catalog');
 CBitrixComponent::includeComponentClass('bitrix:catalog.section');
@@ -1292,7 +1292,7 @@ $arTemplateParameters['FILL_ITEM_ALL_PRICES'] = array(
 
 $arTemplateParameters['STORES_MAP'] = array(
     'PARENT' => 'STORE_SETTINGS',
-    'NAME' => 'Карта складов',
+    'NAME' => 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
     'TYPE' => 'LIST',
     'DEFAULT' => 'YANDEX',
     'VALUES' => array(

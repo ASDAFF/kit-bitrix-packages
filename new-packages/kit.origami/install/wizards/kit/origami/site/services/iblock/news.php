@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 	die();
 
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 
 if(!CModule::IncludeModule("iblock"))
@@ -17,9 +17,9 @@ if (!defined("WIZARD_TEMPLATE_ABSOLUTE_PATH")) return;
 if (!defined("WIZARD_THEME_ID")) return;
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH."/xml/".LANGUAGE_ID."/news.xml";
-$iblockCode = "sotbit_origami_news_"  . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = "sotbit_origami_news_"  . WIZARD_SITE_ID;
+$iblockCode = "kit_origami_news_"  . WIZARD_SITE_ID;
+$iblockType = "kit_origami_content";
+$iblockXMLID = "kit_origami_news_"  . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;
@@ -104,7 +104,7 @@ if(strlen($lang) <= 0)
 
 
 if($iblockID) {
-    Option::Set('IBLOCK_TYPE_NEWS', "sotbit_origami_content", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE_NEWS', "kit_origami_content", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID_NEWS', $iblockID, WIZARD_SITE_ID);
 }
 
@@ -134,6 +134,6 @@ CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/include/blocks/news/conte
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/include/blocks/news_images_and_list/content.php", Array("NEWS_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/include/blocks/news_two_big/content.php", Array("NEWS_IBLOCK_ID" => $iblockID));
 
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/components/bitrix/catalog/sotbit_origami_catalog/sections.php", Array("NEWS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/components/bitrix/catalog/kit_origami_catalog/sections.php", Array("NEWS_IBLOCK_ID" => $iblockID));
 //CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH."/sect_bottom.php", array("NEWS_IBLOCK_ID" => $iblockID));*/
 ?>

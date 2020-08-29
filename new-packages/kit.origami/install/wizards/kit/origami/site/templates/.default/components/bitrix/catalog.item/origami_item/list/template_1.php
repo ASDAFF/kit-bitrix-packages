@@ -81,7 +81,7 @@ $blockID = randString(8);
                     <?if($arParams["SHOW_DELAY"] && (!$haveOffers || $arParams['PRODUCT_DISPLAY_MODE'] === 'Y')):?>
                         <span class="product-card-inner__icon" data-entity="wish" id="<?=$itemIds['WISH_LINK']?>" <?if($haveOffers && $actualItem['CAN_BUY']):?>style="display: none;"<?endif;?>>
                     <svg width="16" height="16">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                     </svg>
                 </span>
                     <?endif;?>
@@ -92,7 +92,7 @@ $blockID = randString(8);
                     ?>
                     <span class="product-card-inner__icon" data-entity="compare-checkbox" id="<?=$itemIds['COMPARE_LINK']?>">
                         <svg width="16" height="16">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                         </svg>
                     </span>
                     <?
@@ -254,7 +254,7 @@ $blockID = randString(8);
                 <div class="product-card-inner__info-more">
                     <a onclick="" href="<?=$item['DETAIL_PAGE_URL']?>"><span><?=count($arOffersID)-1?></span>&nbsp;<?=Loc::getMessage('LINK_MORE_END')?>
                         <svg class="product-card-inner__info-more-icon" width="10" height="10">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_double_arrow_small"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_double_arrow_small"></use>
                         </svg>
                     </a>
                 </div>
@@ -447,7 +447,7 @@ $blockID = randString(8);
                         </div>
                     <?endif?>
 
-                    <?if($arParams["SHOW_BUY_OC"] == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+                    <?if($arParams["SHOW_BUY_OC"] == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                             <div class="product-card-inner__one-click-basket" id="<?=$itemIds['OC']?>" <?if(!$actualItem['CAN_BUY']):?>style="display:none"<?endif?>>
                                 <span class="product-card-inner__one-click-text">
                                     <?=Loc::getMessage('ONE_CLICK')?>
@@ -496,7 +496,7 @@ $blockID = randString(8);
     if (Config::get('TIMER_PROMOTIONS') == 'Y') {
         if ($dbProductDiscounts) {
             $APPLICATION->IncludeComponent(
-                "sotbit:origami.timer",
+                "kit:origami.timer",
                 "origami_default",
                 array(
                     "COMPONENT_TEMPLATE" => "origami_default",

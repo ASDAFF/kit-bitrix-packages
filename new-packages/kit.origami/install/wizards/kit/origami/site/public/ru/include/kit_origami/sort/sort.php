@@ -8,8 +8,8 @@ use Bitrix\Main\Page\Asset;
 Loc::loadMessages(__FILE__);
 //$APPLICATION->ShowAjaxHead();
 
-$APPLICATION->AddHeadScript(SITE_DIR . "include/sotbit_origami/sort/script.js");
-$APPLICATION->SetAdditionalCSS(SITE_DIR . "include/sotbit_origami/sort/style.css");
+$APPLICATION->AddHeadScript(SITE_DIR . "include/kit_origami/sort/script.js");
+$APPLICATION->SetAdditionalCSS(SITE_DIR . "include/kit_origami/sort/style.css");
 function stripslashes_array($arr) {
     if (!is_array($arr)) return stripslashes($arr);
     $out = array();
@@ -226,21 +226,21 @@ if(!isset($sort['by']['order']) || empty($sort['by']['order']))
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-titles" width="20" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_tiles"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_tiles"></use>
                             </svg>
                             <?
                         }elseif($view == "list")
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-list" width="30" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_list"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_list"></use>
                             </svg>
                             <?
                         }elseif($view == "column")
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-list" width="30" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_catalog_table"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_catalog_table"></use>
                             </svg>
                             <?
                         }

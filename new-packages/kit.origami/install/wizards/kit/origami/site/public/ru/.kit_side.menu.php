@@ -72,7 +72,7 @@ $aMenuLinks = Array(
 	)
 );
 
-if(IsModuleInstalled('sotbit.b2bshop') && (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sotbit.b2bshop/") || file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/sotbit/b2bshop/"))) {
+if(IsModuleInstalled('kit.b2bshop') && (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/kit.b2bshop/") || file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/kit/b2bshop/"))) {
     $aMenuLinks[] = array(
         "B2bCabinet",
         "/b2bcabinet",

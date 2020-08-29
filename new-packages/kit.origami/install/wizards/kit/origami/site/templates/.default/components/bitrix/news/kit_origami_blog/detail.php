@@ -7,7 +7,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/sotbit_origami_blog/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/news/kit_origami_blog/style.css");
 
 \Bitrix\Main\Loader::includeModule('currency');
 CJSCore::Init(array('currency'));
@@ -76,7 +76,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 );
 
     $APPLICATION->IncludeComponent(
-	"sotbit:crosssell.crosssell.list",
+	"kit:crosssell.crosssell.list",
 	"origami_default",
 	array(
 		"ACTION_VARIABLE" => "action",
@@ -141,7 +141,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "Товары",
+		"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅ",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"PRICE_CODE" => \SotbitOrigami::GetComponentPrices(["BASE","OPT","SMALL_OPT"]),
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -1017,7 +1017,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 //
 //        "DISPLAY_TOP_PAGER"               => "N",
 //        "DISPLAY_BOTTOM_PAGER"            => "N",
-//        "PAGER_TITLE"                     => "Товары",
+//        "PAGER_TITLE"                     => "пїЅпїЅпїЅпїЅпїЅпїЅ",
 //        "PAGER_SHOW_ALWAYS"               => "",
 //        "PAGER_TEMPLATE"                  => "",
 //        "PAGER_DESC_NUMBERING"            => "N",
@@ -1099,15 +1099,15 @@ $ElementID = $APPLICATION->IncludeComponent(
 //        'SHOW_DISCOUNT_PERCENT'       => "Y",
 //        'SHOW_OLD_PRICE'              => "Y",
 //        'SHOW_MAX_QUANTITY'           => "Y",
-//        "MESS_BTN_ADD_TO_BASKET"      => "В корзину",
-//        "MESS_BTN_BUY"                => "Купить",
-//        "MESS_BTN_COMPARE"            => "Сравнение",
-//        "MESS_BTN_DETAIL"             => "Подробнее",
-//        "MESS_BTN_SUBSCRIBE"          => "Подписаться",
-//        "MESS_NOT_AVAILABLE"          => "Нет в наличии",
-//        "MESS_RELATIVE_QUANTITY_MANY" => "Много",
-//        "MESS_RELATIVE_QUANTITY_FEW"  => "Мало",
-//        "MESS_RELATIVE_QUANTITY_NO"   => "Нет на складе",
+//        "MESS_BTN_ADD_TO_BASKET"      => "пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_BTN_BUY"                => "пїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_BTN_COMPARE"            => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_BTN_DETAIL"             => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_BTN_SUBSCRIBE"          => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_NOT_AVAILABLE"          => "пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_RELATIVE_QUANTITY_MANY" => "пїЅпїЅпїЅпїЅпїЅ",
+//        "MESS_RELATIVE_QUANTITY_FEW"  => "пїЅпїЅпїЅпїЅ",
+//        "MESS_RELATIVE_QUANTITY_NO"   => "пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
 //        'USE_VOTE_RATING'             => "Y",
 //        'TEMPLATE_THEME'              => "",
 //        "ADD_SECTIONS_CHAIN"          => "N",

@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("О магазине");
 		</div>
 		<br/>
 		<p>Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:</p>
-		<p><b>Электронная почта</b>: <a href="mailto:sale@dev.devsotbit.ru">sale@dev.devsotbit.ru</a></p>
+		<p><b>Электронная почта</b>: <a href="mailto:sale@dev.devkit.ru">sale@dev.devkit.ru</a></p>
 	</div>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

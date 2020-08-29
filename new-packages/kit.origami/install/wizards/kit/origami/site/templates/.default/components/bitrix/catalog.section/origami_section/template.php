@@ -9,7 +9,7 @@ if(Config::get('QUICK_VIEW') == 'Y')
     $this->addExternalJS(CUtil::GetAdditionalFileURL("/local/templates/.default/components/bitrix/catalog.element/origami_preview/script.js"));
 
 }
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/css/style-swiper-custom.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 
 $this->setFrameMode(true);
 $idItem = \Bitrix\Main\Security\Random::getString(5);
@@ -79,8 +79,8 @@ $generalParams = array(
 	'~BASKET_URL' => $arParams['~BASKET_URL'],
 	'~ADD_URL_TEMPLATE' => $arResult['~ADD_URL_TEMPLATE'],
 	'~BUY_URL_TEMPLATE' => $arResult['~BUY_URL_TEMPLATE'],
-	'~COMPARE_URL_TEMPLATE' => str_replace(['/bitrix/components/sotbit/crosssell.crosssell.list/ajax.php', '/bitrix/components/sotbit/crosssell.collection/ajax.php'], '', $arResult['~COMPARE_URL_TEMPLATE']),
-	'~COMPARE_DELETE_URL_TEMPLATE' => str_replace(['/bitrix/components/sotbit/crosssell.crosssell.list/ajax.php', '/bitrix/components/sotbit/crosssell.collection/ajax.php'], '', $arResult['~COMPARE_DELETE_URL_TEMPLATE']),
+	'~COMPARE_URL_TEMPLATE' => str_replace(['/bitrix/components/kit/crosssell.crosssell.list/ajax.php', '/bitrix/components/kit/crosssell.collection/ajax.php'], '', $arResult['~COMPARE_URL_TEMPLATE']),
+	'~COMPARE_DELETE_URL_TEMPLATE' => str_replace(['/bitrix/components/kit/crosssell.crosssell.list/ajax.php', '/bitrix/components/kit/crosssell.collection/ajax.php'], '', $arResult['~COMPARE_DELETE_URL_TEMPLATE']),
 	'TEMPLATE_THEME' => $arParams['TEMPLATE_THEME'],
 	'USE_ENHANCED_ECOMMERCE' => $arParams['USE_ENHANCED_ECOMMERCE'],
 	'DATA_LAYER_NAME' => $arParams['DATA_LAYER_NAME'],

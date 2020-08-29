@@ -6,7 +6,7 @@ use Bitrix\Main,
 use Bitrix\Sale\Internals\BasketPropertyTable, Sotbit\Origami\Helper\Config;
 
 
-Main\Loader::includeModule('sotbit.origami');
+Main\Loader::includeModule('kit.origami');
 
 $arResult["SHOW_BASKET"] = Config::checkAction("BUY");
 $arResult["SHOW_DELAY"] = Config::checkAction("DELAY");
@@ -62,11 +62,11 @@ $Item = new \Sotbit\Origami\Image\Item();
 
 $res = CIBlockSection::GetByID(Config::get('IBLOCK_ID'));
 $ar_res = $res->GetNext();
-$catalog = CIBlock::GetList(array(), array('CODE' => 'sotbit_origami_catalog'), true);
+$catalog = CIBlock::GetList(array(), array('CODE' => 'kit_origami_catalog'), true);
 
 $arResult['CATALOG_PATH'] = str_replace('#SITE_DIR#/', '', $catalog->Fetch()['LIST_PAGE_URL']); //$ar_res['LIST_PAGE_URL'];
 $arResult['BASKET_PATH'] = Config::get('BASKET_PAGE');
-if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')) {
+if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')) {
     $arResult['ORDER_PHONE_ACTIVE'] = true;
 } else {
     $arResult['ORDER_PHONE_ACTIVE'] = false;

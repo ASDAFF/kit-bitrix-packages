@@ -8,7 +8,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 				Поделиться
 			</div>
 			<svg class="svg-icon-share-small" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_share_small"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_share_small"></use>
             </svg>
 		</div>
 		<span class="product-detail-share-block-comment fonts__middle_comment">
@@ -17,7 +17,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 		<ul class="sharing-buttons fonts__small_text" onclick="copyUrl();return false;" id="sharing-buttons">
 			<li>
                 <svg class="svg-social-icons social-icon-copy" width="13" height="13">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_copy"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_copy"></use>
                 </svg>
                 Копировать ссылку
 			</li>
@@ -30,7 +30,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 
 					<span class="share-icon share-icon-vk">
                         <svg class="svg-social-icons social-icon-icon_vk" width="22px" height="22px">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_vk"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_vk"></use>
                         </svg>
 						<!-- <span class="share-vk"></span> -->
 					</span>
@@ -45,7 +45,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 						href="https://telegram.me/share/url?url=<?=$url?>">
 					<span class="share-icon share-icon-telega">
                         <svg class="svg-social-icons social-icon-icon_vk" width="13" height="13">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_telegram"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_telegram"></use>
                         </svg>
 						<!-- <span class="share-telega"></span> -->
 					</span>
@@ -60,7 +60,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 						href="https://www.facebook.com/sharer/sharer.php?u=<?=$url?>">
 					<span class="share-icon share-icon-fb">
                         <svg class="svg-social-icons social-icon-icon_vk" width="13" height="13">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_facebook"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_facebook"></use>
                         </svg>
 						<!-- <span class="share-fb"></span> -->
 					</span>
@@ -75,7 +75,7 @@ $url = str_replace('index.php','',$_SERVER['SCRIPT_URI']);
 						href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=<?=$url?>">
 					<span class="share-icon share-icon-ok">
                         <svg class="svg-social-icons social-icon-icon_vk" width="13" height="13">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_odnoklassniki"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_odnoklassniki"></use>
                         </svg>
 						<!-- <span class="share-ok"></span> -->
 					</span>

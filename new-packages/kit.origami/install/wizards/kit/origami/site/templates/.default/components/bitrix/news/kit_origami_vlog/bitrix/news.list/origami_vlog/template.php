@@ -1,5 +1,5 @@
 <?
-$APPLICATION->SetTitle("Влог");
+$APPLICATION->SetTitle("пїЅпїЅпїЅпїЅ");
 $protocol = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
 $this->setFrameMode(true);
 //$APPLICATION->ShowAjaxHead();
@@ -20,7 +20,7 @@ $this->setFrameMode(true);
                         <iframe style="height: 100%; width: 100%" src="<?=$protocol?>://www.youtube.com/embed/<?=$item['PROPERTIES']['VIDEO_LINK']['VALUE']?>?showinfo=0"/></iframe>
                         <div class="video-container__date">
                             <svg class="icon_clock" width="11" height="11">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                             </svg>
                             <span><?=FormatDate("Q", MakeTimeStamp($item['TIMESTAMP_X']))?> <?=GetMessage('BACK')?></span>
                         </div>
@@ -62,7 +62,7 @@ $this->setFrameMode(true);
                             <a class="vlog__sidebar-tag main-color_bg-on-hover" <?if($_REQUEST['tag'] == $tag && $_REQUEST['set_filter'] == 'Y'):?>data-active="true" href="?set_filter=N"<?else:?> href="?tag=<?=$tag?>&set_filter=Y" <?endif;?>><?=$tag?>.
                                 <svg class="icon_cancel_filter_small" width="6" height="6">
                                     <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                                 </svg>
                             </a>
 

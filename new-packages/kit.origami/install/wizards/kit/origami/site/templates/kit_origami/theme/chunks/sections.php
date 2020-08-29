@@ -7,7 +7,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/theme/chunks/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/theme/chunks/style.css");
 
 Loc::loadMessages(__FILE__);
 
@@ -26,7 +26,7 @@ $filter = array_merge($filter, $addFilter);
 $cacheId = md5(serialize($filter));
 
 $cache = \Bitrix\Main\Data\Cache::createInstance();
-if ($cache->initCache(36000000, $cacheId, '/sotbit.origami')) {
+if ($cache->initCache(36000000, $cacheId, '/kit.origami')) {
     $sections = $cache->getVars();
 } elseif ($cache->startDataCache()) {
     $sectCnt = [];

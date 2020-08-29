@@ -1625,21 +1625,21 @@
   }
 }
 
-.sotbit-seometa-tags-row-container {
+.kit-seometa-tags-row-container {
   margin: 33px 0;
   padding: 0;
   margin-bottom: 11px;
 }
 
-.sotbit-seometa-tags-container {
+.kit-seometa-tags-container {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   transition: 0.8s;
 }
 
-.sotbit-seometa-tags__title,
-.sotbit-seometa-tags-column__title {
+.kit-seometa-tags__title,
+.kit-seometa-tags-column__title {
   margin-right: 10px;
   font-size: 1rem;
   font-weight: bold;
@@ -1647,18 +1647,18 @@
   align-self: baseline;
 }
 
-.sotbit-seometa-tags__hide-wrapper {
+.kit-seometa-tags__hide-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.sotbit-seometa-tags-wrapper {
+.kit-seometa-tags-wrapper {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.sotbit-seometa-tag,
-.sotbit-seometa-tag-column {
+.kit-seometa-tag,
+.kit-seometa-tag-column {
   border: 1px solid #ededed;
   border-radius: 2px;
   transition: 0.1s;
@@ -1685,8 +1685,8 @@
   }
 }
 
-.sotbit-seometa-tags-wrapper a,
-.sotbit-seometa-tag-column a {
+.kit-seometa-tags-wrapper a,
+.kit-seometa-tag-column a {
   display: flex;
   padding: 0 10px;
   font-size: 0.9rem;
@@ -1695,11 +1695,11 @@
 }
 
 
-.sotbit-seometa-tags__hide {
+.kit-seometa-tags__hide {
   cursor: pointer;
 }
 
-.sotbit-seometa-tags__hide i {
+.kit-seometa-tags__hide i {
   padding-top: 1rem;
   padding-left: 0.4rem;
 }
@@ -1709,7 +1709,7 @@
   transition: 0.8s;
 }
 
-.sotbit-seometa-tags-column {
+.kit-seometa-tags-column {
   margin-top: 4rem;
   margin-bottom: 3.5rem;
   padding-top: 2rem;
@@ -1718,7 +1718,7 @@
   border-bottom: 1px solid #ededed;
 }
 
-.sotbit-seometa-tags-column-container {
+.kit-seometa-tags-column-container {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -1726,7 +1726,7 @@
 }
 
 
-.sotbit-seometa-tags-column-wrapper {
+.kit-seometa-tags-column-wrapper {
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -1736,7 +1736,7 @@
 }
 
 @media (max-width: 768px) {
-  .sotbit-seometa-tags-column-wrapper {
+  .kit-seometa-tags-column-wrapper {
     width: 50%;
   }
 }

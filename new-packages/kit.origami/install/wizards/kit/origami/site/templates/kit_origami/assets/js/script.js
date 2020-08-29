@@ -1135,7 +1135,7 @@ var lastWait = [];
 // ----------------lazyLoad------------------------
 /**
     @attr class="lazy"                                      ==> tag img for lazyLoad
-    @attr src="/upload/sotbit.origami/no_photo_medium.svg"  ==> img default(const)
+    @attr src="/upload/kit.origami/no_photo_medium.svg"  ==> img default(const)
     @attr data-src="image-to-lazy-load-1x.jpg"              ==> img load
     @attr data-srcset="image-to-lazy-load-2x.jpg 2x         ==> alternative image
 

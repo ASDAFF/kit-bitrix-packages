@@ -28,7 +28,7 @@ if ($arParams["SHOW_INPUT"] !== "N"):?>
     <div class="search_title">
     <span class="inline-search-show basket-block__link">
          <svg class="fa-search_icon" width="20" height="20">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
          </svg>
     </span>
         <div id="<?= $CONTAINER_ID ?>" class="inline-search-block">

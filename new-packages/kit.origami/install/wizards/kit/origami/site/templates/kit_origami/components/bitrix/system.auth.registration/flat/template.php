@@ -18,7 +18,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 use Bitrix\Main\Page\Asset;
 //one css for all system.auth.* forms
 $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/system.auth.registration/flat/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/components/bitrix/system.auth.registration/flat/style.css");
 
 ?>
 
@@ -96,7 +96,7 @@ Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/
                                    value="<?= $arResult["USER_PASSWORD"] ?>" autocomplete="off"
                                    placeholder="<?= GetMessage("AUTH_PASS_PLACEHOLDER") ?>"/>
                             <svg class="auth-icon_password_hidden" width="18px" height="18px">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
                             </svg>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/
                                    placeholder="<?= GetMessage("AUTH_PASS_PLACEHOLDER") ?>"
                             />
                             <svg class="auth-icon_password_hidden" width="18px" height="18px">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
                             </svg>
                         </div>
                     </div>

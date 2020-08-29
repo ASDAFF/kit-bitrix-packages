@@ -1,6 +1,6 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
-if(Bitrix\Main\Loader::includeModule('sotbit.opengraph')) {
+if(Bitrix\Main\Loader::includeModule('kit.opengraph')) {
     OpengraphMain::setImageMeta('og:image', $arResult['DETAIL_PICTURE']["SRC"]);
     OpengraphMain::setImageMeta('twitter:image', $arResult['DETAIL_PICTURE']["SRC"]);
     OpengraphMain::setMeta('og:type', 'article');

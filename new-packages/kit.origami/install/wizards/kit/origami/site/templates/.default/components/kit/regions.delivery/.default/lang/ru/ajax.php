@@ -1,5 +1,5 @@
 <?php
-$idModule = 'sotbit.regions';
+$idModule = 'kit.regions';
 $MESS[$idModule.'_YOUR_CITY'] = 'Ваш город';
 $MESS[$idModule.'_YES'] = 'Да';
 $MESS[$idModule.'_NO'] = 'Нет';

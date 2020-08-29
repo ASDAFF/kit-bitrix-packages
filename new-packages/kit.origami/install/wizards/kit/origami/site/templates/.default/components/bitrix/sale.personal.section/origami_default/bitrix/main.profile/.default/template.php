@@ -117,7 +117,7 @@ use Bitrix\Main\Localization\Loc;
 		<?
 		if ($arResult["SOCSERV_ENABLED"])
 		{
-			$APPLICATION->IncludeComponent("bitrix:socserv.auth.split", "sotbit_origami_socserv", array(
+			$APPLICATION->IncludeComponent("bitrix:socserv.auth.split", "kit_origami_socserv", array(
 				"SHOW_PROFILES" => "Y",
 				"ALLOW_DELETE" => "Y"
 			),

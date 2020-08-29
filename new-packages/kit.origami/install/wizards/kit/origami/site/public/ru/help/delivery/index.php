@@ -68,7 +68,7 @@ $APPLICATION->SetTitle("Доставка");
  <b>Служба доставки</b>: 8 495 212-85-06 (многоканальный).
 </p>
 <p>
- <b>Электронная почта</b>: <a href="mailto:sale@origami-shop.sotbit.ru">sale@origami-shop.sotbit.ru</a>
+ <b>Электронная почта</b>: <a href="mailto:sale@origami-shop.kit.ru">sale@origami-shop.kit.ru</a>
 </p>
 <p>
  <b>Skype</b>: <a href="skype:shipping.example.ru">shipping.example.ru</a>

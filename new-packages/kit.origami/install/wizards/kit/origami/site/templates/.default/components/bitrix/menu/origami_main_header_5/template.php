@@ -17,7 +17,7 @@ $page = $APPLICATION->GetCurPage(false);
         <div class="menu__header">
             <button type="button" class="menu__header-btn" data-entity="close_menu">
                 <svg class="menu__header-btn-icon" width="16" height="16">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
                 </svg>
             </button>
             <div class="menu__header-logo-wrapper">
@@ -28,7 +28,7 @@ $page = $APPLICATION->GetCurPage(false);
                             "",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_DIR."include/sotbit_origami/logo.php"
+                                "PATH" => SITE_DIR."include/kit_origami/logo.php"
                             )
                         );?>
                     </a>
@@ -39,7 +39,7 @@ $page = $APPLICATION->GetCurPage(false);
                             "",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_DIR."include/sotbit_origami/logo.php"
+                                "PATH" => SITE_DIR."include/kit_origami/logo.php"
                             )
                         );?>
                     </span>
@@ -54,7 +54,7 @@ $page = $APPLICATION->GetCurPage(false);
                     "origami_catalog_sidebar",
                     array(
                         "ALLOW_MULTI_SELECT" => "N",
-                        "CHILD_MENU_TYPE" => "sotbit_left",
+                        "CHILD_MENU_TYPE" => "kit_left",
                         "COMPOSITE_FRAME_MODE" => "A",
                         "COMPOSITE_FRAME_TYPE" => "AUTO",
                         "DELAY" => "N",
@@ -64,7 +64,7 @@ $page = $APPLICATION->GetCurPage(false);
                         "MENU_CACHE_TIME" => "36000000",
                         "MENU_CACHE_TYPE" => "A",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_left",
+                        "ROOT_MENU_TYPE" => "kit_left",
                         "USE_EXT" => "Y",
                         'CACHE_SELECTED_ITEMS' => false,
                         "COMPONENT_TEMPLATE" => "origami_catalog_sidebar"
@@ -86,14 +86,14 @@ $page = $APPLICATION->GetCurPage(false);
                             <?if(isset($item['PARAMS']['ICON'])):?>
                                 <div class="section__item-logo">
                                     <svg class="section__item-logo-icon" width="24" height="24">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#<?=$item['PARAMS']['ICON'];?>"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#<?=$item['PARAMS']['ICON'];?>"></use>
                                     </svg>
                                 </div>
                             <?endif;?>
                             <p class="section__item-title"><?=$item['TEXT']?></p>
                             <?if($item['CHILDREN']):?>
                                 <svg class="section__item-arow-icon" width="8" height="6">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_chevron_down_medium"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_chevron_down_medium"></use>
                                 </svg>
                             <?endif;?>
                         </a>
@@ -113,13 +113,13 @@ $page = $APPLICATION->GetCurPage(false);
     <!--  -->
             <ul class="menu__nav menu-nav">
                 <?if(
-                    \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                    \Bitrix\Main\Loader::includeModule('kit.regions') &&
                     \SotbitOrigami::isUseRegions()):?>
                     <li class="menu-nav__item">
                         <a class="menu-nav__item-link select-city__block__text-city__js" href="javascript:void(0);">
                             <div class="menu-nav__item-logo">
                                 <svg class="menu-nav__item-logo-icon" width="24" height="24">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
                                 </svg>
                             </div>
                             <p class="menu-nav__item-title" id="menu-city"></p>
@@ -130,7 +130,7 @@ $page = $APPLICATION->GetCurPage(false);
                     <a class="menu-nav__item-link" href="<?=\Sotbit\Origami\Helper\Config::get('PERSONAL_PAGE')?>" title="<?=Loc::getMessage("SOTBIT_PERSONAL_CABINET")?>">
                         <div class="menu-nav__item-logo">
                             <svg class="menu-nav__item-logo-icon" width="24" height="24">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_login"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_login"></use>
                             </svg>
                         </div>
                         <p class="menu-nav__item-title"><?=Loc::getMessage("SOTBIT_PERSONAL_CABINET")?></p>
@@ -140,7 +140,7 @@ $page = $APPLICATION->GetCurPage(false);
                     <a class="menu-nav__item-link" href="<?=\Sotbit\Origami\Helper\Config::get('BASKET_PAGE')?>" title="<?=Loc::getMessage("SOTBIT_PERSONAL_BASKET_TITLE")?>">
                         <div class="menu-nav__item-logo">
                             <svg class="menu-nav__item-logo-icon" width="24" height="24">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
                             </svg>
                         </div>
                         <p class="menu-nav__item-title"><?=Loc::getMessage("SOTBIT_PERSONAL_BASKET_TITLE")?></p>
@@ -152,7 +152,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <a class="menu-nav__item-link" href="<?=\Sotbit\Origami\Helper\Config::get('BASKET_PAGE').'#favorit'?>" title="<?=Loc::getMessage("SOTBIT_PERSONAL_FAVORITE_PRODUCTS")?>">
                             <div class="menu-nav__item-logo">
                                 <svg class="menu-nav__item-logo-icon" width="24" height="24">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                                 </svg>
                             </div>
                             <p class="menu-nav__item-title"><?=Loc::getMessage("SOTBIT_PERSONAL_FAVORITE_PRODUCTS")?></p>
@@ -165,7 +165,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <a class="menu-nav__item-link" href="<?=\Sotbit\Origami\Helper\Config::get('COMPARE_PAGE')?>" onclick="compareLinkAccess(event);" title="<?=Loc::getMessage("SOTBIT_PERSONAL_COMPARE_PRODUCTS")?>">
                             <div class="menu-nav__item-logo">
                                 <svg class="menu-nav__item-logo-icon" width="24" height="24">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                                 </svg>
                             </div>
                             <p class="menu-nav__item-title"><?=Loc::getMessage("SOTBIT_PERSONAL_COMPARE_PRODUCTS")?></p>
@@ -186,12 +186,12 @@ $page = $APPLICATION->GetCurPage(false);
             <div class="menu__contact">
                 <?
                 if(
-                    \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                    \Bitrix\Main\Loader::includeModule('kit.regions') &&
                     \SotbitOrigami::isUseRegions() &&
-                    is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
+                    is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
                 ):
                     $APPLICATION->IncludeComponent(
-                        "sotbit:regions.data",
+                        "kit:regions.data",
                         "origami_menu_contact",
                         [
                             "CACHE_TIME"    => "36000000",
@@ -209,7 +209,7 @@ $page = $APPLICATION->GetCurPage(false);
                                 "",
                                 array(
                                     "AREA_FILE_SHOW" => "file",
-                                    "PATH" => SITE_DIR."include/sotbit_origami/contacts_phone.php")
+                                    "PATH" => SITE_DIR."include/kit_origami/contacts_phone.php")
                             );
                             ?>
 
@@ -222,7 +222,7 @@ $page = $APPLICATION->GetCurPage(false);
                                     "",
                                     array(
                                         "AREA_FILE_SHOW" => "file",
-                                        "PATH" => SITE_DIR."include/sotbit_origami/contacts_worktime.php")
+                                        "PATH" => SITE_DIR."include/kit_origami/contacts_worktime.php")
                                 );
                                 ?>
                             </p>
@@ -233,7 +233,7 @@ $page = $APPLICATION->GetCurPage(false);
                                 "",
                                 array(
                                     "AREA_FILE_SHOW" => "file",
-                                    "PATH" => SITE_DIR."include/sotbit_origami/contacts_email.php")
+                                    "PATH" => SITE_DIR."include/kit_origami/contacts_email.php")
                             );
                             ?>
                         </div>
@@ -243,12 +243,12 @@ $page = $APPLICATION->GetCurPage(false);
                                 $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                                     "AREA_FILE_SHOW" => "file",
                                     "PATH"           =>
-                                        SITE_DIR."include/sotbit_origami/contacts_address.php",
+                                        SITE_DIR."include/kit_origami/contacts_address.php",
                                 ]);
                                 ?>
                             </p>
                         </div>
-                        <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+                        <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                             <a href="javascript:void(0)" class="menu-contact__call-back main-color-btn-fill" onclick="callbackPhone('<?=SITE_DIR?>','<?=SITE_ID?>',this)">
                                 <?=Loc::getMessage('REGIONS_DATA_ORDERCALL_TITLE')?>
                             </a>

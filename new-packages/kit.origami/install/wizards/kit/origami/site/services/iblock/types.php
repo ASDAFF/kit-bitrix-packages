@@ -5,33 +5,33 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 if(!CModule::IncludeModule("iblock"))
 	return;
 
-/*if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+/*if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;*/
 
 $arTypes = Array(
 	Array(
-		"ID" => "sotbit_origami_catalog",
+		"ID" => "kit_origami_catalog",
 		"SECTIONS" => "Y",
 		"IN_RSS" => "N",
 		"SORT" => 100,
 		"LANG" => Array(),
 	),
     Array(
-        "ID" => "sotbit_origami_advertising",
+        "ID" => "kit_origami_advertising",
         "SECTIONS" => "Y",
         "IN_RSS" => "N",
         "SORT" => 200,
         "LANG" => Array(),
     ),
      Array(
-		"ID" => "sotbit_origami_content",
+		"ID" => "kit_origami_content",
 		"SECTIONS" => "Y",
 		"IN_RSS" => "N",
 		"SORT" => 300,
 		"LANG" => Array(),
 	),
     Array(
-        "ID" => "sotbit_origami_references",
+        "ID" => "kit_origami_references",
         "SECTIONS" => "Y",
         "IN_RSS" => "N",
         "SORT" => 300,

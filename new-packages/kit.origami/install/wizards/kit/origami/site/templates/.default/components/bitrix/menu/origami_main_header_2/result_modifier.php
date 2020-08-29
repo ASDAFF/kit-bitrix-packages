@@ -67,7 +67,7 @@ if ($arResult) {
     if(!empty($arSectURL))
     {
         $obCache = new CPHPCache();
-        if ($obCache->InitCache(36000, serialize($arSectURL), "/sotbit.origami/main_menu"))
+        if ($obCache->InitCache(36000, serialize($arSectURL), "/kit.origami/main_menu"))
         {
             $arSectPict = $obCache->GetVars();
         }elseif ($obCache->StartDataCache()){
@@ -94,7 +94,7 @@ if ($arResult) {
             if(defined("BX_COMP_MANAGED_CACHE"))
             {
                 global $CACHE_MANAGER;
-                $CACHE_MANAGER->StartTagCache("/sotbit.origami/main_menu");
+                $CACHE_MANAGER->StartTagCache("/kit.origami/main_menu");
                 $CACHE_MANAGER->RegisterTag("iblock_id_".$iblockID);
                 $CACHE_MANAGER->EndTagCache();
             }

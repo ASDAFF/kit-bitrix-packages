@@ -4,8 +4,8 @@ use Bitrix\Main\Page\Asset;
 use Sotbit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-Asset::getInstance()->addcss(SITE_DIR . "include/sotbit_origami/contact_page_block/regional_office/style.css");
-Asset::getInstance()->addjs(SITE_DIR . "include/sotbit_origami/contact_page_block/regional_office/script.js");
+Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/regional_office/style.css");
+Asset::getInstance()->addjs(SITE_DIR . "include/kit_origami/contact_page_block/regional_office/script.js");
 $shopId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
 $res = CIBlockElement::GetList("ASC", array("IBLOCK_ID" => $shopId));
 $rsSections = CIBlockSection::GetList("ASC", array("IBLOCK_ID" => $shopId));
@@ -216,7 +216,7 @@ foreach ($arSections as $section) {
                                                     <?
                                                 } else {
                                                     ?>
-                                                    <img src="<?=SITE_DIR?>include/sotbit_origami/contact_page_block/regional_office/default-no-photo.jpg" alt="">
+                                                    <img src="<?=SITE_DIR?>include/kit_origami/contact_page_block/regional_office/default-no-photo.jpg" alt="">
                                                     <?
                                                 }
                                                 ?>
@@ -235,7 +235,7 @@ foreach ($arSections as $section) {
                                                     <div class="subway-icon-wrapper">
                                                         <svg class="icon-subway" width="12" height="8">
                                                             <use
-                                                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_metro"></use>
+                                                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_metro"></use>
                                                         </svg>
                                                     </div>
                                                     <?
@@ -250,7 +250,7 @@ foreach ($arSections as $section) {
                                                 <div class="regional-mode">
                                                     <svg class="icon-clock" width="11" height="11">
                                                         <use
-                                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                                                     </svg>
                                                     <div class="mode-text">
                                                         <?=$arPropsItem['SCHEDULE']['VALUE']['TEXT'];?>
@@ -267,7 +267,7 @@ foreach ($arSections as $section) {
                                                             <a href="tel:<?=str_replace(' ', '', $subway['VALUE']);?>">
                                                                 <svg class="icon-phone" width="12" height="12">
                                                                     <use
-                                                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                                                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                                                                 </svg>
                                                                 <span><?=$subway['VALUE']?></span>
                                                             </a>
@@ -307,7 +307,7 @@ foreach ($arSections as $section) {
                             <div class="manager-photo-wrapper">
                                 <div class="manager-photo">
                                     <? if(!$usDate['PERSONAL_PHOTO']): ?>
-                                        <img src="<?=SITE_DIR?>include/sotbit_origami/contact_page_block/regional_office/default-no-photo.jpg" alt="">
+                                        <img src="<?=SITE_DIR?>include/kit_origami/contact_page_block/regional_office/default-no-photo.jpg" alt="">
                                     <? else: ?>
                                         <img src="<?=CFile::GetPath($usDate['PERSONAL_PHOTO']);?>" alt="">
                                     <? endif; ?>
@@ -345,7 +345,7 @@ foreach ($arSections as $section) {
                                                 <a href="tel:<?=str_replace(' ', '', $usDate['WORK_PHONE']);?>">
                                                     <svg class="icon-phone" width="12" height="12">
                                                         <use
-                                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                                                     </svg>
                                                     <span><?=$usDate['WORK_PHONE'];?></span>
                                                 </a>
@@ -356,7 +356,7 @@ foreach ($arSections as $section) {
                                                 <a href="mailto:<?=$usDate['UF_USER_WORK_EMAIL'];?>">
                                                     <svg class="icon-mail" width="12" height="9">
                                                         <use
-                                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail_filled_small"></use>
+                                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail_filled_small"></use>
                                                     </svg>
                                                     <span><span><?=$usDate['UF_USER_WORK_EMAIL'];?></span></span>
                                                 </a>

@@ -4,25 +4,25 @@ use Bitrix\Main\Localization\Loc;
 use Sotbit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-if (!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
+if (!CModule::IncludeModule("kit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
 $APPLICATION->ShowAjaxHead();
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/sotbit/order.phone/origami_default/script.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/sotbit/order.phone/origami_default/style.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/kit/order.phone/origami_default/script.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/kit/order.phone/origami_default/style.css");
 Asset::getInstance()->addJs($templateFolder . "/js/jquery.maskedinput.min.js");
 $typeMask = (Config::get('TYPE_MASK_VIEW') == 'FLAGS') ? 'Y' : 'N';
 if($typeMask == 'Y')
     CJSCore::Init(['phone_number']);
 ?>
 
-<div class="sotbit_order_phone_wrapper buy-in-click">
-    <div class="sotbit_order_phone">
-        <div class="sotbit_order_phone__title"><?= Loc::getMessage('OK_TITLE') ?></div>
-        <form class="sotbit_order_phone_form">
+<div class="kit_order_phone_wrapper buy-in-click">
+    <div class="kit_order_phone">
+        <div class="kit_order_phone__title"><?= Loc::getMessage('OK_TITLE') ?></div>
+        <form class="kit_order_phone_form">
 
-            <div class="sotbit_order_success">
+            <div class="kit_order_success">
                 <div class="popup-window-message-content">
                     <svg class="popup-window-icon-check">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                     </svg>
                     <div>
                         <div class="popup-window-message-title"><?= GetMessage('OK_THANKS') ?></div>
@@ -36,7 +36,7 @@ if($typeMask == 'Y')
                 <div class="popup_resizeable_content">
 
                     <div class="popup-error-message">
-                        <div class="sotbit_order_error"></div>
+                        <div class="kit_order_error"></div>
                     </div>
                     <? if (empty($arResult["FORM_NOTE"])) : ?>
                         <? foreach ($arParams as $param => $val):
@@ -45,7 +45,7 @@ if($typeMask == 'Y')
                             <input type="hidden" name="<?= $param ?>" value="<?= $val ?>"/>
                         <? endforeach ?>
 
-                        <div class="sotbit_order_phone__block main-input-md__wrapper">
+                        <div class="kit_order_phone__block main-input-md__wrapper">
                             <input type="text"
                                    name="order_name"
                                    class="main-input-md"
@@ -56,7 +56,7 @@ if($typeMask == 'Y')
                             </label>
                         </div>
 
-                        <div class="sotbit_order_phone__block">
+                        <div class="kit_order_phone__block">
                             <div class="buy-in-click__phone-input">
                                 <?if($typeMask == 'Y'):?>
                                     <span class="phone_input__flag">
@@ -83,7 +83,7 @@ if($typeMask == 'Y')
                             </div>
                         </div>
 
-                        <div class="sotbit_order_phone__block main-input-md__wrapper">
+                        <div class="kit_order_phone__block main-input-md__wrapper">
                             <input class="main-input-md"
                                    id="buy-in-click__email-input"
                                    type="text"
@@ -94,7 +94,7 @@ if($typeMask == 'Y')
                             </label>
                         </div>
 
-                        <div class="sotbit_order_phone__block main-textarea-md__wrapper">
+                        <div class="kit_order_phone__block main-textarea-md__wrapper">
                             <textarea name="order_comment"
                                       class="main-textarea-md"
                                       rows="5"
@@ -108,7 +108,7 @@ if($typeMask == 'Y')
                         <?
                         if ($arResult["isUseCaptcha"] == "Y") {
                             ?>
-                            <div class="sotbit_order_phone__block">
+                            <div class="kit_order_phone__block">
                                 <div class="feedback_block__captcha">
                                     <div class="feedback_block__captcha_input main-input-md__wrapper">
                                         <input type="text" class="main-input-md" name="captcha_word"
@@ -128,7 +128,7 @@ if($typeMask == 'Y')
                                              onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                             <svg class="icon_refresh" width="16" height="14">
                                                 <use
-                                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                             </svg>
                                         </div>
                                     </div>
@@ -175,13 +175,13 @@ if($typeMask == 'Y')
 
     $(function () {
         <?if($typeMask !== 'Y'):?>
-            let maska = $(".sotbit_order_phone form input[name='TEL_MASK']").eq(0).val();
+            let maska = $(".kit_order_phone form input[name='TEL_MASK']").eq(0).val();
             maska = $.trim(maska);
             if (maska != "")
-                $(".sotbit_order_phone form input[name='order_phone']").mask(maska, {placeholder: "_"});
+                $(".kit_order_phone form input[name='order_phone']").mask(maska, {placeholder: "_"});
         <?endif;?>
 
-        $(".sotbit_order_phone").on("submit", "form", submit);
+        $(".kit_order_phone").on("submit", "form", submit);
         function submit(e) {
             e.preventDefault();
             let name = $(this).find("input[name='order_name']").val();
@@ -190,8 +190,8 @@ if($typeMask == 'Y')
 
             $(this).find('input').removeClass('error');
             $(this).find('.checkbox__label').removeClass('failed');
-            $(this).find(".sotbit_order_error").hide();
-            $(this).find(".sotbit_order_success").hide();
+            $(this).find(".kit_order_error").hide();
+            $(this).find(".kit_order_success").hide();
 
             var error = false;
             if (name.length <= 0) {
@@ -216,12 +216,12 @@ if($typeMask == 'Y')
                 ser = $(this).serialize();
                 let btnLoader = this.querySelector('.popup-window-submit_button');
                 createBtnLoader(btnLoader);
-                $.post("/bitrix/components/sotbit/order.phone/ajax.php", ser, function (data) {
+                $.post("/bitrix/components/kit/order.phone/ajax.php", ser, function (data) {
                     removeBtnLoader(btnLoader);
                     data = $.trim(data);
                     if (data.indexOf("SUCCESS") >= 0) {
-                        _this.find(".sotbit_order_success").show();
-                        _this.find(".sotbit_order_error").hide();
+                        _this.find(".kit_order_success").show();
+                        _this.find(".kit_order_error").hide();
                         _this.find(".hide-on-success").hide();
                         id = data.replace("SUCCESS", "");
                         localHref = $('input[name="LOCAL_REDIRECT"]').val();
@@ -230,8 +230,8 @@ if($typeMask == 'Y')
                             location.href = localHref + "?" + orderID + "=" + id;
                         }
                     } else {
-                        _this.find(".sotbit_order_success").hide();
-                        _this.find(".sotbit_order_error").show().html(data);
+                        _this.find(".kit_order_success").hide();
+                        _this.find(".kit_order_error").show().html(data);
                     }
                 })
             }

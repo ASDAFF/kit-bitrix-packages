@@ -209,7 +209,7 @@ if($tabs){
             continue;
         }
 
-		if($tab == 'DELIVERY' && !file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.delivery/class.php')){
+		if($tab == 'DELIVERY' && !file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.delivery/class.php')){
 			continue;
 		}
 
@@ -267,11 +267,11 @@ if($tabs){
     }
 }
 
-if (Bitrix\Main\Loader::includeModule( "sotbit.price" ))
+if (Bitrix\Main\Loader::includeModule( "kit.price" ))
 {
     //$arResult = SotbitPrice::ChangeMinPrice( $arResult );
 }
-if (Bitrix\Main\Loader::includeModule( "sotbit.regions" ))
+if (Bitrix\Main\Loader::includeModule( "kit.regions" ))
 {
     //$arResult = \Sotbit\Regions\Sale\Price::change( $arResult );
 }

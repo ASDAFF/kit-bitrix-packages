@@ -35,7 +35,7 @@
     margin-right: 20px;
 }
 
-.contacts-call-back-form .sotbit_order_phone .sotbit_order_phone__block .phone_input input {
+.contacts-call-back-form .kit_order_phone .kit_order_phone__block .phone_input input {
     width: calc(100% - 60px);
 }
 

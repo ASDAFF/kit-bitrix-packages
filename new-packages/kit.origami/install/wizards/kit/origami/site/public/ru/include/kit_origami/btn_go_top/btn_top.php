@@ -4,7 +4,7 @@ use Bitrix\Main\Page\Asset;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/btn_go_top/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "include/kit_origami/btn_go_top/style.css");
 
 if(Config::get("BTN_TOP") == "Y"):
 ?>

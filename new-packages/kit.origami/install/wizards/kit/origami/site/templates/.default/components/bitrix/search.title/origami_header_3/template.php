@@ -25,18 +25,18 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
                 "",
                 array(
                     "AREA_FILE_SHOW" => "file",
-                    "PATH" => SITE_DIR."include/sotbit_origami/logo.php"
+                    "PATH" => SITE_DIR."include/kit_origami/logo.php"
                 )
             );?>
         </div>
         <button class="header-search__btn-search" type="submit" name="s">
 			<svg width="18" height="18">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
 			</svg>
 		</button>
         <button class="header-search__btn-close" id="search-btn-close" type="button">
             <svg class="header-search__btn-close-icon" width="18" height="18">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
             </svg>
         </button>
 	</form>

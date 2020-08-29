@@ -14,11 +14,11 @@ else{
 
 <div class="contact-phone__link">
     <svg class="contact-phone__link-icon" width="18" height="18">
-        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone"></use>
+        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone"></use>
     </svg>
     <?=$phone?>
     <svg class="contact-phone__arrow-icon" width="10" height="6">
-        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
     </svg>
 </div>
 <?if(Config::get("HEADER_CALL") == "Y"):?>
@@ -27,7 +27,7 @@ else{
 <div class="contact-phone__drop-down">
     <div class="contact-phone__drop-down-item contact-phone__drop-down-item--phone">
         <svg width="18" height="18">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone"></use>
         </svg>
         <?
         if(is_array($arResult['FIELDS']['UF_PHONE']['VALUE'])):
@@ -42,7 +42,7 @@ else{
     </div>
     <div class="contact-phone__drop-down-item">
         <svg width="18" height="20">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_time"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_time"></use>
         </svg>
         <p>
             <?$APPLICATION->IncludeComponent(
@@ -50,14 +50,14 @@ else{
                 "",
                 array(
                     "AREA_FILE_SHOW" => "file",
-                    "PATH" => SITE_DIR."include/sotbit_origami/contacts_worktime.php")
+                    "PATH" => SITE_DIR."include/kit_origami/contacts_worktime.php")
             );
             ?>
         </p>
     </div>
     <div class="contact-phone__drop-down-item">
         <svg width="18" height="20">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>
         </svg>
         <?
         if(is_array($arResult['FIELDS']['UF_EMAIL']['VALUE'])):
@@ -74,11 +74,11 @@ else{
     </div>
     <div class="contact-phone__drop-down-item">
         <svg width="18" height="20">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_pin"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_pin"></use>
         </svg>
         <p><?=$arResult['FIELDS']['UF_ADDRESS']['VALUE']?></p>
     </div>
-    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
             <!-- <a class="header-two__drop-down-btn" href="javascript:callbackPhone('<?=SITE_DIR?>','<?=SITE_ID?>')"> -->
         <a a href="javascript:void(0)" class="contact-phone__drop-down-btn" onclick="callbackPhone('<?=SITE_DIR?>','<?=SITE_ID?>',this)">
             <?=Loc::getMessage('HEADER_3_CALL_PHONE')?>

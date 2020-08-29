@@ -1,4 +1,4 @@
-.sotbit_order_phone_wrapper.found-error-popup {
+.kit_order_phone_wrapper.found-error-popup {
   max-width: 429px;
   background: #F7F7F7;
   min-width: 429px; }
@@ -149,22 +149,22 @@
   display: -ms-flexbox;
   display: flex; }
 
-.found-error-popup .sotbit_order_phone__block input::-webkit-input-placeholder {
+.found-error-popup .kit_order_phone__block input::-webkit-input-placeholder {
   color: #808080; }
 
-.found-error-popup .sotbit_order_phone__block input::-moz-placeholder {
+.found-error-popup .kit_order_phone__block input::-moz-placeholder {
   color: #808080; }
 
-.found-error-popup .sotbit_order_phone__block input:-ms-input-placeholder {
+.found-error-popup .kit_order_phone__block input:-ms-input-placeholder {
   color: #808080; }
 
-.found-error-popup .sotbit_order_phone__block input::-ms-input-placeholder {
+.found-error-popup .kit_order_phone__block input::-ms-input-placeholder {
   color: #808080; }
 
-.found-error-popup .sotbit_order_phone__block input::placeholder {
+.found-error-popup .kit_order_phone__block input::placeholder {
   color: #808080; }
 
-.found-error-popup .popup-window .sotbit_order_phone__block .feedback_block__captcha_img {
+.found-error-popup .popup-window .kit_order_phone__block .feedback_block__captcha_img {
   height: 40px; }
 
 .found-error-popup .popup_resizeable_content {
@@ -219,7 +219,7 @@
   margin: 20px 30px 0 30px;
   color: red; }
 
-.found-error-popup .sotbit_order_phone .feedback_block__captcha_input input[name="captcha_word"] {
+.found-error-popup .kit_order_phone .feedback_block__captcha_input input[name="captcha_word"] {
   padding: 5px;
   border: 1px solid #ededed;
   height: 40px;
@@ -260,7 +260,7 @@
   color: #000000;
   margin-bottom: 5px; }
 
-.found-error-popup .sotbit_order__title {
+.found-error-popup .kit_order__title {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -271,24 +271,24 @@
   z-index: 2;
   position: relative; }
 
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__block:not(.error-popup__file-input) {
+.found-error-popup .kit_order_phone .kit_order_phone__block:not(.error-popup__file-input) {
   margin: 20px 30px; }
 
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__block input,
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__block textarea {
+.found-error-popup .kit_order_phone .kit_order_phone__block input,
+.found-error-popup .kit_order_phone .kit_order_phone__block textarea {
   border: 1px solid #ededed;
   width: 100%;
   padding: 5px; }
 
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__block input {
+.found-error-popup .kit_order_phone .kit_order_phone__block input {
   height: 40px; }
 
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__block textarea {
+.found-error-popup .kit_order_phone .kit_order_phone__block textarea {
   height: 120px;
   min-height: 40px;
   max-height: 400px; }
 
-.found-error-popup .sotbit_order_phone .sotbit_order_phone__title {
+.found-error-popup .kit_order_phone .kit_order_phone__title {
   font-size: 20px;
   font-weight: bold;
   color: #000000;
@@ -299,8 +299,8 @@
   position: relative;
   z-index: 2; }
 
-.found-error-popup .sotbit_order_phone input[type="submit"],
-.found-error-popup .sotbit_order_phone input[type="button"] {
+.found-error-popup .kit_order_phone input[type="submit"],
+.found-error-popup .kit_order_phone input[type="button"] {
   cursor: pointer;
   outline: none;
   line-height: 39px;
@@ -313,10 +313,10 @@
   font-weight: bold;
   width: 100%; }
 
-.found-error-popup .sotbit_order_phone .feedback_block__compliance {
+.found-error-popup .kit_order_phone .feedback_block__compliance {
   padding-left: 0; }
 
-.found-error-popup .sotbit_order_phone .feedback_block__compliance .cntr {
+.found-error-popup .kit_order_phone .feedback_block__compliance .cntr {
   -webkit-box-pack: start;
      -moz-box-pack: start;
       -ms-flex-pack: start;
@@ -330,32 +330,32 @@
   margin: 0; }
 
 @media (max-width: 768px) {
-  .found-error-popup .sotbit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
+  .found-error-popup .kit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
     padding-left: 0.3rem; } }
 
 @media (max-width: 576px) {
-  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block_title {
+  .found-error-popup .kit_order_phone .kit_order_phone__block_title {
     padding-bottom: 12px; }
-  .found-error-popup .sotbit_order_phone .feedback_block__compliance {
+  .found-error-popup .kit_order_phone .feedback_block__compliance {
     margin-top: 21px; }
-  .found-error-popup .sotbit_order_phone .feedback_block__compliance .cntr {
+  .found-error-popup .kit_order_phone .feedback_block__compliance .cntr {
     -webkit-box-align: start;
        -moz-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .found-error-popup .sotbit_order_phone input[type="button"] {
+  .found-error-popup .kit_order_phone input[type="button"] {
     width: 100%; } }
 
 @media (max-width: 576px) {
-  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block {
+  .found-error-popup .kit_order_phone .kit_order_phone__block {
     margin-bottom: 15px; } }
 
 @media (max-width: 455px) {
-  .sotbit_order_phone_wrapper.found-error-popup {
+  .kit_order_phone_wrapper.found-error-popup {
     min-width: 200px; }
   body .popup-close {
     right: 20px; }
-  .found-error-popup .sotbit_order__title {
+  .found-error-popup .kit_order__title {
     padding: 16px 35px 20px 20px; }
   .found-error-popup .found-error-popup__textarea {
     margin: 20px; }
@@ -381,11 +381,11 @@
         -ms-flex-order: 1;
             order: 1;
     margin-top: 12px; }
-  .sotbit_order_phone {
+  .kit_order_phone {
     margin: 20px; }
   .popup-window-submit_button.found-error-popup__submit-button {
     margin: 20px 20px 0; }
-  .found-error-popup .sotbit_order_phone .sotbit_order_phone__block:not(.error-popup__file-input) {
+  .found-error-popup .kit_order_phone .kit_order_phone__block:not(.error-popup__file-input) {
     margin: 20px; }
   .found-error-popup .popup-window-submit_button.found-error-popup__submit-button {
     margin: 20px 20px 0; } }

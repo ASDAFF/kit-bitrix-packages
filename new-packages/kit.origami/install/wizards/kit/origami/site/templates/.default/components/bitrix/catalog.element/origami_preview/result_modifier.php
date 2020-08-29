@@ -129,11 +129,11 @@ if($arResult['SKU_PROPS'][$colorCode]) {
     $arResult['SKU_PROPS'] = $tmp;
 }
 
-if (Bitrix\Main\Loader::includeModule( "sotbit.price" ))
+if (Bitrix\Main\Loader::includeModule( "kit.price" ))
 {
     //$arResult = SotbitPrice::ChangeMinPrice( $arResult );
 }
-if (Bitrix\Main\Loader::includeModule( "sotbit.regions" ))
+if (Bitrix\Main\Loader::includeModule( "kit.regions" ))
 {
     //$arResult = \Sotbit\Regions\Sale\Price::change( $arResult );
 }

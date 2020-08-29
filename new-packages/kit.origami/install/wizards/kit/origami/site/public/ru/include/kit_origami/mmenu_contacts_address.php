@@ -15,7 +15,7 @@
 <div class="mobile-menu-contact-default__address">
     <span class="mobile-menu-contact-icon-default">
         <svg class="mobile-menu-contact-icon" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_send_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_send_filled"></use>
         </svg>
     </span>
     <span>ул. Александра Невского 3, 17</span>

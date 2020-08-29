@@ -3,7 +3,7 @@ use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Loader;
 
-Asset::getInstance()->addCss("/include/sotbit_origami/stub_for_ie/style.css");
+Asset::getInstance()->addCss("/include/kit_origami/stub_for_ie/style.css");
 CJSCore::Init(array("jquery", "popup"));
 ?>
 <div id="stub_popup_content" style="display: none">
@@ -19,7 +19,7 @@ CJSCore::Init(array("jquery", "popup"));
         <a class="stub__browser-firefox" href="https://yandex.ru/firefox/download?from=lp_s">Firefox</a>
         <a class="stub__browser-edge" href="https://www.microsoft.com/ru-ru/edge">Microsoft Edge</a>
     </div>
-    <?if(Loader::includeModule('sotbit.b2bshop')):?>
+    <?if(Loader::includeModule('kit.b2bshop')):?>
         <div class="stub__to_b2b-wrapper">
             <a class="stub__to_b2b" href="/b2bcabinet"><?=Loc::getMessage('GO_TO_B2B')?></a>
         </div>

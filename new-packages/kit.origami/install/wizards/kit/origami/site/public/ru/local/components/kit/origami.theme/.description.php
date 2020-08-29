@@ -8,10 +8,10 @@ $arComponentDescription = array(
 	"CACHE_PATH" => "Y",
 	"SORT" => 70,
 	"PATH" => array(
-		"ID" => "sotbit",
+		"ID" => "kit",
         "NAME" => GetMessage("SOTBIT_ORIGAMI_THEME_COMPANY"),
 		"CHILD" => array(
-			"ID" => "sotbit_origami",
+			"ID" => "kit_origami",
 			"NAME" => GetMessage("SOTBIT_ORIGAMI"),
 			"SORT" => 30,
 		),

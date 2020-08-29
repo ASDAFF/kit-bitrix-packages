@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 CModule::includeModule('sale');
 CModule::includeModule($module);
 CModule::IncludeModule("iblock");
@@ -128,8 +128,7 @@ while ($prop = $rs->fetch()) {
  *
  * required to display on the page
  * if  don't update, the products are not displayed
- *
- * @author Dmitry Golovach <d.golovach@sotbit.ru>
+ * 
  */
 
 $iblockId = $_SESSION["WIZARD_CATALOG_IBLOCK_ID"];
@@ -268,7 +267,6 @@ if($iblockId > 0)
 /**
  * For adding a price
  *
- * @author Dmitry Golovach <d.golovach@sotbit.ru>
  */
 $selectBase = $wizard->GetVar("base");
 $selectOpt = $wizard->GetVar("opt");
@@ -343,20 +341,20 @@ if(!($arPriceType = $dbResultList->Fetch())) {
     CCatalogGroup::Add($arFields);
 }
 
-$arSiteOrigami = \Bitrix\Main\SiteTemplateTable::getList(array('filter' => array('TEMPLATE' => 'sotbit_origami')))->fetch();
+$arSiteOrigami = \Bitrix\Main\SiteTemplateTable::getList(array('filter' => array('TEMPLATE' => 'kit_origami')))->fetch();
 
 if(!isset($arSiteOrigami['SITE_ID'])) {
     $arSiteOrigami['SITE_ID'] = 's1';
 }
 
-if(CModule::includeModule('sotbit.origami')) {
+if(CModule::includeModule('kit.origami')) {
     \Sotbit\Origami\Config\Option::set('ACTION_PRODUCTS', serialize(['BUY', 'DELAY', 'COMPARE']), $arSiteOrigami['SITE_ID']);
     \Sotbit\Origami\Config\Option::set('VARIANT_LIST_VIEW', 'template_3', $arSiteOrigami['SITE_ID']);
 }
 
 $arIblockAdv = CIBlock::GetList(array(), array(
-    'IBLOCK_TYPE_ID' => 'sotbit_origami_content',
-    'CODE' => ['advantages' , 'sotbit_origami_advantages']
+    'IBLOCK_TYPE_ID' => 'kit_origami_content',
+    'CODE' => ['advantages' , 'kit_origami_advantages']
 ))->fetch();
 
 //add advantages default settings
@@ -369,7 +367,7 @@ if(is_array($arIblockAdv)) {
         ));
         \Sotbit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_ADVANTAGES',
-            'VALUE' => 'sotbit_origami_content',
+            'VALUE' => 'kit_origami_content',
             'SITE_ID' => $arIblockAdv['LID']
         ));
     } catch(\Bitrix\Main\DB\SqlQueryException $e) {
@@ -379,8 +377,8 @@ if(is_array($arIblockAdv)) {
 
 
 $arIblockBanner = CIBlock::GetList(array(), array(
-    'IBLOCK_TYPE_ID' => 'sotbit_origami_advertising',
-    'CODE' => 'sotbit_origami_banners'
+    'IBLOCK_TYPE_ID' => 'kit_origami_advertising',
+    'CODE' => 'kit_origami_banners'
 ))->fetch();
 
 if(is_array($arIblockBanner)) {
@@ -392,7 +390,7 @@ if(is_array($arIblockBanner)) {
         ));
         \Sotbit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_BANNERS',
-            'VALUE' => 'sotbit_origami_advertising',
+            'VALUE' => 'kit_origami_advertising',
             'SITE_ID' => $arIblockBanner['LID']
         ));
     } catch(\Bitrix\Main\DB\SqlQueryException $e) {
@@ -401,8 +399,8 @@ if(is_array($arIblockBanner)) {
 }
 
 $arIblockPromotion = CIBlock::GetList(array(), array(
-    'IBLOCK_TYPE_ID' => 'sotbit_origami_content',
-    'CODE' => ['sotbit_origami_promotions', 'promotions']
+    'IBLOCK_TYPE_ID' => 'kit_origami_content',
+    'CODE' => ['kit_origami_promotions', 'promotions']
 ))->fetch();
 
 if(is_array($arIblockPromotion)) {
@@ -414,7 +412,7 @@ if(is_array($arIblockPromotion)) {
         ));
         \Sotbit\Origami\Internals\OptionsTable::add(array(
             'CODE' => 'IBLOCK_TYPE_PROMOTION',
-            'VALUE' => 'sotbit_origami_content',
+            'VALUE' => 'kit_origami_content',
             'SITE_ID' => $arIblockPromotion['LID']
         ));
     } catch(\Bitrix\Main\DB\SqlQueryException $e) {

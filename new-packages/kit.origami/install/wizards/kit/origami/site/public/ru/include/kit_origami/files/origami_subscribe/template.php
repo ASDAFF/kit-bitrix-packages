@@ -8,9 +8,9 @@ use Sotbit\Origami\Helper\Config;
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $APPLICATION->ShowAjaxHead();
-Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/files/origami_subscribe/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "include/kit_origami/files/origami_subscribe/style.css");
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['SERVER_NAME'] . $arParams['URL_PAGE'];
 
 ?>

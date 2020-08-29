@@ -37,7 +37,7 @@ class File extends Widget
 					false,
 					$request[$this->getCode() . '_descr']
 				);
-				$fid = \CFile::SaveFile($file, 'sotbit.origami');
+				$fid = \CFile::SaveFile($file, 'kit.origami');
 				$request[$this->getCode()] = $fid;
 			}
 		}

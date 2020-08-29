@@ -152,7 +152,7 @@ $prefix = \Bitrix\Main\Security\Random::getString(5);
                             <svg class="icon_refresh" width="16" height="14"
                                  style="color: <?= \Sotbit\Origami\Helper\Config::get('COLOR_BASE') ?>; ">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                             </svg>
                         </div>
 

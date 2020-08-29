@@ -11,7 +11,7 @@ $isIndexPage = null;
 $curPage = $APPLICATION->GetCurPage(false);
 ($curPage == SITE_DIR) ? $isIndexPage = true : $isIndexPage=false;
 
- $seoModule = \CModule::IncludeModule("sotbit.seometa");
+ $seoModule = \CModule::IncludeModule("kit.seometa");
 
 Loc::loadMessages(__FILE__);
 
@@ -245,10 +245,10 @@ if($arResult['CAN_CHANGE'] === true)
 
     <div class="theme-change" id="theme-change">
         <svg class="constructor-switch__item-icon" width="18" height="18">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#gear_wheel_18"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#gear_wheel_18"></use>
         </svg>
         <svg class="constructor-switch__item-icon constructor-switch__item-icon--two" width="28" height="28">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#gear_wheel_28"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#gear_wheel_28"></use>
         </svg>
     </div>
 
@@ -260,24 +260,24 @@ if($arResult['CAN_CHANGE'] === true)
     <?else: ?>
         <div class="constructor-switch " id="switch-constructor">
             <svg class="switch-constructor__on-icon" width="30" height="30">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_constructor"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_constructor"></use>
             </svg>
             <div class=" theme-change__tooltip">
                 <p class="theme-change__tooltip-title"><?=Loc::getMessage(SotbitOrigami::moduleId . '_BUILDER_BLOCK_TITLE')?></p>
                 <p class="theme-change__tooltip-description"><?=Loc::getMessage(SotbitOrigami::moduleId . '_BUILDER_BLOCK_MESSAGE')?></p>
-                <img class="theme-change__tooltip-img" src="/local/components/sotbit/origami.theme/templates/.default/img/backgroung-constructor.jpg" alt="">
+                <img class="theme-change__tooltip-img" src="/local/components/kit/origami.theme/templates/.default/img/backgroung-constructor.jpg" alt="">
             </div>
         </div>
         <?if($arResult['CAN_SAVE'] === true):?>
         <div class="constructor-switch__save <?if(!isset($_COOKIE["origamiConstructMode"]) || $_COOKIE["origamiConstructMode"] != "Y"):?>hide__constructor-switch<?endif?>" id="switch-constructor__save">
             <svg class="switch-constructor__save-icon" width="58" height="58">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_save"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_save"></use>
             </svg>
         </div>
         <?endif;?>
         <div class="constructor-switch__off <?if(!isset($_COOKIE["origamiConstructMode"]) || $_COOKIE["origamiConstructMode"] != "Y"):?>hide__constructor-switch<?endif;?>" id="switch-constructor__off">
             <svg class="switch-constructor__off-icon" width="58" height="58">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_constructor"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_constructor"></use>
             </svg>
 </div>
     <? endif ?>
@@ -540,7 +540,7 @@ if($arResult['CAN_CHANGE'] === true)
 															<li class="ui-state-default" data-code="<?=$tab?>">
 															    <span class="swap_icon_wrapper">
                                                                     <svg class="swap_icon" width="10" height="14">
-                                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_swap_settings"></use>
+                                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_swap_settings"></use>
                                                                     </svg>
                                                                 </span>
 																<span>
@@ -604,10 +604,10 @@ if($arResult['CAN_CHANGE'] === true)
         ?>
         <button type="button" class="landing-ui-button landing-ui-panel-content-close close-for-theme-change" data-id="close" title="<?= Loc::getMessage(SotbitOrigami::moduleId . '_CLOSE') ?>">
             <svg class="constructor-switch__item-icon" width="18" height="18">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#gear_wheel_18"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#gear_wheel_18"></use>
             </svg>
             <svg class="constructor-switch__item-icon constructor-switch__item-icon--two" width="28" height="28">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#gear_wheel_28"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#gear_wheel_28"></use>
             </svg>
             <span class="landing-ui-button-text"></span>
         </button>

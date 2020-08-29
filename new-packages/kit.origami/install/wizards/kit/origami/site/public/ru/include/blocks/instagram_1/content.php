@@ -2,7 +2,7 @@
 global $settings;
 
 $APPLICATION->IncludeComponent(
-    "sotbit:instagram",
+    "kit:instagram",
     "origami_insta_1",
     array(
         "LOGIN" => $settings['fields']['login']['value'],

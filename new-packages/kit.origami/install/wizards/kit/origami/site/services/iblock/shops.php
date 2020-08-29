@@ -1,7 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 
 if (!CModule::IncludeModule("iblock"))
@@ -17,9 +17,9 @@ if(!defined("WIZARD_TEMPLATE_ABSOLUTE_PATH")) return;
 if(!defined("WIZARD_THEME_ID")) return;
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH . "/xml/" . LANGUAGE_ID . "/shops.xml";
-$iblockCode = "sotbit_origami_shops_"  . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = 'sotbit_origami_shops_'  . WIZARD_SITE_ID;
+$iblockCode = "kit_origami_shops_"  . WIZARD_SITE_ID;
+$iblockType = "kit_origami_content";
+$iblockXMLID = 'kit_origami_shops_'  . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;
@@ -204,13 +204,13 @@ if (strlen($lang) <= 0)
     $lang = "ru";
 
 if($iblockID) {
-    Option::Set('IBLOCK_TYPE_SHOP', "sotbit_origami_content", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE_SHOP', "kit_origami_content", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID_SHOP', $iblockID, WIZARD_SITE_ID);
 }
 
     $_SESSION['SOTBIT_ORIGAMI_WIZARD_CHANGE']["SHOPS"] = $iblockID;
 /*
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/1/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/sotbit_origami/theme/contacts/3/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/1/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"]."/local/templates/kit_origami/theme/contacts/3/content.php", array("SHOPS_IBLOCK_ID" => $iblockID));
 */
 ?>

@@ -18,7 +18,7 @@ class KitRegionsTest extends TestCase
 
 	public function testModuleInstalled()
 	{
-		$this->assertTrue(Loader::includeModule("sotbit.regions"));
+		$this->assertTrue(Loader::includeModule("kit.regions"));
 	}
 	/**
 	 * @depends testModuleInstalled

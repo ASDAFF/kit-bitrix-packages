@@ -14,7 +14,7 @@ use Bitrix\Main\Localization\Loc;
 /**
  * Class Variables
  * @package Sotbit\Origami\Config\Widgets
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Variables extends Text
 {

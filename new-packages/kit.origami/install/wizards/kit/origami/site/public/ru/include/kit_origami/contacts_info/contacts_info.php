@@ -3,14 +3,14 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 
 use Bitrix\Main\Page\Asset;
 
-Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "include/kit_origami/contacts_info/style.css");
 
 ?>
 <div class="contact__techno_block__detail">
 	<div class="contact__techno_block__detail_item">
 		<div class="contact__techno_block__detail_item__img">
             <svg class="contact__techno_block-icon" width="28" height="28">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_pin"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_pin"></use>
             </svg>
 		</div>
 		<div class="contact__techno_block__detail_item__content">
@@ -22,7 +22,7 @@ Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/st
                     echo $_SESSION["SOTBIT_REGIONS"]["NAME"].', '.$_SESSION["SOTBIT_REGIONS"]["UF_ADDRESS"];
                 }
                 else{
-                    $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_city.php"));
+                    $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_city.php"));
                 }
                 ?>
 				 <br>
@@ -32,7 +32,7 @@ Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/st
 	<div class="contact__techno_block__detail_item">
 		<div class="contact__techno_block__detail_item__img">
             <svg class="contact__techno_block-icon" width="28" height="28">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_phone"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_phone"></use>
             </svg>
             <!-- <i class="icon-phone-call"></i> -->
 		</div>
@@ -64,7 +64,7 @@ Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/st
 	<div class="contact__techno_block__detail_item">
 		<div class="contact__techno_block__detail_item__img">
             <svg class="contact__techno_block-icon" width="28" height="28">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_mail"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_mail"></use>
             </svg>
             <!-- <i class="icon-new-email-outline"></i> -->
 		</div>
@@ -96,7 +96,7 @@ Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/st
      	?>
      <?}
      else{
-         $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_email.php"));
+         $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_email.php"));
      }
      ?>
 			</div>
@@ -105,7 +105,7 @@ Asset::getInstance()->addCss(SITE_DIR . "include/sotbit_origami/contacts_info/st
 	<div class="contact__techno_block__detail_item">
 		<div class="contact__techno_block__detail_item__img">
             <svg class="contact__techno_block-icon" width="28" height="28">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_contacts_clock"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_contacts_clock"></use>
             </svg>
             <!-- <i class="icon-clock"></i> -->
 		</div>

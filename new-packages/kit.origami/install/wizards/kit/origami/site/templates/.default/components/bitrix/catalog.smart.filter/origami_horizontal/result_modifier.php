@@ -49,7 +49,7 @@ if($arResult["ITEMS"])
 $seoModule = false;
 // get SEO link or not
 $linkMode = Config::get('SEO_LINK_MODE');
-$seoModule = \CModule::IncludeModule("sotbit.seometa");
+$seoModule = \CModule::IncludeModule("kit.seometa");
 
 // get current page
 if(isset($arResult["JS_FILTER_PARAMS"]["SEF_DEL_FILTER_URL"]))
@@ -101,5 +101,5 @@ if($linkMode != 'DISABLED') {
     }
 }
 
-global $sotbitFilterResult;
-$sotbitFilterResult = $arResult;
+global $kitFilterResult;
+$kitFilterResult = $arResult;

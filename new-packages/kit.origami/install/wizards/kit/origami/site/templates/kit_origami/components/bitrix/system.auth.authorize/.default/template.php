@@ -83,7 +83,7 @@ document.getElementById('bx_auth_secure').style.display = '';
 <?endif?>
 				<input type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" placeholder="<?=GetMessage("PLEACEHOLDER_PASSWORD")?>" />
 				<svg class="auth-icon_password_hidden" width="18px" height="18px" onmousedown=TogglePasswordVisibility() ontouchstart=TogglePasswordVisibility() onmouseup=TogglePasswordVisibility() ontouchend=TogglePasswordVisibility() onmouseout=TogglePasswordVisibilityOff()>
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_password_hidden"></use>
                 </svg>
 			</div>
 		</div>

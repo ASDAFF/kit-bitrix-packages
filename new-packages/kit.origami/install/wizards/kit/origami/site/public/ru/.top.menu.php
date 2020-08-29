@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $aMenuLinks = Array(
 	Array(
 		"Как купить", 
@@ -38,7 +38,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Мой кабинет",
-        \Sotbit\Origami\Helper\Config::get('PERSONAL_PAGE'),
+        \Kit\Origami\Helper\Config::get('PERSONAL_PAGE'),
 		Array(),
 		Array(),
 		"CUser::IsAuthorized()"

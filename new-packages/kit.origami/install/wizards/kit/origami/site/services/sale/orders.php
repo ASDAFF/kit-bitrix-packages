@@ -7,11 +7,11 @@ if( !CModule::IncludeModule( 'sale' ) )
 
 use Bitrix\Catalog, Bitrix\Main, Bitrix\Sale, Bitrix\Sale\OrderStatus, Bitrix\Sale\DeliveryStatus, Bitrix\Main\Localization\Loc;
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 
 WizardServices::IncludeServiceLang( "step1.php", 'ru' );
 
-//if( COption::GetOptionString( "sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
+//if( COption::GetOptionString( "kit.origami", "wizard_installed", "N", WIZARD_SITE_ID ) != "Y" || WIZARD_INSTALL_DEMO_DATA )
 //{
 
 	$saleConverted15 = COption::GetOptionString( "main", "~sale_converted_15", "" ) == "Y";
@@ -544,11 +544,11 @@ WizardServices::IncludeServiceLang( "step1.php", 'ru' );
 			"CATALOG_TYPE" => Catalog\ProductTable::TYPE_OFFER
 	);
 
-	if($module == 'sotbit.origami')
+	if($module == 'kit.origami')
 	{
 		$productFilter["=IBLOCK_TYPE"] = 'mrs_catalog';
 	}
-	if($module == 'sotbit.origami')
+	if($module == 'kit.origami')
 	{
 		$productFilter["=IBLOCK_TYPE"] = 'mrs_catalog';
 	}
@@ -618,7 +618,7 @@ WizardServices::IncludeServiceLang( "step1.php", 'ru' );
 		CSaleOrder::CancelOrder( $orderID, "Y" );
 	}
 
-	if( $module == 'sotbit.b2bshop' )
+	if( $module == 'kit.b2bshop' )
 	{
 
 		$arIMAGE = CFile::MakeFileArray( $_SERVER["DOCUMENT_ROOT"] . WIZARD_SERVICE_RELATIVE_PATH . "/images/avatar.jpg" );

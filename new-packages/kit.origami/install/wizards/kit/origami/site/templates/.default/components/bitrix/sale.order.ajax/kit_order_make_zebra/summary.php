@@ -73,20 +73,20 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                         <?if(in_array("DISCOUNT_PRICE_PERCENT_FORMATED", $arHeaders)):?>
                             <div class="discount_block">
                                 <span class="discount_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_DISCOUNT_TEXT")?>&nbsp;</span>
-                                <div class="sotbit_soa_discount_price_<?=$arItem["ID"]?>">
+                                <div class="kit_soa_discount_price_<?=$arItem["ID"]?>">
                                     <?=$arItem["DISCOUNT_PRICE_PERCENT_FORMATED"]?>
                                 </div>
                             </div>
                         <?endif?>
 
                         <?if(in_array("PRICE_FORMATED", $arHeaders)):?>
-                            <div class="sotbit_soa_price_block_<?=$arItem["ID"]?> price_block">
+                            <div class="kit_soa_price_block_<?=$arItem["ID"]?> price_block">
                                 <span class="price_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_PRICE_TEXT")?>&nbsp;</span>
-                                <div class="sotbit_soa_price_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__middle_text">
+                                <div class="kit_soa_price_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__middle_text">
                                     <?=$arItem["PRICE_FORMATED"]?>
                                 </div>
                                 <?if(doubleval($arItem["DISCOUNT_PRICE"]) > 0):?>
-                                    <div class="sotbit_soa_old_price_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
+                                    <div class="kit_soa_old_price_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
                                         <?=SaleFormatCurrency($arItem["PRICE"] + $arItem["DISCOUNT_PRICE"], $arItem["CURRENCY"]);?>
                                     </div>
                                 <?endif?>
@@ -98,13 +98,13 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                             <?=$arItem["QUANTITY"]?> <?=$arItem["MEASURE_NAME"]?>
                         </div>
 
-                        <div class="sotbit_soa_product_sum_block_<?=$arItem["ID"]?> sum_block">
+                        <div class="kit_soa_product_sum_block_<?=$arItem["ID"]?> sum_block">
                             <span class="sum_block_hidden fonts__middle_comment"><?=Loc::getMessage("SOTBIT_SOA_SUM_TEXT")?>&nbsp;</span>
-                            <div class="sotbit_soa_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
+                            <div class="kit_soa_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_new fonts__main_text">
                                 <?=$arItem["SUM"]?>
                             </div>
                             <?if(doubleval($arItem["DISCOUNT_PRICE"]) > 0):?>
-                                <div class="sotbit_soa_old_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
+                                <div class="kit_soa_old_product_sum_<?=$arItem["ID"]?> main_order_block__item_price_old fonts__middle_comment">
                                     <?=$arItem["SUM_BASE_FORMATED"]?>
                                 </div>
                             <?endif?>
@@ -161,9 +161,9 @@ foreach($arResult["GRID"]["HEADERS"] as $headerId)
                 <div class="bx-soa-section-content"></div>
             </div>
             <span class="main_order_block__col_buy">
-                <b><?=$quantity?></b> <?=$quantityLabel?> <?=Loc::getMessage("SOA_TEMPL_SUM_SUMMARY")?> <b class="sotbit_soa_order_price main_order_block__link"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
+                <b><?=$quantity?></b> <?=$quantityLabel?> <?=Loc::getMessage("SOA_TEMPL_SUM_SUMMARY")?> <b class="kit_soa_order_price main_order_block__link"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
             </span>
-            <div id="sotbit_soa_total" style="display: none;"></div>
+            <div id="kit_soa_total" style="display: none;"></div>
         </div>
     </div>
 </div>

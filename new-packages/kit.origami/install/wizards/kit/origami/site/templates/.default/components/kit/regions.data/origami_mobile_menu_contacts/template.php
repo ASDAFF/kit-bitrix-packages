@@ -5,7 +5,7 @@ $this->createFrame()->begin();
 <div class="mobile-menu-contact mobile-menu-contact--address">
     <div class="mobile-menu-contact__block">
         <svg class="mobile-menu-contact-icon" width="14" height="14">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_send_filled"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_send_filled"></use>
         </svg>
         <?
         if(is_array($arResult['FIELDS']['UF_ADDRESS']['VALUE']) && count($arResult['FIELDS']['UF_ADDRESS']['VALUE']) > 1):
@@ -31,12 +31,12 @@ $this->createFrame()->begin();
     <div class="mobile-menu-contact__block mobile-menu-contact__block--popup">
         <a href="mailto:<?=$email?>" class="mobile-menu-contact__block-popup">
             <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--email" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
             </svg>
             <?=$email?>
             <span class="mobile-menu-contact__block-btn">
                 <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--arrow" width="10" height="10">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                 </svg>
             </span>
         </a>
@@ -56,7 +56,7 @@ $this->createFrame()->begin();
     <div class='mobile-menu-contact__block'>
         <a href="mailto:<?=$email?>" class="mobile-menu-contact__item">
             <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--email" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
             </svg>
             <?=$email?>
         </a>
@@ -67,7 +67,7 @@ $this->createFrame()->begin();
     <div class='mobile-menu-contact__block'>
         <a href="mailto:<?=$email?>" class="mobile-menu-contact__item">
             <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--email" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail_filled"></use>
             </svg>
             <?=$email?>
         </a>
@@ -83,12 +83,12 @@ $this->createFrame()->begin();
     <div class="mobile-menu-contact__block mobile-menu-contact__block--popup">
         <a href="tel:<?=$phone?>" class="mobile-menu-contact__block-popup">
                 <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--phone" width="14" height="14">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                 </svg>
             <?=$phone?>
             <span class="mobile-menu-contact__block-btn">
                 <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--arrow" width="10" height="10">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                 </svg>
             </span>
         </a>
@@ -108,7 +108,7 @@ $this->createFrame()->begin();
     <div class='mobile-menu-contact__block'>
         <a href="tel:<?=$phone?>" class="mobile-menu-contact__item">
                 <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--phone" width="14" height="14">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
                 </svg>
             <?=$phone?>
         </a>
@@ -119,7 +119,7 @@ $this->createFrame()->begin();
     <div class='mobile-menu-contact__block'>
         <a href="tel:<?=$phone?>" class="mobile-menu-contact__item">
             <svg class="mobile-menu-contact-icon mobile-menu-contact-icon--phone" width="14" height="14">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled"></use>
             </svg>
             <?=$phone?>
         </a>

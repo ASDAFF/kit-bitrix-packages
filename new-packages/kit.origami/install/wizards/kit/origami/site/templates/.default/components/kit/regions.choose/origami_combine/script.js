@@ -52,17 +52,17 @@ window.SotbitRegions = function (arParams) {
                 var idRegion = yes.dataset.regionId;
                 var codeRegion = yes.dataset.code;
 
-                setCookie('sotbit_regions_location_id',idLocation,{'domain': '.' + arParams.rootDomain});
-                setCookie('sotbit_regions_city_choosed','Y',{'domain': '.' + arParams.rootDomain});
-                setCookie('sotbit_regions_id', idRegion,{'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_location_id',idLocation,{'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_city_choosed','Y',{'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_id', idRegion,{'domain': '.' + arParams.rootDomain});
                 if(arParams.singleDomain != 'Y' && codeRegion)
                     document.location.href = codeRegion;
                 removeMainLoader();
 
             } else {
 
-                setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                setCookie('sotbit_regions_id', yes.dataset.id, {'domain': arParams.rootDomain});
+                setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_id', yes.dataset.id, {'domain': arParams.rootDomain});
 
                 if (arParams.singleDomain !== 'Y') {
                     let url = '';
@@ -154,9 +154,9 @@ window.SotbitRegions = function (arParams) {
 
                         if (params.FROM_LOCATION === 'Y') {
 
-                            setCookie('sotbit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
-                            setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                            setCookie('sotbit_regions_id', idRegion, {'domain': arParams.rootDomain});
+                            setCookie('kit_regions_location_id', idLocation, {'domain': arParams.rootDomain});
+                            setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                            setCookie('kit_regions_id', idRegion, {'domain': arParams.rootDomain});
 
                             if (arParams.singleDomain === 'Y') {
                                 location.reload();
@@ -165,8 +165,8 @@ window.SotbitRegions = function (arParams) {
                             }
                         } else {
 
-                            setCookie('sotbit_regions_id', idRegion, {'domain': arParams.rootDomain});
-                            setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                            setCookie('kit_regions_id', idRegion, {'domain': arParams.rootDomain});
+                            setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
                             if (arParams.singleDomain === 'Y') {
                                 location.reload();
                             } else {
@@ -249,11 +249,11 @@ window.SotbitRegions = function (arParams) {
 
                     createBtnLoader(submitButton);
 
-                    setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                    setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
 
                     if (params.FROM_LOCATION === 'Y')
                     {
-                        setCookie('sotbit_regions_location_id', ID, {'domain': '.' + arParams.rootDomain});
+                        setCookie('kit_regions_location_id', ID, {'domain': '.' + arParams.rootDomain});
 
                         let idLocation = ID;
                         let xhr = new XMLHttpRequest();
@@ -270,7 +270,7 @@ window.SotbitRegions = function (arParams) {
                             if (this.readyState !== 4) return;
                             let answer = JSON.parse(this.responseText);
                             if (answer.ID) {
-                                setCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                                setCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
 
                                 if (arParams.singleDomain === 'Y') {
                                     location.reload();
@@ -287,7 +287,7 @@ window.SotbitRegions = function (arParams) {
 
                     } else {
 
-                        setCookie('sotbit_regions_id', ID, {'domain': arParams.rootDomain});
+                        setCookie('kit_regions_id', ID, {'domain': arParams.rootDomain});
 
                         if (arParams.singleDomain !== 'Y') {
                             let url = '';
@@ -354,9 +354,9 @@ window.SotbitRegions = function (arParams) {
 
             if (params.FROM_LOCATION === 'Y') {
 
-                setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                setCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
-                setCookie('sotbit_regions_location_id', answer.LOCATION.ID, {'domain': arParams.rootDomain});
+                setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                setCookie('kit_regions_location_id', answer.LOCATION.ID, {'domain': arParams.rootDomain});
 
                 let regionInput = document.querySelector("#region-input");
 
@@ -371,8 +371,8 @@ window.SotbitRegions = function (arParams) {
                 }
             } else {
 
-                setCookie('sotbit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
-                setCookie('sotbit_regions_id', answer.ID, {'domain': arParams.rootDomain});
+                setCookie('kit_regions_city_choosed', 'Y', {'domain': '.' + arParams.rootDomain});
+                setCookie('kit_regions_id', answer.ID, {'domain': arParams.rootDomain});
 
                 let regionInput = document.querySelector("#region-input");
 

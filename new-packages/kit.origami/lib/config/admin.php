@@ -5,7 +5,7 @@ use Bitrix\Main\Localization\Loc;
 /**
  * Class Admin
  * @package Sotbit\Origami\Config
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Admin extends \SotbitOrigami
 {
@@ -181,7 +181,7 @@ class Admin extends \SotbitOrigami
 				}
 			}
 		}
-		\SotbitOrigami::genTheme(Option::$options,'/local/templates/sotbit_origami/theme/custom');
+		\SotbitOrigami::genTheme(Option::$options,'/local/templates/kit_origami/theme/custom');
 		if($_SESSION['SOTBIT_ORIGAMI_THEME']['TMP'])
 		{
 			$files = scandir($_SERVER['DOCUMENT_ROOT'] .$_SESSION['SOTBIT_ORIGAMI_THEME']['TMP']);

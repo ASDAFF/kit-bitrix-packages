@@ -1,6 +1,6 @@
 <?
 use Bitrix\Main\Loader;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $showFooter = false;
 if ($_REQUEST['ajax_mode'] == 'Y') {
@@ -22,8 +22,8 @@ CJSCore::Init(["popup", "jquery"]);
 ?>
 <?if (!$USER->IsAuthorized()):
 
-    Loader::includeModule('sotbit.origami');
-    $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);?>
+    Loader::includeModule('kit.origami');
+    $telMask = \Kit\Origami\Config\Option::get('MASK', SITE_ID);?>
     <?$jsAuthVariable = 'fix' . \Bitrix\Main\Security\Random::getString(20)?>
     <?
     global $APPLICATION;
@@ -31,10 +31,10 @@ CJSCore::Init(["popup", "jquery"]);
     if ($templateTitle == "")
         $templateTitle = ".default";
 
-    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/system.auth.registration/" . $templateTitle . "/style.css");
-    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/system.auth.forgotpasswd/" . $templateTitle . "/style.css");
-    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/system.auth.authorize/" . $templateTitle . "/style.css");
-    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/sotbit_origami/components/bitrix/socserv.auth.form/" . $templateTitle . "/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.registration/" . $templateTitle . "/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.forgotpasswd/" . $templateTitle . "/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/kit_origami/components/bitrix/system.auth.authorize/" . $templateTitle . "/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_DIR . "local/templates/kit_origami/components/bitrix/socserv.auth.form/" . $templateTitle . "/style.css");
 
     ?>
 
@@ -50,7 +50,7 @@ CJSCore::Init(["popup", "jquery"]);
 <?else:?>
     <a href="#" onclick="<?=$jsAuthVariable?>.showPopup('/auth/')" rel="nofollow">
         <svg width="18" height="20">
-            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_login"></use>
+            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_login"></use>
         </svg>
         <?=GetMessage('LOGIN')?>
     </a>

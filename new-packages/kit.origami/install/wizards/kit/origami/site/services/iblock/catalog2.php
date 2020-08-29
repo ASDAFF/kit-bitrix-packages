@@ -4,7 +4,7 @@
 if(!CModule::IncludeModule("catalog"))
 	return;
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 //offers iblock import
@@ -19,10 +19,10 @@ elseif ($shopLocalization == "bl")
 else
     $iblockXMLFilePricesOffers = "/bitrix/modules/bitrix.eshop/install/public/xml/".LANGUAGE_ID."/catalog_prices_sku.xml";*/
 
-$iblockCodeOffers = "sotbit_origami_offers_"  . WIZARD_SITE_ID;
-$iblockTypeOffers = "sotbit_origami_catalog";
+$iblockCodeOffers = "kit_origami_offers_"  . WIZARD_SITE_ID;
+$iblockTypeOffers = "kit_origami_catalog";
 //$iblockXMLID = 'offers_origami';
-$iblockXMLID = 'sotbit_origami_offers_'  . WIZARD_SITE_ID;
+$iblockXMLID = 'kit_origami_offers_'  . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockTypeOffers));
 $IBLOCK_OFFERS_ID = false;

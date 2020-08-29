@@ -4,11 +4,11 @@ use Bitrix\Main\Page\Asset;
 use Sotbit\Origami\Helper\Config;
 
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
-Asset::getInstance()->addcss(SITE_DIR . "include/sotbit_origami/contact_page_block/contacts_description_slider/style.css");
-Asset::getInstance()->addjs(SITE_DIR . "include/sotbit_origami/contact_page_block/contacts_description_slider/script.js");
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/css/style-swiper-custom.css");
+Asset::getInstance()->addcss(SITE_DIR . "include/kit_origami/contact_page_block/contacts_description_slider/style.css");
+Asset::getInstance()->addjs(SITE_DIR . "include/kit_origami/contact_page_block/contacts_description_slider/script.js");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 //$useRegion = false;
 $sliderButtons = "";
 if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
@@ -29,7 +29,7 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
                         $APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
-                            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_description.php")
+                            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_description.php")
                         );
                     }
                     ?>
@@ -49,7 +49,7 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
                 $APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
-                    array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contact_areas/contact_page_slider.php")
+                    array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contact_areas/contact_page_slider.php")
                 );
             endif; ?>
         </div>

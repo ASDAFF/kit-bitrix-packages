@@ -2,8 +2,8 @@
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
-use Sotbit\Origami\Config;
-use Sotbit\Origami\Helper;
+use Kit\Origami\Config;
+use Kit\Origami\Helper;
 
 require_once($_SERVER["DOCUMENT_ROOT"]
     ."/bitrix/modules/main/include/prolog_admin_before.php");
@@ -13,19 +13,19 @@ Loc::loadMessages(__FILE__);
 
 
 CJSCore::Init(array("jquery"));
-$seoModule = \CModule::IncludeModule("sotbit.seometa");
+$seoModule = \CModule::IncludeModule("kit.seometa");
 
 if ($APPLICATION->GetGroupRight("main") < "R") {
     $APPLICATION->AuthForm(Loc::getMessage("ACCESS_DENIED"));
 }
 $moduleLoaded = false;
 try {
-    $moduleLoaded = Loader::includeModule('sotbit.origami');
+    $moduleLoaded = Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
     echo $e->getMessage();
 }
 
-$moduleSeo = Loader::includeModule('sotbit.seometa');
+$moduleSeo = Loader::includeModule('kit.seometa');
 
 $frontChange = new Config\Widgets\CheckBox('FRONT_CHANGE');
 
@@ -164,9 +164,9 @@ $sopEmailMask = new Config\Widgets\Textarea('SOP_EMAIL_MASK', Loc::getMessage('S
 $sopEmailMask->setSettings(['NOTE' => Loc::getMessage('SOP_EMAIL_MASK_EXPLANATION')]);
 $sopSmsConfirm = new Config\Widgets\CheckBox('SOP_SMS_CONFIRM', ['refresh' => 'Y']);
 $sopSmsRepeatedTime = new Config\Widgets\Number('SOP_SMS_REPEATED_TIME');
-if (\Sotbit\Origami\Helper\Config::get('SOP_SMS_CONFIRM') == 'N')
+if (\Kit\Origami\Helper\Config::get('SOP_SMS_CONFIRM') == 'N')
     $sopSmsRepeatedTime->setDisable();
-if (\Sotbit\Origami\Helper\Config::get('SOP_SELECT_USER') != 'one')
+if (\Kit\Origami\Helper\Config::get('SOP_SELECT_USER') != 'one')
     $sopOneUserId->setDisable();
 $sopSmsRepeatedTime->setSettings(['NOTE' => Loc::getMessage('SOP_EXPLANATION')]);
 
@@ -691,12 +691,12 @@ foreach ($templates as $key=>$template) {
     if(!Loader::includeModule('redsign.grupper'))
     {
         $propertyGrouper->setDisable(['GRUPPER']);
-        $propertyGrouper->changeName('GRUPPER', Loc::getMessage('sotbit.origami_NOT_INSTALLED', array('#MODULE_NAME#' => 'redsign.grupper')));
+        $propertyGrouper->changeName('GRUPPER', Loc::getMessage('kit.origami_NOT_INSTALLED', array('#MODULE_NAME#' => 'redsign.grupper')));
     }
     if(!Loader::includeModule('webdebug.utilities'))
     {
         $propertyGrouper->setDisable(['WEBDEBUG']);
-        $propertyGrouper->changeName('WEBDEBUG', Loc::getMessage('sotbit.origami_NOT_INSTALLED', array('#MODULE_NAME#' => 'webdebug.utilities')));
+        $propertyGrouper->changeName('WEBDEBUG', Loc::getMessage('kit.origami_NOT_INSTALLED', array('#MODULE_NAME#' => 'webdebug.utilities')));
     }
 
     $propFilterMode = new Config\Widgets\Select('PROP_FILTER_MODE_'.$key);
@@ -856,7 +856,7 @@ $Tab2 = new Config\Tab('CATALOG');
 $Tab2->getGroups()->addItem($GroupMainCatalog);
 $Tab2->getGroups()->addItem($GroupSection);
 $Tab2->getGroups()->addItem($GroupOffer);
-if (Loader::includeModule('sotbit.seometa')) {
+if (Loader::includeModule('kit.seometa')) {
     $Tab2->getGroups()->addItem($GroupSeoTag);
 }
 $Tab2->getGroups()->addItem($GroupSort);
@@ -889,7 +889,7 @@ $Options->getTabs()->addItem($Tab3);
 $Options->getTabs()->addItem($Tab4);
 $Options->getTabs()->addItem($Tab5);
 $Options->getTabs()->addItem($Tab6);
-//if (Loader::includeModule('sotbit.seometa')){
+//if (Loader::includeModule('kit.seometa')){
 //    $Options->getTabs()->addItem($Tab7);
 //}
 

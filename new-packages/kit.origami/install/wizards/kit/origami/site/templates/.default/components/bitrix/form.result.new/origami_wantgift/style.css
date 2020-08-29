@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-.sotbit_want_gift_wrapper .sotbit_order_phone__block .feedback_block__captcha_img {
+.kit_want_gift_wrapper .kit_order_phone__block .feedback_block__captcha_img {
     height: 50px;
 }
 
@@ -27,7 +27,7 @@
     z-index: 1;
 }
 
-.sotbit_order_phone__title_narrowly {
+.kit_order_phone__title_narrowly {
     display: none;
 }
 
@@ -35,13 +35,13 @@
     margin: 30px;
 }
 
-.sotbit_want_gift_wrapper {
+.kit_want_gift_wrapper {
     display: flex;
     max-width: 828px;
     background: #F7F7F7;
 }
 
-.sotbit_want_gift_image {
+.kit_want_gift_image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,7 @@
     flex-shrink: 0;
 }
 
-.want_gift-resizeable_content .sotbit_want_gift_image img {
+.want_gift-resizeable_content .kit_want_gift_image img {
     max-width: 80%;
     max-height: 345px;
 }
@@ -68,7 +68,7 @@
     margin-right: 20px;
 }
 
-.sotbit_want_gift_name {
+.kit_want_gift_name {
     margin: 20px 0 10px;
     padding: 0 30px;
     text-align: center;
@@ -77,26 +77,26 @@
     color: #000000;
 }
 
-.sotbit_want_gift_wrapper .sotbit_order_phone__title {
+.kit_want_gift_wrapper .kit_order_phone__title {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     padding: 16px 45px 17px 30px;
 }
 
-.sotbit_want_gift_price {
+.kit_want_gift_price {
     font-size: 15px;
     font-weight: bold;
     color: var(--main-color);
 }
 
-.sotbit_want_gift_oldprice {
+.kit_want_gift_oldprice {
     font-size: 12px;
     color: #979797;
     text-decoration: line-through;
 }
 
-.sotbit_order_phone__title_wide {
+.kit_order_phone__title_wide {
     display: block;
     position: relative;
     z-index: 2;
@@ -115,7 +115,7 @@ p > .errortext {
     min-height: 20px;
 }
 
-.sotbit_order_phone .confidential-field a {
+.kit_order_phone .confidential-field a {
     color: var(--main-color);
 }
 
@@ -128,13 +128,13 @@ p > .errortext {
     background-color: #ffffff;
 }
 
-.sotbit_want_gift_wrapper .popup-window-message-content {
+.kit_want_gift_wrapper .popup-window-message-content {
     display: flex;
     max-width: 429px;
     padding: 30px 30px 32px 30px;
 }
 
-.sotbit_want_gift_wrapper .popup-error-message p {
+.kit_want_gift_wrapper .popup-error-message p {
     padding: 0;
     margin: 20px 30px 0 30px;
     color: red;
@@ -148,12 +148,12 @@ p > .errortext {
     display: flex;
 }
 
-.want_gift-resizeable_content_wide .sotbit_order_success_show {
+.want_gift-resizeable_content_wide .kit_order_success_show {
     max-width: 429px;
 }
 
 
-.sotbit_order_phone input[name="captcha_word"]:not(.main-input-md) {
+.kit_order_phone input[name="captcha_word"]:not(.main-input-md) {
     padding: 5px;
     border: 1px solid #ededed;
     height: 40px;
@@ -162,7 +162,7 @@ p > .errortext {
     margin-right: 20px;
 }
 
-.sotbit_want_gift_wrapper .feedback_block__captcha {
+.kit_want_gift_wrapper .feedback_block__captcha {
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -207,29 +207,29 @@ p > .errortext {
     margin-bottom: 5px;
 }
 
-.sotbit_order_phone .sotbit_order_phone__block {
+.kit_order_phone .kit_order_phone__block {
     margin: 22px 30px 20px 30px;
 }
 
-.sotbit_order_phone .sotbit_order_phone__block input:not(.main-input-md),
-.sotbit_order_phone .sotbit_order_phone__block textarea:not(.main-textarea-md) {
+.kit_order_phone .kit_order_phone__block input:not(.main-input-md),
+.kit_order_phone .kit_order_phone__block textarea:not(.main-textarea-md) {
     border: 1px solid #ededed;
     width: 100%;
     padding: 5px;
 }
 
-.sotbit_order_phone .sotbit_order_phone__block input:not(.main-input-md) {
+.kit_order_phone .kit_order_phone__block input:not(.main-input-md) {
     height: 40px;
 }
 
-.sotbit_order_phone .sotbit_order_phone__block textarea:not(.main-textarea-md) {
+.kit_order_phone .kit_order_phone__block textarea:not(.main-textarea-md) {
     height: 120px;
     margin-bottom: 10px;
     min-height: 40px;
     max-height: 400px;
 }
 
-.sotbit_order_phone .sotbit_order_phone__block_title {
+.kit_order_phone .kit_order_phone__block_title {
     font-size: 13px;
     color: #000000;
     margin-bottom: 0;
@@ -237,7 +237,7 @@ p > .errortext {
     font-weight: normal;
 }
 
-.sotbit_order_phone .sotbit_order_phone__title {
+.kit_order_phone .kit_order_phone__title {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
@@ -248,16 +248,16 @@ p > .errortext {
     z-index: 2;
 }
 
-.sotbit_want_gift_wrapper input[type="submit"],
-.sotbit_want_gift_wrapper input[type="button"] {
+.kit_want_gift_wrapper input[type="submit"],
+.kit_want_gift_wrapper input[type="button"] {
     width: 100%;
 }
 
-.sotbit_order_phone .feedback_block__compliance {
+.kit_order_phone .feedback_block__compliance {
     padding-left: 0;
 }
 
-.sotbit_order_phone .feedback_block__compliance .cntr {
+.kit_order_phone .feedback_block__compliance .cntr {
     justify-content: flex-start;
     margin: 0 30px;
 }
@@ -267,32 +267,32 @@ p > .errortext {
 }
 
 @media screen and (max-width: 871px) {
-    .sotbit_want_gift_wrapper {
+    .kit_want_gift_wrapper {
         width: 100%;
     }
 
-    .sotbit_want_gift_image {
+    .kit_want_gift_image {
         padding: 10px;
         width: 45%;
     }
 
-    .sotbit_want_gift_wrapper .feedback_block__captcha {
+    .kit_want_gift_wrapper .feedback_block__captcha {
         display: flex;
         flex-direction: column;
     }
 
-    .sotbit_want_gift_wrapper .sotbit_order_phone input[name="captcha_word"] {
+    .kit_want_gift_wrapper .kit_order_phone input[name="captcha_word"] {
         height: 50px;
         width: 100%;
         float: none;
         margin-right: 0;
     }
 
-    .sotbit_want_gift_wrapper .feedback_block__captcha .feedback_block__captcha {
+    .kit_want_gift_wrapper .feedback_block__captcha .feedback_block__captcha {
         width: 100%;
     }
 
-    .sotbit_want_gift_wrapper .feedback_block__captcha .feedback_block__captcha_input {
+    .kit_want_gift_wrapper .feedback_block__captcha .feedback_block__captcha_input {
         order: 1;
         margin-top: 12px;
     }
@@ -303,7 +303,7 @@ p > .errortext {
 }
 
 @media (max-width: 768px) {
-    .sotbit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
+    .kit_order_phone .feedback_block__compliance_link.fonts__middle_comment {
         padding-left: 0.3rem;
     }
 
@@ -311,16 +311,16 @@ p > .errortext {
         flex-direction: column;
     }
 
-    .sotbit_want_gift_wrapper {
+    .kit_want_gift_wrapper {
         width: 100%;
         flex-direction: column;
     }
 
-    .sotbit_want_gift_wrapper .sotbit_order_phone__title {
+    .kit_want_gift_wrapper .kit_order_phone__title {
         width: 100%;
     }
 
-    .sotbit_want_gift_image {
+    .kit_want_gift_image {
         padding: 10px 20px;
         width: 100%;
     }
@@ -330,21 +330,21 @@ p > .errortext {
         padding: 0;
     }
 
-    .sotbit_order_phone {
+    .kit_order_phone {
         max-width: 100%;
         width: 100%;
         margin: 0;
     }
 
-    .sotbit_order_phone .sotbit_order_phone__title {
+    .kit_order_phone .kit_order_phone__title {
         font-size: 20px;
     }
 
-    .sotbit_order_phone__title_wide {
+    .kit_order_phone__title_wide {
         display: none;
     }
 
-    .sotbit_order_phone__title_narrowly {
+    .kit_order_phone__title_narrowly {
         display: block;
         width: 100%;
         position: relative;
@@ -355,23 +355,23 @@ p > .errortext {
 }
 
 @media (max-width: 576px) {
-    .sotbit_order_phone .sotbit_order_phone__block_title {
+    .kit_order_phone .kit_order_phone__block_title {
         padding-bottom: 12px;
     }
 
-    .sotbit_order_phone .feedback_block__compliance {
+    .kit_order_phone .feedback_block__compliance {
         margin-top: 21px;
     }
 
-    .sotbit_order_phone .feedback_block__compliance .cntr {
+    .kit_order_phone .feedback_block__compliance .cntr {
         align-items: flex-start;
     }
 
-    .sotbit_order_phone input[type="button"] {
+    .kit_order_phone input[type="button"] {
         width: 100%;
     }
 
-    .sotbit_order_phone .sotbit_order_phone__block {
+    .kit_order_phone .kit_order_phone__block {
         margin-bottom: 15px;
     }
 }

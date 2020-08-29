@@ -1,7 +1,7 @@
 <?
 if( !defined( "B_PROLOG_INCLUDED" ) || B_PROLOG_INCLUDED !== true )
     die();
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 use Bitrix\Main\Config\Option;
 use Bitrix\Main\Localization\Loc;
@@ -11,7 +11,7 @@ Loc::loadMessages(__FILE__);
 CModule::includeModule('iblock');
 CModule::includeModule('catalog');
 
-$module = 'sotbit.crosssell';
+$module = 'kit.crosssell';
 CModule::includeModule($module);
 
 use Sotbit\Crosssell\Orm\CrosssellCategoryTable;

@@ -83,7 +83,7 @@ $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
                                     <span class="item-container__content-info-date border-between">
                                          <svg class="item-container__content-info-icon" width="11" height="11">
                                             <use
-                                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                                         </svg>
                                         <span><?=$arItem['DISPLAY_ACTIVE_FROM']?></span>
                                     </span>

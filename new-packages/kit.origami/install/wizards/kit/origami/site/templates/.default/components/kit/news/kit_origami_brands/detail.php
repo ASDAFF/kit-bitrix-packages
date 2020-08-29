@@ -11,7 +11,7 @@ use Bitrix\Main\Page\Asset;
 CJSCore::Init(array('currency'));
 $this->setFrameMode(true);
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/sotbit/news/sotbit_origami_brands/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/kit/news/kit_origami_brands/style.css");
 
 global $brandFilter;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
@@ -48,7 +48,7 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
 
     $cache = \Bitrix\Main\Data\Cache::createInstance();
 
-    if ($cache->initCache(36000000, $cacheId, '/sotbit.origami')) {
+    if ($cache->initCache(36000000, $cacheId, '/kit.origami')) {
         $arData = $cache->getVars();
     } elseif ($cache->startDataCache()) {
 
@@ -116,7 +116,7 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
         }
         if($arParams['FILTER_VIEW_MODE'] == "VERTICAL")
             $APPLICATION->IncludeComponent(
-                "sotbit:catalog.smart.filter",
+                "kit:catalog.smart.filter",
                 "origami_vertical",
                 [
                     "IBLOCK_TYPE"         => Config::get("IBLOCK_TYPE"),
@@ -148,9 +148,9 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
                 ['HIDE_ICONS' => 'Y']
             );
 
-        if (\Bitrix\Main\Loader::includeModule('sotbit.seometa')) {
+        if (\Bitrix\Main\Loader::includeModule('kit.seometa')) {
             $APPLICATION->IncludeComponent(
-                'sotbit:seo.meta',
+                'kit:seo.meta',
                 'origami_default',
                 [
                     'FILTER_NAME' => "brandFilter",
@@ -249,7 +249,7 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
 
             if($arParams['FILTER_VIEW_MODE'] == "HORIZONTAL")
                 $APPLICATION->IncludeComponent(
-                    "sotbit:catalog.smart.filter",
+                    "kit:catalog.smart.filter",
                     "origami_horizontal",
                     [
                         "IBLOCK_TYPE"         => Config::get("IBLOCK_TYPE"),
@@ -286,7 +286,7 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
 			<div class="panel_filter_sort">
 				<div class="mobile_filter_btn">
                  <svg class="icon-filter-mobile" width="12" height="12">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
                  </svg>
                 <span><?=Loc::getMessage("MOBILE_FILTER_TITLE")?></span>
                 <span class="mobile_filter-selected_number"></span>
@@ -307,9 +307,9 @@ if(isset($arResult['VARIABLES']['ELEMENT_CODE']) && $arResult['VARIABLES']['ELEM
                 </script>
 
 				<?
-                if(Loader::includeModule('sotbit.origami')){
+                if(Loader::includeModule('kit.origami')){
                     $sort = array();
-                    $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/sotbit_origami/sort/sort.php", Array(), Array());
+                    $sort = $APPLICATION->IncludeFile( SITE_DIR . "include/kit_origami/sort/sort.php", Array(), Array());
                 }
                 //include \Sotbit\Origami\Helper\Config::getChunkPath('sort');?>
 			</div>

@@ -7,7 +7,7 @@ use Bitrix\Main\Loader;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_contacts_callback_manager/script.js");
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_contacts_callback_manager/style.css");
@@ -20,10 +20,10 @@ if ($typeMask == 'Y')
 CUtil::InitJSCore(array('ajax', 'popup'));
 ?>
 
-<div class="sotbit_order_phone_wrapper contacts-page-callback-popup">
-    <div class="sotbit_order_phone">
+<div class="kit_order_phone_wrapper contacts-page-callback-popup">
+    <div class="kit_order_phone">
         <? if ($arResult["isFormTitle"]) { ?>
-            <div class="sotbit_order_phone__title"><?= GetMessage('FORM_TITLE') ?></div>
+            <div class="kit_order_phone__title"><?= GetMessage('FORM_TITLE') ?></div>
         <? } ?>
 
         <div class="popup_resizeable_content">
@@ -34,14 +34,14 @@ CUtil::InitJSCore(array('ajax', 'popup'));
                 </div>
             <? endif; ?>
 
-            <div class="sotbit_order_success_show">
+            <div class="kit_order_success_show">
 
                 <? if ($arResult["FORM_NOTE"]) : ?>
                     <div class="popup-window-message-content">
 
                         <svg class="popup-window-icon-check">
                             <use
-                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                         </svg>
 
                         <div>
@@ -58,7 +58,7 @@ CUtil::InitJSCore(array('ajax', 'popup'));
             <?
             foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion) {
                 ?>
-                <div class="sotbit_order_phone__block">
+                <div class="kit_order_phone__block">
 
                     <? if ($arQuestion['STRUCTURE'][0]['FIELD_TYPE'] == 'tel'): ?>
                     <div class="phone_input">
@@ -133,7 +133,7 @@ CUtil::InitJSCore(array('ajax', 'popup'));
 
             if ($arResult["isUseCaptcha"] == "Y") {
                 ?>
-                <div class="sotbit_order_phone__block">
+                <div class="kit_order_phone__block">
                     <div class="feedback_block__captcha">
                         <div class="feedback_block__captcha_input main-input-md__wrapper">
                             <input type="text" class="main-input-md" name="captcha_word"
@@ -152,7 +152,7 @@ CUtil::InitJSCore(array('ajax', 'popup'));
                             <div class="captcha-refresh" onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                 <svg class="icon_refresh" width="16" height="14">
                                     <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                 </svg>
                             </div>
                         </div>
@@ -219,7 +219,7 @@ CUtil::InitJSCore(array('ajax', 'popup'));
         let maska = "<?=Config::get('MASK')?>";
         maska = $.trim(maska);
         if (maska !== "")
-            $(".sotbit_order_phone form input.phone-callback--form").mask(maska, {placeholder: "_"});
+            $(".kit_order_phone form input.phone-callback--form").mask(maska, {placeholder: "_"});
     });
 
     <?endif;?>

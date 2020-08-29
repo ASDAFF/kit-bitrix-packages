@@ -266,7 +266,7 @@ $(document).ready(function () {
                 submenuItemMore.classList.add('header-two__nav-submenu--right');
                 itemMore.innerHTML =
                     '<svg class="site-navigation__item-icon-more" width="24" height="18">' +
-                    '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_more"></use>' +
+                    '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_more"></use>' +
                     '</svg>';
                 itemMore.appendChild(submenuItemMore);
                 document.querySelector('.header-two__main-navigation').appendChild(itemMore);

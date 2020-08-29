@@ -4,7 +4,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 use Bitrix\Main\Loader;
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 
 $tmp = array();
 $tmpD = array();

@@ -82,7 +82,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 			this.siteId = parameters.siteID || '';
 			this.ajaxUrl = parameters.ajaxUrl || '';
 			this.templateFolder = parameters.templateFolder || '';
-			this.defaultBasketItemLogo = '/upload/sotbit.origami/no_photo_small.svg';
+			this.defaultBasketItemLogo = '/upload/kit.origami/no_photo_small.svg';
 			this.defaultStoreLogo = this.templateFolder + "/images/pickup_logo.png";
 			this.defaultDeliveryLogo = this.templateFolder + "/images/delivery_logo.png";
 			this.defaultPaySystemLogo = this.templateFolder + "/images/pay_system_logo.png";

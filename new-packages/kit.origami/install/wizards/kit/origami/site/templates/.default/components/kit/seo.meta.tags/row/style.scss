@@ -25,13 +25,13 @@
     white-space: nowrap;
 }
 
-.sotbit-seometa-tags-row-container {
+.kit-seometa-tags-row-container {
     display: flex;
     flex-direction: column;
 
-    .sotbit-seometa-tags-container {
+    .kit-seometa-tags-container {
 
-        .sotbit-seometa-tags__title {
+        .kit-seometa-tags__title {
             width: 100%;
             font-weight: 600;
             font-size: 13px;
@@ -54,12 +54,12 @@
                 margin-bottom: 0;
             }
 
-            .sotbit-seometa-tags-wrapper {
+            .kit-seometa-tags-wrapper {
                 max-width: 100%;
 
-                .sotbit-seometa-tag {
+                .kit-seometa-tag {
 
-                    .sotbit-seometa-tag-link {
+                    .kit-seometa-tag-link {
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -71,7 +71,7 @@
         }
     }
 
-    .sotbit-seometa-tags__hide {
+    .kit-seometa-tags__hide {
         display: inline-block;
 
         .seometa-tags__hide, .seometa-tags__show {
@@ -121,7 +121,7 @@
             height: 88px;
         }
 
-        .sotbit-seometa-tags__hide {
+        .kit-seometa-tags__hide {
 
             .seometa-tags__hide {
                 display: none;
@@ -135,7 +135,7 @@
 
     &.opened {
 
-        .sotbit-seometa-tags__hide {
+        .kit-seometa-tags__hide {
 
             .seometa-tags__hide {
                 display: flex;
@@ -154,16 +154,16 @@
 
 
 @media screen and (max-width: 480px) {
-    .sotbit-seometa-tags-row-container .sotbit-seometa-tags__hide .seometa-tags__hide:hover,
-    .sotbit-seometa-tags-row-container .sotbit-seometa-tags__hide .seometa-tags__show:hover {
+    .kit-seometa-tags-row-container .kit-seometa-tags__hide .seometa-tags__hide:hover,
+    .kit-seometa-tags-row-container .kit-seometa-tags__hide .seometa-tags__show:hover {
         border: none !important;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .sotbit-seometa-tags-row-container {
+    .kit-seometa-tags-row-container {
 
-        .sotbit-seometa-tags__hide {
+        .kit-seometa-tags__hide {
 
             .seometa-tags__hide, .seometa-tags__show {
                 width: 100%;

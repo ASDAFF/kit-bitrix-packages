@@ -28,7 +28,7 @@ if($mobileFilter) {
                     <?= GetMessage('CT_BCSF_FILTER') ?>
                         </span>
                     <svg class="mobile_filter-icon_cancel_small" width="12px" height="12px">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_small"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_small"></use>
                     </svg>
                     <span class="block_main_left_menu__title-toggle" onclick="collapseFilter()"></span>
                 </div>
@@ -75,7 +75,7 @@ if($mobileFilter) {
                                     <span class="item_name"><?=$arItem["NAME"]?></span>
                                     <span class="number_selected_items"></span>
                                     <svg class="horizontal_filter-icon_cancel" width="8px" height="8px">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                                     </svg>
                                     <span class="selected_items"></span>
                                 </span>
@@ -203,7 +203,7 @@ if($mobileFilter) {
                                 <span class="item_name"><?= $arItem["NAME"] ?></span>
                                  <span class="number_selected_items"></span>
                                             <svg class="horizontal_filter-icon_cancel" width="8px" height="8px">
-                                                                         <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
+                                                                         <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>
                                                                      </svg>
                                 <span class="selected_items"></span>
                             </span>
@@ -800,7 +800,7 @@ if($mobileFilter) {
                     <div class="popup_result__close"></div>
                     <div class="popup_result_info">
                         <svg class="product-card_icon-check" width="11px" height="12px">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                         </svg>
                         <?= GetMessage("CT_BCSF_FILTER_COUNT", array("#ELEMENT_COUNT#" => '<span id="modef_num">' . intval($arResult["ELEMENT_COUNT"]) . '</span>')); ?>
                         <span class="arrow"></span>
@@ -821,7 +821,7 @@ if($mobileFilter) {
         ?>
         <div class="bx_filter__close-btn">
             <svg class="bx_filter__close-btn-icon" width="16" height="16">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
             </svg>
         </div>
         <?

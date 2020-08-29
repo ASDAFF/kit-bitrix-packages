@@ -26,19 +26,19 @@ if ($_SERVER['REQUEST_URI'] == \Sotbit\Origami\Helper\Config::get('ORDER_PAGE'))
     <div class="side-panel__nav">
         <a href="<?=($arParams['PATH_TO_BASKET']) ? $arParams['PATH_TO_BASKET'] : '#';?>" class="side-panel-main__nav-item side-panel-main__nav-item--cart">
             <svg width="21" height="21">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
             </svg>
             <span class="side-panel-main__nav-count"><?=($arResult['NUM_PRODUCTS']) ? $arResult['NUM_PRODUCTS'] : 0;?></span>
         </a>
         <a href="#" class="side-panel-main__nav-item side-panel-main__nav-item--delay">
             <svg width="21" height="21">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
             </svg>
             <span class="side-panel-main__nav-count"><?=($arResult['NUM_PRODUCTS_DELAY']) ? $arResult['NUM_PRODUCTS_DELAY'] : 0;?></span>
         </a>
         <a href="<?=\Sotbit\Origami\Helper\Config::get('COMPARE_PAGE')?>" <?if($arResult['NUM_PRODUCTS_COMPARE'] == 0): ?> onclick="return false;" <?endif;?> class="side-panel-main__nav-item side-panel-main__nav-item--compare">
             <svg width="21" height="21">
-                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
             </svg>
             <span class="side-panel-main__nav-count"><?=($arResult['NUM_PRODUCTS_COMPARE']) ? $arResult['NUM_PRODUCTS_COMPARE'] : 0;?></span>
         </a>
@@ -46,13 +46,13 @@ if ($_SERVER['REQUEST_URI'] == \Sotbit\Origami\Helper\Config::get('ORDER_PAGE'))
             <a href="/personal/" class="side-panel-main__nav-item side-panel-main__nav-item--login" id="right_auth"
                onclick="rightPanel.auth.showAuth('/auth/')" rel="nofollow">
                 <svg width="18" height="20">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_login"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_login"></use>
                 </svg>
             </a>
         <?else:?>
             <a href="/personal/" class="side-panel-main__nav-item side-panel-main__nav-item--auth" id="right_auth">
                 <svg width="18" height="20">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_authorized_medium"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_authorized_medium"></use>
                 </svg>
             </a>
         <?endif;?>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_URI'] == \Sotbit\Origami\Helper\Config::get('ORDER_PAGE'))
                     <?
                     $APPLICATION->IncludeComponent(
                         'bitrix:sale.order.ajax',
-                        'sotbit_order_right_panel',
+                        'kit_order_right_panel',
                         array(
                             'DISABLE_BASKET_REDIRECT' => 'Y'
                         )

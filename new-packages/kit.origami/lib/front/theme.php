@@ -4,8 +4,8 @@ namespace Sotbit\Origami\Front;
 
 class Theme
 {
-    const DEFAULT_THEME = '/local/templates/sotbit_origami/assets/css';
-    const CUSTOM_THEME  = '/local/templates/sotbit_origami/theme/custom';
+    const DEFAULT_THEME = '/local/templates/kit_origami/assets/css';
+    const CUSTOM_THEME  = '/local/templates/kit_origami/theme/custom';
 
     /**
      * @var User

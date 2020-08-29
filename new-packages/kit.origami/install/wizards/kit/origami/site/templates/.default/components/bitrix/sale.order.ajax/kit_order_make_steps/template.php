@@ -50,7 +50,7 @@ $arParams['MESS_ECONOMY'] = Loc::getMessage("SOA_SUM_DISCOUNT");
 $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
 ?>
 
-<div id="sotbit_soa">
+<div id="kit_soa">
 
     <div id="order_form_div">
 
@@ -217,8 +217,8 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                     orderBlockId: 'coupon_block',
                                     basketBlockId: 'coupon_block',
                                     basketRowsId: 'basket_rows',
-                                    sotbitSoaBlockId: 'sotbit_soa',
-                                    totalBlockId: 'sotbit_soa_total'
+                                    kitSoaBlockId: 'kit_soa',
+                                    totalBlockId: 'kit_soa_total'
                                 });
 
                                 <?if(CSaleLocation::isLocationProEnabled()):?>
@@ -367,7 +367,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                                     <div id="coupon_block" class="content_promocod_block_form" style="padding-top: 0;">
                                                         <div class="bx-soa-section-content"></div>
                                                     </div>
-                                                    <div id="sotbit_soa_total" style="display: none;"></div>
+                                                    <div id="kit_soa_total" style="display: none;"></div>
                                                 </div>
 
                                                 <div class="cntr" style="width: 100%; margin-bottom: 1rem;">
@@ -376,7 +376,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                                     {
                                                         $APPLICATION->IncludeComponent(
                                                             "bitrix:main.userconsent.request",
-                                                            "sotbit_userconsent_request",
+                                                            "kit_userconsent_request",
                                                             array(
                                                                 'ID' => $arParams['USER_CONSENT_ID'],
                                                                 'IS_CHECKED' => $arParams['USER_CONSENT_IS_CHECKED'],
@@ -392,7 +392,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                                     ?>
                                                 </div>
 
-                                                <div id="sotbit-bx-soa-orderSave" class="content_promocod_block_order">
+                                                <div id="kit-bx-soa-orderSave" class="content_promocod_block_order">
                                                     <input type="submit" onclick="submitForm('Y'); return false;" id="ORDER_CONFIRM_BUTTON" class="main_btn sweep-to-right" value="<?=Loc::getMessage("SOA_TEMPL_BUTTON")?>">
                                                 </div>
 
@@ -425,7 +425,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                         <b><?=$quantity?></b> <?=$quantityLabel?> <?=Loc::getMessage("SOA_TEMPL_SUM_SUMMARY")?>
                                     </span>
                                     <span class="main_order_block_feedback__price_title" style="text-align: right;">
-                                        <b class="sotbit_soa_order_price"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
+                                        <b class="kit_soa_order_price"><?=$arResult["ORDER_PRICE_FORMATED"]?></b>
                                     </span>
                                 </div>
                                 <?
@@ -441,12 +441,12 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                 if(doubleval($arResult["DISCOUNT_PRICE"]) > 0)
                                 {
                                     ?>
-                                    <div class="sotbit_soa_discount_total_block main_order_block_feedback__price_item fonts__small_text">
+                                    <div class="kit_soa_discount_total_block main_order_block_feedback__price_item fonts__small_text">
                                         <span class="main_order_block_feedback__price_title">
                                             <?=Loc::getMessage("SOA_TEMPL_SUM_DISCOUNT")?><?if(strLen($arResult["DISCOUNT_PERCENT_FORMATED"])>0):?> (<?echo $arResult["DISCOUNT_PERCENT_FORMATED"];?>)<?endif;?>
                                         </span>
                                         <span class="main_order_block_feedback__price_title main_order_price_title_sale">
-                                            <b class="sotbit_soa_discount_value"><?=$arResult["DISCOUNT_PRICE_FORMATED"]?></b>
+                                            <b class="kit_soa_discount_value"><?=$arResult["DISCOUNT_PRICE_FORMATED"]?></b>
                                         </span>
                                     </div>
                                     <?
@@ -494,7 +494,7 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
                                     ?>
                                     <div class="main_order_block_feedback__price_item fonts__main_text all_price">
                                         <span class="main_order_block_feedback__price_title"><?=Loc::getMessage("SOA_TEMPL_SUM_IT")?></span>
-                                        <span class="main_order_block_feedback__price_title"><span class="sotbit_soa_order_total_price"><?=$arResult["ORDER_TOTAL_PRICE_FORMATED"]?></span></span>
+                                        <span class="main_order_block_feedback__price_title"><span class="kit_soa_order_total_price"><?=$arResult["ORDER_TOTAL_PRICE_FORMATED"]?></span></span>
                                     </div>
                                     <?
                                 }
@@ -583,8 +583,8 @@ $arParams['MESS_PRICE_FREE'] = Loc::getMessage("PRICE_FREE_DEFAULT");
         orderBlockId: 'coupon_block',
         basketBlockId: 'coupon_block',
         basketRowsId: 'basket_rows',
-        sotbitSoaBlockId: 'sotbit_soa',
-        totalBlockId: 'sotbit_soa_total'
+        kitSoaBlockId: 'kit_soa',
+        totalBlockId: 'kit_soa_total'
     });
 
     function verticalTabs(number) {

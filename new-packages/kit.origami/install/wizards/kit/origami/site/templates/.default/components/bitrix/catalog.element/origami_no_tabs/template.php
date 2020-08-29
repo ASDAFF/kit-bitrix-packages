@@ -331,7 +331,7 @@ $blockID = randString(8);
                                     <?if($arResult["SHOW_DELAY"] && Config::get('SKU_TYPE_' . $template) != "LIST_OF_MODIFICATIONS"):?>
                                         <span class="product_card__block_icon-heart" data-entity="wish" id="<?= $itemIds['WISH_LINK'] ?>"  <?if($haveOffers && $arResult['CAN_BUY']):?>style="display: none;"<?endif;?>>
                                     <svg width="16" height="16">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                                     </svg>
                                 </span>
                                 <?endif;?>
@@ -343,7 +343,7 @@ $blockID = randString(8);
                                     <div class="" id="<?= $itemIds['COMPARE_LINK'] ?>">
 										<span class="product_card__block_icon-bar" data-entity="compare-checkbox">
                                             <svg width="16" height="16">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                                             </svg>
                                         </span>
                                     </div>
@@ -356,7 +356,7 @@ $blockID = randString(8);
                                 ?>
                                 <div class="product-tem-zoom" data-entity="zoom-container">
                                     <svg class="product-card_icon-zoom-big" width="28px" height="28px">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_zoom_big"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_zoom_big"></use>
                                     </svg>
                                 </div>
                             <?
@@ -529,7 +529,7 @@ $blockID = randString(8);
                         <div class="product-detail__nav-link product-detail__nav-link--prev">
                             <a href="<?=$arResult['PREV_ITEM']['DETAIL_PAGE_URL']?>">
                                 <svg class="product-detail__nav-link-icon" width="8" height="8">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_left_small"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_left_small"></use>
                                 </svg>
                                 <?=Loc::getMessage('DETAIL_PREV_ITEM');?>
                             </a>
@@ -537,7 +537,7 @@ $blockID = randString(8);
                         <div class="product-detail__nav-link product-detail__nav-link--next">
                             <a href="<?=$arResult['NEXT_ITEM']['DETAIL_PAGE_URL']?>" ><?=Loc::getMessage('DETAIL_NEXT_ITEM');?>
                                 <svg class="product-detail__nav-link-icon" width="8" height="8">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_small"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_small"></use>
                                 </svg>
                             </a>
                         </div>
@@ -616,7 +616,7 @@ $blockID = randString(8);
                                                         ?>
                                                         <span class="product_card__block__presence_product_value_many">
                                                            <svg class="product-card_icon-check" width="11px" height="12px">
-                                                               <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                               <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                            </svg>
                                                             <?=$arParams['~MESS_RELATIVE_QUANTITY_MANY'];?>
                                                         </span>
@@ -625,7 +625,7 @@ $blockID = randString(8);
                                                         ?>
                                                         <span class="product_card__block__presence_product_value_sufficient">
                                                            <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                   <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                   <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                            </svg>
                                                             <?=$arParams['~MESS_RELATIVE_QUANTITY_FEW'];?>
                                                         </span>
@@ -644,7 +644,7 @@ $blockID = randString(8);
                                                         ?>
                                                         <span class="product_card__block__presence_product_value_many">
                                                            <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                   <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                   <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                            </svg>
                                                             <?echo $actualItem['CATALOG_QUANTITY'].' '.$actualItem['ITEM_MEASURE']['TITLE']; ?>
                                                         </span>
@@ -681,7 +681,7 @@ $blockID = randString(8);
                                                             ?>
                                                             <span class="product_card__block__presence_product_value_many">
                                                                 <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                 </svg>
                                                                 <?= $arParams['~MESS_RELATIVE_QUANTITY_MANY']; ?>
                                                             </span>
@@ -690,7 +690,7 @@ $blockID = randString(8);
                                                             ?>
                                                             <span class="product_card__block__presence_product_value_sufficient">
                                                                 <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                 </svg>
                                                                 <?= $arParams['~MESS_RELATIVE_QUANTITY_FEW']; ?>
                                                             </span>
@@ -710,7 +710,7 @@ $blockID = randString(8);
                                                             ?>
                                                             <span class="product_card__block__presence_product_value_many">
                                                                 <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                 </svg>
                                                                 <?echo $actualItem['CATALOG_QUANTITY'].' '.$actualItem['ITEM_MEASURE']['TITLE']; ?>
                                                             </span>
@@ -806,7 +806,7 @@ $blockID = randString(8);
                                     <div class="product_detail_info_block_cheaper" onclick="foundCheaper('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $arResult['NAME'] ?>', this)">
                                         <span class="far fa-money-bill-alt">
                                             <svg class="product_detail_info_block_cheaper-icon" width="14" height="11">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cheaper"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cheaper"></use>
                                             </svg>
                                         </span>
                                         <span class="fonts__small_comment product_detail_info_block_cheaper__title"><?= Loc::getMessage('DETAIL_FOUND_CHEAPER') ?></span>
@@ -822,7 +822,7 @@ $blockID = randString(8);
                                 <?endforeach;?>
                                 <a href="#element_prices" class="product-detail-price-and-cheaper-list__price-other"><?=Loc::getMessage('DETAIL_PRICE_ALL');?>
                                     <svg class="product-detail-price-and-cheaper-list__price-other-icon" width="8" height="7">
-                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -832,7 +832,7 @@ $blockID = randString(8);
                                     <div class="product_detail_info_block_cheaper" onclick="foundCheaper('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $arResult['NAME'] ?>', this)">
                                         <span class="far fa-money-bill-alt">
                                              <svg class="product_detail_info_block_cheaper-icon" width="14" height="11">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cheaper"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cheaper"></use>
                                             </svg>
                                         </span>
                                         <span class="fonts__small_comment product_detail_info_block_cheaper__title"><?= Loc::getMessage('DETAIL_FOUND_CHEAPER') ?></span>
@@ -848,7 +848,7 @@ $blockID = randString(8);
                                     <div class="product_detail_info_block_gift" onclick="wantGift('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $currentUrl ?>', '<?= $arResult['DETAIL_PICTURE']['SRC'] ?>', this)">
 			                            <span>
                                             <svg class="product_detail_info_block_gift-icon" width="13" height="13">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_gift"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_gift"></use>
                                             </svg>
 			                            </span>
                                         <span class="fonts__small_comment product_detail_info_block_gift__title"><?= Loc::getMessage('DETAIL_WANT_GIFT') ?></span>
@@ -1273,7 +1273,7 @@ $blockID = randString(8);
                                             href="javascript:void(0);">
                                                 <!-- <span class="icon-bbasket"></span> <?= Loc::getMessage('CT_BCE_CATALOG_ADD') ?> -->
                                                 <svg width="24" height="24">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
                                                 </svg><?= Loc::getMessage('CT_BCE_CATALOG_ADD') ?>
                                             </a>
                                             <?
@@ -1290,12 +1290,12 @@ $blockID = randString(8);
                                         }
                                         ?>
                                     </div>
-                                    <? if (Config::get('SHOW_BUY_OC_' . $template) == 'Y' && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')): ?>
+                                    <? if (Config::get('SHOW_BUY_OC_' . $template) == 'Y' && \Bitrix\Main\Loader::includeModule('kit.orderphone')): ?>
                                         <div class="product-detail-info-block-one-click-basket"
                                             id="modal_oc">
                                             <span class="one_click_btn fonts__middle_text"><?= Loc::getMessage('DETAIL_BUY_OC') ?></span>
                                             <svg class="product-detail-info-block-one-click__icon" width="20" height="20">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_one_click"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_one_click"></use>
                                             </svg>
                                         </div>
                                     <? endif; ?>
@@ -1321,7 +1321,7 @@ $blockID = randString(8);
                                      onclick="wantGift('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $currentUrl ?>', '<?= $arResult['DETAIL_PICTURE']['SRC'] ?>',  this)">
                                     <span>
                                          <svg class="product_detail_info_block_gift-icon" width="13" height="13">
-                                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_gift"></use>
+                                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_gift"></use>
                                         </svg>
                                     </span>
                                     <span class="fonts__small_comment product_detail_info_block_gift__title"><?=Loc::getMessage('DETAIL_WANT_GIFT')?></span>
@@ -1342,7 +1342,7 @@ $blockID = randString(8);
                         ?>
                         <div class="product_detail_info__delivery" id="product_detail_info__delivery"><?
                         $APPLICATION->IncludeComponent(
-                            'sotbit:regions.delivery',
+                            'kit:regions.delivery',
                             'origami_mini',
                             [
                                 'ELEMENT_ID' => $actualItem['ID'],
@@ -1353,7 +1353,7 @@ $blockID = randString(8);
                                 'SHOW_DELIVERY_TAB' => $deliveryTab
                             ]
                         );
-                        $this->addExternalJS("/local/templates/.default/components/sotbit/regions.delivery/origami_mini/script.js");
+                        $this->addExternalJS("/local/templates/.default/components/kit/regions.delivery/origami_mini/script.js");
                         ?>
                         </div>
                         <?endif;?>
@@ -1368,7 +1368,7 @@ $blockID = randString(8);
                         [
                             'AREA_FILE_SHOW' => 'file',
                             'PATH' => SITE_DIR
-                                . "include/sotbit_origami/share.php",
+                                . "include/kit_origami/share.php",
                             'AREA_FILE_RECURSIVE' => 'N',
                             'EDIT_MODE' => 'html',
                         ],
@@ -1383,7 +1383,7 @@ $blockID = randString(8);
                         <a href="<?=$arResult['PREV_ITEM']['DETAIL_PAGE_URL']?>" class="product_detail__nav-prev">
                             <div class="product_detail__nav-prev-arrow">
                                 <svg class="product_detail__nav-icon" width="18" height="18">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_left_new"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_left_new"></use>
                                 </svg>
                             </div>
                             <div class="product_detail__nav-content product_detail__nav-content--prev">
@@ -1401,7 +1401,7 @@ $blockID = randString(8);
                         <a href="<?=$arResult['NEXT_ITEM']['DETAIL_PAGE_URL']?>" class="product_detail__nav-next">
                             <div class="product_detail__nav-next-arrow">
                                 <svg class="product_detail__nav-icon" width="18" height="18">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>
                                 </svg>
                             </div>
                             <div class="product_detail__nav-content product_detail__nav-content--next">
@@ -1587,7 +1587,7 @@ $blockID = randString(8);
                                         $startAjax = 'Y';
 
                                     $APPLICATION->IncludeComponent(
-                                        'sotbit:regions.delivery',
+                                        'kit:regions.delivery',
                                         'origami_default',
                                         [
                                             'ELEMENT_ID' => $actualItem['ID'],
@@ -1596,8 +1596,8 @@ $blockID = randString(8);
                                             'START_AJAX' => $startAjax
                                         ]
                                     );
-                                    $this->addExternalCss("/local/templates/.default/components/sotbit/regions.delivery/origami_default/style.css");
-                                    $this->addExternalJS("/local/templates/.default/components/sotbit/regions.delivery/origami_default/script.js");
+                                    $this->addExternalCss("/local/templates/.default/components/kit/regions.delivery/origami_default/style.css");
+                                    $this->addExternalJS("/local/templates/.default/components/kit/regions.delivery/origami_default/script.js");
                                     ?>
                                         <script>
                                             RegionsDelivery.clickTab();
@@ -1804,7 +1804,7 @@ $blockID = randString(8);
                                                         <a class="detailed-tabs__documents-wrapper" download=""
                                                            href="<?= $doc['LINK'] ?>">
                                                             <div class="detailed-tabs__documents-img">
-                                                                <img src="/local/templates/sotbit_origami/assets/img/tabs_detailed/document-default.png"
+                                                                <img src="/local/templates/kit_origami/assets/img/tabs_detailed/document-default.png"
                                                                      alt="" title="">
                                                             </div>
                                                             <div class="detailed-tabs__documents-description">
@@ -1829,7 +1829,7 @@ $blockID = randString(8);
 <!--                    <div class="detailed-feat__item">-->
 <!--                        <div class="detailed-feat__item-title"-->
 <!--                             id="TAB_--><?//= $tab['TYPE'] ?><!--">-->
-<!--                            <p>Статьи о товаре</p>-->
+<!--                            <p>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</p>-->
 <!--                        </div>-->
 <!--                        <div class="detailed-tabs__content detailed-tabs__articles js-tabs-content">-->
 <!--                            <div class="detailed-tabs__articles-slider swiper-container">-->
@@ -1839,27 +1839,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Сравниваем электропилы. Плюсы и минусы различных бензопил.-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями производителя-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="16" height="16">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_blog"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_blog"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Блог</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -1870,27 +1870,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Приобретаем газонокосилки для обустройства приусадебной территории-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="16" height="16">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_vlog"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_vlog"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Влог</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -1901,27 +1901,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Скидка на все товары бренда “Nike”-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅNikeпїЅ-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями производителя-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="16" height="16">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_stock"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_stock"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Акции</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -1932,27 +1932,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Перспективный тупик Apple-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ Apple-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями производителя-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="22" height="22">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_news"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_news"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Новости</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -1963,27 +1963,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Сравниваем электропилы. Плюсы и минусы различных бензопил.-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями производителя-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="16" height="16">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_blog"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_blog"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Блог</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -1994,27 +1994,27 @@ $blockID = randString(8);
 <!--                                            <div class="product-article-item__img-wrapper">-->
 <!--                                                <div class="product-article-item__note">-->
 <!--                                                    <svg class="product-article-item__note-icon" width="11" height="11">-->
-<!--                                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>-->
+<!--                                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>-->
 <!--                                                    </svg>-->
-<!--                                                    2 месяца назад-->
+<!--                                                    2 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </div>-->
 <!--                                                <div class="product-article-item__img">-->
-<!--                                                    <img src="/local/templates/sotbit_origami/assets/img/item/1.png" alt="">-->
+<!--                                                    <img src="/local/templates/kit_origami/assets/img/item/1.png" alt="">-->
 <!--                                                </div>-->
 <!--                                            </div>-->
 <!--                                            <div class="product-article-item__content">-->
 <!--                                                <h3 class="product-article-item__title">-->
-<!--                                                    Сравниваем электропилы. Плюсы и минусы различных бензопил.-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.-->
 <!--                                                </h3>-->
 <!--                                                <p class="product-article-item__description">-->
-<!--                                                    Перед эксплуатацией нового инструмента найдите время ознакомиться с рекомендациями производителя-->
+<!--                                                    пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-->
 <!--                                                </p>-->
 <!--                                                <div class="product-article-item__btn-wrapper">-->
 <!--                                                    <div class="product-article-item__btn">-->
 <!--                                                        <svg class="product-article-item__btn-icon" width="16" height="16">-->
-<!--                                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_blog"></use>-->
+<!--                                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_blog"></use>-->
 <!--                                                        </svg>-->
-<!--                                                        <span class="product-article-item__btn-text">Блог</span>-->
+<!--                                                        <span class="product-article-item__btn-text">пїЅпїЅпїЅпїЅ</span>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -2023,12 +2023,12 @@ $blockID = randString(8);
 <!--                                </div>-->
 <!--                                <div class="detailed-tabs__articles-slider-btn-next">-->
 <!--                                    <svg class="detailed-tabs__articles-slider-btn-icon" width="8" height="12">-->
-<!--                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>-->
+<!--                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>-->
 <!--                                    </svg>-->
 <!--                                </div>-->
 <!--                                <div class="detailed-tabs__articles-slider-btn-prev">-->
 <!--                                    <svg class="detailed-tabs__articles-slider-btn-icon" width="8" height="12">-->
-<!--                                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>-->
+<!--                                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_new"></use>-->
 <!--                                    </svg>-->
 <!--                                </div>-->
 <!--                            </div>-->
@@ -2860,7 +2860,7 @@ if ($arParams['DISPLAY_COMPARE']) {
 if (Config::get('TIMER_PROMOTIONS') == 'Y') {
     if ($dbProductDiscounts) {
         $APPLICATION->IncludeComponent(
-            "sotbit:origami.timer",
+            "kit:origami.timer",
             "origami_default",
             array(
                 "COMPONENT_TEMPLATE" => "origami_default",

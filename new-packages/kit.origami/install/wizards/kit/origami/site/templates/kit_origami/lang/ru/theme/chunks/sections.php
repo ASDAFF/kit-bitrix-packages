@@ -1,4 +1,4 @@
 <?php
-$moduleId = 'sotbit.origami';
+$moduleId = 'kit.origami';
 $MESS[$moduleId.'_SECTIONS_CNT_TITLE'] = 'Разделы товаров';
 ?>

@@ -3,7 +3,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
     die();
 
 use Bitrix\Main\Loader;
-Loader::IncludeModule('sotbit.origami');
+Loader::IncludeModule('kit.origami');
 CModule::IncludeModule("iblock");
 use Sotbit\Origami\Helper\Config;
 
@@ -14,13 +14,13 @@ $user = new CUser;
 $arFields = Array(
     "NAME"              => GetMessage("MANAGER_FIRST_NAME"),
     "LAST_NAME"         => GetMessage("MANAGER_LAST_NAME"),
-    "EMAIL"             => "r_manager_msk@sotbit.ru",
+    "EMAIL"             => "r_manager_msk@kit.ru",
     "LOGIN"             => "Manager_msk",
     "LID"               => "ru",
     "ACTIVE"            => "Y",
     "GROUP_ID"          => array(3,4,7,8),
-    "PASSWORD"          => "sotbit123456",
-    "CONFIRM_PASSWORD"  => "sotbit123456",
+    "PASSWORD"          => "kit123456",
+    "CONFIRM_PASSWORD"  => "kit123456",
     "PERSONAL_PHOTO"    => $arIMAGE,
     "WORK_POSITION"     => GetMessage("MANAGER_WORKPOSITION"),
     "WORK_PROFILE"      => GetMessage("MANAGER_DESCRIPTION"),

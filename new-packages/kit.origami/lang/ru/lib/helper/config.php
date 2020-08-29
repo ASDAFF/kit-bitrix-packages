@@ -1,5 +1,5 @@
 <?php
-$moduleId = 'sotbit.origami';
+$moduleId = 'kit.origami';
 $MESS[$moduleId.'_CAPTCHA_BITRIX'] = 'Стандартная';
 $MESS[$moduleId.'_CAPTCHA_RECAPTCHA'] = 'Recaptcha';
 $MESS[$moduleId.'_CAPTCHA_HIDE'] = 'Скрытая';

@@ -7,7 +7,7 @@ if(!empty($arResult["LINK_PRODUCTS"]))
 else
     $arNewsProductsFilter["=ID"] = 0;
 
-if(Bitrix\Main\Loader::includeModule('sotbit.opengraph')) {
+if(Bitrix\Main\Loader::includeModule('kit.opengraph')) {
     OpengraphMain::setImageMeta('og:image', $arResult['DETAIL_PICTURE']["SRC"]);
     OpengraphMain::setImageMeta('twitter:image', $arResult['DETAIL_PICTURE']["SRC"]);
     OpengraphMain::setMeta('og:type', 'article');

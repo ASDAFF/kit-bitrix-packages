@@ -4,29 +4,29 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 
 use Bitrix\Main\Loader;
 
-Loader::IncludeModule('sotbit.origami');
+Loader::IncludeModule('kit.origami');
 Loader::IncludeModule('fileman');
 
 use \Sotbit\Origami\Config\Option;
-$arIMAGE = CFile::MakeFileArray(WIZARD_SITE_DIR.'include/sotbit_origami/images/footer_bg.png');
+$arIMAGE = CFile::MakeFileArray(WIZARD_SITE_DIR.'include/kit_origami/images/footer_bg.png');
 $arIMAGE["MODULE_ID"] = "main";
 $footerBg = CFile::SaveFile($arIMAGE, 'footer');
 
 
-Option::set('VK','http://vk.com/sotbit',WIZARD_SITE_ID);
-Option::set('INST','https://www.instagram.com/sotbit_insta/',WIZARD_SITE_ID);
+Option::set('VK','http://vk.com/kit',WIZARD_SITE_ID);
+Option::set('INST','https://www.instagram.com/kit_insta/',WIZARD_SITE_ID);
 Option::set('YOUTUBE','https://www.youtube.com/channel/UCljk41PuLLNRkcrxPOkj4Vg',WIZARD_SITE_ID);
 Option::set('OK','https://ok.ru/feed',WIZARD_SITE_ID);
-Option::set('FB','https://www.facebook.com/sotbit',WIZARD_SITE_ID);
+Option::set('FB','https://www.facebook.com/kit',WIZARD_SITE_ID);
 Option::set('TELEGA','https://telegram.org/',WIZARD_SITE_ID);
-Option::set('TW','https://twitter.com/sotbit',WIZARD_SITE_ID);
+Option::set('TW','https://twitter.com/kit',WIZARD_SITE_ID);
 Option::set('GOOGLE','https://plus.google.com/?hl',WIZARD_SITE_ID);
 Option::set('USE_REGIONS','Y',WIZARD_SITE_ID);
 Option::set('REGION_TEMPLATE','origami_combine',WIZARD_SITE_ID);
 Option::set('COLOR','TSVET',WIZARD_SITE_ID);
 Option::set('SERVICES','SERVIVCES',WIZARD_SITE_ID);
 Option::set('ACCESS_TOKEN','4028561690.1677ed0.b43f21bcd35b452c9b8cf7bce8142942',WIZARD_SITE_ID);
-Option::set('ORDER_TEMPLATE','sotbit_order_make_classic',WIZARD_SITE_ID);
+Option::set('ORDER_TEMPLATE','kit_order_make_classic',WIZARD_SITE_ID);
 Option::set('CONTACTS','5',WIZARD_SITE_ID);
 Option::set('FOOTER','3',WIZARD_SITE_ID);
 Option::set('FOOTER_IMG', $footerBg,WIZARD_SITE_ID);
@@ -40,7 +40,7 @@ Option::set('WIDTH','1344px',WIZARD_SITE_ID);
 Option::set('PROMOTION_LIST_TEMPLATE','horizontal',WIZARD_SITE_ID);
 Option::set('CONFIDENTIAL_PAGE',WIZARD_SITE_DIR.'help/confidentiality/',WIZARD_SITE_ID);
 Option::set('FRONT_CHANGE','Y',WIZARD_SITE_ID);
-Option::set('LOGO',WIZARD_SITE_DIR.'include/sotbit_origami/images/logo.png',WIZARD_SITE_ID);
+Option::set('LOGO',WIZARD_SITE_DIR.'include/kit_origami/images/logo.png',WIZARD_SITE_ID);
 Option::set('FONT_BASE_SIZE','14px',WIZARD_SITE_ID);
 Option::set('HOVER_EFFECT','a:2:{i:0;s:12:"hover-square";i:1;s:10:"hover-zoom";}',WIZARD_SITE_ID);
 
@@ -140,16 +140,16 @@ Option::set('SHOW_VIEWED_','Y',WIZARD_SITE_ID);
 Option::set('SHOW_PRICE_','Y',WIZARD_SITE_ID);
 Option::set('PROP_VIDEO_','VIDEO',WIZARD_SITE_ID);
 Option::set('PROP_TAB_VIDEO_','VIDEO_CONTENT',WIZARD_SITE_ID);
-Option::set('IBLOCK_TYPE_BLOG','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_BLOG','kit_origami_content',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_BLOG','1',WIZARD_SITE_ID);
 Option::set('SHOW_TABS_BITRIX_BLOCKS_','Y',WIZARD_SITE_ID);
 //
 //FAQ
-Option::set('IBLOCK_TYPE_FAQ','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_FAQ','kit_origami_content',WIZARD_SITE_ID);
 Option::set('IBLOCK_ID_FAQ','11',WIZARD_SITE_ID);
 //**FAQ
 //VLOG
-Option::set('IBLOCK_TYPE_VLOG','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_VLOG','kit_origami_content',WIZARD_SITE_ID);
 Option::set('IBLOCK_ID_VLOG','12',WIZARD_SITE_ID);
 //**VLOG
 
@@ -188,13 +188,13 @@ Option::set('SHOW_BESTSELLER_NO_TABS','Y',WIZARD_SITE_ID);
 Option::set('SHOW_VIEWED_NO_TABS','Y',WIZARD_SITE_ID);
 //**NO TABS
 
-Option::set('IBLOCK_TYPE_NEWS','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_NEWS','kit_origami_content',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_NEWS','2',WIZARD_SITE_ID);
-Option::set('IBLOCK_TYPE_BRANDS','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_BRANDS','kit_origami_content',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_BRANDS','5',WIZARD_SITE_ID);
 Option::set('IBLOCK_TYPE','catalog',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID','8',WIZARD_SITE_ID);
-Option::set('IBLOCK_TYPE_PROMOTION','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_PROMOTION','kit_origami_content',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_PROMOTION','10',WIZARD_SITE_ID);
 Option::set('PERSON_TYPE','1',WIZARD_SITE_ID);
 Option::set('DELIVERY','2',WIZARD_SITE_ID);
@@ -203,9 +203,9 @@ Option::set('PROP_NAME','1',WIZARD_SITE_ID);
 Option::set('PROP_PHONE','3',WIZARD_SITE_ID);
 Option::set('PROP_EMAIL','2',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_ADVANTAGES','7',WIZARD_SITE_ID);
-Option::set('IBLOCK_TYPE_ADVANTAGES','sotbit_origami_content',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_ADVANTAGES','kit_origami_content',WIZARD_SITE_ID);
 //Option::set('IBLOCK_ID_BANNERS','4',WIZARD_SITE_ID);
-Option::set('IBLOCK_TYPE_BANNERS','sotbit_origami_advertising',WIZARD_SITE_ID);
+Option::set('IBLOCK_TYPE_BANNERS','kit_origami_advertising',WIZARD_SITE_ID);
 Option::set('SHOW_POPUP_ADD_BASKET','N',WIZARD_SITE_ID);
 Option::set('SHOW_VOTE_RATING','Y',WIZARD_SITE_ID);
 Option::set('IMAGE_FOR_OFFER','PRODUCT',WIZARD_SITE_ID);
@@ -286,7 +286,7 @@ Option::set('SHARE_HANDLERS', 'a:8:{i:0;s:8:"facebook";i:1;s:6:"mailru";i:2;s:2:
 
 //Option::set('SHOW_BUY_OC', 'Y', WIZARD_SITE_ID);
 
-$dir =  '/local/templates/sotbit_origami/theme/custom';
+$dir =  '/local/templates/kit_origami/theme/custom';
 if(!is_dir($_SERVER['DOCUMENT_ROOT'] .$dir))
 {
     mkdir($_SERVER['DOCUMENT_ROOT'] .$dir);

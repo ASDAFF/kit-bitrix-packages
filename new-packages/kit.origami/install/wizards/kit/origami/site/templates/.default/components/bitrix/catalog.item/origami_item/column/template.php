@@ -132,7 +132,7 @@ $blockID = randString(8);
                                   <? if ($haveOffers && $actualItem['CAN_BUY']): ?>style="display: none;"<? endif; ?>>
                                 <svg width="16" height="16">
                                     <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                                 </svg>
                                 </span>
                         <? endif; ?>
@@ -143,7 +143,7 @@ $blockID = randString(8);
                         <span data-entity="compare-checkbox"
                               id="<?= $itemIds['COMPARE_LINK'] ?>">
                         <svg width="16" height="16">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                         </svg>
                     </span>
                         <?
@@ -279,7 +279,7 @@ $blockID = randString(8);
                                 </span>
                                     <svg class="icon_cart_medium" width="20" height="16">
                                         <use
-                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart_medium"></use>
+                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart_medium"></use>
                                     </svg>
                                 </button>
                             </div>
@@ -335,7 +335,7 @@ $blockID = randString(8);
                     </span>
                     <svg class="icon_cart_medium" width="16" height="16">
                         <use
-                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_right_medium"></use>
+                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_right_medium"></use>
                     </svg>
                 </a>
         </div>
@@ -345,7 +345,7 @@ $blockID = randString(8);
 if (Config::get('TIMER_PROMOTIONS') == 'Y') {
     if ($dbProductDiscounts) {
         $APPLICATION->IncludeComponent(
-            "sotbit:origami.timer",
+            "kit:origami.timer",
             "origami_default",
             array(
                 "COMPONENT_TEMPLATE" => "origami_default",

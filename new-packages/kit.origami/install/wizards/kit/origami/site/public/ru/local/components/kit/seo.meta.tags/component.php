@@ -2,7 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Loader;
-if(!Loader::includeModule('sotbit.seometa') || !Loader::includeModule('iblock'))
+if(!Loader::includeModule('kit.seometa') || !Loader::includeModule('iblock'))
 {
 	return false;
 }
@@ -19,7 +19,7 @@ if(!$arParams['SORT'])
 
 $cacheTime = $arParams['CACHE_TIME'];
 $cache_id = serialize(array($arParams, $SeoMetaWorkingConditions, ($arParams['CACHE_GROUPS'] === 'N' ? false : $USER->GetGroups())));
-$cacheDir = '/sotbit.seometa.tags/';
+$cacheDir = '/kit.seometa.tags/';
 $cache = \Bitrix\Main\Data\Cache::createInstance();
 $Tags = array();
 

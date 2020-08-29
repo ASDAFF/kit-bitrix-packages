@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Акции");
 $APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"sotbit_origami_promotions",
+	"kit_origami_promotions",
 	array(
 		"IBLOCK_TYPE" => Config::get("IBLOCK_TYPE_PROMOTION"),
 		"IBLOCK_ID" => Config::get("IBLOCK_ID_PROMOTION"),
@@ -72,7 +72,7 @@ $APPLICATION->IncludeComponent(
 			4 => "",
 		),
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "sotbit_origami_promotions",
+		"COMPONENT_TEMPLATE" => "kit_origami_promotions",
 		"FILTER_FIELD_CODE" => array(
 			0 => "",
 			1 => "",

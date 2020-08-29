@@ -20,7 +20,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                             "AREA_FILE_SHOW" => "file",
                             "PATH" =>
-                                SITE_DIR . "include/sotbit_origami/footers_description.php",
+                                SITE_DIR . "include/kit_origami/footers_description.php",
                         ]);
                         ?>
                     </span>
@@ -31,16 +31,16 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         <div class="footer-block__contacts_icon">
                             <svg class="footer-contacts__icons" width="10" height="12">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location_filled_small"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location_filled_small"></use>
                             </svg>
                         </div>
                         <? if (
-                            \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                            \Bitrix\Main\Loader::includeModule('kit.regions') &&
                             \SotbitOrigami::isUseRegions() &&
-                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/sotbit/regions.data')
+                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
-                                "sotbit:regions.data",
+                                "kit:regions.data",
                                 "origami_address",
                                 [
                                     "CACHE_TIME" => "36000000",
@@ -55,7 +55,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                 $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                                     "AREA_FILE_SHOW" => "file",
                                     "PATH" =>
-                                        SITE_DIR . "include/sotbit_origami/contacts_address.php",
+                                        SITE_DIR . "include/kit_origami/contacts_address.php",
                                 ]);
                                 ?>
                             </div>
@@ -66,16 +66,16 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                     <div class="footer-contacts__content_item footer-mail">
                         <svg class="footer-contacts__icons" width="12" height="8">
                             <use
-                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail_filled_small"></use>
+                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail_filled_small"></use>
                         </svg>
                         <?
                         if (
-                            \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                            \Bitrix\Main\Loader::includeModule('kit.regions') &&
                             \SotbitOrigami::isUseRegions() &&
-                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/sotbit/regions.data')
+                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
-                                "sotbit:regions.data",
+                                "kit:regions.data",
                                 "origami_footer_email",
                                 [
                                     "CACHE_TIME" => "36000000",
@@ -90,7 +90,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                 <? $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                                     "AREA_FILE_SHOW" => "file",
                                     "PATH" => SITE_DIR
-                                        . "include/sotbit_origami/contacts_email.php",
+                                        . "include/kit_origami/contacts_email.php",
                                 ]); ?>
                             </div>
                         <? endif; ?>
@@ -99,16 +99,16 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                     <div class="footer-contacts__content_item footer-phone">
                         <svg class="footer-contacts__icons" width="12" height="12">
                             <use
-                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone_filled_small"></use>
+                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone_filled_small"></use>
                         </svg>
                         <?
                         if (
-                            \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                            \Bitrix\Main\Loader::includeModule('kit.regions') &&
                             \SotbitOrigami::isUseRegions() &&
-                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/sotbit/regions.data')
+                            is_dir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/components/kit/regions.data')
                         ):
                             $APPLICATION->IncludeComponent(
-                                "sotbit:regions.data",
+                                "kit:regions.data",
                                 "origami_footer_phone",
                                 [
                                     "CACHE_TIME" => "36000000",
@@ -124,7 +124,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                 <? $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                                     "AREA_FILE_SHOW" => "file",
                                     "PATH" => SITE_DIR
-                                        . "include/sotbit_origami/contacts_phone.php",
+                                        . "include/kit_origami/contacts_phone.php",
                                 ]); ?>
                             </div>
 
@@ -141,11 +141,11 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
             </div>
             <div class="footer-block__menu--column footer-column">
                 <p class="footer-column__title">
-                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/catalog_title.php")); ?>
+                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/catalog_title.php")); ?>
                 </p>
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:menu",
-                    "sotbit_bottom_menu",
+                    "kit_bottom_menu",
                     array(
                         "ALLOW_MULTI_SELECT" => "N",
                         "COMPOSITE_FRAME_MODE" => "A",
@@ -156,10 +156,10 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         "MENU_CACHE_TIME" => "36000000",
                         "MENU_CACHE_TYPE" => "A",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_left",
+                        "ROOT_MENU_TYPE" => "kit_left",
                         "USE_EXT" => "Y",
-                        "COMPONENT_TEMPLATE" => "sotbit_bottom_menu",
-                        "CHILD_MENU_TYPE" => "sotbit_left",
+                        "COMPONENT_TEMPLATE" => "kit_bottom_menu",
+                        "CHILD_MENU_TYPE" => "kit_left",
                         "MAX_ITEMS" => "7"
                     ),
                     false
@@ -167,11 +167,11 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
             </div>
             <div class="footer-block__menu--column footer-column">
                 <p class="footer-column__title">
-                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/help_title.php")); ?>
+                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/help_title.php")); ?>
                 </p>
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:menu",
-                    "sotbit_bottom_menu",
+                    "kit_bottom_menu",
                     array(
                         "ALLOW_MULTI_SELECT" => "N",
                         "COMPOSITE_FRAME_MODE" => "A",
@@ -182,10 +182,10 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                         "MENU_CACHE_TIME" => "36000000",
                         "MENU_CACHE_TYPE" => "A",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_bottom1",
+                        "ROOT_MENU_TYPE" => "kit_bottom1",
                         "USE_EXT" => "N",
-                        "COMPONENT_TEMPLATE" => "sotbit_bottom_menu",
-                        "CHILD_MENU_TYPE" => "sotbit_left",
+                        "COMPONENT_TEMPLATE" => "kit_bottom_menu",
+                        "CHILD_MENU_TYPE" => "kit_left",
                         "MAX_ITEMS" => ""
                     ),
                     false
@@ -194,12 +194,12 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
             <div class="footer-block__menu--column footer-column">
                 <div class="footer-column__follow footer-follow">
                     <div class="footer-column__block-title">
-                        <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/subscribe_title.php")); ?>
+                        <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/subscribe_title.php")); ?>
                     </div>
                     <div class="footer-follow__input">
                         <? $APPLICATION->IncludeComponent(
                             "bitrix:sender.subscribe",
-                            "sotbit_sender_subscribe_campaign",
+                            "kit_sender_subscribe_campaign",
                             array(
                                 "AJAX_MODE" => "Y",
                                 "AJAX_OPTION_ADDITIONAL" => "",
@@ -208,7 +208,7 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                                 "AJAX_OPTION_STYLE" => "Y",
                                 "CACHE_TIME" => "3600",
                                 "CACHE_TYPE" => "A",
-                                "COMPONENT_TEMPLATE" => "sotbit_sender_subscribe_campaign",
+                                "COMPONENT_TEMPLATE" => "kit_sender_subscribe_campaign",
                                 "COMPOSITE_FRAME_MODE" => "A",
                                 "COMPOSITE_FRAME_TYPE" => "AUTO",
                                 "CONFIRMATION" => "N",
@@ -230,11 +230,11 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
                 </div>
                 <div class="footer-block__social">
                     <div class="footer-column__block-title">
-                        <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/socnet_title.php")); ?>
+                        <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/socnet_title.php")); ?>
                     </div>
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:eshop.socnet.links",
-                        "sotbit_socnet_links",
+                        "kit_socnet_links",
                         Array(
                             "COMPOSITE_FRAME_MODE" => "A",
                             "COMPOSITE_FRAME_TYPE" => "AUTO",
@@ -257,13 +257,13 @@ $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
         <div class="puzzle_block main-container">
             <div class="copy_text_block__content">
                 <div class="copy_text_block__item fonts__middle_comment copy_text_block-dev">
-                    <a class="copy_text_block__item_img" target="_blank" href="https://www.sotbit.ru">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/main_logo_sotbit.png" alt="">
+                    <a class="copy_text_block__item_img" target="_blank" href="https://www.kit.ru">
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/main_logo_kit.png" alt="">
                     </a>
                     <?= Loc::getMessage("SOTBIT_FOOTER_ABOUT_COMPANY"); ?>
                 </div>
                 <div class="footer-block__payment_img">
-                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/payment_images.php")); ?>
+                    <? $APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/payment_images.php")); ?>
                 </div>
             </div>
         </div>

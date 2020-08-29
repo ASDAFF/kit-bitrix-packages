@@ -250,7 +250,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                         <?if($arResult['SHOW_DELAY']):?>
                                             <span class="product_card__block_icon-heart" data-entity="wish" id="<?= $itemIds['WISH_LINK'] ?>">
                                         <svg width="16" height="16">
-                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                                         </svg>
                                     </span>
                                     <?endif;?>
@@ -260,7 +260,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                         <div class="" id="<?= $itemIds['COMPARE_LINK'] ?>">
                                             <span class="product_card__block_icon-bar" data-entity="compare-checkbox">
                                                 <svg width="16" height="16">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                                                 </svg>
                                             </span>
                                         </div>
@@ -274,7 +274,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                     ?>
                                     <div class="product-tem-zoom" data-entity="zoom-container">
                                         <svg class="product-card_icon-zoom-big" width="28px" height="28px">
-                                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_zoom_big"></use>
+                                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_zoom_big"></use>
                                         </svg>
                                     </div>
                                 <?
@@ -605,7 +605,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                                     {
                                                         ?>
                                                         <span class="product_card__block__presence_product_value_many">
-                                                                  <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                  <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg>
                                                             <?= $arParams['~MESS_RELATIVE_QUANTITY_MANY']; ?>
                                                         </span>
@@ -630,7 +630,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                                     }else{
                                                         ?>
                                                         <span class="product_card__block__presence_product_value_many">
-                                                                  <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                  <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg>
                                                             <?echo $actualItem['CATALOG_QUANTITY'].' '.$actualItem['ITEM_MEASURE']['TITLE']; ?>
                                                         </span>
@@ -665,7 +665,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                                         {
                                                             ?>
                                                             <span class="product_card__block__presence_product_value_many">
-                                                                     <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                     <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg>
                                                                 <?= $arParams['~MESS_RELATIVE_QUANTITY_MANY']; ?>
                                                             </span>
@@ -690,7 +690,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                                         }else{
                                                             ?>
                                                             <span class="product_card__block__presence_product_value_many">
-                                                                      <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                      <svg class="product-card_icon-check" width="11px" height="12px"><use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                              </svg>
                                                                 <?echo $actualItem['CATALOG_QUANTITY'].' '.$actualItem['ITEM_MEASURE']['TITLE']; ?>
                                                             </span>
@@ -784,7 +784,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                             onclick="foundCheaper('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $arResult['NAME'] ?>', this)">
                                             <span>
                                                 <svg class="product_preview_info_block_cheaper-icon" width="14" height="11">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cheaper"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cheaper"></use>
                                                 </svg>
                                             </span>
                                             <span class="fonts__small_comment product_preview_info_block_cheaper__title"><?= Loc::getMessage('DETAIL_FOUND_CHEAPER') ?></span>
@@ -1117,7 +1117,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                             href="javascript:void(0);">
                                                 <!-- <span class="icon-bbasket"></span> <?= Loc::getMessage('CT_BCE_CATALOG_ADD') ?> -->
                                                 <svg width="24" height="24">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
                                                 </svg><?= Loc::getMessage('CT_BCE_CATALOG_ADD') ?>
                                             </a>
                                             <?
@@ -1170,7 +1170,7 @@ if (!empty($arParams['LABEL_PROP_POSITION'])) {
                                         onclick="wantGift('<?= SITE_DIR ?>', '<?= SITE_ID ?>', '<?= $currentUrl ?>', '<?= $arResult['DETAIL_PICTURE']['SRC'] ?>', this)">
                                         <span>
                                             <svg class="product_preview_info_block_gift-icon" width="13" height="13">
-                                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_gift"></use>
+                                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_gift"></use>
                                             </svg>
                                         </span>
                                         <span class="fonts__small_comment product_preview_info_block_gift__title"><?= Loc::getMessage('DETAIL_WANT_GIFT') ?></span>

@@ -84,7 +84,7 @@ function callSubscribePopup(siteDir, lid, item) {
 //         '<div class="popup-window">' +
 //         '<div class="popup-close-subscribe" onclick="closeModal();">' +
 //         '<svg class="close-modal" width="17" height="17">' +
-//         '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>' +
+//         '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>' +
 //         '</svg>' +
 //         '</div>' +
 //         '<div class="popup-content">' +
@@ -105,7 +105,7 @@ function showSubscribeModal(html) {
         '<div class="popup-window">' +
         '<div class="popup-close-subscribe" onclick="closeModal();">' +
         '<svg class="close-modal" width="17" height="17">' +
-        '<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>' +
+        '<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>' +
         '</svg>' +
         '</div>' +
         '<div class="popup-content">' +

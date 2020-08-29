@@ -4,7 +4,7 @@ namespace Sotbit\Origami\Config;
 /**
  * Class Group
  * @package Sotbit\Origami\Config
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Group
 {

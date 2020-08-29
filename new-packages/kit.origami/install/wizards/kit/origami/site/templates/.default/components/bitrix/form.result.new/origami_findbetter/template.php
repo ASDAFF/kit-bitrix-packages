@@ -9,19 +9,19 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $APPLICATION->ShowAjaxHead();
 Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_findbetter/style.css");
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 ?>
-	<div class="sotbit_order_phone">
+	<div class="kit_order_phone">
 		<?
         if ($arResult["isFormTitle"])
         {
 		?>
-			<div class="sotbit_order_phone__title"><?=$arResult["FORM_TITLE"]?></div>
+			<div class="kit_order_phone__title"><?=$arResult["FORM_TITLE"]?></div>
 	     <?}?>
 
 
         <?if ($arResult["isFormErrors"] == "Y"):?><?=$arResult["FORM_ERRORS_TEXT"];?><?endif;?>
-		<div class="sotbit_order_success_show">
+		<div class="kit_order_success_show">
 			<?=$arResult["FORM_NOTE"]?></div>
         <?if (empty($arResult["FORM_NOTE"])) {?>
         <?=$arResult["FORM_HEADER"]?>
@@ -29,9 +29,9 @@ Loader::includeModule('sotbit.origami');
 foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion)
 {
 	?>
-	<div class="sotbit_order_phone__block">
+	<div class="kit_order_phone__block">
         <?if ($arQuestion['CAPTION'] !== Loc::getMessage('OK_ID_PRODUCT')) {?>
-		    <p class="sotbit_order_phone__block_title">
+		    <p class="kit_order_phone__block_title">
 			    <?=$arQuestion['CAPTION']?>
 			    <?=($arQuestion['REQUIRED'] == 'Y')?'*':''?></p>
         <?}?>
@@ -64,7 +64,7 @@ foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion)
                         <div class="captcha-refresh"  onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                             <svg class="icon_refresh" width="16" height="14">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                             </svg>
                         </div>
 			        </div>

@@ -1,5 +1,5 @@
 <?
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $aMenuLinks = Array(
     Array(
         "Оплата",
@@ -45,7 +45,7 @@ $aMenuLinks = Array(
     ),
     Array(
         "Конфиденциальность",
-        \Sotbit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE'),
+        \Kit\Origami\Helper\Config::get('CONFIDENTIAL_PAGE'),
         Array(),
         Array(),
         ""

@@ -36,7 +36,7 @@ else{
                 "",
                 array(
                     "AREA_FILE_SHOW" => "file",
-                    "PATH" => SITE_DIR."include/sotbit_origami/contacts_worktime.php")
+                    "PATH" => SITE_DIR."include/kit_origami/contacts_worktime.php")
             );
             ?>
         </p>
@@ -58,7 +58,7 @@ else{
     <div class="menu-contact__item">
         <p class="menu-contact__item-text"><?=$arResult['FIELDS']['UF_ADDRESS']['VALUE']?></p>
     </div>
-    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
         <a href="javascript:void(0)" class="menu-contact__call-back main-color-btn-fill" onclick="callbackPhone('<?=SITE_DIR?>','<?=SITE_ID?>',this)">
             <?=Loc::getMessage('REGIONS_DATA_ORDERCALL_TITLE')?>
         </a>

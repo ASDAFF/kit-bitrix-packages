@@ -2,10 +2,10 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 global $issetCondition;
 global ${$arParams["FILTER_NAME"]};
 global $origamiSectionDescription;
@@ -31,8 +31,8 @@ if($arParams['SECTION_DESCRIPTION'] == "ABOVE" || $arParams['SECTION_DESCRIPTION
             echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $arResult['SECTION']['~UF_DESCR_BOTTOM'] . '</div>';
     }
 }
-if(!empty($sotbitSeoMetaTopDesc))
+if(!empty($kitSeoMetaTopDesc))
 {
-    echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $sotbitSeoMetaTopDesc . '</div>';
+    echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $kitSeoMetaTopDesc . '</div>';
 }
 ?>

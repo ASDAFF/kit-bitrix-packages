@@ -302,7 +302,7 @@
 
 				$.ajax({
 					type: "POST",
-					url: "/local/components/sotbit/block.include/ajax.php",
+					url: "/local/components/kit/block.include/ajax.php",
 					async:false,
 					data: {
 						"id": _this.agent.params.id,

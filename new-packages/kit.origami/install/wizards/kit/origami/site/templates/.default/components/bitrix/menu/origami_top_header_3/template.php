@@ -22,7 +22,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <?if($children['LINK'] != $page):?>
 	                        <a href="<?=$children['LINK']?>" title="<?=$children['TEXT']?>">
 		                        <svg class="site-navigation__item-icon-arrow" width="6" height="12">
-			                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
+			                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
 		                        </svg>
                                 <?=$children['TEXT']?>
                             </a>
@@ -44,7 +44,7 @@ $page = $APPLICATION->GetCurPage(false);
                         <?else:?>
 	                        <span>
 		                        <svg class="site-navigation__item-icon-arrow" width="6" height="12">
-			                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
+			                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
 		                        </svg>
                                 <?=$children['TEXT']?>
 	                        </span>
@@ -54,7 +54,7 @@ $page = $APPLICATION->GetCurPage(false);
 				</ul>
 			<?endif;?>
 			<svg class="site-navigation__item-icon" width="14" height="8">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
 			</svg>
 </div>
 	<?endforeach;?>

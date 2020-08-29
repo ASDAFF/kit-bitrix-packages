@@ -5,7 +5,7 @@ global $serverName;
 global $phone;
 global $email;
 
-CModule::IncludeModule('sotbit.origami');
+CModule::IncludeModule('kit.origami');
 use \Sotbit\Origami\Config\Option;
 
 $vk = Option::get('VK', SITE_ID);
@@ -86,7 +86,7 @@ $google = Option::get('GOOGLE', SITE_ID);
                         "MENU_CACHE_TIME" => "3600",
                         "MENU_CACHE_TYPE" => "N",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_bottom2",
+                        "ROOT_MENU_TYPE" => "kit_bottom2",
                         "USE_EXT" => "N"
                     )
                 );?>
@@ -112,8 +112,8 @@ $google = Option::get('GOOGLE', SITE_ID);
                 </tr>
                 <tr align="right">
                     <td style="padding-bottom: 20px;">
-                        <a href="mailto:sale@sotbit.ru"
-                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">sale@sotbit.ru</a>
+                        <a href="mailto:sale@kit.ru"
+                           style="color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 13px; text-decoration: none;">sale@kit.ru</a>
                     </td>
                 </tr>
             </table>

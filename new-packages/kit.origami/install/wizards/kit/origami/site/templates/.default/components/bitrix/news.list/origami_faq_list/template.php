@@ -21,7 +21,7 @@ if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
                 <?
                 if ($useRegion):
                     $APPLICATION->IncludeComponent(
-                        "sotbit:regions.data",
+                        "kit:regions.data",
                         "origami_faq_manager",
                         [
                             "CACHE_TIME" => "36000000",
@@ -36,7 +36,7 @@ if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR . "include/sotbit_origami/faq_manager.php"
+                            "PATH" => SITE_DIR . "include/kit_origami/faq_manager.php"
                         )
                     );
                 endif;
@@ -56,7 +56,7 @@ if ($useRegion && $_SESSION['SOTBIT_REGIONS']['ID']) {
                         <div class="question-toggle">
                             <svg class="question-icon_toggle" width="20" height="11">
                                 <use
-                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                             </svg>
                         </div>
                     </div>

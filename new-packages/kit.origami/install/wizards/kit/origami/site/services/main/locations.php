@@ -17,7 +17,7 @@ $bRus = false;
 if($lang == "ru")
     $bRus = true;
     
-if($bRus || COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) != "Y" || WIZARD_INSTALL_DEMO_DATA)
+if($bRus || COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) != "Y" || WIZARD_INSTALL_DEMO_DATA)
 {
     $loc_file = $wizard->GetVar("locations_csv");
     

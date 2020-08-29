@@ -10,7 +10,7 @@ Loc::loadMessages(__FILE__);
  * Class Date
  *
  * @package Sotbit\Origami\Helper
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Date
 {

@@ -48,7 +48,7 @@ if ($arParams['SHOW_ACCOUNT_PAY_COMPONENT'] !== 'N' && $USER->IsAuthorized())
         
         $APPLICATION->IncludeComponent(
             "bitrix:sale.account.pay",
-            "sotbit_account",
+            "kit_account",
             Array(
                 "COMPONENT_TEMPLATE" => ".default",
                 "REFRESHED_COMPONENT_MODE" => "Y",

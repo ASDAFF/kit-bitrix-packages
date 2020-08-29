@@ -49,7 +49,7 @@ export default class BasketItem extends React.Component {
                   <button className={`basket-item-deleted__buttons-remove`}
                           onClick={this.onBtnRemove}>
                       <svg className="basket-item-deleted__buttons-remove-icon" width="18" height="16">
-                          <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_medium"></use>
+                          <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_medium"></use>
                       </svg>
                   </button>
               </li>
@@ -106,19 +106,19 @@ export default class BasketItem extends React.Component {
                     <button className={`basket-item__buttons-favorite ${whatToShow !== 'favorite' ? '' : ' hide'}`}
                            onClick={() => {onInFavorite(params.PRODUCT_ID)}} >
                         <svg className="basket-item__buttons-favorite-icon" width="18" height="16">
-                            <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite_medium"></use>
+                            <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite_medium"></use>
                         </svg>
                     </button>
                     <button className={`basket-item__buttons-basket ${whatToShow !== 'basket' ? '' : ' hide'}`}
                             onClick={() => {onInBasket(params.PRODUCT_ID)}} >
                         <svg className="basket-item__buttons-cart-icon" width="18" height="16">
-                            <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cart"></use>
+                            <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_cart"></use>
                         </svg>
                     </button>
                     <button className={`basket-item__buttons-remove`}
                             onClick={() => {onDeleteItem(params.PRODUCT_ID)}}>
                         <svg className="basket-item__buttons-favorite-icon" width="18" height="16">
-                            <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_medium"></use>
+                            <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_medium"></use>
                         </svg>
                     </button>
                 </div>

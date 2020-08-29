@@ -94,7 +94,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
                             <?
                             if (Config::get('TIMER_PROMOTIONS') == 'Y') {
                                 $APPLICATION->IncludeComponent(
-                                    "sotbit:origami.timer",
+                                    "kit:origami.timer",
                                     "origami_default",
                                     array(
                                         "COMPONENT_TEMPLATE" => "origami_default",

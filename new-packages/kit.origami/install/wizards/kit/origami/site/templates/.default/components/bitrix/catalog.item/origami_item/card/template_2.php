@@ -85,7 +85,7 @@ $blockID = randString(8);
                 <?if($arParams["SHOW_DELAY"] && (!$haveOffers || $arParams['PRODUCT_DISPLAY_MODE'] === 'Y')):?>
                     <span class="product-card-inner__icon" data-entity="wish" id="<?=$itemIds['WISH_LINK']?>" <?if($haveOffers && $actualItem['CAN_BUY']):?>style="display: none;"<?endif;?>>
                 <svg class="site-navigation__item-icon" width="18" height="18">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_favourite"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_favourite"></use>
                 </svg>
             </span>
                 <?endif;?>
@@ -96,7 +96,7 @@ $blockID = randString(8);
             ?>
                 <span class="product-card-inner__icon" data-entity="compare-checkbox" id="<?=$itemIds['COMPARE_LINK']?>">
                     <svg width="16" height="16">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_compare"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_compare"></use>
                     </svg>
                 </span>
                 <?
@@ -470,7 +470,7 @@ $blockID = randString(8);
     if (Config::get('TIMER_PROMOTIONS') == 'Y') {
         if ($dbProductDiscounts) {
             $APPLICATION->IncludeComponent(
-                "sotbit:origami.timer",
+                "kit:origami.timer",
                 "origami_default",
                 array(
                     "COMPONENT_TEMPLATE" => "origami_default",

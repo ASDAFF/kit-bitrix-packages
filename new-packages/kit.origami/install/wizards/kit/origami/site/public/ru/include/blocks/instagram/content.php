@@ -2,7 +2,7 @@
 global $settings;
 
 $APPLICATION->IncludeComponent(
-	"sotbit:instagram",
+	"kit:instagram",
 	"origami_insta",
 	array(
 		"LOGIN" => $settings['fields']['login']['value'],
@@ -11,7 +11,7 @@ $APPLICATION->IncludeComponent(
         "IMG_DEFAULT" => 'Y',
         "CACHE_TYPE" => "A",
         "CACHE_TIME" => "36000000",
-		"COMPONENT_TEMPLATE" => "sotbit_instagram",
+		"COMPONENT_TEMPLATE" => "kit_instagram",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO"
 	),

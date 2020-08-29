@@ -103,7 +103,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/origami.theme/ajax.php',
+			url: '/local/components/kit/origami.theme/ajax.php',
 			data: {
 				'action': 'open',
 				'open': 'Y',
@@ -126,7 +126,7 @@
 
 			$.ajax({
 				type: 'POST',
-				url: '/local/components/sotbit/origami.theme/ajax.php',
+				url: '/local/components/kit/origami.theme/ajax.php',
 				data: {
 					'action': 'open',
 					'open': 'N',
@@ -230,7 +230,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/origami.theme/ajax.php',
+			url: '/local/components/kit/origami.theme/ajax.php',
 			data: {
 				'action': 'option',
 				'options': JSON.stringify(options),
@@ -346,7 +346,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/origami.theme/ajax.php',
+			url: '/local/components/kit/origami.theme/ajax.php',
 			data: {
 				'action': 'save',
 				'site': _this.site,

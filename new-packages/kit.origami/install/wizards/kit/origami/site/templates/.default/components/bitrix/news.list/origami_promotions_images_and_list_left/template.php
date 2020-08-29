@@ -42,7 +42,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
                     <div class="news_block_eight__others__content" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 
                         <svg class="news_block_eight__clock-icon" width="13" height="20">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                         </svg>
                         <p class="news_block_eight__content_date fonts__middle_comment"><?= $arItem["DISPLAY_ACTIVE_FROM"] ?></p>
                         <p class="news_block_eight__others__content_comment fonts__middle_text"
@@ -143,7 +143,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
                     <?
                     if (Config::get('TIMER_PROMOTIONS') == 'Y') {
                         $APPLICATION->IncludeComponent(
-                            "sotbit:origami.timer",
+                            "kit:origami.timer",
                             "origami_default",
                             array(
                                 "COMPONENT_TEMPLATE" => "origami_default",

@@ -4,7 +4,7 @@
 if(!CModule::IncludeModule("iblock") || !CModule::IncludeModule("catalog"))
 	return;
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 $IBLOCK_CATALOG_ID = 0;

@@ -18,5 +18,5 @@ $MESS["AUTH_NAME_PLACEHOLDER"] = "Например, Михаил";
 $MESS["AUTH_LAST_NAME_PLACEHOLDER"] = "Например, Иванов";
 $MESS["AUTH_PASS_PLACEHOLDER"] = "Например, qwerty";
 $MESS["AUTH_LOGIN_PLACEHOLDER"] = "Например, Mikhail_Ivanov";
-$MESS["AUTH_EMAIL_PLACEHOLDER"] = "Например, name@sotbit.ru";
+$MESS["AUTH_EMAIL_PLACEHOLDER"] = "Например, name@kit.ru";
 ?>

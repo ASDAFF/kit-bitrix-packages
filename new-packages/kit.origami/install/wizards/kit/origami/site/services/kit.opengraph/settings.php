@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$module = 'sotbit.opengraph';
+$module = 'kit.opengraph';
 CModule::includeModule($module);
 
 use Sotbit\Opengraph\OpengraphPageMetaTable;
@@ -48,8 +48,8 @@ $arFields['TW_PROPS_ACTIVE'] = array (
 $arFields['OG_PROPS_ACTIVE'] = serialize($arFields['OG_PROPS_ACTIVE']);
 $arFields['TW_PROPS_ACTIVE'] = serialize($arFields['TW_PROPS_ACTIVE']);
 
-$arFields['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/sotbit_opengraph/delivery.png';
-$arFields['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/sotbit_opengraph/delivery.png';
+$arFields['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/delivery.png';
+$arFields['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/delivery.png';
 
 $arFields['OG_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['OG_IMAGE']);
 $arFields['TW_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arFields['TW_IMAGE'], 'TW_IMAGE');
@@ -67,8 +67,8 @@ $arField['TW_CREATOR'] = 'Creator';
 $arField['TW_DESCRIPTION'] = GetMessage('WZD_DESCRIPTION_DEFAULT_OPGR');
 $arField['TW_IMAGE_ALT'] = GetMessage('WZD_TITLE_DEFAULT_OPGR');
 
-$arField['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/sotbit_opengraph/default.png';
-$arField['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/sotbit_opengraph/default.png';
+$arField['OG_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/default.png';
+$arField['TW_IMAGE'] = $_SERVER["DOCUMENT_ROOT"].'/upload/kit_opengraph/default.png';
 
 $arField['OG_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arField['OG_IMAGE']);
 $arField['TW_IMAGE'] = \Sotbit\Opengraph\Helper\OpengraphHelper::saveImage($arField['TW_IMAGE'], 'TW_IMAGE');

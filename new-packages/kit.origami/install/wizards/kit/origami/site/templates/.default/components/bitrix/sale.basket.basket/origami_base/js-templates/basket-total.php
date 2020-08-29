@@ -25,7 +25,7 @@ Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bit
 							<input type="text" class="form-control" id="" placeholder="<?=Loc::getMessage('SBB_COUPON_ENTER')?>" data-entity="basket-coupon-input">
 							<span class="basket-coupon-block-coupon-btn-wrapper">
                                 <svg class="basket-coupon-block-coupon-btn" width="8" height="12">
-                                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_arrow_breadcrumbs"></use>
+                                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_arrow_breadcrumbs"></use>
                                 </svg>
                                 <span class="basket-coupon-block-coupon-btn"></span>
                             </span>
@@ -102,7 +102,7 @@ Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bit
 					</div>
 				</div>
 				<div class="basket-checkout-block basket-checkout-block-btn">
-                    <?if($arParams["SHOW_OC"] == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+                    <?if($arParams["SHOW_OC"] == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                         <button class="basket-btn-oc" id="order_oc">
                             <?=Loc::getMessage('SBB_ORDER_OC')?>
                         </button>

@@ -14,7 +14,7 @@ use Bitrix\Main\Page\Asset;
 //one css for all system.auth.* forms
 $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/system.auth.forgotpasswd/flat/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/components/bitrix/system.auth.forgotpasswd/flat/style.css");
 
 ?>
 

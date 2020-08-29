@@ -33,7 +33,7 @@ return [
 					'name' => \Bitrix\Main\Localization\Loc::getMessage('INSTAGRAM_1_FIELD_LOGIN'),
 					'type' => 'input',
 					'group' => 'config',
-					'value' => 'sotbit_ru',
+					'value' => 'kit_ru',
                 ],
             'count' =>
 				[
@@ -59,7 +59,7 @@ return [
     'ext'    =>
         [
             'css' =>
-                [ $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/sotbit/instagram/origami_insta_1/style.css',
+                [ $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/kit/instagram/origami_insta_1/style.css',
                 ],
             'include_head' => true
         ],

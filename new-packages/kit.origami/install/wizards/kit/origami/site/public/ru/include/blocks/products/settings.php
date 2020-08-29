@@ -56,7 +56,7 @@ return [
             'css' =>
                 [ $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/bitrix/catalog.item/origami_item/style.css',
                     $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/bitrix/catalog.section/origami_section/style.css',
-					$_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/sotbit/crosssell.collection/origami_default/style.css'
+					$_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/kit/crosssell.collection/origami_default/style.css'
                 ],
         ],
     'style'  =>

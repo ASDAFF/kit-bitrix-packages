@@ -2,14 +2,14 @@
     version = parseFloat(jQuery.fn.jquery);
     if(version<1.9)
     {
-        $(".sotbit_order_phone form").live("submit", submitOrderPhone);
+        $(".kit_order_phone form").live("submit", submitOrderPhone);
     }else{
-        $(".sotbit_order_phone").on("submit", "form", submitOrderPhone);
+        $(".kit_order_phone").on("submit", "form", submitOrderPhone);
     }
 
-    maska = $(".sotbit_order_phone form input[name='TEL_MASK']").eq(0).val();
+    maska = $(".kit_order_phone form input[name='TEL_MASK']").eq(0).val();
     maska = $.trim(maska);
-    if(maska!="")$(".sotbit_order_phone form input[name='order_phone']").mask(maska, {placeholder:"_"});
+    if(maska!="")$(".kit_order_phone form input[name='order_phone']").mask(maska, {placeholder:"_"});
 
     function submitOrderPhone(e)
     {
@@ -23,12 +23,12 @@
         {
             $(this).find("input[type='text']").removeClass("red");
             ser = $(this).serialize();
-            $.post("/bitrix/components/sotbit/order.phone/ajax.php", ser, function(data){
+            $.post("/bitrix/components/kit/order.phone/ajax.php", ser, function(data){
                 data = $.trim(data);
                 //if(data=="SUCCESS")
                 if(data.indexOf("SUCCESS")>=0)
                 {
-                    _this.find(".sotbit_order_success").show();
+                    _this.find(".kit_order_success").show();
                     id = data.replace("SUCCESS", "");
                     localHref = $('input[name="LOCAL_REDIRECT"]').val();
                     orderID = $('input[name="ORDER_ID"]').val();

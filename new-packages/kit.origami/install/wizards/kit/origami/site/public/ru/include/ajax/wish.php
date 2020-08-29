@@ -8,7 +8,7 @@ use Bitrix\Main,
     \Bitrix\Main\Loader,
     Bitrix\Sale,
     Bitrix\Sale\Basket,
-    Sotbit\Origami\Helper\Config;
+    Kit\Origami\Helper\Config;
 ;
 
 Loader::includeModule('iblock');
@@ -17,7 +17,7 @@ Loader::includeModule('catalog');
 
 
 try {
-    $moduleIncluded = \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    $moduleIncluded = \Bitrix\Main\Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
 }
 $params = json_decode($params, true);
@@ -26,7 +26,7 @@ $action = $params['action'];
 $productID = $params['id'];
 
 
-$wish = new \Sotbit\Origami\Sale\Basket\Wish();
+$wish = new \Kit\Origami\Sale\Basket\Wish();
 if (!$params['props']) {
     $params['props'] = [];
 }

@@ -3,7 +3,7 @@
 use Bitrix\Main\Localization\Loc;
 
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
-if (!\Bitrix\Main\Loader::includeModule('sotbit.regions')) {
+if (!\Bitrix\Main\Loader::includeModule('kit.regions')) {
     return false;
 }
 
@@ -15,7 +15,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
         <div class="modal_title-text-wrapper">
             <span class="title"><?= GetMessage("SOTBIT_REGIONS_MODAL_TITTLE") ?></span>
             <span class="current_region-title"><?= GetMessage("SOTBIT_REGIONS_CURRENT_TITTLE") ?></span>
-            <span class="current_region">Санкт-Петербург</span>
+            <span class="current_region">пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span>
         </div>
         <div class="select-city__close"></div>
     </div>
@@ -26,7 +26,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
                 <? if ($regions['REGION_LIST_COUNTRIES']) { ?>
                     <div class="tabs_wrapper">
                         <div class="select-city__tabs_wrapper">
-                            <ul class="select-city__tabs" id="sotbit-regions-tabs">
+                            <ul class="select-city__tabs" id="kit-regions-tabs">
                                 <? foreach ($regions['REGION_LIST_COUNTRIES'] as $idCountry => $region) {
                                     if ($region['SALE_LOCATION_LOCATION_NAME_NAME']) { ?>
                                         <li class="select-city__tab <?= ($idCountry
@@ -52,7 +52,7 @@ $regions = \Sotbit\Regions\System\Location::getLocations();
                         <div class="select-city__wrapper__input">
                             <div class="select-city__input__comment select-city__under_input">
                                 <?= Loc::getMessage(
-                                    'sotbit.regions_EXAMPLE',
+                                    'kit.regions_EXAMPLE',
                                     [
                                         '#ID0#' => $regions['TITLE_CITIES'][0]['ID'],
                                         '#ID1#' => $regions['TITLE_CITIES'][1]['ID'],

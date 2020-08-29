@@ -11,10 +11,10 @@ $page = $APPLICATION->GetCurPage(false);
 	<div class="header-two__main-nav-catalog <?if($arResult[0]["SELECTED"]):?>active<?endif;?> <?if(isset($arResult[0]["CHILD_SELECTED"])):?>current<?endif;?>" aria-haspopup="true">
 		<a href="<?=$arResult[0]["LINK"]?>"><?=$arResult[0]["TEXT"]?>
 			<svg class="header-two__menu-icon" width="18" height="18">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_menu"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_menu"></use>
 			</svg>
 			<svg class="site-navigation__item-icon" width="14" height="8">
-				<use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+				<use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
 			</svg>
 		</a>
 		<div class="header-two__menu-catalog menu-catalog">

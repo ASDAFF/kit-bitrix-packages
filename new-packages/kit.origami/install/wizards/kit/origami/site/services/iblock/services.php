@@ -4,14 +4,14 @@
 if(!CModule::IncludeModule("iblock"))
 	return;
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA){
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA){
 	return;
 }
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH."/xml/".LANGUAGE_ID."/services.xml";
-$iblockCode = "sotbit_origami_services";
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = "sotbit_origami_services";
+$iblockCode = "kit_origami_services";
+$iblockType = "kit_origami_content";
+$iblockXMLID = "kit_origami_services";
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;

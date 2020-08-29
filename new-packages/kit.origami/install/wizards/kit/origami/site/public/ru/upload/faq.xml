@@ -63,11 +63,11 @@
 		<Ид>11</Ид>
 		<ИдКлассификатора>11</ИдКлассификатора>
 		<Наименование>Вопросы-ответы</Наименование>
-		<БитриксКод>sotbit_origami_faq</БитриксКод>
+		<БитриксКод>kit_origami_faq</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
-		<БитриксURLСписок>#SITE_DIR#/sotbit_origami_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
-		<БитриксURLДеталь>#SITE_DIR#/sotbit_origami_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
-		<БитриксURLРаздел>#SITE_DIR#/sotbit_origami_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
+		<БитриксURLСписок>#SITE_DIR#/kit_origami_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/kit_origami_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/kit_origami_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
 		<БитриксURLКанонический></БитриксURLКанонический>
 		<БитриксКартинка></БитриксКартинка>
 		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>

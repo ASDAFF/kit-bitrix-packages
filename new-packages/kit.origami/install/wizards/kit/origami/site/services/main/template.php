@@ -55,7 +55,7 @@ if ($arSite = $obSite->Fetch())
 }
 
 $wizrdTemplateId = $wizard->GetVar("wizTemplateID");
-if (!in_array($wizrdTemplateId, array("sotbit_origami")))
-	$wizrdTemplateId = "sotbit_origami";
+if (!in_array($wizrdTemplateId, array("kit_origami")))
+	$wizrdTemplateId = "kit_origami";
 COption::SetOptionString("main", "wizard_template_id", $wizrdTemplateId, false, WIZARD_SITE_ID);
 ?>

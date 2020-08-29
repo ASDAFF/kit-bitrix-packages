@@ -4,7 +4,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 
 use Bitrix\Main\Loader;
 
-CModule::IncludeModule('sotbit.origami');
+CModule::IncludeModule('kit.origami');
 
 if(!WIZARD_INSTALL_DEMO_DATA){
 	return;
@@ -23,7 +23,7 @@ CopyDirFiles(
     $exclude = "description.php"
 );
 
-/*$dir =  '/local/templates/sotbit_origami/theme/custom';
+/*$dir =  '/local/templates/kit_origami/theme/custom';
 if(!is_dir($_SERVER['DOCUMENT_ROOT'] .$dir))
 {
     mkdir($_SERVER['DOCUMENT_ROOT'] .$dir);

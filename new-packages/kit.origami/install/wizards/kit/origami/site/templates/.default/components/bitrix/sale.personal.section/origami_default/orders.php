@@ -15,7 +15,7 @@ if (strlen($arParams["MAIN_CHAIN_NAME"]) > 0)
 $APPLICATION->AddChainItem(Loc::getMessage("SPS_CHAIN_ORDERS"), $arResult['PATH_TO_ORDERS']);
 $APPLICATION->IncludeComponent(
 	"bitrix:sale.personal.order.list",
-	"sotbit_order_list",
+	"kit_order_list",
 	array(
 		"PATH_TO_DETAIL" => $arResult["PATH_TO_ORDER_DETAIL"],
 		"PATH_TO_CANCEL" => $arResult["PATH_TO_ORDER_CANCEL"],

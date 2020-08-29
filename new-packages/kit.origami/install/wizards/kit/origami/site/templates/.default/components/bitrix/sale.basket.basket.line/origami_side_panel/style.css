@@ -7,7 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10000;
-  cursor: url("/local/templates/sotbit_origami/assets/img/cursor close.png") 23 23, pointer; }
+  cursor: url("/local/templates/kit_origami/assets/img/cursor close.png") 23 23, pointer; }
 
 .side-panel {
   position: fixed;

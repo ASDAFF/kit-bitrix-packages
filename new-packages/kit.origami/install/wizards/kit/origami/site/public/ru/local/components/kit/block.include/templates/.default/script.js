@@ -115,7 +115,7 @@
 				{
 					$.ajax({
 						type: 'POST',
-						url: '/local/components/sotbit/block.include/ajax.php',
+						url: '/local/components/kit/block.include/ajax.php',
 						data: {
 							'action':'down',
 							'part': _this.part,
@@ -151,7 +151,7 @@
 				{
 					$.ajax({
 						type: 'POST',
-						url: '/local/components/sotbit/block.include/ajax.php',
+						url: '/local/components/kit/block.include/ajax.php',
 						data: {
 							'action': 'up',
 							'part': _this.part,
@@ -189,7 +189,7 @@
 			case 'remove':
 				$.ajax({
 					type: 'POST',
-					url: '/local/components/sotbit/block.include/ajax.php',
+					url: '/local/components/kit/block.include/ajax.php',
 					data: {
 						'action':'remove',
 						'part': _this.part,
@@ -222,7 +222,7 @@
 				var formData = $('#'+_this.id).serialize();
 				$.ajax({
 					type: 'POST',
-					url: '/local/components/sotbit/block.include/ajax.php',
+					url: '/local/components/kit/block.include/ajax.php',
 					data: {
 						'id': _this.id,
 						'action':'save_block_content',
@@ -320,7 +320,7 @@
 				var id = $(this).closest('.landing-ui-panel-style').data('id');
 				$.ajax({
 					type: 'POST',
-					url: '/local/components/sotbit/block.include/ajax.php',
+					url: '/local/components/kit/block.include/ajax.php',
 					data: {
 						'id': id,
 						'action':action,
@@ -338,7 +338,7 @@
 			case 'save':
 				$.ajax({
 					type: 'POST',
-					url: '/local/components/sotbit/block.include/ajax.php',
+					url: '/local/components/kit/block.include/ajax.php',
 					data: {
 						'action':action,
 						'part': _this.part,
@@ -361,7 +361,7 @@
 		_this = e.data;
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/block.include/ajax.php',
+			url: '/local/components/kit/block.include/ajax.php',
 			data: {
 				'after': _this.id,
 				'code': $(this).data('code'),
@@ -393,7 +393,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/block.include/ajax.php',
+			url: '/local/components/kit/block.include/ajax.php',
 			data: {
 				'action':'save',
 				'part': _this.part,
@@ -443,7 +443,7 @@ function hide_block(id)
 {
 	$.ajax({
 		type: 'POST',
-		url: '/local/components/sotbit/block.include/ajax.php',
+		url: '/local/components/kit/block.include/ajax.php',
 		data: {
 			'id': id,
 			'action':'hide_block',
@@ -463,7 +463,7 @@ function show_block(id)
 {
 	$.ajax({
 		type: 'POST',
-		url: '/local/components/sotbit/block.include/ajax.php',
+		url: '/local/components/kit/block.include/ajax.php',
 		data: {
 			'id': id,
 			'action':'show_block',
@@ -491,7 +491,7 @@ function paste_block(id,part)
 	{
 		$.ajax({
 			type: 'POST',
-			url: '/local/components/sotbit/block.include/ajax.php',
+			url: '/local/components/kit/block.include/ajax.php',
 			data: {
 				'id': block,
 				'after': id,
@@ -519,7 +519,7 @@ function cut_block(id)
 // ----------------lazyLoad------------------------
 /**
     @attr class="lazy"                                      ==> tag img for lazyLoad
-    @attr src="/upload/sotbit.origami/no_photo_medium.svg"  ==> img default(const)
+    @attr src="/upload/kit.origami/no_photo_medium.svg"  ==> img default(const)
     @attr data-src="image-to-lazy-load-1x.jpg"              ==> img load
     @attr data-srcset="image-to-lazy-load-2x.jpg 2x         ==> alternative image
 

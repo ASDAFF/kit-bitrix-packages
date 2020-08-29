@@ -10,7 +10,7 @@ $CONFIG = array(
 	// -------------------------------------------------------------
 	
 	// Instagram login
-	'LOGIN' => 'sotbit_ru',
+	'LOGIN' => 'kit_ru',
 	
 	// Get pictures from around the world by hashtags.
 	// Separate hashtags by a comma. For example: girl, man

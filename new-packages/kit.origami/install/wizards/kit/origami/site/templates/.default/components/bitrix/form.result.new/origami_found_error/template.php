@@ -7,16 +7,16 @@ use Bitrix\Main\Loader;
 
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 $APPLICATION->ShowAjaxHead();
 $this->addExternalCss(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_found_error/style.css");
 $this->addExternalJS(SITE_DIR . "local/templates/.default/components/bitrix/form.result.new/origami_found_error/script.js");
 $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
 ?>
-<div class="sotbit_order_phone_wrapper found-error-popup">
-    <div class="sotbit_order_phone">
-        <div class="sotbit_order__title">
-            <span class="sotbit_order__title-title">
+<div class="kit_order_phone_wrapper found-error-popup">
+    <div class="kit_order_phone">
+        <div class="kit_order__title">
+            <span class="kit_order__title-title">
             <?= GetMessage('POPUP_TITLE'); ?>
             </span>
             <? if (empty($arResult["FORM_NOTE"])) { ?>
@@ -32,13 +32,13 @@ $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
                 <? if ($arResult["isFormErrors"] == "Y"): ?><?= $arResult["FORM_ERRORS_TEXT"]; ?><? endif; ?>
             </div>
 
-            <div class="sotbit_order_success_show">
+            <div class="kit_order_success_show">
 
                 <? if ($arResult["FORM_NOTE"]) : ?>
                     <div class="popup-window-message-content">
                         <svg class="popup-window-icon-check">
                             <use
-                                xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                                xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                         </svg>
 
                         <div>
@@ -79,7 +79,7 @@ $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
                                    <div class="error-popup__file-input-icon-wrapper">
                                        <svg class="icon_paperclip_small" width="14" height="16">
                                         <use
-                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_paperclip_small"></use>
+                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_paperclip_small"></use>
                                        </svg>
                                    </div>
                                      <?= GetMessage('GET_FILE_TITLE'); ?>
@@ -94,7 +94,7 @@ $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
                 </div>
 
                 <? if ($arResult["isUseCaptcha"] == "Y") { ?>
-                    <div class="sotbit_order_phone__block">
+                    <div class="kit_order_phone__block">
                         <div class="feedback_block__captcha">
                             <p class="popup-window-field_description"><?= GetMessage('CAPTCHA_TITLE'); ?>
                             </p>
@@ -110,7 +110,7 @@ $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
                                      onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                     <svg class="icon_refresh" width="16" height="14">
                                         <use
-                                            xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                            xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@ $telMask = \Sotbit\Origami\Config\Option::get('MASK', SITE_ID);
                 '                    <span>' + this["name"] + '</span>\n' +
                 '                    <a class="error-popup__remove-file" onclick="deleteFile(this);">\n' +
                 '                        <svg class="icon_cancel_filter_small" width="8" height="8">\n' +
-                '                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>\n' +
+                '                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel_filter_small"></use>\n' +
                 '                        </svg>\n' +
                 '                    </a>\n' +
                 '                </div>';

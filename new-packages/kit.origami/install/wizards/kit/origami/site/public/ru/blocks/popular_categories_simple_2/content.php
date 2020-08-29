@@ -1,6 +1,6 @@
 <?
 global $settings, $arrFilter;
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 $arrFilter = array();
 $arrFilter["UF_SHOW_ON_MAIN_PAGE"] = 1;

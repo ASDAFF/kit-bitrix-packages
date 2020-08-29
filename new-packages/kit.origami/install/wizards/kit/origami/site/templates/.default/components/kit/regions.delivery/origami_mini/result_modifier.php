@@ -3,7 +3,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-if(!\Bitrix\Main\Loader::includeModule('sotbit.regions')){
+if(!\Bitrix\Main\Loader::includeModule('kit.regions')){
     return false;
 }
 
@@ -12,13 +12,13 @@ use Bitrix\Main\Type\DateTime;
 use Bitrix\Main\Localization\Loc;
 
 $arDays = array(
-    Loc::getMessage('sotbit.regions_DELIVERY_DAY_1'),
-    Loc::getMessage('sotbit.regions_DELIVERY_DAY_2'),
-    Loc::getMessage('sotbit.regions_DELIVERY_DAY_3'),
+    Loc::getMessage('kit.regions_DELIVERY_DAY_1'),
+    Loc::getMessage('kit.regions_DELIVERY_DAY_2'),
+    Loc::getMessage('kit.regions_DELIVERY_DAY_3'),
 
 );
 
-$dayDeclension = new Declension(Loc::getMessage('sotbit.regions_DELIVERY_DAY_1'), Loc::getMessage('sotbit.regions_DELIVERY_DAY_2'), Loc::getMessage('sotbit.regions_DELIVERY_DAY_3'));
+$dayDeclension = new Declension(Loc::getMessage('kit.regions_DELIVERY_DAY_1'), Loc::getMessage('kit.regions_DELIVERY_DAY_2'), Loc::getMessage('kit.regions_DELIVERY_DAY_3'));
 
 $objDateTime = new \Bitrix\Main\Type\DateTime;
 
@@ -40,11 +40,11 @@ if($arResult['DELIVERY'])
                 if($from > 2)
                 {
                     $strDay = $dayDeclension->get($from);
-                    $strTime = Loc::getMessage('sotbit.regions_DELIVERY_AFTER_DAY') . ' ' . $from . ' ' . $strDay.', ';
+                    $strTime = Loc::getMessage('kit.regions_DELIVERY_AFTER_DAY') . ' ' . $from . ' ' . $strDay.', ';
 
                 }elseif($from >= 0)
                 {
-                    $strDay = Loc::getMessage('sotbit.regions_DELIVERY_STR_DAY_'.$from).', ';
+                    $strDay = Loc::getMessage('kit.regions_DELIVERY_STR_DAY_'.$from).', ';
                     $strTime = $strDay;
                 }
 

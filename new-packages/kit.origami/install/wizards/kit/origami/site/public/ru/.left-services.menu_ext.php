@@ -1,7 +1,7 @@
 <?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-use Sotbit\Origami\Helper\Config;
+use Kit\Origami\Helper\Config;
 
 global $APPLICATION;
 $aMenuLinksExt = array();

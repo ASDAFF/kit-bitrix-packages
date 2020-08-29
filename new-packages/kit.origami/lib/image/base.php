@@ -5,7 +5,7 @@ namespace Sotbit\Origami\Image;
  * Class Base
  *
  * @package Sotbit\Origami\Image
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 abstract class Base{
 
@@ -43,17 +43,17 @@ abstract class Base{
     /**
      * @var string
      */
-    protected $noImageSmall = '/upload/sotbit.origami/no_photo_small.svg';
+    protected $noImageSmall = '/upload/kit.origami/no_photo_small.svg';
 
     /**
      * @var string
      */
-    protected $noImageMedium = '/upload/sotbit.origami/no_photo_medium.svg';
+    protected $noImageMedium = '/upload/kit.origami/no_photo_medium.svg';
 
     /**
      * @var string
      */
-    protected $noImageBig = '/upload/sotbit.origami/no_photo_big.svg';
+    protected $noImageBig = '/upload/kit.origami/no_photo_big.svg';
 
     protected $arImages = array();
 

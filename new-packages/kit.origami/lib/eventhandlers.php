@@ -146,7 +146,7 @@ class EventHandlers
 
     function onChangeOfferNameBasket(\Bitrix\Main\Event $event)
     {
-        \Bitrix\Main\Loader::includeModule('sotbit.origami');
+        \Bitrix\Main\Loader::includeModule('kit.origami');
 
         $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 
@@ -247,7 +247,7 @@ class EventHandlers
 
     function changeOfferNameBasket(\Bitrix\Main\Event $event)
     {
-        \Bitrix\Main\Loader::includeModule('sotbit.origami');
+        \Bitrix\Main\Loader::includeModule('kit.origami');
 
         return;
 

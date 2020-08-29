@@ -46,7 +46,7 @@ while ($item = $rsVideo->GetNext()) {
                                         <div class="vlog-detail__list-video-date">
                                             <svg class="icon_clock" width="11" height="11">
                                                 <use
-                                                    xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                                    xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                                             </svg>
                                             <span><?=FormatDate("Q", MakeTimeStamp($video['TIMESTAMP_X']))?> <?=GetMessage('BACK')?></span>
                                         </div>

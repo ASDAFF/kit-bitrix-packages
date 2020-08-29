@@ -118,7 +118,7 @@ $idItem = \Bitrix\Main\Security\Random::getString(5);
                             <div class="news_block_five__others__content" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 
                                 <svg class="news_block_five__clock-icon" width="13" height="20">
-                                   <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_clock"></use>
+                                   <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_clock"></use>
                                 </svg>
                                 <p class="news_block_five__content_date fonts__middle_comment"><?=$arItem["DISPLAY_ACTIVE_FROM"]?></p>
                                 <p class="news_block_five__others__content_comment fonts__middle_text" title="<?if(isset($arItem["IPROPERTY_VALUES"]["ELEMENT_META_TITLE"])) echo $arItem["IPROPERTY_VALUES"]["ELEMENT_META_TITLE"]; else echo $arItem["NAME"]?>">

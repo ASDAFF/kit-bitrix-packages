@@ -8,7 +8,7 @@ use Bitrix\Main\Application;
 /**
  * Class Main
  * @package Sotbit\Origami\Config
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Option
 {

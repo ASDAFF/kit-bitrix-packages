@@ -16,7 +16,7 @@ use Bitrix\Main\Localization\Loc;
 use Sotbit\Origami\Helper\Config;
 
 Loc::loadMessages(__FILE__);
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $date = new \Sotbit\Origami\Helper\Date();
 $hoverClass = implode(" ", Config::getArray("HOVER_EFFECT"));
 $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
@@ -107,7 +107,7 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
                         <?
                         if (Config::get('TIMER_PROMOTIONS') == 'Y') {
                             $APPLICATION->IncludeComponent(
-                                "sotbit:origami.timer",
+                                "kit:origami.timer",
                                 "origami_default",
                                 array(
                                     "COMPONENT_TEMPLATE" => "origami_default",

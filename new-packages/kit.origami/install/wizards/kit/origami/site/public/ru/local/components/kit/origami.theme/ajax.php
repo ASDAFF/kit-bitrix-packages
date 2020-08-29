@@ -9,7 +9,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.
 $moduleIncluded = false;
 try
 {
-	$moduleIncluded = Loader::includeModule('sotbit.origami');
+	$moduleIncluded = Loader::includeModule('kit.origami');
 }
 catch (\Bitrix\Main\LoaderException $e)
 {
@@ -97,13 +97,13 @@ switch ($action)
                     Option::set($key, $value, $site);
                 }
             }
-            if (!is_dir($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/'))
+            if (!is_dir($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/'))
             {
-                mkdir($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/');
+                mkdir($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/');
             }
-            if (!is_dir($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/custom'))
+            if (!is_dir($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/custom'))
             {
-                mkdir($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/custom');
+                mkdir($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/custom');
             }
 
             if ($settings['OPTIONS'])

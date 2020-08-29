@@ -54,25 +54,25 @@ $arServices = Array(
             "step3.php"
         ),
     ),
-    "sotbit.opengraph" => Array(
+    "kit.opengraph" => Array(
         "NAME" => GetMessage("SERVICE_OPENGRAPH"),
         "STAGES" => Array(
             "settings.php"
         )
     ),
-    "sotbit.crosssell" => Array(
+    "kit.crosssell" => Array(
         "NAME" => GetMessage("SERVICE_CROSSSELL"),
         "STAGES" => Array(
             "settings.php"
         )
     ),
-    "sotbit.regions" => Array(
+    "kit.regions" => Array(
         "NAME" => GetMessage("SERVICE_REGIONS"),
         "STAGES" => Array(
             "settings.php"
         )
     ),
-    "sotbit.origami" => Array(
+    "kit.origami" => Array(
         "NAME" => GetMessage("SERVICE_ORIGAMI"),
         "STAGES" => Array(
             "settings.php",

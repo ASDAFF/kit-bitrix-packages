@@ -43,7 +43,7 @@ class Filter
         if(empty($DisplayProperties) || $type == "")
             return false;
 
-        $seoModule = \CModule::IncludeModule("sotbit.seometa");
+        $seoModule = \CModule::IncludeModule("kit.seometa");
         // get all filter props
         $FilterProps = array ();
         $link = "";

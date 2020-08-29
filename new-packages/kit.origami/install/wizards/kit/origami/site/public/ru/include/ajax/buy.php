@@ -2,17 +2,17 @@
 define("STOP_STATISTICS", true);
 define("NOT_CHECK_PERMISSIONS", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $moduleIncluded = false;
 try {
-    $moduleIncluded = \Bitrix\Main\Loader::includeModule('sotbit.origami');
+    $moduleIncluded = \Bitrix\Main\Loader::includeModule('kit.origami');
 } catch (\Bitrix\Main\LoaderException $e) {
 }
 $params = json_decode($params, true);
 
 \Bitrix\Main\Loader::includeModule('catalog');
 
-$Buy = new \Sotbit\Origami\Sale\Basket\Buy();
+$Buy = new \Kit\Origami\Sale\Basket\Buy();
 if (!$params['props']) {
     $params['props'] = [];
 }

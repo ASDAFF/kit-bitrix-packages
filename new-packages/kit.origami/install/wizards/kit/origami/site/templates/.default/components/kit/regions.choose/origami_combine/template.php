@@ -12,7 +12,7 @@ Loc::loadMessages(__FILE__);
 ?>
 <?/*
 <svg width="18" height="18">
-    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location"></use>
+    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
 </svg>
 <p><?= Loc::getMessage(SotbitRegions::moduleId . '_YOUR_CITY') ?></p>
 */?>
@@ -58,12 +58,12 @@ Loc::loadMessages(__FILE__);
         var SotbitRegion = new SotbitRegions({
             'list':<?=CUtil::PhpToJSObject($arResult['REGION_LIST'], false, true); ?>,
             'rootDomain':'<?=$arResult['ROOT_DOMAIN'][0]?>',
-            //'rootDomain': 'sotbit.com',
+            //'rootDomain': 'kit.com',
             'templateFolder':'<?=$templateFolder?>',
             'componentFolder':'<?=$componentPath?>',
             'singleDomain':'<?=Option::get('SINGLE_DOMAIN',SITE_ID)?>',
             'arParams':'<?=json_encode($arParams)?>',
-            'requestFolder': '/local/templates/.default/components/sotbit/regions.choose/origami_header_2',
+            'requestFolder': '/local/templates/.default/components/kit/regions.choose/origami_header_2',
             'locationType': <?if($arParams["FROM_LOCATION"] == "Y"):?>'location'<?else:?>'regions'<?endif;?>,
         });
     });

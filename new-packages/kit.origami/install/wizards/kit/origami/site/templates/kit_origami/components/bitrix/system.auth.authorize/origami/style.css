@@ -319,7 +319,7 @@ input.auth-btn:focus {
   margin: 0 0 25px;
   max-width: 500px; }
 
-.sotbit_order_phone input[name="captcha_word"] {
+.kit_order_phone input[name="captcha_word"] {
   padding: 5px;
   border: 1px solid #ededed;
   height: 40px;

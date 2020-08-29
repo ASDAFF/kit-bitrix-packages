@@ -8,10 +8,10 @@ use Bitrix\Main\Page\Asset;
 $useRegion = (Config::get('USE_REGIONS') == 'Y') ? true : false;
 $page = $APPLICATION->GetCurPage(false);
 Loc::loadMessages(__FILE__);
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/js/custom-slider.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/css/style-swiper-custom.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/js/custom-slider.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 $headerBgColor = Config::get('HEADER_BG_COLOR');
 ?>
 <div class="header-three header-three--white header-three--unfixed" id="header-three">
@@ -19,7 +19,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
         <div class="header-three__btn-menu-wrapper">
             <button class="header-three__btn-menu btn-menu" type="button" data-entity="open_menu">
                 <svg class="header-three__btn-menu-icon" width="22" height="16">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_menu_header"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_menu_header"></use>
                 </svg>
             </button>
         </div>
@@ -31,7 +31,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR."include/sotbit_origami/logo.php"
+                            "PATH" => SITE_DIR."include/kit_origami/logo.php"
                         )
                     );?>
             </a>
@@ -42,7 +42,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                             "",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_DIR."include/sotbit_origami/logo.php"
+                                "PATH" => SITE_DIR."include/kit_origami/logo.php"
                             )
                         );?>
             </span>
@@ -51,7 +51,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
         <div class="header-three__search-wrap search-wrap--unfixed search-wrap--close search-wrap--hide-input">
             <div class="header-three__city">
                 <svg width="18" height="18">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_location"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_location"></use>
                 </svg>
                 <?
                 if(\SotbitOrigami::isUseRegions())
@@ -60,7 +60,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                     if(!$template)
                         $template = 'origami_location';
                     $APPLICATION->IncludeComponent(
-                        "sotbit:regions.choose",
+                        "kit:regions.choose",
                         $template,
                         array('FROM_LOCATION' => 'Y'),
                         false
@@ -70,7 +70,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                 {
                     ?>
                     <span>
-                        <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/sotbit_origami/contacts_city.php"));?>
+                        <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/kit_origami/contacts_city.php"));?>
                     </span>
                     <?
                 }
@@ -90,7 +90,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                     "PAGE" => SITE_DIR."catalog/",
                     "CATEGORY_0_TITLE" => "Товары",
                     "CATEGORY_0" => array(
-                        0 => "iblock_sotbit_origami_catalog",
+                        0 => "iblock_kit_origami_catalog",
                     ),
                     "CATEGORY_0_iblock_catalog" => array(
                         0 => Option::get("IBLOCK_ID"),
@@ -110,7 +110,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                     "PRICE_VAT_INCLUDE" => "Y",
                     "PREVIEW_TRUNCATE_LEN" => "",
                     "CURRENCY_ID" => "RUB",
-                    "CATEGORY_0_iblock_sotbit_origami_catalog" => array(
+                    "CATEGORY_0_iblock_kit_origami_catalog" => array(
                         0 => "all",
                     )
                 ),
@@ -118,12 +118,12 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
             );?>
                 <div class="header-three__search-icon-open">
                     <svg width="18" height="18">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_search"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_search"></use>
                     </svg>
                 </div>
                 <div class="header-three__search-icon-close">
                     <svg width="14" height="14">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_cancel"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_cancel"></use>
                     </svg>
                 </div>
 
@@ -131,12 +131,12 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
             <div class="header-three__contact">
                 <?
             if(
-                \Bitrix\Main\Loader::includeModule('sotbit.regions') &&
+                \Bitrix\Main\Loader::includeModule('kit.regions') &&
                 \SotbitOrigami::isUseRegions() &&
-                is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/sotbit/regions.data')
+                is_dir($_SERVER['DOCUMENT_ROOT'].'/bitrix/components/kit/regions.data')
             ):
                 $APPLICATION->IncludeComponent(
-                    "sotbit:regions.data",
+                    "kit:regions.data",
                     "origami_header_3",
                     [
                         "CACHE_TIME"    => "36000000",
@@ -148,37 +148,37 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
             else:?>
                 <div class="contact-phone__link">
                     <svg class="contact-phone__link-icon" width="18" height="18">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone"></use>
                     </svg>
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_DIR."include/sotbit_origami/contacts_phone.php")
+                            "PATH" => SITE_DIR."include/kit_origami/contacts_phone.php")
                     );
                     ?>
                     <svg class="contact-phone__arrow-icon" width="10" height="6">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_big"></use>
                     </svg>
                 </div>
                 <div class="contact-phone__drop-down">
                     <div class="contact-phone__drop-down-item contact-phone__drop-down-item--phone">
                         <svg width="18" height="18">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_phone"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_phone"></use>
                         </svg>
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_DIR."include/sotbit_origami/contacts_phone.php")
+                                "PATH" => SITE_DIR."include/kit_origami/contacts_phone.php")
                         );
                         ?>
                     </div>
                     <div class="contact-phone__drop-down-item">
                         <svg width="18" height="20">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_time"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_time"></use>
                         </svg>
                         <p>
                             <?$APPLICATION->IncludeComponent(
@@ -186,39 +186,39 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                                 "",
                                 array(
                                     "AREA_FILE_SHOW" => "file",
-                                    "PATH" => SITE_DIR."include/sotbit_origami/contacts_worktime.php")
+                                    "PATH" => SITE_DIR."include/kit_origami/contacts_worktime.php")
                             );
                             ?>
                         </p>
                     </div>
                     <div class="contact-phone__drop-down-item">
                         <svg width="18" height="20">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_mail"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_mail"></use>
                         </svg>
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_DIR."include/sotbit_origami/contacts_email.php")
+                                "PATH" => SITE_DIR."include/kit_origami/contacts_email.php")
                         );
                         ?>
                     </div>
                     <div class="contact-phone__drop-down-item">
                         <svg width="18" height="20">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_pin"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_pin"></use>
                         </svg>
                         <p>
                             <?
                             $APPLICATION->IncludeComponent("bitrix:main.include", "", [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH"           =>
-                                    SITE_DIR."include/sotbit_origami/contacts_address.php",
+                                    SITE_DIR."include/kit_origami/contacts_address.php",
                             ]);
                             ?>
                         </p>
                     </div>
-                    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('sotbit.orderphone')):?>
+                    <?if(Config::get("HEADER_CALL") == "Y" && \Bitrix\Main\Loader::includeModule('kit.orderphone')):?>
                     <a href="javascript:void(0)" class="contact-phone__drop-down-btn"
                         onclick="callbackPhone('<?=SITE_DIR?>','<?=SITE_ID?>',this)">
                         <?=Loc::getMessage('CALLBACKPHONE')?>
@@ -300,7 +300,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                 "MENU_CACHE_TIME" => "36000000",
                 "MENU_CACHE_TYPE" => "A",
                 "MENU_CACHE_USE_GROUPS" => "Y",
-                "ROOT_MENU_TYPE" => "sotbit_top",
+                "ROOT_MENU_TYPE" => "kit_top",
                 "USE_EXT" => "Y",
                 'CACHE_SELECTED_ITEMS' => false,
                 "COMPONENT_TEMPLATE" => "origami_main_header_5"
@@ -316,7 +316,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                 "origami_main_header_2",
                 array(
                     "ALLOW_MULTI_SELECT" => "N",
-                    "CHILD_MENU_TYPE" => "sotbit_left",
+                    "CHILD_MENU_TYPE" => "kit_left",
                     "COMPOSITE_FRAME_MODE" => "A",
                     "COMPOSITE_FRAME_TYPE" => "AUTO",
                     "DELAY" => "N",
@@ -326,7 +326,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                     "MENU_CACHE_TIME" => "36000000",
                     "MENU_CACHE_TYPE" => "A",
                     "MENU_CACHE_USE_GROUPS" => "Y",
-                    "ROOT_MENU_TYPE" => "sotbit_left",
+                    "ROOT_MENU_TYPE" => "kit_left",
                     "USE_EXT" => "Y",
                     'CACHE_SELECTED_ITEMS' => false,
                     "COMPONENT_TEMPLATE" => "origami_main_header_2"
@@ -349,7 +349,7 @@ $headerBgColor = Config::get('HEADER_BG_COLOR');
                         "MENU_CACHE_TIME" => "36000000",
                         "MENU_CACHE_TYPE" => "A",
                         "MENU_CACHE_USE_GROUPS" => "Y",
-                        "ROOT_MENU_TYPE" => "sotbit_top",
+                        "ROOT_MENU_TYPE" => "kit_top",
                         "USE_EXT" => "Y",
                         'CACHE_SELECTED_ITEMS' => false,
                         "COMPONENT_TEMPLATE" => "origami_top_header_2",
@@ -472,7 +472,7 @@ $APPLICATION->IncludeComponent(
     "origami_main_header_sidebar",
     array(
         "ALLOW_MULTI_SELECT" => "N",
-        "CHILD_MENU_TYPE" => "sotbit_side",
+        "CHILD_MENU_TYPE" => "kit_side",
         "COMPOSITE_FRAME_MODE" => "A",
         "COMPOSITE_FRAME_TYPE" => "AUTO",
         "DELAY" => "N",
@@ -482,7 +482,7 @@ $APPLICATION->IncludeComponent(
         "MENU_CACHE_TIME" => "36000000",
         "MENU_CACHE_TYPE" => "A",
         "MENU_CACHE_USE_GROUPS" => "Y",
-        "ROOT_MENU_TYPE" => "sotbit_side",
+        "ROOT_MENU_TYPE" => "kit_side",
         "USE_EXT" => "Y",
         'CACHE_SELECTED_ITEMS' => false,
         "COMPONENT_TEMPLATE" => "origami_main_header_sidebar"

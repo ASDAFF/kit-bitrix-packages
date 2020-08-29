@@ -1,5 +1,5 @@
 <?php
-$idModule = 'sotbit.regions';
+$idModule = 'kit.regions';
 $MESS[$idModule.'_DELIVERY_EXAMPLE'] = 'Например, <span data-entity="item" data-index="#ID0#">#NAME0#</span> или <span data-entity="item" data-index="#ID1#">#NAME1#</span>';
 $MESS[$idModule.'_DELIVERY_BIG_CITIES'] = 'Крупные города';
 $MESS[$idModule.'_DELIVERY_CITIES'] = 'Населенные пункты';

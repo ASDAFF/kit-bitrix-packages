@@ -305,7 +305,7 @@ if (!function_exists("getMacro")){
 					}
 				}
 				//shops
-				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/contacts/1/content.php');
+				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/contacts/1/content.php');
 				preg_match_all("#IBLOCK_ID(.*),#", $text, $matches);
 				if($matches[0])
 				{
@@ -353,7 +353,7 @@ if (!function_exists("getMacro")){
 
 				//forms
 				//1
-				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/footers/1/content.php');
+				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/footers/1/content.php');
 				preg_match_all("#WEB_FORM_ID(.*)\n#", $text, $matches);
 				if($matches[0])
 				{
@@ -367,7 +367,7 @@ if (!function_exists("getMacro")){
 					}
 				}
 				//2
-				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/components/bitrix/news/sotbit_origami_shops/detail.php');
+				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/components/bitrix/news/kit_origami_shops/detail.php');
 				preg_match_all("#WEB_FORM_ID(.*)\n#", $text, $matches);
 				if($matches[0])
 				{
@@ -381,7 +381,7 @@ if (!function_exists("getMacro")){
 					}
 				}
 				//3
-				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/sotbit_origami/theme/contacts/1/content.php');
+				$text = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/local/templates/kit_origami/theme/contacts/1/content.php');
 				preg_match_all("#WEB_FORM_ID(.*)\n#", $text, $matches);
 				if($matches[0])
 				{
@@ -482,7 +482,7 @@ if (!function_exists("backupModuleFiles"))
 					continue;
 				}
 				$path = str_replace($dir, '',$file);
-				CreateBakFile($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sotbit.origami/'.$path);
+				CreateBakFile($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/kit.origami/'.$path);
 			}
 		}
 	}
@@ -492,7 +492,7 @@ if (!function_exists("backupTemplateFiles"))
 {
 	function backupTemplateFiles($str)
 	{
-		$dir = __DIR__.'/install/wizards/sotbit/origami/site/templates/sotbit_origami';
+		$dir = __DIR__.'/install/wizards/kit/origami/site/templates/kit_origami';
 		if(!is_dir($dir )) return;
 		$files = readDirectory($dir);
 		if($files)
@@ -511,7 +511,7 @@ if (!function_exists("backupPublicFiles"))
 {
 	function backupPublicFiles($arrSites)
 	{
-		$dir = __DIR__.'/install/wizards/sotbit/origami/site/public/ru';
+		$dir = __DIR__.'/install/wizards/kit/origami/site/public/ru';
 		$files = readDirectory($dir);
 		if($files && $arrSites)
 		{

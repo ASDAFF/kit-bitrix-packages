@@ -33,7 +33,7 @@ WizardServices::IncludeServiceLang("step2.php", $lang);
 $deliveryItems = array();
 $arLocation4Delivery = Array();
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) != "Y")
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) != "Y")
 {
     $locationGroupID = 0;
     $arLocationArr = Array();
@@ -129,7 +129,7 @@ if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SI
 
 		$logo = $_SERVER["DOCUMENT_ROOT"].WIZARD_SERVICE_RELATIVE_PATH ."/images/courier.png";
 		$arPicture = CFile::MakeFileArray($logo);
-		$fid = CFile::SaveFile($arPicture,'sotbit_origami');
+		$fid = CFile::SaveFile($arPicture,'kit_origami');
 		$arFields['LOGOTIP'] = CFile::GetPath($fid);
 		
         $deliveryItems[] = $arFields;
@@ -157,7 +157,7 @@ if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SI
 
 		$logo = $_SERVER["DOCUMENT_ROOT"].WIZARD_SERVICE_RELATIVE_PATH ."/images/yourself.png";
 		$arPicture = CFile::MakeFileArray($logo);
-		$fid = CFile::SaveFile($arPicture,'sotbit_origami');
+		$fid = CFile::SaveFile($arPicture,'kit_origami');
 		$arFields['LOGOTIP'] = CFile::GetPath($fid);
 
         $deliveryItems[] = $arFields;
@@ -237,7 +237,7 @@ if($bRus)
 			
 			$logo = $_SERVER["DOCUMENT_ROOT"].WIZARD_SERVICE_RELATIVE_PATH ."/images/post.png";
 			$arPicture = CFile::MakeFileArray($logo);
-			$fid = CFile::SaveFile($arPicture,'sotbit_origami');
+			$fid = CFile::SaveFile($arPicture,'kit_origami');
 			$arFields['LOGOTIP'] = CFile::GetPath($fid);
 			
 			$deliveryItems["rus_post"] = $fields;
@@ -688,7 +688,7 @@ if(IntVal($userGroupID) > 0)
     WizardServices::SetFilePermission(Array($siteID, $SiteDir . "/catalog/"), Array($userGroupID => "W"));
     WizardServices::SetFilePermission(Array($siteID, $SiteDir . "/personal/"), Array($userGroupID => "W"));
 }
-COption::SetOptionString("sotbit.origami", "wizard_installed", "Y", false, WIZARD_SITE_ID);
+COption::SetOptionString("kit.origami", "wizard_installed", "Y", false, WIZARD_SITE_ID);
 
 
 ?>

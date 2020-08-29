@@ -14,7 +14,7 @@ use Sotbit\Origami\Helper;
 if (!Loader::includeModule('iblock'))
 	return;
 
-Loader::includeModule('sotbit.origami');
+Loader::includeModule('kit.origami');
 
 $arTemplateParameters['DETAIL_SHOW_POPULAR'] = array(
 	'PARENT' => 'ADDITIONAL_SETTINGS',

@@ -15,7 +15,7 @@ Loc::loadMessages(__FILE__);
  * Class Menu
  *
  * @package Sotbit\Origami\Helper
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Menu
 {
@@ -32,7 +32,7 @@ class Menu
     ) {
         $moduleInclude = false;
         try {
-            $moduleInclude = Loader::includeModule('sotbit.origami');
+            $moduleInclude = Loader::includeModule('kit.origami');
         } catch (LoaderException $e) {
             echo $e->getMessage();
         }
@@ -43,21 +43,21 @@ class Menu
         foreach ($sites as $lid => $name) {
             $settings[$lid] = [
                 "text"  => ' ['.$lid.'] '.$name,
-                "url"   => '/bitrix/admin/sotbit_origami_settings.php?lang='
+                "url"   => '/bitrix/admin/kit_origami_settings.php?lang='
                     .LANGUAGE_ID.'&site='.$lid,
                 "title" => ' ['.$lid.'] '.$name,
             ];
             $develop[$lid] = [
                 "text"  => ' ['.$lid.'] '.$name,
-                "url"   => '/bitrix/admin/sotbit_origami_develop.php?lang='
+                "url"   => '/bitrix/admin/kit_origami_develop.php?lang='
                     .LANGUAGE_ID.'&site='.$lid,
                 "title" => ' ['.$lid.'] '.$name,
             ];
         }
 
-        if (!isset($arGlobalMenu['global_menu_sotbit'])) {
-            $arGlobalMenu['global_menu_sotbit'] = [
-                'menu_id'   => 'sotbit',
+        if (!isset($arGlobalMenu['global_menu_kit'])) {
+            $arGlobalMenu['global_menu_kit'] = [
+                'menu_id'   => 'kit',
                 'text'      => Loc::getMessage(
                     \SotbitOrigami::moduleId.'_GLOBAL_MENU'
                 ),
@@ -65,7 +65,7 @@ class Menu
                     \SotbitOrigami::moduleId.'_GLOBAL_MENU'
                 ),
                 'sort'      => 1000,
-                'items_id'  => 'global_menu_sotbit_items',
+                'items_id'  => 'global_menu_kit_items',
                 "icon"      => "",
                 "page_icon" => "",
             ];
@@ -77,8 +77,8 @@ class Menu
                 >= 'R'
             ) {
                 $menu = [
-                    "section"   => "sotbit_origami",
-                    "menu_id"   => "sotbit_origami",
+                    "section"   => "kit_origami",
+                    "menu_id"   => "kit_origami",
                     "sort"      => 1,
                     'id'        => 'origami',
                     "text"      => Loc::getMessage(
@@ -87,9 +87,9 @@ class Menu
                     "title"     => Loc::getMessage(
                         \SotbitOrigami::moduleId.'_GLOBAL_MENU_ORIGAMI'
                     ),
-                    "icon"      => "sotbit_origami_menu_icon",
+                    "icon"      => "kit_origami_menu_icon",
                     "page_icon" => "",
-                    "items_id"  => "global_menu_sotbit_origami",
+                    "items_id"  => "global_menu_kit_origami",
                     "items"     => [
                         [
                             'text'      => Loc::getMessage(
@@ -121,7 +121,7 @@ class Menu
                 ];
             }
         }
-        $arGlobalMenu['global_menu_sotbit']['items']['sotbit.origami'] = $menu;
+        $arGlobalMenu['global_menu_kit']['items']['kit.origami'] = $menu;
     }
 
     /**
@@ -183,7 +183,7 @@ class Menu
         $arRootCatalog = array();
 
         $obCache = new \CPHPCache();
-        if ($obCache->InitCache(36000, serialize(array($arResult, $iblockID)), "/sotbit.origami/root_menu"))
+        if ($obCache->InitCache(36000, serialize(array($arResult, $iblockID)), "/kit.origami/root_menu"))
         {
             $rootPage = $obCache->GetVars();
         }elseif ($obCache->StartDataCache()){

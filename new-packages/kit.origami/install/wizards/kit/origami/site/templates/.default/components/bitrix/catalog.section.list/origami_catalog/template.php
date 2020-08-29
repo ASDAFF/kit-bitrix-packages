@@ -3,10 +3,10 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 global $issetCondition;
 global ${$arParams["FILTER_NAME"]};
 
@@ -17,11 +17,11 @@ $lazyLoad = (Config::get('LAZY_LOAD') == "Y");
 ?>
 
 <?
-if(isset($sotbitSeoMetaFile))
+if(isset($kitSeoMetaFile))
 {
     ?>
     <div class="catalog_content__canvas">
-        <?=$sotbitSeoMetaFile?>
+        <?=$kitSeoMetaFile?>
     </div>
     <?
 }elseif($arResult["SECTION"]["DETAIL_PICTURE"]){

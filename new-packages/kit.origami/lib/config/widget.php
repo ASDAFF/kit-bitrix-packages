@@ -12,7 +12,7 @@ namespace Sotbit\Origami\Config;
 /**
  * Class Widget
  * @package Sotbit\Origami\Config
- * @author Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author Sergey Danilkin <s.danilkin@kit.ru>
  */
 abstract class Widget
 {

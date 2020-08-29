@@ -7,10 +7,10 @@ if (\Sotbit\Origami\Helper\Config::get('SLIDER_BUTTONS') == 'square') {
     $sliderButtons = "btn-slider-main--two";
 }
 use Bitrix\Main\Page\Asset;
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/sotbit_origami/assets/js/custom-slider.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/css/style-swiper-custom.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/js/swiper.js");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/kit_origami/assets/js/custom-slider.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/plugin/swiper5.2.0/css/swiper.min.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/kit_origami/assets/css/style-swiper-custom.css");
 ?>
 
 <?if($arResult["ITEMS"]):?>
@@ -31,7 +31,7 @@ Asset::getInstance()->addCss(SITE_DIR . "local/templates/sotbit_origami/assets/c
                             <?endif;?>
                             <?if($arItem["PROPERTIES"]["BUTTON_TEXT"]["VALUE"]):?>
                                 <a
-                                    <?= ($arItem['PROPERTIES']['NEW_TAB']['VALUE'] == 'Да') ? 'target="_blank"' : '' ?>
+                                    <?= ($arItem['PROPERTIES']['NEW_TAB']['VALUE'] == 'пїЅпїЅ') ? 'target="_blank"' : '' ?>
                                         href="<?=$arItem['PROPERTIES']['URL']['VALUE']?>" class="slider-header-three-item__link"><?=$arItem["PROPERTIES"]["BUTTON_TEXT"]["VALUE"]?>
                                 </a>
                             <?endif;?>

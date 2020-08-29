@@ -15,7 +15,7 @@ use Bitrix\Main\Page\Asset;
 $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
 
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/components/bitrix/system.auth.forgotpasswd/.default/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/components/bitrix/system.auth.forgotpasswd/.default/style.css");
 ?>
 
 <div class="bx-authform">

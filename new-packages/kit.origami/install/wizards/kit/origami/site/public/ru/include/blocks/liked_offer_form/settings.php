@@ -99,7 +99,7 @@ return [
                 ],
             'css' =>
                 [
-                    $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/bitrix/form.result.new/sotbit_webform_1/style.css',
+                    $_SERVER['DOCUMENT_ROOT'].'/local/templates/.default/components/bitrix/form.result.new/kit_webform_1/style.css',
                 ],
         ],
     'style'  =>

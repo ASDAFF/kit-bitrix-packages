@@ -5,7 +5,7 @@
 if(!CModule::IncludeModule("iblock") || !CModule::IncludeModule("catalog"))
 	return;
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 //update iblocks, demo discount and precet
@@ -17,8 +17,8 @@ $IBLOCK_OFFERS_ID = (isset($_SESSION["WIZARD_OFFERS_IBLOCK_ID"]) ? (int)$_SESSIO
 
 if ($IBLOCK_OFFERS_ID)
 {
-	$iblockCodeOffers = "sotbit_origami_offers_"  . WIZARD_SITE_ID;
-    $iblockXmlIDOffers = "sotbit_origami_offers_"  . WIZARD_SITE_ID;
+	$iblockCodeOffers = "kit_origami_offers_"  . WIZARD_SITE_ID;
+    $iblockXmlIDOffers = "kit_origami_offers_"  . WIZARD_SITE_ID;
 	//IBlock fields
 	$iblock = new CIBlock;
 	$arFields = Array(
@@ -171,8 +171,8 @@ if ($IBLOCK_OFFERS_ID)
 
 if ($IBLOCK_CATALOG_ID)
 {
-	$iblockCode = "sotbit_origami_catalog_"  . WIZARD_SITE_ID;
-    $iblockXmlID = "sotbit_origami_catalog_"  . WIZARD_SITE_ID;
+	$iblockCode = "kit_origami_catalog_"  . WIZARD_SITE_ID;
+    $iblockXmlID = "kit_origami_catalog_"  . WIZARD_SITE_ID;
 	//IBlock fields
 	$iblock = new CIBlock;
 	$arFields = Array(

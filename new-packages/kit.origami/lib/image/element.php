@@ -7,7 +7,7 @@ use Sotbit\Origami\Helper\Config;
  * Class Element
  *
  * @package Sotbit\Origami\Image
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Element extends Base{
     /**

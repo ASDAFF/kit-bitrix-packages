@@ -515,7 +515,7 @@ export default class Basket extends React.Component {
                              window.rightPanel.closePanel();
                          }}>
                           <svg width="10" height="10">
-                              <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
+                              <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_dropdown_right"></use>
                           </svg>
                           {lang.REACT_CONTINUE_PRODUCTS}
                       </a>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2020-05-07T23:42:32">
 	<Классификатор>
-		<Ид>sotbit_origami_news</Ид>
+		<Ид>kit_origami_news</Ид>
 		<Наименование>Новости</Наименование>
 		<Свойства>
 			<Свойство>
@@ -108,10 +108,10 @@
 		</Группы>
 	</Классификатор>
 	<Каталог>
-		<Ид>sotbit_origami_news</Ид>
-		<ИдКлассификатора>sotbit_origami_news</ИдКлассификатора>
+		<Ид>kit_origami_news</Ид>
+		<ИдКлассификатора>kit_origami_news</ИдКлассификатора>
 		<Наименование>Новости</Наименование>
-		<БитриксКод>sotbit_origami_news</БитриксКод>
+		<БитриксКод>kit_origami_news</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
 		<БитриксURLСписок>#SITE_DIR#/news/</БитриксURLСписок>
 		<БитриксURLДеталь>#SITE_DIR#/news/#SECTION_CODE#/#ELEMENT_CODE#/</БитриксURLДеталь>
@@ -270,7 +270,7 @@
 	 Чем выше мощность газонокосилки, тем больше ширина скашивание, и тем меньше времени будет затрачено на работу. Модели, обладающие мощностью 1600-1800 Вт, осуществляют за один проход обработку полосы около полуметра. Модели меньшей мощности (1000-1200 Вт) могут обрабатывать полосу не более 30 сантиметров, да и времени на скашивание уходит больше.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;718&quot; src=&quot;/include/sotbit_origami/images/gazonokosilki.jpg&quot; height=&quot;356&quot; title=&quot;газонокосилка&quot; alt=&quot;газонокосилка&quot;&gt;
+ &lt;img width=&quot;718&quot; src=&quot;/include/kit_origami/images/gazonokosilki.jpg&quot; height=&quot;356&quot; title=&quot;газонокосилка&quot; alt=&quot;газонокосилка&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Выбирая газонокосилку по параметру мощности, исходить следует из площади, которую нужно будет обрабатывать:
@@ -446,13 +446,13 @@
 	 Любая обувь, а в особенности спортивная, довольно быстро изнашивается. Причем материал, из которого изготовлена подошва, не так и важен. Каучук, резина или даже установленные металлические набойки рано или поздно приходят в негодность. Но что будет, если при изготовлении подошвы использовать один из самых прочных материалов на планете, графен? Как утверждает редакция издания Phys.org, получатся практически вечные кроссовки.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;650&quot; alt=&quot;вечные кроссовки&quot; src=&quot;/include/sotbit_origami/images/vechnie krossovki.jpg&quot; height=&quot;434&quot; title=&quot;вечные кроссовки&quot;&gt;
+ &lt;img width=&quot;650&quot; alt=&quot;вечные кроссовки&quot; src=&quot;/include/kit_origami/images/vechnie krossovki.jpg&quot; height=&quot;434&quot; title=&quot;вечные кроссовки&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Для работы над инновационной обувью будущего объединились английский спортивный бренд inov-8 и ученые из Манчестерского университета. Напомним, что графен — это особый материал толщиной всего в 1 атом углерода, полученный еще в 2004 году. За его открытие ученые даже получили Нобелевскую премию. Так вот, в последнее время этот материал находит все большее применение в различных сферах жизни. Причем, использование графена не ограничивается исключительно научными изысканиями: его используют при проектировании автомобилей, самолетов, а некоторые дизайнеры уже применяли уникальный материал при изготовлении одежды.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;650&quot; alt=&quot;вечные кроссовки&quot; src=&quot;/include/sotbit_origami/images/vechnie krossovki 2.jpg&quot; height=&quot;434&quot; title=&quot;вечные кроссовки&quot;&gt;
+ &lt;img width=&quot;650&quot; alt=&quot;вечные кроссовки&quot; src=&quot;/include/kit_origami/images/vechnie krossovki 2.jpg&quot; height=&quot;434&quot; title=&quot;вечные кроссовки&quot;&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Но вернемся к «графеновым кроссовкам». Британская компания inov-8 представила обувь на графеновой подошве G-Series. При добавлении к стандартному для подошвы каучуку графена, прочность обуви увеличивается на 50%. Она становится эластичнее и устойчивее к износу. Инновационные кроссовки планируются к выходу на рынок в 2018 году. Как заявил доктор Аравинд Виджайарагхаван из Манчестерского университета:
@@ -524,7 +524,7 @@
 	 Вдохновившись сотрудничеством с Нью-Йоркским балетом, PUMA создала коллекцию женского тренинга ENPOINTE (на пуантах), которую представляет SELENA GOMEZ (Селене Гомез).
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/sotbit_origami/images/puma_1.jpg&quot; height=&quot;260&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
+ &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/kit_origami/images/puma_1.jpg&quot; height=&quot;260&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Коллекция ENPOINTE объединяет в себе балетные силуэты с уличной модой. Новые прогрессивные модели кроссовок PHENOM и MUSE по достоинству оценят поклонницы PUMA, в этих кроссовках вы сможете не только комфортно тренироваться, и отлично проводить время вне тренировок.
@@ -533,7 +533,7 @@
 	 Для занятий спортом PUMA предлагает &amp;nbsp;кроссовки IGNITE с технологиями NETFIT и EVOKNIT, которые стали еще быстрее и ярче.
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/sotbit_origami/images/puma_2.jpg&quot; height=&quot;261&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
+ &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/kit_origami/images/puma_2.jpg&quot; height=&quot;261&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
 &lt;/p&gt;
 &lt;p&gt;
 	 Одним из главных событий в PUMA является 50 летие легендарной модели кроссовок SUEDE. PUMA решила отметить это событие выпуском кед B-BOYFABULOUS, посвятила линейку обуви некоторым крупнейшим мировым центрам SUEDE CLASSIC BERLIN и NYC.
@@ -542,7 +542,7 @@
 	 На протяжении 65 лет PUMA создает одежду и обувь для самых быстрых спортсменов на планете. Будь и ты одним из них! &amp;nbsp;Будь с нами! Будь в Puma!
 &lt;/p&gt;
 &lt;p&gt;
- &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/sotbit_origami/images/puma_3.jpg&quot; height=&quot;479&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
+ &lt;img width=&quot;718&quot; alt=&quot;Puma&quot; src=&quot;/include/kit_origami/images/puma_3.jpg&quot; height=&quot;479&quot; title=&quot;Puma&quot;&gt;&lt;br&gt;
 &lt;/p&gt;
  &lt;br&gt;</Значение>
 						<Тип>html</Тип>

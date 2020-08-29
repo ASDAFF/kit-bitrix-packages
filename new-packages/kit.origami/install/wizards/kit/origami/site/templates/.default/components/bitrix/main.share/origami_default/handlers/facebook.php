@@ -17,7 +17,7 @@ $icon_url_template = "<script>\n" .
     "<a class=\"subscribe-popup__button fb\" href=\"http://www.facebook.com/share.php?u=#PAGE_URL#&t=#PAGE_TITLE#\" onclick=\"return fbs_click('#PAGE_URL#', '#PAGE_TITLE#');\" target=\"_blank\" title=\"" . $title . "\">" .
     "<div class=\"subscribe-popup__button-icon-wrapper\">" .
     "<svg class=\"subscribe-popup__button-icon\" width=\"12\" height=\"28\">" .
-    "<use xlink:href=\"/local/templates/sotbit_origami/assets/img/sprite.svg#icon_facebook\"></use>" .
+    "<use xlink:href=\"/local/templates/kit_origami/assets/img/sprite.svg#icon_facebook\"></use>" .
     "</svg>" .
     "</div>" .
     "<div class=\"subscribe-popup__button-description\"><span>" .

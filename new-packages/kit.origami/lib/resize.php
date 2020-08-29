@@ -8,7 +8,7 @@ use Sotbit\Origami\Config\Option;
  * Class Resize
  *
  * @package Sotbit\Origami
- * @author  Sergey Danilkin <s.danilkin@sotbit.ru>
+ * @author  Sergey Danilkin <s.danilkin@kit.ru>
  */
 class Resize
 {

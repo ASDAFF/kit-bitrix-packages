@@ -5,7 +5,7 @@ use Sotbit\Origami\Helper\Config;
 
 $theme = new \Sotbit\Origami\Front\Theme();
 
-Asset::getInstance()->addcss("/local/templates/sotbit_origami/theme/contacts/5/style.css");
+Asset::getInstance()->addcss("/local/templates/kit_origami/theme/contacts/5/style.css");
 Asset::getInstance()->addCss($theme->getTheme() . "/style-contacts.css");
 $shopId = \Sotbit\Origami\Config\Option::get('IBLOCK_ID_SHOP');
 $mainSection = CIBlock::GetList("ASC", array("ID" => $shopId))->Fetch();
@@ -17,13 +17,13 @@ CJSCore::Init(array("date"));
         <? $APPLICATION->IncludeComponent(
             "bitrix:main.include",
             "",
-            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contact_page_block/contacts_info_new/contacts_info_new.php"));
+            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contact_page_block/contacts_info_new/contacts_info_new.php"));
         ?>
 
         <? $APPLICATION->IncludeComponent(
             "bitrix:main.include",
             "",
-            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contact_page_block/contacts_description_slider/contacts_description_slider.php"));
+            array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contact_page_block/contacts_description_slider/contacts_description_slider.php"));
         ?>
 
         <h2 class="contacts-block__title"><?= $mainSection['NAME'] ?></h2>
@@ -33,7 +33,7 @@ CJSCore::Init(array("date"));
     <? $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "",
-        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/sotbit_origami/contact_page_block/regional_office_5/regional_office.php"));
+        array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR . "include/kit_origami/contact_page_block/regional_office_5/regional_office.php"));
     ?>
 
     <div class="contacts-callback-wrapper">

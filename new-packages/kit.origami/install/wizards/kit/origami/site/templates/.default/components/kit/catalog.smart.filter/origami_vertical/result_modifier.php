@@ -92,5 +92,5 @@ if($linkMode != 'DISABLED' && $arParams['SEF_MODE'] == 'Y')
         }
     }
 }
-global $sotbitFilterResult;
-$sotbitFilterResult = $arResult;
+global $kitFilterResult;
+$kitFilterResult = $arResult;

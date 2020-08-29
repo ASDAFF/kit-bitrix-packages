@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2020-05-20T10:57:25">
 	<Классификатор>
-		<Ид>sotbit_origami_banners</Ид>
+		<Ид>kit_origami_banners</Ид>
 		<Наименование>Баннеры</Наименование>
 		<Свойства>
 			<Свойство>
@@ -452,14 +452,14 @@
 		</Группы>
 	</Классификатор>
 	<Каталог>
-		<Ид>sotbit_origami_banners</Ид>
-		<ИдКлассификатора>sotbit_origami_banners</ИдКлассификатора>
+		<Ид>kit_origami_banners</Ид>
+		<ИдКлассификатора>kit_origami_banners</ИдКлассификатора>
 		<Наименование>Баннеры</Наименование>
-		<БитриксКод>sotbit_origami_banners</БитриксКод>
+		<БитриксКод>kit_origami_banners</БитриксКод>
 		<БитриксСортировка>500</БитриксСортировка>
-		<БитриксURLСписок>#SITE_DIR#/sotbit_origami_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
-		<БитриксURLДеталь>#SITE_DIR#/sotbit_origami_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
-		<БитриксURLРаздел>#SITE_DIR#/sotbit_origami_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
+		<БитриксURLСписок>#SITE_DIR#/kit_origami_content/index.php?ID=#IBLOCK_ID#</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/kit_origami_content/detail.php?ID=#ELEMENT_ID#</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/kit_origami_content/list.php?SECTION_ID=#SECTION_ID#</БитриксURLРаздел>
 		<БитриксURLКанонический></БитриксURLКанонический>
 		<БитриксКартинка></БитриксКартинка>
 		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
@@ -2203,9 +2203,9 @@
 					</ЗначенияСвойства>
 					<ЗначенияСвойства>
 						<Ид>432</Ид>
-						<Значение>https://marketplace.1c-bitrix.ru/solutions/sotbit.origami/</Значение>
+						<Значение>https://marketplace.1c-bitrix.ru/solutions/kit.origami/</Значение>
 						<ЗначениеСвойства>
-							<Значение>https://marketplace.1c-bitrix.ru/solutions/sotbit.origami/</Значение>
+							<Значение>https://marketplace.1c-bitrix.ru/solutions/kit.origami/</Значение>
 							<Описание></Описание>
 						</ЗначениеСвойства>
 					</ЗначенияСвойства>

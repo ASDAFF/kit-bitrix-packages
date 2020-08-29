@@ -6,7 +6,7 @@ $arComponentParameters = array(
         "LOGIN" => array(
             "NAME" => GetMessage("INWIDGET_LOGIN"),
             "TYPE" => "STRING",
-            "DEFAULT" => "sotbit_insta",
+            "DEFAULT" => "kit_insta",
             "PARENT" => "BASE",
         ),
         "IMG_COUNT" => array(

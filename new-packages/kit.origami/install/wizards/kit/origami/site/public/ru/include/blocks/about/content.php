@@ -13,7 +13,7 @@ global $settings;
                     "",
                     array(
                         "AREA_FILE_SHOW" => "file",
-                        "PATH" => SITE_DIR . "include/sotbit_origami/about_image.php"
+                        "PATH" => SITE_DIR . "include/kit_origami/about_image.php"
                     )
                 ); ?>
             </div>
@@ -24,7 +24,7 @@ global $settings;
                 "",
                 array(
                     "AREA_FILE_SHOW" => "file",
-                    "PATH" => SITE_DIR."include/sotbit_origami/about_text.php"
+                    "PATH" => SITE_DIR."include/kit_origami/about_text.php"
                 )
             );?>
         </div>

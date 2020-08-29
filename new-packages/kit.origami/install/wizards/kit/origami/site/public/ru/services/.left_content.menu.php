@@ -1,4 +1,4 @@
 <?
-\Bitrix\Main\Loader::includeModule('sotbit.origami');
+\Bitrix\Main\Loader::includeModule('kit.origami');
 $aMenuLinks = Array();
 ?>

@@ -27,7 +27,7 @@ $APPLICATION->SetTitle("Способы оплаты");
 	 Стоимость заказа можно оплатить через системы электронных платежей.
 </p>
 <p>
- <img src="/local/templates/sotbit_origami/assets/img/text/1.png" width="88" height="31"> <img src="/local/templates/sotbit_origami/assets/img/text/2.png" width="88" height="31"> <img src="/local/templates/sotbit_origami/assets/img/text/3.png" width="88" height="31"> <img src="/local/templates/sotbit_origami/assets/img/text/4.png" width="88" height="31">
+ <img src="/local/templates/kit_origami/assets/img/text/1.png" width="88" height="31"> <img src="/local/templates/kit_origami/assets/img/text/2.png" width="88" height="31"> <img src="/local/templates/kit_origami/assets/img/text/3.png" width="88" height="31"> <img src="/local/templates/kit_origami/assets/img/text/4.png" width="88" height="31">
 </p>
 <h2>4. Мой баланс</h2>
 <p>
@@ -49,7 +49,7 @@ $APPLICATION->SetTitle("Способы оплаты");
 </p>
 <blockquote class="left-highlight left-green-highlight">
     <svg class="payment-icon_edit" width="50px" height="50px">
-              <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_edit"></use>
+              <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_edit"></use>
     </svg>
 	Обработка полученных в зашифрованном виде конфиденциальных данных клиента (реквизиты карты, регистрационные данные и&nbsp;т.&nbsp;д.) производится в процессинговом центре. Таким образом, никто, даже продавец, не может получить персональные и банковские данные клиента, включая информацию о его покупках, сделанных в&nbsp;других магазинах.
 </blockquote>
@@ -69,7 +69,7 @@ $APPLICATION->SetTitle("Способы оплаты");
 </p>
 <blockquote class="red left-highlight">
     <svg class="payment-icon_info" width="50px" height="50px">
-               <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_info"></use>
+               <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_info"></use>
     </svg>
 	Предложение не является публичной офертой. ООО «Рога и копыта» самостоятельно принимает решение о предоставлении либо отказе в предоставлении кредита без объяснения причин.<br>
 	 Товары сертифицированы.

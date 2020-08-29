@@ -171,7 +171,7 @@ if(!isset($sort['by']['order']) || empty($sort['by']['order']))
                     if($mobileFilter) {
                         ?>
                         <svg class="mobile_filter_icon_sorting_mobile" width="12" height="12">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_sorting_mobile"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_sorting_mobile"></use>
                         </svg>
                         <?
                     }
@@ -197,7 +197,7 @@ if(!isset($sort['by']['order']) || empty($sort['by']['order']))
                     if($mobileFilter) {
                         ?>
                         <svg class="mobile_filter_icon_list_mobile" width="12" height="14">
-                            <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_list_mobile"></use>
+                            <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_list_mobile"></use>
                         </svg>
                         <?
                     }
@@ -238,21 +238,21 @@ if(!isset($sort['by']['order']) || empty($sort['by']['order']))
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-titles" width="20" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_tiles"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_tiles"></use>
                             </svg>
                             <?
                         }elseif($view == "list")
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-list" width="30" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_list"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_list"></use>
                             </svg>
                             <?
                         }elseif($view == "column")
                         {
                             ?>
                             <svg class="catalog_content__sort_horizon_btn-list" width="30" height="20">
-                                <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_catalog_table"></use>
+                                <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_catalog_table"></use>
                             </svg>
                             <?
                         }

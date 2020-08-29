@@ -191,7 +191,7 @@ if (is_array($arResult['COLLECTION_LIST']))
                     if (($i == 0) || ($arParams['AJAX_MODE'] != 'Y'))
                     {
                         $APPLICATION->IncludeComponent(
-                            "sotbit:crosssell.collection.list",
+                            "kit:crosssell.collection.list",
                             $arParams["COLLECTION_LIST_TEMPLATE"],
                             Array(
                                 "ACTION_VARIABLE" => $arParams['ACTION_VARIABLE'],

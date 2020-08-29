@@ -9,18 +9,18 @@ use Bitrix\Main\Loader;
 use Sotbit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-global $sotbitSeoMetaBottomDesc;
-global $sotbitSeoMetaTopDesc;
-global $sotbitSeoMetaAddDesc;
-global $sotbitSeoMetaFile;
+global $kitSeoMetaBottomDesc;
+global $kitSeoMetaTopDesc;
+global $kitSeoMetaAddDesc;
+global $kitSeoMetaFile;
 global $issetCondition;
 global $origamiSectionDescription;
 global $origamiSectionDescriptionBottom;
 
-$moduleRegions = CModule::IncludeModule("sotbit.regions");
-$moduleSeo = CModule::IncludeModule("sotbit.seometa");
+$moduleRegions = CModule::IncludeModule("kit.regions");
+$moduleSeo = CModule::IncludeModule("kit.seometa");
 
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/catalog/sotbit_origami_catalog/style.css");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/bitrix/catalog/kit_origami_catalog/style.css");
 
 if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
     && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] == 'Y'
@@ -99,7 +99,7 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
             if ($moduleSeo)
             {
                 $APPLICATION->IncludeComponent(
-                    'sotbit:seo.meta',
+                    'kit:seo.meta',
                     'origami_default',
                     [
                         'FILTER_NAME' => $arParams['FILTER_NAME'],
@@ -201,7 +201,7 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
         if ($moduleSeo && $arParams['TAGS_POSITION'] == 'TOP')
         {
             $APPLICATION->IncludeComponent(
-	"sotbit:seo.meta.tags",
+	"kit:seo.meta.tags",
 	"origami_default",
 	array(
 		"CACHE_GROUPS" => "Y",
@@ -227,7 +227,7 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
         <div class="panel_filter_sort">
             <div class="mobile_filter_btn">
                 <svg class="icon-filter-mobile" width="12" height="12">
-                    <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
+                    <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_filter_mobile"></use>
                 </svg>
                 <span><?= Loc::getMessage("MOBILE_FILTER_TITLE") ?></span>
                 <span class="mobile_filter-selected_number"></span>
@@ -248,10 +248,10 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
             </script>
 
             <?
-            if (Loader::includeModule('sotbit.origami'))
+            if (Loader::includeModule('kit.origami'))
             {
                 $sort = array();
-                $sort = $APPLICATION->IncludeFile(SITE_DIR . "include/sotbit_origami/sort/sort.php", Array(), Array());
+                $sort = $APPLICATION->IncludeFile(SITE_DIR . "include/kit_origami/sort/sort.php", Array(), Array());
             }
             ?>
         </div>
@@ -430,7 +430,7 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
             if ($moduleSeo && $arParams['TAGS_POSITION'] == 'BOTTOM')
             {
                 $APPLICATION->IncludeComponent(
-                    "sotbit:seo.meta.tags",
+                    "kit:seo.meta.tags",
                     "column",
                     Array(
                         "CACHE_GROUPS" => "Y",
@@ -461,9 +461,9 @@ if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP'])
                         echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $origamiSectionDescriptionBottom . '</div>';
                 }
             }
-            if(!empty($sotbitSeoMetaBottomDesc))
+            if(!empty($kitSeoMetaBottomDesc))
             {
-                echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $sotbitSeoMetaBottomDesc . '</div>';
+                echo '<div class ="catalog_content__category_comment fonts__main_comment">' . $kitSeoMetaBottomDesc . '</div>';
             }
 
             $GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;

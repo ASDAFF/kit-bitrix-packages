@@ -4,7 +4,7 @@
 if (!CModule::IncludeModule("iblock"))
     return;
 
-if (!CModule::IncludeModule("sotbit.origami"))
+if (!CModule::IncludeModule("kit.origami"))
     return;
 
 use \Sotbit\Origami\Config\Option;
@@ -17,9 +17,9 @@ if(!defined("WIZARD_TEMPLATE_ABSOLUTE_PATH")) return;
 if(!defined("WIZARD_THEME_ID")) return;
 
 $iblockXMLFile = WIZARD_SERVICE_RELATIVE_PATH . "/xml/" . LANGUAGE_ID . "/advantages.xml";
-$iblockCode = "sotbit_origami_advantages_" . WIZARD_SITE_ID;
-$iblockType = "sotbit_origami_content";
-$iblockXMLID = "sotbit_origami_advantages_" . WIZARD_SITE_ID;
+$iblockCode = "kit_origami_advantages_" . WIZARD_SITE_ID;
+$iblockType = "kit_origami_content";
+$iblockXMLID = "kit_origami_advantages_" . WIZARD_SITE_ID;
 
 $rsIBlock = CIBlock::GetList(array(), array("XML_ID" => $iblockXMLID, "TYPE" => $iblockType));
 $iblockID = false;
@@ -231,7 +231,7 @@ if ($arSite = $dbSite->Fetch())
     $lang = $arSite["LANGUAGE_ID"];
 
 if($iblockID) {
-    Option::Set('IBLOCK_TYPE_ADVANTAGES', "sotbit_origami_content", WIZARD_SITE_ID);
+    Option::Set('IBLOCK_TYPE_ADVANTAGES', "kit_origami_content", WIZARD_SITE_ID);
     Option::Set('IBLOCK_ID_ADVANTAGES', $iblockID, WIZARD_SITE_ID);
 }
 
@@ -257,8 +257,8 @@ CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/include/blocks/advantages/conten
 CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/include/blocks/advantages_description/content.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/advantages/content.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
 CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/include/blocks/advantages_description/content.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/local/templates/sotbit_origami/components/bitrix/catalog.element/.default/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/sotbit_origami/components/bitrix/catalog.element/.default/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
-CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/sotbit_origami/components/bitrix/catalog.element/techno/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "/local/templates/kit_origami/components/bitrix/catalog.element/.default/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/kit_origami/components/bitrix/catalog.element/.default/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
+CWizardUtil::ReplaceMacros($_SERVER["DOCUMENT_ROOT"] . "/local/templates/kit_origami/components/bitrix/catalog.element/techno/template.php", array("ADVANTAGES_IBLOCK_ID" => $iblockID));
 */
 ?>

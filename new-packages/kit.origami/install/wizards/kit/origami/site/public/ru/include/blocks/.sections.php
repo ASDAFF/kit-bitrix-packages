@@ -1,6 +1,6 @@
 <?
 use Bitrix\Main\Localization\Loc;
-Loc::loadMessages($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/sotbit.origami/blocks/.sections.php');
+Loc::loadMessages($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/kit.origami/blocks/.sections.php');
 return array(
 	'banners' => Loc::getMessage('LD_BLOCK_SECTION_BANNERS'),
 	'popular_categories' => Loc::getMessage('LD_BLOCK_SECTION_POPULAR_CATEGORIES'),

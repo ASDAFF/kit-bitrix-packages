@@ -3,7 +3,7 @@
         popupResizeableContent = wrapper.querySelector(".popup_resizeable_content"),
         popupWindow = wrapper.querySelector(".popup-window"),
         popupContent = wrapper.querySelector(".popup-content"),
-        popupTitle = wrapper.querySelector(".sotbit_order_phone__title");
+        popupTitle = wrapper.querySelector(".kit_order_phone__title");
 
     resize();
     setUpListeners();
@@ -41,7 +41,7 @@
     }
 
     function putTitleShadow() {
-        let title = wrapper.querySelector(".sotbit_order_phone__title");
+        let title = wrapper.querySelector(".kit_order_phone__title");
         let scrolled = popupResizeableContent.scrollTop;
 
         if (scrolled === 0) {

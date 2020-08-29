@@ -31,11 +31,11 @@ $serverName = $protocol."://".$arParams["SERVER_NAME"];
                              style="padding-top: 2px; padding-right: 5px; border:0; outline:none; text-decoration:none; display:block;">
                     </td>
                     <td align="left" rowspan="2">
-                        <a href="mailto:sale@sotbit.ru" value="sale@sotbit.ru"
-                           style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; text-decoration: none;">sale@sotbit.ru</a>
+                        <a href="mailto:sale@kit.ru" value="sale@kit.ru"
+                           style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; text-decoration: none;">sale@kit.ru</a>
                     </td>
                     <td rowspan="2" align="center">
-                        <a href="<?=SITE_DIR?>"><img src="<?=SITE_DIR?>include/sotbit_origami/images/logo.png" alt="" border="0" width="165" height="45"
+                        <a href="<?=SITE_DIR?>"><img src="<?=SITE_DIR?>include/kit_origami/images/logo.png" alt="" border="0" width="165" height="45"
                                         style="display:block;text-decoration:none;outline:none;"></a>
                     </td>
                     <td align="right"><img src="/local/templates/origami_mail/img/phone.jpg" alt="" border="0" width="14" height="14"
@@ -60,22 +60,22 @@ $serverName = $protocol."://".$arParams["SERVER_NAME"];
                    style="border-bottom: 1px solid #f2f2f2; border-top: 1px solid #f2f2f2; line-height: 40px; margin-top: 5px;">
                 <tr align="center">
                     <td width="16.6%"><a href="<?=SITE_DIR?>catalog/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">Каталог
-                            товаров</a></td>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                            пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></td>
                     <td width="16.6%"><a href="<?=SITE_DIR?>promotions/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">Акции</a>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅ</a>
                     </td>
                     <td width="16.6%"><a href="<?=SITE_DIR?>brands/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">Бренды</a>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅ</a>
                     </td>
                     <td width="16.6%"><a href="<?=SITE_DIR?>news/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">Новости</a>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a>
                     </td>
                     <td width="16.6%"><a href="<?=SITE_DIR?>about/contacts/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">О
-                            магазине</a></td>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅ
+                            пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></td>
                     <td width="16.6%"><a href="<?=SITE_DIR?>help/payment/"
-                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">Помощь</a>
+                                         style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: 14px; text-decoration: none;">пїЅпїЅпїЅпїЅпїЅпїЅ</a>
                     </td>
                 </tr>
             </table>

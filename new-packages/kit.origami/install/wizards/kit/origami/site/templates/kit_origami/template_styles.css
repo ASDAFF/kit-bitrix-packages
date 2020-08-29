@@ -131,7 +131,7 @@ body li:before {
     top: 23px;
     right: 30px;
     cursor: pointer;
-    background-image: url("/local/templates/sotbit_origami/assets/img/icon_close.png");
+    background-image: url("/local/templates/kit_origami/assets/img/icon_close.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -155,7 +155,7 @@ body li:before {
     top: 23px;
     right: 30px;
     cursor: pointer;
-    background-image: url("/local/templates/sotbit_origami/assets/img/icon_close.png");
+    background-image: url("/local/templates/kit_origami/assets/img/icon_close.png");
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all 0.2s ease-in-out;
@@ -164,19 +164,19 @@ body li:before {
 }
 
 .popup-window .popup-window-close-icon:hover {
-    background-image: url("/local/templates/sotbit_origami/assets/img/icon_close_hover.png");
+    background-image: url("/local/templates/kit_origami/assets/img/icon_close_hover.png");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
 }
 
 .popup-close:hover {
-    background-image: url("/local/templates/sotbit_origami/assets/img/icon_close_hover.png");
+    background-image: url("/local/templates/kit_origami/assets/img/icon_close_hover.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.sotbit_order_phone__block .error {
+.kit_order_phone__block .error {
     border: 1px solid red !important;
 }
 
@@ -1201,7 +1201,7 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (max-width: 452px) {
-    .sotbit_order_phone_wrapper {
+    .kit_order_phone_wrapper {
         background: #F7F7F7;
         width: 100%;
         min-width: auto;
@@ -1216,7 +1216,7 @@ input[type="email"]::placeholder {
     margin: 0;
 }
 
-.sotbit_order_success_show.add-to-basket-detail .popup-window-message-content{
+.kit_order_success_show.add-to-basket-detail .popup-window-message-content{
     margin: 0;
 }
 

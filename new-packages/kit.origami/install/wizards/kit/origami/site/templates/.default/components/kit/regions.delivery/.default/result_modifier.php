@@ -3,7 +3,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-if(!\Bitrix\Main\Loader::includeModule('sotbit.regions')){
+if(!\Bitrix\Main\Loader::includeModule('kit.regions')){
     return false;
 }
 

@@ -74,7 +74,7 @@ $APPLICATION->IncludeComponent(
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "sotbit_brands_slider"
+		"COMPONENT_TEMPLATE" => "kit_brands_slider"
 	),
 	false
 );

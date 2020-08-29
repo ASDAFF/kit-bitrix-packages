@@ -1,4 +1,4 @@
-// import Swiper from "../../../../../sotbit_origami/assets/plugin/swiper5.2.0";
+// import Swiper from "../../../../../kit_origami/assets/plugin/swiper5.2.0";
 
 let buildTabsProductBlock = (function () {
     function buildTabsProductBlock () {

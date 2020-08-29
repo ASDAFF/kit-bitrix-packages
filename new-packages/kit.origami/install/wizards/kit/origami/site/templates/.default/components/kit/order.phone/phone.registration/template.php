@@ -4,30 +4,30 @@ use Bitrix\Main\Localization\Loc;
 use Sotbit\Origami\Helper\Config;
 use Bitrix\Main\Page\Asset;
 
-if (!CModule::IncludeModule("sotbit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
+if (!CModule::IncludeModule("kit.orderphone") || !CSotbitOrderphone::GetDemo()) return;
 $APPLICATION->ShowAjaxHead();
-Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/sotbit/order.phone/phone.registration/script.js");
-Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/sotbit/order.phone/phone.registration/style.css");
+Asset::getInstance()->addJs(SITE_DIR . "local/templates/.default/components/kit/order.phone/phone.registration/script.js");
+Asset::getInstance()->addCss(SITE_DIR . "local/templates/.default/components/kit/order.phone/phone.registration/style.css");
 Asset::getInstance()->addJs($templateFolder . "/js/jquery.maskedinput.min.js");
 $typeMask = (Config::get('TYPE_MASK_VIEW') == 'FLAGS') ? 'Y' : 'N';
 if($typeMask == 'Y')
     CJSCore::Init(['phone_number']);
 ?>
 
-<div class="sotbit_order_phone_wrapper buy-in-click">
-    <div class="sotbit_order_phone">
-        <div class="sotbit_order_phone__title"><?= Loc::getMessage('OK_TITLE') ?></div>
-        <form class="sotbit_order_phone_form">
+<div class="kit_order_phone_wrapper buy-in-click">
+    <div class="kit_order_phone">
+        <div class="kit_order_phone__title"><?= Loc::getMessage('OK_TITLE') ?></div>
+        <form class="kit_order_phone_form">
 
-            <div class="sotbit_order_success">
+            <div class="kit_order_success">
                 <div class="popup-window-message-content">
                     <svg class="popup-window-icon-check">
-                        <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_form"></use>
+                        <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_form"></use>
                     </svg>
                     <div>
                         <div class="popup-window-message-title"><?= GetMessage('OK_THANKS') ?></div>
                         <div style="font-size: 16px;"><?= GetMessage('OK_SUCCESS') ?>
-                            <div class="sotbit_order_timedate">
+                            <div class="kit_order_timedate">
                                 <p style="margin-bottom: 5px; padding-bottom: 5px; padding-top: 15px; font-size: 16px; font-weight: bold;"><?= GetMessage('TITLE_FORM_DATE') ?></p>
                                 <span class="time_date_login"><?=GetMessage('FORM_LOGIN')?></span><br>
                                 <span class="time_date_pass"><?=GetMessage('FORM_PASSWORD')?></span>
@@ -42,7 +42,7 @@ if($typeMask == 'Y')
                 <div class="popup_resizeable_content">
 
                     <div class="popup-error-message">
-                        <div class="sotbit_order_error"></div>
+                        <div class="kit_order_error"></div>
                     </div>
                     <? if (empty($arResult["FORM_NOTE"])) : ?>
                         <? foreach ($arParams as $param => $val):
@@ -52,7 +52,7 @@ if($typeMask == 'Y')
                         <? endforeach ?>
 
                         <? foreach ($arResult['DISPLAY'] as $field): ?>
-                            <div class="sotbit_order_phone__block 
+                            <div class="kit_order_phone__block 
 							<?= ($field == 'PHONE') ? '' : 
 							(($field == 'COMMENT') ? 'main-textarea-md__wrapper' : 
 							'main-input-md__wrapper')?>">
@@ -107,7 +107,7 @@ if($typeMask == 'Y')
                         <?
                         if ($arResult["isUseCaptcha"] == "Y") {
                             ?>
-                            <div class="sotbit_order_phone__block">
+                            <div class="kit_order_phone__block">
                                 <div class="feedback_block__captcha">
                                     <div class="feedback_block__captcha_input main-input-md__wrapper">
                                         <input type="text" class="main-input-md" name="captcha_word"
@@ -127,7 +127,7 @@ if($typeMask == 'Y')
                                              onclick="reloadCaptcha(this,'<?= SITE_DIR ?>');return false;">
                                             <svg class="icon_refresh" width="16" height="14">
                                                 <use
-                                                        xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_refresh"></use>
+                                                        xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_refresh"></use>
                                             </svg>
                                         </div>
                                     </div>
@@ -174,13 +174,13 @@ if($typeMask == 'Y')
 
     $(function () {
         <?if($typeMask !== 'Y'):?>
-        let maska = $(".sotbit_order_phone form input[name='TEL_MASK']").eq(0).val();
+        let maska = $(".kit_order_phone form input[name='TEL_MASK']").eq(0).val();
         maska = $.trim(maska);
         if (maska != "")
-            $(".sotbit_order_phone form input[name='order_phone']").mask(maska, {placeholder: "_"});
+            $(".kit_order_phone form input[name='order_phone']").mask(maska, {placeholder: "_"});
         <?endif;?>
 
-        $(".sotbit_order_phone").on("submit", "form", submit);
+        $(".kit_order_phone").on("submit", "form", submit);
         function submit(e) {
             e.preventDefault();
             let name = $(this).find("input[name='order_name']").val();
@@ -205,8 +205,8 @@ if($typeMask == 'Y')
 
             $(this).find('input').removeClass('error');
             $(this).find('.checkbox__label').removeClass('failed');
-            $(this).find(".sotbit_order_error").hide();
-            $(this).find(".sotbit_order_success").hide();
+            $(this).find(".kit_order_error").hide();
+            $(this).find(".kit_order_success").hide();
 
             var error = false;
 
@@ -342,7 +342,7 @@ if($typeMask == 'Y')
 
                 if (smsconfirm === 'Y') {
 
-                    BX.ajax.post("/bitrix/components/sotbit/order.phone/ajax.php",
+                    BX.ajax.post("/bitrix/components/kit/order.phone/ajax.php",
                         {'order_phone':v, 'SMS_CONFIRM':smsconfirm, 'SMS_CODE':smscode, 'PHONE_CHECKED':checked}, function (response) {
 
                             switch (response) {
@@ -354,14 +354,14 @@ if($typeMask == 'Y')
                                     let orderPhone = document.querySelector("input[name='order_phone']");
                                     orderPhone.classList.add("blocked");
 
-                                    let form = document.querySelector("form.sotbit_order_phone_form .sms-resend"),
+                                    let form = document.querySelector("form.kit_order_phone_form .sms-resend"),
                                         seconds = parseInt(document.querySelector("input[name=SMS_REPEATED_TIME]").getAttribute("value"),10),
                                         timeText = document.createElement("span"),
                                         resend = document.createElement("span");
                                     timeText.classList.add("sms-resend__timer");
                                     resend.classList.add("sms-resend__resend");
-                                    resend.innerHTML = "Отправить код повторно";
-                                    timeText.innerHTML = "Вы сможете отправить код повторно через <span class='seconds'>"+seconds+"</span> сек.";
+                                    resend.innerHTML = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                                    timeText.innerHTML = "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <span class='seconds'>"+seconds+"</span> пїЅпїЅпїЅ.";
 
                                     startTimer(seconds);
                                     resend.removeEventListener("click", SendAjax);
@@ -369,11 +369,11 @@ if($typeMask == 'Y')
 
 
                                 function SendAjax(){
-                                    BX.ajax.post("/bitrix/components/sotbit/order.phone/ajax.php",
+                                    BX.ajax.post("/bitrix/components/kit/order.phone/ajax.php",
                                         {'SMS_RESEND':'Y', 'order_phone':v, 'SMS_CONFIRM':smsconfirm, 'SMS_CODE':smscode, 'PHONE_CHECKED':checked}, function (response) {
                                             if (response === 'exceeded') {
                                                 _this.find(".popup-sms-error-message").show();
-                                                _this.find(".sotbit_sms_exceeded").show();
+                                                _this.find(".kit_sms_exceeded").show();
                                                 _this.find(".sms-resend").hide();
                                             }
                                         });
@@ -413,19 +413,19 @@ if($typeMask == 'Y')
                                     break;
 
                                 case 'wrongcode':
-                                    _this.find(".sotbit_sms_code_error").show();
+                                    _this.find(".kit_sms_code_error").show();
                                     _this.find(".popup-sms-error-message").show();
                                     break;
 
                                 case 'exceeded':
-                                    _this.find(".sotbit_sms_exceeded").show();
+                                    _this.find(".kit_sms_exceeded").show();
                                     _this.find(".popup-sms-error-message").show();
                                     break;
 
                                 default:
-                                    let sendError = document.querySelector(".sotbit_sms_send_error");
+                                    let sendError = document.querySelector(".kit_sms_send_error");
                                     sendError.innerHTML = response;
-                                    _this.find(".sotbit_sms_send_error").show();
+                                    _this.find(".kit_sms_send_error").show();
                                     _this.find(".popup-sms-error-message").show();
 
 
@@ -437,20 +437,20 @@ if($typeMask == 'Y')
 
 
                 function ajaxOneClick(ser){
-                    BX.ajax.post("/bitrix/components/sotbit/order.phone/ajax.php", ser, function (data) {
+                    BX.ajax.post("/bitrix/components/kit/order.phone/ajax.php", ser, function (data) {
                         removeBtnLoader(btnLoader);
                         data = $.trim(data);
                         if (data.indexOf("SUCCESS") >= 0) {
-							_this.find(".sotbit_order_timedate").hide();
-                            _this.find(".sotbit_order_success").show();
-                            _this.find(".sotbit_order_error").hide();
+							_this.find(".kit_order_timedate").hide();
+                            _this.find(".kit_order_success").show();
+                            _this.find(".kit_order_error").hide();
                             _this.find(".hide-on-success").hide();
                             id = data.replace("SUCCESS", "").split(',')[0];
                             userPassword = data.replace("SUCCESS", "").split(',')[1];
                             localHref = $('input[name="LOCAL_REDIRECT"]').val();
                             orderID = $('input[name="ORDER_ID"]').val();
                             if (userPassword.length > 0) {
-                                _this.find(".sotbit_order_timedate").show();
+                                _this.find(".kit_order_timedate").show();
                                 _this.find(".time_date_login").text('<?=Loc::getMessage('FORM_LOGIN'); ?> ' + data.replace("SUCCESS", "").split(',')[2]);
                                 _this.find(".time_date_pass").text('<?=Loc::getMessage("FORM_PASSWORD"); ?> ' + userPassword);
                             }
@@ -459,9 +459,9 @@ if($typeMask == 'Y')
                                 location.href = localHref + "?" + orderID + "=" + id;
                             }
                         } else {
-                            _this.find(".sotbit_order_success").hide();
-                            _this.find(".sotbit_order_timedate").hide();
-                            _this.find(".sotbit_order_error").show().html(data);
+                            _this.find(".kit_order_success").hide();
+                            _this.find(".kit_order_timedate").hide();
+                            _this.find(".kit_order_error").show().html(data);
                         }
                     });
                 }

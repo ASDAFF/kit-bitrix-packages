@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
-    if (document.querySelector(".sotbit-seometa-tags-column")) {
-        let hideTagsBtns = document.querySelector(".sotbit-seometa-tags__hide");
+    if (document.querySelector(".kit-seometa-tags-column")) {
+        let hideTagsBtns = document.querySelector(".kit-seometa-tags__hide");
 
         hideTagsBtns.addEventListener("click", function () {
             replaceClass();
@@ -11,16 +11,16 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 window.addEventListener("resize", function () {
-    if (document.querySelector(".sotbit-seometa-tags-column")) {
+    if (document.querySelector(".kit-seometa-tags-column")) {
         collapseTags();
         hideSeoMetaTags();
     }
 });
 
 function hideSeoMetaTags() {
-    if (document.querySelector(".sotbit-seometa-tags-column")) {
-        let seoMetaBlock = document.querySelector(".sotbit-seometa-tags-column"),
-            hideTagsBtns = seoMetaBlock.querySelector(".sotbit-seometa-tags__hide"),
+    if (document.querySelector(".kit-seometa-tags-column")) {
+        let seoMetaBlock = document.querySelector(".kit-seometa-tags-column"),
+            hideTagsBtns = seoMetaBlock.querySelector(".kit-seometa-tags__hide"),
             tagsSection = seoMetaBlock.querySelector(".tags_section"),
             windowWidth = window.innerWidth || document.documentElement.clientWidth,
             tagsWrapper = seoMetaBlock.querySelector(".tags_wrapper");
@@ -44,8 +44,8 @@ function hideSeoMetaTags() {
 }
 
 function setSeometaClass(buttonDislpay) {
-    let seoMetaBlock = document.querySelector(".sotbit-seometa-tags-column"),
-        hideTagsBtns = seoMetaBlock.querySelector(".sotbit-seometa-tags__hide");
+    let seoMetaBlock = document.querySelector(".kit-seometa-tags-column"),
+        hideTagsBtns = seoMetaBlock.querySelector(".kit-seometa-tags__hide");
     let seoMetaClass = seoMetaBlock.getAttribute("class");
 
     seoMetaClass = seoMetaClass.replace(" closed", "");
@@ -57,7 +57,7 @@ function setSeometaClass(buttonDislpay) {
 }
 
 function replaceClass() {
-    let seoMetaBlock = document.querySelector(".sotbit-seometa-tags-column");
+    let seoMetaBlock = document.querySelector(".kit-seometa-tags-column");
     let seoMetaClass = seoMetaBlock.getAttribute("class");
     let tagsWrapper = seoMetaBlock.querySelector(".tags_wrapper");
     let tagsSection = seoMetaBlock.querySelector(".tags_section"),
@@ -85,7 +85,7 @@ function replaceClass() {
 }
 
 function collapseTags() {
-    let seoMetaBlock = document.querySelector(".sotbit-seometa-tags-column");
+    let seoMetaBlock = document.querySelector(".kit-seometa-tags-column");
     let seoMetaClass = seoMetaBlock.getAttribute("class");
     let tagsWrapper = seoMetaBlock.querySelector(".tags_wrapper");
     let windowWidth = window.innerWidth || document.documentElement.clientWidth;

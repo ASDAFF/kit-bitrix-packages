@@ -275,7 +275,7 @@ if (is_array($arResult['SKU_PROPS'])) {
                                         ?>
                                         <span class="product_card__block__presence_product_value_many">
                                            <svg class="product-card_icon-check" width="11px" height="12px">
-                                                                                               <use xlink:href="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
+                                                                                               <use xlink:href="/local/templates/kit_origami/assets/img/sprite.svg#icon_check_checkbox"></use>
                                                                                        </svg>
 
                                         <?

@@ -3,7 +3,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 	die();
 use Bitrix\Main\Config\Option;
 
-$module = 'sotbit.origami';
+$module = 'kit.origami';
 
 $catalogSubscribe = $wizard->GetVar("catalogSubscribe");
 $curSiteSubscribe = ($catalogSubscribe == "Y") ? array("use" => "Y", "del_after" => "100") : array("del_after" => "100");
@@ -190,7 +190,7 @@ if (CModule::IncludeModule("catalog"))
 	}
 }
 
-if(COption::GetOptionString("sotbit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
+if(COption::GetOptionString("kit.origami", "wizard_installed", "N", WIZARD_SITE_ID) == "Y" && !WIZARD_INSTALL_DEMO_DATA)
 	return;
 
 COption::SetOptionString("catalog", "allow_negative_amount", "N");

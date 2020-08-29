@@ -91,7 +91,7 @@ class CBitrixCatalogSmartFilter extends CBitrixComponent
 	public function executeComponent()
 	{
 
-        Loader::includeModule('sotbit.origami');
+        Loader::includeModule('kit.origami');
 	    $this->IBLOCK_ID = $this->arParams["IBLOCK_ID"];
 		$this->SECTIONS_ID = $this->arParams["SECTIONS_ID"];
         $this->ELEMENTS_ID = $this->arParams["ELEMENTS_ID"];

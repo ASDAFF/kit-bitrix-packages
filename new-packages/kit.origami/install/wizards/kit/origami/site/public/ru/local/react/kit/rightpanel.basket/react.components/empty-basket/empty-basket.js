@@ -6,11 +6,11 @@ const EmptyBasket = ({title, isShow, linkToCatalog}) => {
         <div className={`empty-basket`}>
             <div className={`empty-basket__image`}>
                 <svg className={`empty-basket__icon ${isShow == 'basket' ? '' : 'hide'}`} width="72" height="80">
-                    <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_right_cart_empty"></use>
+                    <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_right_cart_empty"></use>
                 </svg>
 
                 <svg className={`empty-favorite__icon ${isShow == 'favorite' ? '' : 'hide'}`} width="72" height="80">
-                    <use xlinkHref="/local/templates/sotbit_origami/assets/img/sprite.svg#icon_right_favorite_empty"></use>
+                    <use xlinkHref="/local/templates/kit_origami/assets/img/sprite.svg#icon_right_favorite_empty"></use>
                 </svg>
             </div>
             <p className={`empty-basket__title`}>
