@@ -737,7 +737,7 @@ class PaySystem extends CWizardStep
     {
         $this->SetStepID("pay_system");
         $this->SetTitle(GetMessage("WIZ_STEP_PS"));
-        $this->SetNextStep("data_collection");
+        $this->SetNextStep("data_install");
         if(LANGUAGE_ID != "ru")
             $this->SetPrevStep("site_settings");
         else
@@ -1090,121 +1090,6 @@ class PaySystem extends CWizardStep
         $this->content .= '</div>';
     }
 }
-
-
-class DataCollection extends CWizardStep
-{
-    function InitStep()
-    {
-        $this->SetStepID("data_collection");
-        $this->SetTitle(GetMessage("WIZ_STEP_DC"));
-        $this->SetNextStep("data_install");
-        $this->SetPrevStep("pay_system");
-
-        $this->SetNextCaption(GetMessage("NEXT_BUTTON"));
-        $this->SetPrevCaption(GetMessage("PREVIOUS_BUTTON"));
-
-        $wizard =& $this->GetWizard();
-
-    }
-
-    function OnPostForm()
-    {
-        $wizard = &$this->GetWizard();
-        $dataCollection = $wizard->GetVar("dataCollection");
-
-        if(!empty($dataCollection['Email']) && !empty($dataCollection['Name']) && !empty($dataCollection['Phone']))
-        {
-            if (filter_var($dataCollection['Email'], FILTER_VALIDATE_EMAIL))
-            {
-                if (preg_match("/^[0-9()+\-\s]+$/",$dataCollection['Phone']))
-                {
-                    if($_SERVER['SERVER_NAME'])
-                    {
-                        $site = $_SERVER['SERVER_NAME'];
-                    }
-					elseif($_SERVER['HTTP_HOST'])
-                    {
-                        $site = $_SERVER['HTTP_HOST'];
-                    }
-                    $str = '';
-                    $arUpdateList = CUpdateClient::GetUpdatesList($str);
-                    $request = array(
-                        'ACTION' => 'ADD',
-                        'SITE' => $site,
-                        'KEY' => md5("BITRIX" . CUpdateClientPartner::GetLicenseKey() . "LICENCE"),
-                        'LICENSE' => $arUpdateList["CLIENT"][0]["@"]["LICENSE"],
-                        'MODULE' => 'kit.origami',
-                        'NAME' => $dataCollection['Name'],
-                        'EMAIL' => $dataCollection['Email'],
-                        'PHONE' => $dataCollection['Phone'],
-                        'BITRIX_DATE_FROM' => $arUpdateList["CLIENT"][0]["@"]["DATE_FROM"],
-                        'BITRIX_DATE_TO' => $arUpdateList["CLIENT"][0]["@"]["DATE_TO"],
-                    );
-                    $options = array(
-                        'http' => array(
-                            'method' => 'POST',
-                            'header' => "Content-Type: application/json; charset=utf-8\r\n",
-                            'content' => json_encode($request)
-                        )
-                    );
-
-                    $context = stream_context_create($options);
-                    $answer = file_get_contents('https://www.kit.ru:443/api/datacollection/index.php', 0, $context);
-                }
-                else
-                {
-                    $this->SetError(GetMessage("DATA_COOLECTION_NOT_VALID_PHONE"));
-                }
-            }
-            else
-            {
-                $this->SetError(GetMessage("DATA_COOLECTION_NOT_VALID_EMAIL"));
-            }
-        }
-        else
-        {
-            $this->SetError(GetMessage("DATA_COOLECTION_NOT_REQUIRE"));
-        }
-    }
-
-    function ShowStep()
-    {
-
-        $wizard =& $this->GetWizard();
-        $this->content .= '<link rel="stylesheet" href="'.$wizard->GetPath().'/css/origami.css">';
-
-        $dataCollection = $wizard->GetVar("data_collection");
-        $this->content .= '<div class="data-collection-wrapper">';
-        $this->content .= '<div class="data-collection-left">';
-        $this->content .= '<div class="data-collection-left__top-text">'.GetMessage("wiz_datacollection_top_text").'</div>';
-        $this->content .= '
-					<div class="wizard-input-form-block">
-						<label for="dataCollectionName" class="wizard-input-title">'.GetMessage("wiz_datacollection_name").'*</label><br>
-						'.$this->ShowInputField('text', 'dataCollection[Name]', array("id" => "dataCollectionName", "class" => "wizard-field")).'
-					</div>';
-        $this->content .= '
-					<div class="wizard-input-form-block">
-						<label for="dataCollectionEmail" class="wizard-input-title">'.GetMessage("wiz_datacollection_email").'*</label><br>
-						'.$this->ShowInputField('text', 'dataCollection[Email]', array("id" => "dataCollectionEmail", "class" => "wizard-field")).'
-					</div>';
-        $this->content .= '
-					<div class="wizard-input-form-block">
-						<label for="dataCollectionPhone" class="wizard-input-title">'.GetMessage("wiz_datacollection_phone").'*</label><br>
-						'.$this->ShowInputField('text', 'dataCollection[Phone]', array("id" => "dataCollectionPhone", "class" => "wizard-field")).'
-					</div>';
-        $this->content .= '<div class="data-collection-left__bottom-text">'.GetMessage("wiz_datacollection_bottom_text").'</div>';
-        $this->content .= '</div>';
-        $this->content .= '<div class="data-collection-right">';
-        $this->content .= '<div class="data-collection-right__avatar"><img class="data-collection-right__avatar-img" src="'.$wizard->GetPath().'/images/manager.png'.'"></div>';
-        $this->content .= '<div class="data-collection-right__personal-manager">'.GetMessage("wiz_datacollection_personal_manager").'</div>';
-        $this->content .= '<div class="data-collection-right__personal-manager-name">'.GetMessage("wiz_datacollection_personal_manager_name").'</div>';
-        $this->content .= '<ul class="data-collection-right__plusses"><li>'.GetMessage("wiz_datacollection_plus1").'</li><li>'.GetMessage("wiz_datacollection_plus2").'</li><li>'.GetMessage("wiz_datacollection_plus3").'</li></ul>';
-        $this->content .= '</div>';
-        $this->content .= '</div>';
-    }
-}
-
 
 
 class DataInstallStep extends CDataInstallWizardStep
