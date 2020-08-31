@@ -19,6 +19,7 @@ class KitOrigami
     const filtersDir = '/local/templates/kit_origami/theme/filters';
     const detailsDir = '/local/templates/kit_origami/theme/details';
     const chunksDir = '/local/templates/kit_origami/theme/chunks';
+    const newsDir = '/local/templates/kit_origami/theme/news';
     const templateDir = '/local/templates/kit_origami';
     const sectionRootTemplateDir = '/local/templates/kit_origami/theme/category_root';
     public static $_1258532776 = 0;
@@ -27,6 +28,7 @@ class KitOrigami
     public static $_1191450594 = array();
     public static $_353950835 = true;
     static private $_1139810130 = null;
+
 
 
     private static function __881263698()
