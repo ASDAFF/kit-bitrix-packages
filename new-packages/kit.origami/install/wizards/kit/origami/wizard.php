@@ -21,7 +21,6 @@ class SelectSiteStep extends CSelectSiteWizardStep
     }
 }
 
-
 class SelectTemplateStep extends CSelectTemplateWizardStep
 {
     function InitStep()
@@ -649,7 +648,6 @@ class ShopSettings extends CWizardStep
 
 }
 
-
 class PersonType extends CWizardStep
 {
     function InitStep()
@@ -1090,7 +1088,6 @@ class PaySystem extends CWizardStep
         $this->content .= '</div>';
     }
 }
-
 
 class DataInstallStep extends CDataInstallWizardStep
 {
