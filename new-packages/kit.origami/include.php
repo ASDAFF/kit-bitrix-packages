@@ -36,13 +36,13 @@ class KitOrigami
         self::$_1139810130 = \Bitrix\Main\Loader::includeSharewareModule(self::moduleId);
     }
 
-    public static function genTheme($_1025411178 = [], $_910798875 = '')
+    public static function genTheme($theme = [], $_910798875 = '')
     {
 
         require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . \KitOrigami::moduleId . '/classes/scss.php';
         $scssc = new scssc();
         $variables = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir . '/variables.scss');
-        foreach ($_1025411178 as $_1187391137 => $_1156836584) {
+        foreach ($theme as $_1187391137 => $_1156836584) {
             switch ($_1187391137) {
                 case 'COLOR_BASE':
                     $variables = str_replace('$main_color: #fb0040;', '$main_color: ' . $_1156836584 . ';', $variables);
@@ -155,7 +155,7 @@ class KitOrigami
         }
     }
 
-    public static function showDropDownBlock($_447014131, $_1334522753 = '', $_1592436967 = '', $_1313454871 = "", $_55259947 = "")
+    public static function showDropDownBlock($_447014131, $_1334522753 = '', $_1592436967 = '', $_1313454871 = "", $url = "")
     {
 
         if (is_array($_447014131)) {
@@ -170,23 +170,23 @@ class KitOrigami
                     $_1334522753 .= (empty($_1334522753) ? '' : '') . 'dropdown_list';
                 }
                 $_1197286628 = reset($_447014131);
-                echo "<div class='$_1334522753'><div class='main_element_wrapper'><a href='$_55259947" . $_1197286628 . "' class='$_1592436967'>" . $_1197286628 . '';
+                echo "<div class='$_1334522753'><div class='main_element_wrapper'><a href='$url" . $_1197286628 . "' class='$_1592436967'>" . $_1197286628 . '';
                 if (!empty($_447014131)) {
                     echo '';
                     foreach ($_447014131 as $_791793763) {
-                        echo "<a href='$_55259947" . $_791793763 . "' class='$_1313454871'>$_791793763</a>";
+                        echo "<a href='$url" . $_791793763 . "' class='$_1313454871'>$_791793763</a>";
                     }
                     echo '';
                 }
                 echo '';
             } else {
                 echo "<div class='$_1334522753'><div class='main_element_wrapper'>";
-                echo "<a href='$_55259947" . $_447014131 . "'>$_447014131</a>";
+                echo "<a href='$url" . $_447014131 . "'>$_447014131</a>";
                 echo '';
             }
         } else {
             echo "<div class='$_1334522753'><div class='main_element_wrapper'>";
-            echo "<a href='$_55259947" . $_447014131 . "'>$_447014131</a>";
+            echo "<a href='$url" . $_447014131 . "'>$_447014131</a>";
             echo '';
         }
     }
