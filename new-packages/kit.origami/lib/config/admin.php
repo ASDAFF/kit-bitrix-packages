@@ -1,4 +1,8 @@
 <?php
+/**
+ * Copyright (c) 1/9/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 namespace Kit\Origami\Config;
 
 use Bitrix\Main\Localization\Loc;
@@ -29,28 +33,6 @@ class Admin extends \KitOrigami
 	}
 	public function show()
 	{
-		if (parent::getDemo() == 2)
-		{
-			?>
-			<div class="adm-info-message-wrap adm-info-message-red">
-				<div class="adm-info-message">
-					<div class="adm-info-message-title"><?=Loc::getMessage( parent::moduleId."_DEMO")?></div>
-					<div class="adm-info-message-icon"></div>
-				</div>
-			</div>
-			<?
-		}
-		if (parent::getDemo() == 3)
-		{
-			?>
-			<div class="adm-info-message-wrap adm-info-message-red">
-				<div class="adm-info-message">
-					<div class="adm-info-message-title"><?=Loc::getMessage( parent::moduleId."_DEMO_END")?></div>
-					<div class="adm-info-message-icon"></div>
-				</div>
-			</div>
-			<?
-		}
 
         $tabControl = $this->getAdminTabControl();
 		global $APPLICATION;

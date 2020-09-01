@@ -16,10 +16,6 @@ if (!function_exists("GetCurVersion")){
     }
 }
 
-
-
-
-
 if (!function_exists("removeDirectory"))
 {
 	function removeDirectory($directory) {
@@ -66,7 +62,6 @@ if (!function_exists("CreateBakFile")){
         @file_put_contents($fLOG, ($bFirst ? PHP_EOL : '').date("d.m.Y H:i:s", time()).' '.$str.PHP_EOL, FILE_APPEND);
     }
 }*/
-
 
 if (!function_exists("GetSites")){
     function GetSites(){
@@ -226,8 +221,6 @@ if (!function_exists("changeMacro")){
 		}
 	}
 }
-
-
 
 if (!function_exists("getMacro")){
 	function getMacro($arrSites)
@@ -536,9 +529,6 @@ if (!function_exists("backupPublicFiles"))
 }
 */
 
-
-
-
 if (!function_exists("readDirectory"))
 {
 	function readDirectory($dir)
@@ -566,15 +556,6 @@ if (!function_exists("readDirectory"))
 	}
 }
 
-
-
-
-
-
-
-
-
-
 if (!function_exists("ClearAllSitesCacheComponents")){
     function ClearAllSitesCacheComponents($arComponentsNames){
         if($arComponentsNames && is_array($arComponentsNames)){
@@ -593,7 +574,6 @@ if (!function_exists("ClearAllSitesCacheComponents")){
     }
 }
 
-
 if (!function_exists("ClearAllSitesCacheDirs")){
     function ClearAllSitesCacheDirs($arDirs){
         if($arDirs && is_array($arDirs)){
@@ -604,8 +584,6 @@ if (!function_exists("ClearAllSitesCacheDirs")){
         }
     }
 }
-
-
 
 if (!function_exists("InitComposite")){
     function InitComposite($arSites){
@@ -790,7 +768,6 @@ if (!function_exists("ReplaceMacrosRecursive")){
         }
     }
 }
-
 
 if (!function_exists("CopyDirFiles")){
     function CopyDirFiles($path_from, $path_to, $ReWrite = True, $Recursive = False, $bDeleteAfterCopy = False, $strExclude = ""){

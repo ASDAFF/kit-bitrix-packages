@@ -1,4 +1,5 @@
 <?
+
 use Bitrix\Main\Loader;
 use Kit\Origami\Config\Option;
 use Kit\Origami\Helper\Config;
@@ -30,7 +31,6 @@ class KitOrigami
     static private $_1139810130 = null;
 
 
-
     private static function __881263698()
     {
         self::$_1139810130 = \Bitrix\Main\Loader::includeSharewareModule(self::moduleId);
@@ -40,23 +40,23 @@ class KitOrigami
     {
 
         require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . \KitOrigami::moduleId . '/classes/scss.php';
-        $_1420397029 = new scssc();
-        $_117692537 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir . '/variables.scss');
+        $scssc = new scssc();
+        $variables = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir . '/variables.scss');
         foreach ($_1025411178 as $_1187391137 => $_1156836584) {
             switch ($_1187391137) {
                 case 'COLOR_BASE':
-                    $_117692537 = str_replace('$main_color: #fb0040;', '$main_color: ' . $_1156836584 . ';', $_117692537);
+                    $variables = str_replace('$main_color: #fb0040;', '$main_color: ' . $_1156836584 . ';', $variables);
                     break;
                 case 'FONT_BASE':
-                    $_117692537 = str_replace('$main_font: \'Open Sans\', Arial, sans-serif;', '$main_font: "' . $_1156836584 . '";', $_117692537);
+                    $variables = str_replace('$main_font: \'Open Sans\', Arial, sans-serif;', '$main_font: "' . $_1156836584 . '";', $variables);
                     break;
                 case 'FONT_BASE_SIZE':
-                    $_117692537 = str_replace('$main_content_font_size: 14px;', '$main_content_font_size: ' . $_1156836584 . ';', $_117692537);
+                    $variables = str_replace('$main_content_font_size: 14px;', '$main_content_font_size: ' . $_1156836584 . ';', $variables);
                     $_67407681 = $_1156836584 - 1;
-                    $_117692537 = str_replace('$main_content_font_size_mobile: 13px !important;', '$main_content_font_size_mobile: ' . $_67407681 . ' !important;', $_117692537);
+                    $variables = str_replace('$main_content_font_size_mobile: 13px !important;', '$main_content_font_size_mobile: ' . $_67407681 . ' !important;', $variables);
                     break;
                 case 'WIDTH':
-                    $_117692537 = str_replace('$main_width: 1344px;', '$main_width: ' . $_1156836584 . ';', $_117692537);
+                    $variables = str_replace('$main_width: 1344px;', '$main_width: ' . $_1156836584 . ';', $variables);
                     break;
             }
         }
@@ -66,7 +66,7 @@ class KitOrigami
                 continue;
             }
             $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $_113718537);
-            $_449085564 = $_1420397029->compile($_117692537 . $_143942720);
+            $_449085564 = $scssc->compile($variables . $_143942720);
             if (!is_dir($_SERVER['DOCUMENT_ROOT'] . $_910798875)) {
                 mkdir($_SERVER['DOCUMENT_ROOT'] . $_910798875);
             }
@@ -86,7 +86,7 @@ class KitOrigami
         }
     }
 
-    public static function showPhone($_171918145 = '')
+    public static function showPhone($name = '')
     {
 
         if (self::isUseRegions() && $_SESSION['KIT_REGIONS']['UF_PHONE']) {
@@ -94,35 +94,35 @@ class KitOrigami
                 $_SESSION['KIT_REGIONS']['UF_PHONE'] = array_diff($_SESSION['KIT_REGIONS']['UF_PHONE'], ['', null]);
             }
             if (is_array($_SESSION['KIT_REGIONS']['UF_PHONE']) && count($_SESSION['KIT_REGIONS']['UF_PHONE']) > 1) {
-                if (strpos($_171918145, 'footer') !== false) {
-                    foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
-                        if ($_1960288759 == 0) {
+                if (strpos($name, 'footer') !== false) {
+                    foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $key => $phone) {
+                        if ($key == 0) {
                             continue;
                         }
-                        echo '' . self::showDigitalPhone($_276922068) . '" class="' . $_171918145 . '">' . $_276922068 . '';
+                        echo '' . self::showDigitalPhone($phone) . '" class="' . $name . '">' . $phone . '';
                     }
                 } else {
-                    $_276922068 = reset($_SESSION['KIT_REGIONS']['UF_PHONE']);
-                    echo '' . self::showDigitalPhone($_276922068) . '" class="' . $_171918145 . ' origami_icons_button">' . $_276922068 . '';
+                    $phone = reset($_SESSION['KIT_REGIONS']['UF_PHONE']);
+                    echo '' . self::showDigitalPhone($phone) . '" class="' . $name . ' origami_icons_button">' . $phone . '';
                     if (!empty($_SESSION['KIT_REGIONS']['UF_PHONE'])) {
                         echo '';
-                        foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $_1960288759 => $_276922068) {
-                            if ($_1960288759 == 0) {
+                        foreach ($_SESSION['KIT_REGIONS']['UF_PHONE'] as $key => $phone) {
+                            if ($key == 0) {
                                 continue;
                             }
-                            echo '' . self::showDigitalPhone($_276922068) . '" class="header_top_block__phone__number origami_icons_button">' . $_276922068 . '';
+                            echo '' . self::showDigitalPhone($phone) . '" class="header_top_block__phone__number origami_icons_button">' . $phone . '';
                         }
                         echo '';
                     }
                 }
             } elseif (is_array($_SESSION['KIT_REGIONS']['UF_PHONE'])) {
-                echo '' . self::showDigitalPhone(reset($_SESSION['KIT_REGIONS']['UF_PHONE'])) . '" class="' . $_171918145 . '">' . reset($_SESSION['KIT_REGIONS']['UF_PHONE']) . '';
+                echo '' . self::showDigitalPhone(reset($_SESSION['KIT_REGIONS']['UF_PHONE'])) . '" class="' . $name . '">' . reset($_SESSION['KIT_REGIONS']['UF_PHONE']) . '';
             } else {
-                echo '' . self::showDigitalPhone($_SESSION['KIT_REGIONS']['UF_PHONE']) . '" class="' . $_171918145 . '">' . $_SESSION['KIT_REGIONS']['UF_PHONE'] . '';
+                echo '' . self::showDigitalPhone($_SESSION['KIT_REGIONS']['UF_PHONE']) . '" class="' . $name . '">' . $_SESSION['KIT_REGIONS']['UF_PHONE'] . '';
             }
         } else {
-            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
-            echo '' . $_171918145 . '" href="tel:' . self::showDigitalPhone($_276922068) . '">';
+            $phone = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
+            echo '' . $name . '" href="tel:' . self::showDigitalPhone($phone) . '">';
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_phone.php',]);
             echo '';
@@ -134,7 +134,7 @@ class KitOrigami
         if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_PHONE"]) {
             self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_PHONE"], $_1334522753, $_1592436967, $_1313454871, "tel:");
         } else {
-            $_276922068 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
+            $phone = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
             echo '' . $_1334522753 . '">';
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_phone.php',]);
@@ -147,7 +147,7 @@ class KitOrigami
         if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
             self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_EMAIL"], $_1334522753, $_1592436967, $_1313454871, "mailto:");
         } else {
-            $_410007577 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
+            $email = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
             echo '' . $_1334522753 . '">';
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_email.php',]);
@@ -191,12 +191,12 @@ class KitOrigami
         }
     }
 
-    public static function showDigitalPhone($_276922068 = '')
+    public static function showDigitalPhone($phone = '')
     {
 
-        $_276922068 = preg_replace('/[^0-9]/', '', $_276922068);
-        $_276922068 = '+' . $_276922068;
-        return $_276922068;
+        $phone = preg_replace('/[^0-9]/', '', $phone);
+        $phone = '+' . $phone;
+        return $phone;
     }
 
     public static function isUseRegions($_14188243 = SITE_ID)
@@ -209,39 +209,39 @@ class KitOrigami
         }
     }
 
-    public static function getAllPrices($_1851368466 = [])
+    public static function getAllPrices($data = [])
     {
 
         global $USER;
         $_735641757 = [];
-        if ($_1851368466['ITEMS']) {
-            foreach ($_1851368466['ITEMS'] as $_1487017693) {
-                if ($_1487017693['OFFERS']) {
-                    foreach ($_1487017693['OFFERS'] as $_911141999) {
+        if ($data['ITEMS']) {
+            foreach ($data['ITEMS'] as $item) {
+                if ($item['OFFERS']) {
+                    foreach ($item['OFFERS'] as $_911141999) {
                         $_735641757[] = $_911141999['ID'];
                     }
                 } else {
-                    $_735641757[] = $_1487017693['ID'];
+                    $_735641757[] = $item['ID'];
                 }
             }
         } else {
-            if ($_1851368466['OFFERS']) {
-                foreach ($_1851368466['OFFERS'] as $_911141999) {
+            if ($data['OFFERS']) {
+                foreach ($data['OFFERS'] as $_911141999) {
                     $_735641757[] = $_911141999['ID'];
                 }
             } else {
-                $_735641757[] = $_1851368466['ID'];
+                $_735641757[] = $data['ID'];
             }
         }
         $_1341982944 = [];
-        if ($_1851368466['PRICES']) {
-            foreach ($_1851368466['PRICES'] as $_1036628273) {
+        if ($data['PRICES']) {
+            foreach ($data['PRICES'] as $_1036628273) {
                 $_1341982944[] = $_1036628273['ID'];
             }
         }
-        if ($_1851368466['PRICES_ALLOW']) {
+        if ($data['PRICES_ALLOW']) {
             $_1341982944 = [];
-            foreach ($_1851368466['PRICES_ALLOW'] as $_1036628273) {
+            foreach ($data['PRICES_ALLOW'] as $_1036628273) {
                 $_1341982944[] = $_1036628273;
             }
         }
@@ -271,50 +271,50 @@ class KitOrigami
                 $_1091665988['PRINT_DISCOUNT_PRICE'] = \CCurrencyLang::CurrencyFormat($_1091665988['DISCOUNT_PRICE'], $_1091665988['CURRENCY']);
                 $_1019447164[$_1091665988['PRODUCT_ID']][$_1091665988['CATALOG_GROUP_ID']] = $_1091665988;
             }
-            if ($_1851368466['ITEMS']) {
-                foreach ($_1851368466['ITEMS'] as &$_1487017693) {
-                    if ($_1487017693['OFFERS']) {
-                        foreach ($_1487017693['OFFERS'] as &$_911141999) {
+            if ($data['ITEMS']) {
+                foreach ($data['ITEMS'] as &$item) {
+                    if ($item['OFFERS']) {
+                        foreach ($item['OFFERS'] as &$_911141999) {
                             $_911141999['ALL_PRICES'] = $_1019447164[$_911141999['ID']];
                             $_911141999['ALL_PRICES_NAMES'] = $_24297693;
                         }
                     } else {
-                        $_1487017693['ALL_PRICES'] = $_1019447164[$_1487017693['ID']];
-                        $_1487017693['ALL_PRICES_NAMES'] = $_24297693;
+                        $item['ALL_PRICES'] = $_1019447164[$item['ID']];
+                        $item['ALL_PRICES_NAMES'] = $_24297693;
                     }
                 }
             } else {
-                if ($_1851368466['OFFERS']) {
-                    foreach ($_1851368466['OFFERS'] as &$_911141999) {
+                if ($data['OFFERS']) {
+                    foreach ($data['OFFERS'] as &$_911141999) {
                         $_911141999['ALL_PRICES'] = $_1019447164[$_911141999['ID']];
                         $_911141999['ALL_PRICES_NAMES'] = $_24297693;
                     }
                 } else {
-                    $_1851368466['ALL_PRICES'] = $_1019447164[$_1851368466['ID']];
-                    $_1851368466['ALL_PRICES_NAMES'] = $_24297693;
+                    $data['ALL_PRICES'] = $_1019447164[$data['ID']];
+                    $data['ALL_PRICES_NAMES'] = $_24297693;
                 }
             }
         }
-        return $_1851368466;
+        return $data;
     }
 
     public static function clearJSParams(&$_593082166 = [], $_14696249, $_300735641 = true)
     {
         if (isset($_593082166["OFFERS"])) {
             $_1897558165 = array();
-            foreach ($_593082166['OFFERS'] as &$_92420712) {
-                foreach ($_92420712 as $_1187391137 => $_1515536874) {
+            foreach ($_593082166['OFFERS'] as &$offer) {
+                foreach ($offer as $_1187391137 => $_1515536874) {
                     switch ($_1187391137) {
                         case 'PROPERTIES':
-                            unset($_92420712[$_1187391137]);
+                            unset($offer[$_1187391137]);
                             break;
                         case 'TREE':
                             if (isset($_593082166['TREE_PROPS'])) {
                                 foreach ($_593082166['TREE_PROPS'] as $_241618154 => $_924661907) {
                                     $_156466444 = $_924661907['ID'];
-                                    if (isset($_924661907['VALUES']) && isset($_92420712[$_1187391137]['PROP_' . $_156466444])) {
+                                    if (isset($_924661907['VALUES']) && isset($offer[$_1187391137]['PROP_' . $_156466444])) {
                                         foreach ($_924661907['VALUES'] as $_2057363994 => &$_1031202569) {
-                                            if ($_92420712[$_1187391137]['PROP_' . $_156466444] == $_2057363994) {
+                                            if ($offer[$_1187391137]['PROP_' . $_156466444] == $_2057363994) {
                                                 $_1897558165[$_156466444][$_2057363994] = $_2057363994;
                                             }
                                         }
@@ -323,7 +323,7 @@ class KitOrigami
                             }
                             break;
                         case 'MORE_PHOTO':
-                            if (!$_300735641) unset($_92420712[$_1187391137]);
+                            if (!$_300735641) unset($offer[$_1187391137]);
                             break;
                     }
                 }
@@ -343,19 +343,19 @@ class KitOrigami
         }
     }
 
-    public static function getAllNamePrices(&$_1851368466 = [])
+    public static function getAllNamePrices(&$data = [])
     {
         $_1100295972 = array();
-        if (isset($_1851368466['CAT_PRICES']) && !empty($_1851368466['CAT_PRICES'])) {
-            foreach ($_1851368466['CAT_PRICES'] as $_1091665988) {
+        if (isset($data['CAT_PRICES']) && !empty($data['CAT_PRICES'])) {
+            foreach ($data['CAT_PRICES'] as $_1091665988) {
                 $_1100295972[$_1091665988['ID']] = $_1091665988['TITLE'];
             }
-        } elseif (isset($_1851368466['PRICES']) && !empty($_1851368466['PRICES'])) {
-            foreach ($_1851368466['PRICES'] as $_1091665988) {
+        } elseif (isset($data['PRICES']) && !empty($data['PRICES'])) {
+            foreach ($data['PRICES'] as $_1091665988) {
                 $_1100295972[$_1091665988['ID']] = $_1091665988['TITLE'];
             }
-            if (isset($_1851368466['ITEMS']) && !empty($_1100295972)) {
-                foreach ($_1851368466['ITEMS'] as &$_1706386077) {
+            if (isset($data['ITEMS']) && !empty($_1100295972)) {
+                foreach ($data['ITEMS'] as &$_1706386077) {
                     $_1706386077['ALL_PRICES_NAMES'] = $_1100295972;
                 }
             }
@@ -363,17 +363,17 @@ class KitOrigami
         return $_1100295972;
     }
 
-    public static function getPriceDelta($_1851368466 = [], $_560213636)
+    public static function getPriceDelta($data = [], $_560213636)
     {
         $_1091665988 = $_2145267970 = array();
-        if (Config::get('SKU_TYPE_' . $_560213636) == 'LIST_OF_MODIFICATIONS' && $_1851368466['OFFERS']) {
+        if (Config::get('SKU_TYPE_' . $_560213636) == 'LIST_OF_MODIFICATIONS' && $data['OFFERS']) {
             $_1938214814 = '';
             $_1036628273 = 0;
-            foreach ($_1851368466['OFFERS'] as $_92420712) {
-                $_1036628273 = $_92420712['ITEM_PRICES'][0]['PRICE'];
-                $_941493782 = $_92420712['ITEM_PRICES'][0]['PRINT_PRICE'];
-                $_1938214814 = $_92420712['ITEM_PRICES'][0]['CURRENCY'];
-                $_1091665988[$_1938214814][$_1036628273] = $_92420712['ITEM_PRICES'][0];
+            foreach ($data['OFFERS'] as $offer) {
+                $_1036628273 = $offer['ITEM_PRICES'][0]['PRICE'];
+                $_941493782 = $offer['ITEM_PRICES'][0]['PRINT_PRICE'];
+                $_1938214814 = $offer['ITEM_PRICES'][0]['CURRENCY'];
+                $_1091665988[$_1938214814][$_1036628273] = $offer['ITEM_PRICES'][0];
                 ksort($_1091665988[$_1938214814]);
             }
             foreach ($_1091665988 as $_1938214814 => $_1392704888) {
@@ -386,12 +386,12 @@ class KitOrigami
         return $_2145267970;
     }
 
-    public static function fixBugWithPrice(&$_1851368466 = [])
+    public static function fixBugWithPrice(&$data = [])
     {
-        if ($_1851368466["OFFERS"]) {
-            foreach ($_1851368466["OFFERS"] as &$_92420712) {
-                if (isset($_92420712["ITEM_ALL_PRICES"])) {
-                    foreach ($_92420712["ITEM_ALL_PRICES"] as &$_977856884) {
+        if ($data["OFFERS"]) {
+            foreach ($data["OFFERS"] as &$offer) {
+                if (isset($offer["ITEM_ALL_PRICES"])) {
+                    foreach ($offer["ITEM_ALL_PRICES"] as &$_977856884) {
                         foreach ($_977856884["PRICES"] as $_432033205 => &$_1091665988) {
                             if ($_1091665988["DISCOUNT"] > 0) {
                                 $_1091665988["PRINT_RATIO_PRICE"] = CCurrencyLang::CurrencyFormat($_1091665988['RATIO_PRICE'], $_1091665988['CURRENCY']);
@@ -403,32 +403,32 @@ class KitOrigami
         }
     }
 
-    public static function checkPriceDiscount(&$_1851368466 = [])
+    public static function checkPriceDiscount(&$data = [])
     {
-        if ($_1851368466["OFFERS"]) {
+        if ($data["OFFERS"]) {
             $_1447135835 = false;
-            foreach ($_1851368466['OFFERS'] as &$_92420712) {
-                if (isset($_92420712['ITEM_ALL_PRICES'])) {
-                    foreach ($_92420712['ITEM_ALL_PRICES'] as &$_977856884) {
+            foreach ($data['OFFERS'] as &$offer) {
+                if (isset($offer['ITEM_ALL_PRICES'])) {
+                    foreach ($offer['ITEM_ALL_PRICES'] as &$_977856884) {
                         foreach ($_977856884['PRICES'] as $_432033205 => &$_1091665988) {
                             if ($_1091665988['DISCOUNT'] > 0) {
                                 $_1447135835 = true;
                             }
                         }
                     }
-                } elseif (isset($_92420712['ITEM_PRICES'])) {
-                    foreach ($_92420712['ITEM_PRICES'] as $_432033205 => &$_1091665988) {
+                } elseif (isset($offer['ITEM_PRICES'])) {
+                    foreach ($offer['ITEM_PRICES'] as $_432033205 => &$_1091665988) {
                         if ($_1091665988['DISCOUNT'] > 0) {
                             $_1447135835 = true;
                         }
                     }
                 }
             }
-            if ($_1447135835) $_1851368466['CHECK_DISCOUNT'] = 1;
+            if ($_1447135835) $data['CHECK_DISCOUNT'] = 1;
         }
     }
 
-    public static function getRootComponentPath($_1033840757, &$_1851368466, $_14696249)
+    public static function getRootComponentPath($_1033840757, &$data, $_14696249)
     {
         $_560213636 = Config::get('SECTION_ROOT_TEMPLATE');
         if (($_560213636 == 'products' || $_560213636 = 'combine') && ERROR_404 == 'Y') {
@@ -439,7 +439,7 @@ class KitOrigami
             $_1379122332 = array('section_smart_filter' => str_replace(array('#SECTION_CODE#/', '#SECTION_CODE_PATH#/'), '', $_14696249['SEF_URL_TEMPLATES']['smart_filter']));
             $_1684652930 = $_1934145423->guessComponentPath($_14696249['SEF_FOLDER'], $_1379122332, $_11078454);
             if ($_1684652930 == 'section_smart_filter' && $_11078454['SMART_FILTER_PATH']) {
-                $_1851368466['VARIABLES']['SMART_FILTER_PATH'] = $_11078454['SMART_FILTER_PATH'];
+                $data['VARIABLES']['SMART_FILTER_PATH'] = $_11078454['SMART_FILTER_PATH'];
                 define('ERROR_404', 'N');
                 self::$_353950835 = false;
                 \CHTTP::setStatus('');
@@ -449,7 +449,7 @@ class KitOrigami
         return false;
     }
 
-    public static function getOfferUrlComponentPath($_1033840757, &$_1851368466, $_14696249)
+    public static function getOfferUrlComponentPath($_1033840757, &$data, $_14696249)
     {
         if (Config::get('OFFER_LANDING') == "Y" && ERROR_404 == "Y" && self::$_353950835 && $_14696249["SEF_URL_TEMPLATES"]["element"]) {
             $_1816899410 = $_14696249["SEF_URL_TEMPLATES"]["element"];
@@ -472,9 +472,9 @@ class KitOrigami
                     define('ERROR_404', 'N');
                     \CHTTP::setStatus('');
                     self::$_353950835 = false;
-                    $_1851368466 = array('FOLDER' => $_14696249['SEF_FOLDER'], 'URL_TEMPLATES' => $_993499289, 'VARIABLES' => $_11078454, 'ALIASES' => $_1687347554);
-                    $_1851368466['VARIABLES']['OFFER_ID'] = $_11078454['ID'];
-                    $_1851368466['VARIABLES']['OFFER_CODE'] = $_11078454['CODE'];
+                    $data = array('FOLDER' => $_14696249['SEF_FOLDER'], 'URL_TEMPLATES' => $_993499289, 'VARIABLES' => $_11078454, 'ALIASES' => $_1687347554);
+                    $data['VARIABLES']['OFFER_ID'] = $_11078454['ID'];
+                    $data['VARIABLES']['OFFER_CODE'] = $_11078454['CODE'];
                     self::$_140594632 = true;
                     return true;
                 }
@@ -483,7 +483,7 @@ class KitOrigami
         return false;
     }
 
-    public static function process404($_1033840757, &$_1851368466, $_14696249)
+    public static function process404($_1033840757, &$data, $_14696249)
     {
         if (ERROR_404 == "Y" && self::$_353950835) {
             \Bitrix\Iblock\Component\Tools::process404("", ($_14696249["SET_STATUS_404"] === "Y"), ($_14696249["SET_STATUS_404"] === "Y"), true, $_14696249["FILE_404"]);
@@ -495,14 +495,14 @@ class KitOrigami
         if (strpos($_1458517449, '?') === false) return true; else return false;
     }
 
-    public static function checkOfferLanding(&$_1851368466, $_14696249)
+    public static function checkOfferLanding(&$data, $_14696249)
     {
-        if (self::$_140594632 && Config::get('OFFER_LANDING') == "Y" && $_1851368466["OFFERS"] && $_1851368466["OFFERS"][0]["DETAIL_PAGE_URL"]) {
+        if (self::$_140594632 && Config::get('OFFER_LANDING') == "Y" && $data["OFFERS"] && $data["OFFERS"][0]["DETAIL_PAGE_URL"]) {
             global $APPLICATION;
-            self::$_1258532776 = $_1851368466['FIRST_OFFERS_SELECTED'];
+            self::$_1258532776 = $data['FIRST_OFFERS_SELECTED'];
             if (Config::get('OFFER_LANDING_SEO') == 'Y') {
-                if ($_1851368466['IPROPERTY_VALUES']) {
-                    self::$_1191450594 = $_1851368466['IPROPERTY_VALUES'];
+                if ($data['IPROPERTY_VALUES']) {
+                    self::$_1191450594 = $data['IPROPERTY_VALUES'];
                 }
             }
             if (!self::$_1227326863) {
@@ -511,22 +511,22 @@ class KitOrigami
                         define('ERROR_404', 'Y');
                         self::$_353950835 = true;
                         \CHTTP::setStatus('404 Not Found');
-                        self::process404($this, $_1851368466, $_14696249);
+                        self::process404($this, $data, $_14696249);
                         break;
                     case 'ELEMENT':
-                        LocalRedirect($_1851368466['DETAIL_PAGE_URL'], true, '200 OK');
+                        LocalRedirect($data['DETAIL_PAGE_URL'], true, '200 OK');
                         break;
                     case 'OFFER':
-                        LocalRedirect($_1851368466['OFFERS'][self::$_1258532776]['DETAIL_PAGE_URL'], true, '200 OK');
+                        LocalRedirect($data['OFFERS'][self::$_1258532776]['DETAIL_PAGE_URL'], true, '200 OK');
                         break;
                 }
             }
         }
     }
 
-    public static function checkOfferPage(&$_1851368466, &$_14696249)
+    public static function checkOfferPage(&$data, &$_14696249)
     {
-        if (!self::$_140594632 && $_1851368466["OFFERS"] && $_1851368466["OFFERS"][0]["DETAIL_PAGE_URL"] && Config::get('OFFER_LANDING') == "Y") {
+        if (!self::$_140594632 && $data["OFFERS"] && $data["OFFERS"][0]["DETAIL_PAGE_URL"] && Config::get('OFFER_LANDING') == "Y") {
             $_1050029727 = self::getUrlOfferIblock()['URL'];
             if (!self::checkSef($_1050029727)) {
                 $_2138480592 = str_replace(array('#PRODUCT_URL#', '#ID#', '#CODE#', '?', '='), '', $_1050029727);
@@ -538,17 +538,17 @@ class KitOrigami
         }
     }
 
-    public static function getSeoOffer($_1851368466)
+    public static function getSeoOffer($data)
     {
         if (self::$_140594632 && Config::get('OFFER_LANDING') == "Y" && Config::get('OFFER_LANDING_SEO') == "Y") {
-            foreach ($_1851368466["OFFERS"] as $_241618154 => &$_92420712) {
-                if ($_241618154 == $_1851368466['OFFERS_SELECTED']) {
-                    $_1727989512 = new \Bitrix\Iblock\InheritedProperty\ElementValues($_92420712['IBLOCK_ID'], $_92420712['ID']);
-                    $_1851368466['IPROPERTY_VALUES'] = $_1727989512->getValues();
+            foreach ($data["OFFERS"] as $_241618154 => &$offer) {
+                if ($_241618154 == $data['OFFERS_SELECTED']) {
+                    $_1727989512 = new \Bitrix\Iblock\InheritedProperty\ElementValues($offer['IBLOCK_ID'], $offer['ID']);
+                    $data['IPROPERTY_VALUES'] = $_1727989512->getValues();
                 }
             }
         }
-        return $_1851368466['IPROPERTY_VALUES'];
+        return $data['IPROPERTY_VALUES'];
     }
 
     public static function setSeoOffer()
@@ -562,35 +562,35 @@ class KitOrigami
         }
     }
 
-    public static function getOffersSelected(&$_1851368466, $_14696249)
+    public static function getOffersSelected(&$data, $_14696249)
     {
         global $APPLICATION;
-        self::$_1258532776 = $_241618154 = $_1851368466['FIRST_OFFERS_SELECTED'];
-        if (self::$_140594632 && $_1851368466['OFFERS'] && $_1851368466['OFFERS'][0]['DETAIL_PAGE_URL']) {
-            $_1080005853 = self::checkSef($_1851368466['OFFERS'][0]['DETAIL_PAGE_URL']);
+        self::$_1258532776 = $_241618154 = $data['FIRST_OFFERS_SELECTED'];
+        if (self::$_140594632 && $data['OFFERS'] && $data['OFFERS'][0]['DETAIL_PAGE_URL']) {
+            $_1080005853 = self::checkSef($data['OFFERS'][0]['DETAIL_PAGE_URL']);
             if (1 || $_1080005853) {
                 if ($_14696249['OFFER_ID']) {
                     $_2057363994 = $_14696249['OFFER_ID'];
-                    foreach ($_1851368466['OFFERS'] as $_1960288759 => $_92420712) {
-                        if ($_2057363994 == $_92420712['ID']) {
-                            $_241618154 = $_1960288759;
+                    foreach ($data['OFFERS'] as $key => $offer) {
+                        if ($_2057363994 == $offer['ID']) {
+                            $_241618154 = $key;
                             self::$_1227326863 = true;
                         }
                     }
                 } elseif ($_14696249['OFFER_CODE']) {
                     $_862506935 = $_14696249['OFFER_CODE'];
-                    foreach ($_1851368466['OFFERS'] as $_1960288759 => $_92420712) {
-                        if ($_862506935 == $_92420712['CODE']) {
-                            $_241618154 = $_1960288759;
+                    foreach ($data['OFFERS'] as $key => $offer) {
+                        if ($_862506935 == $offer['CODE']) {
+                            $_241618154 = $key;
                             self::$_1227326863 = true;
                         }
                     }
                 }
             } else {
                 $_1051549173 = $APPLICATION->GetCurPageParam();
-                foreach ($_1851368466['OFFERS'] as $_1960288759 => $_92420712) {
-                    if (strpos($_1051549173, $_92420712['DETAIL_PAGE_URL']) !== false) {
-                        $_241618154 = $_1960288759;
+                foreach ($data['OFFERS'] as $key => $offer) {
+                    if (strpos($_1051549173, $offer['DETAIL_PAGE_URL']) !== false) {
+                        $_241618154 = $key;
                         self::$_1227326863 = true;
                     }
                 }
@@ -642,30 +642,30 @@ class KitOrigami
         return $_1572170804;
     }
 
-    public static function changeColorImages($_1851368466 = [], $type = "detail", $_300735641 = true)
+    public static function changeColorImages($data = [], $type = "detail", $_300735641 = true)
     {
 
         $_1602539334 = array();
         $_1703894955 = false;
-        if ($_300735641 && $_1851368466['OFFERS'] && Config::get('IMAGE_FOR_OFFER') == 'PRODUCT') {
-            if (isset($_1851368466['JS_OFFERS']) && is_array($_1851368466['JS_OFFERS'])) $_1703894955 = true;
-            if (!isset($_1851368466['MORE_PHOTO']) || !is_array($_1851368466['MORE_PHOTO'])) $_1851368466['MORE_PHOTO'] = array();
-            if ($type == 'preview' && $_1851368466['PREVIEW_PICTURE']) {
-                array_unshift($_1851368466['MORE_PHOTO'], $_1851368466['PREVIEW_PICTURE']);
-            } elseif ($_1851368466['DETAIL_PICTURE']) {
-                array_unshift($_1851368466['MORE_PHOTO'], $_1851368466['DETAIL_PICTURE']);
+        if ($_300735641 && $data['OFFERS'] && Config::get('IMAGE_FOR_OFFER') == 'PRODUCT') {
+            if (isset($data['JS_OFFERS']) && is_array($data['JS_OFFERS'])) $_1703894955 = true;
+            if (!isset($data['MORE_PHOTO']) || !is_array($data['MORE_PHOTO'])) $data['MORE_PHOTO'] = array();
+            if ($type == 'preview' && $data['PREVIEW_PICTURE']) {
+                array_unshift($data['MORE_PHOTO'], $data['PREVIEW_PICTURE']);
+            } elseif ($data['DETAIL_PICTURE']) {
+                array_unshift($data['MORE_PHOTO'], $data['DETAIL_PICTURE']);
             }
             $_1475010966 = \Kit\Origami\Helper\Color::getInstance(SITE_ID);
-            if ($type == 'preview') $_214952677 = $_1475010966->findColors($_1851368466['MORE_PHOTO'], false); else $_214952677 = $_1475010966->findColors($_1851368466['MORE_PHOTO'], true);
+            if ($type == 'preview') $_214952677 = $_1475010966->findColors($data['MORE_PHOTO'], false); else $_214952677 = $_1475010966->findColors($data['MORE_PHOTO'], true);
             if ($_214952677) {
                 $_102239898 = \Kit\Origami\Helper\Config::get('COLOR');
-                foreach ($_1851368466['OFFERS'] as &$_911141999) {
+                foreach ($data['OFFERS'] as &$_911141999) {
                     $_399380824 = $_911141999['PROPERTIES'][$_102239898]['VALUE'];
                     if ($_399380824 && $_214952677[$_399380824]) {
                         $_911141999['MORE_PHOTO'] = $_214952677[$_399380824];
                         foreach ($_214952677[$_399380824] as $_531029480) $_1602539334[$_531029480['ID']] = $_531029480['ID'];
                         if ($_1703894955) {
-                            foreach ($_1851368466['JS_OFFERS'] as $_1960288759 => &$_1222940332) {
+                            foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
                                 if ($_1222940332['ID'] == $_911141999['ID']) {
                                     $_1222940332['SLIDER'] = $_214952677[$_399380824];
                                 }
@@ -674,74 +674,74 @@ class KitOrigami
                     }
                 }
                 if (!empty($_1602539334)) {
-                    foreach ($_1851368466['MORE_PHOTO'] as $_494494843 => &$_1173888550) {
+                    foreach ($data['MORE_PHOTO'] as $_494494843 => &$_1173888550) {
                         if (isset($_1602539334[$_1173888550['ID']])) {
-                            unset($_1851368466['MORE_PHOTO'][$_494494843]);
+                            unset($data['MORE_PHOTO'][$_494494843]);
                         }
                     }
                 }
-                foreach ($_1851368466['OFFERS'] as &$_911141999) {
+                foreach ($data['OFFERS'] as &$_911141999) {
                     $_399380824 = $_911141999['PROPERTIES'][$_102239898]['VALUE'];
-                    if (!empty($_1851368466['MORE_PHOTO']) && $_911141999['MORE_PHOTO']) {
-                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $_1851368466['MORE_PHOTO']);
+                    if (!empty($data['MORE_PHOTO']) && $_911141999['MORE_PHOTO']) {
+                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $data['MORE_PHOTO']);
                         if ($_1703894955) {
-                            foreach ($_1851368466['JS_OFFERS'] as $_1960288759 => &$_1222940332) {
+                            foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
                                 if ($_1222940332['ID'] == $_911141999['ID']) {
-                                    $_1222940332['SLIDER'] = array_merge($_1222940332['SLIDER'], $_1851368466['MORE_PHOTO']);
+                                    $_1222940332['SLIDER'] = array_merge($_1222940332['SLIDER'], $data['MORE_PHOTO']);
                                 }
                             }
                         }
                     }
                     if (!isset($_214952677[$_399380824])) {
-                        $_911141999['MORE_PHOTO'] = $_1851368466['MORE_PHOTO'];
+                        $_911141999['MORE_PHOTO'] = $data['MORE_PHOTO'];
                         if ($_1703894955) {
-                            foreach ($_1851368466['JS_OFFERS'] as $_1960288759 => &$_1222940332) {
+                            foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
                                 if ($_1222940332['ID'] == $_911141999['ID']) {
-                                    $_1222940332['SLIDER'] = $_1851368466['MORE_PHOTO'];
+                                    $_1222940332['SLIDER'] = $data['MORE_PHOTO'];
                                 }
                             }
                         }
                     }
-                    if (!empty($_1851368466['MORE_PHOTO'])) {
-                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $_1851368466['MORE_PHOTO']);
+                    if (!empty($data['MORE_PHOTO'])) {
+                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $data['MORE_PHOTO']);
                     }
                 }
             } else {
-                foreach ($_1851368466['OFFERS'] as $_1960288759 => &$_92420712) {
-                    if ($_1851368466['PREVIEW_PICTURE'] && $type == 'preview') {
-                        $_92420712['MORE_PHOTO'][] = $_1851368466['PREVIEW_PICTURE'];
-                    } elseif ($_1851368466['DETAIL_PICTURE']) $_92420712['MORE_PHOTO'][] = $_1851368466['DETAIL_PICTURE'];
-                    if ($_1851368466['MORE_PHOTO'] && !$_92420712['MORE_PHOTO']) $_92420712['MORE_PHOTO'] = $_1851368466['MORE_PHOTO'];
+                foreach ($data['OFFERS'] as $key => &$offer) {
+                    if ($data['PREVIEW_PICTURE'] && $type == 'preview') {
+                        $offer['MORE_PHOTO'][] = $data['PREVIEW_PICTURE'];
+                    } elseif ($data['DETAIL_PICTURE']) $offer['MORE_PHOTO'][] = $data['DETAIL_PICTURE'];
+                    if ($data['MORE_PHOTO'] && !$offer['MORE_PHOTO']) $offer['MORE_PHOTO'] = $data['MORE_PHOTO'];
                 }
                 if ($_1703894955) {
-                    foreach ($_1851368466['JS_OFFERS'] as $_1960288759 => &$_1222940332) {
+                    foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
                         $_1222940332['SLIDER'] = array();
-                        if ($_1851368466['PREVIEW_PICTURE'] && $type == 'preview') $_1222940332['SLIDER'][] = $_1851368466['PREVIEW_PICTURE']; elseif ($_1851368466['DETAIL_PICTURE']) $_1222940332['SLIDER'][] = $_1851368466['DETAIL_PICTURE'];
-                        if ($_1851368466['MORE_PHOTO']) $_1222940332['SLIDER'] = $_1851368466['MORE_PHOTO'];
+                        if ($data['PREVIEW_PICTURE'] && $type == 'preview') $_1222940332['SLIDER'][] = $data['PREVIEW_PICTURE']; elseif ($data['DETAIL_PICTURE']) $_1222940332['SLIDER'][] = $data['DETAIL_PICTURE'];
+                        if ($data['MORE_PHOTO']) $_1222940332['SLIDER'] = $data['MORE_PHOTO'];
                     }
                 }
             }
-        } elseif (!$_300735641 && $_1851368466['OFFERS'] && Config::get('IMAGE_FOR_OFFER') == 'PRODUCT') {
-            if (isset($_1851368466['JS_OFFERS']) && is_array($_1851368466['JS_OFFERS'])) $_1703894955 = true;
-            if (!isset($_1851368466['MORE_PHOTO']) || !is_array($_1851368466['MORE_PHOTO'])) $_1851368466['MORE_PHOTO'] = array();
-            if ($type == 'preview' && $_1851368466['PREVIEW_PICTURE']) {
-                array_unshift($_1851368466['MORE_PHOTO'], $_1851368466['PREVIEW_PICTURE']);
-            } elseif ($_1851368466['DETAIL_PICTURE']) {
-                array_unshift($_1851368466['MORE_PHOTO'], $_1851368466['DETAIL_PICTURE']);
+        } elseif (!$_300735641 && $data['OFFERS'] && Config::get('IMAGE_FOR_OFFER') == 'PRODUCT') {
+            if (isset($data['JS_OFFERS']) && is_array($data['JS_OFFERS'])) $_1703894955 = true;
+            if (!isset($data['MORE_PHOTO']) || !is_array($data['MORE_PHOTO'])) $data['MORE_PHOTO'] = array();
+            if ($type == 'preview' && $data['PREVIEW_PICTURE']) {
+                array_unshift($data['MORE_PHOTO'], $data['PREVIEW_PICTURE']);
+            } elseif ($data['DETAIL_PICTURE']) {
+                array_unshift($data['MORE_PHOTO'], $data['DETAIL_PICTURE']);
             }
-            if ($_1851368466['MORE_PHOTO']) {
-                array_splice($_1851368466['MORE_PHOTO'], 1);
+            if ($data['MORE_PHOTO']) {
+                array_splice($data['MORE_PHOTO'], 1);
             }
-            foreach ($_1851368466['OFFERS'] as &$_911141999) {
-                if ($_1851368466['MORE_PHOTO']) $_911141999['MORE_PHOTO'] = $_1851368466['MORE_PHOTO'];
+            foreach ($data['OFFERS'] as &$_911141999) {
+                if ($data['MORE_PHOTO']) $_911141999['MORE_PHOTO'] = $data['MORE_PHOTO'];
             }
             if ($_1703894955) {
-                foreach ($_1851368466['JS_OFFERS'] as $_1960288759 => &$_1222940332) {
-                    if ($_1851368466['MORE_PHOTO']) $_1222940332['SLIDER'] = $_1851368466['MORE_PHOTO'];
+                foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
+                    if ($data['MORE_PHOTO']) $_1222940332['SLIDER'] = $data['MORE_PHOTO'];
                 }
             }
         }
-        return $_1851368466;
+        return $data;
     }
 
     public static function blockIncludeAvailable($_1046363615, $_617195126, $_1080113230)
@@ -970,7 +970,7 @@ class KitOrigami
             if ($_1140633464[$_873335815]) {
                 if ($_2144971637) {
                     $_1946222239 = CIBlockElement::GetList(array(), array('IBLOCK_ID' => $_2144971637, 'PROPERTY_' . $_1874443776 => $_903491882,), false, false, array('ID'));
-                    while ($_92420712 = $_1946222239->Fetch()) $_1247672865[] = $_92420712['ID'];
+                    while ($offer = $_1946222239->Fetch()) $_1247672865[] = $offer['ID'];
                     if (!is_array($_1247672865)) $_1247672865 = array($_903491882);
                 } else $_1247672865 = array($_903491882);
                 $_849481474 = false;
@@ -1017,13 +1017,13 @@ class KitOrigami
     {
         preg_match_all('/\<link\s+href\=\"([\S\w]+\.css)[\S\w]*\"[^\>]+\>/', $_143942720, $_1847910540);
         if (isset($_1847910540[1]) && is_array($_1847910540[1])) {
-            foreach ($_1847910540[1] as $_241618154 => $_1487017693) {
-                if (strpos($_1487017693, '/assets/css/style-icons.css') === false && strpos($_1487017693, 'style.css') === false) {
-                    $_1487017693 = $_SERVER['DOCUMENT_ROOT'] . $_1487017693;
+            foreach ($_1847910540[1] as $_241618154 => $item) {
+                if (strpos($item, '/assets/css/style-icons.css') === false && strpos($item, 'style.css') === false) {
+                    $item = $_SERVER['DOCUMENT_ROOT'] . $item;
                     $_908521315 = Config::get('INLINE_CSS_EXCLUDE_FILE');
-                    if (file_exists($_1487017693) && (is_numeric($_908521315) && ($_908521315 * 1000) >= filesize($_1487017693) || $_908521315 == '')) {
-                        $_1456380333 = file_get_contents($_1487017693);
-                        $_2096204513 = self::compressCSS($_1456380333);
+                    if (file_exists($item) && (is_numeric($_908521315) && ($_908521315 * 1000) >= filesize($item) || $_908521315 == '')) {
+                        $file = file_get_contents($item);
+                        $_2096204513 = self::compressCSS($file);
                         $_143942720 = str_replace($_1847910540[0][$_241618154], '' . $_2096204513 . '', $_143942720);
                     }
                 }
