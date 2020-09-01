@@ -42,36 +42,36 @@ class KitOrigami
         require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/' . \KitOrigami::moduleId . '/classes/scss.php';
         $scssc = new scssc();
         $variables = file_get_contents($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir . '/variables.scss');
-        foreach ($theme as $_1187391137 => $_1156836584) {
-            switch ($_1187391137) {
+        foreach ($theme as $num => $value) {
+            switch ($num) {
                 case 'COLOR_BASE':
-                    $variables = str_replace('$main_color: #fb0040;', '$main_color: ' . $_1156836584 . ';', $variables);
+                    $variables = str_replace('$main_color: #fb0040;', '$main_color: ' . $value . ';', $variables);
                     break;
                 case 'FONT_BASE':
-                    $variables = str_replace('$main_font: \'Open Sans\', Arial, sans-serif;', '$main_font: "' . $_1156836584 . '";', $variables);
+                    $variables = str_replace('$main_font: \'Open Sans\', Arial, sans-serif;', '$main_font: "' . $value . '";', $variables);
                     break;
                 case 'FONT_BASE_SIZE':
-                    $variables = str_replace('$main_content_font_size: 14px;', '$main_content_font_size: ' . $_1156836584 . ';', $variables);
-                    $_67407681 = $_1156836584 - 1;
+                    $variables = str_replace('$main_content_font_size: 14px;', '$main_content_font_size: ' . $value . ';', $variables);
+                    $_67407681 = $value - 1;
                     $variables = str_replace('$main_content_font_size_mobile: 13px !important;', '$main_content_font_size_mobile: ' . $_67407681 . ' !important;', $variables);
                     break;
                 case 'WIDTH':
-                    $variables = str_replace('$main_width: 1344px;', '$main_width: ' . $_1156836584 . ';', $variables);
+                    $variables = str_replace('$main_width: 1344px;', '$main_width: ' . $value . ';', $variables);
                     break;
             }
         }
-        $_1745162285 = scandir($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir);
-        foreach ($_1745162285 as $_113718537) {
-            if (in_array($_113718537, ['.', '..', 'variables.scss',]) || strpos($_113718537, '.scss') === false) {
+        $dir = scandir($_SERVER['DOCUMENT_ROOT'] . \KitOrigami::scssDir);
+        foreach ($dir as $elem) {
+            if (in_array($elem, ['.', '..', 'variables.scss',]) || strpos($elem, '.scss') === false) {
                 continue;
             }
-            $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $_113718537);
+            $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $elem);
             $_449085564 = $scssc->compile($variables . $_143942720);
             if (!is_dir($_SERVER['DOCUMENT_ROOT'] . $_910798875)) {
                 mkdir($_SERVER['DOCUMENT_ROOT'] . $_910798875);
             }
             $_449085564 = str_replace('@import "variables.scss";', '', $_449085564);
-            file_put_contents($_SERVER['DOCUMENT_ROOT'] . $_910798875 . '/' . str_replace('.scss', '.css', $_113718537), $_449085564);
+            file_put_contents($_SERVER['DOCUMENT_ROOT'] . $_910798875 . '/' . str_replace('.scss', '.css', $elem), $_449085564);
         }
     }
 
@@ -213,24 +213,24 @@ class KitOrigami
     {
 
         global $USER;
-        $_735641757 = [];
+        $product = [];
         if ($data['ITEMS']) {
             foreach ($data['ITEMS'] as $item) {
                 if ($item['OFFERS']) {
-                    foreach ($item['OFFERS'] as $_911141999) {
-                        $_735641757[] = $_911141999['ID'];
+                    foreach ($item['OFFERS'] as $result) {
+                        $product[] = $result['ID'];
                     }
                 } else {
-                    $_735641757[] = $item['ID'];
+                    $product[] = $item['ID'];
                 }
             }
         } else {
             if ($data['OFFERS']) {
-                foreach ($data['OFFERS'] as $_911141999) {
-                    $_735641757[] = $_911141999['ID'];
+                foreach ($data['OFFERS'] as $result) {
+                    $product[] = $result['ID'];
                 }
             } else {
-                $_735641757[] = $data['ID'];
+                $product[] = $data['ID'];
             }
         }
         $_1341982944 = [];
@@ -251,7 +251,7 @@ class KitOrigami
                 $_420697642 = $_SESSION['KIT_REGIONS']['PRICE_CODE'];
             }
         }
-        if ($_735641757 && $_1341982944) {
+        if ($product && $_1341982944) {
             $_24297693 = [];
             $_908836893 = \CCatalogGroup::GetList([], ['ID' => $_1341982944]);
             while ($_1318862373 = $_908836893->Fetch()) {
@@ -262,7 +262,7 @@ class KitOrigami
                 $_24297693[$_1318862373['ID']] = ($_1318862373['NAME_LANG']) ? $_1318862373['NAME_LANG'] : $_1318862373['NAME'];
             }
             $_1019447164 = [];
-            $_908836893 = \Bitrix\Catalog\PriceTable::getList(['filter' => ['PRODUCT_ID' => $_735641757, 'CATALOG_GROUP_ID' => $_1341982944,], 'select' => ['CATALOG_GROUP_ID', 'PRODUCT_ID', 'PRICE', 'CURRENCY', 'ID',],]);
+            $_908836893 = \Bitrix\Catalog\PriceTable::getList(['filter' => ['PRODUCT_ID' => $product, 'CATALOG_GROUP_ID' => $_1341982944,], 'select' => ['CATALOG_GROUP_ID', 'PRODUCT_ID', 'PRICE', 'CURRENCY', 'ID',],]);
             while ($_1091665988 = $_908836893->Fetch()) {
                 $_331888933 = \CCatalogDiscount::GetDiscountByPrice($_1091665988['ID'], $USER->GetUserGroupArray(), 'N', SITE_ID);
                 $_46201518 = \CCatalogProduct::CountPriceWithDiscount($_1091665988['PRICE'], $_1091665988['CURRENCY'], $_331888933);
@@ -274,9 +274,9 @@ class KitOrigami
             if ($data['ITEMS']) {
                 foreach ($data['ITEMS'] as &$item) {
                     if ($item['OFFERS']) {
-                        foreach ($item['OFFERS'] as &$_911141999) {
-                            $_911141999['ALL_PRICES'] = $_1019447164[$_911141999['ID']];
-                            $_911141999['ALL_PRICES_NAMES'] = $_24297693;
+                        foreach ($item['OFFERS'] as &$result) {
+                            $result['ALL_PRICES'] = $_1019447164[$result['ID']];
+                            $result['ALL_PRICES_NAMES'] = $_24297693;
                         }
                     } else {
                         $item['ALL_PRICES'] = $_1019447164[$item['ID']];
@@ -285,9 +285,9 @@ class KitOrigami
                 }
             } else {
                 if ($data['OFFERS']) {
-                    foreach ($data['OFFERS'] as &$_911141999) {
-                        $_911141999['ALL_PRICES'] = $_1019447164[$_911141999['ID']];
-                        $_911141999['ALL_PRICES_NAMES'] = $_24297693;
+                    foreach ($data['OFFERS'] as &$result) {
+                        $result['ALL_PRICES'] = $_1019447164[$result['ID']];
+                        $result['ALL_PRICES_NAMES'] = $_24297693;
                     }
                 } else {
                     $data['ALL_PRICES'] = $_1019447164[$data['ID']];
@@ -303,18 +303,18 @@ class KitOrigami
         if (isset($_593082166["OFFERS"])) {
             $_1897558165 = array();
             foreach ($_593082166['OFFERS'] as &$offer) {
-                foreach ($offer as $_1187391137 => $_1515536874) {
-                    switch ($_1187391137) {
+                foreach ($offer as $num => $_1515536874) {
+                    switch ($num) {
                         case 'PROPERTIES':
-                            unset($offer[$_1187391137]);
+                            unset($offer[$num]);
                             break;
                         case 'TREE':
                             if (isset($_593082166['TREE_PROPS'])) {
                                 foreach ($_593082166['TREE_PROPS'] as $_241618154 => $_924661907) {
                                     $_156466444 = $_924661907['ID'];
-                                    if (isset($_924661907['VALUES']) && isset($offer[$_1187391137]['PROP_' . $_156466444])) {
+                                    if (isset($_924661907['VALUES']) && isset($offer[$num]['PROP_' . $_156466444])) {
                                         foreach ($_924661907['VALUES'] as $_2057363994 => &$_1031202569) {
-                                            if ($offer[$_1187391137]['PROP_' . $_156466444] == $_2057363994) {
+                                            if ($offer[$num]['PROP_' . $_156466444] == $_2057363994) {
                                                 $_1897558165[$_156466444][$_2057363994] = $_2057363994;
                                             }
                                         }
@@ -323,7 +323,7 @@ class KitOrigami
                             }
                             break;
                         case 'MORE_PHOTO':
-                            if (!$_300735641) unset($offer[$_1187391137]);
+                            if (!$_300735641) unset($offer[$num]);
                             break;
                     }
                 }
@@ -659,14 +659,14 @@ class KitOrigami
             if ($type == 'preview') $_214952677 = $_1475010966->findColors($data['MORE_PHOTO'], false); else $_214952677 = $_1475010966->findColors($data['MORE_PHOTO'], true);
             if ($_214952677) {
                 $_102239898 = \Kit\Origami\Helper\Config::get('COLOR');
-                foreach ($data['OFFERS'] as &$_911141999) {
-                    $_399380824 = $_911141999['PROPERTIES'][$_102239898]['VALUE'];
+                foreach ($data['OFFERS'] as &$result) {
+                    $_399380824 = $result['PROPERTIES'][$_102239898]['VALUE'];
                     if ($_399380824 && $_214952677[$_399380824]) {
-                        $_911141999['MORE_PHOTO'] = $_214952677[$_399380824];
+                        $result['MORE_PHOTO'] = $_214952677[$_399380824];
                         foreach ($_214952677[$_399380824] as $_531029480) $_1602539334[$_531029480['ID']] = $_531029480['ID'];
                         if ($_1703894955) {
                             foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
-                                if ($_1222940332['ID'] == $_911141999['ID']) {
+                                if ($_1222940332['ID'] == $result['ID']) {
                                     $_1222940332['SLIDER'] = $_214952677[$_399380824];
                                 }
                             }
@@ -680,30 +680,30 @@ class KitOrigami
                         }
                     }
                 }
-                foreach ($data['OFFERS'] as &$_911141999) {
-                    $_399380824 = $_911141999['PROPERTIES'][$_102239898]['VALUE'];
-                    if (!empty($data['MORE_PHOTO']) && $_911141999['MORE_PHOTO']) {
-                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $data['MORE_PHOTO']);
+                foreach ($data['OFFERS'] as &$result) {
+                    $_399380824 = $result['PROPERTIES'][$_102239898]['VALUE'];
+                    if (!empty($data['MORE_PHOTO']) && $result['MORE_PHOTO']) {
+                        $result['MORE_PHOTO'] = array_merge($result['MORE_PHOTO'], $data['MORE_PHOTO']);
                         if ($_1703894955) {
                             foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
-                                if ($_1222940332['ID'] == $_911141999['ID']) {
+                                if ($_1222940332['ID'] == $result['ID']) {
                                     $_1222940332['SLIDER'] = array_merge($_1222940332['SLIDER'], $data['MORE_PHOTO']);
                                 }
                             }
                         }
                     }
                     if (!isset($_214952677[$_399380824])) {
-                        $_911141999['MORE_PHOTO'] = $data['MORE_PHOTO'];
+                        $result['MORE_PHOTO'] = $data['MORE_PHOTO'];
                         if ($_1703894955) {
                             foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
-                                if ($_1222940332['ID'] == $_911141999['ID']) {
+                                if ($_1222940332['ID'] == $result['ID']) {
                                     $_1222940332['SLIDER'] = $data['MORE_PHOTO'];
                                 }
                             }
                         }
                     }
                     if (!empty($data['MORE_PHOTO'])) {
-                        $_911141999['MORE_PHOTO'] = array_merge($_911141999['MORE_PHOTO'], $data['MORE_PHOTO']);
+                        $result['MORE_PHOTO'] = array_merge($result['MORE_PHOTO'], $data['MORE_PHOTO']);
                     }
                 }
             } else {
@@ -732,8 +732,8 @@ class KitOrigami
             if ($data['MORE_PHOTO']) {
                 array_splice($data['MORE_PHOTO'], 1);
             }
-            foreach ($data['OFFERS'] as &$_911141999) {
-                if ($data['MORE_PHOTO']) $_911141999['MORE_PHOTO'] = $data['MORE_PHOTO'];
+            foreach ($data['OFFERS'] as &$result) {
+                if ($data['MORE_PHOTO']) $result['MORE_PHOTO'] = $data['MORE_PHOTO'];
             }
             if ($_1703894955) {
                 foreach ($data['JS_OFFERS'] as $key => &$_1222940332) {
@@ -781,9 +781,9 @@ class KitOrigami
         if (!$_29826423) {
             $_29826423 = $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/kit_origami';
         }
-        $_1745162285 = glob($_29826423 . '/*');
-        foreach ($_1745162285 as $_113718537) {
-            is_dir($_113718537) ? \KitOrigami::ClearTmp($_113718537) : unlink($_113718537);
+        $dir = glob($_29826423 . '/*');
+        foreach ($dir as $elem) {
+            is_dir($elem) ? \KitOrigami::ClearTmp($elem) : unlink($elem);
         }
         if ($_29826423 != $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tmp/kit_origami') {
             rmdir($_29826423);
