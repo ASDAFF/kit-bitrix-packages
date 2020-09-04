@@ -1053,5 +1053,3 @@ class KitOrigami
         return;
     }
 } ?>
-
-
