@@ -1,0 +1,14 @@
+$namespace: 'bitrix';
+$component: 'map-google-system';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  height: 100%;
+
+  .#{$class}-control {
+    display: block;
+    height: 100%;
+  }
+}

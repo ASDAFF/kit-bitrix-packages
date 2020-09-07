@@ -1,0 +1,39 @@
+.widget.c-advantages.c-advantages-template-10 .widget-item-picture {
+  width: 98px;
+  height: 98px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.widget.c-advantages.c-advantages-template-10 .widget-item-name {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-advantages.c-advantages-template-10 .widget-item-description {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+@media all and (max-width: 500px) {
+  .widget.c-advantages.c-advantages-template-10 .widget-item-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

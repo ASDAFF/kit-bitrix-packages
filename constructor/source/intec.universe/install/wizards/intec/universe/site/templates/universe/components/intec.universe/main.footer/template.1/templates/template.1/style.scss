@@ -1,0 +1,267 @@
+$component: 'footer';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view .widget-view-1 {
+    display: block;
+
+    .widget-wrapper {}
+    .widget-wrapper-2 {}
+
+    .widget-parts {
+      margin: 0 -30px;
+      padding: 30px 0;
+
+      & + .widget-panel {
+        border-top: 1px solid #eee;
+      }
+    }
+
+    .widget-part {
+      padding: 0 30px;
+
+      &.widget-part-left {
+        min-width: 240px;
+        max-width: 320px;
+
+        .widget-part-items {
+          display: block;
+          margin: -7px 0;
+          overflow: hidden;
+        }
+
+        .widget-part-item {
+          display: block;
+          padding: 7px 0;
+          white-space: nowrap;
+          color: #2d2d2d;
+
+          &.widget-phone {
+            .widget-part-item-text {
+              font-size: 16px;
+              font-weight: bold;
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+
+          &.widget-form {
+            white-space: normal;
+          }
+        }
+
+        .widget-part-item-icon,
+        .widget-part-item-text {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .widget-part-item-icon {
+          width: 20px;
+          font-size: 16px;
+          line-height: 1;
+          text-align: center;
+          margin-right: 10px;
+        }
+
+        .widget-part-item-text {
+          font-size: 14px;
+          white-space: normal;
+          padding-right: 30px;
+        }
+      }
+
+      &.widget-part-right {
+        width: 300px;
+      }
+
+      .widget-search {
+        display: block;
+
+        & + .widget-social {
+          padding-top: 30px;
+        }
+      }
+
+      .widget-social {
+        display: block;
+        overflow: hidden;
+      }
+
+      .widget-social-title {
+        display: block;
+        color: #777e89;
+        padding-bottom: 7px;
+      }
+
+      .widget-social-items {
+        display: block;
+        margin: -5px -15px;
+        overflow: hidden;
+      }
+
+      .widget-social-item {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 15px;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .widget-social-item-icon {
+        display: block;
+        color: #bfc2c7;
+        text-decoration: none;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .widget-panel {
+      padding: 30px 0;
+
+      .widget-panel-items {}
+      .widget-panel-item {}
+
+      .widget-copyright {
+        display: block;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #2d2d2d;
+      }
+
+      .widget-logotype {
+        display: block;
+        text-align: center;
+
+        img,
+        svg {
+          display: inline;
+          max-width: 200px;
+          max-height: 75px;
+        }
+      }
+
+      .widget-logotype-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+      }
+
+      .widget-icons {}
+      .widget-icon {
+        &[data-icon="alfabank"] .widget-icon-image { background-position: 0 -180px; }
+        &[data-icon="sberbank"] .widget-icon-image { background-position: 0 -210px; }
+        &[data-icon="qiwi"] .widget-icon-image { background-position: 0 -240px; }
+        &[data-icon="yandexmoney"] .widget-icon-image { background-position: 0 -270px; }
+        &[data-icon="visa"] .widget-icon-image { background-position: 0 -300px; }
+        &[data-icon="mastercard"] .widget-icon-image { background-position: 0 -330px; }
+      }
+
+      .widget-icon-image {
+        display: block;
+        width: 50px;
+        height: 30px;
+        background-size: auto;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image: url('./images/icons.png');
+      }
+    }
+
+    @media all and (max-width: 768px) {
+      .widget-parts {
+        margin: -20px 0;
+      }
+
+      .widget-part {
+        padding: 20px 0;
+
+        &.widget-part-left {
+          min-width: 0;
+          max-width: none;
+          text-align: center;
+        }
+
+        &.widget-part-right {
+          width: auto;
+          text-align: center;
+        }
+      }
+
+      .widget-panel {
+        .widget-panel-item {
+          &.widget-panel-item-empty {
+            display: none;
+          }
+        }
+
+        .widget-copyright {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &[data-theme="dark"] .widget-view .widget-view-1 {
+
+    .widget-parts + .widget-panel {
+        border-color: #35393c;
+    }
+
+    .widget-part {
+      &.widget-part-left {
+        .widget-part-item {
+          color: #fff;
+
+          &.widget-email {
+            .widget-part-item-text {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      .widget-social-item-icon {
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      .ns-bitrix.c-menu.c-menu-columns-1 {
+        .menu-column-header {
+          color: #fff !important;
+        }
+      }
+
+      .ns-bitrix.c-search-title.c-search-title-input-3 {
+        .search-title {
+          background: #414447;
+          border-color: #414447;
+        }
+      }
+    }
+
+    .widget-panel {
+      .widget-copyright {
+        color: #777e89;
+      }
+
+      .widget-logotype {
+        svg,
+        svg path {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+}

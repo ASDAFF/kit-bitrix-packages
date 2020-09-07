@@ -1,0 +1,22 @@
+$class: 'constructor-';
+
+$grid-columns: 12;
+$grid-indents: 15;
+
+$indents: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
+
+$buttons-sizes: (1,2,3,4,5,6,7);
+$buttons-fonts: (10,11,12,13,14,15,16);
+
+@import './interface/.mixins.scss';
+@import './interface/.grid.scss';
+@import './interface/.indents.scss';
+@import './interface/.buttons.scss';
+@import './interface/.dialogs.scss';
+@import './interface/.icons.scss';
+@import './interface/.selects.scss';
+@import './interface/.switches.scss';
+@import './interface/.sliders.scss';
+@import './interface/.tooltips.scss';
+@import './interface/.inputs.scss';
+@import './interface/.forms.scss';

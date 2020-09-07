@@ -1,0 +1,115 @@
+$component: 'sections';
+$template: 'template-2';
+
+@mixin transition($time, $property) {
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -ms-transition: $property $time;
+  -o-transition: $property $time;
+  transition: $property $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-element {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .widget-element-wrap {
+    overflow: hidden;
+  }
+
+  .widget-element-picture {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .widget-element-text {
+    padding-left: 25px;
+    overflow: hidden;
+  }
+
+  .widget-element-name {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #222222;
+
+    @include transition(0.4s, null);
+  }
+
+  .widget-element-section {
+    margin-top: 10px;
+  }
+
+  .widget-element-section-element {
+    font-size: 13px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 15px;
+  }
+
+  .widget-element-section-name {
+    text-decoration: none;
+    color: #666666;
+    @include transition(0.4s, null);
+  }
+
+  .widget-element-section-count {
+    color: #222222;
+  }
+
+  .intec-grid-item-2 {
+    .widget-element-section {
+      font-size: 0;
+    }
+
+    .widget-element-section-element {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    .intec-grid-item-2 .widget-element-section-element {
+      display: block;
+    }
+
+    .widget-element-picture {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .widget-element-picture {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media all and (max-width: 550px) {
+    .widget-element {
+      padding-right: 0;
+    }
+
+    .widget-element-section {
+      font-size: 0;
+    }
+
+    .widget-element-section-element {
+      display: inline-block !important;
+      margin-right: 15px;
+      line-height: 25px;
+    }
+  }
+}

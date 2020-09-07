@@ -1,0 +1,139 @@
+.reviews-box .intec-bt-button.button-big {
+	font-weight: normal;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	outline: none;
+}
+
+.reviews-box > .button:before {
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle;
+	width: 17px;
+	height: 14px;
+	margin-right: 10px;
+	background: url('images/dialog.png') no-repeat;
+}
+
+.reviews-box {
+	position: relative;
+}
+
+.reviews-box .reviews {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.reviews-box .reviews .review {
+	display: block;
+	width: 100%;
+	padding: 40px 0;
+	color: #2c2c2c;
+	white-space: normal;
+	border-top: 1px solid #e8e8e8;
+}
+.reviews-box .reviews .avatar {
+	width: 103px;
+	height: 103px;
+	background: url('images/avatar.png') 50% 50% no-repeat;
+	border: 1px solid #ededed;
+	border-radius: 50%;
+}
+.reviews-box .reviews .review .date {
+	margin-top: 25px;
+	font-size: 13px;
+	color: #888;
+	text-align: center;
+}
+
+.reviews-box .reviews .review .name {
+	font-size: 16px;
+	font-weight: bold;
+}
+.reviews-box .reviews .description {
+	display: block;
+	color: #444;
+	margin-top: 30px;
+	font-size: 14px;
+	white-space: normal;
+}
+
+.reviews-box .form {
+	position: relative;
+	padding-top: 20px;
+}
+
+.reviews-box .form .row {
+	position: relative;
+	display: block;
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.reviews-box .form .row .label {
+	display: block;
+	padding-left: 0;
+	padding-bottom: 10px;
+	font-size: 14px;
+	text-align: left;
+	font-weight: normal;
+	color: #4d4c4c;
+}
+.reviews-box .form .row .label .needed {
+	color: #ff0000;
+}
+
+.reviews-box .form .row .control {
+	position: relative;
+	display: block;
+	text-align: left;
+}
+.reviews-box .form .row .control .control-text {
+	font-size: 14px;
+	width: 100%;
+	resize: none;
+	padding: 12px;
+	border: 1px solid #e8e8e8;
+	outline: none;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.reviews-box .form .row .control .control-text.error {
+	border-color: #ff0a0a;
+}
+
+.reviews-box .reviews-form-result {
+	margin-bottom: 10px;
+}
+.reviews-box .reviews-form-result.result-status-success {
+	color: green;
+}
+.reviews-box .reviews-form-result.result-status-error {
+	color: red;
+}
+
+.reviews-box .submit-btn.intec-bt-button.button-big {
+	font-size: 14px;
+}
+.reviews-box .submit-btn.intec-bt-button.button-big i {
+	font-size: 16px;
+	margin-right: 6px;
+}
+
+@media all and (max-width: 480px) {
+	.reviews-box .reviews .avatar{
+		width: 80px;
+		height: 80px;
+	}
+}

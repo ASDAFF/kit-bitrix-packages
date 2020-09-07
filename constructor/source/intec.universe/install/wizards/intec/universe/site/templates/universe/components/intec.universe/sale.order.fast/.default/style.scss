@@ -1,0 +1,182 @@
+$namespace: 'intec-universe';
+$component: 'sale-order-fast';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  min-width: 400px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #1d1d1d;
+
+  .#{$class}-parts {}
+
+  .#{$class}-part {
+    &.#{$class}-part-product {
+      border-right: 1px solid #e8e8e8;
+    }
+  }
+
+  .#{$class}-product {
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin-right: 40px;
+    padding: 50px 0;
+  }
+
+  .#{$class}-product-name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .#{$class}-product-quantity {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #808080;
+  }
+
+  .#{$class}-product-picture {
+    display: block;
+    height: 280px;
+    margin-bottom: 15px;
+  }
+
+  .#{$class}-product-price {
+    display: block;
+  }
+
+  .#{$class}-product-price-discount {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .#{$class}-product-price-base {
+    color: #B0B0B0;
+    text-decoration: line-through;
+    margin-top: 5px;
+  }
+
+  .#{$class}-form {
+    .#{$class}-error,
+    .#{$class}-message {
+      padding-top: 30px;
+    }
+  }
+
+  .#{$class}-title {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .#{$class}-error {
+    display: block;
+    color: #ff0000;
+  }
+
+  .#{$class}-message {
+    display: block;
+    font-size: 16px;
+  }
+
+  .#{$class}-fields {
+    display: block;
+    margin: -10px 0;
+    padding-top: 30px;
+    min-height: 20px;
+  }
+
+  .#{$class}-field {
+    display: block;
+    padding: 10px 0;
+
+    &[data-error="true"] {
+      input[type="text"] {
+        border-color: #ff0000;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+  }
+
+  .#{$class}-field-name {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .#{$class}-field-error {
+    display: block;
+    font-size: 10px;
+    color: #ff0000;
+    margin-bottom: 5px;
+  }
+
+  .#{$class}-field-required {
+    font-size: 12px;
+    color: #ff0000;
+  }
+
+  .#{$class}-footer {
+    display: block;
+    padding-top: 50px;
+  }
+
+  .#{$class}-footer-parts {}
+  .#{$class}-footer-part {}
+
+  .#{$class}-footer-message {
+    display: block;
+    color: #808080;
+    font-size: 13px;
+  }
+
+  .#{$class}-footer-consent {
+    margin-bottom: 10px;
+  }
+
+  &[data-product="true"] {
+    min-width: 800px;
+
+    .#{$class}-form {
+      margin-left: 40px;
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    &[data-product="true"] {
+      min-width: 480px;
+
+      .#{$class}-form {
+        margin-left: 0;
+      }
+    }
+
+    .#{$class}-part {
+      &.#{$class}-part-product {
+        display: none;
+      }
+    }
+  }
+
+  @media all and (max-width: 550px) {
+    min-width: 240px !important;
+
+    .#{$class}-title {
+      font-size: 22px;
+    }
+
+    .#{$class}-footer-message {
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+$component: 'categories';
+$template: 'template-4';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    position: relative;
+    display: block;
+    height: 300px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .#{$item}-picture,
+  .#{$item}-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .#{$item}-picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .#{$item}-fade {
+    z-index: 2;
+    @include transition(background-color, 0.6s);
+  }
+  .#{$item}-name,
+  .#{$item}-content {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    @include transition(#{left, opacity}, #{0.4s, 0.8s});
+  }
+  .#{$item}-name {
+    left: 0;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px;
+    margin: 25px;
+    background-color: rgba(58, 58, 59, 0.8);
+    z-index: 3;
+  }
+  .#{$item}-content {
+    left: 100%;
+    width: 100%;
+    padding: 25px;
+    opacity: 0;
+    z-index: 4;
+  }
+  .#{$item}-content-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .#{$item}-content-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    max-height: 105px;
+    overflow: hidden;
+  }
+  .#{$item}-content-link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 25px;
+    background-color: rgba(128, 128, 128, 0.7);
+    @include transition(background-color, 0.4s);
+  }
+  [data-animate='true'] {
+    .#{$item}-wrapper:hover {
+      .#{$item}-fade {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .#{$item}-name {
+        left: -100%;
+        opacity: 0;
+      }
+      .#{$item}-content {
+        left: 0;
+        opacity: 1;
+      }
+    }
+    .#{$item}-content-link:hover {
+      background-color: rgba(128, 128, 128, 1);
+    }
+  }
+}

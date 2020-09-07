@@ -1,0 +1,88 @@
+$namespace: 'bitrix';
+$component: 'news-list';
+$template: 'shares-list-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+
+  .#{$class}-description {
+    margin-bottom: 20px;
+  }
+
+  .#{$class}-items {
+    margin: -25px;
+  }
+
+  .#{$class}-item {
+    padding: 25px;
+  }
+
+  .#{$class}-item-wrapper {
+    position: relative;
+
+    &:hover .#{$class}-item-picture {
+      -webkit-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 1px 5px 15px  rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 5px 15px  rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .#{$class}-item-picture {
+    width: 270px;
+    height: 193px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: box-shadow 350ms;
+    -moz-transition: box-shadow 350ms;
+    -ms-transition: box-shadow 350ms;
+    -o-transition: box-shadow 350ms;
+    transition: box-shadow 350ms;
+  }
+
+  .#{$class}-item-information {
+    padding: 10px 0 0 20px;
+  }
+
+  .#{$class}-item-date {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #707072;
+  }
+
+  .#{$class}-item-name {
+    line-height: 1;
+    margin-bottom: 15px;
+
+    a {
+      font-size: 18px;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+  }
+
+  .#{$class}-item-description {
+    height: 105px;
+    color: #89898b;
+    overflow: hidden;
+  }
+
+  @media all and (max-width: 500px) {
+    .#{$class}-item-information {
+      padding: 20px 0 0 0;
+    }
+
+    .#{$class}-item-name a {
+      font-size: 14px;
+    }
+
+    .#{$class}-item-description {
+      max-height: 63px;
+    }
+  }
+}

@@ -1,0 +1,457 @@
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-body-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back {
+  padding-bottom: 20px;
+  text-align: left;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back-button {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  border-radius: 13px;
+  text-decoration: none;
+  opacity: 0.6;
+  -webkit-transition: opacity 350ms;
+  -moz-transition: opacity 350ms;
+  -ms-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back-button:hover {
+  opacity: 1;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back-button .catalog-element-main-back-button-icon,
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back-button .catalog-element-main-back-button-text {
+  vertical-align: middle;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-back-button .catalog-element-main-back-button-icon + .catalog-element-main-back-button-text {
+  margin-left: 0.5em;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-text {
+  color: #FFF;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-type {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  letter-spacing: 2.8px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-name {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 55px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-price-current {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-price-old {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 21px;
+  text-decoration: line-through;
+  margin-top: 10px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-buttons {
+  font-size: 0;
+  margin-top: 30px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-buttons-wrapper {
+  margin: -10px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFF;
+  text-decoration: none;
+  padding: 19px 35px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-picture {
+  font-size: 0;
+  text-align: center;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-picture img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristics {
+  padding-top: 60px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic:nth-child(5n+1) {
+  border-left: none;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-wrapper {
+  height: 100%;
+  padding: 20px 15px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-wrapper > div {
+  height: 100%;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-check {
+  font-size: 0;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  background-color: #16dc95;
+  -webkit-box-shadow: 0 6px 18px 0 #11b87c;
+  -moz-box-shadow: 0 6px 18px 0 #11b87c;
+  box-shadow: 0 6px 18px 0 #11b87c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-check::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-check svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-name {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #FFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-values {
+  font-size: 0;
+  padding-top: 5px;
+  margin: -5px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-value {
+  display: inline-block;
+  font-size: 13px;
+  color: #FFF;
+  padding: 6px 5px;
+  margin: 5px;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-value:nth-child(odd) {
+  background-color: #fc2a5c;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-value:nth-child(even) {
+  background-color: #116afc;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec [data-characteristics=true] .catalog-element-main-content {
+  padding-bottom: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-body {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-body[data-dark=true] {
+  color: #FFF;
+  background-color: #17171d;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-body-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-picture-wrapper {
+  font-size: 0;
+  text-align: center;
+  padding-right: 30px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-picture-wrapper img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-value {
+  font-size: 16px;
+  line-height: 24px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tabs {
+  font-size: 0;
+  text-align: center;
+  margin: -10px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 17px 35px;
+  margin: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab[data-active=false] {
+  color: #828a9e;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab[data-active=false]:hover {
+  color: #222222;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab[data-active=true] {
+  color: #FFF;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-content {
+  margin-top: 60px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-content-item {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-content-item[data-active=false] {
+  opacity: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-content-item[data-active=true] {
+  opacity: 1;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-item {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-item:first-child {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-images-1[data-dark=true] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #030208;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-images-1[data-dark=true] .catalog-element-title {
+  color: #FFF;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-images-1-item {
+  font-size: 0;
+  margin-top: 60px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-images-1-item:first-child {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-information-item {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-information-item:first-child {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-video-item {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-video-item:first-child {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-projects {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-reviews {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-advantages {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-faq {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend {
+  margin-top: 75px;
+  padding-top: 95px;
+  padding-bottom: 125px;
+  background-color: #efefef;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend .catalog-element-title {
+  margin-bottom: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend-title {
+  margin-bottom: 30px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend-description {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-videos {
+  margin-top: 75px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec [data-align=left] {
+  text-align: left;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec [data-align=center] {
+  text-align: center;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-intec [data-align=right] {
+  text-align: right;
+}
+@media all and (max-width: 1024px) {
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristics {
+    padding-bottom: 50px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic {
+    border: none;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-check {
+    margin: 0 20px 0 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-content {
+    padding-top: 50px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-type {
+    font-size: 11px;
+    margin-bottom: 30px;
+    letter-spacing: 2.4px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 35px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-price-current {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-price-old {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-button {
+    padding: 15px 15px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-picture {
+    display: none;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristics {
+    padding-top: 40px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-picture {
+    display: none;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab {
+    padding: 15px 25px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-recommend-description {
+    padding-top: 20px;
+  }
+}
+@media all and (max-width: 500px) {
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-wrapper {
+    padding: 10px 0;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-main-characteristic-check {
+    width: 25px;
+    height: 25px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-additional-text-value {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-blocks-tab {
+    padding: 12px 20px;
+  }
+  .ns-bitrix.c-catalog-element.c-catalog-element-services-intec .catalog-element-block-description-images-1-item {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

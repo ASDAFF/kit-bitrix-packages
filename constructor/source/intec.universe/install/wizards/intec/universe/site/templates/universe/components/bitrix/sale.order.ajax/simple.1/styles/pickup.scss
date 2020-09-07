@@ -1,0 +1,155 @@
+#pickUpMap img {
+  max-height: none;
+}
+.bx-soa-pickup-preview-img {
+  height: 76px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  padding: 1px;
+  margin-left:10px;
+  float: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bx-soa-pickup-subTitle {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.bx-soa-pickup-list {
+  margin-bottom: 20px;
+
+  .bx-soa-pickup-list-item {
+    border-top: 1px solid #dcdfe2;
+    padding: 16px 35px;
+    font-size: 13px;
+    position: relative;
+
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+    transition: background .2s ease;
+
+    .bx-soa-pickup-l-item-name {
+      font-weight: bold;
+    }
+
+    .bx-soa-pickup-l-item-img {
+      position: absolute;
+      top: 23px;
+      left: 0;
+      max-width: 90px;
+      max-height: 90px;
+      height: auto;
+      width: auto;
+    }
+
+    .bx-soa-pickup-l-item-adress {
+      padding-left: 15px;
+      font-weight: bold;
+      line-height: 17px;
+      min-height: 17px;
+      position: relative;
+      padding-right: 100px;
+
+      &:before {
+        height: 17px;
+        width: 18px;
+        content: "";
+        top: 50%;
+        left: -5px;
+        margin-top: -8px;
+        position: absolute;
+        background: url("images/sprite.png") no-repeat center -54px;
+      }
+    }
+
+    .bx-soa-pickup-l-item-detail {
+      display: none;
+      padding-top: 20px;
+      padding-left: 100px;
+      position: relative;
+      min-height: 80px;
+
+      &.no-image {
+        padding-left: 20px;
+      }
+    }
+
+    .bx-soa-pickup-l-item-desc {
+      padding-top: 10px;
+      font-size: 11px;
+      color: #6d6d6d;
+    }
+
+    .bx-soa-pickup-l-item-btn {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -17px;
+    }
+  }
+
+  .bx-soa-pickup-list-item.bx-selected {
+    background: #f9f9f9;
+
+    .bx-soa-pickup-l-item-detail {
+      display: block;
+    }
+
+    .bx-soa-pickup-l-item-btn {
+      padding-left: 100px;
+      padding-top: 10px;
+      float: none;
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 0;
+    }
+
+    .bx-soa-pickup-l-item-btn.no-image {
+      padding-left: 20px;
+    }
+  }
+
+  .bx-soa-pickup-list-item:last-child {
+    border-bottom: 1px solid #dcdfe2;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .bx-soa-pickup-list {
+    .bx-soa-pickup-list-item {
+      .bx-soa-pickup-l-item-detail {
+        padding-left: 0;
+      }
+
+      .bx-soa-pickup-l-item-img {
+        position: relative;
+        left: auto;
+        top: auto;
+        max-width: 200px;
+        max-height: 200px;
+        padding-bottom: 10px;
+      }
+
+      .bx-soa-pickup-l-item-adress {
+        padding-right: 0;
+      }
+
+      .bx-soa-pickup-l-item-btn {
+        position: relative;
+        margin-top: 15px;
+        top: auto;
+        right: auto;
+      }
+    }
+
+    .bx-soa-pickup-list-item.bx-selected {
+      .bx-soa-pickup-l-item-btn {
+        padding-left: 0;
+      }
+    }
+  }
+}

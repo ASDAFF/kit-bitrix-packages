@@ -1,0 +1,64 @@
+.binded-products .binded-element {
+    padding: 18px 13px;
+    border: 1px solid #f6f6f6;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+.binded-products .binded-element:hover {
+    box-shadow: 5px 5px 25px rgba(0, 0 ,0, 0.15);
+}
+.binded-products .binded-element .binded-element-wrapper {
+    display: table;
+    overflow: hidden;
+}
+.binded-products .binded-element .element-picture,
+.binded-products .binded-element .element-text {
+    display: table-cell;
+}
+.binded-products .binded-element .element-picture {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.binded-products .binded-element .element-text {
+    padding-left: 15px;
+}
+.binded-products .binded-element .element-text .text-name {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2b2828;
+    padding-bottom: 5px;
+    height: 35px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.binded-products .binded-element .element-text .text-price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.binded-products .owl-dots {
+    text-align: center;
+}
+.binded-products .owl-dots .owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bababa;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.binded-products .owl-dots .owl-dot:hover {
+    background-color: #2850db;
+    border-color: #2850db;
+}
+.binded-products .owl-dots .owl-dot.active {
+    background-color: #2850db;
+    border-color: #2850db;
+}

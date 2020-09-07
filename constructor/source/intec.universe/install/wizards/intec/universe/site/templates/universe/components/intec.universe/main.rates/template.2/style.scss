@@ -1,0 +1,174 @@
+$component: 'rates';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items,
+  .#{$item} {
+    position: relative;
+  }
+  .#{$item} {
+    margin-top: -1px;
+    margin-left: -1px;
+    z-index: 1;
+    @include transition(box-shadow, 0.4s);
+
+    &:hover {
+      -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+    }
+  }
+  .#{$item}-wrapper {
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    background-color: #FFF;
+  }
+  .#{$item}-picture-wrap {
+    position: relative;
+    height: 225px;
+  }
+  .#{$item}-picture,
+  .#{$item}-fade,
+  .#{$item}-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .#{$item}-picture {
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .#{$item}-fade {
+    top: 0;
+    background-color: rgba(0 ,0, 0, 0.25);
+    z-index: 2;
+  }
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #FFF;
+    padding: 0 30px 30px 30px;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .#{$item}-properties {
+    padding: 30px 30px 40px 30px;
+  }
+  .#{$item}-property {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .#{$item}-property-name {
+    font-size: 14px;
+    line-height: 21px;
+    color: #888888;
+  }
+  .#{$item}-property-value {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 8px;
+  }
+  .#{$item}-price {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0 30px 40px 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .#{$item}-button {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    color: #666;
+    padding: 18px;
+    cursor: pointer;
+    @include transition(#{background-color, color}, 0.4s);
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: -1px;
+      background: #E8E8E8;
+      height: 1px;
+      left: 30px;
+      right: 30px;
+      @include transition(height, 0.4s);
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:before {
+        height: 0;
+      }
+    }
+  }
+  [data-order='true'],
+  [data-price='true'] {
+    .#{$item}-properties {
+      padding-bottom: 25px;
+    }
+  }
+  [data-order='true'] {
+    .#{$item}-wrapper {
+      padding-bottom: 50px;
+    }
+  }
+  [data-price='true'] {
+    .#{$item}-wrapper {
+      padding-bottom: 70px;
+    }
+  }
+  [data-order='true'] [data-price='true'] {
+    .#{$item}-wrapper {
+      padding-bottom: 105px;
+    }
+    .#{$item}-price {
+      bottom: 50px;
+      padding-bottom: 25px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-name,
+    .#{$item}-properties,
+    .#{$item}-price {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

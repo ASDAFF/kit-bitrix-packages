@@ -1,0 +1,63 @@
+.widget.c-services.c-services-template-14 {
+  padding-top: 94px;
+  padding-bottom: 105px;
+  background-color: #EFEFEF;
+}
+.widget.c-services.c-services-template-14 .widget-header {
+  text-align: left;
+}
+.widget.c-services.c-services-template-14 .widget-header .widget-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.widget.c-services.c-services-template-14 .widget-header .widget-title + .widget-description {
+  margin-top: 20px;
+}
+.widget.c-services.c-services-template-14 .widget-header .widget-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.widget.c-services.c-services-template-14 .widget-items {
+  margin-top: 72px;
+}
+.widget.c-services.c-services-template-14 .widget-item-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.widget.c-services.c-services-template-14 .widget-item-properties {
+  margin-top: 88px;
+}
+.widget.c-services.c-services-template-14 .widget-item-property {
+  font-size: 16px;
+}
+.widget.c-services.c-services-template-14 .widget-footer-button {
+  color: #2d2d2d !important;
+}
+.widget.c-services.c-services-template-14 .widget-footer-button:hover, .widget.c-services.c-services-template-14 .widget-footer-button:focus, .widget.c-services.c-services-template-14 .widget-footer-button:active {
+  color: #fff !important;
+}
+@media all and (max-width: 1200px) {
+  .widget.c-services.c-services-template-14 .widget-header {
+    text-align: center;
+  }
+}
+@media all and (max-width: 600px) {
+  .widget.c-services.c-services-template-14 .widget-item-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .widget.c-services.c-services-template-14 .widget-item-name,
+.widget.c-services.c-services-template-14 .widget-item-price {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

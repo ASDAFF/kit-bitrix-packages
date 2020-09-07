@@ -1,0 +1,85 @@
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element-wrapper {
+	padding-top: 70%;
+	position: relative;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: box-shadow, margin-top 0.4s;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element:hover {
+	margin-top: -10px;
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-fade {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 0.4s;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element:hover .section-element-fade {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-name {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	background-color: #FFF;
+	border-radius: 3px;
+	max-width: 70%;
+	font-size: 15px;
+	line-height: 1.7;
+	text-decoration: none;
+	transition: background-color, color 0.4s;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element:hover .section-element-name {
+	background-color: inherit;
+	color: #FFF;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-count {
+	position: absolute;
+	color: #FFF;
+	opacity: 0;
+	right: 20px;
+	bottom: 0;
+	font-size: 15px;
+	line-height: 1.7;
+	transition: 0.4s;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element:hover .section-element-count {
+	opacity: 1;
+	bottom: 20px;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-name,
+.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-count {
+	padding: 5px 8px;
+}
+
+@media all and (max-width: 550px) {
+	.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element-wrapper {
+		width: 100%;
+	}
+	.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-fade {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.ns-bitrix.c-photo.c-photo-photogallery .photo-sections.photo-sections-default .section-element .section-element-count {
+		opacity: 1;
+		bottom: 20px;
+	}
+}

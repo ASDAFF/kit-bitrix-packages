@@ -1,0 +1,48 @@
+$component: 'categories';
+$template: 'template-1';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid transparent;
+    @include border-radius(10px);
+    @include transition(border-color, 0.4s);
+  }
+  .#{$item}-picture-wrap {
+    padding: 20px 40px 0 40px;
+  }
+  .#{$item}-picture {
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .#{$item}-name {
+    font-size: 12px;
+    line-height: 18px;
+    color: #36312e;
+    margin-top: 20px;
+  }
+}

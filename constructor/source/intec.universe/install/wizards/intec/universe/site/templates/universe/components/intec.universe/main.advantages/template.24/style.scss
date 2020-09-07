@@ -1,0 +1,121 @@
+$component: 'advantages';
+$template: 'template-24';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &:first-child {
+      padding-top: 0px;
+    }
+
+    &[data-hidden="true"] {
+      display: none;
+    }
+
+    &[data-color="dark"] {
+      background-color: #F8F8F8;
+    }
+  }
+
+  .#{$item}-wrapper {
+    position: relative;
+  }
+
+  .#{$item}-text {
+    position: relative;
+    text-align: left;
+  }
+
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  .#{$item}-description {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-top: 10px;
+  }
+
+  .#{$item}-category-wrap {
+    margin-top: 10px;
+  }
+  .#{$item}-category {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 3px 15px;
+    border-radius: 14px;
+    user-select: none;
+    color: #000000;
+    background-color: #BFFF35;
+  }
+
+  .#{$item}-images-wrap {
+    margin-top: 30px;
+  }
+
+  .#{$item}-image {
+    padding-top: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+  }
+
+  .#{$item}-image-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .#{$item}-image-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+
+  .widget-buttons {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &[data-collapsed="false"] {
+    .widget-button {
+      &.widget-button-hide {
+        display: none;
+      }
+    }
+  }
+
+  &[data-collapsed="true"] {
+    .widget-button {
+      &.widget-button-show {
+        display: none;
+      }
+    }
+  }
+
+  &[data-hiding="false"] {
+    .widget-buttons {
+      display: none;
+    }
+  }
+}

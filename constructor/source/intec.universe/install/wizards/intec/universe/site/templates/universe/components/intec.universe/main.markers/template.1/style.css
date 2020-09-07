@@ -1,0 +1,32 @@
+.c-markers.c-markers-template-1 {
+  font-size: 0;
+}
+.c-markers.c-markers-template-1[data-orientation=vertical] .widget-markers-wrap {
+  display: block;
+  margin-bottom: 5px;
+}
+.c-markers.c-markers-template-1[data-orientation=horizontal] .widget-markers-wrap {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.c-markers.c-markers-template-1 .widget-markers {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  padding: 7px 13px;
+  border-radius: 13px;
+}
+.c-markers.c-markers-template-1 .widget-markers-hit {
+  background: #f8971a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8971a", endColorstr="#f81a8d", GradientType=0 );
+}
+.c-markers.c-markers-template-1 .widget-markers-new {
+  background: #2675fc;
+}
+.c-markers.c-markers-template-1 .widget-markers-recommend {
+  background: #1bcda1;
+}
+
+/*# sourceMappingURL=style.css.map */

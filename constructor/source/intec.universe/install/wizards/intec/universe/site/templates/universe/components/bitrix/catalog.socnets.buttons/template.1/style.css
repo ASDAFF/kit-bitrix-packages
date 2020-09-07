@@ -1,0 +1,77 @@
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 {
+  position: relative;
+  display: inline-block;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-share {
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: #a6b1b7;
+  border: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-items-wrap {
+  display: inline-block;
+  opacity: 0;
+  transition: 0.4s opacity;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  right: -18px;
+  overflow: hidden;
+  z-index: 1;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-items-wrap.active {
+  opacity: 1;
+  overflow: visible;
+  height: auto;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-items {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 14px;
+  margin-top: 10px;
+  position: relative;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-items:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -9px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+  right: 20px;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-items:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #EBEBEB;
+  right: 20px;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-item {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 20px;
+  cursor: pointer;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-item:hover {
+  opacity: 0.8;
+}
+.ns-bitrix.c-catalog-socnets-buttons.c-catalog-socnets-buttons-template-1 .catalog-socnets-buttons-item:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

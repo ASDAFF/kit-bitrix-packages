@@ -1,0 +1,95 @@
+$namespace: 'bitrix';
+$component: 'news-detail';
+$template: 'shares-default-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+
+  .#{$class}-block {
+    margin-top: 60px;
+
+    &:first-child,
+    &[data-type="sticky.both"] + .#{$class}-block[data-type="sticky.both"],
+    &[data-type="sticky.both"] + .#{$class}-block[data-type="sticky.top"],
+    &[data-type="sticky.bottom"] + .#{$class}-block[data-type="sticky.both"],
+    &[data-type="sticky.bottom"] + .#{$class}-block[data-type="sticky.top"] {
+      margin-top: 0;
+    }
+
+    & + .#{$class}-block[data-block="links"] {
+      border-top: 1px solid #dddddd;
+      padding-top: 20px;
+    }
+
+    &[data-block="banner"] + .#{$class}-block[data-block="links"],
+    &[data-block="description"] + .#{$class}-block[data-block="links"] {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+
+  .#{$class}-banner-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .#{$class}-description-content {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+  }
+
+  .#{$class}-description-duration {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #e5f0ff;
+    border-radius: 5px;
+
+    & + .#{$class}-description-text {
+      padding-top: 25px;
+    }
+  }
+
+  .#{$class}-description-text {}
+
+  .#{$class}-conditions {
+    .widget.c-advantages.c-advantages-template-10 .widget-items {
+      margin-top: 0 !important;
+    }
+    .widget.c-advantages.c-advantages-template-10 .widget-item-name {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    .widget.c-advantages.c-advantages-template-10 .widget-item-description {
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 300px;
+      margin: 15px auto 0 auto;
+    }
+  }
+
+  .#{$class}-links-return {
+    text-decoration: none !important;
+  }
+
+  .#{$class}-links-return-icon {
+    margin-right: 15px;
+    padding-bottom: 5px;
+    font-size: 27px;
+    vertical-align: middle;
+  }
+
+  .#{$class}-links-return-text {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .#{$class}-links-social-title {
+    color: #a4a4a4;
+    margin-right: 10px;
+  }
+}

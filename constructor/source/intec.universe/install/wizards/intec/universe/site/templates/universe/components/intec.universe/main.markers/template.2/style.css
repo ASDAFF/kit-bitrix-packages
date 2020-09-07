@@ -1,0 +1,32 @@
+.c-markers.c-markers-template-2 {
+  font-size: 0;
+}
+.c-markers.c-markers-template-2[data-orientation=vertical] .widget-markers-wrap {
+  display: block;
+  margin-bottom: 4px;
+}
+.c-markers.c-markers-template-2[data-orientation=horizontal] .widget-markers-wrap {
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.c-markers.c-markers-template-2 .widget-markers {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 6px 8px;
+  border-radius: 2px;
+}
+.c-markers.c-markers-template-2 .widget-markers-hit {
+  background: #7768AE;
+}
+.c-markers.c-markers-template-2 .widget-markers-new {
+  background: #3BB273;
+}
+.c-markers.c-markers-template-2 .widget-markers-recommend {
+  background: #E15554;
+}
+
+/*# sourceMappingURL=style.css.map */

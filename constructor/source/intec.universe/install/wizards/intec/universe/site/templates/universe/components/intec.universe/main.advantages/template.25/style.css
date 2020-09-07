@@ -1,0 +1,23 @@
+.widget.c-advantages.c-advantages-template-25 .widget-item-picture {
+  font-size: 0;
+  text-align: center;
+  height: 75px;
+  margin-bottom: 10px;
+}
+.widget.c-advantages.c-advantages-template-25 .widget-item-picture img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+.widget.c-advantages.c-advantages-template-25 .widget-item-name {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #222;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

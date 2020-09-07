@@ -1,0 +1,84 @@
+.ns-intec-constructor.block-element.block-element-text {
+    display: block;
+    font-size: medium;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.ns-intec-constructor.block-element.block-element-text p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.ns-intec-constructor.block-element.block-element-text form {
+    display: block;
+    margin-top: 0;
+}
+.ns-intec-constructor.block-element.block-element-text h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.ns-intec-constructor.block-element.block-element-text pre {
+    display: block;
+    font-family: monospace;
+    margin: 1em 0;
+    white-space: pre;
+}
+.ns-intec-constructor.block-element.block-element-text address {
+    display: block;
+    font-style: italic;
+}
+.ns-intec-constructor.block-element.block-element-text div {
+    display: block;
+}

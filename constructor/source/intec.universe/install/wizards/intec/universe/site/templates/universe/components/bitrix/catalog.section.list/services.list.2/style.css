@@ -1,0 +1,54 @@
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 {
+  display: block;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-picture {
+  display: block;
+  position: relative;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-picture a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 190px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-information {
+  display: block;
+  position: relative;
+  text-align: left;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-name {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  max-height: 48px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-description {
+  display: block;
+  color: #616267;
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 126px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+@media all and (max-width: 500px) {
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-2 .catalog-section-list-item-picture a {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

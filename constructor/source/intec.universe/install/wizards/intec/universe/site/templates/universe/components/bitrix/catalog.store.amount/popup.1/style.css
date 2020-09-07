@@ -1,0 +1,59 @@
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-item + .catalog-store-amount-item {
+  margin-top: 16px;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-indicator {
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-indicator[data-store-state=many] {
+  background-color: #1DB940;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-indicator[data-store-state=few] {
+  background-color: #F4BB28;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-indicator[data-store-state=empty] {
+  background-color: #B0B0B0;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-name {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-quantity {
+  font-size: 0;
+  white-space: nowrap;
+  margin: 0 -2px;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-quantity[data-store-state=many] {
+  color: #1DB940;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-quantity[data-store-state=few] {
+  color: #F4BB28;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-quantity[data-store-state=empty] {
+  color: #B0B0B0;
+}
+.ns-bitrix.c-catalog-store-amount.c-catalog-store-amount-popup-1 .catalog-store-amount-quantity > span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 0 2px;
+  vertical-align: bottom;
+}
+
+/*# sourceMappingURL=style.css.map */

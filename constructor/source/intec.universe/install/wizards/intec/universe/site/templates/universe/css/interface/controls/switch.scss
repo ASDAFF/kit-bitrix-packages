@@ -1,0 +1,361 @@
+$class: 'intec-ui' !default;
+$attribute: 'data-ui' !default;
+$schemes: () !default;
+
+&-checkbox,
+&-radiobox,
+&-switch {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: left;
+  cursor: pointer;
+  padding: 2px 0;
+
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .#{$class}-part-selector {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-transition-property: border-color, background-color;
+    -moz-transition-property: border-color, background-color;
+    -ms-transition-property: border-color, background-color;
+    -o-transition-property: border-color, background-color;
+    transition-property: border-color, background-color;
+
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    transition-duration: 350ms;
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      opacity: 0;
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+      left: 5px;
+      color: #5b5b5b;
+      background-color: #5b5b5b;
+
+      -webkit-transition: opacity 350ms;
+      -moz-transition: opacity 350ms;
+      -ms-transition: opacity 350ms;
+      -o-transition: opacity 350ms;
+      transition: opacity 350ms;
+    }
+  }
+
+  .#{$class}-part-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .#{$class}-part-selector + .#{$class}-part-content {
+    padding-left: 0.714286em;
+  }
+
+  input {
+    width: 0;
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  // States
+
+  input:checked + .#{$class}-part-selector,
+  &.#{$class}-state-checked .#{$class}-part-selector,
+  &[#{$attribute}-state="checked"] .#{$class}-part-selector {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:hover .#{$class}-part-selector,
+  &.#{$class}-state-hover .#{$class}-part-selector,
+  &[#{$attribute}-state="hover"] .#{$class}-part-selector {
+    background-color: #e1e1e1;
+  }
+
+  input:focus + .#{$class}-part-selector,
+  &.#{$class}-state-focus .#{$class}-part-selector,
+  &[#{$attribute}-state="focus"] .#{$class}-part-selector {
+    background-color: #e1e1e1;
+  }
+
+  &:active .#{$class}-part-selector,
+  &.#{$class}-state-active .#{$class}-part-selector,
+  &[#{$attribute}-state="active"] .#{$class}-part-selector {
+    border-color: #ccc;
+    background-color: #ccc;
+  }
+
+  input:disabled + .#{$class}-part-selector,
+  &.#{$class}-state-disabled .#{$class}-part-selector,
+  &[#{$attribute}-state="disabled"] .#{$class}-part-selector {
+    border-color: #efefef !important;
+    background-color: #f6f6f6 !important;
+
+    &:before {
+      opacity: 1;
+      background-color: #9f9f9f !important;
+      color: #9f9f9f !important;
+    }
+  }
+
+  // Schemes
+
+  @each $scheme-name, $scheme-values in $schemes {
+    &.#{$class}-scheme-#{$scheme-name} .#{$class}-part-selector {
+      &:before {
+        background-color: map-get(map-get($scheme-values, 'default'), 'color');
+        color: map-get(map-get($scheme-values, 'default'), 'color');
+      }
+    }
+
+    &.#{$class}-scheme-#{$scheme-name} input:checked + .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}.#{$class}-state-checked .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}[#{$attribute}-state="checked"] .#{$class}-part-selector {
+      border-color: map-get(map-get($scheme-values, 'default'), 'border');
+      background-color: map-get(map-get($scheme-values, 'default'), 'background');
+
+      &:before {
+        background-color: map-get(map-get($scheme-values, 'default'), 'color');
+        color: map-get(map-get($scheme-values, 'default'), 'color');
+      }
+    }
+
+    &.#{$class}-scheme-#{$scheme-name}:hover .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}.#{$class}-state-hover .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}[#{$attribute}-state="hover"] .#{$class}-part-selector {
+      border-color: map-get(map-get($scheme-values, 'hover'), 'border');
+      background-color: map-get(map-get($scheme-values, 'hover'), 'background');
+
+      &:before {
+        background-color: map-get(map-get($scheme-values, 'hover'), 'color');
+        color: map-get(map-get($scheme-values, 'hover'), 'color');
+      }
+    }
+
+    &.#{$class}-scheme-#{$scheme-name} input:focus + .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}.#{$class}-state-focus .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}[#{$attribute}-state="focus"] .#{$class}-part-selector {
+      border-color: map-get(map-get($scheme-values, 'focus'), 'border');
+      background-color: map-get(map-get($scheme-values, 'focus'), 'background');
+
+      &:before {
+        background-color: map-get(map-get($scheme-values, 'focus'), 'color');
+        color: map-get(map-get($scheme-values, 'focus'), 'color');
+      }
+    }
+
+    &.#{$class}-scheme-#{$scheme-name}:active .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}.#{$class}-state-active .#{$class}-part-selector,
+    &.#{$class}-scheme-#{$scheme-name}[#{$attribute}-state="active"] .#{$class}-part-selector {
+      border-color: map-get(map-get($scheme-values, 'active'), 'border');
+      background-color: map-get(map-get($scheme-values, 'active'), 'background');
+
+      &:before {
+        background-color: map-get(map-get($scheme-values, 'active'), 'color');
+        color: map-get(map-get($scheme-values, 'active'), 'color');
+      }
+    }
+  }
+
+  // Sizes
+
+  @for $size from 1 through $sizes {
+    &.#{$class}-size-#{$size} {
+      .#{$class}-part-selector {
+        width: #{16 + ($size * 2)}px;
+        height: #{16 + ($size * 2)}px;
+      }
+    }
+  }
+}
+
+&-checkbox {
+  .#{$class}-part-selector {
+    border-radius: 2px;
+    font-size: 10px;
+    text-align: center;
+
+    &:before {
+      background-color: transparent !important;
+      content: unquote("\"\\f00c\"");
+      font-family: "Font Awesome 5 Pro";
+      font-size: inherit;
+      font-weight: 400;
+      line-height: 1;
+      text-align: inherit;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+    }
+  }
+
+  input:disabled + .#{$class}-part-selector,
+  &.#{$class}-state-disabled .#{$class}-part-selector,
+  &[#{$attribute}-state="disabled"] .#{$class}-part-selector {
+    &:before {
+      display: none;
+    }
+  }
+
+  // Sizes
+
+  @for $size from 1 through $sizes {
+    &.#{$class}-size-#{$size} {
+      .#{$class}-part-selector {
+        font-size: #{10 + ($size * 2)}px;
+      }
+    }
+  }
+}
+
+&-radiobox {
+  .#{$class}-part-selector {
+    border-radius: 50%;
+
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  input:disabled + .#{$class}-part-selector,
+  &.#{$class}-state-disabled .#{$class}-part-selector,
+  &[#{$attribute}-state="disabled"] .#{$class}-part-selector {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+&-switch {
+  .#{$class}-part-selector {
+    background-color: #ccc;
+    border-radius: 8px;
+    width: 28px;
+
+    &:before {
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: 1;
+      top: 1px;
+      right: auto;
+      bottom: 1px;
+      left: 1px;
+      width: 12px;
+
+      -webkit-transition-property: left;
+      -moz-transition-property: left;
+      -ms-transition-property: left;
+      -o-transition-property: left;
+      transition-property: left;
+    }
+  }
+
+  input:checked + .#{$class}-part-selector,
+  &.#{$class}-state-checked .#{$class}-part-selector,
+  &[#{$attribute}-state="checked"] .#{$class}-part-selector {
+    &:before {
+      left: 13px;
+    }
+  }
+
+  &:hover .#{$class}-part-selector,
+  &.#{$class}-state-hover .#{$class}-part-selector,
+  &[#{$attribute}-state="hover"] .#{$class}-part-selector {
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+  }
+
+  input:focus + .#{$class}-part-selector,
+  &.#{$class}-state-focus .#{$class}-part-selector,
+  &[#{$attribute}-state="focus"] .#{$class}-part-selector {
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+  }
+
+  input:disabled + .#{$class}-part-selector,
+  &.#{$class}-state-disabled .#{$class}-part-selector,
+  &[#{$attribute}-state="disabled"] .#{$class}-part-selector {
+    border-color: #efefef;
+    background-color: #efefef;
+
+    &:before {
+      opacity: 0.5;
+      background-color: #b3b3b3;
+      color: #b3b3b3;
+    }
+  }
+
+  // Sizes
+
+  @for $size from 1 through $sizes {
+    &.#{$class}-size-#{$size} {
+      .#{$class}-part-selector {
+        border-radius: #{8 + $size}px;
+        width: #{28 + ($size * 4)}px;
+
+        &:before {
+          width: #{12 + ($size * 2)}px;
+        }
+      }
+
+      input:checked + .#{$class}-part-selector,
+      &.#{$class}-state-checked .#{$class}-part-selector,
+      &[#{$attribute}-state="checked"] .#{$class}-part-selector {
+        &:before {
+          left: #{13 + ($size * 2)}px;
+        }
+      }
+    }
+  }
+}

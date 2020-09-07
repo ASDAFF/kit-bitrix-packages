@@ -1,0 +1,5 @@
+<?php
+
+$MESS['C_CATALOG_CATALOG_1_SORTING_POPULAR'] = 'По популярности';
+$MESS['C_CATALOG_CATALOG_1_SORTING_NAME'] = 'По названию';
+$MESS['C_CATALOG_CATALOG_1_SORTING_PRICE'] = 'По цене';

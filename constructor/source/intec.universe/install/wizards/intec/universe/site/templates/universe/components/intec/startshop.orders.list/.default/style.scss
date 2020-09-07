@@ -1,0 +1,201 @@
+$namespace: 'intec';
+$component: 'startshop-orders-list';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-filter {
+    &-item {
+      display: inline-block;
+      padding: 6px 14px;
+      border: 1px solid #DCDCDC;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #666666;
+      background: #F2F2F2;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 0.5s;
+
+      &:hover {
+        background: #d4d4d4;
+      }
+
+      &.intec-cl-background {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .#{$class}-item {
+    display: none;
+    margin-top: 20px;
+
+    &.active {
+      display: block
+    }
+
+    &-header {
+      padding: 25px;
+      background: #F5F5F5;
+      border: 1px solid #E6E6E6;
+      cursor: pointer;
+
+      &-wrapper {
+        font-weight: bold;
+        font-size: 16px;
+        color: #000000;
+      }
+
+      &-payment {
+        margin-right: 20px;
+
+        &-wrapper {
+          padding: 7px 12px;
+          border-radius: 5px;
+          border: 1px solid;
+          font-size: 14px;
+
+          &.red {
+            background-color: #F4CFCF;
+            border-color: #F3B0B0;
+            color: #EA2424;
+          }
+
+          &.green {
+            background-color: #EFFCF0;
+            border-color: #26B445;
+            color: #28762E;
+          }
+        }
+      }
+
+      &-icon {
+        display: none;
+        font-size: 18px;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      @media all and (max-width: 400px) {
+        &-wrapper {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-content {
+      display: none;
+      border: 1px solid #E6E6E6;
+      border-top: none;
+
+      &-status {
+        &-wrap {
+          padding: 25px 30px 0 30px;
+        }
+
+        &-payment {
+          &-name {
+            margin-bottom: 7px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #666666;
+          }
+
+          &-wrapper {
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 5px;
+            border: 1px solid;
+            font-size: 14px;
+
+            &.red {
+              border-color: #F3B0B0;
+              background-color: #F4CFCF;
+              color: #EA2424;
+            }
+
+            &.green {
+              background-color: #EFFCF0;
+              border-color: #26B445;
+              color: #28762E;
+            }
+          }
+        }
+
+        &-order {
+          &-name {
+            margin-bottom: 7px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #666666;
+          }
+
+          &-wrapper {
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 5px;
+            border: 1px solid #26B445;
+            font-size: 14px;
+            background-color: #EFFCF0;
+            color: #28762E;
+          }
+        }
+      }
+    }
+
+    &-information {
+      padding: 15px 30px;
+
+      &-payment, &-delivery, &-delivery-price, &-sum {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #000000;
+      }
+
+      &-sum {
+        margin: 0;
+      }
+
+      &-name {
+        display: inline-block;
+        width: 170px;
+        color: #666666;
+      }
+
+      &-value {
+        display: inline-block;
+      }
+
+      @media all and (max-width: 400px) {
+        &-payment, &-delivery, &-delivery-price {
+          margin-bottom: 10px;
+        }
+        &-name {
+          display: block;
+        }
+      }
+    }
+
+    &-button-wrap {
+      padding: 15px 30px;
+      border-top: 1px solid #E6E6E6;
+
+      .intec-button {
+        padding: 15px 22px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .#{$class}-notification {
+    text-align: center;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,49 @@
+$class: 'constructor-' !default;
+$indents: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
+
+@each $indent in $indents {
+  $directions: (
+    'top': 't',
+    'right': 'r',
+    'bottom': 'b',
+    'left': 'l'
+  );
+
+  .#{$class}m-#{$indent} {
+    margin: #{$indent}px;
+  }
+
+  .#{$class}p-#{$indent} {
+    padding: #{$indent}px;
+  }
+
+  .#{$class}m-v-#{$indent} {
+    margin-top: #{$indent}px !important;
+    margin-bottom: #{$indent}px !important;
+  }
+
+  .#{$class}m-h-#{$indent} {
+    margin-right: #{$indent}px !important;
+    margin-left: #{$indent}px !important;
+  }
+
+  .#{$class}p-v-#{$indent} {
+    padding-top: #{$indent}px !important;
+    padding-bottom: #{$indent}px !important;
+  }
+
+  .#{$class}p-h-#{$indent} {
+    padding-right: #{$indent}px !important;
+    padding-left: #{$indent}px !important;
+  }
+
+  @each $direction, $abbreviation in $directions {
+    .#{$class}m-#{$abbreviation}-#{$indent} {
+      margin-#{$direction}: #{$indent}px !important;
+    }
+
+    .#{$class}p-#{$abbreviation}-#{$indent} {
+      padding-#{$direction}: #{$indent}px !important;
+    }
+  }
+}

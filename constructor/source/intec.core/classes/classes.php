@@ -1,0 +1,33 @@
+<?php
+$directory = __DIR__;
+
+return [
+    'intec\core\Callbacks' => $directory.'/Callbacks.php',
+    'intec\core\Parameters' => $directory.'/Parameters.php',
+    'intec\core\base\Application' => $directory.'/base/Application.php',
+    'intec\core\base\Arrayable' => $directory.'/base/Arrayable.php',
+    'intec\core\base\ArrayableTrait' => $directory.'/base/ArrayableTrait.php',
+    'intec\core\base\BaseObject' => $directory.'/base/BaseObject.php',
+    'intec\core\base\Behavior' => $directory.'/base/Behavior.php',
+    'intec\core\base\BootstrapInterface' => $directory.'/base/BootstrapInterface.php',
+    'intec\core\base\Collection' => $directory.'/base/Collection.php',
+    'intec\core\base\Component' => $directory.'/base/Component.php',
+    'intec\core\base\Configurable' => $directory.'/base/Configurable.php',
+    'intec\core\base\ErrorException' => $directory.'/base/ErrorException.php',
+    'intec\core\base\Event' => $directory.'/base/Event.php',
+    'intec\core\base\EventsTrait' => $directory.'/base/EventsTrait.php',
+    'intec\core\base\Exception' => $directory.'/base/Exception.php',
+    'intec\core\base\InvalidCallException' => $directory.'/base/InvalidCallException.php',
+    'intec\core\base\InvalidConfigException' => $directory.'/base/InvalidConfigException.php',
+    'intec\core\base\InvalidParamException' => $directory.'/base/InvalidParamException.php',
+    'intec\core\base\Model' => $directory.'/base/Model.php',
+    'intec\core\base\ModelEvent' => $directory.'/base/ModelEvent.php',
+    'intec\core\base\Module' => $directory.'/base/Module.php',
+    'intec\core\base\NotInstantiableException' => $directory.'/base/NotInstantiableException.php',
+    'intec\core\base\NotSupportedException' => $directory.'/base/NotSupportedException.php',
+    'intec\core\base\Object' => $directory.'/base/Object.php',
+    'intec\core\base\Security' => $directory.'/base/Security.php',
+    'intec\core\base\UnknownClassException' => $directory.'/base/UnknownClassException.php',
+    'intec\core\base\UnknownMethodException' => $directory.'/base/UnknownMethodException.php',
+    'intec\core\base\UnknownPropertyException' => $directory.'/base/UnknownPropertyException.php',
+];

@@ -1,0 +1,9 @@
+.adm-default.adm-main-menu-item.adm-global_intec .adm-main-menu-item-icon {
+    background: url('../images/icons.png') no-repeat 0 0;
+    height: 47px;
+}
+.adm-default.adm-main-menu-item.adm-global_intec:hover .adm-main-menu-item-icon,
+.adm-default.adm-main-menu-item.adm-global_intec.adm-main-menu-item-active .adm-main-menu-item-icon {
+    background-position: 0 -47px;
+    height: 47px;
+}

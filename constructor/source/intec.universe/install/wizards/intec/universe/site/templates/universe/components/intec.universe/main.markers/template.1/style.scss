@@ -1,0 +1,39 @@
+$component: 'markers';
+$template: 'template-1';
+$class: 'widget-#{$component}';
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  font-size: 0;
+
+  &[data-orientation='vertical'] {
+    .#{$class}-wrap {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  &[data-orientation='horizontal'] {
+    .#{$class}-wrap {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  .#{$class} {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 13px;
+  }
+  .#{$class}-hit {
+    background: #f8971a;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8971a', endColorstr='#f81a8d', GradientType=0 );
+  }
+  .#{$class}-new {
+    background: #2675fc;
+  }
+  .#{$class}-recommend {
+    background: #1bcda1;
+  }
+}

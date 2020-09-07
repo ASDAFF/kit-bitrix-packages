@@ -1,0 +1,218 @@
+$namespace: 'bitrix';
+$component: 'news-list';
+$template: 'tile-1';
+$item: 'news-list-item';
+$tag: #{$item}-tags-item;
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin background ($size, $repeat, $position) {
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+@mixin user-select ($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    @include border-radius(10px);
+    @include transition(box-shadow, 0.4s);
+
+    &:hover {
+      -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .#{$item}-date {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+  }
+  .#{$item}-tags {
+    margin-top: 10px;
+  }
+  .#{$tag}-wrapper {
+    display: block;
+    margin: 0;
+
+    input {
+      display: none;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      padding: 3px;
+      white-space: nowrap;
+      @include border-radius(2px);
+      @include user-select(none);
+      @include transition(#{color, background-color}, 0.4s);
+    }
+    input:enabled + span {
+      cursor: pointer;
+    }
+    input:disabled + span {
+      cursor: default;
+    }
+    input:checked + span,
+    input:enabled + span:hover {
+      color: #FFF;
+    }
+  }
+  [data-view='default'] {
+    .#{$item}-image {
+      display: block;
+      padding-top: 60%;
+      @include background(cover, no-repear, center);
+    }
+    .#{$item}-text {
+      padding: 20px 25px 25px 25px;
+    }
+    .#{$item}-name {
+      a {
+        font-size: 17px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #000;
+        @include transition(color, 0.4s);
+      }
+    }
+    .#{$item}-tags {
+      margin-top: 10px;
+    }
+    .#{$item}-description {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 20px;
+    }
+  }
+  [data-view='big'] {
+    .#{$item}-wrapper {
+      position: relative;
+    }
+    .#{$item}-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      @include background(cover, no-repeat, center);
+    }
+    .#{$item}-text {
+      padding: 30px 35px;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+      pointer-events: none;
+    }
+    .#{$item}-name {
+      font-size: 17px;
+      line-height: 24px;
+      text-decoration: none;
+      color: #FFF;
+      max-width: 300px;
+    }
+    .#{$item}-date {
+      color: #FFF;
+    }
+    .#{$tag}-wrapper {
+      pointer-events: all;
+
+      span {
+        color: #FFF;
+      }
+    }
+  }
+  [data-grid='4'] {
+    [data-view='big'] {
+      width: 50%;
+    }
+  }
+  [data-grid='3'] {
+    [data-view='big'] {
+      width: 100% / 3 * 2;
+    }
+  }
+  [data-role='form'] {
+    display: none;
+  }
+
+  @media all and (max-width: 1024px) {
+    [data-grid='4'] {
+      [data-view='big'] {
+        width: 100% /3 * 2;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    [data-grid] {
+      [data-view='big'] {
+        width: 100%;
+      }
+    }
+    [data-view='default'] {
+      .#{$item}-image {
+        padding-top: 50%;
+      }
+      .#{$item}-text {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .#{$item}-name {
+        a {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+      .#{$item}-date {
+        font-size: 11px;
+        line-height: 14px;
+      }
+      .#{$item}-description {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    [data-view='big'] {
+      .#{$item}-wrapper {
+        padding-top: 50%;
+      }
+      .#{$item}-text {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .#{$item}-name {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .#{$item}-date {
+        font-size: 11px;
+        line-height: 14px;
+      }
+    }
+  }
+}

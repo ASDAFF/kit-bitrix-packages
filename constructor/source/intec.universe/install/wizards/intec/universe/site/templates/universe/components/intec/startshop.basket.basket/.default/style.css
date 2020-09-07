@@ -1,0 +1,441 @@
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-content {
+  position: relative;
+  border: 1px solid #E6E6E6;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper {
+  margin-bottom: 15px !important;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper .startshop-basket-basket-filter-input-wrapper {
+  position: relative;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper .startshop-basket-basket-filter-loop {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper .startshop-basket-basket-filter-input {
+  width: 360px;
+  padding-right: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-print-wrapper {
+  margin-right: 20px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-print-wrapper .startshop-basket-basket-print-button {
+  height: 100%;
+  border: 1px solid #d7d7d7;
+  transition: 0s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-print-wrapper .startshop-basket-basket-print-button .basket-print-icon {
+  width: 20px;
+  height: 18px;
+  background: url("images/print.png") no-repeat center;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-clear-wrapper .startshop-basket-basket-clear-button {
+  border: 1px solid #d7d7d7;
+  transition: 0s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-clear-wrapper .startshop-basket-basket-clear-button:hover {
+  background-color: transparent;
+  border-color: #ff0000;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-clear-wrapper .startshop-basket-basket-clear-button:hover .basket-delete-icon {
+  background: url("images/delete.png") no-repeat;
+  background-position: -20px 0;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-clear-wrapper .startshop-basket-basket-clear-button:hover span {
+  color: #ff0000;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row {
+  display: table-row;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
+  transition: 0.3s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.082);
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row.table-row-display-none {
+  display: none !important;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total {
+  display: table-row;
+  width: 100%;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total .startshop-basket-cell {
+  margin: 30px 15px !important;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.total-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-product-name-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-product-name-link .text-highlight {
+  background-color: #ffff22;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-section {
+  margin-bottom: 10px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-section-link {
+  font-size: 13px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-section-link:hover {
+  color: #4c4949;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property {
+  margin-bottom: 3px;
+  font-size: 0;
+  white-space: nowrap;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  white-space: normal;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property-value {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  white-space: normal;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-mobile-offers {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property.startshop-basket-basket-property-picture .startshop-basket-basket-property-value {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property.startshop-basket-basket-property-picture .startshop-basket-basket-property-value-wrapper {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-property.startshop-basket-basket-property-picture .startshop-basket-basket-property-value-wrapper img {
+  height: 100%;
+  vertical-align: top;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-cell {
+  display: block;
+  margin: 15px 20px;
+  overflow: hidden;
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+  white-space: normal;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total .startshop-basket-cell {
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-control {
+  width: 40px;
+  min-width: 40px;
+  font-size: 0;
+  text-align: center;
+  background: #f9f9f9;
+  transition: 0.1s;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-control:hover {
+  background: #fbe7e7;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-control:hover .basket-delete-icon {
+  background: url("images/delete.png") no-repeat;
+  background-position: -20px 0;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-picture {
+  width: 160px;
+  padding: 15px 30px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-price-title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-price-value {
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table.table-filter-not-found .startshop-basket-basket-table-cell.total-title {
+  width: 100%;
+  padding-right: 50px;
+  text-align: right;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table.table-filter-not-found .startshop-basket-basket-table-cell.startshop-basket-column-total {
+  padding-right: 40px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .basket-delete-icon {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 28px;
+  background: url("images/delete.png") no-repeat;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .basket-delete-icon:hover {
+  background: url("images/delete.png") no-repeat;
+  background-position: -20px 0;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-info-result {
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-info-result .startshop-basket-basket-order-button {
+  margin-left: 15px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-empty {
+  text-align: center;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-empty-image {
+  margin: 20px auto;
+  background: url("images/empty_basket.png") no-repeat;
+  width: 56px;
+  height: 50px;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-empty-title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #1b1e1f;
+}
+.ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-empty-description {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+@media all and (max-width: 1024px) {
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-picture {
+    width: 140px;
+    padding: 10px 20px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-total .startshop-basket-cell {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-price-value {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell .startshop-basket-cell {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-mobile-offers {
+    display: block !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-offers {
+    display: none;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-picture {
+    width: auto;
+    padding: 10px 10px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-picture .startshop-basket-cell-picture {
+    width: 60px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-name {
+    width: 100%;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total .startshop-basket-cell {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-price-value {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-quantity-button {
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper div:first-child {
+    order: 1;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper div:nth-child(2) {
+    display: none;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper .startshop-basket-basket-filter-input {
+    width: 100%;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table {
+    display: block;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row {
+    display: block;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell {
+    display: block;
+    text-align: center;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-quantity-button {
+    padding: 9px 22px !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-control {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-table-cell.startshop-basket-column-picture .startshop-basket-cell-picture {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-name {
+    margin-bottom: 25px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-section {
+    margin-bottom: 5px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-price {
+    margin-bottom: 15px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total {
+    margin: 20px 0;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total {
+    display: block;
+    margin: 20px 0;
+    text-align: right;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total .startshop-basket-basket-table-cell {
+    display: inline-block;
+    text-align: right;
+    margin: 0 !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total .startshop-basket-cell {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-info-result .startshop-basket-basket-order-button {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+@media print {
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-filter-wrapper {
+    display: none !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row {
+    display: table-row !important;
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row .startshop-basket-basket-mobile-offers {
+    display: block !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row .startshop-basket-basket-table-cell.startshop-basket-column-offers {
+    display: none;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row.table-row-display-none {
+    display: table-row !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total {
+    display: table-row;
+    width: 100%;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total .startshop-basket-basket-table-cell:first-child {
+    display: none !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-row-total .startshop-basket-cell {
+    margin: 30px 15px !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-name {
+    width: 100%;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total .startshop-basket-cell {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table .startshop-basket-basket-price-value {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell button {
+    display: none !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell input {
+    width: auto;
+    max-width: 60px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #ffffff;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-control {
+    display: none !important;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.total-title {
+    width: auto;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-table-cell.startshop-basket-column-total {
+    padding-right: 0;
+  }
+  .ns-intec.c-startshop-basket-basket.c-startshop-basket-basket-default .startshop-basket-basket-info-result {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+<?php
+
+$MESS['C_MAIN_FORM_TEMPLATE_6_TITLE'] = 'Заголовок блока';
+$MESS['C_MAIN_FORM_TEMPLATE_6_TITLE_DEFAULT'] = 'Ваш текст';
+$MESS['C_MAIN_FORM_TEMPLATE_6_DESCRIPTION_SHOW'] = 'Отображать описание блока';
+$MESS['C_MAIN_FORM_TEMPLATE_6_DESCRIPTION'] = 'Описание блока';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_BUTTON'] = 'Текст кнопки 1';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_BUTTON_DEFAULT'] = 'Заказать звонок';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_BUTTON'] = 'Текст кнопки 2';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_BUTTON_DEFAULT'] = 'Задать вопрос';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_ID'] = 'Форма 1';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_ID'] = 'Форма 2';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_NAME'] = 'Заголовок формы 1';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_NAME'] = 'Заголовок формы 2';

@@ -1,0 +1,56 @@
+.widget.c-sections.c-sections-template-1 .widget-element-wrap {
+  border: 1px solid #F2F2F2;
+  margin: 0 0 -1px -1px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.widget.c-sections.c-sections-template-1 .widget-element-wrap:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.widget.c-sections.c-sections-template-1 .widget-element-picture {
+  max-width: 100%;
+  max-height: 100%;
+}
+.widget.c-sections.c-sections-template-1 .widget-element-picture-block {
+  position: relative;
+  display: block;
+  padding-top: 80%;
+}
+.widget.c-sections.c-sections-template-1 .widget-element-picture-wrap {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  right: 45px;
+  bottom: 10px;
+  text-align: center;
+}
+.widget.c-sections.c-sections-template-1 .widget-element-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #222222;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.widget.c-sections.c-sections-template-1 .widget-element-name-wrap {
+  padding: 20px 20px 40px 20px;
+}
+@media all and (max-width: 720px) {
+  .widget.c-sections.c-sections-template-1 .widget-element-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

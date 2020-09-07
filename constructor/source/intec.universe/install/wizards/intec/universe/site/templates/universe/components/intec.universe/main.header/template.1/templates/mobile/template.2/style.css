@@ -1,0 +1,73 @@
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2 {
+  display: block;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled {
+  background: #0065ff;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-menu .ns-bitrix.c-menu.c-menu-mobile-2 .menu-button {
+  color: #fff !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-logotype svg, .c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-logotype path {
+  color: #fff !important;
+  fill: #fff !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-search,
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-search .ns-bitrix.c-search-title.c-search-title-popup-1 .search-title-button {
+  color: #fff !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-basket .ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item {
+  color: #fff !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-view-mobile-2.widget-view-mobile-2-filled .widget-authorization .widget-authorization-item {
+  color: #fff !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-wrapper {
+  position: relative;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-item {
+  padding: 20px 0;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-menu-wrap {
+  position: static;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-logotype {
+  display: inline-block;
+  width: 100%;
+  max-width: 130px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-logotype-wrap {
+  text-align: center;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-logotype svg {
+  max-height: 50px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-search {
+  display: block;
+  line-height: 1;
+  font-size: 20px;
+  color: #bebebf;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-search-hover {
+  color: #0065ff;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-authorization .widget-authorization-items {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile .widget-authorization .widget-authorization-item-wrap {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+/*# sourceMappingURL=style.css.map */

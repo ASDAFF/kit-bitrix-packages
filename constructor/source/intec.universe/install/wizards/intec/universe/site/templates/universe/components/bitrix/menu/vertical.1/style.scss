@@ -1,0 +1,194 @@
+$namespace: 'bitrix';
+$component: 'menu';
+$template: 'vertical-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  background: #fff;
+
+  .#{$class}-wrapper {}
+
+  .#{$class}-item {
+    display: block;
+    position: relative;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    color: #303030;
+    cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    -webkit-transition-property: background, border;
+    -moz-transition-property: background, border;
+    -ms-transition-property: background, border;
+    -o-transition-property: background, border;
+    transition-property: background, border;
+
+    &:first-child {
+      border-top: 1px solid #e8e8e8;
+    }
+
+    &[data-selected="true"] {
+      background: #116afc;
+      border-color: #116afc;
+
+      .#{$class}-item-text {
+        color: #fff;
+      }
+    }
+  }
+
+  .#{$class}-item-text {
+    display: block;
+    position: relative;
+    padding: 14px 35px 14px 20px;
+    font-size: 13px;
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+  }
+
+  .#{$class}-item-arrow {
+    display: block;
+    position: absolute;
+    left: auto;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: -9px;
+    top: 50%;
+    right: 15px;
+    bottom: auto;
+  }
+
+  .#{$class}-item-submenu {
+    display: none;
+    position: absolute;
+    top: -1px;
+    right: auto;
+    bottom: auto;
+    opacity: 0;
+    left: 100%;
+    background: #fff;
+    min-width: 100%;
+    z-index: 20;
+    cursor: default;
+
+    &[data-view="simple.1"] {
+      .#{$class}-item-submenu-item {
+        display: block;
+        position: relative;
+        border: 1px solid #e8e8e8;
+        border-top: none;
+        color: #303030;
+        cursor: pointer;
+
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+
+        -webkit-transition-property: background, border;
+        -moz-transition-property: background, border;
+        -ms-transition-property: background, border;
+        -o-transition-property: background, border;
+        transition-property: background, border;
+
+        &:first-child {
+          border-top: 1px solid #e8e8e8;
+        }
+      }
+
+      .#{$class}-item-submenu-item-text {
+        display: block;
+        position: relative;
+        padding: 14px 35px 14px 20px;
+        font-size: 13px;
+        line-height: 21px;
+        color: inherit;
+        text-decoration: none !important;
+
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+
+        -webkit-transition-property: color;
+        -moz-transition-property: color;
+        -ms-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+      }
+
+      .#{$class}-item-submenu-item-arrow {
+        display: block;
+        position: absolute;
+        left: auto;
+        font-size: 18px;
+        line-height: 1;
+        margin-top: -9px;
+        top: 50%;
+        right: 15px;
+        bottom: auto;
+      }
+    }
+
+    &[data-view="pictures.1"] {
+      width: 941px;
+      border: 1px solid #e8e8e8;
+
+      .#{$class}-item-submenu-wrapper {
+        padding: 30px 40px;
+      }
+
+      .#{$class}-item-submenu-item {
+        text-decoration: none;
+        color: #1d1d1d;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+      }
+
+      .#{$class}-item-submenu-item-wrapper {}
+      .#{$class}-item-submenu-item-part {}
+
+      .#{$class}-item-submenu-item-picture {
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .#{$class}-item-submenu-item-text {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .#{$class}-item-submenu-item-arrow {
+
+      }
+    }
+  }
+}

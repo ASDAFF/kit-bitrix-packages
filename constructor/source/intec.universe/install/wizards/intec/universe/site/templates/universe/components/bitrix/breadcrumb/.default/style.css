@@ -1,0 +1,72 @@
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-separator, .ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-item {
+  position: relative;
+  color: #116afc;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-separator {
+  margin: 0 10px;
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-link {
+  position: relative;
+  color: #9a9a9a;
+  text-decoration: none;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-link:hover {
+  color: #116afc;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-link i {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+  margin-left: 3px;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding-top: 10px;
+  z-index: 50;
+  opacity: 0;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-menu-wrapper {
+  display: block;
+  border: 1px solid #f8f8fa;
+  background: #fff;
+  padding: 10px;
+  min-width: 200px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-menu-item {
+  display: block;
+  padding: 10px;
+  color: #1d1d1d;
+  text-decoration: none;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.ns-bitrix.c-breadcrumb.c-breadcrumb-default .breadcrumb-menu-item:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .catalog-section-items {
+  margin: -5px 0;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .catalog-section-item {
+  display: block;
+  padding: 5px 0;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .catalog-section-item[data-basket-state=added] .catalog-section-item-switch-control {
+  display: none;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .catalog-section-item[data-basket-state=added] .catalog-section-item-switch-state {
+  display: block;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .catalog-section-item-switch-state {
+  display: none;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-additional-1 .api-ui-switch.api-ui-switch-active .api-ui-switch-control {
+  background: #0065ff;
+}
+
+/*# sourceMappingURL=style.css.map */

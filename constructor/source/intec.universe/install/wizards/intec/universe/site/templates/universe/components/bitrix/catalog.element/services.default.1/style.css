@@ -1,0 +1,18 @@
+.ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 {
+  display: block;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block {
+  margin-top: 120px;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block:first-child, .ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-type="sticky.both"] + .catalog-element-block[data-type="sticky.both"], .ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-type="sticky.both"] + .catalog-element-block[data-type="sticky.top"], .ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-type="sticky.bottom"] + .catalog-element-block[data-type="sticky.both"], .ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-type="sticky.bottom"] + .catalog-element-block[data-type="sticky.top"] {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-block="description.1"] + .catalog-element-block {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-element.c-catalog-element-services-default-1 .catalog-element-block[data-block="categories.1"] {
+  padding: 90px 0 120px 0;
+  background-color: #efefef;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,131 @@
+.widget.c-shares.c-shares-template-3 .widget-element-wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.widget.c-shares.c-shares-template-3 .widget-element {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 80%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.widget.c-shares.c-shares-template-3 .intec-grid-item-2 .widget-element {
+    padding-bottom: 60%;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.widget.c-shares.c-shares-template-3 .widget-element:hover .widget-element-fade {
+    opacity: 0.3;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-text {
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-name-wrapper {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-name-wrapper-2 {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    max-height: 63px;
+    background: #3e6af8;
+    -webkit-box-shadow: -5px 0 0 5px #3e6af8, 5px 0 0 5px #3e6af8;
+    -moz-box-shadow: -5px 0 0 5px #3e6af8, 5px 0 0 5px #3e6af8;
+    box-shadow: -5px 0 0 5px #3e6af8, 5px 0 0 5px #3e6af8;
+}
+.widget.c-shares.c-shares-template-3 .widget-element .widget-element-description {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -ms-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+}
+.widget.c-shares.c-shares-template-3 .widget-element:hover .widget-element-description {
+    height: 54px;
+}
+
+.widget.c-shares.c-shares-template-3 .widget-footer {
+    margin-top: 35px;
+    padding: 0;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-left {
+    text-align: left;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-center {
+    text-align: center;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-right {
+    text-align: right;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer .widget-footer-all {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    padding: 18px 28px;
+    border: 2px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer .widget-footer-all:hover {
+    color: #FFF;
+}

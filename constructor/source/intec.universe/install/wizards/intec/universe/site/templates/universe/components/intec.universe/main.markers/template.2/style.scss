@@ -1,0 +1,39 @@
+$component: 'markers';
+$template: 'template-2';
+$class: 'widget-#{$component}';
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  font-size: 0;
+
+  &[data-orientation='vertical'] {
+    .#{$class}-wrap {
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+  &[data-orientation='horizontal'] {
+    .#{$class}-wrap {
+      display: inline-block;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+  }
+  .#{$class} {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 6px 8px;
+    border-radius: 2px;
+  }
+  .#{$class}-hit {
+    background: #7768AE;
+  }
+  .#{$class}-new {
+    background: #3BB273;
+  }
+  .#{$class}-recommend {
+    background: #E15554;
+  }
+}

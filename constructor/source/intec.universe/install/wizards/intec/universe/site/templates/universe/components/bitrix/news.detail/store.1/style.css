@@ -1,0 +1,82 @@
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-map {
+  display: block;
+  position: relative;
+  height: 460px;
+  background: #f7f7f7;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-properties {
+  margin-left: 70px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-wrap[data-map-show=false] .news-detail-properties {
+  margin-left: 0px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-property {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-property-name {
+  display: block;
+  color: #888888;
+  font-size: 13px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-property i {
+  float: left;
+  margin-top: 5px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-property-text {
+  margin-left: 40px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-image-wrap {
+  margin-right: 20px;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-image {
+  width: 200px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-description {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #2d2c2c;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-property-text a {
+  color: #222;
+  text-decoration: none;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-back {
+  display: inline-block;
+  text-decoration: none !important;
+  font-size: 0;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-back-icon {
+  display: inline-block;
+  font-size: 27px;
+  vertical-align: middle;
+  margin-right: 15px;
+  line-height: 1;
+}
+.ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-back-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+@media all and (max-width: 800px) {
+  .ns-bitrix.c-news-detail.c-news-detail-store-1 .news-detail-properties {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

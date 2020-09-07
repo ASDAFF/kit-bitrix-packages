@@ -1,0 +1,191 @@
+.component-list {
+    height: 100%;
+}
+.component-list-search {
+    padding: 40px 25px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.component-list-search-wrap {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.component-list-search-icon {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url(../images/editor/search-icon.png);
+    right: 0;
+    top: 7px;
+    left: auto;
+    bottom: auto;
+}
+.component-list-search-input {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #202427;
+    border: none;
+}
+.component-list-content {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+}
+.component-list-section {
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    box-sizing: border-box;
+    /*padding-left: 55px;*/
+}
+.component-list-root-section {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    box-sizing: border-box;
+    padding: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.component-list-root-section:last-child {
+    border-bottom: none;
+}
+.component-list-root-section > .component-list-section-structure > .component-list-component-ul{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px 0 40px;
+}
+.component-list-section-name {
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.component-list-root-section-name {
+    position: relative;
+    padding: 10px 10px 10px 55px;
+    font-size: 18px;
+    color: #202427;
+}
+.component-list-child-section-name {
+    position: relative;
+    background: #f6f8f9;
+    padding: 14px 10px 14px 55px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.component-list-section-name {
+   position: relative;
+}
+.component-list-component-ul {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: circle;
+}
+.component-list-child-section-name + .component-list-section-structure {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px 0 40px;
+}
+.component-list-last-section-name + .component-list-section-structure {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px 0 25px;
+}
+.component-list-child-section-name + .component-list-section-structure .component-list-section-name {
+    padding: 10px 10px 10px 38px;
+}
+.component-list-child-section-name + .component-list-section-structure .component-list-section-name:before {
+    left: 12px;
+}
+.component-list-section:last-child > .component-list-child-section-name +
+.component-list-section-structure .component-list-component-ul {
+    border-bottom: 1px solid #e8e8e8;
+}
+.component-list-component-name {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #2d353a;
+    line-height: 14px;
+    cursor: pointer;
+}
+.component-list-section-name:before {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 13px;
+    content: '';
+    background: url(../images/editor/arrow-sprite-left-down.png) no-repeat;
+    background-position: 0 0;
+    width: 10px;
+    height: 10px;
+}
+.component-list-section-active:before {
+    background-position: 0 -10px;
+}
+.component-list-marker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 4px;
+    margin-right: 15px;
+    background: url(../images/editor/marker.png);
+}
+.component-list-component-name-value {
+    display: inline-block;
+    vertical-align: middle;
+}
+.component-list-component-name:hover {
+    background: rgba(55, 97, 229, 0.71);
+    border-radius: 3px;
+    color: #ffffff;
+}
+.component-list-component-active {
+    background: #3761e5;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.component-list-section-structure {
+    display: none;
+}
+.component-list-section-active + .component-list-section-structure{
+   display: block;
+}
+.component-list-search-empty {
+    display: none;
+    padding: 15px 25px;
+    font-size: 13px;
+    color: #202427;
+}
+
+.component-list-content.component-list-params-search > div {
+    display: none;
+}
+.component-list-params-search .component-list-component-name {
+    display: none;
+}
+
+.component-list-params-search .component-list-component-name.component-list-component-search {
+    display: block;
+}
+.component-list-content.component-list-params-search .component-list-section {
+    display: none;
+}
+.component-list-content.component-list-params-search .component-list-section.component-list-parent-search {
+    display: block ;
+}
+

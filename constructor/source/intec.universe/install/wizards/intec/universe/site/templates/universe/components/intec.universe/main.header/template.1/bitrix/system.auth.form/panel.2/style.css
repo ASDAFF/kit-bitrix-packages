@@ -1,0 +1,73 @@
+.c-header.c-header-template-1 .widget-authorization-button {
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-authorization-button:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1 .widget-authorization-button-icon {
+  font-size: 0;
+}
+.c-header.c-header-template-1 .widget-authorization-button-icon svg {
+  display: inline-block;
+  fill: #808080;
+  width: 15px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition-property: fill;
+  -moz-transition-property: fill;
+  -ms-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-authorization-button-content {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  color: #808080;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-authorization-button-content-decorated {
+  position: relative;
+}
+.c-header.c-header-template-1 .widget-authorization-button-content-decorated::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid;
+  opacity: 0.16;
+}
+.c-header.c-header-template-1 .widget-authorization-modal {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

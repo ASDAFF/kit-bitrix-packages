@@ -1,0 +1,13 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include {
+  @import './include/actions.1.scss';
+  @import './include/description.1.scss';
+  @import './include/description.2.scss';
+  @import './include/description.3.scss';
+  @import './include/description.4.scss';
+  @import './include/description.5.scss';
+  @import './include/link.1.scss';
+  @import './include/quote.1.scss';
+  @import './include/result.1.scss';
+}

@@ -1,0 +1,72 @@
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default {
+  display: block;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-block {
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-header {
+  text-align: left;
+  font-size: 1.28571429em;
+  line-height: 1.5;
+  margin: 0 0 35px 0;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-delimiter {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 15px;
+  left: 30px;
+  width: 1px;
+  background-color: #ebebeb;
+}
+@media all and (max-width: 800px) {
+  .ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-delimiter {
+    display: none;
+  }
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-registration {
+  padding: 0 35px 0 70px;
+}
+@media all and (max-width: 800px) {
+  .ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-registration {
+    padding: 0;
+  }
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-registration-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: #888;
+  margin-top: 20px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-remember,
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-restore {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-additions {
+  display: block;
+  margin-top: 25px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-buttons {
+  display: block;
+  margin-top: 20px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-socials {
+  display: block;
+  margin-top: 20px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-default .system-auth-authorize-form-socials-title {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

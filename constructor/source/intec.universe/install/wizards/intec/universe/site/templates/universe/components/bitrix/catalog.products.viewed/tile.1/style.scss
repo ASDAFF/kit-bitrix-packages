@@ -1,0 +1,249 @@
+$namespace: 'bitrix';
+$component: 'catalog-products-viewed';
+$template: 'tile-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  overflow: hidden;
+  padding-bottom: 20px;
+
+  .#{$class}-header {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .#{$class}-items {
+    z-index: 0;
+
+    .owl-item {
+      z-index: 1;
+      position: relative;
+
+      &:hover {
+        z-index: 2;
+      }
+    }
+
+    & > .owl-stage-outer {
+      overflow: visible;
+
+      & > .owl-stage {
+        & > .owl-item {
+          opacity: 0;
+          transition: opacity 0.4s;
+        }
+        & > .owl-item.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    & > .owl-nav {
+      display: block;
+      position: absolute;
+      visibility: hidden;
+      top: 30px;
+      right: -40px;
+      bottom: 30px;
+      left: -40px;
+
+
+      .owl-prev,
+      .owl-next {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        top: 50%;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        font-size: 12px;
+        line-height: 1;
+        margin-top: -6px;
+
+        i {
+          color: #abaaaa;
+
+          -webkit-transition: color 350ms;
+          -moz-transition: color 350ms;
+          -ms-transition: color 350ms;
+          -o-transition: color 350ms;
+          transition: color 350ms;
+        }
+      }
+
+      .owl-prev.disabled,
+      .owl-next.disabled {
+        display: none;
+      }
+
+      .owl-prev {
+        left: 0;
+        text-align: left;
+      }
+
+      .owl-next {
+        right: 0;
+        text-align: right;
+      }
+
+      @media all and (max-width: 1100px) {
+        right: -13px;
+        left: -13px;
+      }
+    }
+  }
+
+  .#{$class}-item {
+    display: block;
+    height: 126px;
+
+    &-wrapper {
+      position: relative;
+      height: 100%;
+      padding: 22px 10px;
+      border: 1px solid #DCDCDC;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      transition: 0.5s;
+
+      &:hover {
+        border-color: transparent;
+        -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &-wrapper.blank {
+      border-color: transparent;
+      background-color: #F9F9F9;
+    }
+  }
+
+  .#{$class}-image {
+    flex: 0 0 38%;
+
+    &-wrapper {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .#{$class}-information {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .#{$class}-name {
+    max-height: 38px;
+    overflow: hidden;
+    word-break: break-word;
+
+    &-wrapper {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+      text-decoration: none;
+      transition: color 0.5s;
+    }
+  }
+
+  .#{$class}-price-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .#{$class}-price {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #222222;
+  }
+
+  .#{$class}-price-base {
+    font-size: 13px;
+    line-height: 13px;
+    color: #666666;
+    text-decoration: line-through;
+  }
+}
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template}[data-collapsed="true"] {
+  .#{$class}-image {
+    flex-basis: 100%;
+    transition: opacity 0.5s;
+
+    @media all and (max-width: 1100px) {
+      flex-basis: 38%;
+    }
+  }
+
+  .#{$class}-information {
+    position: absolute;
+    margin: 15px 0;
+    padding: 0 7px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    @media all and (max-width: 1100px) {
+      position: relative;
+      margin: 0 0 0 10px;
+      padding: 0;
+      opacity: 1;
+    }
+  }
+
+  .#{$class}-name {
+    max-height: 55px;
+
+    @media all and (max-width: 1100px) {
+      max-height: 38px;
+    }
+  }
+
+  .#{$class}-price-wrap {
+    left: 7px;
+
+    @media all and (max-width: 1100px) {
+      left: 0;
+    }
+  }
+
+  .#{$class}-price {
+    font-size: 15px;
+    line-height: 16px;
+
+    @media all and (max-width: 1100px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .#{$class}-item {
+    &:hover .#{$class}-information {
+      opacity: 1;
+    }
+    &:hover .#{$class}-image {
+      opacity: 0.3;
+
+      @media all and (max-width: 1100px) {
+        opacity: 1;
+      }
+    }
+  }
+}

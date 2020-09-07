@@ -1,0 +1,84 @@
+.intec-content-wrap {
+  min-width: 320px;
+}
+
+.intec-content, .intec-content .intec-content.intec-content-primary {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+}
+.intec-content .intec-content.intec-content-primary {
+  min-width: 0;
+}
+.intec-content.intec-content-visible, .intec-content .intec-content.intec-content-primary.intec-content-visible {
+  overflow: visible;
+}
+.intec-content .intec-content-responsive {
+  margin: 0 -20px;
+}
+.intec-content .intec-content-responsive.intec-content-responsive-mobile {
+  margin: 0;
+}
+.intec-content .intec-content-wrapper, .intec-content .intec-content.intec-content-primary .intec-content-wrapper {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.intec-content .intec-content-wrapper:after, .intec-content .intec-content.intec-content-primary .intec-content-wrapper:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.intec-content .intec-content-left {
+  display: block;
+  float: left;
+  width: 260px;
+}
+.intec-content .intec-content-right {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 290px;
+}
+.intec-content .intec-content-right-wrapper {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.intec-content .intec-content {
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  clear: none;
+  overflow: visible;
+}
+.intec-content .intec-content .intec-content-wrapper {
+  margin: 0;
+}
+.intec-content .intec-content .intec-content-wrapper:after {
+  content: none;
+}
+@media all and (max-width: 720px) {
+  .intec-content .intec-content-left {
+    display: none;
+  }
+  .intec-content .intec-content-left.intec-content-left-visible {
+    display: block;
+    width: auto;
+    float: none;
+    margin-bottom: 35px;
+  }
+  .intec-content .intec-content-right {
+    margin-left: 0;
+  }
+  .intec-content .intec-content-responsive.intec-content-responsive-desktop {
+    margin: 0;
+  }
+  .intec-content .intec-content-responsive.intec-content-responsive-mobile {
+    margin: 0 -20px;
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

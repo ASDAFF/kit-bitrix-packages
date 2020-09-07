@@ -1,0 +1,15 @@
+.ns-bitrix.c-sale-products-gift-basket.c-sale-products-gift-basket-template-1 .sale-products-gift-basket-item {
+  position: relative;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid #E8E8E8;
+  z-index: 1;
+}
+.ns-bitrix.c-sale-products-gift-basket.c-sale-products-gift-basket-template-1 .sale-products-gift-basket-item:hover {
+  z-index: 2;
+}
+.ns-bitrix.c-sale-products-gift-basket.c-sale-products-gift-basket-template-1 .sale-products-gift-basket-item > div {
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

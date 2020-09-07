@@ -1,0 +1,243 @@
+$namespace: 'bitrix';
+$component: 'sale-order-ajax';
+$template: 'simple-1';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  #bx-soa-order {
+    transition: 500ms opacity ease;
+    counter-reset: heading;
+  }
+
+  .bx-soa {
+    padding-bottom: 20px;
+  }
+
+  @import "./styles/controls.scss";
+  @import "./styles/sections.scss";
+  @import "./styles/auth.scss";
+  @import "./styles/sidebar.scss";
+  @import "./styles/pickup.scss";
+  @import "./styles/items.scss";
+  @import "./styles/coupon.scss";
+  @import "./styles/pages.scss";
+
+  @media all and (min-width: 992px) and (max-width: 1100px) {
+    .bx-soa {
+      width: 70%;
+    }
+
+    .bx-soa-sidebar {
+      width: 30%;
+    }
+  }
+
+  @media all and (max-width: 992px) {
+    .bx-soa {
+      width: 100%;
+    }
+  }
+
+  // Delivery and Payment blocks
+
+  #bx-soa-paysystem-and-delivery {
+    margin-bottom: 20px;
+  }
+
+  #bx-soa-paysystem,
+  #bx-soa-delivery {
+    min-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .bx-soa-pp {
+    display: block;
+  }
+
+  .bx-soa-pp-item-container {
+    display: block;
+    cursor: pointer;
+
+    .bx-soa-pp-company {
+      display: block;
+      position: relative;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:hover {
+        .bx-soa-pp-company-graf-container {
+          background: #0065ff;
+          border-color: #0065ff;
+        }
+      }
+
+      &.bx-selected {
+        .bx-soa-pp-company-graf-container {
+          background: #0065ff;
+          border-color: #0065ff;
+
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .bx-soa-pp-company-graf-container {
+      position: absolute;
+      top: 1px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fafafa;
+      border: 1px solid #e6e6e6;
+
+      -webkit-transition-property: background-color, border-color;
+      -moz-transition-property: background-color, border-color;
+      -ms-transition-property: background-color, border-color;
+      -o-transition-property: background-color, border-color;
+      transition-property: background-color, border-color;
+
+      -webkit-transition-duration: 350ms;
+      -moz-transition-duration: 350ms;
+      -ms-transition-duration: 350ms;
+      -o-transition-duration: 350ms;
+      transition-duration: 350ms;
+
+      input {
+        display: none;
+      }
+
+      &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        opacity: 0;
+
+        -webkit-transition: opacity 350ms;
+        -moz-transition: opacity 350ms;
+        -ms-transition: opacity 350ms;
+        -o-transition: opacity 350ms;
+        transition: opacity 350ms;
+      }
+    }
+
+    %bx-soa-pp-item-part {
+      display: block;
+      padding-left: 35px;
+      line-height: 1.5;
+    }
+
+    .bx-soa-pp-company-smalltitle {
+      @extend %bx-soa-pp-item-part;
+
+      font-size: 15px;
+      font-weight: bold;
+      color: #1d1d1d;
+      padding-bottom: 10px;
+    }
+
+    .bx-soa-pp-delivery-cost {
+      @extend %bx-soa-pp-item-part;
+
+      font-size: 12px;
+      color: #6d6d6d;
+
+      span {
+        padding: 4px 10px;
+        border-radius: 12px;
+        background: #f1f1f1;
+      }
+    }
+
+    .bx-soa-pp-company-parameters {
+      @extend %bx-soa-pp-item-part;
+
+      .bx-soa-pp-desc-container {
+        margin: 0;
+      }
+
+      .bx-soa-pp-list {
+        list-style: none;
+        margin: 0;
+        padding: 15px 0 0 0;
+        line-height: 1.5;
+        font-size: 12px;
+        font-weight: normal;
+
+        .bx-soa-pp-list-termin {
+          font-weight: bold;
+          color: #6e6e6e;
+        }
+
+        .bx-soa-pp-list-description {
+          color: #888;
+        }
+      }
+
+      .bx-soa-pp-company-block {
+        padding-top: 15px;
+      }
+
+      .bx-soa-pp-field {
+        margin: 8px 0 0 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      .bx-soa-service-small {
+        font-size: 12px;
+        font-weight: normal;
+        color: #888;
+        margin-top: 2px;
+      }
+    }
+
+    .bx-soa-pp-company-description {
+      @extend %bx-soa-pp-item-part;
+
+      font-size: 13px;
+      color: #6d6d6d;
+      padding-top: 15px;
+    }
+  }
+
+  .bx-soa-pp-desc-container {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    .bx-soa-pp-company {
+      display: block;
+    }
+
+    .bx-soa-pp-company-desc {
+      font-size: 13px;
+      color: #6d6d6d;
+    }
+  }
+}
+
+#loading_screen {
+  position: fixed;
+  z-index: 1150;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  width: 64px;
+  height: 64px;
+}

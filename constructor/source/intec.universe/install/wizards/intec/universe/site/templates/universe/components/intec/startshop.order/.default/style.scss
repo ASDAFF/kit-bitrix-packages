@@ -1,0 +1,493 @@
+$namespace: 'intec';
+$component: 'startshop-order';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-section {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+
+      &-number {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        padding-top: 6px;
+        border-radius: 50%;
+        text-align: center;
+        color: #FFFFFF;
+        background: #0065FF;
+      }
+
+      &-wrapper {
+        color: #000000;
+      }
+    }
+
+    &-content {
+      padding: 20px;
+      border: 1px solid #E8E8E8;
+      border-radius: 5px;
+      background: #FFFFFF;
+    }
+
+    &.deliveries {
+      padding-right: 15px;
+
+      .intec-form-field {
+        margin: 0;
+        flex-grow: 1;
+      }
+
+      .#{$class}-delivery {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 20px 80px 30px 50px;
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        background: #FFFFFF;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &:only-child {
+          height: 100%;
+        }
+
+        &-input {
+          font-size: 12px;
+          border-radius: 50%;
+
+          &:before {
+            top: 4px;
+          }
+        }
+
+        &-title-wrap {
+          margin-left: 20px;
+        }
+
+        &-title {
+          font-weight: bold;
+          font-size: 18px;
+          color: #000000;
+          margin-bottom: 15px;
+        }
+
+        &-price {
+          font-size: 14px;
+          color: #666666;
+        }
+      }
+    }
+
+    &.payments {
+      padding-left: 15px;
+
+      .intec-form-field {
+        padding: 45px 80px 45px 60px;
+        margin: 0;
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        background: #FFFFFF;
+        flex-grow: 1;
+      }
+
+      .#{$class}-payment {
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:not(:only-child):not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        &-input {
+          font-size: 12px;
+          border-radius: 50%;
+
+          &:before {
+            top: 4px;
+          }
+        }
+
+        &-title {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: 18px;
+          color: #000000;
+        }
+
+        &-price {
+          font-size: 14px;
+          color: #666666;
+        }
+      }
+    }
+
+    &.products {
+      .startshop-order-section-basket-link {
+        text-align: right;
+        text-decoration: none;
+      }
+
+      .startshop-order-section-content {
+        padding: 0;
+      }
+
+      .startshop-order-table {
+        width: 100%;
+
+        thead {
+          color: #999999;
+          border-bottom: 1px solid #E8E8E8;
+        }
+
+        .startshop-order-row:not(:last-child) {
+          border-bottom: 1px solid #E8E8E8;
+        }
+
+        .startshop-order-cell {
+          display: block;
+          margin: 10px 20px;
+          overflow: hidden;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 21px;
+          white-space: normal;
+        }
+
+        .startshop-order-column {
+          &.header-offer {
+            max-width: 20%;
+          }
+
+          &.header-price {
+            width: 15%;
+          }
+
+          &.header-quantity {
+            width: 10%;
+          }
+
+          &.header-sum {
+            width: 15%;
+          }
+
+          &.item-image {
+            width: 120px;
+
+            .item-image {
+              display: inline-block;
+              max-width: 75px;
+            }
+          }
+
+          &.item-name {
+            .startshop-order-cell {
+              margin: 0;
+              max-width: 200px;
+            }
+
+            .item-section {
+              margin-bottom: 7px;
+
+              &-link {
+                font-size: 13px;
+                color: #666666;
+                text-decoration: none;
+
+                &:hover {
+                  color: #4c4949;
+                }
+              }
+            }
+
+            .item-name {
+              line-height: 16px;
+              text-decoration: none !important;
+              color: #000000;
+              -webkit-transition: color 0.4s;
+              -moz-transition: color 0.4s;
+              -ms-transition: color 0.4s;
+              -o-transition: color 0.4s;
+              transition: color 0.4s;
+            }
+          }
+
+          &.item-offer {
+            .startshop-order-property:not(:last-child) {
+              margin-bottom: 10px;
+            }
+
+            .property-name {
+              display: inline-block;
+            }
+
+            .property-value {
+              display: inline-block;
+              margin-left: 7px;
+            }
+
+            .startshop-order-property.picture {
+              .property-value {
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                background: #f1f1f1;
+                overflow: hidden;
+
+                &-wrapper {
+                  position: absolute;
+                  top: 4px;
+                  left: 4px;
+                  bottom: 4px;
+                  right: 4px;
+                  overflow: hidden;
+                  border-radius: 50%;
+
+                  & img {
+                    vertical-align: initial;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+
+          &.item-price {
+            .startshop-order-cell {
+              font-size: 18px;
+            }
+          }
+
+          &.item-quantity {
+            .startshop-order-cell {
+              font-size: 18px;
+              text-align: center;
+              color: #000000;
+            }
+          }
+
+          &.item-sum {
+            .startshop-order-cell {
+              font-size: 18px;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .#{$class}-summary {
+    margin-top: 60px;
+
+    .intec-button {
+      padding: 13px 16px;
+      border-radius: 0 0 5px 5px;
+    }
+
+    &-wrapper-2 {
+      border: 1px solid #E8E8E8;
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+      background: #FFFFFF;
+    }
+
+    &-title {
+      padding: 20px;
+      border-bottom: 1px solid #E8E8E8;
+
+      &-wrapper {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    &-basket-link {
+      text-decoration: none;
+    }
+
+    &-prices {
+      padding: 20px;
+      border-bottom: 1px solid #E8E8E8;
+    }
+
+    &-products {
+      margin-bottom: 15px;
+
+      &:only-child {
+        margin: 0;
+      }
+
+      &-title-count {
+        color: #666666;
+      }
+
+      &-value {
+        font-size: 18px;
+        color: #000000;
+        text-align: right;
+      }
+    }
+
+    &-delivery {
+      &-value {
+        color: #000000;
+        text-align: right;
+      }
+    }
+
+    &-total {
+      padding: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #000000;
+
+      &-value {
+        text-align: right;
+        font-weight: normal;
+      }
+    }
+
+    &-consent {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  .#{$class}-checkout {
+    margin-top: 30px;
+
+    .intec-button {
+      height: 100%;
+      padding: 10px 55px;
+    }
+
+    &-consent {
+      max-width: 300px;
+      margin-left: 30px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #999999;
+    }
+  }
+
+  .intec-form-field {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .intec-form-label {
+      display: block;
+      max-width: initial;
+      margin-bottom: 0;
+      font-weight: normal;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .intec-form-caption {
+      margin-bottom: 7px;
+      color: #000000;
+    }
+
+    .startshop-order-required {
+      color: #c70a4d;
+    }
+
+    .startshop-order-field-description {
+      max-width: 300px;
+      margin-top: 7px;
+      font-size: 14px;
+      color: #666666
+    }
+
+    &.checkbox {
+      .intec-form-caption {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      .intec-form-value {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 7px;
+      }
+    }
+
+    & textarea {
+      resize: none;
+      height: 135px;
+    }
+  }
+
+  @media all and (max-width: 1200px) {
+    .#{$class}-checkout {
+      display: none;
+    }
+    .#{$class}-section.products .startshop-order-section-basket-link {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    .#{$class}-section.products .startshop-order-section-content {
+      border: none;
+    }
+
+    .startshop-order-section.products .startshop-order-table {
+      & .startshop-order-row, & .startshop-order-column {
+        display: block;
+        text-align: center;
+      }
+      .startshop-order-row {
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      & thead, & .startshop-order-column.item-price, & .startshop-order-column.item-quantity {
+        display: none;
+      }
+      .startshop-order-column.item-image {
+        width: auto;
+      }
+      .startshop-order-column.item-name .startshop-order-cell {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .#{$class}-section.payments, .#{$class}-section.deliveries {
+      padding: 0;
+    }
+  }
+}

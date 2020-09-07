@@ -1,0 +1,54 @@
+.ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item {
+  display: block;
+  color: #bebebf;
+  text-decoration: none;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -ms-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+}
+.ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item-wrapper {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  color: inherit;
+}
+.ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item-icon {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: inherit;
+}
+.ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item-counter {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: #0051cc;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item.sale-basket-icons-item-active {
+  color: #0065ff;
+}
+
+/*# sourceMappingURL=style.css.map */

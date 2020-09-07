@@ -1,0 +1,116 @@
+.widget.c-categories.c-categories-template-13 .widget-item-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-picture {
+  display: block;
+  text-decoration: none;
+  padding-top: 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-fade,
+.widget.c-categories.c-categories-template-13 .widget-item-link,
+.widget.c-categories.c-categories-template-13 .widget-item-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-fade,
+.widget.c-categories.c-categories-template-13 .widget-item-link {
+  top: 0;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-fade {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  z-index: 2;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-wrapper:hover .widget-item-fade {
+  opacity: 1;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-link {
+  display: block;
+  z-index: 3;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-text {
+  color: #FFF;
+  padding: 25px 48px 48px 48px;
+  background-image: linear-gradient(to top, #000000 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 4;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-text-decoration {
+  width: 98px;
+  margin-top: 25px;
+  border-top: 2px solid #FFF;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-name {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  max-height: 78px;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-description {
+  font-size: 14px;
+  line-height: 21px;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transition-property: padding-top, height, opacity;
+  -moz-transition-property: padding-top, height, opacity;
+  -ms-transition-property: padding-top, height, opacity;
+  -o-transition-property: padding-top, height, opacity;
+  transition-property: padding-top, height, opacity;
+  -webkit-transition-duration: 0.4s, 0.4s, 0.8s;
+  -moz-transition-duration: 0.4s, 0.4s, 0.8s;
+  -ms-transition-duration: 0.4s, 0.4s, 0.8s;
+  -o-transition-duration: 0.4s, 0.4s, 0.8s;
+  transition-duration: 0.4s, 0.4s, 0.8s;
+}
+.widget.c-categories.c-categories-template-13 .widget-item-wrapper:hover .widget-item-description {
+  padding-top: 10px;
+  height: 73px;
+  opacity: 1;
+}
+@media all and (max-width: 1024px) {
+  .widget.c-categories.c-categories-template-13 .widget-item-text {
+    padding: 25px 20px 35px 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  .widget.c-categories.c-categories-template-13 .widget-item-picture {
+    padding-top: 50%;
+  }
+  .widget.c-categories.c-categories-template-13 .widget-item-fade {
+    opacity: 1;
+  }
+  .widget.c-categories.c-categories-template-13 .widget-item-name,
+.widget.c-categories.c-categories-template-13 .widget-item-description {
+    max-width: 450px;
+  }
+  .widget.c-categories.c-categories-template-13 .widget-item-description {
+    padding-top: 10px;
+    height: 73px;
+    opacity: 1;
+  }
+}
+@media all and (max-width: 500px) {
+  .widget.c-categories.c-categories-template-13 .widget-item-picture {
+    padding-top: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

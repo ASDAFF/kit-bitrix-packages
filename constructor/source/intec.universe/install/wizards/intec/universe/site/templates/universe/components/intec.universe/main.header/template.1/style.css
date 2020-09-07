@@ -1,0 +1,51 @@
+.c-header.c-header-template-1 .widget-view.widget-view-desktop {
+  display: block;
+  position: relative;
+  z-index: 50;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 100;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-mobile {
+  display: none;
+  position: relative;
+  z-index: 100;
+}
+.c-header.c-header-template-1 .widget-banner {
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+@media all and (max-width: 768px) {
+  .c-header.c-header-template-1 .widget-view.widget-view-fixed,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop {
+    display: none !important;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-mobile {
+    display: block;
+    transition: all 0.25s ease;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-mobile.widget-view-mobile-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-mobile.widget-view-mobile-out {
+    transform: translateY(-100%);
+  }
+}
+@media print {
+  .c-header.c-header-template-1 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

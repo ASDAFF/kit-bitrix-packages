@@ -1,0 +1,118 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view.widget-view-mobile {
+    .widget-view-mobile-2 {
+      display: block;
+      background: #fff;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);;
+      -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);;
+
+      &.widget-view-mobile-2-filled {
+        background: #0065ff;
+
+        .widget-menu {
+          .ns-bitrix.c-menu.c-menu-mobile-2 {
+            .menu-button {
+              color: #fff !important;
+            }
+          }
+        }
+
+        .widget-logotype {
+          svg, path {
+            color: #fff !important;
+            fill: #fff !important;
+          }
+        }
+
+        .widget-search {
+          &,
+          .ns-bitrix.c-search-title.c-search-title-popup-1 .search-title-button {
+            color: #fff !important;
+          }
+        }
+
+        .widget-basket {
+          .ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default {
+            .sale-basket-icons-item {
+              color: #fff !important;
+            }
+          }
+        }
+
+        .widget-authorization {
+          .widget-authorization-item {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    .widget-wrapper {
+      position: relative;
+    }
+    .widget-wrapper-2 {}
+    .widget-wrapper-3 {}
+
+    .widget-item {
+      padding: 20px 0;
+    }
+
+    .widget-menu {
+      &-wrap {
+        position: static;
+      }
+    }
+
+    .widget-logotype {
+      &-wrap {
+        text-align: center;
+      }
+
+      display: inline-block;
+      width: 100%;
+      max-width: 130px;
+      text-decoration: none;
+      color: #1d1d1d;
+
+      svg {
+        max-height: 50px;
+      }
+    }
+
+    .widget-search {
+      display: block;
+      line-height: 1;
+      font-size: 20px;
+      color: #bebebf;
+
+      -webkit-transition: color 350ms;
+      -moz-transition: color 350ms;
+      -ms-transition: color 350ms;
+      -o-transition: color 350ms;
+      transition: color 350ms;
+
+      &-hover {
+        color: #0065ff;
+      }
+    }
+
+    .widget-basket {}
+
+    .widget-authorization {
+      .widget-authorization-items {
+        margin-right: -10px !important;
+        margin-left: -10px !important;
+      }
+
+      .widget-authorization-item-wrap {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+      }
+    }
+  }
+}

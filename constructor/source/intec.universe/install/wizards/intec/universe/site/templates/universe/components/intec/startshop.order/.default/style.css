@@ -1,0 +1,385 @@
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section {
+  margin-bottom: 50px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section:last-child {
+  margin: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section-title-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  padding-top: 6px;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #0065FF;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section-title-wrapper {
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section-content {
+  padding: 20px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries {
+  padding-right: 15px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .intec-form-field {
+  margin: 0;
+  flex-grow: 1;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 20px 80px 30px 50px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery:last-child {
+  margin: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery:only-child {
+  height: 100%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery-input {
+  font-size: 12px;
+  border-radius: 50%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery-input:before {
+  top: 4px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery-title-wrap {
+  margin-left: 20px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries .startshop-order-delivery-price {
+  font-size: 14px;
+  color: #666666;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments {
+  padding-left: 15px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .intec-form-field {
+  padding: 45px 80px 45px 60px;
+  margin: 0;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  background: #FFFFFF;
+  flex-grow: 1;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment:not(:only-child):not(:last-child) {
+  margin-bottom: 15px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment-input {
+  font-size: 12px;
+  border-radius: 50%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment-input:before {
+  top: 4px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment-title {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments .startshop-order-payment-price {
+  font-size: 14px;
+  color: #666666;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-section-basket-link {
+  text-align: right;
+  text-decoration: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-section-content {
+  padding: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table {
+  width: 100%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table thead {
+  color: #999999;
+  border-bottom: 1px solid #E8E8E8;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-row:not(:last-child) {
+  border-bottom: 1px solid #E8E8E8;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-cell {
+  display: block;
+  margin: 10px 20px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  white-space: normal;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.header-offer {
+  max-width: 20%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.header-price {
+  width: 15%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.header-quantity {
+  width: 10%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.header-sum {
+  width: 15%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-image {
+  width: 120px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-image .item-image {
+  display: inline-block;
+  max-width: 75px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .startshop-order-cell {
+  margin: 0;
+  max-width: 200px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .item-section {
+  margin-bottom: 7px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .item-section-link {
+  font-size: 13px;
+  color: #666666;
+  text-decoration: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .item-section-link:hover {
+  color: #4c4949;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .item-name {
+  line-height: 16px;
+  text-decoration: none !important;
+  color: #000000;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .startshop-order-property:not(:last-child) {
+  margin-bottom: 10px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .property-name {
+  display: inline-block;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .property-value {
+  display: inline-block;
+  margin-left: 7px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .startshop-order-property.picture .property-value {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .startshop-order-property.picture .property-value-wrapper {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-offer .startshop-order-property.picture .property-value-wrapper img {
+  vertical-align: initial;
+  height: 100%;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-price .startshop-order-cell {
+  font-size: 18px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-quantity .startshop-order-cell {
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-sum .startshop-order-cell {
+  font-size: 18px;
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary {
+  margin-top: 60px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary .intec-button {
+  padding: 13px 16px;
+  border-radius: 0 0 5px 5px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-wrapper-2 {
+  border: 1px solid #E8E8E8;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  background: #FFFFFF;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-title {
+  padding: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-title-wrapper {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-basket-link {
+  text-decoration: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-prices {
+  padding: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-products {
+  margin-bottom: 15px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-products:only-child {
+  margin: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-products-title-count {
+  color: #666666;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-products-value {
+  font-size: 18px;
+  color: #000000;
+  text-align: right;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-delivery-value {
+  color: #000000;
+  text-align: right;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-total {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-total-value {
+  text-align: right;
+  font-weight: normal;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-summary-consent {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-checkout {
+  margin-top: 30px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-checkout .intec-button {
+  height: 100%;
+  padding: 10px 55px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-checkout-consent {
+  max-width: 300px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field:first-child {
+  margin-top: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field .intec-form-label {
+  display: block;
+  max-width: initial;
+  margin-bottom: 0;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field .intec-form-caption {
+  margin-bottom: 7px;
+  color: #000000;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field .startshop-order-required {
+  color: #c70a4d;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field .startshop-order-field-description {
+  max-width: 300px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #666666;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field.checkbox .intec-form-caption {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field.checkbox .intec-form-value {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7px;
+}
+.ns-intec.c-startshop-order.c-startshop-order-default .intec-form-field textarea {
+  resize: none;
+  height: 135px;
+}
+@media all and (max-width: 1200px) {
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-checkout {
+    display: none;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-section-basket-link {
+    display: none;
+  }
+}
+@media all and (max-width: 900px) {
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-section-content {
+    border: none;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-row, .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column {
+    display: block;
+    text-align: center;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-row {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table thead, .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-price, .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-quantity {
+    display: none;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-image {
+    width: auto;
+  }
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.products .startshop-order-table .startshop-order-column.item-name .startshop-order-cell {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 600px) {
+  .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.payments, .ns-intec.c-startshop-order.c-startshop-order-default .startshop-order-section.deliveries {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

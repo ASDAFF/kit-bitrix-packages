@@ -1,0 +1,23 @@
+.ns-bitrix.c-system-auth-changepasswd.c-system-auth-changepasswd-default {
+  display: block;
+}
+.ns-bitrix.c-system-auth-changepasswd.c-system-auth-changepasswd-default .system-auth-changepasswd-block {
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.ns-bitrix.c-system-auth-changepasswd.c-system-auth-changepasswd-default .system-auth-changepasswd-header {
+  text-align: left;
+  font-size: 1.28571429em;
+  line-height: 1.5;
+  margin: 0 0 35px 0;
+}
+.ns-bitrix.c-system-auth-changepasswd.c-system-auth-changepasswd-default .system-auth-changepasswd-form {
+  max-width: 400px;
+}
+.ns-bitrix.c-system-auth-changepasswd.c-system-auth-changepasswd-default .system-auth-changepasswd-form-buttons {
+  display: block;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

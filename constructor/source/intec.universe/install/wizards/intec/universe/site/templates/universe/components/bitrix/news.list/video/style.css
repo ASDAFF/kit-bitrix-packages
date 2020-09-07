@@ -1,0 +1,166 @@
+.video-gallery-list .video-gallery-list-item {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 19%;
+    width: 33.33333%;
+    height: 0;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    transition: 300ms linear;
+}
+.video-gallery-list-header{
+    display: block;
+    padding: 20px 5px;
+}
+.video-gallery-list-header .video-gallery-list-header-h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.video-gallery-list .video-gallery-list-item-first-big {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 19%;
+    width: 33.33333%;
+    height: 0;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+.video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-wrapper,
+.video-gallery-list .video-gallery-list-item .video-gallery-list-item-wrapper {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-wrapper-dark,
+.video-gallery-list .video-gallery-list-item .video-gallery-list-item-wrapper-dark {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: #000;
+    opacity: 0;
+    transition: 300ms linear;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.video-gallery-list .video-gallery-list-item-first-big:hover .video-gallery-list-item-wrapper-dark,
+.video-gallery-list .video-gallery-list-item:hover .video-gallery-list-item-wrapper-dark {
+    opacity: 0.5;
+    transition: 300ms linear;
+}
+.video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-icon,
+.video-gallery-list .video-gallery-list-item .video-gallery-list-item-icon {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 300ms linear;
+    cursor: pointer;
+}
+.video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-name,
+.video-gallery-list .video-gallery-list-item .video-gallery-list-item-name {
+    position: absolute;
+    left: 8%;
+    top: 8%;
+    font-size: 18px;
+    line-height: 1.5em;
+    max-height: 54px;
+    max-width: 85%;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.7;
+    transition: 300ms linear;
+    cursor: pointer;
+}
+
+.video-gallery-list .video-gallery-list-item-first-big:hover .video-gallery-list-item-name,
+.video-gallery-list .video-gallery-list-item:hover .video-gallery-list-item-name {
+    opacity: 1;
+    transition: 300ms linear;
+}
+.video-gallery-list .video-gallery-list-item-first-big:first-of-type .video-gallery-list-item-icon {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    font-size: 92px;
+    line-height: 92px;
+    margin-top: -46px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 300ms linear;
+}
+.video-gallery-list .video-gallery-list-item-first-big:hover .video-gallery-list-item-icon,
+.video-gallery-list .video-gallery-list-item:hover .video-gallery-list-item-icon {
+    transition: 300ms linear;
+    opacity: 1;
+}
+.video-gallery-list .video-gallery-list-item-first-big:first-of-type {
+    padding-bottom: 37.9%;
+    width: 66.66666%;
+}
+
+.video-gallery-list .video-gallery-list-item img{
+    width: 100%;
+
+}
+.video-gallery-list .video-gallery-list-item-first-big iframe,
+.video-gallery-list .video-gallery-list-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 990px) {
+    .video-gallery-list .video-gallery-list-item{
+        width: 38%;
+        padding-bottom: 38%;
+    }
+    .video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-name,
+    .video-gallery-list .video-gallery-list-item .video-gallery-list-item-name {
+        font-size: 14px;
+        max-height: 42px;
+    }
+    .video-gallery-list .video-gallery-list-item-first-big .video-gallery-list-item-icon,
+    .video-gallery-list .video-gallery-list-item .video-gallery-list-item-icon {
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: -17px;
+    }
+}
+@media (max-width: 720px) {
+    .video-gallery-list .video-gallery-list-item-first-big:first-of-type {
+        width: 100%;
+        padding-bottom: 56%;
+    }
+}
+@media (max-width: 540px){
+    .video-gallery-list .video-gallery-list-item {
+        width: 100%;
+        padding-bottom: 38%;
+        margin: 10px auto;
+    }
+    .video-gallery-list .video-gallery-list-item-first-big {
+        padding-bottom: 38%;
+        width: 50%;
+    }
+}

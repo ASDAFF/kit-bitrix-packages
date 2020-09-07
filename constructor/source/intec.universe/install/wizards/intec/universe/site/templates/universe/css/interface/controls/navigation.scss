@@ -1,0 +1,58 @@
+$class: 'intec-ui' !default;
+
+&-navigation {
+  display: block;
+  position: relative;
+  visibility: hidden;
+
+  &.disabled {
+    display: none;
+  }
+
+  .#{$class}-part-button-left,
+  .#{$class}-part-button-right {
+    display: block;
+    position: absolute;
+    visibility: visible;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: -10px;
+    color: #1B1E25;
+    opacity: 0.7;
+
+    -webkit-transition: opacity 350ms;
+    -moz-transition: opacity 350ms;
+    -ms-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.disabled {
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .#{$class}-part-button-left {
+    left: 0;
+  }
+
+  .#{$class}-part-button-right {
+    right: 0;
+  }
+}

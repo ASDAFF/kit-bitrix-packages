@@ -1,0 +1,76 @@
+$component: 'categories';
+$template: 'template-14';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {
+    position: relative;
+  }
+  .#{$item} {
+    background-color: #FFF;
+    @include transition(box-shadow, 0.4s);
+    z-index: 1;
+
+    &:hover {
+      z-index: 2;
+      -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+    }
+  }
+  .#{$item}-wrapper {
+    height: 100%;
+    padding: 45px 35px 35px 45px;
+  }
+  .#{$item}-picture {
+    display: block;
+    width: 109px;
+    height: 109px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .#{$item}-name {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #2f3334;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 18px;
+  }
+
+  @media all and (max-width: 500px) {
+    .#{$item}-wrapper {
+      padding: 20px;
+    }
+    .#{$item}-name {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+$namespace: 'bitrix';
+$component: 'catalog-store-amount';
+$template: 'template-1';
+
+$state-many: #1DB940;
+$state-few: #F4BB28;
+$state-empty: #B0B0B0;
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$component}-item {
+    & + .#{$component}-item {
+      margin-top: 8px;
+    }
+  }
+  .#{$component}-indicator {
+    width: 5px;
+    height: 5px;
+    margin-top: 6px;
+    @include border-radius(50%);
+    @include transition(background-color, 0.4s);
+
+    &[data-store-state='many'] {
+      background-color: $state-many;
+    }
+    &[data-store-state='few'] {
+      background-color: $state-few;
+    }
+    &[data-store-state='empty'] {
+      background-color: $state-empty;
+    }
+  }
+  .#{$component}-name {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .#{$component}-quantity {
+    font-size: 0;
+    white-space: nowrap;
+    margin: 0 -2px;
+
+    & > span {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+      margin: 0 2px;
+      vertical-align: bottom;
+    }
+  }
+}

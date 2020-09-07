@@ -1,0 +1,393 @@
+.contacts {}
+
+.contacts .contacts-map {
+    display: block;
+    height: 460px;
+}
+
+.contacts .contacts-contact-wrap {
+    overflow: visible;
+}
+.contacts .contacts-contact {
+    display: block;
+    position: relative;
+    height: 126px;
+    background: #fff;
+    -webkit-box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+}
+.contacts .contacts-contact.contacts-contact-with-map {
+    margin-top: -63px;
+}
+.contacts .contacts-contact .contacts-contact-wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding: 12px 24px;
+}
+.contacts .contacts-contact .contacts-contact-parameter {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 8px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-parameter-wrapper {
+    display: block;
+    height: 100%;
+    font-size: 0;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-icon-wrap,
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-text-wrap {
+    display: block;
+    height: 100%;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-icon-wrap {
+    float: left;
+    width: 36px;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-text-wrap {
+    margin-left: 70px;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-icon,
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-icon {
+    width: 100%;
+    padding-top: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-title {
+    font-weight: normal;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.contacts .contacts-contact .contacts-contact-parameter .contacts-contact-value {
+    color: #333;
+    text-decoration: none;
+}
+
+.contacts .contacts-title {
+    font-size: 28px;
+    font-weight: 900;
+}
+.contacts .contacts-description {
+    font-size: 16px;
+    line-height: 25px;
+    color: #6a6a6c;
+    margin-top: 20px;
+}
+
+.contacts .contacts-shops {
+    display: block;
+    margin-top: 75px;
+}
+.contacts .contacts-shops .contacts-shops-list {
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.contacts .contacts-shops .contacts-shops-list .contacts-shops-list-wrapper {
+    display: block;
+    margin: -15px -30px;
+}
+.contacts .contacts-shops .contacts-shop {
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 30px;
+}
+.contacts .contacts-shops .contacts-shop .contacts-shop-wrapper {
+    display: block;
+    position: relative;
+}
+.contacts .contacts-shops .contacts-shop .contacts-image {
+    display: block;
+    position: relative;
+    padding: 6px;
+    width: 130px;
+    height: 130px;
+    background: #f3f3f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.contacts .contacts-shops .contacts-shop .contacts-image .contacts-image-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information {
+    display: block;
+    margin-left: 145px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information .contacts-address {
+    margin-bottom: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information .contacts-phone {
+    color: inherit;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information .contacts-email {
+    color: #1169fe;
+    text-decoration: none;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information .contacts-on-map {
+    display: block;
+    position: absolute;
+    left: 145px;
+    bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #494a67;
+    border-bottom: 1px dashed transparent;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color, border;
+    -moz-transition-property: color, border;
+    -ms-transition-property: color, border;
+    -o-transition-property: color, border;
+    transition-property: color, border;
+}
+.contacts .contacts-shops .contacts-shop .contacts-information .contacts-on-map:hover {
+    color: #686991;
+    border-color: #686991;
+}
+
+.contacts .contacts-offices {
+    display: block;
+    margin-top: 75px;
+}
+.contacts .contacts-offices .contacts-sections {}
+.contacts .contacts-offices .contacts-sections .contacts-section {
+    margin-top: 50px;
+}
+.contacts .contacts-offices .contacts-sections .contacts-section .contacts-section-title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2a2a2a;
+}
+.contacts .contacts-offices .contacts-offices-list {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+}
+.contacts .contacts-offices .contacts-offices-list .contacts-offices-list-wrapper {
+    display: block;
+    margin: -10px;
+}
+.contacts .contacts-offices .contacts-office {
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+.contacts .contacts-offices .contacts-office .contacts-office-wrapper {
+    display: block;
+    position: relative;
+    border: 1px solid #e6e7e9;
+}
+.contacts .contacts-offices .contacts-office .contacts-image {
+    display: block;
+    width: 220px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+.contacts .contacts-offices .contacts-office .contacts-information {
+    display: block;
+    position: relative;
+    margin-left: 270px;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section {
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 30px;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-address {
+    margin-right: 150px;
+    width: 180px;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-work-time {
+    margin-right: 100px;
+    width: 140px;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts {
+    width: 210px;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title .icon-contacts {
+    font-size: 16px;
+    padding-right: 6px;
+    vertical-align: middle;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title .contacts-information-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title .contacts-information-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 18px;
+    color: #6a696e;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-content {
+    font-size: 13px;
+    line-height: 21px;
+    color: #313439;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-content a {
+    text-decoration: none;
+    color: #313439;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-address .contacts-information-content {
+    font-weight: bold;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-information-content {
+
+}
+.contacts .contacts-offices .contacts-office .contacts-information-on-map {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #494a67;
+    border-bottom: 1px dashed transparent;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color, border;
+    -moz-transition-property: color, border;
+    -ms-transition-property: color, border;
+    -o-transition-property: color, border;
+    transition-property: color, border;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-on-map:hover {
+    color: #686991;
+    border-color: #686991;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-email a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #2d7cfb;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-email a:hover {
+    color: #2d7cfb;
+}
+.contacts .contacts-form-wrap {
+    margin-top: 60px;
+}
+@media (max-width:1000px) {
+    .contacts .contacts-offices .contacts-office .contacts-image {
+        display:none;
+    }
+    .contacts .contacts-contact {
+        height:auto;
+        overflow:hidden;
+    }
+    .contacts .contacts-offices .contacts-office .contacts-information {
+        margin-left:18px;
+        overflow: hidden;
+        padding-bottom: 18px;
+    }
+    .contacts .contacts-contact .contacts-contact-parameter {
+        width:50%;
+    }
+}
+
+.intec-content-right .contacts .contacts-contact {
+    height: 190px;
+}
+.intec-content-right .contacts .contacts-contact .contacts-contact-parameter {
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width:700px) {
+    .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-information-content {
+        margin:0;
+    }
+    .contacts-form .contacts-form-fields .contacts-form-field {
+        width:100%!important;
+    }
+    .contacts .contacts-contact .contacts-contact-parameter {
+        width:100%;
+    }
+    .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-address,
+    .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-work-time,
+    .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts {
+        width:100%;
+        margin-right:0;
+    }
+    .contacts .contacts-offices .contacts-office .contacts-information-on-map {
+        position:static;
+        margin-top:10px;
+    }
+    .contacts .contacts-offices .contacts-office .contacts-information-section {
+        margin-top: 15px;
+        float:none;
+    }
+    .contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title {
+        margin-bottom: 6px;
+    }
+}

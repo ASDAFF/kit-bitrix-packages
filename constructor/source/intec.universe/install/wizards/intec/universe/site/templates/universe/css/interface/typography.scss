@@ -1,0 +1,419 @@
+$class: 'intec-ui' !default;
+$attribute: 'data-ui' !default;
+$schemes: () !default;
+
+@at-root %#{$class}-markup-header {
+  display: block;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 35px 0 25px 0;
+}
+
+@at-root %#{$class}-markup-text {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+@at-root [#{$attribute}-markup="header"],
+&-markup-header {
+  color: #2d2d2d;
+}
+
+@at-root [#{$attribute}-markup="text"],
+&-markup-text {
+  @extend %#{$class}-markup-text;
+  color: #2d2d2d;
+}
+
+@at-root h1, [#{$attribute}-markup="h1"],
+&-markup-h1 {
+  @extend %#{$class}-markup-header;
+  font-size: 2.133em;
+}
+
+@at-root h2, [#{$attribute}-markup="h2"],
+&-markup-h2 {
+  @extend %#{$class}-markup-header;
+  font-size: 1.866em;
+}
+
+@at-root h3, [#{$attribute}-markup="h3"],
+&-markup-h3 {
+  @extend %#{$class}-markup-header;
+  font-size: 1.6em;
+}
+
+@at-root h4, [#{$attribute}-markup="h4"],
+&-markup-h4 {
+  @extend %#{$class}-markup-header;
+  font-size: 1.33em;
+}
+
+@at-root h5, [#{$attribute}-markup="h5"],
+&-markup-h5 {
+  @extend %#{$class}-markup-header;
+  font-size: 1.2em;
+}
+
+@at-root h6, [#{$attribute}-markup="h6"],
+&-markup-h6 {
+  @extend %#{$class}-markup-header;
+  font-size: 1.066em;
+}
+
+@at-root a, [#{$attribute}-markup="a"],
+&-markup-a {
+  @extend %#{$class}-markup-text;
+  color: #337ab7;
+  cursor: pointer;
+
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+
+  &.#{$class}-mod-dashed,
+  &.#{$class}-mod-dotted {
+    border-color: #337ab7;
+  }
+
+  &.#{$class}-mod-dashed {
+    border-bottom: 1px dashed;
+  }
+
+  &.#{$class}-mod-dotted {
+    border-bottom: 1px dotted;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+    outline: none;
+    color: #23527c;
+
+    &.#{$class}-mod-dashed,
+    &.#{$class}-mod-dotted {
+      text-decoration: none;
+      border-color: #23527c;
+    }
+  }
+}
+
+@at-root p, [#{$attribute}-markup="p"],
+&-markup-p {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+@at-root i, [#{$attribute}-markup="i"],
+&-markup-i {
+  font-style: italic;
+}
+
+@at-root b, [#{$attribute}-markup="b"],
+&-markup-b {
+  font-weight: bold;
+}
+
+@at-root code, [#{$attribute}-markup="code"],
+&-markup-code {
+  @extend %#{$class}-markup-text;
+  padding: 0.1em 0.2em;
+  font-size: 0.8em;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+@at-root kbd, [#{$attribute}-markup="kbd"],
+&-markup-kbd {
+  @extend %#{$class}-markup-text;
+  padding: 0.1em 0.2em;
+  font-size: 0.8em;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+@at-root samp, [#{$attribute}-markup="samp"],
+&-markup-samp {
+  @extend %#{$class}-markup-text;
+}
+
+@at-root var, [#{$attribute}-markup="var"],
+&-markup-var {
+  @extend %#{$class}-markup-text;
+  font-style: italic;
+}
+
+@at-root pre, [#{$attribute}-markup="pre"],
+&-markup-pre {
+  @extend %#{$class}-markup-text;
+  display: block;
+  padding: 0.67em;
+  margin: 0 0 20px 0;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 0;
+}
+
+@at-root abbr[title], [#{$attribute}-markup="abbr"][title],
+&-markup-abbr[title] {
+  @extend %#{$class}-markup-text;
+  cursor: help;
+  border-bottom: 1px dotted #9f9f9f;
+  text-decoration: none;
+}
+
+@at-root bdo, [#{$attribute}-markup="bdo"],
+&-markup-bdo {
+  @extend %#{$class}-markup-text;
+}
+
+@at-root blockquote, [#{$attribute}-markup="blockquote"],
+&-markup-blockquote {
+  @extend %#{$class}-markup-text;
+  position: relative;
+  padding: 10px 20px 10px 25px;
+  margin: 30px 0;
+  border: none;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: auto;
+    bottom: 3px;
+    left: 0;
+    width: 3px;
+    height: auto;
+    background-color: #2d2d2d;
+  }
+}
+
+@at-root q, [#{$attribute}-markup="q"],
+&-markup-q {
+  @extend %#{$class}-markup-text;
+}
+
+@at-root cite, [#{$attribute}-markup="cite"],
+&-markup-cite {
+  @extend %#{$class}-markup-text;
+  font-style: italic;
+}
+
+@at-root dfn, [#{$attribute}-markup="dfn"],
+&-markup-dfn {
+  @extend %#{$class}-markup-text;
+  font-style: italic;
+}
+
+@at-root hr, [#{$attribute}-markup="hr"],
+&-markup-hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #eee;
+  height: 0;
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@at-root ul, ol, [#{$attribute}-markup="ul"], [#{$attribute}-markup="ol"],
+&-markup-ul,
+&-markup-ol {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+@at-root ol, &-markup-ol, [#{$attribute}-markup="ol"] {
+  counter-reset: li;
+}
+
+@at-root ul > li, ol > li, [#{$attribute}-markup="ul"] > [#{$attribute}-markup="li"], [#{$attribute}-markup="ol"] > [#{$attribute}-markup="li"],
+&-markup-ul > .#{$class}-markup-li,
+&-markup-ol > .#{$class}-markup-li {
+  position: relative;
+  margin: 0 0 2px 0;
+  padding: 0 0 0 1.42857143em;
+  list-style: none;
+
+  &:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    bottom: auto;
+    color: #2d2d2d;
+  }
+}
+
+@at-root ul > li, [#{$attribute}-markup="ul"] > [#{$attribute}-markup="li"],
+&-markup-ul > .#{$class}-markup-li {
+  &:before {
+    content: unquote("\"\\25cf\"");
+    font-size: 0.85714286em;
+    padding: 0.07142858em 0;
+  }
+}
+
+@at-root ol > li, [#{$attribute}-markup="ol"] > [#{$attribute}-markup="li"],
+&-markup-ol > .#{$class}-markup-li {
+  &:before {
+    content: counter(li) ". " !important;
+    counter-increment: li;
+  }
+}
+
+@at-root ul.#{$class}-mod-simple > li, ol.#{$class}-mod-simple > li, .#{$class}-mod-simple[#{$attribute}-markup="ul"] > [#{$attribute}-markup="li"], .#{$class}-mod-simple[#{$attribute}-markup="ol"] > [#{$attribute}-markup="li"],
+&-markup-ul.#{$class}-mod-simple > .#{$class}-markup-li,
+&-markup-ol.#{$class}-mod-simple > .#{$class}-markup-li {
+  padding-left: 0;
+
+  &:before {
+    content: none;
+    display: none;
+  }
+}
+
+&-markup-table-responsive, &[#{$attribute}-markup="table-responsive"] {
+  display: block;
+  border: #dbdbdb 1px solid;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  & > table.#{$class}-markup-table,
+  & > table[#{$attribute}-markup="table"] {
+    border: none;
+    width: 100%;
+  }
+}
+
+@at-root table.#{$class}-markup-table, table[#{$attribute}-markup="table"] {
+  border: #dbdbdb 1px solid;
+  color: #2d2d2d;
+  border-collapse: separate;
+
+  &.#{$class}-mod-block {
+    width: 100%;
+  }
+
+  & > thead,
+  & > tbody {
+    & > tr {
+      text-align: left;
+
+      & > th,
+      & > td {
+        padding: 10px 15px;
+
+        -webkit-transition-property: background-color;
+        -moz-transition-property: background-color;
+        -ms-transition-property: background-color;
+        -o-transition-property: background-color;
+        transition-property: background-color;
+
+        -webkit-transition-duration: 350ms;
+        -moz-transition-duration: 350ms;
+        -ms-transition-duration: 350ms;
+        -o-transition-duration: 350ms;
+        transition-duration: 350ms;
+      }
+
+      & > th {
+        font-weight: bold;
+        background-color: #ededed;
+        border-top: 1px solid #fafafa;
+        border-bottom: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      & > td {
+        background-color: #fbfbfb;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+        font-size: 0.825em;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      &:last-child > th,
+      &:last-child > td {
+        border-bottom: none;
+      }
+
+      &:nth-child(even) > td {
+        background: #f7f7f7;
+      }
+
+      &:hover > td {
+        background: #f2f2f2;
+      }
+    }
+  }
+
+  & > thead {}
+  & > tbody {}
+}
+
+// Schemes
+
+@each $scheme-name, $scheme-values in $schemes {
+  @at-root a.#{$class}-scheme-#{$scheme-name}, .#{$class}-scheme-#{$scheme-name}[#{$attribute}-markup="a"],
+  &-markup-a.#{$class}-scheme-#{$scheme-name} {
+    color: map-get(map-get($scheme-values, 'default'), 'background');
+
+    &:hover {
+      color: map-get(map-get($scheme-values, 'hover'), 'background');
+    }
+
+    &:focus {
+      color: map-get(map-get($scheme-values, 'focus'), 'background');
+    }
+
+    &:active {
+      color: map-get(map-get($scheme-values, 'active'), 'background');
+    }
+  }
+
+  @at-root blockquote.#{$class}-scheme-#{$scheme-name}, .#{$class}-scheme-#{$scheme-name}[#{$attribute}-markup="blockquote"],
+  &-markup-blockquote.#{$class}-scheme-#{$scheme-name} {
+    &:before {
+      background-color: map-get(map-get($scheme-values, 'default'), 'background');
+    }
+  }
+
+  @at-root ul.#{$class}-scheme-#{$scheme-name} li, ol.#{$class}-scheme-#{$scheme-name} li, .#{$class}-scheme-#{$scheme-name}[#{$attribute}-markup="ul"] > [#{$attribute}-markup="li"], .#{$class}-scheme-#{$scheme-name}[#{$attribute}-markup="ol"] > [#{$attribute}-markup="li"],
+  &-markup-ul.#{$class}-scheme-#{$scheme-name} > .#{$class}-markup-li,
+  &-markup-ol.#{$class}-scheme-#{$scheme-name} > .#{$class}-markup-li {
+    &:before {
+      color: map-get(map-get($scheme-values, 'default'), 'background');
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.ns-bitrix.c-search-page.c-search-page-catalog .search-page-content {
+  width: 100%;
+}
+.ns-bitrix.c-search-page.c-search-page-catalog .search-page-content .search-page-form {
+  width: 55%;
+  margin-bottom: 25px;
+  border: none;
+  padding: 0;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-search-page.c-search-page-catalog .search-page-content .search-page-form {
+    width: 70%;
+  }
+}
+@media all and (max-width: 950px) {
+  .ns-bitrix.c-search-page.c-search-page-catalog .search-page-content .search-page-form {
+    width: 90%;
+  }
+}
+@media all and (max-width: 720px) {
+  .ns-bitrix.c-search-page.c-search-page-catalog .search-page-content .search-page-form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

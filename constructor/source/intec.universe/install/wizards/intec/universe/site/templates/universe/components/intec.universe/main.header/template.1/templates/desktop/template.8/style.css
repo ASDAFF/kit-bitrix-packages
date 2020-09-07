@@ -1,0 +1,413 @@
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-view-desktop-8 {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-wrapper {
+  position: relative;
+  padding: 0 50px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-wrapper-2 {
+  min-height: 96px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-item {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-basket .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-icons-1 .sale-basket-small-items,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-basket .ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-items {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-basket .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-icons-1 .sale-basket-small-tab-wrap,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-basket .ns-intec-universe.c-sale-basket-icons.c-sale-basket-icons-default .sale-basket-icons-item-wrap {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu {
+  padding: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 {
+  height: 100%;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .intec-content,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .intec-content-wrapper {
+  height: 100%;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .intec-content-wrapper {
+  margin: 0;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-wrapper {
+  position: static;
+  height: 100%;
+}
+@media all and (min-width: 1500px) {
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-wrapper {
+    position: relative;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item.menu-item-section .menu-submenu {
+    width: 1200px;
+  }
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu-wrap {
+  position: static;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-1 .menu-button,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-2 .menu-button,
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-3 .menu-button {
+  font-size: 30px;
+}
+@media all and (max-width: 1200px) {
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-menu-wrap-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-logotype {
+  display: block;
+  width: 130px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-logotype svg {
+  max-height: 50px;
+}
+@media all and (max-width: 900px) {
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-logotype {
+    width: 80px;
+  }
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-region {
+  white-space: nowrap;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-region-icon, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-region-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-region-icon {
+  margin-right: 7px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-region-text {
+  white-space: normal;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts {
+  white-space: nowrap;
+  font-size: 0;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone .widget-phone-arrow, .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone .widget-phone-content {
+  display: inline-block;
+  vertical-align: middle;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-content {
+  position: relative;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-text {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  white-space: normal;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-text:hover {
+  color: #0065ff;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  left: -20px;
+  right: -50px;
+  padding-top: 10px;
+  white-space: normal;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  position: absolute;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-wrapper {
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  min-width: 140px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  will-change: transform;
+  -webkit-transform-origin: 50% -50px;
+  transform-origin: 50% -50px;
+  -webkit-transform: rotateX(-15deg);
+  transform: rotateX(-15deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item {
+  display: block;
+  text-align: left;
+  font-size: 21px;
+  line-height: 31px;
+  color: #2d2d2d;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item:hover {
+  color: #0065ff;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-contacts {
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-contacts:last-child {
+  border-bottom: 0;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-contact {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2d2d2d;
+  text-decoration: none;
+  padding: 5px 10px;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-contact.phone {
+  font-size: 20px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-contact.schedule {
+  color: #888;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow {
+  font-size: 16px;
+  width: 16px;
+  text-align: right;
+  line-height: 1;
+  color: #2d2d2d;
+  margin-left: 10px;
+}
+@media all and (max-width: 900px) {
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow {
+    font-size: 10px;
+  }
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-email {
+  text-align: right;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts .widget-email-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  color: #222;
+  -webkit-transition: 350ms color;
+  -moz-transition: 350ms color;
+  -ms-transition: 350ms color;
+  -o-transition: 350ms color;
+  transition: 350ms color;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts[data-multiple=true] .widget-email-text {
+  margin-right: 26px;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts[data-expanded=true] .widget-email {
+  opacity: 0;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts[data-expanded=true] .widget-phone-popup {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transition: none;
+  transition: none;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-contacts[data-expanded=true] .widget-phone-popup-wrapper {
+  -webkit-transform: none;
+  transform: none;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-button {
+  padding: 15px 27px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: 0;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-transition: opacity 500ms, color 350ms, background-color 350ms;
+  -moz-transition: opacity 500ms, color 350ms, background-color 350ms;
+  -ms-transition: opacity 500ms, color 350ms, background-color 350ms;
+  -o-transition: opacity 500ms, color 350ms, background-color 350ms;
+  transition: opacity 500ms, color 350ms, background-color 350ms;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-button-wrap {
+  display: block;
+  text-align: right;
+}
+.c-header.c-header-template-1 .widget-view.widget-view-desktop .widget-button:hover {
+  color: #fff;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-view-desktop-8 {
+  background: transparent;
+  border-bottom: none;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text-wrapper {
+  position: relative;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-region-icon {
+  color: inherit !important;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region {
+  color: inherit !important;
+  -webkit-transition: opacity 350ms;
+  -moz-transition: opacity 350ms;
+  -ms-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-phone-popup {
+  padding-top: 0;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-phone-popup-wrapper {
+  background: transparent;
+  width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.c-header.c-header-template-1.widget-transparent .widget-view.widget-view-desktop .widget-phone-popup-wrapper[data-advanced=true] {
+  background: #fff;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item:hover .menu-item-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-icon svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-1 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-2 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-3 .menu-button, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-email-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-region, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper {
+  -webkit-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -moz-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -ms-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -o-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-1 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-2 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-3 .menu-button, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-email-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-region, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper {
+  color: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-icon svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-logotype path {
+  fill: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item:hover .menu-item-text {
+  background: black !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-button {
+  border-color: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter {
+  border-color: black !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper:after {
+  background: #fff;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-contacts .widget-button:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item:hover .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item.sale-basket-icons-item-active .sale-basket-icons-item-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab:hover .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab.sale-basket-small-tab-active .sale-basket-small-tab-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item:hover .menu-item-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-icon svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-1 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-2 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-3 .menu-button, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-email-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-region, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper {
+  -webkit-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -moz-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -ms-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  -o-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+  transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-1 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-2 .menu-button,
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-popup-3 .menu-button, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-email-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-button, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-arrow, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-region, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper {
+  color: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-authorization .widget-authorization-button-icon svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype svg, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-logotype path {
+  fill: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item:hover .menu-item-text {
+  background: white !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-button {
+  border-color: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter {
+  border-color: white !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-menu .ns-bitrix.c-menu.c-menu-horizontal-2 .menu-item .menu-item-text .menu-item-text-wrapper:after {
+  background: #000;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-text:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-phone-popup-item:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-contacts .widget-button:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item:hover .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item.sale-basket-icons-item-active .sale-basket-icons-item-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab:hover .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view.widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab.sale-basket-small-tab-active .sale-basket-small-tab-icon {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

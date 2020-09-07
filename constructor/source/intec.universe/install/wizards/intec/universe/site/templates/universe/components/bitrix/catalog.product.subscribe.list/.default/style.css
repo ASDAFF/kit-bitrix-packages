@@ -1,0 +1,147 @@
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-title {
+  margin: 0 0 25px 0;
+  text-align: left;
+  font-size: 1.28571429em;
+  line-height: 1.5;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-wrapper {
+  height: 100%;
+  padding: 25px 40px;
+  border: 1px solid #e8e8e8;
+  transition: 0.5s;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-wrapper:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-image-wrapper {
+  display: block;
+  height: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-name {
+  display: block;
+  overflow: hidden;
+  height: 48px;
+  margin-top: 30px;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-name-wrapper {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer {
+  display: block;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer:first-child {
+  margin: 0;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-title {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-values {
+  display: block;
+  font-size: 0;
+  margin: 4px -3px -3px -3px;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #222222;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition-property: color, border-color, background-color;
+  -moz-transition-property: color, border-color, background-color;
+  -ms-transition-property: color, border-color, background-color;
+  -o-transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value.active {
+  background: #f6f6f6;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value-text {
+  display: block;
+  padding: 3px 9px;
+  color: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  min-width: 24px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value-image {
+  font-size: 0;
+  padding: 6px 9px;
+  white-space: nowrap;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value-image-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 12px;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value-image-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  border: 3px solid #e8e8e8;
+  margin-left: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-offer-value-image-picture {
+  width: 10px;
+  height: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-unsubscribe {
+  margin-top: 30px;
+  text-align: center;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-item-unsubscribe-wrapper {
+  padding: 12px 18px;
+  font-size: 16px;
+}
+.ns-bitrix.c-catalog-product-subscribe-list.c-catalog-product-subscribe-list-default .product-subscribe-list-alert {
+  text-align: center;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

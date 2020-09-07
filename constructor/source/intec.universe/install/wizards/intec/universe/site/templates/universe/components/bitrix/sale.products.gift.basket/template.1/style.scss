@@ -1,0 +1,27 @@
+$namespace: 'bitrix';
+$component: 'sale-products-gift-basket';
+$template: 'template-1';
+$class: #{$component};
+
+$color-black-1: #1B1E25;
+$color-black-2:#404040;
+$color-gray-1: #808080;
+$color-gray-2: #B0B0B0;
+$color-gray-3: #E8E8E8;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-item {
+    position: relative;
+    margin-top: -1px;
+    margin-left: -1px;
+    border: 1px solid $color-gray-3;
+    z-index: 1;
+
+    &:hover {
+      z-index: 2;
+    }
+    & > div {
+      height: 100%;
+    }
+  }
+}

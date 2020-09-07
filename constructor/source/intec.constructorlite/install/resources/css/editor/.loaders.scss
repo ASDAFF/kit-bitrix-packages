@@ -1,0 +1,95 @@
+$class: 'constructor-' !default;
+
+.#{$class}loader {
+  &.#{$class}loader-1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+
+    @-webkit-keyframes #{$class}loader-1-before {
+      from {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes #{$class}loader-1-before {
+      from {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes #{$class}loader-1-after {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    @keyframes #{$class}loader-1-after {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 2px solid #1282df;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      box-sizing: border-box;
+      -webkit-animation: #{$class}loader-1-before 0.5s linear infinite;
+      animation: #{$class}loader-1-before 0.5s linear infinite;
+    }
+
+    &:before {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    &:after {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+      -webkit-animation-name: #{$class}loader-1-after;
+      animation-name: #{$class}loader-1-after;
+    }
+  }
+}

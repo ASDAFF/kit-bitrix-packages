@@ -1,0 +1,71 @@
+$namespace: 'bitrix';
+$component: 'subscribe-edit';
+$template: 'blog-1';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-header {
+    font-size: 21px;
+    line-height: 26px;
+
+    & + div {
+      margin-top: 25px;
+    }
+  }
+  .#{$class}-notes {
+    & + div {
+      margin-top: 15px;
+    }
+  }
+  .#{$class}-note {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    &[data-type='message'] {
+      color: #008000;
+    }
+    &[data-type='error'] {
+      color: #ff0000;
+    }
+  }
+  .#{$class}-input {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .#{$class}-input-header {
+    font-size: 14px;
+    line-height: 18px;
+
+    & + div {
+      margin-top: 10px;
+    }
+  }
+  .#{$class}-input-text {
+    input {
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      padding: 10px;
+      max-width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid;
+      outline: none;
+    }
+  }
+  [data-align='left'] {
+    text-align: left;
+  }
+  [data-align='center'] {
+    text-align: center;
+  }
+  [data-align='right'] {
+    text-align: right;
+  }
+}

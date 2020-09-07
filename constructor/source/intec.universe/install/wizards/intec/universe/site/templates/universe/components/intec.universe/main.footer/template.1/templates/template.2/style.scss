@@ -1,0 +1,264 @@
+$component: 'footer';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view .widget-view-2 {
+    display: block;
+
+    .widget-wrapper {}
+    .widget-wrapper-2 {}
+
+    .widget-parts {
+      margin: 0 -30px;
+      padding: 30px 0;
+    }
+
+    .widget-part {
+      padding: 0 30px;
+      text-align: left;
+
+      &.widget-part-left {
+        min-width: 240px;
+        max-width: 320px;
+
+        .widget-part-items {
+          display: block;
+          margin: -13px 0;
+          overflow: hidden;
+        }
+
+        .widget-part-item {
+          display: block;
+          padding: 13px 0;
+          color: #2d2d2d;
+        }
+      }
+
+      &.widget-part-right {
+        width: 300px;
+        text-align: right;
+
+        .widget-part-items {
+          display: block;
+          margin: -20px 0;
+          overflow: hidden;
+        }
+
+        .widget-part-item {
+          display: block;
+          padding: 20px 0;
+          color: #2d2d2d;
+        }
+      }
+
+      .widget-icons {
+        max-width: 198px;
+      }
+
+      .widget-icon {
+        &[data-icon="alfabank"] .widget-icon-image { background-position: 0 -180px; }
+        &[data-icon="sberbank"] .widget-icon-image { background-position: 0 -210px; }
+        &[data-icon="qiwi"] .widget-icon-image { background-position: 0 -240px; }
+        &[data-icon="yandexmoney"] .widget-icon-image { background-position: 0 -270px; }
+        &[data-icon="visa"] .widget-icon-image { background-position: 0 -300px; }
+        &[data-icon="mastercard"] .widget-icon-image { background-position: 0 -330px; }
+      }
+
+      .widget-icon-image {
+        display: block;
+        width: 50px;
+        height: 30px;
+        background-size: auto;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image: url('./images/icons.png');
+      }
+
+      .widget-copyright {
+        display: block;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .widget-phone {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .widget-phone-icon,
+      .widget-phone-text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .widget-phone-icon {
+        width: 20px;
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      .widget-phone-text {
+        font-size: 16px;
+        font-weight: bold;
+        white-space: normal;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .widget-phone-order {
+        display: block;
+        padding-top: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .widget-phone-order-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        color: #0065ff;
+        border-bottom: 1px dashed #0065ff;
+
+        -webkit-transition-property: color, border-color;
+        -moz-transition-property: color, border-color;
+        -ms-transition-property: color, border-color;
+        -o-transition-property: color, border-color;
+        transition-property: color, border-color;
+
+        -webkit-transition-duration: 350ms;
+        -moz-transition-duration: 350ms;
+        -ms-transition-duration: 350ms;
+        -o-transition-duration: 350ms;
+        transition-duration: 350ms;
+
+        &:hover {
+          color: #2d2d2d !important;
+          border-color: #2d2d2d !important;
+        }
+      }
+
+      .widget-social {
+        display: block;
+        overflow: hidden;
+      }
+
+      .widget-social-title {
+        display: block;
+        color: #777e89;
+        padding-bottom: 7px;
+      }
+
+      .widget-social-items {
+        display: block;
+        margin: -5px -10px;
+        overflow: hidden;
+      }
+
+      .widget-social-item {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 10px;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .widget-social-item-icon {
+        display: block;
+        color: #bfc2c7;
+        text-decoration: none;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+      .widget-logotype {
+        display: block;
+
+        img,
+        svg {
+          display: inline;
+          max-width: 200px;
+          max-height: 75px;
+        }
+      }
+    }
+
+    @media all and (max-width: 768px) {
+      .widget-parts {
+        margin: -20px 0;
+      }
+
+      .widget-part {
+        padding: 20px 0;
+
+        &.widget-part-left {
+          min-width: 0;
+          max-width: none;
+          text-align: center;
+        }
+
+        &.widget-part-right {
+          width: auto;
+          text-align: center;
+        }
+
+        .widget-icons {
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  &[data-theme="dark"] .widget-view .widget-view-2 {
+
+    .widget-part {
+      &.widget-part-left {
+        .widget-part-item {
+          color: #fff;
+        }
+      }
+
+      &.widget-part-right {
+        .widget-part-item {
+          color: #fff;
+        }
+      }
+
+      .widget-social-item-icon {
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      .widget-phone-order-wrapper {
+        &:hover {
+          color: #fff !important;
+          border-color: #fff !important;
+        }
+      }
+
+      .widget-logotype {
+        svg,
+        svg path {
+          fill: #fff !important;
+        }
+      }
+
+      .ns-bitrix.c-menu.c-menu-columns-1 {
+        .menu-column-header {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

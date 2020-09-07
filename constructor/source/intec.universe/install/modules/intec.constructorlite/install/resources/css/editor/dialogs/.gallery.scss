@@ -1,0 +1,246 @@
+$class: 'constructor-' !default;
+
+.ui-dialog {
+  .#{$class}dialog-gallery {
+    .#{$class}dialog-gallery-images {
+      display: block;
+      position: relative;
+      height: 495px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-bottom: 160px;
+    }
+
+    .#{$class}dialog-gallery-images-wrapper {
+      display: block;
+      position: relative;
+      height: 100%;
+
+      &.has-scrollbar {
+        .#{$class}dialog-gallery-images-wrapper-2 {
+          padding-right: 20px;
+        }
+      }
+
+      .nano-pane {
+        right: 4px;
+      }
+    }
+
+    .#{$class}dialog-gallery-images-wrapper-2 {
+      display: block;
+      position: relative;
+      height: 100%;
+      overflow: auto;
+      font-size: 0;
+      padding: 0;
+    }
+
+    .#{$class}dialog-gallery-images-wrapper-3 {
+      display: block;
+      position: relative;
+      margin: 5px;
+    }
+
+    .#{$class}dialog-gallery-image {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      width: 25%;
+      padding: 5px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      &:hover {
+        .#{$class}dialog-gallery-image-wrapper {
+          -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .#{$class}dialog-gallery-image-view {
+          -webkit-filter: blur(2px);
+          filter: blur(2px);
+        }
+
+        .#{$class}dialog-gallery-content {
+          display: block;
+        }
+
+        .#{$class}dialog-gallery-delete {
+          opacity: 1;
+        }
+      }
+
+      .#{$class}dialog-gallery-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        padding-top: 70%;
+        background-image: url("../images/editor/chess_bg.png");
+        background-repeat: repeat;
+        background-position: 0 0;
+        border-radius: 3px;
+        -webkit-transition: 350ms;
+        -moz-transition: 350ms;
+        -ms-transition: 350ms;
+        -o-transition: 350ms;
+        transition: 350ms;
+      }
+
+      .#{$class}dialog-gallery-image-wrapper-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .#{$class}dialog-gallery-image-aligner {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+      }
+
+      .#{$class}dialog-gallery-image-view {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-transition: 350ms;
+        -moz-transition: 350ms;
+        -ms-transition: 350ms;
+        -o-transition: 350ms;
+        transition: 350ms;
+      }
+
+      .#{$class}dialog-gallery-content {
+        display: none;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        overflow: hidden;
+        width: auto;
+        height: auto;
+
+        .#{$class}dialog-gallery-name {
+          display: inline-block;
+          vertical-align: middle;
+          white-space: normal;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: center;
+          color: #3d3e43;
+        }
+      }
+
+      .#{$class}dialog-gallery-delete {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        top: 10px;
+        right: 10px;
+        opacity: 0;
+        color: #fff;
+        font-size: 9px;
+        text-align: center;
+        line-height: 21px;
+        background-color: #626262;
+        cursor: pointer;
+      }
+    }
+
+    .#{$class}dialog-gallery-upload {
+      display: block;
+      position: absolute;
+      top: auto;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      height: 135px;
+      text-align: center;
+      border: 1px dashed #e8e8e8;
+      cursor: pointer;
+      -webkit-transition: 350ms;
+      -moz-transition: 350ms;
+      -ms-transition: 350ms;
+      -o-transition: 350ms;
+      transition: 350ms;
+      -webkit-transition-property: border, background;
+      -moz-transition-property: border, background;
+      -ms-transition-property: border, background;
+      -o-transition-property: border, background;
+      transition-property: border, background;
+
+      &:hover,
+      &.#{$class}dialog-gallery-upload-active {
+        border-color: #3761ef;
+        background-color: #e1edff;
+
+        .#{$class}dialog-gallery-icon,
+        .#{$class}dialog-gallery-title,
+        .#{$class}dialog-gallery-text {
+          color: #3761ef;
+        }
+      }
+
+      %#{$class}dialog-gallery-transition {
+        -webkit-transition: 350ms;
+        -moz-transition: 350ms;
+        -ms-transition: 350ms;
+        -o-transition: 350ms;
+        transition: 350ms;
+        -webkit-transition-property: color;
+        -moz-transition-property: color;
+        -ms-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+      }
+
+      %#{$class}dialog-gallery-text {
+        color: #c8c8c8;
+        font-weight: 300;
+      }
+
+      .#{$class}dialog-gallery-icon {
+        @extend %#{$class}dialog-gallery-transition;
+
+        font-size: 40px;
+        color: #7b7f82;
+        margin-top: 25px;
+      }
+
+      .#{$class}dialog-gallery-title {
+        @extend %#{$class}dialog-gallery-transition;
+        @extend %#{$class}dialog-gallery-text;
+
+        margin-top: 3px;
+        font-size: 16px;
+      }
+
+      .#{$class}dialog-gallery-text {
+        @extend %#{$class}dialog-gallery-transition;
+        @extend %#{$class}dialog-gallery-text;
+
+        margin-top: 15px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &.ui-dialog-expanded {
+    .#{$class}dialog-gallery {
+      .#{$class}dialog-gallery-images {
+        height: 100%;
+      }
+    }
+  }
+}

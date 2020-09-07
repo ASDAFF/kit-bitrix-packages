@@ -1,0 +1,92 @@
+$namespace: 'bitrix';
+$component: 'news-list';
+$template: 'vacancies-2';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+
+  .#{$class}-items {
+
+  }
+  .#{$class}-item {
+    border: 1px solid #dddddd;
+    margin-bottom: -1px;
+  }
+  .#{$class}-item-name {
+    padding: 25px;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+  }
+  .#{$class}-item-salary,
+  .#{$class}-item-indicators{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .#{$class}-item-description {
+    font-size: 14px;
+    line-height: 25px;
+    height: 0;
+    overflow: hidden;
+  }
+  .#{$class}-item-description-wrapper {
+    padding: 25px;
+  }
+  .#{$class}-item-description-buttons {
+    border-left: 1px solid #ddd;
+  }
+  .#{$class}-item-description-button {
+    font-size: 18px;
+    padding: 18px 62px!important;
+    border-radius: 50px;
+  }
+  .#{$class}-item-indicators {
+    border: 2px solid;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    margin-left: 20px;
+  }
+  .#{$class}-item-indicator {
+    font-size: 12px;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+  }
+
+  [data-role="item.head"] {
+    &[data-active='false'] {
+      color: inherit;
+
+      .#{$class}-item-indicator-active {
+        display: none;
+      }
+      .#{$class}-item-indicator-inactive {
+        display: inline-block;
+      }
+    }
+    &[data-active='true'] {
+      color: #fff;
+      border-bottom: 1px solid #dddddd;
+
+      .#{$class}-item-indicator-active {
+        display: inline-block;
+        height: 12px;
+      }
+      .#{$class}-item-indicator-inactive {
+        display: none;
+      }
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .#{$class}-item-description-buttons {
+      border-top: 1px solid #ddd;
+      border-left: 0px;
+      text-align: center;
+    }
+  }
+}

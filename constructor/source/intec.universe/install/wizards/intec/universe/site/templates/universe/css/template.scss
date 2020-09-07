@@ -1,0 +1,163 @@
+$class: 'intec-template';
+
+.#{$class} {
+  display: block;
+  min-height: 320px;
+
+  .#{$class}-content {
+    display: block;
+    background: #fff;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:after {
+      content: "";
+      display: block;
+      overflow: hidden;
+      height: 0;
+    }
+  }
+
+  .#{$class}-content-wrapper {}
+  .#{$class}-header {}
+
+  .#{$class}-breadcrumb {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 11px;
+  }
+
+  .#{$class}-title {
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 30px;
+  }
+
+  .#{$class}-page {
+    display: block;
+    margin-bottom: 50px;
+
+    &:after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+
+    &.#{$class}-page-flat {
+      margin-bottom: 0;
+    }
+
+    &.#{$class}-page-narrow {
+      margin-top: 50px;
+    }
+  }
+
+  .#{$class}-page-wrapper {}
+
+  %#{$class}-part-title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #1B1E25;
+  }
+
+  %#{$class}-part-description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.7;
+    color: #808080;
+  }
+
+  .#{$class}-part {
+    &.#{$class}-part-title {
+      @extend %#{$class}-part-title;
+    }
+
+    &.#{$class}-part-description {
+      @extend %#{$class}-part-description;
+    }
+  }
+
+  .widget {
+    .widget-header .widget-title.align-left,
+    .widget-header .widget-description.align-left,
+    .widget .widget-footer.align-left {
+      text-align: left;
+    }
+
+    .widget-header .widget-title.align-center,
+    .widget-header .widget-description.align-center,
+    .widget-footer.align-center {
+      text-align: center;
+    }
+
+    .widget-header .widget-title.align-right,
+    .widget-header .widget-description.align-right,
+    .widget-footer.align-right {
+      text-align: right;
+    }
+
+    .widget-header {
+      .widget-title {
+        @extend %#{$class}-part-title;
+
+        & + .widget-description {
+          margin-top: 16px;
+        }
+      }
+
+      .widget-description {
+        @extend %#{$class}-part-description;
+      }
+
+      & + .widget-content {
+        margin-top: 40px;
+      }
+    }
+
+    .widget-content {
+      & + .widget-footer {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .#{$class}-footer {
+    display: block;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media all and (max-width: 720px) {
+    %#{$class}-part-title {
+      font-size: 22px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    %#{$class}-part-title {
+      font-size: 18px;
+    }
+  }
+  @media print {
+    a {
+      &:link::after,
+      &:visited::before {
+        content: '';
+      }
+    }
+  }
+}
+
+.public .#{$class} {
+  height: 100%;
+
+  .#{$class}-content {
+    height: 100%;
+  }
+}

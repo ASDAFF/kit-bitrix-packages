@@ -1,0 +1,43 @@
+.widget.c-advantages.c-advantages-template-23 .widget-item-wrapper {
+  position: relative;
+  padding-top: 112px;
+}
+.widget.c-advantages.c-advantages-template-23 .widget-item-counter {
+  position: absolute;
+  opacity: 0.06;
+  font-size: 144px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.42;
+  letter-spacing: normal;
+  color: #000000;
+  height: 207px;
+  left: 0;
+  right: 0;
+  top: -21px;
+  text-align: left;
+}
+.widget.c-advantages.c-advantages-template-23 .widget-item-text {
+  position: relative;
+  text-align: left;
+}
+.widget.c-advantages.c-advantages-template-23 .widget-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+.widget.c-advantages.c-advantages-template-23 .widget-item-description {
+  font-size: 16px;
+  line-height: 1.45;
+}
+.widget.c-advantages.c-advantages-template-23 .widget-button-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+.widget.c-advantages.c-advantages-template-23 [data-number-show=false] .widget-item-wrapper {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 {}
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 .iblock-vote-rating {
+	font-size: 0;
+	margin: 0 -3px;
+}
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 .iblock-vote-rating-item  {
+	display: inline-block;
+	padding: 0 5px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #E8E8E8;
+}
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 .iblock-vote-rating-item[data-active="true"],
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 .iblock-vote-rating-item[data-focus="true"] {
+	color: #F4BB28;
+}
+.ns-bitrix.c-iblock-vote.c-iblock-vote-template-1 .iblock-vote-rating-total {
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 10px;
+}

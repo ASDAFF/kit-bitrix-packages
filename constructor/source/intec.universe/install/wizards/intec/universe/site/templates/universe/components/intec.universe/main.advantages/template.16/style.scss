@@ -1,0 +1,70 @@
+$component: 'advantages';
+$template: 'template-16';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  padding: 95px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .widget-header {
+    .widget-title {
+      color: #ffffff;
+    }
+    .widget-description {
+      color: #ffffff;
+    }
+  }
+
+  .#{$item}-picture {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .#{$item}-name-wrap {
+    position: relative;
+    padding-top: 52px;
+    font-size: 0;
+    margin-bottom: 20px;
+  }
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #fff;
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.45;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-name {
+      font-size: 16px;
+    }
+    .#{$item}-description {
+      font-size: 14px;
+    }
+  }
+
+}

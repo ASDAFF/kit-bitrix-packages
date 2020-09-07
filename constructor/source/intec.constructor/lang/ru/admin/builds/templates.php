@@ -1,0 +1,21 @@
+<?php
+$MESS['title'] = 'Шаблоны #name#';
+$MESS['list.header.id'] = 'ID';
+$MESS['list.header.code'] = 'Код';
+$MESS['list.header.active'] = 'Активность';
+$MESS['list.header.default'] = 'По умолчанию';
+$MESS['list.header.name'] = 'Наименование';
+$MESS['list.header.sort'] = 'Сортировка';
+$MESS['list.header.theme'] = 'Тема';
+$MESS['list.header.theme.unset'] = '(Не установлена)';
+$MESS['list.actions.add'] = 'Добавить';
+$MESS['list.rows.actions.edit'] = 'Редактировать';
+$MESS['list.rows.actions.editor'] = 'Редактор';
+$MESS['list.rows.actions.copy'] = 'Копировать';
+$MESS['list.rows.actions.activate'] = 'Активировать';
+$MESS['list.rows.actions.deactivate'] = 'Деактивировать';
+$MESS['list.rows.actions.default'] = 'По умолчанию';
+$MESS['list.rows.actions.delete'] = 'Удалить';
+$MESS['list.rows.actions.delete.confirm'] = 'Вы действительно хотите удалить этот шаблон?';
+$MESS['list.rows.yes'] = 'Да';
+$MESS['list.rows.no'] = 'Нет';

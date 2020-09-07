@@ -1,0 +1,60 @@
+.widget.c-form.c-form-template-5 {
+  background: #fbfbfb;
+  color: #000;
+}
+.widget.c-form.c-form-template-5 .widget-text {
+  padding: 20px;
+}
+.widget.c-form.c-form-template-5 .widget-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: inherit;
+}
+@media all and (max-width: 800px) {
+  .widget.c-form.c-form-template-5 .widget-title {
+    text-align: center;
+  }
+}
+.widget.c-form.c-form-template-5 .widget-description {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: inherit;
+}
+@media all and (max-width: 800px) {
+  .widget.c-form.c-form-template-5 .widget-description {
+    text-align: center;
+  }
+}
+.widget.c-form.c-form-template-5 .widget-image img {
+  max-width: 280px;
+  max-height: 280px;
+}
+@media all and (max-width: 800px) {
+  .widget.c-form.c-form-template-5 .widget-image {
+    display: none;
+  }
+}
+.widget.c-form.c-form-template-5 .widget-button-wrap {
+  padding: 20px;
+  text-align: center;
+}
+@media all and (max-width: 500px) {
+  .widget.c-form.c-form-template-5 .widget-button {
+    width: 100%;
+  }
+}
+@media all and (max-width: 800px) {
+  .widget.c-form.c-form-template-5 {
+    padding: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

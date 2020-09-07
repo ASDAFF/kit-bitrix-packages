@@ -1,0 +1,30 @@
+$class: 'constructor-' !default;
+
+.#{$class}form {
+  display: block;
+}
+
+.#{$class}form-header {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.#{$class}field {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  #{&}-label {
+    display: block;
+    font-size: 13px;
+    line-height: 17px;
+    padding-bottom: 5px;
+    color: #bebebe;
+  }
+
+  #{&}-content {
+    display: block;
+  }
+}

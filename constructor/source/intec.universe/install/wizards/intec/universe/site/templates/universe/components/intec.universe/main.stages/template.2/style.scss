@@ -1,0 +1,50 @@
+$component: 'stages';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-content {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .#{$item} {
+    margin-bottom: 20px;
+  }
+
+  .#{$item}-wrapper {
+    position: relative;
+    padding-top: 25px;
+    height: 100%;
+    @include box-sizing(border-box);
+  }
+
+  .#{$item}-number {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+  .#{$item}-text {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 35px 30px 30px 30px;
+    background-color: #f5f1dd;
+    height: 100%;
+    @include box-sizing(border-box);
+  }
+
+  @media all and (max-width: 600px) {
+    .#{$item}-text {
+      font-size: 12px;
+    }
+  }
+}

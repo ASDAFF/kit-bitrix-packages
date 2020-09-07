@@ -1,0 +1,131 @@
+$selects-themes: (
+  'default': (
+    'border': #1d1e22,
+    'background': #1d1e22,
+    'text': #c1c1c1,
+    'selection': (
+      'background': #1d4def,
+      'text': #f5fcff
+    )
+  ),
+  'gray': (
+    'border': #2f3138,
+    'background': #2f3138,
+    'text': #f5fcff,
+    'selection': (
+      'background': #1d4def,
+      'text': #f5fcff
+    )
+  ),
+  'white': (
+    'border': #ddd,
+    'background': #fff,
+    'text': #231f20,
+    'selection': (
+      'background': #1d4def,
+      'text': #f5fcff
+    )
+  )
+);
+
+.ui-widget {
+  $theme: map-get($selects-themes, 'default');
+
+  &.ui-selectmenu-button {
+    background: map-get($theme, 'background');
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid map-get($theme, 'border');
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 9px 7px;
+
+    .ui-selectmenu-text {
+      color: map-get($theme, 'text');
+      font-size: 13px;
+      line-height: 15px;
+      height: 15px;
+      overflow: hidden;
+    }
+
+    .ui-selectmenu-icon {
+      display: block;
+      border: 3px solid transparent;
+      border-top: 5px solid map-get($theme, 'text');
+      margin-top: 5px;
+    }
+  }
+}
+.ui-selectmenu-menu {
+  $theme: map-get($selects-themes, 'default');
+
+  .ui-menu {
+    background: map-get($theme, 'background');
+    margin-top: 5px;
+    max-height: 145px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: auto;
+    -webkit-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
+
+    .ui-menu-item {
+      .ui-menu-item-wrapper {
+        color: map-get($theme, 'text');
+        font-size: 12px;
+        line-height: 15px;
+        padding: 7px 9px;
+
+        &.ui-state-active {
+          color: map-get(map-get($theme, 'selection'), 'text');
+          background: map-get(map-get($theme, 'selection'), 'background');
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@each $name, $theme in $selects-themes {
+  @if ($name != 'default') {
+    .ui-widget {
+      &.ui-selectmenu-button {
+        &.ui-theme-#{$name} {
+          background: map-get($theme, 'background');
+          border-color: map-get($theme, 'border');
+
+          .ui-selectmenu-text {
+            color: map-get($theme, 'text');
+          }
+
+          .ui-selectmenu-icon {
+            border-top: 5px solid map-get($theme, 'text');
+          }
+        }
+      }
+    }
+    .ui-selectmenu-menu {
+      &.ui-theme-white {
+        & .ui-menu {
+          background: map-get($theme, 'background');
+
+          .ui-menu-item {
+            .ui-menu-item-wrapper {
+              color: map-get($theme, 'text');
+
+              &.ui-state-active {
+                color: map-get(map-get($theme, 'selection'), 'text');
+                background: map-get(map-get($theme, 'selection'), 'background');
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

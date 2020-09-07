@@ -1,0 +1,69 @@
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default {}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 70%;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item:hover {
+	cursor:pointer;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item .section-item-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item-wrapper .section-item-img {
+	display: none;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item-wrapper:hover {
+	transition: 300ms linear;
+	box-shadow: 1px 9px 24px  rgba(93, 95, 97, 0.56);
+	z-index: 1;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .btn-block {
+	margin-top: 20px;
+	clear: left;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item-wrapper .section-item-search-plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -36px;
+	margin-left: -36px;
+	opacity: 0;
+	transition: 300ms linear;
+	padding: 20px;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: 100;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item-wrapper:hover .section-item-search-plus {
+	position: absolute;
+	opacity: 0.8;
+	transition: 300ms linear;
+}
+
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .photo-section-navigation {
+	display: block;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .photo-section-navigation.photo-section-navigation-top {
+	margin-bottom: 30px;
+}
+.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .photo-section-navigation.photo-section-navigation-bottom {
+	margin-top: 30px;
+}
+
+@media all and (max-width: 480px) {
+	.ns-bitrix.c-photo.c-photo-photogallery .photo-section.photo-section-default .section-item-wrapper {
+		padding-bottom: 50%;
+	}
+}

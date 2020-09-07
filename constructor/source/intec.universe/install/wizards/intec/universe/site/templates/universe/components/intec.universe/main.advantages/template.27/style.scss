@@ -1,0 +1,113 @@
+$component: 'advantages';
+$template: 'template-27';
+$tabs: 'widget-tabs';
+$content: 'widget-tabs-content';
+
+@mixin transition($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$tabs} {
+    font-size: 0;
+    text-align: center;
+    margin: -10px;
+  }
+  .#{$tabs}-item {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #d8d8d8;
+    padding: 15px 50px;
+    margin: 10px;
+    border: 2px solid #d8d8d8;
+    cursor: pointer;
+    white-space: nowrap;
+    @include user-select(none);
+    @include transition(#{border-color, color, opacity}, 0.4s);
+
+    &:hover,
+    &[data-active='true'] {
+      color: #444;
+    }
+  }
+  .#{$content} {
+    margin-top: 50px;
+  }
+  .#{$content}-item {
+    font-size: 0;
+    text-align: center;
+    @include transition(opacity, 0.3s);
+
+    &[data-active='true'] {
+      opacity: 1;
+    }
+    &[data-active='false'] {
+      opacity: 0;
+    }
+  }
+  .#{$content}-item > img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &[data-in-block='false'] {
+    &[data-theme='black'] {
+      background-color: #17171d;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+  &[data-theme='black'] {
+    .widget-title,
+    .widget-description,
+    .#{$tabs}-item:hover,
+    .#{$tabs}-item[data-active='true'] {
+      color: #FFF;
+    }
+
+    .#{$tabs}-item {
+      opacity: 0.4;
+
+      &:hover,
+      &[data-active='true'] {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .#{$tabs}-item {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 10px 30px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$tabs}-content {
+      margin-top: 25px;
+    }
+    .#{$tabs}-item {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-header {
+  font-size: 21px;
+  line-height: 26px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-header + div {
+  margin-top: 25px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-notes + div {
+  margin-top: 15px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-note {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-note[data-type=message] {
+  color: #008000;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-note[data-type=error] {
+  color: #ff0000;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-input {
+  margin-top: 30px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-input:first-child {
+  margin-top: 0;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-input-header {
+  font-size: 14px;
+  line-height: 18px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-input-header + div {
+  margin-top: 10px;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 .subscribe-edit-input-text input {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  outline: none;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 [data-align=left] {
+  text-align: left;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 [data-align=center] {
+  text-align: center;
+}
+.ns-bitrix.c-subscribe-edit.c-subscribe-edit-blog-1 [data-align=right] {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

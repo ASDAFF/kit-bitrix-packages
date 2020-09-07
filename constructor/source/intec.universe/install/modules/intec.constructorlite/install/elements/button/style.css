@@ -1,0 +1,73 @@
+.ns-intec-constructor.block-element.block-element-button {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #1d1d1d;
+    background: transparent;
+    font-size: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ns-intec-constructor.block-element.block-element-button .block-element-button-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -ms-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+}
+.ns-intec-constructor.block-element.block-element-button .block-element-button-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    -webkit-transition-property: border-color;
+    -moz-transition-property: border-color;
+    -ms-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+}
+.ns-intec-constructor.block-element.block-element-button .block-element-button-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ns-intec-constructor.block-element.block-element-button .block-element-button-aligner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.ns-intec-constructor.block-element.block-element-button .block-element-button-text {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}

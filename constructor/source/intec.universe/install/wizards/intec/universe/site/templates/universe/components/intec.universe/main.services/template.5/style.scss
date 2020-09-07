@@ -1,0 +1,102 @@
+$component: 'services';
+$template: 'template-5';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  [data-grid='2'] .widget-item-wrapper {
+    padding-top: 50%;
+  }
+  [data-grid='3'] .widget-item-wrapper {
+    padding-top: 60%;
+  }
+  [data-grid='4'] .widget-item-wrapper {
+    padding-top: 170%;
+  }
+  .widget-item-wrapper {
+    position: relative;
+  }
+  .widget-item-picture,
+  .widget-item-fade,
+  .widget-item-name-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .widget-item-picture,
+  .widget-item-fade {
+    top: 0;
+  }
+  .widget-item-picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .widget-item-fade {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 2;
+    @include transition(opacity, 0.4s);
+  }
+  .widget-item-wrapper:hover .widget-item-fade {
+    opacity: 1;
+  }
+  .widget-item-name {
+    &-wrapper {
+      text-align: left;
+      padding: 0 29px 30px 29px;
+      max-width: 200px;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    display: inline-block;
+    max-width: 190px;
+    padding: 8px 12px;
+    background-color: rgba(27, 30, 37, 0.7);
+    border-radius: 2px;
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #FFF;
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 1000px) {
+    [data-grid] .widget-item-wrapper {
+      padding-top: 100%;
+    }
+  }
+  @media all and (max-width: 600px) {
+    [data-grid] .widget-item-wrapper {
+      padding-top: 50%;
+    }
+  }
+  @media all and (max-width: 450px) {
+    [data-grid] .widget-item-wrapper {
+      padding-top: 70%;
+    }
+  }
+}

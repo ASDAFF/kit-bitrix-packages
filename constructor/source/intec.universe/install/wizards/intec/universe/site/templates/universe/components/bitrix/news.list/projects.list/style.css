@@ -1,0 +1,101 @@
+.projects-list {
+    display: block;
+}
+.projects-list .projects-list-tabs {}
+.projects-list .projects-list-tab-container {
+    display: block;
+    margin-top: 45px;
+}
+.projects-list .projects-list-tab-container .project-tab {}
+.projects-list .projects-list-items {
+    display: block;
+}
+
+
+.c-news-list-projects-list .news-list-tab-container {
+    margin-top: 25px;
+}
+.c-news-list-projects-list .news-list-element {
+    min-height: 220px;
+    overflow: hidden;
+    margin: 25px 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.c-news-list-projects-list .news-list-element:last-child{
+    border-bottom: 0;
+}
+.c-news-list-projects-list .news-list-element-image-wrapper {
+    width: 340px;
+    height: 220px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.c-news-list-projects-list .news-list-element-content {
+    display: block;
+    margin-left: 390px;
+    height: 220px;
+    white-space: nowrap;
+}
+.c-news-list-projects-list .news-list-element-content-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+.c-news-list-projects-list .news-list-element-image {
+    display: block;
+    width: 100%;
+    height: 100%   ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c-news-list-projects-list .news-list-element-name {
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+.c-news-list-projects-list .news-list-element-description {
+    font-size: 14px;
+    margin-top: 35px;
+    line-height: 18px;
+    max-height: 54px;
+    overflow: hidden;
+}
+
+.c-news-list-projects-list .news-list-element.no-image {
+    min-height: auto;
+}
+.c-news-list-projects-list .news-list-element.no-image .news-list-element-content {
+    height: auto;
+    margin-left: 0;
+}
+@media all and (max-width:720px) {
+    .c-news-list-projects-list .news-list-element-image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    .c-news-list-projects-list .news-list-element-content {
+        display: block;
+        margin-left: 230px;
+        height: 200px;
+        white-space: nowrap;
+    }
+    .c-news-list-projects-list .news-list-element-description {
+        max-height: initial;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width:600px){
+    .c-news-list-projects-list .news-list-element-image-wrapper {
+        width: 100%;
+        float: none;
+    }
+    .c-news-list-projects-list .news-list-element-content {
+        margin: 0;
+        height: auto;
+        white-space: normal;
+        margin-top: 30px;
+    }
+}

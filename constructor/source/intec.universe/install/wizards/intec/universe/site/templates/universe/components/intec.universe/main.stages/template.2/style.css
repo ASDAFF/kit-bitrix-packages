@@ -1,0 +1,40 @@
+.widget.c-stages.c-stages-template-2 .widget-content {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.widget.c-stages.c-stages-template-2 .widget-item {
+  margin-bottom: 20px;
+}
+.widget.c-stages.c-stages-template-2 .widget-item-wrapper {
+  position: relative;
+  padding-top: 25px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.widget.c-stages.c-stages-template-2 .widget-item-number {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.widget.c-stages.c-stages-template-2 .widget-item-text {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 35px 30px 30px 30px;
+  background-color: #f5f1dd;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 600px) {
+  .widget.c-stages.c-stages-template-2 .widget-item-text {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

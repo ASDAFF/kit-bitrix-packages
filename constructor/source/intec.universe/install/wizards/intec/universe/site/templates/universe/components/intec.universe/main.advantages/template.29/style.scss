@@ -1,0 +1,66 @@
+$component: 'advantages';
+$template: 'template-29';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrap {
+    padding: 40px 0;
+
+    &.fill {
+      background-color: #f6f6f6;
+    }
+  }
+  .#{$item}-picture-wrap {
+    text-align: center;
+  }
+  .#{$item}-picture {
+    max-width: 100%;
+  }
+  .#{$item}-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  [data-picture-show='false'] {
+    .#{$item}-text {
+      max-width: initial;
+    }
+  }
+
+
+  @media all and (max-width: 800px) {
+    .#{$item}-text {
+      max-width: 500px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-wrap {
+      margin-bottom: 40px;
+    }
+    .#{$item}-name {
+      font-size: 20px;
+    }
+    .#{$item}-description {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.bx-soa-section {
+  border: 1px solid #f2f2f2 !important;
+  margin: 0 0 20px;
+
+  -webkit-transition: border-color .3s ease;
+  -moz-transition: border-color .3s ease;
+  -o-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &.bx-step-completed {
+    border: 1px solid #ebebeb;
+  }
+}
+
+.bx-soa-section-title-container {
+  overflow: hidden;
+  padding: 25px 25px 5px 60px;
+  font-size: 14px;
+}
+
+.bx-soa-section-title {
+  display: block;
+  position: relative;
+  margin: 0;
+  color: #1d1d1d;
+  line-height: 24px;
+  min-height: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 20px;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -42px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/icons.png');
+    background-repeat: no-repeat;
+  }
+}
+
+#bx-soa-delivery.bx-soa-section {
+  .bx-soa-section-title:before {
+    background-position: 0 -90px;
+  }
+}
+
+#bx-soa-paysystem.bx-soa-section {
+  .bx-soa-section-title:before {
+    background-position: 0 -60px;
+  }
+}
+
+#bx-soa-auth.bx-soa-section,
+#bx-soa-properties.bx-soa-section {
+  .bx-soa-section-title:before {
+    background-position: 0 -120px;
+  }
+}
+
+#bx-soa-basket.bx-soa-section {
+  .bx-soa-section-title:before {
+    background-position: 0 -30px;
+  }
+}
+
+.bx-soa-section.bx-step-error {
+  .bx-soa-section-title:before {
+    background-position: 0 -150px !important;
+  }
+}
+
+.bx-soa-section-content {
+  padding: 25px 35px 25px 60px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+@media all and (max-width: 580px) {
+  .bx-soa-section-title-container {
+    padding: 15px 20px 5px 20px;
+  }
+
+  .bx-soa-section-title {
+    font-size: 16px;
+    line-height: 20px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .bx-soa-section-content {
+    padding: 15px 20px;
+  }
+}

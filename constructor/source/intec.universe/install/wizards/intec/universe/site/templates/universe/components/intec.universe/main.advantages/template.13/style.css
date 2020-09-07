@@ -1,0 +1,68 @@
+.widget.c-advantages.c-advantages-template-13 .widget-item-wrapper[data-margin=small] {
+  margin-bottom: 0;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-wrapper[data-margin=middle] {
+  margin-bottom: 25px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-wrapper[data-margin=big] {
+  margin-bottom: 50px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-picture {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 15px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-size=small] {
+  font-size: 18px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-size=middle] {
+  font-size: 20px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-size=big] {
+  font-size: 24px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-margin=small] {
+  margin-bottom: 10px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-margin=middle] {
+  margin-bottom: 20px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-name[data-margin=big] {
+  margin-bottom: 30px;
+}
+.widget.c-advantages.c-advantages-template-13 .widget-item-description {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #444444;
+}
+.widget.c-advantages.c-advantages-template-13[data-size="60"] .widget-item-picture {
+  width: 60px;
+  height: 60px;
+}
+.widget.c-advantages.c-advantages-template-13[data-size="80"] .widget-item-picture {
+  width: 80px;
+  height: 80px;
+}
+.widget.c-advantages.c-advantages-template-13[data-size="100"] .widget-item-picture {
+  width: 100px;
+  height: 100px;
+}
+@media all and (max-width: 500px) {
+  .widget.c-advantages.c-advantages-template-13 .widget-item-name {
+    font-size: 16px;
+  }
+  .widget.c-advantages.c-advantages-template-13 .widget-item-description {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

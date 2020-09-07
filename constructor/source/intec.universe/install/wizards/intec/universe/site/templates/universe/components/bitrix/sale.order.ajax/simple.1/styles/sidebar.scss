@@ -1,0 +1,149 @@
+.bx-soa-sidebar {
+  position: relative;
+  height: 100%;
+}
+
+.bx-soa-sidebar-mobile {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.bx-soa-cart-total {
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  padding: 30px;
+
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+
+  &.bx-soa-cart-total-fixed {
+    position: fixed;
+    top: 100px;
+  }
+
+  &.bx-soa-cart-total-bottom {
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .bx-soa-sidebar {
+    display: none;
+  }
+
+  .bx-soa-sidebar-mobile {
+    display: block;
+  }
+
+  .bx-soa-cart-total {
+    &.bx-soa-cart-total-fixed {
+      position: static;
+      padding-top: 0;
+      width: 100% !important;
+    }
+
+    &.bx-soa-cart-total-bottom {
+      opacity: 1 !important;
+      position: static;
+    }
+  }
+
+  .bx-soa-cart-total-ghost {
+    display: none;
+  }
+}
+
+.bx-soa-cart-total-line {
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  color: #1d1d1d;
+}
+
+.bx-soa-cart-total {
+  .bx-soa-cart-total-line {
+    &:first-child {
+      border-top: none;
+    }
+
+    &:nth-child(2) {
+      border-color: #f2f2f2;
+    }
+
+    &.bx-soa-cart-total-line-highlighted {
+      background-color: #ffd02e;
+      border-radius: 3px;
+      border: none;
+      padding: 4px 10px;
+      margin: 10px 0;
+    }
+
+    &.bx-soa-cart-total-line-total {}
+  }
+
+  .bx-soa-cart-total-line-total {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #f2f2f2;
+
+    .bx-soa-cart-t {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .bx-soa-cart-d,
+    .bx-soa-cart-d span {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+  }
+}
+
+.bx-soa-cart-t {
+  float: left;
+  font-weight: normal;
+  width: 40%;
+}
+
+.bx-soa-cart-d {
+  float: right;
+  text-align: right;
+  font-weight: normal;
+  width: 60%;
+}
+
+.bx-soa-cart-total-button-container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bx-price-old {
+  white-space: nowrap;
+  text-decoration: line-through;
+  line-height: 20px;
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.bx-soa-more {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.bx-soa-price-not-calc {
+  border-bottom: 1px dashed;
+  color: #f55450;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bx-soa-price-not-calc:active,
+.bx-soa-price-not-calc:hover{
+  border-color: transparent;
+  color: #a94442;
+}
+.bx-soa-price-free {
+  color: #257210;
+}

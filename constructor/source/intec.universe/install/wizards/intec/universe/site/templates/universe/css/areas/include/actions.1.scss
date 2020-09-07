@@ -1,0 +1,132 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include-actions-1 {
+  position: relative;
+
+  .#{$class}-part-background {
+    display: block;
+    position: absolute;
+    background: #f5f5f5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &.#{$class}-part-background-top {
+      bottom: 50%;
+    }
+
+    &.#{$class}-part-background-bottom {
+      top: 50%;
+    }
+  }
+
+  .#{$class}-part-picture {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .#{$class}-part-picture-wrapper {
+    display: block;
+    position: relative;
+    width: 64%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .#{$class}-part-text {
+    display: block;
+    position: relative;
+  }
+
+  .#{$class}-part-text-wrapper {}
+  .#{$class}-part-text-wrapper-2 {}
+
+  .#{$class}-part-text-block {
+    color: #000;
+    padding: 60px 45px 60px 40px;
+    margin: 75px 0;
+    background-color: #fff;
+    width: 47%;
+
+    -webkit-box-shadow: 0 4px 94px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 4px 94px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 4px 94px rgba(0, 0, 0, 0.11);
+  }
+
+  .#{$class}-part-text-header {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    overflow: hidden;
+  }
+
+  .#{$class}-part-text-content {
+    display: block;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  &.#{$class}-mod-reverted {
+    .#{$class}-part-picture-wrapper {
+      margin-left: 36%;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    .#{$class}-part-picture-wrapper {
+      width: auto;
+      margin-right: 50px;
+    }
+
+    .#{$class}-part-text-block {
+      width: 750px;
+    }
+
+    &.#{$class}-mod-reverted {
+      .#{$class}-part-picture-wrapper {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  @media all and (max-width: 850px) {
+    .#{$class}-part-picture-wrapper {
+      margin-right: 0;
+    }
+
+    .#{$class}-part-text-block {
+      width: auto;
+    }
+
+    &.#{$class}-mod-reverted {
+      .#{$class}-part-picture-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media all and (max-width: 650px) {
+    .#{$class}-part-text-block {
+      padding: 50px 25px 50px 35px;
+    }
+
+    .#{$class}-part-text-header {
+      font-size: 20px;
+    }
+
+    .#{$class}-part-text-content {
+      font-size: 14px;
+    }
+  }
+}

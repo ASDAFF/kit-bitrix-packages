@@ -1,0 +1,114 @@
+$class: 'intec-content';
+$width-minimal: 320;
+$width-maximal: 1240;
+$indents: 20;
+$columns-width: 260;
+$columns-indents-horizontal: 30;
+$columns-indents-vertical: 35;
+
+.#{$class}-wrap {
+  min-width: #{$width-minimal}px;
+}
+
+.#{$class} {
+  &,
+  & .#{$class}.#{$class}-primary {
+    max-width: #{$width-maximal + ($indents * 2)}px;
+    min-width: #{$width-minimal}px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+  }
+
+  & .#{$class}.#{$class}-primary {
+    min-width: 0;
+  }
+
+  &.#{$class}-visible,
+  & .#{$class}.#{$class}-primary.#{$class}-visible {
+    overflow: visible;
+  }
+
+  .#{$class}-responsive {
+    margin: 0 -#{$indents}px;
+
+    &.#{$class}-responsive-mobile {
+      margin: 0;
+    }
+  }
+
+  .#{$class}-wrapper,
+  & .#{$class}.#{$class}-primary .#{$class}-wrapper {
+    display: block;
+    margin-left: #{$indents}px;
+    margin-right: #{$indents}px;
+
+    &:after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+  }
+
+  .#{$class}-left {
+    display: block;
+    float: left;
+    width: #{$columns-width}px;
+  }
+
+  .#{$class}-right {
+    display: block;
+    float: none;
+    width: auto;
+    margin-left: #{$columns-width + $columns-indents-horizontal}px;
+  }
+
+  .#{$class}-right-wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  .#{$class} {
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    clear: none;
+    overflow: visible;
+
+    .#{$class}-wrapper {
+      margin: 0;
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+  
+  @media all and (max-width: 720px) {
+    .#{$class}-left {
+      display: none;
+
+      &.#{$class}-left-visible {
+        display: block;
+        width: auto;
+        float: none;
+        margin-bottom: #{$columns-indents-vertical}px;
+      }
+    }
+
+    .#{$class}-right {
+      margin-left: 0;
+    }
+
+    .#{$class}-responsive {
+      &.#{$class}-responsive-desktop {
+        margin: 0;
+      }
+
+      &.#{$class}-responsive-mobile {
+        margin: 0 -#{$indents}px;
+      }
+    }
+  }
+}

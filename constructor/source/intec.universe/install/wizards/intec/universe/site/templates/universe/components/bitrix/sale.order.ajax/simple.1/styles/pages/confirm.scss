@@ -1,0 +1,93 @@
+&.bx-soa-page-confirm {
+  .bx-soa-page-table {
+    margin-bottom: 40px;
+  }
+
+  .bx-soa-page-table-icon {
+    vertical-align: middle;
+
+    img {
+      padding-right: 20px;
+      max-width: 150px;
+      max-height: 150px;
+
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+  }
+
+  .bx-soa-page-table-content {
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  .bx-soa-page-block {
+    display: block;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    margin-bottom: 40px;
+  }
+
+  .bx-soa-page-block-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 10px 15px;
+  }
+
+  .bx-soa-page-block-content {
+    display: block;
+    padding: 5px 15px 15px 15px;
+  }
+
+  .bx-soa-page-payment-information {
+    display: block;
+    margin: -10px;
+    font-size: 0;
+  }
+
+  .bx-soa-page-payment-logotype,
+  .bx-soa-page-payment-name {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+  }
+
+  .bx-soa-page-payment-name {
+    font-size: 16px;
+  }
+
+  .bx-soa-page-payment-addition {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fbfbfb;
+
+    .sale-paysystem-wrapper {
+      border: none;
+      padding: 0;
+      color: #1d1d1d;
+    }
+  }
+
+  @media all and (max-width: 580px) {
+    .bx-soa-page-table-icon {
+      vertical-align: top;
+
+      img {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+
+    .bx-soa-page-table-content {
+      vertical-align: top;
+      font-size: 12px;
+    }
+
+    .bx-soa-page-block-title {
+      font-size: 14px;
+    }
+  }
+}

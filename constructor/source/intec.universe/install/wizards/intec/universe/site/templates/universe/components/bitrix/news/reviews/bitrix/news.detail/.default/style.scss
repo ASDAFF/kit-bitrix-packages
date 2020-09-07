@@ -1,0 +1,219 @@
+$namespace: 'bitrix';
+$component: 'news-detail';
+$template: 'default';
+$class: #{$component};
+
+@keyframes news-detail-default-animate-arrow {
+  from {
+    transform: initial;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: initial;
+  }
+}
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  font-weight: 400;
+
+  .#{$class}-item-wrapper {
+
+    &:nth-child(2n) {
+      background: #F9F9F9;
+    }
+
+  }
+
+  .#{$class}-title {
+    color: #313a4c;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .#{$class}-item-detail-text {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 16px;
+    color: #444444;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    max-width: 900px;
+  }
+
+  .#{$class}-preview {
+    background: #F9F9F9;
+  }
+  .#{$class}-preview-wrapper-3 {
+    padding: 70px 0;
+  }
+
+  .#{$class}-item-picture {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .#{$class}-description {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .#{$class}-person {
+    position: relative;
+  }
+
+  .#{$class}-person-name {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .#{$class}-person-position {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 10px;
+  }
+
+  .#{$class}-person-site-url {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .#{$class}-information {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .#{$class}-document-wrap {
+    position: relative;
+    width: 60%;
+    margin: 60px auto 0;
+  }
+
+  .#{$class}-document {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 7px 16px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+
+    &:hover {
+      .#{$class}-document-button {
+        opacity: 0.9;
+        animation-name: news-detail-default-animate-arrow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+
+  .#{$class}-document-button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -29px;
+    margin-top: -29px;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: opacity 350ms;
+    -moz-transition: opacity 350ms;
+    -ms-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+  }
+
+  .#{$class}-services-items,
+  .#{$class}-cases-items {
+    .widget.c-categories.c-categories-template-14 .widget-item-wrapper {
+      padding: 45px 00px 35px 0px;
+    }
+    .widget.c-categories.c-categories-template-14 .widget-item:hover {
+      box-shadow: none;
+    }
+  }
+
+  .#{$class}-services-title,
+  .#{$class}-cases-title {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .#{$class}-elements {
+    margin-top: 60px;
+  }
+
+  .#{$class} {
+    box-shadow: none;
+  }
+
+  .#{$class}-video {
+    margin-top: 60px;
+    overflow: hidden;
+  }
+
+  @media all and (max-width: 600px) {
+    .#{$class}-cases-wrapper {
+      margin-top: 30px;
+    }
+    .#{$class}-services-item,
+    .#{$class}-cases-item {
+      padding: 20px;
+    }
+    .#{$class}-services-item-picture,
+    .#{$class}-cases-item-picture {
+      display: none;
+    }
+    .#{$class}-services-item-name,
+    .#{$class}-cases-item-name {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}

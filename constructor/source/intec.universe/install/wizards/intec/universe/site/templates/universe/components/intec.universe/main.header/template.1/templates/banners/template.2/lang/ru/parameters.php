@@ -1,0 +1,3 @@
+<?php
+
+$MESS['C_HEADER_TEMP1_BANNERS_TEMP2_BANNER'] = 'Баннер.';

@@ -1,0 +1,126 @@
+$component: 'rates';
+$template: 'template-4';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items,
+  .#{$item} {
+    position: relative;
+  }
+  .#{$item} {
+    margin-top: -1px;
+    margin-left: -1px;
+    z-index: 1;
+    @include transition(box-shadow, 0.4s);
+
+    &:hover {
+      -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+    }
+  }
+  .#{$item}-wrapper {
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    background-color: #FFF;
+    padding-top: 64px;
+    padding-bottom: 30px;
+  }
+
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+  }
+  .#{$item}-delimiter {
+    height: 1px;
+    max-width: 234px;
+    margin: 35px auto;
+    background-color: #D1D1D1;
+  }
+  .#{$item}-description {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #444444;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .#{$item}-price {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+    padding: 80px 35px 35px 35px;
+  }
+  .widget-price-list-wrap {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .widget-price-list {
+    text-decoration: none;
+
+    &:hover .widget-price-list-icon {
+      box-shadow: none;
+    }
+  }
+  .widget-price-list-icon {
+    padding: 11px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    text-decoration: none;
+    @include transition(box-shadow, 0.4s);
+
+    -webkit-box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  .widget-price-list-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #000000;
+    @include transition(all, 0.4s);
+  }
+
+  [data-price='true'] {
+    .#{$item}-wrapper {
+      padding-bottom: 135px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .#{$item}-name,
+    .#{$item}-description,
+    .#{$item}-price {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

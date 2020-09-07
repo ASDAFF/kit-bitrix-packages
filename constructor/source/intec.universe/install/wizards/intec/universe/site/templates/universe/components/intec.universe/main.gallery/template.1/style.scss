@@ -1,0 +1,79 @@
+$component: 'gallery';
+$template: 'template-1';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {}
+
+  .widget-item {
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .widget-item-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    img {
+      display: none;
+    }
+  }
+
+  .widget-item-button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -29px;
+    margin-top: -29px;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: opacity 350ms;
+    -moz-transition: opacity 350ms;
+    -ms-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+  }
+
+  .widget-footer {}
+
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+
+  .widget-item:hover {
+    .widget-item-button {
+      opacity: 0.9;
+    }
+  }
+}

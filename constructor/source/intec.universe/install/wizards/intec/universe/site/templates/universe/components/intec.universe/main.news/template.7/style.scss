@@ -1,0 +1,95 @@
+$component: 'news';
+$template: 'template-7';
+$item: 'widget-item';
+$tag: #{$item}-tags-item;
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin user-select ($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item} {
+    &:first-child {
+      .#{$item}-wrapper {
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+    &:last-child {
+      .#{$item}-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .#{$item}-wrapper {
+    padding: 25px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .#{$item}-name {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-tags {
+    margin-top: 10px;
+  }
+  .#{$tag}-wrapper {
+    display: block;
+    margin: 0;
+
+    input {
+      display: none;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      padding: 3px;
+      white-space: nowrap;
+      @include border-radius(2px);
+      @include user-select(none);
+      @include transition(#{color, background-color}, 0.4s);
+    }
+    input:enabled + span {
+      cursor: pointer;
+    }
+    input:disabled + span {
+      cursor: default;
+    }
+    input:checked + span,
+    input:enabled + span:hover {
+      color: #FFF;
+    }
+  }
+  .#{$item}-date {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+  [data-role='form'] {
+    display: none;
+  }
+}

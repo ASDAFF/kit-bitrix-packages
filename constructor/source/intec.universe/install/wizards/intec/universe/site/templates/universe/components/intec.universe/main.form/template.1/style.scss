@@ -1,0 +1,198 @@
+$component: 'form';
+$template: 'template-1';
+$form: 'widget-form';
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin user-select ($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$form}-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .#{$form}-name {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    max-width: 600px;
+  }
+  .#{$form}-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 25px;
+    max-width: 650px;
+  }
+  .#{$form}-buttons-wrap {
+    font-size: 0;
+    text-align: center;
+    margin: -10px;
+  }
+  .#{$form}-button {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFF;
+    padding: 20px 60px;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    @include border-radius(30px);
+    @include user-select(none);
+    @include transition(#{background-color, box-shadow}, 0.4s);
+
+    &:hover {
+      -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+  [data-theme='dark'] {
+    .#{$form}-text {
+      color: #000;
+    }
+  }
+  [data-theme='light'] {
+    .#{$form}-text {
+      color: #FFF;
+    }
+  }
+  [data-view='left'] {
+    .#{$form}-text {
+      padding-right: 30px;
+    }
+  }
+  [data-view='right'] {
+    .#{$form}-content {
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+    .#{$form}-text {
+      padding-left: 30px;
+    }
+  }
+  [data-view='vertical'] {
+    &[data-align-horizontal='left'] {
+      .#{$form}-text,
+      .#{$form}-buttons-wrap {
+        text-align: left;
+      }
+    }
+    &[data-align-horizontal='right'] {
+      .#{$form}-text,
+      .#{$form}-buttons-wrap {
+        text-align: right;
+      }
+      .#{$form}-name,
+      .#{$form}-description {
+        margin-left: auto;
+      }
+    }
+    &[data-align-horizontal='center'] {
+      .#{$form}-text {
+        text-align: center;
+      }
+      .#{$form}-name,
+      .#{$form}-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .#{$form}-buttons {
+      margin-top: 50px;
+    }
+  }
+  [data-view='left'],
+  [data-view='right'] {
+    .#{$form}-buttons {
+      min-width: 350px;
+      max-width: 50%;
+    }
+  }
+  
+  @media all and (max-width: 1024px) {
+    [data-view] {
+      .#{$form}-buttons {
+      margin-top: 30px;
+    }
+    }
+    [data-view='left'],
+    [data-view='right'] {
+      .#{$form}-text {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .#{$form}-name,
+      .#{$form}-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .#{$form}-buttons {
+        min-width: auto;
+        max-width: none;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$form}-name {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .#{$form}-description {
+      margin-top: 15px;
+    }
+    .#{$form}-button {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 15px 35px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$form}-name {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .#{$form}-description {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .#{$form}-button {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 15px 25px;
+    }
+    [data-view='vertical'] {
+      &[data-align-horizontal='left'],
+      &[data-align-horizontal='right'] {
+        .#{$form}-text,
+        .#{$form}-buttons-wrap {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

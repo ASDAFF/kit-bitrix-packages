@@ -1,0 +1,133 @@
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 {
+    width: 550px;
+    padding: 20px 80px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-field {
+    margin-bottom: 30px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-caption {
+	font-size: 16px;
+	color: #222222;
+	margin: 10px 0;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-caption {
+    font-size: 16px;
+    color: #222222;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    padding: 2px 0;
+    font-size: 14px;
+    line-height: 1.4;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-input.completed {
+	padding: 18px 0;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-input:focus {
+	outline: 0;
+	border-color: #888888;
+	padding: 18px 0;
+}
+
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-button-block {
+    margin-top: 45px;
+}
+
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-forgot-psw {
+    color: #888888;
+    font-size: 14px;
+}
+
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-remember-checkbox {
+	margin: 0;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-remember-checkbox input {
+	display: none;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-remember-selector {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #dddddd;
+	border-radius: 3px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	margin-right: 5px;
+	text-align: center;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-remember-checkbox input:checked + .system-auth-authorize-remember-selector:after {
+	content: "\f00c";
+	display: block;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: 'Font Awesome\ 5 Pro';
+	font-weight: 900;
+	color: #ddd;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-remember-text {
+    color: #888888;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: normal;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .system-auth-authorize-login-button {
+	padding: 16px 48px !important;
+	font-size: 16px !important;
+	line-height: 1 !important;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .login-page_socserv_form {
+	margin-top: 70px;
+}
+.ns-bitrix.c-system-auth-authorize.c-system-auth-authorize-template-1 .login-page_socserv_form_title {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #262626;
+}
+
+/*
+.login_page .social {
+	padding-bottom: 8px;
+	margin-top: 7px;
+	text-align: left;
+}
+
+.login_page .social ul{
+	margin: 0;
+	padding:0;
+}
+.login_page .social ul li {display: inline-block;}
+.login_page .social ul li a span {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+}
+.login_page .social ul li a span  			{background: url("images/gui.png") no-repeat;}
+.login_page .social ul li a .openid			{background-position:  0    -32px;}
+.login_page .social ul li a .yandex			{background-position:  0    -64px;}
+.login_page .social ul li a .livejournal	{background-position:  0   -128px;}
+.login_page .social ul li a .liveinternet	{background-position:  0   -160px;}
+.login_page .social ul li a .blogger		{background-position:  0   -192px;}
+.login_page .social ul li a .openid-mail-ru	{background-position:  0   -224px;}
+.login_page .social ul li a .odnoklassniki	{background-position:-32px    0;  }
+.login_page .social ul li a .mymailru		{background-position:-32px  -32px;}
+.login_page .social ul li a .facebook		{background-position:-32px  -64px;}
+.login_page .social ul li a .google			{background-position:-32px -128px;}
+.login_page .social ul li a .liveid			{background-position:-32px -160px;}
+.login_page .social ul li a .twitter		{background-position:-32px -192px;}
+.login_page .social ul li a .vkontakte		{background-position:-32px -224px;}
+*/

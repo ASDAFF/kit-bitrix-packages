@@ -1,0 +1,120 @@
+.widget.c-rates.c-rates-template-3 .widget-overhead {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2.8px;
+  color: #444444;
+  margin-bottom: 10px;
+}
+.widget.c-rates.c-rates-template-3 .widget-items-wrap {
+  overflow-y: hidden;
+}
+.widget.c-rates.c-rates-template-3 .widget-items {
+  display: table;
+  min-width: 100%;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-head {
+  font-size: 20px;
+  font-weight: 500;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-head-property-name {
+  display: table-cell;
+  padding: 25px;
+  width: 40%;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-head-property {
+  text-align: center;
+  display: table-cell;
+  padding: 25px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.widget.c-rates.c-rates-template-3 .widget-item {
+  background: rgba(206, 206, 206, 0.1);
+  display: table-row;
+}
+.widget.c-rates.c-rates-template-3 .widget-item:nth-child(2n) {
+  background: transparent;
+}
+.widget.c-rates.c-rates-template-3 .icon-available {
+  display: inline-block;
+  background: url("images/available.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.widget.c-rates.c-rates-template-3 .icon-unavailable {
+  display: inline-block;
+  background: url("images/unavailable.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-property {
+  font-size: 16px;
+  line-height: 1.45;
+  color: #444444;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  display: table-cell;
+  padding: 25px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-property-name {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #444444;
+  display: table-cell;
+  padding: 25px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-head-mobile {
+  display: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-price .widget-item-property-name {
+  font-size: 22px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-price .widget-item-property {
+  font-size: 22px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-button {
+  padding: 16px;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-button-wrap .widget-item-property-name {
+  padding: 0;
+}
+.widget.c-rates.c-rates-template-3 .widget-item-button-wrap .widget-item-property {
+  padding: 0;
+}
+@media all and (max-width: 768px) {
+  .widget.c-rates.c-rates-template-3 .widget-item-head-property-name,
+.widget.c-rates.c-rates-template-3 .widget-item-head-property,
+.widget.c-rates.c-rates-template-3 .widget-item-property-name,
+.widget.c-rates.c-rates-template-3 .widget-item-property {
+    padding: 10px;
+  }
+  .widget.c-rates.c-rates-template-3 .widget-item-head {
+    font-size: 14px;
+  }
+  .widget.c-rates.c-rates-template-3 .widget-item-property-name,
+.widget.c-rates.c-rates-template-3 .widget-item-property {
+    font-size: 12px;
+  }
+  .widget.c-rates.c-rates-template-3 .widget-item-price .widget-item-property-name {
+    font-size: 14px;
+  }
+  .widget.c-rates.c-rates-template-3 .widget-item-price .widget-item-property {
+    font-size: 14px;
+  }
+  .widget.c-rates.c-rates-template-3 .icon-available {
+    width: 24px;
+    height: 24px;
+  }
+  .widget.c-rates.c-rates-template-3 .icon-unavailable {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+.intec-search-page {
+    width: 100%;
+
+}
+
+.search-input-wrap {
+    width: 100%;
+    font-size: 0;
+}
+
+.intec-search-page .search-form {
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.intec-search-page .search-form-input {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.intec-search-page .search-form-button {
+    width: auto;
+}
+
+.intec-search-page .search-query {
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    color: #959595;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 11px 20px;
+    box-sizing: border-box;
+}.intec-search-page .search-query:focus {
+     outline: none;
+ }
+
+.intec-search-page .search-button {
+    display: inline-block;
+    width: auto;
+    border: none;
+    text-align: center;
+    padding: 12px 30px;
+    line-height: 1;
+}
+
+.intec-search-page .search-result {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+}
+
+.intec-search-page .search-advanced {
+    padding: 0 5px;
+    margin-bottom: 25px;
+}
+
+.intec-search-page .search-item {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.intec-search-page .search-item-img {
+    display: block;
+    float: left;
+    margin: 0 35px 15px 0;
+    margin-bottom: 0;
+}
+
+.intec-search-page .search-item-data {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #525458;
+}
+
+.intec-search-page .search-item-name-h4 {
+    display: block;
+    margin: 0 0 22px 0
+}
+
+.intec-search-page .search-item-name {
+    color: #116afc;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.intec-search-page .search-preview {
+    font-size: 14px;
+    color: #525458;
+}

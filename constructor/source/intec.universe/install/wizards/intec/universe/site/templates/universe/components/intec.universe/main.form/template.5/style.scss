@@ -1,0 +1,67 @@
+$component: 'form';
+$template: 'template-5';
+$item: 'widget';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  background: #fbfbfb;
+  color: #000;
+
+  .#{$item}-text {
+    padding: 20px;
+  }
+
+  .#{$item}-title {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: inherit;
+
+    @media all and (max-width: 800px) {
+      text-align: center;
+    }
+  }
+
+  .#{$item}-description {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: inherit;
+
+    @media all and (max-width: 800px) {
+      text-align: center;
+    }
+  }
+
+  .#{$item}-image {
+    img {
+      max-width: 280px;
+      max-height: 280px;
+    }
+
+    @media all and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .#{$item}-button-wrap {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .#{$item}-button {
+
+    @media all and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    padding: 30px 0;
+  }
+}

@@ -1,0 +1,61 @@
+$class: 'intec-ui' !default;
+$indents: () !default;
+
+@each $indent in $indents {
+  $indent-name: $indent;
+  $indent-value: $indent;
+
+  @if ($indent-name == 0) {
+    $indent-name: 'none';
+  } @else {
+    $indent-value: #{$indent-value}px;
+  }
+
+  &-p-#{$indent-name},
+  &-p-t-#{$indent-name},
+  &-p-v-#{$indent-name} {
+    padding-top: #{$indent-value} !important;
+  }
+
+  &-p-#{$indent-name},
+  &-p-b-#{$indent-name},
+  &-p-v-#{$indent-name} {
+    padding-bottom: #{$indent-value} !important;
+  }
+
+  &-p-#{$indent-name},
+  &-p-l-#{$indent-name},
+  &-p-h-#{$indent-name} {
+    padding-left: #{$indent-value} !important;
+  }
+
+  &-p-#{$indent-name},
+  &-p-r-#{$indent-name},
+  &-p-h-#{$indent-name} {
+    padding-right: #{$indent-value} !important;
+  }
+
+  &-m-#{$indent-name},
+  &-m-t-#{$indent-name},
+  &-m-v-#{$indent-name} {
+    margin-top: #{$indent-value} !important;
+  }
+
+  &-m-#{$indent-name},
+  &-m-b-#{$indent-name},
+  &-m-v-#{$indent-name} {
+    margin-bottom: #{$indent-value} !important;
+  }
+
+  &-m-#{$indent-name},
+  &-m-l-#{$indent-name},
+  &-m-h-#{$indent-name} {
+    margin-left: #{$indent-value} !important;
+  }
+
+  &-m-#{$indent-name},
+  &-m-r-#{$indent-name},
+  &-m-h-#{$indent-name} {
+    margin-right: #{$indent-value} !important;
+  }
+}

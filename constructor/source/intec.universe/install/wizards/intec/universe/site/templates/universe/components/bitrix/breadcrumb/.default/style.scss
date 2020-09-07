@@ -1,0 +1,89 @@
+$namespace: 'bitrix';
+$component: 'breadcrumb';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+
+  %#{$class}-item {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .#{$class}-item {
+    @extend %#{$class}-item;
+
+    position: relative;
+    color: #116afc;
+  }
+
+  .#{$class}-separator {
+    @extend %#{$class}-item;
+
+    margin: 0 10px;
+    color: #9a9a9a;
+    text-decoration: none;
+  }
+
+  .#{$class}-link {
+    position: relative;
+    color: #9a9a9a;
+    text-decoration: none;
+    -webkit-transition: 350ms color;
+    -moz-transition: 350ms color;
+    -ms-transition: 350ms color;
+    -o-transition: 350ms color;
+    transition: 350ms color;
+
+    &:hover {
+      color: #116afc;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.5;
+      margin-left: 3px;
+    }
+  }
+
+  .#{$class}-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    z-index: 50;
+    opacity: 0;
+  }
+
+  .#{$class}-menu-wrapper {
+    display: block;
+    border: 1px solid #f8f8fa;
+    background: #fff;
+    padding: 10px;
+    min-width: 200px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .#{$class}-menu-item {
+    display: block;
+    padding: 10px;
+    color: #1d1d1d;
+    text-decoration: none;
+    -webkit-transition: 350ms color;
+    -moz-transition: 350ms color;
+    -ms-transition: 350ms color;
+    -o-transition: 350ms color;
+    transition: 350ms color;
+
+    &:hover {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}

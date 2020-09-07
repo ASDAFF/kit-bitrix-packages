@@ -1,0 +1,19 @@
+.ns-bitrix.c-main-profile.c-main-profile-personal {
+  display: block;
+}
+.ns-bitrix.c-main-profile.c-main-profile-personal .main-profile-block {
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.ns-bitrix.c-main-profile.c-main-profile-personal .main-profile-header {
+  text-align: left;
+  font-size: 1.28571429em;
+  line-height: 1.5;
+  margin: 0 0 35px 0;
+}
+.ns-bitrix.c-main-profile.c-main-profile-personal .main-profile-form-buttons {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

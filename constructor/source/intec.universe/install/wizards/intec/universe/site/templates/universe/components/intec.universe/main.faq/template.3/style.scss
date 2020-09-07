@@ -1,0 +1,123 @@
+$component: 'faq';
+$template: 'template-3';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin translateY ($value) {
+  -webkit-transform: translateY($value);
+  -moz-transform: translateY($value);
+  -ms-transform: translateY($value);
+  -o-transform: translateY($value);
+  transform: translateY($value);
+}
+@mixin rotate ($value) {
+  -webkit-transform: rotate($value);
+  -moz-transform: rotate($value);
+  -ms-transform: rotate($value);
+  -o-transform: rotate($value);
+  transform: rotate($value);
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    border-top: 1px solid #EEEEEE;
+    padding: 35px;
+  }
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-right: 30px;
+    cursor: pointer;
+    @include transition(#{transform, color}, #{0.2s, 0.4s});
+
+    &:active {
+      @include translateY(3px);
+    }
+  }
+  .#{$item}-icon {
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    @include transition(transform, 0.2s);
+
+    &:active {
+      @include translateY(3px);
+    }
+  }
+  .#{$item}-description-wrap {
+    overflow: hidden;
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    line-height: 23px;
+    color: #444444;
+    padding-top: 44px;
+  }
+  .#{$item} {
+    &[data-expanded='true'] {
+      .#{$item}-icon {
+        @include rotate(-180deg);
+      }
+    }
+    &[data-expanded='false'] {
+      .#{$item}-icon {
+        @include rotate(0);
+      }
+    }
+  }
+  [data-role='container'] {
+    @include transition(height, 0.3s);
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -ms-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+
+    &[data-expanded='false'] {
+      [data-action='hide'] {
+        opacity: 0;
+      }
+    }
+    &[data-expanded='true'] {
+      [data-action='hide'] {
+        opacity: 1;
+      }
+    }
+  }
+  [data-action='hide'] {
+    @include transition(opacity, 0.3s);
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -ms-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

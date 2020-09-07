@@ -1,0 +1,79 @@
+$component: 'form';
+$template: 'template-3';
+$class: #{$component};
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-wrapper {
+    background: #0056dd;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d3ff', endColorstr='#0056dd',GradientType=1 );
+    border-radius: 100px;
+    position: relative;
+    padding: 35px;
+    margin-top: 80px;
+
+    @media all and (max-width: 1050px) {
+      border-radius: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .#{$class}-image {
+    width: 250px;
+    height: 215px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+
+    @media all and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .#{$class}-content {
+    padding-left: 290px;
+
+    @media all and (max-width: 900px) {
+      padding-left: 0;
+    }
+  }
+  .#{$class}-title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #ffffff;
+  }
+  .#{$class}-title:before {
+    content: '?';
+    position: absolute;
+    display: block;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -100px;
+    font-size: 194px;
+    line-height: 1;
+    opacity: 0.1;
+    text-align: center;
+
+    @media all and (max-width: 1050px) {
+      display: none;
+    }
+  }
+  .#{$class}-description {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #ffffff;
+  }
+  .#{$class}-button {
+    color: #fff;
+    padding: 13px 27px;
+    border-radius: 40px;
+
+    @media all and (max-width: 400px) {
+      text-align: center;
+    }
+  }
+
+}

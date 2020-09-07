@@ -1,0 +1,58 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include-quote-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #444;
+
+  .#{$class}-part-wrapper {}
+
+  .#{$class}-part-wrapper-2 {
+    padding: 90px 190px 150px 190px;
+  }
+
+  .#{$class}-part-title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .#{$class}-part-text {
+    display: block;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .#{$class}-part-author {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+  }
+
+  @media all and (max-width: 1000px) {
+    .#{$class}-part-wrapper-2 {
+      padding: 60px 0;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    font-size: 20px;
+    line-height: 1.4;
+
+    .#{$class}-part-wrapper-2 {
+      padding: 40px 0;
+    }
+
+    .#{$class}-part-title {
+      font-size: 14px;
+    }
+  }
+}

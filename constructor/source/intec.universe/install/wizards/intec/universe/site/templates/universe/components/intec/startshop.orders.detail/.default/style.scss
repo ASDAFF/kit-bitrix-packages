@@ -1,0 +1,343 @@
+$namespace: 'intec';
+$component: 'startshop-orders-detail';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-header {
+    margin-bottom: 30px;
+
+    &-wrapper {
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    &-link {
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+
+      i {
+        margin-right: 10px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .#{$class}-section {
+    &-header {
+      margin-bottom: 20px;
+
+      &-wrapper {
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: bold;
+        color: #000000;
+      }
+    }
+
+    &-wrapper {
+      min-height: auto;
+      padding: 30px;
+      border: 1px solid #E8E8E8;
+      border-radius: 5px;
+      background: #FFFFFF;
+    }
+
+    &-field {
+      margin-bottom: 20px;
+
+      &-title {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #666666;
+      }
+
+      &-value {
+        font-size: 16px;
+        color: #000000;
+
+        &.status-wrapper {
+          padding: 10px 15px;
+          background-color: #EFFCF0;
+          border: 1px solid #26B445;
+          border-radius: 5px;
+          font-size: 14px;
+          color: #28762E;
+        }
+      }
+    }
+  }
+
+  .#{$class}-section.payment {
+    .#{$class}-section {
+      &-title {
+        max-width: 180px;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      &-value {
+        &-icon {
+          position: relative;
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+
+          &:before {
+            display: block;
+            position: absolute;
+            font-size: 9px;
+            color: #FFFFFF;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+          }
+        }
+
+        &-wrapper {
+          margin-left: 7px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #000000;
+        }
+      }
+
+      &-button {
+        margin-top: 20px;
+        text-align: center;
+
+        &-wrapper {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+
+  .#{$class}-section.delivery {
+    .#{$class}-section {
+      &-wrapper {
+        height: 100%;
+      }
+
+      &-title {
+        max-width: 180px;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      &-value {
+        &-icon {
+          position: relative;
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+
+          &:before {
+            display: block;
+            position: absolute;
+            font-size: 9px;
+            color: #FFFFFF;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+          }
+        }
+
+        &-wrapper {
+          margin-left: 7px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .#{$class}-section.products {
+    .#{$class}-section-wrapper {
+      padding: 0;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    tr:not(:only-child):not(:last-child) {
+      border-bottom: 1px solid #E8E8E8;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .#{$class}-product {
+      &-cell-name {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #666666;
+      }
+
+      &-cell-value {
+        font-size: 14px;
+        color: #000000;
+      }
+
+      &-image {
+        &-wrapper {
+          display: inline-block;
+          width: 90px;
+          height: 90px;
+          vertical-align: middle;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      &-title {
+        .#{$class}-product-cell-name {
+          max-width: 300px;
+        }
+        .#{$class}-product-cell-value {
+          display: block;
+          max-width: 300px;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+
+      &-offers {
+        .#{$class}-property:not(:last-child) {
+          margin-bottom: 5px;
+        }
+
+        .property-name {
+          display: inline-block;
+        }
+
+        .property-value {
+          display: inline-block;
+          margin-left: 7px;
+        }
+
+        .#{$class}-property.picture {
+          .property-value {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            background: #f1f1f1;
+            overflow: hidden;
+
+            &-wrapper {
+              position: absolute;
+              top: 4px;
+              left: 4px;
+              bottom: 4px;
+              right: 4px;
+              overflow: hidden;
+              border-radius: 50%;
+
+              & img {
+                vertical-align: initial;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &-price, &-quantity, &-sum {
+        .#{$class}-product-cell-value {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1200px) {
+    .#{$class}-section.products {
+      .#{$class}-section-wrapper {
+        border: none;
+      }
+
+      tr {
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        padding: 10px 0;
+
+        &:not(:only-child) {
+          margin-bottom: 20px;
+        }
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      tr, td {
+        display: block;
+        text-align: center;
+      }
+
+      .#{$class}-product {
+        &-cell-name {
+          display: inline-block;
+          margin-right: 5px;
+        }
+
+        &-cell-value {
+          display: inline-block;
+        }
+
+        &-title {
+          .#{$class}-product-cell-name {
+            display: block;
+            margin: 0;
+            max-width: initial;
+          }
+
+          .#{$class}-product-cell-value {
+            display: inline-block;
+          }
+        }
+
+        &-offers {
+          .property-name {
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .#{$class}-header-wrapper {
+      font-size: 20px;
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .#{$class}-section-field-value.status-wrapper {
+      display: block;
+    }
+
+    .#{$class}-section.delivery, .#{$class}-section.payment {
+      .#{$class}-section-title {
+        max-width: initial;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

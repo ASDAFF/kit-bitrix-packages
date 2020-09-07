@@ -1,0 +1,97 @@
+$component: 'form';
+$template: 'template-4';
+$class: 'widget';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-wrapper {}
+  .#{$class}-wrapper-2 {}
+
+  .#{$class}-wrapper-3 {
+    background: #fbfbfb;
+    border-radius: 10px;
+    padding: 10px 40px;
+
+    @media all and (max-width: 650px) {
+      padding: 40px;
+    }
+  }
+
+  .#{$class}-title {
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #222222;
+
+    @media all and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+
+  .#{$class}-description {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #8e949d;
+
+    @media all and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+
+  .#{$class}-image {
+    img {
+      max-width: 160px;
+      max-height: 160px;
+    }
+  }
+
+  .#{$class}-consultant-name {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #222222;
+  }
+
+  .#{$class}-consultant-post {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #8e949d;
+    margin-bottom: 10px;
+  }
+
+  .#{$class}-buttons {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #8e949d;
+  }
+
+  .#{$class}-button {
+    font-size: 13px;
+    padding: 11px 22px;
+    border-radius: 50px;
+
+    @media all and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .#{$class}-button-or {
+    @media all and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+}

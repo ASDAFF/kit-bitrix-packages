@@ -1,0 +1,204 @@
+.ns-intec-regionality.c-regions-select.c-regions-select-default {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region {
+  display: block;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region:hover {
+  color: #868686;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-region-icon {
+  font-size: 0.8em;
+  line-height: 1;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-dialog {
+  display: none;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question {
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  top: 60px;
+  left: 0;
+  right: 0;
+  padding: 0px;
+  z-index: 10;
+  width: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666666;
+  margin: 25px 20px;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 25px 20px;
+  margin-bottom: 35px;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-buttons {
+  font-size: 0;
+  border-top: 1px solid #DCDCDC;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-button {
+  display: inline-block;
+  width: 50%;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 16px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  margin-top: -1px;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+  -webkit-transition-property: background-color, color;
+  -moz-transition-property: background-color, color;
+  -ms-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-button[data-role="question.yes"] {
+  color: #fff;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-button[data-role="question.no"]:hover {
+  background: #f5f5f5;
+}
+.ns-intec-regionality.c-regions-select.c-regions-select-default .regions-select-question-close {
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+
+.regions-select-popup.regions-select-popup-default {
+  color: #2d2d2d;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-window {
+  display: block;
+  position: relative;
+  color: #2d2d2d;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  background-color: #fff;
+  min-width: 400px;
+  max-width: 500px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-window-content {
+  display: block;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-search {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-auto {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 14px 20px 14px;
+  cursor: pointer;
+  border-bottom: 1px dashed #2d2d2d;
+  -webkit-transition-property: color, border-color;
+  -moz-transition-property: color, border-color;
+  -ms-transition-property: color, border-color;
+  -o-transition-property: color, border-color;
+  transition-property: color, border-color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-auto:hover {
+  color: #0065ff;
+  border-color: #0065ff;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-regions {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 175px;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region {
+  display: block;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region .regions-select-dialog-region-selector {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.regions-select-popup.regions-select-popup-default .regions-select-dialog-region .regions-select-dialog-region-selector:hover {
+  background-color: #f7f7f7;
+  color: #0065ff;
+}
+@media all and (max-width: 500px) {
+  .regions-select-popup.regions-select-popup-default .regions-select-dialog-window {
+    min-width: 260px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

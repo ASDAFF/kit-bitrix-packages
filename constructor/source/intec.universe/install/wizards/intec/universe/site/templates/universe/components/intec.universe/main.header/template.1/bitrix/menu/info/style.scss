@@ -1,0 +1,53 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-menu.widget-menu-info {
+    display: block;
+    position: relative;
+
+    .widget-menu-items {
+      height: 100%;
+    }
+
+    .widget-menu-item {
+      color: #a7a7a7;
+
+      -webkit-transition: 350ms;
+      -moz-transition: 350ms;
+      -ms-transition: 350ms;
+      -o-transition: 350ms;
+      transition: 350ms;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -ms-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+
+      &-text {
+        display: block;
+        color: inherit;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration: none;
+
+        -webkit-transition: 350ms;
+        -moz-transition: 350ms;
+        -ms-transition: 350ms;
+        -o-transition: 350ms;
+        transition: 350ms;
+        -webkit-transition-property: color;
+        -moz-transition-property: color;
+        -ms-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+      }
+
+      &:hover,
+      &.widget-menu-item-text-active {
+        color: #2d2d2d;
+      }
+    }
+  }
+}

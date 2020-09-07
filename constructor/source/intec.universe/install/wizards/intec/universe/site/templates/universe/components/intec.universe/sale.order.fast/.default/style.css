@@ -1,0 +1,138 @@
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default {
+  display: block;
+  min-width: 400px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #1d1d1d;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-part.sale-order-fast-part-product {
+  border-right: 1px solid #e8e8e8;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product {
+  display: block;
+  width: 280px;
+  text-align: center;
+  margin-right: 40px;
+  padding: 50px 0;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-name {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-quantity {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #808080;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-picture {
+  display: block;
+  height: 280px;
+  margin-bottom: 15px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-price {
+  display: block;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-price-discount {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-product-price-base {
+  color: #B0B0B0;
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-form .sale-order-fast-error,
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-form .sale-order-fast-message {
+  padding-top: 30px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-title {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-error {
+  display: block;
+  color: #ff0000;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-message {
+  display: block;
+  font-size: 16px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-fields {
+  display: block;
+  margin: -10px 0;
+  padding-top: 30px;
+  min-height: 20px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field {
+  display: block;
+  padding: 10px 0;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field[data-error=true] input[type=text] {
+  border-color: #ff0000;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field textarea {
+  resize: none;
+  height: 120px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field-name {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field-error {
+  display: block;
+  font-size: 10px;
+  color: #ff0000;
+  margin-bottom: 5px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-field-required {
+  font-size: 12px;
+  color: #ff0000;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-footer {
+  display: block;
+  padding-top: 50px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-footer-message {
+  display: block;
+  color: #808080;
+  font-size: 13px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-footer-consent {
+  margin-bottom: 10px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default[data-product=true] {
+  min-width: 800px;
+}
+.ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default[data-product=true] .sale-order-fast-form {
+  margin-left: 40px;
+}
+@media all and (max-width: 1000px) {
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default[data-product=true] {
+    min-width: 480px;
+  }
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default[data-product=true] .sale-order-fast-form {
+    margin-left: 0;
+  }
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-part.sale-order-fast-part-product {
+    display: none;
+  }
+}
+@media all and (max-width: 550px) {
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default {
+    min-width: 240px !important;
+  }
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-title {
+    font-size: 22px;
+  }
+  .ns-intec-universe.c-sale-order-fast.c-sale-order-fast-default .sale-order-fast-footer-message {
+    padding-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

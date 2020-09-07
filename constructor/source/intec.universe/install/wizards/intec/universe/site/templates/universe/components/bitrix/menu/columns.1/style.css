@@ -1,0 +1,61 @@
+.ns-bitrix.c-menu.c-menu-columns-1 {
+  display: block;
+  text-align: left;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-header {
+  display: block;
+  color: #0065ff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.3;
+  overflow: hidden;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-header-link {
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-items {
+  display: block;
+  margin: -4px 0;
+  padding-top: 24px;
+  overflow: hidden;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-item {
+  display: block;
+  padding: 4px 0;
+  color: #777e89;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-item[data-selected=true] .menu-column-item-link {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-item-link {
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+}
+.ns-bitrix.c-menu.c-menu-columns-1 .menu-column-item-link:hover {
+  color: #0065ff;
+}
+@media all and (max-width: 550px) {
+  .ns-bitrix.c-menu.c-menu-columns-1 .menu-column-header, .ns-bitrix.c-menu.c-menu-columns-1 .menu-column-item {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

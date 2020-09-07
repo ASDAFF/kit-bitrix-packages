@@ -1,0 +1,69 @@
+.faq {
+    display: block;
+}
+.faq .faq-section {
+    display: block;
+    margin-top: 35px;
+    border: 1px solid #e8e8e8;
+}
+.faq .faq-section .faq-delimiter {
+    display: block;
+    height: 1px;
+    background: #e8e8e8;
+    overflow: hidden;
+}
+.faq .faq-section .faq-item {
+    display: block;
+    padding: 25px 35px;
+}
+.faq .faq-section .faq-item .faq-item-wrapper {
+    display: block;
+}
+.faq .faq-section .faq-item .faq-item-name {
+    display: block;
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+}
+.faq .faq-section .faq-item .faq-item-name .faq-item-name-text {
+    color: #232121;
+    margin-right: 70px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.faq .faq-section .faq-item .faq-item-name .faq-item-name-indicators {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+.faq .faq-section .faq-item .faq-item-name .faq-item-name-indicators .faq-item-name-indicator {
+    vertical-align: middle;
+    font-size: 14px;
+}
+.faq .faq-section .faq-item .faq-item-name .faq-item-name-indicators .faq-item-name-indicator.faq-item-name-indicator-active {
+    display: none;
+}
+.faq .faq-section .faq-item.active .faq-item-name .faq-item-name-indicators .faq-item-name-indicator.faq-item-name-indicator-active {
+    display: inline-block;
+}
+.faq .faq-section .faq-item.active .faq-item-name .faq-item-name-indicators .faq-item-name-indicator.faq-item-name-indicator-inactive {
+    display: none;
+}
+.faq .faq-section .faq-item .faq-item-description {
+    display: none;
+    padding-top: 25px;
+    overflow: hidden;
+}
+.faq .faq-section .faq-item .faq-item-description .faq-item-description-wrapper {
+    display: block;
+    color: #888888;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}

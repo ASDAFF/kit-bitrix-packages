@@ -1,0 +1,67 @@
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-wrapper,
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-text {
+  display: block;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-wrapper {
+  margin: 0;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-text {
+  font-size: 0;
+  font-weight: 400;
+  padding: 5px 10px;
+  background-color: #dddddd;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-name,
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item-count {
+  font-size: 13px;
+  line-height: 18px;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item {
+  max-width: 100%;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input {
+  display: none;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input:checked + span[data-color="1"] {
+  background-color: #ffd800;
+  color: #1f1f1f;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input:checked + span[data-color="2"] {
+  background-color: #d7569c;
+  color: #FFF;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input:checked + span[data-color="3"] {
+  background-color: #3eb5f1;
+  color: #FFF;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input:checked + span[data-color="4"] {
+  background-color: #52ac62;
+  color: #FFF;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input:checked + span[data-color="5"] {
+  background-color: #1f1f1f;
+  color: #FFF;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-2 .tags-list-item input + span:hover {
+  background-color: #BBBBBB;
+}
+
+/*# sourceMappingURL=style.css.map */

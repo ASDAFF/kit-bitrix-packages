@@ -1,0 +1,391 @@
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 {
+  display: block;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel {
+  display: none;
+  height: 60px;
+  background-color: #0051cc;
+}
+@media all and (max-width: 720px) {
+  .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel {
+    display: block;
+  }
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-wrapper {
+  height: 100%;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-button {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-button-wrapper {
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  left: 7px;
+  bottom: 7px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-button-counter {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #0065ff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-button-icon {
+  display: block;
+  height: 100%;
+  font-size: 0;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-panel-button-icon i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content {
+  display: block;
+  position: fixed;
+  top: 185px;
+  right: 0;
+  z-index: 150;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-switches {
+  display: block;
+  position: absolute;
+  right: 100%;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-switch {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1px;
+  padding: 7px;
+  background-color: #0051cc;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-switch-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-switch-icon i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-switch-count {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  background-color: #1d1d1d;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tabs {
+  display: block;
+  position: relative;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab {
+  display: none;
+  background-color: #fff;
+  min-height: 320px;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.36);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.36);
+  -webkit-border-radius: 0 2px 2px 2px;
+  -moz-border-radius: 0 2px 2px 2px;
+  border-radius: 0 2px 2px 2px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab.sale-basket-small-tab-products .sale-basket-small-tab-wrapper {
+  width: 700px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab.sale-basket-small-tab-form .sale-basket-small-tab-wrapper {
+  width: 400px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab.sale-basket-small-tab-form .sale-basket-small-tab-content {
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab.sale-basket-small-tab-form .sale-basket-small-tab-header + .sale-basket-small-tab-content {
+  padding-top: 0;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab-header {
+  padding: 20px 30px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #212324;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-tab-footer {
+  padding: 20px 30px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products {
+  display: block;
+  overflow: auto;
+  min-height: 200px;
+  max-height: 260px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total {
+  display: block;
+  padding: 20px 30px;
+  font-size: 0;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #585858;
+  text-align: right;
+  border-bottom: 1px solid #e8e8e8;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total .sale-basket-small-products-total-value, .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total .sale-basket-small-products-total-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total .sale-basket-small-products-total-title {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total .sale-basket-small-products-total-value {
+  font-size: 24px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-total .sale-basket-small-products-total-economy {
+  font-size: 13px;
+  color: #888888;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+  padding: 40px 30px 80px 30px;
+  border-top: 1px solid #e8e8e8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty .sale-basket-small-products-icon {
+  display: block;
+  height: 50px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty .sale-basket-small-products-icon img {
+  display: inline-block;
+  vertical-align: baseline;
+  max-height: 100%;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty .sale-basket-small-products-title {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #1b1e1f;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty .sale-basket-small-products-description {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6f7577;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-empty .sale-basket-small-products-button {
+  display: block;
+  margin-top: 30px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-table {
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-table th {
+  padding: 10px 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #585858;
+  background-color: #f7f7f7;
+  vertical-align: middle;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-table td {
+  padding: 20px 15px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2c2c2d;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: middle;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-image {
+  width: 1px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-image a {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-price {
+  white-space: nowrap;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-price-current {
+  display: block;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-price-old {
+  display: block;
+  margin-top: 2px;
+  color: #888888;
+  text-decoration: line-through;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity {
+  width: 1px;
+  white-space: nowrap;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] {
+  display: block;
+  color: #2c2c2d;
+  font-size: 0;
+  border: 1px solid #e8e8e8;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] [data-type=input],
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] [data-type=button] {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  font-size: 13px;
+  line-height: 34px;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] [data-type=input] {
+  width: 40px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: center;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0;
+  border-color: #e4e4e4;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] [data-type=button] {
+  width: 32px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 350ms;
+  -moz-transition: background-color 350ms;
+  -ms-transition: background-color 350ms;
+  -o-transition: background-color 350ms;
+  transition: background-color 350ms;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-quantity [data-role=counter] [data-type=button]:hover {
+  background-color: #ececec;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-sum {
+  white-space: nowrap;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-controls {
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-right: 25px !important;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-control {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #afafaf;
+  text-decoration: none;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-control[data-role=button][data-action="product.add"]:hover, .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-control[data-role=button][data-action="product.delay"]:hover {
+  color: #0065ff;
+}
+.ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content .sale-basket-small-products-columns-control[data-role=button][data-action="product.remove"]:hover {
+  color: #e24581;
+}
+@media all and (max-width: 720px) {
+  .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 .sale-basket-small-content {
+    display: none;
+  }
+}
+@media print {
+  .ns-intec-universe.c-sale-basket-small.c-sale-basket-small-template-1 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

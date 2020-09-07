@@ -1,0 +1,158 @@
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-filter-item {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #666666;
+  background: #F2F2F2;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.5s;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-filter-item:hover {
+  background: #d4d4d4;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-filter-item.intec-cl-background {
+  color: #FFFFFF;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item {
+  display: none;
+  margin-top: 20px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item.active {
+  display: block;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header {
+  padding: 25px;
+  background: #F5F5F5;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-wrapper {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-payment {
+  margin-right: 20px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-payment-wrapper {
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 14px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-payment-wrapper.red {
+  background-color: #F4CFCF;
+  border-color: #F3B0B0;
+  color: #EA2424;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-payment-wrapper.green {
+  background-color: #EFFCF0;
+  border-color: #26B445;
+  color: #28762E;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-icon {
+  display: none;
+  font-size: 18px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-icon.active {
+  display: block;
+}
+@media all and (max-width: 400px) {
+  .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-header-wrapper {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content {
+  display: none;
+  border: 1px solid #E6E6E6;
+  border-top: none;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-wrap {
+  padding: 25px 30px 0 30px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-payment-name {
+  margin-bottom: 7px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #666666;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-payment-wrapper {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 14px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-payment-wrapper.red {
+  border-color: #F3B0B0;
+  background-color: #F4CFCF;
+  color: #EA2424;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-payment-wrapper.green {
+  background-color: #EFFCF0;
+  border-color: #26B445;
+  color: #28762E;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-order-name {
+  margin-bottom: 7px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #666666;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-content-status-order-wrapper {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid #26B445;
+  font-size: 14px;
+  background-color: #EFFCF0;
+  color: #28762E;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information {
+  padding: 15px 30px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-payment, .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-delivery, .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-delivery-price, .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-sum {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #000000;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-sum {
+  margin: 0;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-name {
+  display: inline-block;
+  width: 170px;
+  color: #666666;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-value {
+  display: inline-block;
+}
+@media all and (max-width: 400px) {
+  .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-payment, .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-delivery, .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-delivery-price {
+    margin-bottom: 10px;
+  }
+  .ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-information-name {
+    display: block;
+  }
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-button-wrap {
+  padding: 15px 30px;
+  border-top: 1px solid #E6E6E6;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-item-button-wrap .intec-button {
+  padding: 15px 22px;
+  border-radius: 5px;
+}
+.ns-intec.c-startshop-orders-list.c-startshop-orders-list-default .startshop-orders-list-notification {
+  text-align: center;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

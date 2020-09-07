@@ -1,0 +1,58 @@
+.widget.c-staff.c-staff-template-1 .widget-element {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px 60px 20px;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-wrapper {
+    padding: 0 20px 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-image-wrap {
+    max-width: 200px;
+    margin: auto;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 35px;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-position {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ababab;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-icons {
+    font-size: 0;
+    max-width: 200px;
+    margin: auto;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-icon-wrap {
+    text-align: center;
+    padding-top: 10px;
+}
+.widget.c-staff.c-staff-template-1 .widget-element-icon {
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #cbcbcb;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}

@@ -1,0 +1,129 @@
+.widget.c-services.c-services-template-16 .widget-items {
+  margin-top: 1px;
+  position: relative;
+}
+.widget.c-services.c-services-template-16 .widget-item {
+  z-index: 1;
+  position: relative;
+  padding: 45px;
+  background-color: #FFF;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-top: -1px;
+}
+.widget.c-services.c-services-template-16 .widget-item:hover {
+  -webkit-box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.15);
+}
+.widget.c-services.c-services-template-16 .widget-item:hover {
+  z-index: 2;
+}
+.widget.c-services.c-services-template-16 .widget-item:hover .widget-item-button {
+  opacity: 1;
+}
+.widget.c-services.c-services-template-16 .widget-item-picture {
+  max-width: 400px;
+}
+.widget.c-services.c-services-template-16 .widget-item-category {
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.widget.c-services.c-services-template-16 .widget-item-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.46;
+  color: #000000;
+  margin-bottom: 15px;
+  display: block;
+  text-decoration: none !important;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-services.c-services-template-16 .widget-item-description {
+  margin-bottom: 30px;
+  line-height: 23.4px;
+  font-size: 14px;
+}
+.widget.c-services.c-services-template-16 .widget-item-price-title {
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  color: #888888;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.widget.c-services.c-services-template-16 .widget-item-price {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  color: #000000;
+  min-width: 110px;
+}
+.widget.c-services.c-services-template-16 .widget-item-button {
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+@media all and (max-width: 768px) {
+  .widget.c-services.c-services-template-16 .widget-item-button {
+    opacity: 1;
+  }
+}
+.widget.c-services.c-services-template-16 .widget-footer-button {
+  color: #2d2d2d !important;
+}
+.widget.c-services.c-services-template-16 .widget-footer-button:hover, .widget.c-services.c-services-template-16 .widget-footer-button:focus, .widget.c-services.c-services-template-16 .widget-footer-button:active {
+  color: #fff !important;
+}
+@media all and (max-width: 500px) {
+  .widget.c-services.c-services-template-16 .widget-item-name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .widget.c-services.c-services-template-16 .widget-item-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

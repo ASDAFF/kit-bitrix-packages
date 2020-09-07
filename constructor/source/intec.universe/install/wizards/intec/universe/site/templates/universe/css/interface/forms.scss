@@ -1,0 +1,49 @@
+$class: 'intec-ui' !default;
+$attribute: 'data-ui' !default;
+
+&-form {
+  display: block;
+
+  .#{$class}-form-fields {
+    margin: -5px 0;
+    min-height: 10px;
+  }
+
+  .#{$class}-form-field {
+    display: block;
+    padding: 5px 0;
+
+    &.#{$class}-form-field-required {
+      .#{$class}-form-field-title:after {
+        content: '*';
+        color: #ff0000;
+        font-weight: normal;
+        font-style: normal;
+      }
+    }
+  }
+
+  .#{$class}-form-field-title {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    color: #6e6e6e;
+    margin-bottom: 5px;
+  }
+
+  .#{$class}-form-field-content {
+    display: block;
+  }
+
+  .#{$class}-form-field-description {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin-top: 3px;
+  }
+}

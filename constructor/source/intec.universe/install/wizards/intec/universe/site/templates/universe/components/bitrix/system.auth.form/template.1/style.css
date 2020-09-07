@@ -1,0 +1,30 @@
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 {
+	width: 550px;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-tabs-panel {
+	padding: 20px 80px;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-tabs-panel-item {
+	font-size: 18px;
+	line-height: 30px;
+	color: #888888;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-tabs-panel-item:hover {
+	color: #222222;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-tabs-panel-item.active {
+	font-size: 24px;
+	color: #222222;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-body-item {
+	display: none;
+}
+.ns-bitrix.c-system-auth-form.c-system-auth-form-template-1 .system-auth-form-body-item.active {
+	display: block;
+}

@@ -1,0 +1,34 @@
+.ns-intec-constructor.block-element.block-element-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ns-intec-constructor.block-element.block-element-image .block-element-image-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    -webkit-transition-property: border-color;
+    -moz-transition-property: border-color;
+    -ms-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+}
+.ns-intec-constructor.block-element.block-element-image.block-element-image-empty {
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #efefef;
+
+}
+.ns-intec-constructor.block-element.block-element-image.block-element-image-empty .block-element-image-border {
+    border: 1px solid #aaaaaa;
+}

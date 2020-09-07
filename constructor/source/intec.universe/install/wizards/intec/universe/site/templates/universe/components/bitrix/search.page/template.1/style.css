@@ -1,0 +1,113 @@
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-form-wrap {
+  margin-bottom: 30px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-chain-wrap {
+  margin-bottom: 8px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-name-wrap {
+  margin-bottom: 8px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-item {
+  margin-bottom: 40px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #404040;
+  text-decoration: none;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-picture {
+  width: 120px;
+  height: 80px;
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #808080;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-description b {
+  color: #404040;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-chain,
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-chain a {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #808080;
+  text-decoration: none;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-date {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #b0b0b0;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-suggest {
+  background: #F6F6F6;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 36px;
+  padding: 10px;
+  min-width: 600px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5F5F5F;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 9px 20px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-language-guess {
+  margin: 20px 0;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-sort-wrap {
+  margin-bottom: 26px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-sort-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B0B0B0;
+  text-decoration: none;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-sort-item[data-active=true] {
+  color: #808080;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-table {
+  margin: -5px -10px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-table td {
+  vertical-align: top;
+  padding: 5px 10px;
+}
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-table-operator,
+.ns-bitrix.c-search-page.c-search-page-template-1 .search-page-table-synonim {
+  text-align: center;
+}
+@media all and (max-width: 900px) {
+  .ns-bitrix.c-search-page.c-search-page-template-1 .search-suggest {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts {
+  display: block;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-message-error {
+  display: block;
+  color: #ff114a;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-header {
+  font-size: 30px;
+  line-height: 30px;
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-title {
+  color: #969696;
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-fields {
+  display: block;
+  margin: -10px -7px !important;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-field {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 10px 7px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-field-textarea {
+  float: right;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-field-textarea textarea {
+  height: 204px;
+  resize: none;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-footer {
+  margin-top: 10px;
+}
+@media all and (max-width: 720px) {
+  .ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-contacts .startshop-form-result-new-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

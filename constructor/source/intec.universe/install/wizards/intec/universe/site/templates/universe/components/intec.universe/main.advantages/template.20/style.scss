@@ -1,0 +1,112 @@
+$component: 'advantages';
+$template: 'template-20';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-picture-wrap {
+    position: relative;
+  }
+  .#{$item}-picture-arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -12.5px;
+    width: 25px;
+    height: 15px;
+    margin-top: -7.5px;
+    background-image: url(images/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .#{$item}-picture {
+    position: relative;
+    max-width: 284px;
+    height: 177px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    @include transition(box-shadow, 0.4s);
+  }
+  .#{$item}:hover {
+    .#{$item}-picture {
+      box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .#{$item}-name {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 284px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    @include transition(color, 0.4s);
+  }
+
+  .#{$item}:nth-child(3n) {
+    .#{$item}-picture-arrow {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    .#{$item}:nth-child(3n) {
+      .#{$item}-picture-arrow {
+        display: block;
+      }
+    }
+    .#{$item}:nth-child(2n) {
+      .#{$item}-picture-arrow {
+        display: none;
+      }
+    }
+
+  }
+  @media all and (max-width: 800px) {
+    .#{$item}-picture {
+      width: 210px;
+      height: 130px;
+    }
+    .#{$item}-name {
+      width: 210px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .#{$item}:nth-child(3n) {
+      .#{$item}-picture-arrow {
+        display: none;
+      }
+    }
+    .#{$item}-name {
+      font-size: 16px;
+      width: 100%;
+    }
+    .#{$item}-picture-arrow {
+      display: none;
+    }
+
+    .#{$item}-picture {
+      height: 170px;
+      width: 100%;
+    }
+  }
+}

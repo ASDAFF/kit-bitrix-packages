@@ -1,0 +1,482 @@
+.c-header.c-header-template-1 .widget-view-desktop .widget-container {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 2;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu {
+  position: relative;
+  z-index: 1;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu .menu-wrapper {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu .menu-item-border:first-child {
+  border-left: none !important;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu .menu-item-border:last-child {
+  border-right: none !important;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-menu [data-uppercase=true] .menu-item .menu-item-text-wrapper {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-container:hover, .c-header.c-header-template-1 .widget-view-desktop .widget-menu:hover {
+  z-index: 3;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-logotype {
+  display: block;
+  width: 130px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-logotype path {
+  -webkit-transition-property: fill;
+  -moz-transition-property: fill;
+  -ms-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-tag-line {
+  font-size: 12px;
+  line-height: 16px;
+  color: #B0B0B0;
+  max-width: 160px;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region {
+  line-height: 1;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region {
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region-text {
+  color: #404040;
+  padding-right: 4px !important;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region-icon {
+  color: #B0B0B0;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region-text,
+.c-header.c-header-template-1 .widget-view-desktop .widget-region .regions-select-region-icon {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts {
+  position: relative;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main {
+  font-size: 0;
+  white-space: nowrap;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main svg {
+  margin-left: 8px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main path {
+  stroke: #B0B0B0;
+  -webkit-transition-property: stroke;
+  -moz-transition-property: stroke;
+  -ms-transition-property: stroke;
+  -o-transition-property: stroke;
+  transition-property: stroke;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-size: 0;
+  text-align: right;
+  width: 200px;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-items-wrap {
+  display: inline-block;
+  padding-top: 8px;
+  pointer-events: all;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-items {
+  text-align: left;
+  padding: 20px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+  -moz-box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+  box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item > div + div {
+  margin-top: 8px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-phone {
+  font-size: 0;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-phone a {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-address {
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-schedule > div + div {
+  margin-top: 4px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-schedule-item {
+  font-size: 12px;
+  line-height: 16px;
+  color: #B0B0B0;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-email {
+  font-size: 12px;
+  line-height: 16px;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-email a {
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main a, .c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-phone a {
+  color: #404040;
+  text-decoration: none;
+  -webkit-transition-property: color, opacity;
+  -moz-transition-property: color, opacity;
+  -ms-transition-property: color, opacity;
+  -o-transition-property: color, opacity;
+  transition-property: color, opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-contacts-main a:hover, .c-header.c-header-template-1 .widget-view-desktop .widget-contacts-advanced-item-phone a:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1 .widget-view-desktop [data-advanced=false] .widget-contacts-advanced-item + .widget-contacts-advanced-item {
+  margin-top: 20px;
+}
+.c-header.c-header-template-1 .widget-view-desktop [data-advanced=true] .widget-contacts-advanced-item + .widget-contacts-advanced-item {
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #F2F2F2;
+}
+.c-header.c-header-template-1 .widget-view-desktop [data-expanded=false] .widget-contacts-advanced {
+  opacity: 0;
+}
+.c-header.c-header-template-1 .widget-view-desktop [data-expanded=false] .widget-contacts-advanced,
+.c-header.c-header-template-1 .widget-view-desktop [data-expanded=false] .widget-contacts-advanced-items-wrap {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-call {
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed;
+  cursor: pointer;
+  -webkit-transition-property: opacity, color;
+  -moz-transition-property: opacity, color;
+  -ms-transition-property: opacity, color;
+  -o-transition-property: opacity, color;
+  transition-property: opacity, color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-call:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-search .search-title-button {
+  overflow: hidden;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-search .search-title-button-wrapper {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-search .search-title-button-wrapper:hover {
+  opacity: 0.5;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-search .search-title-button-icon {
+  font-size: 15px;
+  color: #808080;
+  -webkit-transition-property: color, opacity;
+  -moz-transition-property: color, opacity;
+  -ms-transition-property: color, opacity;
+  -o-transition-property: color, opacity;
+  transition-property: color, opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-search .search-title-button-text {
+  font-size: 12px;
+  line-height: 18px;
+  color: #808080;
+  -webkit-transition-property: color, opacity;
+  -moz-transition-property: color, opacity;
+  -ms-transition-property: color, opacity;
+  -o-transition-property: color, opacity;
+  transition-property: color, opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1 .widget-view-desktop .widget-authorization .widget-authorization-button {
+  -webkit-transition-property: color, opacity;
+  -moz-transition-property: color, opacity;
+  -ms-transition-property: color, opacity;
+  -o-transition-property: color, opacity;
+  transition-property: color, opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+@media all and (max-width: 1200px) {
+  .c-header.c-header-template-1 .widget-view-desktop .widget-tag-line-container {
+    display: none;
+  }
+}
+@media all and (max-width: 1024px) {
+  .c-header.c-header-template-1 .widget-view-desktop .widget-information-container {
+    display: none;
+  }
+}
+.c-header.c-header-template-1[data-transparent=false] .widget-view-desktop-10 {
+  background-color: #fff;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon {
+  -webkit-transition-property: opacity, color;
+  -moz-transition-property: opacity, color;
+  -ms-transition-property: opacity, color;
+  -o-transition-property: opacity, color;
+  transition-property: opacity, color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item:hover .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item.sale-basket-icons-item-active .sale-basket-icons-item-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter {
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon {
+  -webkit-transition-property: opacity, color;
+  -moz-transition-property: opacity, color;
+  -ms-transition-property: opacity, color;
+  -o-transition-property: opacity, color;
+  transition-property: opacity, color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab:hover .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab.sale-basket-small-tab-active .sale-basket-small-tab-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon {
+  -webkit-transition-property: opacity, color;
+  -moz-transition-property: opacity, color;
+  -ms-transition-property: opacity, color;
+  -o-transition-property: opacity, color;
+  transition-property: opacity, color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item:hover .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item.sale-basket-icons-item-active .sale-basket-icons-item-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter {
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon {
+  -webkit-transition-property: opacity, color;
+  -moz-transition-property: opacity, color;
+  -ms-transition-property: opacity, color;
+  -o-transition-property: opacity, color;
+  transition-property: opacity, color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab:hover .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab.sale-basket-small-tab-active .sale-basket-small-tab-icon {
+  opacity: 1;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-tag-line, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-region .regions-select-region-text,
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-region .regions-select-region-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-contacts-main a, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-call, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-search .search-title-button-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-search .search-title-button-text, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  color: #FFF !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  background-color: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  border-color: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-authorization .widget-authorization-button-icon svg {
+  fill: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=white] .widget-view-desktop .widget-contacts-main path {
+  stroke: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-tag-line, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-region .regions-select-region-text,
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-region .regions-select-region-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-contacts-main a, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-call, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-search .search-title-button-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-search .search-title-button-text, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-authorization .widget-authorization-button-content, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item .sale-basket-icons-item-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab .sale-basket-small-tab-icon, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  color: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  background-color: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-icons-items .sale-basket-icons-item-counter, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-basket .sale-basket-small-items .sale-basket-small-tab-counter {
+  border-color: #fff !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-logotype path, .c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-authorization .widget-authorization-button-icon svg {
+  fill: #000 !important;
+}
+.c-header.c-header-template-1.widget-transparent[data-color=black] .widget-view-desktop .widget-contacts-main path {
+  stroke: #000 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,176 @@
+$class: 'constructor-' !default;
+$buttons-sizes: (1,2,3,4,5,6,7) !default;
+$buttons-fonts: (10,11,12,13,14,15,16) !default;
+$buttons-colors: (
+  'default': (
+    'border': (
+      'default': #6e7079,
+      'hover': #81838d,
+      'focus': #5a5c64,
+      'active': #5a5c64,
+      'disabled': #5a5c64
+    ),
+    'background': (
+      'default': #6e7079,
+      'hover': #81838d,
+      'focus': #5a5c64,
+      'active': #5a5c64,
+      'disabled': #5a5c64
+    ),
+    'text': (
+      'default': #fff,
+      'hover': #fff,
+      'focus': #fff,
+      'active': #fff,
+      'disabled': #fff
+    )
+  ),
+  'blue': (
+    'border': (
+      'default': #3761ef,
+      'hover': #5579f1,
+      'focus': #2e53d1,
+      'active': #2e53d1,
+      'disabled': #26468d
+    ),
+    'background': (
+      'default': #3761ef,
+      'hover': #5579f1,
+      'focus': #2e53d1,
+      'active': #2e53d1,
+      'disabled': #26468d
+    ),
+    'text': (
+      'default': #fff,
+      'hover': #fff,
+      'focus': #fff,
+      'active': #fff,
+      'disabled': #d0d0d0
+    )
+  ),
+  'red': (
+    'border': (
+      'default': #d72330,
+      'hover': #f90039,
+      'focus': #be202c,
+      'active': #a81d27,
+      'disabled': #911822
+    ),
+    'background': (
+      'default': #d72330,
+      'hover': #f90039,
+      'focus': #be202c,
+      'active': #a81d27,
+      'disabled': #911822
+    ),
+    'text': (
+      'default': #fff,
+      'hover': #fff,
+      'focus': #fff,
+      'active': #fff,
+      'disabled': #d0d0d0
+    )
+  )
+) !default;
+
+.#{$class}button {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  padding: 3px 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid;
+
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.#{$class}button-block {
+    display: block;
+  }
+
+  @each $size in $buttons-sizes {
+    &.#{$class}button-s-#{$size} {
+      padding: #{3 + (3 * ($size - 1))}px #{6 + (4 * ($size - 1))}px;
+    }
+
+    .#{$class}button-group.#{$class}button-s-#{$size} > & {
+      padding: #{3 + (3 * ($size - 1))}px #{6 + (4 * ($size - 1))}px;
+    }
+  }
+
+  @each $font in $buttons-fonts {
+    &.#{$class}button-f-#{$font} {
+      font-size: #{$font}px;
+    }
+  }
+
+  &.#{$class}button-f-bold {
+    font-weight: bold;
+  }
+  &.#{$class}button-f-lighter {
+    font-weight: lighter;
+  }
+  &.#{$class}button-f-normal {
+    font-weight: normal;
+  }
+
+  @each $color-name, $colors in $buttons-colors {
+    $selector: #{'.'}#{$class}button-c-#{$color-name};
+    $colors-border: map-get($colors, 'border');
+    $colors-background: map-get($colors, 'background');
+    $colors-text: map-get($colors, 'text');
+
+    &#{$selector} {
+      @each $state in ('default', 'hover', 'focus', 'active', 'disabled') {
+        @if ($state == 'default') {
+          color: map-get($colors-text, $state);
+          background: map-get($colors-background, $state);
+          border-color: map-get($colors-border, $state);
+        } @else {
+          &:#{$state},
+          &.ui-state-#{$state} {
+            color: map-get($colors-text, $state);
+            background: map-get($colors-background, $state);
+            border-color: map-get($colors-border, $state);
+          }
+        }
+      }
+    }
+
+    &#{$selector}-t {
+      @extend #{$selector};
+      background: transparent;
+    }
+
+    &#{$selector}-t-c {
+      @extend #{$selector};
+      background: transparent;
+      color: map-get($colors-border, 'default');
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<?php
+$MESS['intec.constructor.models.font.type.local'] = 'Локальный';
+$MESS['intec.constructor.models.font.type.external'] = 'Внешний';
+$MESS['intec.constructor.models.font.weight.thin'] = 'Thin (100)';
+$MESS['intec.constructor.models.font.weight.extraLight'] = 'Extra Light (200)';
+$MESS['intec.constructor.models.font.weight.light'] = 'Light (300)';
+$MESS['intec.constructor.models.font.weight.normal'] = 'Normal (400)';
+$MESS['intec.constructor.models.font.weight.medium'] = 'Medium (500)';
+$MESS['intec.constructor.models.font.weight.semiBold'] = 'Semi Bold (600)';
+$MESS['intec.constructor.models.font.weight.bold'] = 'Bold (700)';
+$MESS['intec.constructor.models.font.weight.extraBold'] = 'Extra Bold (800)';
+$MESS['intec.constructor.models.font.weight.black'] = 'Black (900)';
+$MESS['intec.constructor.models.font.style.normal'] = 'Нормальный (normal)';
+$MESS['intec.constructor.models.font.style.italic'] = 'Наклонный (italic)';
+$MESS['intec.constructor.models.font.style.oblique'] = 'Косой (oblique)';
+$MESS['intec.constructor.models.font.format.ttf'] = 'TrueType (.ttf)';
+$MESS['intec.constructor.models.font.format.otf'] = 'OpenType (.otf)';
+$MESS['intec.constructor.models.font.format.eot'] = 'Embedded OpenType (.eot)';
+$MESS['intec.constructor.models.font.format.woff'] = 'Web Open Font (.woff)';
+$MESS['intec.constructor.models.font.format.woff2'] = 'Web Open Font 2 (.woff2)';
+$MESS['intec.constructor.models.font.format.svg'] = 'SVG (.svg)';
+$MESS['intec.constructor.models.font.attributes.labels.type'] = 'Тип';
+$MESS['intec.constructor.models.font.attributes.labels.active'] = 'Активность';
+$MESS['intec.constructor.models.font.attributes.labels.code'] = 'Код';
+$MESS['intec.constructor.models.font.attributes.labels.name'] = 'Наименование';
+$MESS['intec.constructor.models.font.attributes.labels.sort'] = 'Сортировка';

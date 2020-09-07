@@ -1,0 +1,25 @@
+$namespace: 'bitrix';
+$component: 'sale-personal-order-cancel';
+$template: 'default';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  .#{$class}-wrapper {}
+  .#{$class}-wrapper-2 {}
+
+  .#{$class}-block {
+    display: block;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+  }
+
+  .#{$class}-form-description {
+    margin-bottom: 20px;
+  }
+
+  .#{$class}-form-buttons {
+    margin-top: 20px;
+  }
+}

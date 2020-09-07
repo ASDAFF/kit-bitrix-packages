@@ -1,0 +1,111 @@
+$component: 'news-list';
+$template: 'default';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-tabs + .widget-items {
+    margin-top: 30px;
+  }
+  .#{$item} {
+    @include transition(opacity, 0.4s);
+
+    &[data-active='true'] {
+      opacity: 1;
+    }
+    &[data-active='false'] {
+      opacity: 0;
+    }
+  }
+  .#{$item}-wrapper {
+    position: relative;
+    display: block;
+  }
+  .#{$item}-picture {
+    position: relative;
+    padding-top: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .#{$item}-fade,
+  .#{$item}-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .#{$item}-fade {
+    top: 0;
+    bottom: 0;
+    @include transition(background-color, 0.4s);
+    z-index: 2;
+  }
+  .#{$item}-name {
+    bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0 25px 30px 25px;
+    opacity: 0;
+    @include transition(#{bottom, opacity}, 0.4s);
+    z-index: 3;
+  }
+  .#{$item}-wrapper:hover {
+    .#{$item}-fade {
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+    .#{$item}-name {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  [data-wide='true'] {
+    &[data-grid='3'] {
+      .#{$item}-picture {
+        padding-top: 50%;
+      }
+    }
+  }
+  @media all and (max-width: 1200px) {
+    [data-wide='true'] {
+      &[data-grid='3'] {
+        .#{$item}-picture {
+          padding-top: 75%;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-fade {
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+    .#{$item}-name {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-name {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}

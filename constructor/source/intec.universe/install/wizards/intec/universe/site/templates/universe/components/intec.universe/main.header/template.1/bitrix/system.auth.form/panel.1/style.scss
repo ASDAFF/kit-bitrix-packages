@@ -1,0 +1,11 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-authorization-panel {
+    .widget-authorization-modal {
+      display: none;
+    }
+  }
+}

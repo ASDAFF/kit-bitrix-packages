@@ -1,0 +1,79 @@
+$namespace: 'bitrix';
+$component: 'menu';
+$template: 'columns-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  text-align: left;
+
+  .#{$class}-columns {}
+  .#{$class}-column {}
+
+  .#{$class}-column-header {
+    display: block;
+    color: #0065ff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.3;
+    overflow: hidden;
+  }
+
+  .#{$class}-column-header-link {
+    display: inline;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .#{$class}-column-items {
+    display: block;
+    margin: -4px 0;
+    padding-top: 24px;
+    overflow: hidden;
+  }
+
+  .#{$class}-column-item {
+    display: block;
+    padding: 4px 0;
+    color: #777e89;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+
+    &[data-selected="true"] {
+      .#{$class}-column-item-link {
+        color: #0065ff;
+      }
+    }
+  }
+
+  .#{$class}-column-item-link {
+    display: inline;
+    color: inherit;
+    text-decoration: none;
+
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    transition-duration: 350ms;
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+
+  @media all and (max-width: 550px) {
+    .#{$class}-column-header, .#{$class}-column-item {
+      text-align: center;
+    }
+  }
+}

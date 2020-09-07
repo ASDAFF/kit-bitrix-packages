@@ -1,0 +1,78 @@
+.widget.c-advantages.c-advantages-template-24 .widget-item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item:first-child {
+  padding-top: 0px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item[data-hidden=true] {
+  display: none;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item[data-color=dark] {
+  background-color: #F8F8F8;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-wrapper {
+  position: relative;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-text {
+  position: relative;
+  text-align: left;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-description {
+  font-size: 16px;
+  line-height: 1.45;
+  margin-top: 10px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-category-wrap {
+  margin-top: 10px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-category {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 15px;
+  border-radius: 14px;
+  user-select: none;
+  color: #000000;
+  background-color: #BFFF35;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-images-wrap {
+  margin-top: 30px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-image {
+  padding-top: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-image-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-item-image-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #888888;
+}
+.widget.c-advantages.c-advantages-template-24 .widget-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+.widget.c-advantages.c-advantages-template-24[data-collapsed=false] .widget-button.widget-button-hide {
+  display: none;
+}
+.widget.c-advantages.c-advantages-template-24[data-collapsed=true] .widget-button.widget-button-show {
+  display: none;
+}
+.widget.c-advantages.c-advantages-template-24[data-hiding=false] .widget-buttons {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

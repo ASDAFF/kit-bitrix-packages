@@ -1,0 +1,50 @@
+<?php
+
+$MESS['C_NEWS_PORTFOLIO_LIST_PROPERTY_TYPE'] = 'Свойство "Тип';
+$MESS['C_NEWS_PORTFOLIO_LIST_WIDE'] = 'Во всю ширину';
+$MESS['C_NEWS_PORTFOLIO_LIST_COLUMNS'] = 'Кол-во элементов в строке';
+$MESS['C_NEWS_PORTFOLIO_LIST_TABS_USE'] = 'Использовать вкладки';
+$MESS['C_NEWS_PORTFOLIO_LIST_TABS_POSITION'] = 'Расположение вкладок';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_BANNER_TYPE'] = 'Баннер. Свойство "Тип сайта"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_BANNER_URL'] = 'Баннер. Свойство "Адрес сайта"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_BANNER_IMAGE'] = 'Баннер. Свойство "Доп. изображение"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_CHARACTERISTICS'] = 'Характеристики проекта';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_INFORMATION'] = 'Информация о проекте';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_FEATURES'] = 'Особенности проекта';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_EXAMPLE'] = 'Пример выполненной работы';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_RESULT'] = 'Свойство "Результат"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_REVIEW'] = 'Свойство "Отзыв"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_SERVICES'] = 'Свойство "Оказанные услуги"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_SERVICES_IBLOCK_TYPE'] = 'Оказанные услуги. Тип инфоблока';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_SERVICES_IBLOCK_ID'] = 'Оказанные услуги. Инфоблок';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_PROJECTS'] = 'Свойство "Другие работы"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_SHOW'] = 'Отображать баннер';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_HEIGHT'] = 'Баннер. Высота (пиксели)';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_TYPE'] = 'Баннер. Отображать тип сайта';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_URL'] = 'Баннер. Отображать ссылку на сайт';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_BUTTON'] = 'Баннер. Текст кнопки';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_BUTTON_DEFAULT'] = 'Смотреть сайт';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_BANNER_IMAGE'] = 'Баннер. Отображать доп. изображение баннера';
+$MESS[''] = '';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_CHARACTERISTICS_SHOW'] = 'Отображать характеристики проекта';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_CHARACTERISTICS_COLUMNS'] = 'Характеристики. Кол-во элементов в строке';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_INFORMATION_SHOW'] = 'Отображать информацию о проекте';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_INFORMATION_COLUMNS'] = 'Информация о проекте. Кол-во элементов в строке';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_FEATURES_SHOW'] = 'Отображать особенности проекта';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_FEATURES_NARROW'] = 'Особенности проекта. Узкий блок';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_EXAMPLE_SHOW'] = 'Отображать примеры выполенной работы';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_EXAMPLE_SHADOW'] = 'Примеры выполненных работ. Отображать тень на изображениях';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_RESULT_SHOW'] = 'Отображать блок "Результат"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_RESULT_NARROW'] = 'Блок "Результат". Узкий блок';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_RESULT_BACKGROUND'] = 'Блок "Результат". Использовать затемненный фон';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_REVIEW_SHOW'] = 'Отображать блок "Отзыв"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_REVIEW_NARROW'] = 'Блок "Отзыв". Узкий блок';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_SERVICES_SHOW'] = 'Отображать блок "Оказанные услуги"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_PROPERTY_PROJECTS'] = 'Отображать блок "Другие работы"';
+$MESS['C_NEWS_PORTFOLIO_DETAIL_SERVICES_PROPERTY_LINK'] = 'Оказанные услуги. Свойство "Ссылка"';
+
+$MESS['C_NEWS_PORTFOLIO_LIST_POSITION_LEFT'] = 'Слева';
+$MESS['C_NEWS_PORTFOLIO_LIST_POSITION_CENTER'] = 'По центру';
+$MESS['C_NEWS_PORTFOLIO_LIST_POSITION_RIGHT'] = 'Справа';
+
+$MESS[''] = '';

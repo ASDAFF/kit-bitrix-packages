@@ -1,0 +1,88 @@
+$component: 'categories';
+$template: 'template-11';
+$item: 'widget-item';
+
+@keyframes categories-template-11 {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    height: 100%;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .#{$item}-picture {
+    display: block;
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  .#{$item}-name {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    line-height: 23px;
+    color: #444444;
+  }
+  .#{$item}-link-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .#{$item}-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    transition: all 0.4s;
+    text-decoration: none;
+
+    &:hover {
+      .#{$item}-link-icon {
+        animation-name: categories-template-11;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+  .#{$item}-link-icon {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  @media all and (max-width: 768px) {
+    .#{$item}-picture {}
+    .#{$item}-description {}
+  }
+}

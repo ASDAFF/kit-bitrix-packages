@@ -1,0 +1,263 @@
+.intec-button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    background: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    -webkit-transition-property: background, color, border;
+    -moz-transition-property: background, color, border;
+    -ms-transition-property: background, color, border;
+    -o-transition-property: background, color, border;
+    transition-property: background, color, border;
+}
+.intec-button:hover, .intec-button.hover,
+.intec-button:active, .intec-button.active,
+.intec-button:focus, .intec-button.focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.intec-button.intec-button-block {
+    display: block;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+
+/* ---------- Helpers ---------- */
+.intec-button.intec-button-fb {
+    font-weight: bold;
+}
+.intec-button.intec-button-fi {
+    font-style: italic;
+}
+.intec-button.intec-button-fs-10 {
+    font-size: 10px;
+    line-height: 13px;
+}
+.intec-button.intec-button-sm,
+.intec-button.intec-button-fs-12 {
+    font-size: 12px;
+    line-height: 15px;
+}
+.intec-button.intec-button-md,
+.intec-button.intec-button-lg,
+.intec-button.intec-button-fs-14 {
+    font-size: 14px;
+    line-height: 17px;
+}
+.intec-button.intec-button-md{
+    line-height:25px;
+}
+.intec-button.intec-button-fs-16 {
+    font-size: 16px;
+    line-height: 19px;
+}
+.intec-button.intec-button-fs-18 {
+    font-size: 18px;
+    line-height: 21px;
+}
+.intec-button.intec-button-fs-20 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.intec-button.intec-button-sm,
+.intec-button.intec-button-s-1 {
+    padding: 4px 6px;
+}
+.intec-button.intec-button-s-2 {
+    padding: 5px 8px;
+}
+.intec-button.intec-button-s-3 {
+    padding: 6px 10px;
+}
+.intec-button.intec-button-md,
+.intec-button.intec-button-s-4 {
+    padding: 7px 12px;
+}
+.intec-button.intec-button-s-5 {
+    padding: 8px 14px;
+}
+.intec-button.intec-button-lg,
+.intec-button.intec-button-s-6 {
+    padding: 9px 16px;
+    border-width: 2px;
+}
+.intec-button.intec-button-s-7 {
+    padding: 12px 20px;
+    border-width: 2px;
+}
+
+.intec-button.intec-button-r-0 {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.intec-button.intec-button-r-1 {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.intec-button.intec-button-r-2 {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.intec-button.intec-button-r-3 {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.intec-button.intec-button-r-4 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.intec-button.intec-button-r-5 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.intec-button.intec-button-w-icon {
+    white-space: nowrap;
+}
+.intec-button.intec-button-w-icon .intec-button-icon,
+.intec-button.intec-button-w-icon .intec-button-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.intec-button.intec-button-w-icon .intec-button-icon {
+    line-height: 1;
+}
+.intec-button.intec-button-w-icon .intec-button-icon + .intec-button-text,
+.intec-button.intec-button-w-icon .intec-button-text + .intec-button-icon{
+    margin-left: 5px;
+}
+/* ---------- /Helpers ---------- */
+
+
+/* ---------- Common button color ---------- */
+.intec-button.intec-button-cl-common {
+    color: #fff;
+    background-color: #116afc;
+    border-color: #116afc;
+}
+.intec-button.intec-button-cl-common:hover, .intec-button.intec-button-cl-common.hover {
+    background-color: #2498fc;
+    border-color: #2498fc;
+}
+.intec-button.intec-button-cl-common:active, .intec-button.intec-button-cl-common.active {
+    background-color: #2498fc;
+    border-color: #2498fc;
+}
+.intec-button.intec-button-cl-common.intec-button-transparent {
+    color: #116afc;
+}
+.intec-button.intec-button-cl-common.intec-button-transparent:hover, .intec-button.intec-button-cl-common.intec-button-transparent.hover {
+    color: #fff;
+}
+.intec-button.intec-button-cl-common.intec-button-transparent:active, .intec-button.intec-button-cl-common.intec-button-transparent.active {
+    color: #fff;
+}
+/* ---------- /Common button color ---------- */
+
+
+/* ---------- Default button color ---------- */
+.intec-button.intec-button-cl-default {
+    color: #939393;
+    background-color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+.intec-button.intec-button-cl-default:hover, .intec-button.intec-button-cl-default.hover {
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+}
+.intec-button.intec-button-cl-default:active, .intec-button.intec-button-cl-default.active {
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+}
+.intec-button.intec-button-cl-default.intec-button-transparent {
+    color: #939393;
+}
+.intec-button.intec-button-cl-default.intec-button-transparent:hover, .intec-button.intec-button-cl-default.intec-button-transparent.hover {
+    background-color: transparent;
+    border-color: #cfcfcf;
+}
+.intec-button.intec-button-cl-default.intec-button-transparent:active, .intec-button.intec-button-cl-default.intec-button-transparent.active {
+    color: #939393;
+    background-color: #e7e7e7;
+}
+/* ---------- /Default button color ---------- */
+
+
+/* ---------- Link button color ---------- */
+.intec-button.intec-button-link {
+    color: #116afc;
+    background-color: transparent;
+    border-color: transparent;
+}
+.intec-button.intec-button-link:hover, .intec-button.intec-button-link.hover {
+    color: #2498fc;
+    background-color: transparent;
+    border-color: transparent;
+}
+.intec-button.intec-button-link:active, .intec-button.intec-button-link.active {
+    color: #2498fc;
+    background-color: transparent;
+    border-color: transparent;
+}
+/* ---------- /Link button color ---------- */
+
+
+.intec-button.intec-button-transparent {
+    background-color: transparent;
+}
+
+.intec-contest-checkbox {
+    border:1px solid #e8e8e8;
+    border-radius:3px;
+    height:14px;
+    width:14px;
+    position:relative;
+}
+.intec-contest-checkbox.checked:after {
+    content: "";
+    position: absolute;
+    background: #cfcfcf;
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: auto;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 1px;
+}

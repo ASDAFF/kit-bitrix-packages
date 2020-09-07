@@ -1,0 +1,106 @@
+.brands {
+	display: block;
+}
+.brands .brands-description {
+	display: block;
+	margin-bottom: 30px;
+}
+.brands .brands-description.brands-description-only {
+	margin-bottom: 0;
+}
+.brands .brands-navigation {
+	display: block;
+}
+.brands .brands-navigation.brands-navigation-top {
+	margin-bottom: 30px;
+}
+.brands .brands-navigation.brands-navigation-bottom {
+	margin-top: 30px;
+}
+.brands .brands-wrapper {
+	display: block;
+	margin: -8px;
+	min-width: 16px;
+	min-height: 16px;
+}
+.brands .brand {
+	display: block;
+	float: left;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 8px;
+}
+.brands .brand .brand-wrapper {
+	display: block;
+	position: relative;
+	padding-top: 75%;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-transition-property: box-shadow;
+	-moz-transition-property: box-shadow;
+	-ms-transition-property: box-shadow;
+	-o-transition-property: box-shadow;
+	transition-property: box-shadow;
+}
+.brands .brand .brand-wrapper-2 {
+	display: block;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: 25px;
+	right: 25px;
+	left: 25px;
+	bottom: 25px;
+	-webkit-transition: filter 0.3s;
+	-moz-transition: filter 0.3s;
+	-ms-transition: filter 0.3s;
+	-o-transition: filter 0.3s;
+	transition: filter 0.3s;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+}
+.brands .brand .brand-wrapper:hover {
+	-webkit-box-shadow: 0 10px 30px 10px #f1f1f1;
+	-moz-box-shadow: 0 10px 30px 10px #f1f1f1;
+	box-shadow: 0 10px 30px 10px #f1f1f1;
+}
+.brands .brand .brand-wrapper:hover .brand-wrapper-2 {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+@media all and (max-width: 1200px) {
+	.intec-adaptive .brands .brand {
+		width: 33.333333%;
+	}
+}
+
+@media all and (max-width: 640px) {
+	.intec-adaptive .brands .brand {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 380px) {
+	.intec-adaptive .brands .brand {
+		float: none;
+		width: auto;
+	}
+}

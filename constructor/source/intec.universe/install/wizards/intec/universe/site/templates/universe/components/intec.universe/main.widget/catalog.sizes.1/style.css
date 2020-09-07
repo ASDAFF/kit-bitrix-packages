@@ -1,0 +1,25 @@
+.widget.c-widget.c-widget-catalog-sizes-1 {
+  display: block;
+}
+.widget.c-widget.c-widget-catalog-sizes-1 .widget-content {
+  display: block;
+  overflow-x: auto;
+}
+.widget.c-widget.c-widget-catalog-sizes-1 .catalog-sizes-table {
+  width: 100%;
+}
+.widget.c-widget.c-widget-catalog-sizes-1 .catalog-sizes-table-row.catalog-sizes-table-row-even {
+  background: #f1f1f1;
+}
+.widget.c-widget.c-widget-catalog-sizes-1 .catalog-sizes-table-column {
+  padding: 7px 0;
+}
+.widget.c-widget.c-widget-catalog-sizes-1 .catalog-sizes-table-cell {
+  padding: 0 10px;
+  color: #1d1d1d;
+  font-size: 11px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

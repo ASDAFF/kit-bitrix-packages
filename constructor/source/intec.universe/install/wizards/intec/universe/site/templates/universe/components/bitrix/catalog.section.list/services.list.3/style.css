@@ -1,0 +1,87 @@
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 {
+  display: block;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-items {
+  display: block;
+  position: relative;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item {
+  display: block;
+  position: relative;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item + .catalog-section-list-item {
+  padding-top: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #e8e8e8;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture {
+  display: block;
+  position: relative;
+  float: left;
+  width: 270px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture a {
+  display: block;
+  position: relative;
+  padding-top: 70%;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-information {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-left: 270px;
+  padding: 15px 0 0 40px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-name {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 48px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-description {
+  display: block;
+  color: #616267;
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 84px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+@media all and (max-width: 600px) {
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture {
+    width: 150px;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture a {
+    padding-top: 126%;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-information {
+    margin-left: 150px;
+  }
+}
+@media all and (max-width: 450px) {
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture {
+    float: none;
+    width: auto;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-picture a {
+    padding-top: 50%;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-3 .catalog-section-list-item-information {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

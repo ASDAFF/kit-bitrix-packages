@@ -1,0 +1,75 @@
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 {
+  display: block;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-wrapper {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 80%;
+  text-decoration: none;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-content,
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-content {
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-overlay {
+  opacity: 0;
+  background-color: #000;
+  -webkit-transition: opacity 350ms;
+  -moz-transition: opacity 350ms;
+  -ms-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-information {
+  display: block;
+  position: absolute;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-name {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  color: #fff;
+  background-color: #0065ff;
+  padding: 7px 14px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-description {
+  display: block;
+  margin-top: 10px;
+  height: 0;
+  overflow: hidden;
+  color: #fff;
+  line-height: 1.28571429;
+  -webkit-transition: height 350ms;
+  -moz-transition: height 350ms;
+  -ms-transition: height 350ms;
+  -o-transition: height 350ms;
+  transition: height 350ms;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-wrapper:hover .catalog-section-list-item-overlay {
+  opacity: 0.3;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-tile-1 .catalog-section-list-item-wrapper:hover .catalog-section-list-item-description {
+  height: 54px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$class: 'intec-ui' !default;
+
+&-alert {
+  padding: 15px 15px 10px 15px;
+  border: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #737373;
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #dfdfdf;
+  border-radius: 2px;
+
+  // Schemes
+
+  @each $scheme-name, $scheme-values in $schemes {
+    &.#{$class}-scheme-#{$scheme-name} {
+      color: map-get(map-get($scheme-values, 'default'), 'background');
+      background-color: change-color(map-get(map-get($scheme-values, 'default'), 'background'), $lightness: 96%);
+      border-color: change-color(map-get(map-get($scheme-values, 'default'), 'background'), $lightness: 92%);
+    }
+  }
+}

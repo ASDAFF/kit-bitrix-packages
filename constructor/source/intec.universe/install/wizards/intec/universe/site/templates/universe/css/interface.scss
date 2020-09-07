@@ -1,0 +1,286 @@
+$class: 'intec-ui';
+$attribute: 'data-ui';
+$indents: (
+  0, 5, 10, 15, 20,
+  25, 30, 35, 40, 45,
+  50, 55, 60, 65, 70,
+  75, 80, 85, 90, 95,
+  100
+);
+$schemes: (
+  'gray': (
+    'default': (
+      'background': #afafaf,
+      'border': #afafaf,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #c3c3c3,
+      'border': #c3c3c3,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #c3c3c3,
+      'border': #c3c3c3,
+      'color': #fff
+    ),
+    'active': (
+      'background': #9b9b9b,
+      'border': #9b9b9b,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #dadada,
+      'border': #dadada,
+      'color': #fbfbfb
+    )
+  ),
+  'red': (
+    'default': (
+      'background': #dc130d,
+      'border': #dc130d,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #e63f3a,
+      'border': #e63f3a,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #e63f3a,
+      'border': #e63f3a,
+      'color': #fff
+    ),
+    'active': (
+      'background': #a82e2b,
+      'border': #a82e2b,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #a6898a,
+      'border': #a6898a,
+      'color': #fbfbfb
+    )
+  ),
+  'blue': (
+    'default': (
+      'background': #1976d2,
+      'border': #1976d2,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #2585e5,
+      'border': #2585e5,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #2585e5,
+      'border': #2585e5,
+      'color': #fff
+    ),
+    'active': (
+      'background': #2158a7,
+      'border': #2158a7,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #8091a7,
+      'border': #8091a7,
+      'color': #fbfbfb
+    )
+  ),
+  'blue-1': (
+    'default': (
+      'background': #0ca9e3,
+      'border': #0ca9e3,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #39baec,
+      'border': #39baec,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #39baec,
+      'border': #39baec,
+      'color': #fff
+    ),
+    'active': (
+      'background': #287ca1,
+      'border': #287ca1,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #748ca1,
+      'border': #748ca1,
+      'color': #fbfbfb
+    )
+  ),
+  'green': (
+    'default': (
+      'background': #00b290,
+      'border': #00b290,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #30c4a8,
+      'border': #30c4a8,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #30c4a8,
+      'border': #30c4a8,
+      'color': #fff
+    ),
+    'active': (
+      'background': #289f84,
+      'border': #289f84,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #7f9f93,
+      'border': #7f9f93,
+      'color': #fbfbfb
+    )
+  ),
+  'green-1': (
+    'default': (
+      'background': #84bc29,
+      'border': #84bc29,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #9dca53,
+      'border': #9dca53,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #9dca53,
+      'border': #9dca53,
+      'color': #fff
+    ),
+    'active': (
+      'background': #789b3b,
+      'border': #789b3b,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #8a9b79,
+      'border': #8a9b79,
+      'color': #fbfbfb
+    )
+  ),
+  'orange': (
+    'default': (
+      'background': #f38b04,
+      'border': #f38b04,
+      'color': #fff
+    ),
+    'hover': (
+      'background': #f8a132,
+      'border': #f8a132,
+      'color': #fff
+    ),
+    'focus': (
+      'background': #f8a132,
+      'border': #f8a132,
+      'color': #fff
+    ),
+    'active': (
+      'background': #c37c2b,
+      'border': #c37c2b,
+      'color': #fff
+    ),
+    'disabled': (
+      'background': #c3a69c,
+      'border': #c3a69c,
+      'color': #fbfbfb
+    )
+  )
+);
+$sizes: 5;
+$sizes-font-steps: 3;
+
+$controls-button-rounds: 5;
+$controls-input-rounds: 5;
+
+@function sizes-font-additional($step) {
+  @return (floor(($step) / $sizes-font-steps) * 2);
+}
+
+@function sizes-font-size($size, $step) {
+  @return ($size + sizes-font-additional($step));
+}
+
+@function sizes-line-height($size, $height, $step) {
+  @return (($height + (sizes-font-additional($step))) / sizes-font-size($size, $step));
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1.42857143;
+  color: #2d2d2d;
+}
+
+body {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*[data-lazyload-use="true"] {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: auto !important;
+  background-image: url('./../images/picture.loading.svg');
+}
+
+img[data-lazyload-use="true"] {
+  background-image: none;
+}
+
+.#{$class} {
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  @for $size from 1 through $sizes {
+    &.#{$class}-size-#{$size} {
+      font-size: #{sizes-font-size(14, $size)}px;
+      line-height: sizes-line-height(14, 20, $size);
+    }
+  }
+
+  @import './interface/controls.scss';
+  @import './interface/forms.scss';
+  @import './interface/typography.scss';
+  @import './interface/indents.scss';
+  @import './interface/helpers.scss';
+}

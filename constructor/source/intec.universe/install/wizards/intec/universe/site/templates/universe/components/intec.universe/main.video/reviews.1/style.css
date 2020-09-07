@@ -1,0 +1,38 @@
+@keyframes video-template-1-animate-arrow {
+    from {
+        transform: initial;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: initial;
+    }
+}
+.widget.c-video.c-video-template-1 .widget-element {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 60%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 34px rgba(0,0,0,0.3);
+}
+.widget.c-video.c-video-template-1 .widget-element-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 30%;
+    pointer-events: none;
+    top: 35%;
+    left: 35%;
+    position: absolute;
+}
+.widget.c-video.c-video-template-1 .widget-element:hover .widget-element-icon {
+    animation-name: video-template-1-animate-arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

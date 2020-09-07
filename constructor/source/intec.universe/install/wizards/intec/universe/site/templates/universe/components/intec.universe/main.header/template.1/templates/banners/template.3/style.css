@@ -1,0 +1,9 @@
+.c-header.c-header-template-1 .widget-banner .widget-banner-3 {
+  display: block;
+}
+.c-header.c-header-template-1 .widget-banner .widget-banner-3[data-wide=false] {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

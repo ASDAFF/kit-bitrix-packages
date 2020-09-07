@@ -1,0 +1,46 @@
+$namespace: 'bitrix';
+$component: 'catalog-section';
+$template: 'products-additional-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.5;
+
+  .#{$class}-items {
+    margin: -5px 0;
+  }
+
+  .#{$class}-item {
+    display: block;
+    padding: 5px 0;
+
+    &[data-basket-state="added"] {
+      .#{$class}-item-switch-control {
+        display: none;
+      }
+
+      .#{$class}-item-switch-state {
+        display: block;
+      }
+    }
+  }
+
+  .#{$class}-item-switch {}
+  .#{$class}-item-switch-control {}
+
+  .#{$class}-item-switch-state {
+    display: none;
+  }
+
+  .#{$class}-item-name {}
+
+  .api-ui-switch.api-ui-switch-active .api-ui-switch-control {
+    background: #0065ff;
+  }
+
+  .#{$class}-item-wrapper {}
+}

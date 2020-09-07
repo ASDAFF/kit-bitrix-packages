@@ -1,0 +1,59 @@
+$namespace: 'intec';
+$component: 'startshop-form-result-new';
+$template: 'contacts';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  .#{$class}-message-error {
+    display: block;
+    color: #ff114a;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .#{$class}-header {
+    font-size: 30px;
+    line-height: 30px;
+    color: #1c1c1c;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .#{$class}-title {
+    color: #969696;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
+  .#{$class}-fields {
+    display: block;
+    margin: -10px -7px !important;
+  }
+  .#{$class}-field {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 10px 7px;
+  }
+
+  .#{$class}-field-textarea {
+    float: right;
+
+    textarea {
+      height: 204px;
+      resize: none;
+    }
+  }
+
+  .#{$class}-footer {
+    margin-top: 10px;
+  }
+
+  @media all and (max-width: 720px) {
+    .#{$class}-field {
+      float: none;
+      width: 100%;
+    }
+  }
+}

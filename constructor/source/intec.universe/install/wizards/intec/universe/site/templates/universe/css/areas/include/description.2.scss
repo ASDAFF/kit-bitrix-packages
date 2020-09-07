@@ -1,0 +1,53 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include-description-2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ededed;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #000;
+
+  .#{$class}-part-wrapper {}
+  .#{$class}-part-wrapper-2 {}
+  .#{$class}-part-wrapper-3 {}
+
+  .#{$class}-part-information {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: 200px;
+  }
+
+  .#{$class}-part-information-block-1 {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.17em;
+  }
+
+  .#{$class}-part-information-block-2 {
+    font-weight: 500;
+    font-size: 118px;
+    line-height: 1.18;
+    letter-spacing: -0.05em;
+  }
+
+  .#{$class}-part-information-block-3 {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .#{$class}-part-text {
+    display: block;
+  }
+
+  @media all and (max-width: 650px) {
+    .#{$class}-part-information {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

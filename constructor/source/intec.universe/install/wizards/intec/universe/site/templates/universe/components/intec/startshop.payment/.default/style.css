@@ -1,0 +1,39 @@
+.startshop-payment.default {
+    display: block;
+    text-align: center;
+    font-size: 0;
+    color: #2d2c2c;
+}
+
+.startshop-payment.default .startshop-payment-message {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.startshop-payment.default .startshop-payment-message .startshop-payment-icon {
+    display: none;
+    vertical-align: middle;
+    width: 303px;
+    height: 303px;
+    margin: 0 auto;
+}
+.startshop-payment.default .startshop-payment-message.startshop-payment-message-success .startshop-payment-icon {
+    display: block;
+    background: url('images/payment_status_success.png') no-repeat;
+}
+.startshop-payment.default .startshop-payment-message.startshop-payment-message-fail .startshop-payment-icon {
+    display: block;
+    background: url('images/payment_status_fail.png') no-repeat;
+}
+
+.startshop-payment.default .startshop-payment-message .startshop-payment-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.startshop-payment.default .startshop-payment-link-wrapper {
+    margin-top: 35px;
+}

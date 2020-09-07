@@ -1,0 +1,5 @@
+<?php
+
+$MESS['C_MAIN_RATES_TEMPLATE_3_HEAD_COLUMN_1'] = 'Тарифный план';
+$MESS['C_MAIN_RATES_TEMPLATE_3_ORDER_BUTTON_DEFAULT'] = 'Заказать услугу';
+$MESS['C_MAIN_RATES_TEMPLATE_3_RRICE_TITLE'] = 'Цена';

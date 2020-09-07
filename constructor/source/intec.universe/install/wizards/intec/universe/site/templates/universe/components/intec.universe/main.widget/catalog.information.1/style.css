@@ -1,0 +1,47 @@
+.widget.c-widget.c-widget-catalog-information-1 {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: #1d1d1d;
+  max-width: 800px;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-items {
+  margin: -20px 0;
+  min-height: 40px;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-item {
+  padding: 20px 0;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px 20px;
+  border: 2px solid #efefef;
+  border-radius: 20px;
+  color: #444444;
+  text-decoration: none;
+  font-size: 15px;
+  -webkit-transition: background-color 350ms;
+  -moz-transition: background-color 350ms;
+  -ms-transition: background-color 350ms;
+  -o-transition: background-color 350ms;
+  transition: background-color 350ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-button:hover {
+  background: #efefef;
+}
+.widget.c-widget.c-widget-catalog-information-1 .catalog-information-items + .catalog-information-button {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

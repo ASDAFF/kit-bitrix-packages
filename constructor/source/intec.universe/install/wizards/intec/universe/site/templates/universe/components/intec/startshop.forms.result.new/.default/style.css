@@ -1,0 +1,29 @@
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default {
+  display: block;
+  overflow: hidden;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default .startshop-form-result-new-message-error {
+  display: block;
+  color: #ff114a;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default .startshop-form-result-new-fields {
+  display: block;
+  margin: -8px 0 17px 0;
+  min-height: 8px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default .startshop-form-result-new-field {
+  display: block;
+  padding: 8px 0;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default .startshop-form-result-new-consent {
+  margin-bottom: 25px;
+}
+.ns-intec.c-startshop-form-result-new.c-startshop-form-result-new-default .startshop-form-result-new-sent {
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

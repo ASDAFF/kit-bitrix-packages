@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Рассылки";
+$arDirProperties = Array(
+
+);
+?>

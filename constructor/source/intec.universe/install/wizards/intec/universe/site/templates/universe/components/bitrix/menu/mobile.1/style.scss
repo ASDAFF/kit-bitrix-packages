@@ -1,0 +1,223 @@
+$namespace: 'bitrix';
+$component: 'menu';
+$template: 'mobile-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-button {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #1d1d1d;
+    line-height: 1;
+    cursor: pointer;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+
+  .#{$class} {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .#{$class}-panel {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 86px;
+    z-index: 1;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .#{$class}-panel-wrapper {
+    padding: 0 20px;
+    height: 100%;
+  }
+
+  .#{$class}-panel-button {
+    width: 18px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    color: #1d1d1d;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+
+  .#{$class}-panel-logotype {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    color: #1d1d1d;
+    text-decoration: none;
+
+    svg {
+      max-height: 50px;
+    }
+  }
+
+  .#{$class}-panel-logotype-wrap {
+    text-align: left;
+  }
+
+  .#{$class}-content {
+    display: block;
+    height: 100%;
+    padding-top: 86px;
+    z-index: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .#{$class}-content-wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .#{$class}-items {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .#{$class}-content {
+    &[data-current="true"] {
+      .#{$class}-items {
+        overflow: auto;
+      }
+    }
+  }
+
+  .#{$class}-item {
+    display: block;
+  }
+
+  .#{$class}-item-wrapper {
+    display: block;
+  }
+
+  .#{$class}-item-content {
+    display: block;
+    padding: 20px;
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    a {
+      text-decoration: inherit;
+      color: inherit;
+    }
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+
+  .#{$class}-item-icon {
+    width: 20px;
+    text-align: center;
+  }
+
+  .#{$class}-item-items {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+
+    -webkit-transition: left 500ms;
+    -moz-transition: left 500ms;
+    -ms-transition: left 500ms;
+    -o-transition: left 500ms;
+    transition: left 500ms;
+  }
+
+  .#{$class}-item {
+    &.#{$class}-item-selected {
+      > .#{$class}-item-wrapper {
+        > .#{$class}-item-content {
+          color: #0065ff;
+        }
+      }
+    }
+
+    &.#{$class}-item-title {
+      .#{$class}-item-content {
+        background: #f1f1f1;
+        color: #1d1d1d;
+      }
+    }
+
+    &.#{$class}-item-extra {
+      > .#{$class}-item-wrapper {
+        > .#{$class}-item-content {
+          background: #f1f1f1;
+          color: #1d1d1d;
+          border-color: #e5e5e5;
+        }
+      }
+    }
+
+    &[data-expanded="true"] {
+      & > .#{$class}-item-wrapper {
+        & > .#{$class}-item-items {
+          left: 0;
+        }
+      }
+    }
+
+    &[data-current="true"] {
+      & > .#{$class}-item-wrapper {
+        & > .#{$class}-item-items {
+          overflow: auto;
+        }
+      }
+    }
+  }
+}

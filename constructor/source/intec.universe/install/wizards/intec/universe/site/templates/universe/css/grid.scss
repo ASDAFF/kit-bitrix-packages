@@ -1,0 +1,475 @@
+$class: 'intec-' !default;
+$grid-columns: 10 !default;
+$grid-indents: 25 !default;
+$grid-adaptation: (
+  1200,
+  1150, 1100,
+  1050, 1024, 1000,
+  950, 900,
+  850, 800,
+  768, 750, 720, 700,
+  650, 600,
+  550, 500,
+  450, 425, 414, 411, 400,
+  375, 360, 350, 320
+) !default;
+
+@function grid-width ($column) {
+  @return  #{100 / $column}#{'%'}
+}
+
+// Grid
+.#{$class}grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &.#{$class}grid-important {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  &.#{$class}grid-inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    &.#{$class}grid-important {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+  }
+
+  // Grid Display
+  &.#{$class}grid-o-horizontal {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  &.#{$class}grid-o-horizontal-reverse {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  &.#{$class}grid-o-vertical {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  &.#{$class}grid-o-vertical-reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+
+  // Grid Wrap
+  &.#{$class}grid-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  &.#{$class}grid-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  &.#{$class}grid-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+
+  @each $adaptation in $grid-adaptation {
+    @media all and (max-width: #{$adaptation}px) {
+      &.#{$class}grid-#{$adaptation}-wrap {
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+      }
+      &.#{$class}grid-#{$adaptation}-nowrap {
+        -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+      }
+      &.#{$class}grid-#{$adaptation}-wrap-reverse {
+        -ms-flex-wrap: wrap-reverse !important;
+        flex-wrap: wrap-reverse !important;
+      }
+    }
+  }
+
+  %item {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+  }
+
+  %item-a-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+  %item-a-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  %item-a-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  %item-a-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  %item-a-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  %item-a-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+
+  %order {}
+
+  // Grid Item Align
+  @mixin item-a {
+    &.#{$class}grid-item-a-auto { @extend %item-a-auto; }
+    &.#{$class}grid-item-a-start { @extend %item-a-start; }
+    &.#{$class}grid-item-a-end { @extend %item-a-end; }
+    &.#{$class}grid-item-a-center { @extend %item-a-center; }
+    &.#{$class}grid-item-a-baseline { @extend %item-a-baseline; }
+    &.#{$class}grid-item-a-stretch { @extend %item-a-stretch; }
+
+    &.#{$class}grid-item-shrink-none {
+      -ms-flex-negative: 0;
+      -webkit-flex-shrink: 0;
+      -moz-flex-shrink: 0;
+      -ms-flex: 0;
+      flex-shrink: 0;
+    }
+
+    @for $column from 1 through $grid-columns {
+      &.#{$class}grid-item-shrink-#{$column} {
+        -ms-flex-negative: $column;
+        -webkit-flex-shrink: $column;
+        -moz-flex-shrink: $column;
+        -ms-flex: $column;
+        flex-shrink: $column;
+      }
+    }
+
+    &.#{$class}grid-item-shrink-max {
+      -ms-flex-negative: $grid-columns + 1;
+      -webkit-flex-shrink: $grid-columns + 1;
+      -moz-flex-shrink: $grid-columns + 1;
+      -ms-flex: $grid-columns + 1;
+      flex-shrink: $grid-columns + 1;
+    }
+  }
+
+  // Grid Column Full
+  & > .#{$class}grid-item {
+    @extend %item;
+    @include item-a();
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  // Grid Column Auto
+  & > .#{$class}grid-item-auto {
+    @extend %item;
+    @include item-a();
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+
+  // Grid Columns
+  @for $column from 1 through $grid-columns {
+    & > .#{$class}grid-item-#{$column} {
+      @extend %item;
+      @include item-a();
+      -ms-flex: 0 0 grid-width($column);
+      flex: 0 0 grid-width($column);
+      max-width: grid-width($column);
+    }
+  }
+
+  @each $adaptation in $grid-adaptation {
+    @media all and (max-width: #{$adaptation}px) {
+      @for $column from 1 through $grid-columns {
+        & > .#{$class}grid-item-#{$adaptation} {
+          -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          max-width: 100%;
+        }
+
+        & > .#{$class}grid-item-#{$adaptation}-auto {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          width: auto;
+          max-width: none;
+        }
+
+        & > .#{$class}grid-item-#{$adaptation}-#{$column} {
+          -ms-flex: 0 0 grid-width($column);
+          flex: 0 0 grid-width($column);
+          max-width: grid-width($column);
+        }
+      }
+    }
+  }
+
+  // Grid Indents
+  @for $indent from 0 through $grid-indents {
+    $name: $indent;
+
+    @if ($indent == 0) {
+      $name: 'none';
+    }
+
+    @each $orientation in ('', '-h', '-v') {
+      &.#{$class}grid-i#{$orientation}-#{$name} {
+        @if ($orientation == '') {
+          margin-top: -#{$indent}px;
+          margin-right: -#{$indent}px;
+          margin-bottom: -#{$indent}px;
+          margin-left: -#{$indent}px;
+        } @else if ($orientation == '-h') {
+          margin-right: -#{$indent}px !important;
+          margin-left: -#{$indent}px !important;
+        } @else {
+          margin-top: -#{$indent}px !important;
+          margin-bottom: -#{$indent}px !important;
+        }
+
+        & > .#{$class}grid-item {
+          @extend %#{$class}grid-i#{$orientation}-#{$name}-item;
+        }
+
+        & > .#{$class}grid-item-auto {
+          @extend %#{$class}grid-i#{$orientation}-#{$name}-item;
+        }
+
+        @for $column from 1 through $grid-columns {
+          & > .#{$class}grid-item-#{$column} {
+            @extend %#{$class}grid-i#{$orientation}-#{$name}-item;
+          }
+        }
+      }
+    }
+
+    %#{$class}grid-i-#{$name}-item {
+      padding-top: #{$indent}px;
+      padding-bottom: #{$indent}px;
+      padding-right: #{$indent}px;
+      padding-left: #{$indent}px;
+    }
+
+    %#{$class}grid-i-h-#{$name}-item {
+      padding-right: #{$indent}px !important;
+      padding-left: #{$indent}px !important;
+    }
+
+    %#{$class}grid-i-v-#{$name}-item {
+      padding-top: #{$indent}px !important;
+      padding-bottom: #{$indent}px !important;
+    }
+  }
+
+  // Grid Order
+  & > .#{$class}grid-order-first {
+    @extend %order;
+    order: -1;
+  }
+
+  @for $column from 0 through $grid-columns {
+    & > .#{$class}grid-order-#{$column} {
+      @extend %order;
+      order: #{$column};
+    }
+  }
+
+  & > .#{$class}grid-order-last {
+    @extend %order;
+    order: #{$grid-columns + 1};
+  }
+
+  // Grid Align Horizontal
+  &.#{$class}grid-a-h-start {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  &.#{$class}grid-a-h-end {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  &.#{$class}grid-a-h-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  &.#{$class}grid-a-h-between {
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  &.#{$class}grid-a-h-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+
+  // Grid Align Vertical
+  &.#{$class}grid-a-v-start {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  &.#{$class}grid-a-v-end {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  &.#{$class}grid-a-v-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  &.#{$class}grid-a-v-baseline {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+  &.#{$class}grid-a-v-stretch {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  // Grid Align Content
+  &.#{$class}grid-a-c-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  &.#{$class}grid-a-c-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  &.#{$class}grid-a-c-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  &.#{$class}grid-a-c-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  &.#{$class}grid-a-c-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+  &.#{$class}grid-a-c-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+
+  // Grid Align Content Adaptation
+  @each $adaptation in $grid-adaptation {
+    @media all and (max-width: #{$adaptation}px) {
+      // Grid Align Horizontal
+      &.#{$class}grid-a-h-#{$adaptation}-start {
+        -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+      }
+      &.#{$class}grid-a-h-#{$adaptation}-end {
+        -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+        justify-content: flex-end !important;
+      }
+      &.#{$class}grid-a-h-#{$adaptation}-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+      }
+      &.#{$class}grid-a-h-#{$adaptation}-between {
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+      }
+      &.#{$class}grid-a-h-#{$adaptation}-around {
+        -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+      }
+
+      // Grid Align Vertical
+      &.#{$class}grid-a-v-#{$adaptation}-start {
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
+      }
+      &.#{$class}grid-a-v-#{$adaptation}-end {
+        -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+        align-items: flex-end !important;
+      }
+      &.#{$class}grid-a-v-#{$adaptation}-center {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+      }
+      &.#{$class}grid-a-v-#{$adaptation}-baseline {
+        -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+        align-items: baseline !important;
+      }
+      &.#{$class}grid-a-v-#{$adaptation}-stretch {
+        -webkit-box-align: stretch !important;
+        -ms-flex-align: stretch !important;
+        align-items: stretch !important;
+      }
+
+      // Grid Align Content
+      &.#{$class}grid-a-c-#{$adaptation}-start {
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important;
+      }
+      &.#{$class}grid-a-c-#{$adaptation}-end {
+        -ms-flex-line-pack: end !important;
+        align-content: flex-end !important;
+      }
+      &.#{$class}grid-a-c-#{$adaptation}-center {
+        -ms-flex-line-pack: center !important;
+        align-content: center !important;
+      }
+      &.#{$class}grid-a-c-#{$adaptation}-between {
+        -ms-flex-line-pack: justify !important;
+        align-content: space-between !important;
+      }
+      &.#{$class}grid-a-c-#{$adaptation}-around {
+        -ms-flex-line-pack: distribute !important;
+        align-content: space-around !important;
+      }
+      &.#{$class}grid-a-c-#{$adaptation}-stretch {
+        -ms-flex-line-pack: stretch !important;
+        align-content: stretch !important;
+      }
+    }
+  }
+}

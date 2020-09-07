@@ -1,0 +1,43 @@
+.ns-bitrix.c-menu.c-menu-vertical-2 {
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2d2d2d;
+  overflow: hidden;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-items {
+  display: block;
+  margin: -6px 0;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item {
+  display: block;
+  font-weight: normal;
+  padding: 6px 0;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item[data-selected=true] {
+  font-weight: bold;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item-text {
+  color: #2d2d2d;
+  text-decoration: none;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item-text-counter {
+  color: #c7c7c7;
+  font-weight: normal;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item-items {
+  display: none;
+  padding: 10px 0 0 20px;
+}
+.ns-bitrix.c-menu.c-menu-vertical-2 .menu-item-items[data-expanded=true] {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

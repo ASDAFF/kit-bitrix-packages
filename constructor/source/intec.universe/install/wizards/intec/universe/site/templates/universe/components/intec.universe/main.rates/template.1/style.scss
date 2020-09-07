@@ -1,0 +1,241 @@
+$component: 'rates';
+$template: 'template-1-1';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-section-description {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+  .#{$item} {
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      z-index: 2;
+    }
+  }
+  .#{$item}-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+  }
+  .#{$item}-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #ECECEC;
+    background-color: #FFF;
+    @include transition(#{margin, box-shadow}, 0.4s);
+  }
+  .#{$item}-content {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+  }
+  .#{$item}-decoration {
+    margin-bottom: 20px;
+  }
+  .#{$item}-counter {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .#{$item}-sticker-wrap {
+    font-size: 0;
+    text-align: right;
+  }
+  .#{$item}-sticker {
+    display: inline-block;
+    top: 30px;
+    right: 30px;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FFF;
+    padding: 5px;
+    @include border-radius(3px);
+  }
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .#{$item}-price {
+    margin-top: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .#{$item}-price-value {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  .#{$item}-price-currency {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .#{$item}-discount {
+    margin-top: 10px;
+  }
+  .#{$item}-discount-value {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #6b6b6b;
+    text-decoration: line-through;
+  }
+  .#{$item}-description {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+  .#{$item}-properties {
+    margin-top: 20px;
+  }
+  .#{$item}-property {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .#{$item}-button {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    padding: 15px;
+    cursor: pointer;
+    @include border-radius(3px);
+    @include transition(background-color, 0.4s);
+  }
+  [data-button='true'] {
+    .#{$item}-content {
+      padding-bottom: 74px;
+    }
+  }
+  [data-slider='false'] {
+    .#{$item} {
+      margin-top: -1px;
+      margin-left: -1px;
+    }
+    .#{$item}-wrapper:hover {
+      .#{$item}-effect {
+        margin: -10px;
+        -webkit-box-shadow: 0 9px 24px 0 rgba(111, 129, 162, 0.35);
+        -moz-box-shadow: 0 9px 24px 0 rgba(111, 129, 162, 0.35);
+        box-shadow: 0 9px 24px 0 rgba(111, 129, 162, 0.35);
+      }
+    }
+  }
+  [data-slider='true'] {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .#{$item} {
+      height: 100%;
+    }
+    .intec-ui-control-navigation {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+    }
+    .intec-ui-part-button-left,
+    .intec-ui-part-button-right {
+      position: absolute;
+      display: block;
+      font-size: 26px;
+      line-height: 0;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin-top: -20px;
+      background-color: #FFF;
+      opacity: 1;
+      @include border-radius(50%);
+      @include transition(background-color, 0.4s);
+
+      &:hover {
+        background-color: #ececec;
+      }
+      &.disabled {
+        display: none;
+      }
+    }
+    .intec-ui-part-button-left {
+      padding-right: 2px;
+    }
+    .intec-ui-part-button-right {
+      padding-left: 2px;
+    }
+    .intec-ui-control-dots {
+      padding-top: 25px;
+    }
+  }
+  [data-align='left'] {
+    text-align: left;
+  }
+  [data-align='center'] {
+    text-align: center;
+  }
+  [data-align='right'] {
+    text-align: right;
+  }
+  @media all and (max-width: 650px) {
+    [data-slider='true'] {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .intec-ui-part-button-left,
+      .intec-ui-part-button-right {
+        border: 1px solid #ECECEC;
+      }
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-name {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .#{$item}-price-value {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    .#{$item}-price-currency,
+    .#{$item}-discount-value {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}

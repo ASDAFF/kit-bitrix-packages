@@ -1,0 +1,7 @@
+<?php
+
+$MESS['C_MAIN_FORM_TEMPLATE_6_TITLE_DEFAULT'] = 'Заголовок по умолчанию';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_NAME_DEFAULT'] = 'Заказать звонок';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_1_BUTTON_DEFAULT'] = 'Заказать звонок';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_NAME_DEFAULT'] = 'Задать вопрос';
+$MESS['C_MAIN_FORM_TEMPLATE_6_FORMS_2_BUTTON_DEFAULT'] = 'Задать вопрос';

@@ -1,0 +1,68 @@
+$component: 'header';
+$template: 'template-1';
+$class: 'widget-authorization';
+
+$color-gray-1: #808080;
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-button {
+    overflow: hidden;
+    cursor: pointer;
+    @include transition(opacity, 0.4s);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .#{$class}-button-icon {
+    font-size: 0;
+
+    svg {
+      display: inline-block;
+      fill: $color-gray-1;
+      width: 15px;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      @include transition(fill, 0.4s);
+    }
+  }
+  .#{$class}-button-content {
+    display: block;
+    font-size: 12px;
+    line-height: 17px;
+    color: $color-gray-1;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$class}-button-content-decorated {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top: 1px solid;
+      opacity: 0.16;
+    }
+  }
+  .#{$class}-modal {
+    display: none;
+  }
+}

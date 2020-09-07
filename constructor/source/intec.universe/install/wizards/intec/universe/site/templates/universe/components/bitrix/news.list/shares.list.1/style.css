@@ -1,0 +1,71 @@
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-description {
+  margin-bottom: 20px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-items {
+  margin: -25px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item {
+  padding: 25px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-wrapper {
+  position: relative;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-wrapper:hover .news-list-item-picture {
+  -webkit-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-picture {
+  width: 270px;
+  height: 193px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  -ms-transition: box-shadow 350ms;
+  -o-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-information {
+  padding: 10px 0 0 20px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-date {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #707072;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-name {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-name a {
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-description {
+  height: 105px;
+  color: #89898b;
+  overflow: hidden;
+}
+@media all and (max-width: 500px) {
+  .ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-information {
+    padding: 20px 0 0 0;
+  }
+  .ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-name a {
+    font-size: 14px;
+  }
+  .ns-bitrix.c-news-list.c-news-list-shares-list-1 .news-list-item-description {
+    max-height: 63px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

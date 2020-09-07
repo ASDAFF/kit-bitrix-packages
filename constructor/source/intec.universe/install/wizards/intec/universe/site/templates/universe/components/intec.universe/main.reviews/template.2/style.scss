@@ -1,0 +1,166 @@
+$component: 'reviews';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .#{$item}-picture-wrap {
+    padding-right: 45px;
+  }
+  .#{$item}-picture {
+    display: block;
+    width: 105px;
+    height: 105px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(50%);
+  }
+  .#{$item}-counter {
+    font-size: 14px;
+    line-height: 14px;
+    color: #888888;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .#{$item}-name-wrap {
+    margin-top: 40px;
+  }
+  .#{$item}-name {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-position {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+    max-width: 250px;
+  }
+  .#{$item}-logotype-wrap {
+    font-size: 0;
+    text-align: right;
+  }
+  .#{$item}-logotype {
+    display: inline-block;
+    height: 75px;
+
+    img {
+      display: inline-block;
+      width: auto;
+      height: 75px;
+      max-width: 100%;
+      max-height: 100%;
+      filter: grayscale(1);
+      @include transition(filter, 0.4s);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+  .intec-ui-control-navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+
+    .intec-ui-part-button-left,
+    .intec-ui-part-button-right {
+      font-size: 0;
+      width: 35px;
+      height: 35px;
+      @include border-radius(50%);
+      @include transition(background-color, 0.4s);
+
+      &:hover {
+        background-color: #E3E3E3;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+    .intec-ui-part-button-left i {
+      padding-right: 2px;
+    }
+    .intec-ui-part-button-right i {
+      padding-left: 2px;
+    }
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    .widget-items {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-picture-wrap {
+      padding-right: 0;
+    }
+    .#{$item}-picture {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .#{$item}-counter {
+      margin-top: 20px;
+    }
+    .#{$item}-text {
+      margin-top: 20px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-text,
+    .#{$item}-logotype-wrap {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .#{$item}-description {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .#{$item}-name-wrap {
+      margin-top: 25px;
+    }
+    .#{$item}-position {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

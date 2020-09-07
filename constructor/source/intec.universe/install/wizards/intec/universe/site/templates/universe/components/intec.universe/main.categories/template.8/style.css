@@ -1,0 +1,139 @@
+.widget.c-categories.c-categories-template-8 .widget-items {
+  position: relative;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-wrapper {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-picture {
+  position: relative;
+  padding-top: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-sticker-wrap,
+.widget.c-categories.c-categories-template-8 .widget-item-name-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-sticker-wrap {
+  margin: 20px;
+  z-index: 2;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-sticker {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+  color: #fff;
+  text-align: center;
+  padding: 7px 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-name-wrap {
+  margin: 15px;
+  z-index: 3;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-name {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2a2c2f;
+  padding: 6px 11px;
+  background-color: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-wrapper:hover {
+  -webkit-box-shadow: 2px 6px 20px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 6px 20px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 6px 20px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.widget.c-categories.c-categories-template-8 .widget-item-wrapper:hover .widget-item-picture {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.widget.c-categories.c-categories-template-8 [data-grid="3"] [data-size=big] {
+  width: 66.6666666666%;
+}
+.widget.c-categories.c-categories-template-8 [data-grid="4"] [data-size=big] {
+  width: 50%;
+}
+.widget.c-categories.c-categories-template-8 [data-size=big] .widget-item-wrapper {
+  height: 100%;
+}
+.widget.c-categories.c-categories-template-8 [data-size=big] .widget-item-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+}
+.widget.c-categories.c-categories-template-8 [data-horizontal=left] {
+  text-align: left;
+}
+.widget.c-categories.c-categories-template-8 [data-horizontal=center] {
+  text-align: center;
+}
+.widget.c-categories.c-categories-template-8 [data-horizontal=right] {
+  text-align: right;
+}
+.widget.c-categories.c-categories-template-8 [data-vertical=top] {
+  vertical-align: top;
+}
+.widget.c-categories.c-categories-template-8 [data-vertical=middle] {
+  vertical-align: middle;
+}
+.widget.c-categories.c-categories-template-8 [data-vertical=bottom] {
+  vertical-align: bottom;
+}
+@media all and (max-width: 500px) {
+  .widget.c-categories.c-categories-template-8 [data-size=big] .widget-item-wrapper {
+    height: auto;
+  }
+  .widget.c-categories.c-categories-template-8 [data-size=big] .widget-item-picture {
+    position: relative;
+    padding-bottom: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

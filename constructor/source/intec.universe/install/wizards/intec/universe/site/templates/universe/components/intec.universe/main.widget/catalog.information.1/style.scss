@@ -1,0 +1,60 @@
+$component: 'widget';
+$template: 'catalog-information-1';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: #1d1d1d;
+  max-width: 800px;
+
+  .catalog-information {}
+
+  .catalog-information-items {
+    margin: -20px 0;
+    min-height: 40px;
+  }
+
+  .catalog-information-item {
+    padding: 20px 0;
+  }
+
+  .catalog-information-item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .catalog-information-item-description {}
+
+  .catalog-information-button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 20px;
+    border: 2px solid #efefef;
+    border-radius: 20px;
+    color: #444444;
+    text-decoration: none;
+    font-size: 15px;
+
+    -webkit-transition: background-color 350ms;
+    -moz-transition: background-color 350ms;
+    -ms-transition: background-color 350ms;
+    -o-transition: background-color 350ms;
+    transition: background-color 350ms;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      background: #efefef;
+    }
+  }
+
+  .catalog-information-items + .catalog-information-button {
+    margin-top: 40px;
+  }
+}

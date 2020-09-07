@@ -1,0 +1,127 @@
+.widget-web-form-2 {
+    display: block;
+    background: #116afc;
+}
+.widget-web-form-2 .widget-web-form-2-background {
+    display: block;
+    background: #116afc;
+}
+.widget-web-form-2 .widget-web-form-2-background .widget-web-form-2-background-wrapper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.widget-web-form-2 .widget-web-form-2-section {
+    display: block;
+    position: relative;
+    height: 130px;
+    font-size: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    margin-left: 20px;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-image {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    text-align: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-text-wrap {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 30px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #fff;
+    margin: 0 30px;
+    font-weight: bold;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-description {
+    margin-left: 300px;
+    margin-right: 220px;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-description .widget-web-form-2-text {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 40px;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    margin-right: 20px;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-button .intec-button {
+    white-space: normal;
+    border-color: #fff;
+    color: #fff;
+}
+.widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-button .intec-button:hover {
+    background-color: #fff;
+    color: #116afc;
+}
+
+@media all and (max-width: 900px) {
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-description {
+        margin-right: 20px;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-button {
+        position: relative;
+        width: auto;
+        margin: 30px 0;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title {
+        margin: 0;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-image {
+        bottom: 0;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-text-wrap {
+        border: none;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title .widget-web-form-2-text {
+        text-align: center;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-description {
+        margin: 30px 0;
+        height: auto;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-description .widget-web-form-2-text {
+        text-align: center;
+    }
+    .widget-web-form-2 .widget-web-form-2-section.widget-web-form-2-title {
+        position: relative;
+        width: auto;
+    }
+}

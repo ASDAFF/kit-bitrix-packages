@@ -1,0 +1,404 @@
+$namespace: 'intec-universe';
+$component: 'sale-basket-small';
+$template: 'icons-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  @media all and (max-width: 720px)  {
+    position: static;
+  }
+
+  .#{$class}-content {
+    position: relative;
+    display: inline-block;
+  }
+
+  .#{$class}-tabs {}
+
+  .#{$class}-tab-wrap {
+
+    &[data-active='true'] .#{$class}-popup {
+      opacity: 1;
+      pointer-events: all;
+      -webkit-transition: none;
+      transition: none;
+
+      .#{$class}-popup-wrapper {
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    &[data-tab="basket"] {
+      .#{$class}-tab-icon {
+        font-size: 22px;
+        margin-top: -2px;
+      }
+    }
+
+  }
+
+  .#{$class}-tab {
+    color: #bebebf;
+
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+
+    &-wrapper {
+      display: block;
+      position: relative;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      line-height: 1;
+      color: inherit;
+    }
+
+    &-icon {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 20px;
+      color: inherit;
+    }
+
+    &-counter {
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      line-height: 15px;
+      width: 15px;
+      height: 15px;
+      font-size: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      background: #0051cc;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    &[data-tab='basket'] {
+      font-size: 22px;
+    }
+
+  }
+
+  .#{$class}-popup {
+    height: auto;
+    top: 100%;
+    padding-top:15px;
+    right: -50px;
+    width: 410px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    z-index: 1;
+
+    -webkit-transition: opacity 350ms;
+    -moz-transition: opacity 350ms;
+    -ms-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 61px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #fff;
+      z-index: 1;
+
+      @media all and (max-width: 1350px)  {
+        right: 10px;
+      }
+    }
+
+    @media all and (max-width: 1350px)  {
+      right: 0;
+    }
+
+  }
+
+  .#{$class}-popup-wrapper {
+    width: 410px;
+    background: #fff;
+
+    will-change: transform;
+    -webkit-transform-origin: 50% -50px;
+    transform-origin: 50% -50px;
+    -webkit-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
+
+  .#{$class}-header {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .#{$class}-header-text {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .#{$class}-header-count {
+    color: #888;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  .#{$class}-header-btn-close {
+    cursor: pointer;
+    height: 61px;
+    width: 61px;
+    display: inline-block;
+    background: #303030;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .#{$class}-header-btn-close i {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .#{$class}-close {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+
+  .#{$class}-header-clear-wrap {
+    padding: 10px;
+  }
+
+  .#{$class}-header-clear {
+    padding: 11px 20px;
+    line-height: 1;
+    border-radius: 20px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    border-color: #f7f7f7;
+
+    .intec-button-text {
+      font-size: 10px;
+      line-height: 14px;
+      color: #888;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+    i {
+      font-size: 7px;
+      line-height: 14px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      .intec-button-text, i {
+        color: #fff;
+      }
+    }
+  }
+
+  .#{$class}-body {
+    height: 294px;
+    overflow-y: auto;
+  }
+
+  .#{$class}-popup-title {
+    font-size: 24px;
+    color: #212324;
+  }
+
+  .#{$class}-popup-header {
+    margin-bottom: 20px;
+  }
+
+  .#{$class}-product {
+    border-bottom: 1px solid #e8e8e8;
+
+    &:hover .#{$class}-product-icon-delete {
+      opacity: 1
+    }
+  }
+
+  .#{$class}-product-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .#{$class}-product-image {
+    display: block;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin: 18px
+  }
+
+  .#{$class}-product-image-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #fdfdfd;
+  }
+
+  .#{$class}-product-icon-delete {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 26px;
+    height: 26px;
+    font-size: 10px;
+    line-height: 27px;
+    text-align: center;
+    background: #ea4b4b;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+
+    i {
+      line-height: 1;
+      font-size: 8px;
+      color: #fff;
+      height: 8px;
+      width: 7px;
+      display: inline-block;
+    }
+  }
+  .#{$class}-product-name-wrap {
+    margin: 20px 0;
+    margin-bottom: 10px;
+  }
+
+  .#{$class}-product-name {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+
+  .#{$class}-product-new-price {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    color: #161616;
+  }
+
+  .#{$class}-product-old-price {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    position: relative;
+    color: #cfcfcf;
+    margin-left: 10px;
+
+    &:after {
+      content: ' ';
+      display: block;
+      width:100%;
+      border-top: 1px solid #cfcfcf;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+
+  .#{$class}-product-add-basket {
+    margin-top: 10px;
+  }
+  .#{$class}-product-button-delay,
+  .#{$class}-product-button-basket {
+    cursor: pointer;
+  }
+
+  .#{$class}-footer-sum-wrap {
+    padding: 15px 20px;
+    background: #FBFBFB;
+  }
+
+  .#{$class}-footer-sum-title {
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+
+  .#{$class}-footer-new-sum {
+    display: inline-block;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .#{$class}-footer-old-sum {
+    font-size: 13px;
+    font-weight: normal;
+    color: #888888;
+    position: relative;
+    margin-left: 20px;
+
+    &:after {
+      content: ' ';
+      border-top: 1px solid #000;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+    }
+  }
+
+  .#{$class}-footer-order-button {
+    font-size: 16px;
+    padding: 18px 0;
+  }
+
+  .#{$class}-footer-buttons {
+    text-align: center;
+  }
+}

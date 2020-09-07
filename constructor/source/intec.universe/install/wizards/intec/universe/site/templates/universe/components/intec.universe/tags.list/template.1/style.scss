@@ -1,0 +1,76 @@
+$namespace: 'intec-universe';
+$component: 'tags-list';
+$template: 'template-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  .#{$class}-items {}
+
+  .#{$class}-item {
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+
+      &:checked + .#{$class}-item-button {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+
+  .#{$class}-item-wrapper {}
+
+  .#{$class}-item-button {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    color: #444444;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    cursor: pointer;
+    padding: 3px 12px;
+    border-radius: 3px;
+    top: 0;
+
+    -webkit-transition-property: color, background-color, top;
+    -moz-transition-property: color, background-color, top;
+    -ms-transition-property: color, background-color, top;
+    -o-transition-property: color, background-color, top;
+    transition-property: color, background-color, top;
+
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    transition-duration: 350ms;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+
+    &:active {
+      top: 3px;
+    }
+  }
+
+  .#{$class}-item-name {}
+
+  .#{$class}-item-quantity {
+    color: #9f9f9f;
+  }
+}

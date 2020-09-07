@@ -1,0 +1,9 @@
+.ns-bitrix.c-news.c-news-reviews .news-reviews {
+  margin-bottom: 20px;
+}
+.ns-bitrix.c-news.c-news-reviews .news-content + .news-reviews {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+$component: 'news';
+$template: 'reviews';
+$class: $component;
+
+.ns-bitrix.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-reviews {
+    margin-bottom: 20px;
+  }
+  .#{$class}-content + .#{$class}-reviews {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}

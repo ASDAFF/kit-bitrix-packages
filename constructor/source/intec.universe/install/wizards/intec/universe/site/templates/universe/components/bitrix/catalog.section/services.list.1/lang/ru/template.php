@@ -1,0 +1,3 @@
+<?php
+
+$MESS['C_BITRIX_CATALOG_SECTION_SERVICES_LIST_1_LAZY_TEXT'] = 'Показать еще';

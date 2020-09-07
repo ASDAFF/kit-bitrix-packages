@@ -1,0 +1,128 @@
+$component: 'projects';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  [data-grid='5'],
+  [data-grid='4'] {
+    .#{$item}-wrapper {
+      padding-top: 75%;
+    }
+  }
+  [data-grid='3'] {
+    .#{$item}-wrapper {
+      padding-top: 65%;
+    }
+  }
+  .#{$item}-wrapper {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .#{$item}-picture,
+  .#{$item}-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .#{$item}-picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .#{$item}-fade {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    @include transition(opacity, 0.6s);
+    z-index: 2;
+  }
+  .#{$item}-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFF;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    opacity: 0;
+    @include transition(#{opacity, bottom}, 0.4s);
+    z-index: 3;
+  }
+  .#{$item}-wrapper:hover {
+    .#{$item}-fade {
+      opacity: 1;
+    }
+    .#{$item}-name {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    [data-grid] {
+      .#{$item}-wrapper {
+        padding-top: 100%!important;
+      }
+    }
+  }
+  @media all and (max-width: 1024px) {
+    [data-grid] {
+      .#{$item}-wrapper {
+        padding-top: 60%!important;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    [data-grid] {
+      .#{$item}-wrapper {
+        padding-top: 45%!important;
+      }
+    }
+    .#{$item}-fade {
+      opacity: 1;
+    }
+    .#{$item}-name {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  @media all and (max-width: 500px) {
+    [data-grid] {
+      .#{$item}-wrapper {
+        padding-top: 75%!important;
+      }
+    }
+    .#{$item}-name {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

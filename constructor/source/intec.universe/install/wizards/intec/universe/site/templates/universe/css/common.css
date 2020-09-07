@@ -1,0 +1,318 @@
+html {
+    height: 100%;
+}
+
+.intec-breadcrumb-wrap {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.intec-header-wrap {
+    margin-bottom: 20px;
+}
+
+* + .intec-header-wrap {
+    margin-top: 20px;
+}
+
+.intec-breadcrumb-wrap + .intec-header-wrap {
+    margin-top: 0;
+}
+
+.intec-header {
+    margin: 0;
+}
+
+.intec-404 {
+    margin-top: 40px;
+}
+
+.intec-no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+.intec-aligner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+}
+
+.intec-clearfix {
+    clear: both;
+}
+
+.intec-image {
+    position: relative;
+    font-size: 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+.intec-image img  {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intec-cursor {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('../images/cursor.png');
+}
+
+.intec-bt-button {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    background: #116afc;
+    text-shadow: 0 1px 0 #006cae;
+    white-space: nowrap;
+    cursor: pointer;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.intec-bt-button, .intec-bt-button:hover, .intec-bt-button:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.intec-bt-button:hover {
+    background: #3C85F3;
+}
+.intec-bt-button.button-big {
+    height: 47px;
+    line-height: 47px;
+    padding: 0 32px;
+    font-weight: bold;
+}
+
+/*Кнопки сравнения и отложенных*/
+.intec-min-button {
+    opacity: 0.7;
+}
+
+.intec-min-button.add:hover {
+    color: #116afc;
+}
+.intec-min-button.added {
+    opacity: 1 !important;
+    color: #116afc;
+}
+
+.intec-min-button {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: #e3e4e4;
+    font-size: 0;
+    cursor: pointer;
+}
+.intec-min-button i {
+    display: inline-block;
+    height: 27px;
+    font-size: 18px;
+    line-height: 27px;
+    transition: 0.1s;
+}
+.intec-min-button i:active {
+    font-size: 20px;
+}
+.intec-min-button.intec-min-button-compare {
+    margin-right: 15px;
+}
+
+/**/
+
+.intec-compare,
+.intec-like {
+    cursor: pointer;
+}
+.intec-compare.glyph-icon-compare,
+.intec-like {
+    line-height: 1;
+    color: #A6B1B7;
+
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.intec-compare.glyph-icon-compare:hover, .intec-like:hover,
+.intec-compare.glyph-icon-compare.hover, .intec-like.hover,
+.intec-compare.glyph-icon-compare:active, .intec-like:active,
+.intec-compare.glyph-icon-compare.active, .intec-like.added {
+    color: #116AFC;
+}
+
+.intec-bt-button .intec-basket.glyph-icon-cart {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.intec-form form {
+    padding: 0;
+    margin: 0;
+}
+.intec-form .intec-form-field {
+    margin: 20px 0;
+}
+.intec-form .intec-form-caption {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 14px;
+}
+.intec-form .intec-form-description {
+    color: #424242;
+}
+.intec-form .intec-form-buttons-wrap {
+    margin-top: 20px;
+}
+.intec-form .intec-form-value > input[type="text"],
+.intec-form .intec-form-value > input[type="password"],
+.intec-form .intec-form-value > select,
+.intec-form .intec-form-value > textarea {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.intec-form .intec-form-value > input[type="text"]:focus,
+.intec-form .intec-form-value > select:focus,
+.intec-form .intec-form-value > textarea:focus {
+    border-color: #7b7b80;
+}
+.intec-form .intec-form-value > textarea {
+    max-width: 100%;
+}
+
+/* ---------- Bootstrap Tabs ---------- */
+.intec-tabs.nav-tabs {
+    border-color: #ebebeb;
+}
+.intec-tabs.nav-tabs > li > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    margin: 0;
+    color: #2c2c2c;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.intec-tabs.nav-tabs > li.active > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    border-bottom-color: #116afc;
+}
+/* ---------- /Bootstrap Tabs ---------- */
+
+/* ---------- Bitrix popup window ---------- */
+.popup-window {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 5px 0;
+    font-family: inherit;
+}
+.popup-window,
+.popup-window.popup-window-with-titlebar {
+    padding: 25px 35px 30px;
+    min-width: 320px;
+}
+.popup-window .popup-window-titlebar {
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-window .popup-window-buttons {
+    text-align: left;
+}
+.popup-window .popup-window-button {
+    font-family: inherit;
+    text-transform: none;
+}
+.popup-window .popup-window-close-icon {
+    top: 25px;
+    right: 35px;
+}
+.popup-window .popup-window-close-icon:after {
+    background-image: url('../images/form.close.png');
+    width: 20px;
+    height: 20px;
+}
+.popup-window .popup-window-content {
+    max-width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@media all and (max-width: 500px) {
+    .popup-window {
+        position: fixed!important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100%;
+        overflow: scroll;
+        margin: 0;
+    }
+}
+/* ---------- /Bitrix popup window ---------- */
+
+/* ---------- LightGallery ----------*/
+.lg-backdrop {
+    background-color: rgba(27, 30, 37, 0.9);
+}
+/* ---------- /LightGallery ----------*/
+
+@media all and (max-width: 720px) {
+    .intec-about-company-title {
+        text-align: left;
+    }
+    .intec-about-company-more {
+        text-align: left;
+    }
+}

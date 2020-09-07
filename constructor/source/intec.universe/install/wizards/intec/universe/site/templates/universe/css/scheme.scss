@@ -1,0 +1,500 @@
+$template-color: #116afc !default;
+$template-color-hover: lighten($template-color, 10%);
+$template-color-active: darken($template-color, 10%);
+$template-color-disabled: darken($template-color, 20%);
+$template-color-light: lighten($template-color, 10%);
+$template-color-dark: darken($template-color, 10%);
+$template-font: 'Arial' !default;
+$template-background-show: true !default;
+$template-background-color: #fff !default;
+$template-images-effect: 'circle' !default;
+$template-titles-size: 20 !default;
+$template-text-size: 14 !default;
+$template-width: 1200 !default;
+$template-width: $template-width + 40;
+
+.intec-button.intec-button-cl-common {
+    background-color: $template-color;
+    border-color: $template-color;
+}
+.intec-button.intec-button-cl-common:hover, .intec-button.intec-button-cl-common.hover {
+    background-color: $template-color-hover;
+    border-color: $template-color-hover;
+}
+.intec-button.intec-button-cl-common:active, .intec-button.intec-button-cl-common.active {
+    background-color: $template-color-active;
+    border-color: $template-color-active;
+}
+.intec-button.intec-button-cl-common.intec-button-transparent {
+    color: $template-color;
+}
+
+.intec-button.intec-button-transparent {
+    background-color: transparent;
+}
+
+.intec-cl-text {
+    color: $template-color !important;
+}
+.intec-cl-text-active:active {
+    color: $template-color !important;
+}
+.intec-cl-text-active.active {
+    color: $template-color !important;
+}
+.intec-cl-text-focus:focus {
+    color: $template-color !important;
+}
+.intec-cl-text-hover:hover {
+    color: $template-color !important;
+}
+
+.intec-cl-background {
+    background-color: $template-color !important;
+    fill: $template-color !important;
+}
+.intec-cl-background-active:active {
+    background-color: $template-color !important;
+}
+.intec-cl-background-focus:focus {
+    background-color: $template-color !important;
+}
+.intec-cl-background-hover:hover {
+    background-color: $template-color !important;
+}
+
+.intec-cl-background-dark {
+    background-color: $template-color-dark !important;
+    fill: $template-color-dark !important;
+}
+.intec-cl-background-dark-active:active {
+    background-color: $template-color-dark !important;
+}
+.intec-cl-background-dark-focus:focus {
+    background-color: $template-color-dark !important;
+}
+.intec-cl-background-dark-hover:hover {
+    background-color: $template-color-dark !important;
+}
+
+.intec-cl-background-light {
+    background-color: $template-color-light !important;
+    fill: $template-color-light !important;
+}
+.intec-cl-background-light-active:active {
+    background-color: $template-color-light !important;
+}
+.intec-cl-background-light-focus:focus {
+    background-color: $template-color-light !important;
+}
+.intec-cl-background-light-hover:hover {
+    background-color: $template-color-light !important;
+}
+
+.intec-cl-border {
+    border-color: $template-color !important;
+}
+.intec-cl-border-light {
+    border-color: $template-color-light !important;
+}
+.intec-cl-border-active:active {
+    border-color: $template-color !important;
+}
+.intec-cl-border-focus:focus {
+    border-color: $template-color !important;
+}
+.intec-cl-border-hover:hover {
+    border-color: $template-color !important;
+}
+.intec-cl-border-light-hover:hover {
+    border-color: $template-color-light !important;
+}
+
+.intec-cl-text-light {
+    color: $template-color-light !important;
+}
+.intec-cl-text-light-active:active {
+    color: $template-color-light !important;
+}
+.intec-cl-text-light-focus:focus {
+    color: $template-color-light !important;
+}
+.intec-cl-text-light-hover:hover {
+    color: $template-color-light !important;
+}
+
+.intec-cl-text-dark {
+    color: $template-color-dark !important;
+}
+.intec-cl-text-dark-active:active {
+    color: $template-color-dark !important;
+}
+.intec-cl-text-dark-focus:focus {
+    color: $template-color-dark !important;
+}
+.intec-cl-text-dark-hover:hover {
+    color: $template-color-dark !important;
+}
+
+
+.intec-cl-background-light {
+    background-color: $template-color-light !important;
+    fill: $template-color-light !important;
+}
+.intec-cl-background-light-active:active {
+    background-color: $template-color-light !important;
+}
+.intec-cl-background-light-focus:focus {
+    background-color: $template-color-light !important;
+}
+.intec-cl-background-light-hover:hover {
+    background-color: $template-color-light !important;
+}
+
+.intec-cl-svg svg {
+    fill: $template-color !important;
+    stroke: $template-color !important;
+}
+
+.intec-tabs.nav-tabs > li.active > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    border-bottom-color: $template-color !important;
+    color: $template-color!important;
+}
+
+.intec-contest-checkbox.checked:after {
+    background-color: $template-color!important;
+}
+
+.intec-content {
+    max-width: $template-width + px;
+}
+.intec-content .intec-content.intec-content-primary {
+    max-width: $template-width + px;
+}
+
+.intec-input.intec-input-checkbox input:checked + .intec-input-selector:before,
+.intec-input.intec-input-radio input:checked + .intec-input-selector:before {
+    background: $template-color !important;
+}
+
+h1.intec-header {
+    font-size: $template-titles-size + px;
+}
+
+html {
+    font-size: $template-text-size + px;
+    font-family: "#{$template-font}", sans-serif;
+}
+
+@if $template-background-show == 1 {
+    body {
+        background: $template-background-color;
+    }
+}
+
+@if ($template-images-effect == 'flash') {
+    .intec-image-effect:hover {
+        opacity: 1;
+        -webkit-animation: intec-image-effect-flash 1.5s;
+        animation: intec-image-effect-flash 1.5s;
+    }
+    @-webkit-keyframes intec-image-effect-flash {
+        0% {
+            opacity: 0.4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes intec-image-effect-flash {
+        0% {
+            opacity: 0.4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+} @else if ($template-images-effect == 'circle') {
+
+    .intec-image-effect {
+        position: relative;
+        overflow: hidden;
+    }
+    .intec-image-effect::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, .2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .intec-image-effect:hover::before {
+        -webkit-animation: intec-image-effect-circle 750ms;
+        animation: intec-image-effect-circle 750ms;
+    }
+    @-webkit-keyframes intec-image-effect-circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+    @keyframes intec-image-effect-circle {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+        }
+    }
+} @else if ($template-images-effect == 'opacity') {
+    .intec-image-effect {
+        opacity: 1;
+
+        -webkit-transition: opacity 350ms ease-in-out;
+        -moz-transition: opacity 350ms ease-in-out;
+        -ms-transition: opacity 350ms ease-in-out;
+        -o-transition: opacity 350ms ease-in-out;
+        transition: opacity 350ms ease-in-out;
+    }
+    .intec-image-effect:hover {
+        opacity: 0.5;
+    }
+}
+
+// Interface
+
+.intec-ui.intec-ui-control-alert.intec-ui-scheme-current {
+    color: $template-color;
+    background-color: change-color($template-color, $lightness: 96%);
+    border-color: change-color($template-color, $lightness: 92%);
+}
+
+.intec-ui.intec-ui-control-button.intec-ui-scheme-current {
+    border-color: $template-color;
+    background-color: $template-color;
+    color: #fff;
+
+    &.intec-ui-mod-transparent {
+        background-color: transparent;
+        color: $template-color;
+    }
+
+    &:hover,
+    &.intec-ui-state-hover,
+    &[data-ui-state="hover"] {
+        border-color: $template-color-hover;
+        background-color: $template-color-hover;
+        color: #fff;
+    }
+
+    &:focus,
+    &.intec-ui-state-focus,
+    &[data-ui-state="focus"] {
+        border-color: $template-color-hover;
+        background-color: $template-color-hover;
+        color: #fff;
+    }
+
+    &:active,
+    &.intec-ui-state-active,
+    &[data-ui-state="active"] {
+        border-color: $template-color-active;
+        background-color: $template-color-active;
+        color: #fff
+    }
+
+    &:disabled,
+    &.intec-ui-state-disabled,
+    &[data-ui-state="disabled"] {
+        border-color: $template-color-disabled;
+        background-color: $template-color-disabled;
+        color: #fff;
+    }
+
+    &.intec-ui-mod-link {
+        color: #5f5f5f;
+        border-color: transparent;
+        background-color: transparent;
+
+        &:hover,
+        &.intec-ui-state-hover,
+        &[data-ui-state="hover"] {
+            color: $template-color-hover;
+        }
+
+        &:focus,
+        &.intec-ui-state-focus,
+        &[data-ui-state="focus"] {
+            color: $template-color-hover;
+        }
+
+        &:active,
+        &.intec-ui-state-active,
+        &[data-ui-state="active"] {
+            color: $template-color-active;
+        }
+
+        &:disabled,
+        &.intec-ui-state-disabled,
+        &[data-ui-state="disabled"] {
+            color: #9f9f9f;
+        }
+    }
+}
+
+.intec-ui.intec-ui-control-checkbox.intec-ui-scheme-current,
+.intec-ui.intec-ui-control-radiobox.intec-ui-scheme-current,
+.intec-ui.intec-ui-control-switch.intec-ui-scheme-current {
+    &.intec-ui-scheme-current .intec-ui-part-selector {
+        &:before {
+            background-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.intec-ui-scheme-current input:checked + .intec-ui-part-selector,
+    &.intec-ui-scheme-current.intec-ui-state-checked .intec-ui-part-selector,
+    &.intec-ui-scheme-current[data-ui-state="checked"] .intec-ui-part-selector {
+        border-color: #{$template-color};
+        background-color: #{$template-color};
+
+        &:before {
+            background-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.intec-ui-scheme-current:hover .intec-ui-part-selector,
+    &.intec-ui-scheme-current.intec-ui-state-hover .intec-ui-part-selector,
+    &.intec-ui-scheme-current[data-ui-state="hover"] .intec-ui-part-selector {
+        border-color: #{$template-color-hover};
+        background-color: #{$template-color-hover};
+
+        &:before {
+            background-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.intec-ui-scheme-current input:focus + .intec-ui-part-selector,
+    &.intec-ui-scheme-current.intec-ui-state-focus .intec-ui-part-selector,
+    &.intec-ui-scheme-current[data-ui-state="focus"] .intec-ui-part-selector {
+        border-color: #{$template-color-hover};
+        background-color: #{$template-color-hover};
+
+        &:before {
+            background-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.intec-ui-scheme-current:active .intec-ui-part-selector,
+    &.intec-ui-scheme-current.intec-ui-state-active .intec-ui-part-selector,
+    &.intec-ui-scheme-current[data-ui-state="active"] .intec-ui-part-selector {
+        border-color: #{$template-color-active};
+        background-color: #{$template-color-active};
+
+        &:before {
+            background-color: #fff;
+            color: #fff;
+        }
+    }
+}
+
+.intec-ui.intec-ui-control-numeric.intec-ui-scheme-current .intec-ui-part-increment:hover,
+.intec-ui.intec-ui-control-numeric.intec-ui-scheme-current .intec-ui-part-decrement:hover {
+    color: #{$template-color} !important;
+}
+
+.intec-ui.intec-ui-control-tabs.intec-ui-scheme-current .intec-ui-part-tab:hover,
+.intec-ui.intec-ui-control-tabs.intec-ui-scheme-current .intec-ui-part-tab.active {
+    border-color: #{$template-color};
+}
+
+.intec-ui.intec-ui-control-tabs.intec-ui-view-1.intec-ui-scheme-current .intec-ui-part-tab.active {
+    color: #{$template-color};
+}
+.intec-ui.intec-ui-control-tabs.intec-ui-view-1.intec-ui-scheme-current .intec-ui-part-tab.active *:after {
+    background-color: #{$template-color};
+}
+
+.intec-ui.intec-ui-control-tabs.intec-ui-view-2.intec-ui-scheme-current .intec-ui-part-tab:hover,
+.intec-ui.intec-ui-control-tabs.intec-ui-view-2.intec-ui-scheme-current .intec-ui-part-tab.active {
+    background-color: #{$template-color};
+}
+.intec-ui.intec-ui-control-tabs.intec-ui-view-2.intec-ui-scheme-current .intec-ui-part-tab.active {
+    -webkit-box-shadow: 0 6px 18px change-color($template-color, $alpha: 0.42);
+    -moz-box-shadow: 0 6px 18px change-color($template-color, $alpha: 0.42);
+    box-shadow: 0 6px 18px change-color($template-color, $alpha: 0.42);
+}
+
+.intec-ui-markup-text,
+[data-ui-markup="text"] {
+    font-size: #{$template-text-size}px;
+}
+
+a, [data-ui-markup="a"],
+.intec-ui-markup-a {
+    color: $template-color;
+
+    &:hover,
+    &:focus {
+        color: $template-color-hover;
+
+        &.intec-ui-mod-dashed,
+        &.intec-ui-mod-dotted {
+            border-color: $template-color-hover;
+        }
+    }
+
+    &:active {
+        color: $template-color-active;
+
+        &.intec-ui-mod-dashed,
+        &.intec-ui-mod-dotted {
+            border-color: $template-color-active;
+        }
+    }
+}
+
+blockquote, [data-ui-markup="blockquote"],
+.intec-ui-markup-blockquote {
+    &:before {
+        background-color: $template-color;
+    }
+}
+
+ul > li, [data-ui-markup="ul"] > [data-ui-markup="li"],
+.intec-ui-markup-ul > .intec-ui-markup-li {
+    &:before {
+        color: $template-color;
+    }
+}
+
+ol > li, [data-ui-markup="ol"] > [data-ui-markup="li"],
+.intec-ui-markup-ol > .intec-ui-markup-li {
+    &:before {
+        color: $template-color;
+    }
+}

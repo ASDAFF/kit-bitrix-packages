@@ -1,0 +1,182 @@
+.intec-certificates .intec-certificates_item img {
+    display: none;
+}
+.intec-certificates .intec-certificates_name {
+    color: #2d2c2c;
+}
+
+
+/* -------------------- Desktop tiles -------------------- */
+.intec-certificates.desktop-template.template-tiles .intec-certificates_list {
+    font-size: 0;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 20px 12px;
+    cursor: pointer;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_image {
+    padding-bottom: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_item:hover .intec-certificates_image {
+    -webkit-box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.21);
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_name {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_description {
+    display: none;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_image {
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+.intec-certificates.desktop-template.template-tiles .intec-certificates_name {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+/* -------------------- /Desktop tiles -------------------- */
+
+
+/* -------------------- Desktop tiles_small -------------------- */
+/*.intec-certificates.desktop-template.template-tiles_small {
+    overflow: hidden;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_list {
+    text-align: center;
+    font-size: 0;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_list:after {
+    content: '';
+    width: 100%;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_list:after,
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_item {
+    display: inline-block;
+    vertical-align: top;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_item {
+    width: 140px;
+    margin: 0 2% 60px;
+    cursor: pointer;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_image {
+    padding-bottom: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_name {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_item:hover .intec-certificates_name {
+    text-decoration: underline;
+}
+.intec-certificates.desktop-template.template-tiles_small .intec-certificates_description {
+    display: none;
+}*/
+/* -------------------- /Desktop tiles_small -------------------- */
+
+
+/* -------------------- Desktop list -------------------- */
+.intec-certificates.desktop-template.template-list {}
+.intec-certificates.desktop-template.template-list .intec-certificates_list {
+
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_item {
+    display: block;
+    padding: 25px 0 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_image {
+    width: 140px;
+    height: 210px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_image {
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    -webkit-transition-property: box-shadow;
+    -moz-transition-property: box-shadow;
+    -ms-transition-property: box-shadow;
+    -o-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_image:hover {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_name {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_description {
+    font-size: 14px;
+}
+.intec-certificates.desktop-template.template-list .intec-certificates_description,
+.intec-certificates.desktop-template.template-list .intec-certificates_name {
+    margin-left: 200px;
+}
+
+@media all and (max-width: 720px) {
+    .intec-certificates.desktop-template.template-list .intec-certificates_description,
+    .intec-certificates.desktop-template.template-list .intec-certificates_name {
+        margin-left: 0;
+    }
+    .intec-certificates.desktop-template.template-list .intec-certificates_image {
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    .intec-certificates.desktop-template.template-tiles .intec-certificates_item {
+        width: 33.33%;
+    }
+}
+@media all and (max-width: 720px) {
+    .intec-certificates.desktop-template.template-tiles .intec-certificates_item {
+        width: 50%;
+    }
+}
+@media all and (max-width: 420px) {
+    .intec-certificates.desktop-template.template-tiles .intec-certificates_item {
+        width: 100%;
+    }
+}
+/* -------------------- /Desktop list -------------------- */

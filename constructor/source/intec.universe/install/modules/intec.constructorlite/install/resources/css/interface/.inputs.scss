@@ -1,0 +1,41 @@
+$class: 'constructor-' !default;
+$inputs-colors: (
+  'border': #1d1e22,
+  'background': #1d1e22,
+  'text': #c1c1c1
+);
+
+.constructor-input {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 13px;
+  color: #c1c1c1;
+  border: 1px solid #1d1e22;
+  background: #1d1e22;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.#{$class}input-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+input[type="text"].#{$class}input {
+  padding: 9px 7px;
+}
+select.#{$class}input {
+  padding: 9px 7px;
+}

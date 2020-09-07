@@ -1,0 +1,97 @@
+.widget.c-shares.c-shares-template-3 .widget-item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 60%;
+  border-radius: 5px;
+  background: #fff;
+}
+.widget.c-shares.c-shares-template-3 .widget-item-picture {
+  position: absolute;
+  top: 0;
+  right: -10%;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 60%;
+}
+.widget.c-shares.c-shares-template-3 .widget-item-text-wrap {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  right: 35px;
+  overflow: hidden;
+  top: 30px;
+  font-size: 0;
+}
+.widget.c-shares.c-shares-template-3 .widget-item-text {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.widget.c-shares.c-shares-template-3 .widget-item-name {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #fff;
+  max-height: 116px;
+  width: 50%;
+}
+.widget.c-shares.c-shares-template-3 .widget-item-stick {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #2566E3;
+  border-radius: 11px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 8px;
+}
+.widget.c-shares.c-shares-template-3[data-column="4"] .widget-item-name {
+  font-size: 22px;
+  max-height: 79px;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer {
+  margin-top: 35px;
+  padding: 0;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-left {
+  text-align: left;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-center {
+  text-align: center;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer.align-right {
+  text-align: right;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer .widget-footer-all {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  padding: 18px 28px;
+  border: 2px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.widget.c-shares.c-shares-template-3 .widget-footer .widget-footer-all:hover {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */

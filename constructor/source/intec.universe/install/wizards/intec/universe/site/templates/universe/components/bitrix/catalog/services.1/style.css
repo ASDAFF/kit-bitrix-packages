@@ -1,0 +1,28 @@
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-wrapper {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-content {
+  position: relative;
+}
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-content-right-wrapper {
+  position: relative;
+}
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-description {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-services-1 * + .c-tags-list,
+.ns-bitrix.c-catalog.c-catalog-services-1 * + .catalog-description,
+.ns-bitrix.c-catalog.c-catalog-services-1 * + .c-catalog-section-list,
+.ns-bitrix.c-catalog.c-catalog-services-1 * + .c-catalog-section,
+.ns-bitrix.c-catalog.c-catalog-services-1 .c-tags-list + *,
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-description + *,
+.ns-bitrix.c-catalog.c-catalog-services-1 .c-catalog-section-list + *,
+.ns-bitrix.c-catalog.c-catalog-services-1 .c-catalog-section + * {
+  margin-top: 20px;
+}
+.ns-bitrix.c-catalog.c-catalog-services-1 .catalog-menu {
+  display: block;
+  z-index: 20;
+}
+
+/*# sourceMappingURL=style.css.map */

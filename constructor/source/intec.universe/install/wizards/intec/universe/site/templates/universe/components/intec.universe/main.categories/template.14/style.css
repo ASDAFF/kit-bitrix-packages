@@ -1,0 +1,70 @@
+.widget.c-categories.c-categories-template-14 .widget-items {
+  position: relative;
+}
+.widget.c-categories.c-categories-template-14 .widget-item {
+  background-color: #FFF;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  z-index: 1;
+}
+.widget.c-categories.c-categories-template-14 .widget-item:hover {
+  z-index: 2;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
+}
+.widget.c-categories.c-categories-template-14 .widget-item-wrapper {
+  height: 100%;
+  padding: 45px 35px 35px 45px;
+}
+.widget.c-categories.c-categories-template-14 .widget-item-picture {
+  display: block;
+  width: 109px;
+  height: 109px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.widget.c-categories.c-categories-template-14 .widget-item-name {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #2f3334;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-categories.c-categories-template-14 .widget-item-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 18px;
+}
+@media all and (max-width: 500px) {
+  .widget.c-categories.c-categories-template-14 .widget-item-wrapper {
+    padding: 20px;
+  }
+  .widget.c-categories.c-categories-template-14 .widget-item-name {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

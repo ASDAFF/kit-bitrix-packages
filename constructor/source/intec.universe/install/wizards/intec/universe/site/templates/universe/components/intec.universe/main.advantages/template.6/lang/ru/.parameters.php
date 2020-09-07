@@ -1,0 +1,13 @@
+<?php
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_SETTINGS_USE'] = 'Использовать глобальные настройки';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_LAZYLOAD_USE'] = 'Использовать "ленивую загрузку" изображений';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_NAME_SHOW'] = 'Отображать название элемента';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_COLUMNS'] = 'Количество элементов в строке';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_VIEW'] = 'Вид отображения';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_VIEW_NUMBER'] = 'Число';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_VIEW_POINT'] = 'Галочка';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_VIEW_ICON'] = 'Иконка';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_ALIGNMENT'] = 'Выравнивание элементов в строке';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_ALIGNMENT_LEFT'] = 'Слева';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_ALIGNMENT_CENTER'] = 'По центру';
+$MESS['C_MAIN_ADVANTAGES_TEMPLATE_6_ALIGNMENT_RIGHT'] = 'Справа';

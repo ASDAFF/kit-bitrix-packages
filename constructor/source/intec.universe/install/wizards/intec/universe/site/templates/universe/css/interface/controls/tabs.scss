@@ -1,0 +1,290 @@
+$class: 'intec-ui' !default;
+$attribute: 'data-ui' !default;
+$schemes: () !default;
+
+&-tabs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-bottom: 1px solid #ddd;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+
+  & + .#{$class}-control-tabs-content {
+    margin-top: 20px;
+  }
+
+  .#{$class}-part-tab {
+    display: block;
+    margin: 0 0 -1px 0;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    color: #888888;
+
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    transition-duration: 350ms;
+
+    -webkit-transition-property: border-color;
+    -moz-transition-property: border-color;
+    -ms-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+
+    * {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      padding: 8px 20px;
+
+      -webkit-transition-duration: 350ms;
+      -moz-transition-duration: 350ms;
+      -ms-transition-duration: 350ms;
+      -o-transition-duration: 350ms;
+      transition-duration: 350ms;
+
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      -ms-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+    }
+
+    &:before {
+      content: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &:hover,
+    &.active {
+      color: #2d2d2d;
+      border-color: #2d2d2d;
+    }
+  }
+
+  // Mods
+
+  &.#{$class}-mod-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &.#{$class}-mod-position-left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  &.#{$class}-mod-position-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &.#{$class}-mod-position-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  // Schemes
+
+  @each $scheme-name, $scheme-values in $schemes {
+    &.#{$class}-scheme-#{$scheme-name} {
+      .#{$class}-part-tab {
+        &:hover,
+        &.active {
+          border-color: map-get(map-get($scheme-values, 'default'), 'border');
+        }
+      }
+    }
+  }
+
+  // Views
+
+  &.#{$class}-view-1 {
+    border-bottom: none;
+    margin: -5px 0;
+    min-height: 10px;
+
+    & + .#{$class}-control-tabs-content {
+      margin-top: 30px;
+    }
+
+    .#{$class}-part-tab {
+      padding: 5px 15px;
+      border-bottom: none;
+      color: #2d2d2d;
+
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none;
+
+      * {
+        position: relative;
+        padding: 0 0 8px 0;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: auto;
+          right: 100%;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background-color: #2d2d2d;
+          opacity: 0;
+
+          -webkit-transition-property: right, opacity, background-color;
+          -moz-transition-property: right, opacity, background-color;
+          -ms-transition-property: right, opacity, background-color;
+          -o-transition-property: right, opacity, background-color;
+          transition-property: right, opacity, background-color;
+
+          -webkit-transition-duration: 350ms;
+          -moz-transition-duration: 350ms;
+          -ms-transition-duration: 350ms;
+          -o-transition-duration: 350ms;
+          transition-duration: 350ms;
+        }
+      }
+
+      &:hover,
+      &.active {
+        color: #2d2d2d;
+        
+        *:after {
+          right: 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    @each $scheme-name, $scheme-values in $schemes {
+      &.#{$class}-scheme-#{$scheme-name} {
+        .#{$class}-part-tab {
+          &.active {
+            color: map-get(map-get($scheme-values, 'default'), 'border');
+
+            *:after {
+              background-color: map-get(map-get($scheme-values, 'default'), 'border');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.#{$class}-view-2 {
+    border-bottom: none;
+    margin: -5px 0;
+    min-height: 10px;
+
+    & + .#{$class}-control-tabs-content {
+      margin-top: 30px;
+    }
+
+    .#{$class}-part-tab {
+      margin: 5px;
+      background-color: transparent;
+      border-radius: 28px;
+      border-bottom: 0;
+
+      -webkit-transition-property: color, background-color, box-shadow, transform;
+      -moz-transition-property: color, background-color, box-shadow, transform;
+      -ms-transition-property: color, background-color, box-shadow, transform;
+      -o-transition-property: color, background-color, box-shadow, transform;
+      transition-property: color, background-color, box-shadow, transform;
+
+      -webkit-transition-duration: 350ms, 350ms, 350ms, 150ms;
+      -moz-transition-duration: 350ms, 350ms, 350ms, 150ms;
+      -ms-transition-duration: 350ms, 350ms, 350ms, 150ms;
+      -o-transition-duration: 350ms, 350ms, 350ms, 150ms;
+      transition-duration: 350ms, 350ms, 350ms, 150ms;
+
+      * {
+        position: relative;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #2d2d2d;
+        padding: 16px 30px;
+        cursor: pointer;
+        user-select: none;
+
+      }
+
+      &:hover,
+      &.active {
+        background-color: #9b9b9b;
+
+        * {
+          color: #fff;
+        }
+      }
+
+      &.active {
+        -webkit-box-shadow: 0 6px 18px rgba(127, 127, 127, 0.42);
+        -moz-box-shadow: 0 6px 18px rgba(127, 127, 127, 0.42);
+        box-shadow: 0 6px 18px rgba(127, 127, 127, 0.42);
+      }
+    }
+
+    @each $scheme-name, $scheme-values in $schemes {
+      &.#{$class}-scheme-#{$scheme-name} {
+        .#{$class}-part-tab {
+          &:hover,
+          &.active {
+            background-color: map-get(map-get($scheme-values, 'default'), 'background');
+          }
+
+          &.active {
+            -webkit-box-shadow: 0 6px 18px change-color(map-get(map-get($scheme-values, 'active'), 'background'), $alpha: 0.42);
+            -moz-box-shadow: 0 6px 18px change-color(map-get(map-get($scheme-values, 'active'), 'background'), $alpha: 0.42);
+            box-shadow: 0 6px 18px change-color(map-get(map-get($scheme-values, 'active'), 'background'), $alpha: 0.42);
+          }
+        }
+      }
+    }
+  }
+}
+
+&-tabs-content {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  word-spacing: inherit;
+  letter-spacing: inherit;
+  white-space: inherit;
+
+  .#{$class}-part-tab {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

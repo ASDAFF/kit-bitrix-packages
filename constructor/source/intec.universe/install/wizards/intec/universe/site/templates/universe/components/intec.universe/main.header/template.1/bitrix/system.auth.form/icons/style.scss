@@ -1,0 +1,33 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-authorization-icons {
+    .widget-authorization-modal {
+      display: none;
+    }
+
+    .widget-authorization-items {}
+
+    .widget-authorization-item {
+      display: block;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      line-height: 1;
+      color: #bebebf;
+      cursor: pointer;
+
+      -webkit-transition: color 350ms;
+      -moz-transition: color 350ms;
+      -ms-transition: color 350ms;
+      -o-transition: color 350ms;
+      transition: color 350ms;
+      
+      &:hover {
+        color: #0065ff;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+$component: 'faq';
+$template: 'template-2';
+
+@mixin transition($time, $property) {
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -ms-transition: $property $time;
+  -o-transition: $property $time;
+  transition: $property $time;
+}
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {}
+  .widget-item {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .widget-item-name {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 30px 60px;
+
+    @include radius(40px);
+    @include transition(#{background-color 0.4s, transform 0.15s}, null);
+
+    &:active {
+      -webkit-transform: translateY(3px);
+      -moz-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+      -o-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+  }
+
+  .widget-item-name-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+
+    @include transition(0.4s, null);
+  }
+
+  .widget-item-description {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 30px 60px;
+
+    @include radius(40px);
+
+    &-wrap {
+      display: none;
+    }
+  }
+
+  .widget-item[data-expanded='true'] {
+    .widget-item-name-icon {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+  }
+
+  &[data-theme="dark"] {
+    .widget-item-description {
+      color: #fff;
+      background-color: #202227;
+      border: 1px solid #202227;
+    }
+  }
+
+  &[data-theme="light"] {
+    .widget-item-description {
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+    }
+  }
+
+  @media all and (max-width: 720px) {
+    .widget-item-name {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 20px 40px;
+    }
+
+    .widget-item-name-icon {
+      right: 10px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+$component: 'categories';
+$template: 'template-13';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .#{$item}-picture {
+    display: block;
+    text-decoration: none;
+    padding-top: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .#{$item}-fade,
+  .#{$item}-link,
+  .#{$item}-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .#{$item}-fade,
+  .#{$item}-link {
+    top: 0;
+  }
+  .#{$item}-fade {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    @include transition(opacity, 0.4s);
+    z-index: 2;
+  }
+  .#{$item}-wrapper:hover .#{$item}-fade {
+    opacity: 1;
+  }
+  .#{$item}-link {
+    display: block;
+    z-index: 3;
+  }
+  .#{$item}-text {
+    color: #FFF;
+    padding: 25px 48px 48px 48px;
+    background-image: linear-gradient(to top, #000000 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 4;
+
+    &-decoration {
+      width: 98px;
+      margin-top: 25px;
+      border-top: 2px solid #FFF;
+    }
+  }
+  .#{$item}-name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    max-height: 78px;
+  }
+  .#{$item}-description {
+    font-size: 14px;
+    line-height: 21px;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include transition(#{padding-top, height, opacity}, #{0.4s, 0.4s, 0.8s});
+  }
+  .#{$item}-wrapper:hover .#{$item}-description {
+    padding-top: 10px;
+    height: 73px;
+    opacity: 1;
+  }
+
+  @media all and (max-width: 1024px) {
+    .#{$item}-text {
+      padding: 25px 20px 35px 20px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-picture {
+      padding-top: 50%;
+    }
+    .#{$item}-fade {
+      opacity: 1;
+    }
+    .#{$item}-name,
+    .#{$item}-description {
+      max-width: 450px;
+    }
+    .#{$item}-description {
+      padding-top: 10px;
+      height: 73px;
+      opacity: 1;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-picture {
+      padding-top: 100%;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item {
+  border: 1px solid #dddddd;
+  margin-bottom: -1px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-name {
+  padding: 25px;
+  font-size: 24px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-salary,
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-indicators {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-description {
+  font-size: 14px;
+  line-height: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-description-wrapper {
+  padding: 25px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-description-buttons {
+  border-left: 1px solid #ddd;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-description-button {
+  font-size: 18px;
+  padding: 18px 62px !important;
+  border-radius: 50px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-indicators {
+  border: 2px solid;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  margin-left: 20px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-indicator {
+  font-size: 12px;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=false] {
+  color: inherit;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=false] .news-list-item-indicator-active {
+  display: none;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=false] .news-list-item-indicator-inactive {
+  display: inline-block;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=true] {
+  color: #fff;
+  border-bottom: 1px solid #dddddd;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=true] .news-list-item-indicator-active {
+  display: inline-block;
+  height: 12px;
+}
+.ns-bitrix.c-news-list.c-news-list-vacancies-2 [data-role="item.head"][data-active=true] .news-list-item-indicator-inactive {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  .ns-bitrix.c-news-list.c-news-list-vacancies-2 .news-list-item-description-buttons {
+    border-top: 1px solid #ddd;
+    border-left: 0px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

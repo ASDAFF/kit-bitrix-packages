@@ -1,0 +1,54 @@
+$namespace: 'bitrix';
+$component: 'menu';
+$template: 'vertical-2';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2d2d2d;
+  overflow: hidden;
+
+  .#{$class}-items {
+    display: block;
+    margin: -6px 0;
+  }
+
+  .#{$class}-item {
+    display: block;
+    font-weight: normal;
+    padding: 6px 0;
+
+    &[data-selected="true"] {
+      font-weight: bold;
+    }
+  }
+
+  .#{$class}-item-text {
+    color: #2d2d2d;
+    text-decoration: none;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+  }
+
+  .#{$class}-item-text-counter {
+    color: #c7c7c7;
+    font-weight: normal;
+  }
+
+  .#{$class}-item-items {
+    display: none;
+    padding: 10px 0 0 20px;
+
+    &[data-expanded="true"] {
+      display: block;
+    }
+  }
+}

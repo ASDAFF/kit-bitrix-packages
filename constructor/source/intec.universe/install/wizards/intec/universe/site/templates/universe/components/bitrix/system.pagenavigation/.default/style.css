@@ -1,0 +1,69 @@
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default {
+  display: block;
+  margin: 10px 0;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-items {
+  display: block;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-items-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin: -4px;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item.system-pagenavigation-item-active .system-pagenavigation-item-wrapper {
+  background-color: #0065ff;
+  border-color: #0065ff;
+  color: #fff;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item.system-pagenavigation-item-disabled .system-pagenavigation-item-wrapper {
+  display: none;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item.system-pagenavigation-item-all .system-pagenavigation-item-wrapper {
+  width: auto;
+  text-align: left;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item-wrapper {
+  display: block;
+  background-color: transparent;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.42857143;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2d2d2d;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+  -webkit-transition-property: color, background-color, border-color;
+  -moz-transition-property: color, background-color, border-color;
+  -ms-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-system-pagenavigation.c-system-pagenavigation-default .system-pagenavigation-item-wrapper:hover {
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+
+/*# sourceMappingURL=style.css.map */

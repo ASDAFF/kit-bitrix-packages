@@ -1,0 +1,13 @@
+$class: 'intec-ui' !default;
+
+&.#{$class}-control {
+  @import './controls/basket/button.scss';
+  @import './controls/alert.scss';
+  @import './controls/button.scss';
+  @import './controls/dots.scss';
+  @import './controls/input.scss';
+  @import './controls/navigation.scss';
+  @import './controls/numeric.scss';
+  @import './controls/switch.scss';
+  @import './controls/tabs.scss';
+}

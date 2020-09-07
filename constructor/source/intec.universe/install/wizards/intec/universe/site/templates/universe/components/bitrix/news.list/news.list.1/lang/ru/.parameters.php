@@ -1,0 +1,25 @@
+<?php
+$MESS['C_NEWS_LIST_LIST_1_LAZYLOAD_USE'] = 'Использовать "ленивую загрузку" изображений';
+$MESS['C_NEWS_LIST_LIST_1_PROPERTY_TAGS'] = 'Свойство "Теги"';
+$MESS['C_NEWS_LIST_LIST_1_LINK_BLANK'] = 'Открывать ссылки в новой вкладке';
+$MESS['C_NEWS_LIST_LIST_1_DELIMITER_SHOW'] = 'Отображать разделитель между элементами';
+$MESS['C_NEWS_LIST_LIST_1_IMAGE_SHOW'] = 'Отображать изображение элементов';
+$MESS['C_NEWS_LIST_LIST_1_IMAGE_VIEW'] = 'Изображение элементов. Вид отображения';
+$MESS['C_NEWS_LIST_LIST_1_IMAGE_VIEW_DEFAULT'] = 'По умолчанию';
+$MESS['C_NEWS_LIST_LIST_1_IMAGE_VIEW_SMALL'] = 'Маленькое';
+$MESS['C_NEWS_LIST_LIST_1_PREVIEW_SHOW'] = 'Отображать описание элементов';
+$MESS['C_NEWS_LIST_LIST_1_PREVIEW_TRUNCATE_USE'] = 'Использовать обрезку текста по словам (удаляет все HTML-теги из текста)';
+$MESS['C_NEWS_LIST_LIST_1_PREVIEW_TRUNCATE_COUNT'] = 'Кол-во отображаемых слов в тексте';
+$MESS['C_NEWS_LIST_LIST_1_DATE_SHOW'] = 'Отображать дату';
+$MESS['C_NEWS_LIST_LIST_1_DATE_TYPE'] = 'Отображаемая дата';
+$MESS['C_NEWS_LIST_LIST_1_DATE_TYPE_CREATE'] = 'Создания';
+$MESS['C_NEWS_LIST_LIST_1_DATE_TYPE_ACTIVE_FROM'] = 'Начала активности';
+$MESS['C_NEWS_LIST_LIST_1_DATE_TYPE_ACTIVE_TO'] = 'Окончания активности';
+$MESS['C_NEWS_LIST_LIST_1_DATE_TYPE_TIMESTAMP_X'] = 'Изменения';
+$MESS['C_NEWS_LIST_LIST_1_DATE_FORMAT'] = 'Формат отображения даты';
+$MESS['C_NEWS_LIST_LIST_1_TAGS_SHOW'] = 'Отображать теги';
+$MESS['C_NEWS_LIST_LIST_1_TAGS_VARIABLE'] = 'Теги. Переменная для хранения выбранных тегов (обязательный параметр)';
+$MESS['C_NEWS_LIST_LIST_1_TAGS_MODE'] = 'Теги. Режим отображения';
+$MESS['C_NEWS_LIST_LIST_1_TAGS_MODE_DEFAULT'] = 'По умолчанию (отображают активность)';
+$MESS['C_NEWS_LIST_LIST_1_TAGS_MODE_ACTIVE'] = 'Активный (выбор тега при клике)';
+$MESS[''] = '';

@@ -1,0 +1,94 @@
+$namespace: 'bitrix';
+$component: 'search-title';
+$template: 'input-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  %#{$class}-form-element {
+    display: block;
+    outline: none;
+    padding: 9px 10px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .#{$class} {
+    display: block;
+    background: #f0f0f0;
+    border-radius: 5px;
+
+    &-form {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-input {
+      @extend %#{$class}-form-element;
+
+      background: transparent;
+      border: none;
+      width: 100%;
+      color: #1d1d1d;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    &-button {
+      @extend %#{$class}-form-element;
+
+      background: transparent;
+      border: none;
+      line-height: 1;
+      color: #0065ff;
+    }
+  }
+
+  &.#{$class}-results {
+    display: block;
+    min-width: 300px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: 1px solid #f1f1f1;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+
+    .#{$class}-table {}
+    .#{$class}-row {}
+
+    .#{$class}-cell {
+      padding: 5px 0;
+
+      .#{$class}-link {
+        color: #1d1d1d;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+      }
+    }
+  }
+}
+
+.title-search-result {
+  z-index: 101;
+}

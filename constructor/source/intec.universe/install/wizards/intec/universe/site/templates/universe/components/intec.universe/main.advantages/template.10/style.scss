@@ -1,0 +1,47 @@
+$component: 'advantages';
+$template: 'template-10';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-picture {
+    width: 98px;
+    height: 98px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .#{$item}-name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-description {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

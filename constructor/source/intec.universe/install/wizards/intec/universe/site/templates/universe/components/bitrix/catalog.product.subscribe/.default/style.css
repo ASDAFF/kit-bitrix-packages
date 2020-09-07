@@ -1,0 +1,39 @@
+.popup-window.popup-window-subscribe .popup-window-titlebar-text {
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1B1E25;
+}
+.popup-window.popup-window-subscribe .popup-window-content {
+  margin-bottom: 26px;
+}
+.popup-window.popup-window-subscribe .bx-catalog-popup-message {
+  margin: 0;
+  font-size: 14px;
+  color: #404040;
+}
+.popup-window.popup-window-subscribe form > p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.popup-window.popup-window-subscribe form .bx-catalog-subscribe-form-container-label {
+  margin-bottom: 4px;
+  line-height: 1.5;
+  color: #606060;
+}
+.popup-window.popup-window-subscribe .bx-catalog-popup-message {
+  margin: 0;
+  font-size: 14px;
+  color: #404040;
+}
+.popup-window.popup-window-subscribe .popup-window-buttons {
+  padding: 0;
+}
+.popup-window.popup-window-subscribe .intec-button {
+  padding: 8px 22px;
+}
+.popup-window.popup-window-subscribe .intec-button:not(:first-child) {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+$namespace: 'bitrix';
+$component: 'catalog-section-list';
+$template: 'catalog-tile-3';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  margin-bottom: 20px;
+
+  .#{$class}-items {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .#{$class}-item {}
+  .#{$class}-item-wrapper {}
+
+  .#{$class}-item-image {
+    display: block;
+    position: relative;
+    padding-top: 80%;
+  }
+
+  .#{$class}-item-image-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 20px 0 20px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .#{$class}-item-image-wrapper-2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .#{$class}-item-information {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+
+    @media all and (max-width: 450px) {
+      text-align: center;
+    }
+  }
+
+  .#{$class}-item-title {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+    color: #0065ff;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+  }
+
+  .#{$class}-item-children {
+    display: block;
+    margin: 0 -6px 0 -6px;
+    min-width: 12px;
+    margin-top: 10px;
+  }
+
+  .#{$class}-item-child {
+    display: block;
+    text-align: left;
+
+    @media all and (max-width: 450px) {
+      text-align: center;
+    }
+  }
+
+  .#{$class}-item-child-wrapper {
+    display: inline-block;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #666666;
+    margin: 0 6px;
+    text-decoration: none;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+  }
+
+  .#{$class}-item-child-name {}
+
+  .#{$class}-item-child-elements {
+    color: #1d1d1d;
+  }
+}

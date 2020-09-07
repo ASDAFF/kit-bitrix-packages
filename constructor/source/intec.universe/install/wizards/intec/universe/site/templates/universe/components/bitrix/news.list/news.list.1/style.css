@@ -1,0 +1,130 @@
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image {
+  padding-right: 40px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image a {
+  display: block;
+  text-decoration: none;
+  -webkit-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image a[data-image-view=default] {
+  width: 270px;
+  height: 190px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image a[data-image-view=small] {
+  width: 190px;
+  height: 110px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-text {
+  padding-top: 10px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-name {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: #89898b;
+  margin-top: 15px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags {
+  margin-top: 15px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-date {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper {
+  display: block;
+  margin: 0;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper input {
+  display: none;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 3px;
+  white-space: nowrap;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper input:enabled + span {
+  cursor: pointer;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper input:disabled + span {
+  cursor: default;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper input:checked + span,
+.ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-tags-item-wrapper input:enabled + span:hover {
+  color: #FFF;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 [data-role=form] {
+  display: none;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 [data-delimiter=true] {
+  border-top: 1px solid #e8e8e8;
+}
+.ns-bitrix.c-news-list.c-news-list-list-1 [data-delimiter=true]:first-child {
+  border-top: none;
+}
+@media all and (max-width: 768px) {
+  .ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image a[data-image-view=default] {
+    width: 190px;
+    height: 110px;
+  }
+  .ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-date {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media all and (max-width: 600px) {
+  .ns-bitrix.c-news-list.c-news-list-list-1 .news-list-item-image {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

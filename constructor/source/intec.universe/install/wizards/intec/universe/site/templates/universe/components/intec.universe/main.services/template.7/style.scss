@@ -1,0 +1,75 @@
+$component: 'services';
+$template: 'template-7';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-item-picture {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin-right: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(50%);
+  }
+  .widget-item-name {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #222222;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .widget-item-description {
+    font-size: 13px;
+    line-height: 16px;
+    color: #888b92;
+    margin-top: 10px;
+    max-height: 48px;
+    overflow: hidden;
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .widget-item {
+      &-picture {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+      &-name,
+      &-description {
+        text-align: center;
+      }
+      &-description {
+        max-height: none;
+      }
+    }
+  }
+}

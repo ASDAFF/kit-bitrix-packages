@@ -1,0 +1,59 @@
+$namespace: 'bitrix';
+$component: 'form-result-new';
+$template: 'default';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  overflow: hidden;
+
+  .#{$class}-message,
+  .#{$class}-description {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+
+    p {
+      margin: 0;
+    }
+
+    font {
+      color: inherit !important;
+    }
+  }
+
+  .#{$class}-message {
+    &.#{$class}-message-note {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  .#{$class}-fields {
+    display: block;
+    margin: -8px 0 17px 0;
+    min-height: 8px;
+  }
+
+  .#{$class}-field {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .#{$class}-field-content {}
+  .#{$class}-captcha {}
+
+  .#{$class}-captcha-image {
+    img {
+      width: 180px;
+      height: 40px;
+    }
+  }
+
+  .#{$class}-captcha-input {}
+
+  .#{$class}-consent {
+    margin-bottom: 25px;
+  }
+}

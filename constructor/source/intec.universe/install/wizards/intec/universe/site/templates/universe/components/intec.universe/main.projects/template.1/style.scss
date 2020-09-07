@@ -1,0 +1,198 @@
+$component: 'projects';
+$template: 'template-1';
+
+@mixin transition($time, $property) {
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -ms-transition: $property $time;
+  -o-transition: $property $time;
+  transition: $property $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .owl-carousel {
+    .owl-nav {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -30px;
+      bottom: 0;
+      left: -30px;
+      visibility: hidden;
+
+      &.disabled {
+        display: none;
+      }
+
+      .owl-prev,
+      .owl-next {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        top: 50%;
+        margin-top: -8px;
+        color: #000;
+        opacity: 1;
+
+        -webkit-transition: opacity 350ms;
+        -moz-transition: opacity 350ms;
+        -ms-transition: opacity 350ms;
+        -o-transition: opacity 350ms;
+        transition: opacity 350ms;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.disabled {
+          opacity: 0.4;
+
+          &:hover {
+            opacity: 0.4;
+          }
+        }
+      }
+
+      .owl-prev {
+        left: 0;
+      }
+
+      .owl-next {
+        right: 0;
+      }
+    }
+
+    .owl-dots {
+      font-size: 0;
+      text-align: center;
+      padding-top: 10px;
+
+      &.disabled {
+        display: none;
+      }
+    }
+
+    .owl-dot {
+      display: inline-block;
+      margin: 5px 10px 5px 10px;
+
+      span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      &.active {
+        span {
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  .widget-content {
+    display: block;
+    position: relative;
+  }
+
+  .widget-items {}
+  .widget-item {}
+
+  .widget-item-wrapper {
+    position: relative;
+    display: block;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include transition(0.4s, null);
+
+    &:hover {
+      -webkit-box-shadow: 0 5px 20px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0 5px 20px -3px rgba(0,0,0,0.75);
+      box-shadow: 0 5px 20px -3px rgba(0,0,0,0.75);
+
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+  .widget-item-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 45px;
+
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 20%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 20%,rgba(0,0,0,1) 100%);
+  }
+
+  .widget-item-name-wrapper {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #fff;
+  }
+
+  .widget-footer {}
+
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+
+  &[data-slider="true"] {
+    .widget-item {
+      margin: 10px 0;
+    }
+
+    &[data-slider-navigation="true"] {
+      .widget-items {
+        margin: 0 30px;
+        width: auto;
+      }
+    }
+
+    &[data-slider-dots="true"] {
+      .owl-carousel {
+        .owl-nav {
+          bottom: 30px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .widget-item-name {
+        padding: 30px 20px;
+    }
+  }
+}

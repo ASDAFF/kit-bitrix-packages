@@ -1,0 +1,30 @@
+.adm-submenu-item-link-icon.constructor-menu-icon {
+    background: url('../images/icons.png') no-repeat center 0;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build {
+    background: url('../images/icons.png') no-repeat center -28px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-properties {
+    background: url('../images/icons.png') no-repeat center -56px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-templates {
+    background: url('../images/icons.png') no-repeat center -84px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-themes {
+    background: url('../images/icons.png') no-repeat center -112px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-builds {
+    background: url('../images/icons.png') no-repeat center -140px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-blocks {
+    background: url('../images/icons.png') no-repeat center -168px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-blocks-categories {
+    background: url('../images/icons.png') no-repeat center -196px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-blocks-templates {
+    background: url('../images/icons.png') no-repeat center -224px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-fonts {
+    background: url('../images/icons.png') no-repeat center -252px;
+}

@@ -1,0 +1,43 @@
+$tooltips-themes: (
+  'default': (
+    'border': #1d1d22,
+    'background': #000,
+    'text': #fff
+  ),
+  'white': (
+    'border': #ddd,
+    'background': #fff,
+    'text': #231f20
+  )
+);
+
+.ui-widget {
+  $theme: map-get($tooltips-themes, 'default');
+
+  &.ui-tooltip {
+    padding: 3px 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: map-get($theme, 'text');
+    background: map-get($theme, 'background');
+    border: 1px solid map-get($theme, 'border');
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+}
+
+@each $name, $theme in $tooltips-themes {
+  @if ($name != 'default') {
+    .ui-widget {
+      &.ui-tooltip {
+        &.ui-theme-#{$name} {
+          color: map-get($theme, 'text');
+          background: map-get($theme, 'background');
+          border: 1px solid map-get($theme, 'border');
+        }
+      }
+    }
+  }
+}

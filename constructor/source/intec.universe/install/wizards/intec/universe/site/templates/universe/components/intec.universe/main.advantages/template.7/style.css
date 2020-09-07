@@ -1,0 +1,49 @@
+.widget.c-advantages.c-advantages-template-7 .widget-item-name {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 200px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+.widget.c-advantages.c-advantages-template-7 .widget-item-icon {
+  display: block;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.widget.c-advantages.c-advantages-template-7 .widget-item-icon-border {
+  display: block;
+  position: absolute;
+  border: 3px solid #0065ff;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  -webkit-transition: opacity 350ms;
+  -moz-transition: opacity 350ms;
+  -ms-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.widget.c-advantages.c-advantages-template-7 .widget-item-icon-picture {
+  display: block;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}
+.widget.c-advantages.c-advantages-template-7 .widget-item-wrapper:hover .widget-item-icon-border {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

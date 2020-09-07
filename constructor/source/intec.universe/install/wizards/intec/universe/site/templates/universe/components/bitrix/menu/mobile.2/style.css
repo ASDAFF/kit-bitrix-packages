@@ -1,0 +1,306 @@
+.ns-bitrix.c-menu.c-menu-mobile-2 {
+  /* custom */
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-button {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  color: #1d1d1d;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-button:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  z-index: 1;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  z-index: 1;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 7px 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-search-input {
+  padding: 0px 20px;
+  height: 36px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-search-button .ns-bitrix.c-search-title.c-search-title-popup-1 .search-title-button-icon {
+  font-size: 14px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-wrapper {
+  padding: 0 20px;
+  height: 50px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-button {
+  width: 12px;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  color: #1d1d1d;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-button:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-logotype {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-logotype svg {
+  max-height: 50px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-panel-logotype-wrap {
+  text-align: center;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-content {
+  display: block;
+  height: 100%;
+  padding-top: 65px;
+  z-index: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-content-wrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-items {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-content[data-current=true] .menu-items {
+  overflow: auto;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-icon {
+  width: 20px;
+  text-align: center;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item-items {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: left 500ms;
+  -moz-transition: left 500ms;
+  -ms-transition: left 500ms;
+  -o-transition: left 500ms;
+  transition: left 500ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item {
+  display: block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item-wrapper {
+  display: block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item-content {
+  display: block;
+  padding: 15px 20px;
+  color: #1d1d1d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f1f1;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item-content a {
+  text-decoration: inherit;
+  color: inherit;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item-content:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item.menu-item-selected > .menu-item-wrapper > .menu-item-content {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item.menu-item-title .menu-item-content {
+  background: #f1f1f1;
+  color: #1d1d1d;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item.menu-item-extra > .menu-item-wrapper > .menu-item-content {
+  background: #f1f1f1;
+  color: #1d1d1d;
+  border-color: #e5e5e5;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item[data-expanded=true] > .menu-item-wrapper > .menu-item-items {
+  left: 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-item[data-current=true] > .menu-item-wrapper > .menu-item-items {
+  overflow: auto;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-item {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 15px 0;
+  display: block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-address {
+  color: #000;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-phone-wrap {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-email {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-phones {
+  display: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-phone {
+  display: block;
+  vertical-align: middle;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-phone-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 15px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-phone-icon i {
+  width: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information .menu-item-content {
+  border-bottom: 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information .menu-item-content {
+  padding: 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information .menu-information-items {
+  padding: 15px 20px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-icon {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 15px;
+  min-width: 16px;
+  display: inline-block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-button-link {
+  display: block;
+  padding: 7px;
+  text-align: center;
+  vertical-align: middle;
+  background: #E3E3E3;
+  border-radius: 5px;
+  color: #666;
+  font-size: 14px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-button-icon {
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-information-auth {
+  margin: 10px 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-social-wrap {
+  padding: 30px 20px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-social-item {
+  text-align: center;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 .menu-social-item a {
+  line-height: 1;
+  vertical-align: middle;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-border-show=false] .menu-item-content {
+  border-bottom: 0;
+  font-weight: bold;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-state=open] [data-role="phone.button"] .menu-information-phone-icon {
+  transform: rotate(90deg);
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-search-type=page] .menu-panel {
+  height: 106px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-search-type=page] .menu-content {
+  padding-top: 106px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.2"] .menu-information-item {
+  text-align: center;
+  padding: 10px 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.2"] .menu-social-wrap {
+  padding-top: 15px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.2"] .menu-information-button {
+  background: #e3e3e3;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-regionality=true] .menu-item + .menu-information .menu-information-items {
+  padding-top: 1px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-regionality=true] .menu-item-regionality .menu-item-content {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.1"] .menu-social-item a * {
+  fill: #666;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.1"] .menu-social-wrap {
+  background: #fff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-2 [data-information="view.1"][data-regionality=true] .menu-information-address {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

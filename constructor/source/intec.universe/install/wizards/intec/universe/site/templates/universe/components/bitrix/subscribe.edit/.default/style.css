@@ -1,0 +1,108 @@
+.subscribe-edit {
+    display: block;
+    border: 1px solid #ebebeb;
+}
+.subscribe-edit .subscribe-edit-wrapper {
+    display: block;
+    padding: 20px;
+}
+.subscribe-edit .subscribe-edit-header {
+    text-align: left;
+    font-size: 1.28571429em;
+    line-height: 1.5;
+    margin: 0 0 35px 0;
+}
+
+.subscribe-edit .subscribe-edit-form {
+    display: block;
+    margin-top: 30px;
+}
+
+.subscribe-edit .subscribe-edit-confirm {
+    display: block;
+    margin-bottom: 30px;
+}
+.subscribe-edit .subscribe-edit-confirm .subscribe-edit-confirm-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.subscribe-edit .subscribe-edit-confirm .subscribe-edit-confirm-description {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+.subscribe-edit .subscribe-edit-confirm .subscribe-edit-confirm-input,
+.subscribe-edit .subscribe-edit-confirm .subscribe-edit-confirm-button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.subscribe-edit .subscribe-edit-confirm .subscribe-edit-confirm-button {
+    padding: 9px 16px;
+}
+
+.subscribe-edit .subscribe-edit-information {
+    display: block;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-email {
+    display: block;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-email .subscribe-edit-information-email-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-email .subscribe-edit-information-email-input {}
+
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-description {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-description .subscribe-edit-information-description-icon,
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-description .subscribe-edit-information-description-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-description .subscribe-edit-information-description-icon {
+    font-size: 27px;
+    margin-right: 20px;
+    color: #0065ff;
+    font-weight: bold;
+    line-height: 1;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.subscribe-edit .subscribe-edit-information .subscribe-edit-information-description .subscribe-edit-information-description-text {
+    font-size: 12px;
+    white-space: normal;
+    margin-right: 20px;
+}
+
+.subscribe-edit .subscribe-edit-settings {
+    display: block;
+    margin-top: 20px;
+}
+.subscribe-edit .subscribe-edit-settings .subscribe-edit-settings-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.subscribe-edit .subscribe-edit-settings .subscribe-edit-settings-rubrics {
+    margin-bottom: 20px;
+}
+
+.subscribe-edit .subscribe-edit-buttons {
+    display: block;
+    margin-top: 20px;
+}

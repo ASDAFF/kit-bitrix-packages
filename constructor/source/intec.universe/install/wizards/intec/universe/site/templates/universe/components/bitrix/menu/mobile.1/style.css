@@ -1,0 +1,163 @@
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-button {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  color: #1d1d1d;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-button:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  z-index: 1;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 86px;
+  z-index: 1;
+  border-bottom: 1px solid #f2f2f2;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-wrapper {
+  padding: 0 20px;
+  height: 100%;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-button {
+  width: 18px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #1d1d1d;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-button:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-logotype {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-logotype svg {
+  max-height: 50px;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-logotype-wrap {
+  text-align: left;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-content {
+  display: block;
+  height: 100%;
+  padding-top: 86px;
+  z-index: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-content-wrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-items {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-content[data-current=true] .menu-items {
+  overflow: auto;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item {
+  display: block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-wrapper {
+  display: block;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-content {
+  display: block;
+  padding: 20px;
+  color: #1d1d1d;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f1f1;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-content a {
+  text-decoration: inherit;
+  color: inherit;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-content:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-icon {
+  width: 20px;
+  text-align: center;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item-items {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: left 500ms;
+  -moz-transition: left 500ms;
+  -ms-transition: left 500ms;
+  -o-transition: left 500ms;
+  transition: left 500ms;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item.menu-item-selected > .menu-item-wrapper > .menu-item-content {
+  color: #0065ff;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item.menu-item-title .menu-item-content {
+  background: #f1f1f1;
+  color: #1d1d1d;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item.menu-item-extra > .menu-item-wrapper > .menu-item-content {
+  background: #f1f1f1;
+  color: #1d1d1d;
+  border-color: #e5e5e5;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item[data-expanded=true] > .menu-item-wrapper > .menu-item-items {
+  left: 0;
+}
+.ns-bitrix.c-menu.c-menu-mobile-1 .menu-item[data-current=true] > .menu-item-wrapper > .menu-item-items {
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

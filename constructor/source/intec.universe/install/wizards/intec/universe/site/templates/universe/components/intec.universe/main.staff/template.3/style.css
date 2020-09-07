@@ -1,0 +1,80 @@
+.widget.c-staff.c-staff-template-3 .widget-item {
+  display: block;
+  text-align: left;
+}
+.widget.c-staff.c-staff-template-3 .widget-item[data-hidden=true] {
+  display: none;
+}
+.widget.c-staff.c-staff-template-3 .widget-item-wrapper {
+  display: block;
+  border: 1px solid #e6e6e6;
+  height: 100%;
+  padding: 55px;
+  box-sizing: border-box;
+  transition: border-color 350ms;
+}
+.widget.c-staff.c-staff-template-3 .widget-item-wrapper:hover {
+  border-color: #0065ff;
+}
+.widget.c-staff.c-staff-template-3 .widget-item-picture {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-right: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.widget.c-staff.c-staff-template-3 .widget-item-name {
+  display: block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.41666667;
+}
+.widget.c-staff.c-staff-template-3 .widget-item-description {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.widget.c-staff.c-staff-template-3 .widget-buttons {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+.widget.c-staff.c-staff-template-3 .widget-button {
+  color: #2d2d2d !important;
+}
+.widget.c-staff.c-staff-template-3 .widget-button:hover, .widget.c-staff.c-staff-template-3 .widget-button:focus, .widget.c-staff.c-staff-template-3 .widget-button:active {
+  color: #fff !important;
+}
+.widget.c-staff.c-staff-template-3[data-collapsed=false] .widget-button.widget-button-hide {
+  display: none;
+}
+.widget.c-staff.c-staff-template-3[data-collapsed=true] .widget-button.widget-button-show {
+  display: none;
+}
+.widget.c-staff.c-staff-template-3[data-hiding=false] .widget-buttons {
+  display: none;
+}
+@media all and (max-width: 500px) {
+  .widget.c-staff.c-staff-template-3 .widget-item {
+    text-align: center;
+  }
+  .widget.c-staff.c-staff-template-3 .widget-item-name {
+    font-size: 20px;
+  }
+  .widget.c-staff.c-staff-template-3 .widget-item-description {
+    font-size: 14px;
+  }
+  .widget.c-staff.c-staff-template-3 .widget-item-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

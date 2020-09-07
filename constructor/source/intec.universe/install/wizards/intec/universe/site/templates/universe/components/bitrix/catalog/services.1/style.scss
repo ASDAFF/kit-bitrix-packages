@@ -1,0 +1,38 @@
+$namespace: 'bitrix';
+$component: 'catalog';
+$template: 'services-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-wrapper {
+    display: block;
+  }
+
+  .#{$class}-content {
+    position: relative;
+  }
+
+  .#{$class}-content-right-wrapper {
+    position: relative;
+  }
+
+  .#{$class}-description {
+    display: block;
+  }
+
+  * + .c-tags-list,
+  * + .#{$class}-description,
+  * + .c-catalog-section-list,
+  * + .c-catalog-section,
+  .c-tags-list + *,
+  .#{$class}-description + *,
+  .c-catalog-section-list + *,
+  .c-catalog-section + * {
+    margin-top: 20px;
+  }
+
+  .#{$class}-menu {
+    display: block;
+    z-index: 20;
+  }
+}

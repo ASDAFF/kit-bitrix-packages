@@ -1,0 +1,16 @@
+.ns-bitrix.c-sale-personal-order-cancel.c-sale-personal-order-cancel-default {
+  display: block;
+}
+.ns-bitrix.c-sale-personal-order-cancel.c-sale-personal-order-cancel-default .sale-personal-order-cancel-block {
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.ns-bitrix.c-sale-personal-order-cancel.c-sale-personal-order-cancel-default .sale-personal-order-cancel-form-description {
+  margin-bottom: 20px;
+}
+.ns-bitrix.c-sale-personal-order-cancel.c-sale-personal-order-cancel-default .sale-personal-order-cancel-form-buttons {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

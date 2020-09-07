@@ -1,0 +1,4 @@
+<?php
+
+$MESS['C_MAIN_STAFF_TEMPLATE_2_BUTTONS_SHOW'] = "Показать все";
+$MESS['C_MAIN_STAFF_TEMPLATE_2_BUTTONS_HIDE'] = "Скрыть";

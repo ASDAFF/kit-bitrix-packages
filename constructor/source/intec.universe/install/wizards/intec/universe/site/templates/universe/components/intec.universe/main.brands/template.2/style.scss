@@ -1,0 +1,99 @@
+$component: 'brands';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {
+    margin: -16px 0;
+  }
+
+  .#{$item}-wrapper {
+    padding: 16px 60px;
+
+    @media all and (max-width: 1024px) {
+      padding: 16px 40px;
+    }
+    @media all and (max-width: 500px) {
+      padding: 16px 40px !important;
+    }
+    @media all and (max-width: 375px) {
+      padding: 16px 80px !important;
+    }
+  }
+
+  &[data-columns="3"] .#{$item}-wrapper {
+    padding: 16px 80px;
+
+    @media all and (max-width: 1024px) {
+      padding: 16px 60px;
+    }
+  }
+
+  &[data-columns="5"] .#{$item}-wrapper {
+    padding: 16px 40px;
+  }
+
+  .#{$item}-picture {
+    padding-top: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include transition(#{opacity, filter}, 0.4s);
+
+    &:hover {
+      opacity: 1!important;
+    }
+  }
+  .widget-footer-button {
+    color: #1B1E25 !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  &[data-background='true'] {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  &[data-theme='light'] {
+    background-color: #f8f9fb;
+  }
+  &[data-theme='dark'] {
+    background-color: #404040;
+
+    .widget-title,
+    .widget-description{
+      color: #fff !important;
+    }
+    .widget-footer-button {
+      color: #fff !important;
+    }
+  }
+  &[data-filter='true'] {
+    .#{$item}-picture {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
+      &:hover {
+        -webkit-filter:none;
+        filter: none;
+      }
+    }
+  }
+  .widget-footer {}
+}

@@ -1,0 +1,39 @@
+$namespace: 'bitrix';
+$component: 'search-page';
+$template: 'catalog';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-content {
+
+    width: 100%;
+
+    .#{$class}-form {
+      width: 55%;
+      margin-bottom: 25px;
+      border: none;
+      padding: 0;
+    }
+
+    @media all and (max-width: 1100px) {
+      .#{$class}-form {
+        width: 70%;
+      }
+    }
+
+    @media all and (max-width: 950px) {
+      .#{$class}-form {
+        width: 90%;
+      }
+    }
+
+    @media all and (max-width: 720px) {
+      .#{$class}-form {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+

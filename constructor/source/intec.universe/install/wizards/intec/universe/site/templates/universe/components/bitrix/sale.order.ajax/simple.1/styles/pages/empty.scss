@@ -1,0 +1,24 @@
+&.bx-soa-page-empty {
+  .bx-soa-page-image {
+    width: 131px;
+    height: 116px;
+    margin: 50px auto 42px;
+    background: url("./images/empty_cart.svg") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  .bx-soa-page-title {
+    font-size: 36px;
+    text-align: center;
+    color: #bababa;
+    margin-bottom: 42px;
+  }
+
+  .bx-soa-page-description {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+}

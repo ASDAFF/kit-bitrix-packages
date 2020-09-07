@@ -1,0 +1,46 @@
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts {
+  display: block;
+  overflow: hidden;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-header {
+  font-size: 30px;
+  line-height: 30px;
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-fields {
+  display: block;
+  margin: -10px -7px !important;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-field {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 10px 7px;
+  margin: 0;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-field-textarea {
+  float: right;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-field-textarea textarea {
+  height: 204px;
+  resize: none;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-field-title {
+  color: #969696;
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-footer {
+  margin-top: 10px;
+}
+@media all and (max-width: 720px) {
+  .ns-bitrix.c-form-result-new.c-form-result-new-contacts .form-result-new-field {
+    width: 100%;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

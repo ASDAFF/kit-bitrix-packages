@@ -1,0 +1,36 @@
+<?php
+$MESS['C_NEWS_DETAIL_DEFAULT_1_LAZYLOAD_USE'] = 'Использовать "ленивую загрузку" изображений';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_PROPERTY_TAGS'] = 'Свойство "Теги"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_PROPERTY_ADDITIONAL_NEWS'] = 'Свойство "Читайте также"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_SHOW'] = 'Отображать дату';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_TYPE'] = 'Дата. Тип';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_TYPE_DATE_CREATE'] = 'Создания';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_TYPE_DATE_ACTIVE_FROM'] = 'Начала активности';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_TYPE_DATE_ACTIVE_TO'] = 'Окончания активности';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_TYPE_TIMESTAMP_X'] = 'Изменения';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_DATE_FORMAT'] = 'Дата. Формат';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_TAGS_SHOW'] = 'Отображать теги';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_TAG_POSITION'] = 'Теги. Расположение тегов';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_TAG_POSITION_TOP'] = 'Сверху';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_TAG_POSITION_BOTTOM'] = 'Снизу';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_TAG_POSITION_BOTH'] = 'Сверху и снизу';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_PRINT_SHOW'] = 'Отображать кнопку "Отправить на печать"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_PREVIEW_SHOW'] = 'Отображать превью текст';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_IMAGE_SHOW'] = 'Отображать детальное изображение';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_ADDITIONAL_NEWS'] = '"Читайте также"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_ADDITIONAL_NEWS_SHOW'] = 'Отображать доп. блок "Читайте также"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_ADDITIONAL_NEWS_HEADER_SHOW'] = '"Читайте также". Отображать заголовок';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_ADDITIONAL_NEWS_HEADER_TEXT'] = '"Читайте также". Текст заголовка';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_ADDITIONAL_NEWS_HEADER_TEXT_DEFAULT'] = 'Читайте также';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_BUTTON_BACK_SHOW'] = 'Отображать кнопку "Назад к списку"';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_BUTTON_BACK_TEXT'] = '"Назад к списку". Текст кнопки';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_BUTTON_BACK_TEXT_DEFAULT'] = 'Назад к списку';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_BUTTON_SOCIAL'] = 'Кнопки соц. сетей';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_BUTTON_SOCIAL_SHOW'] = 'Отображать кнопки соц. сетей';
+
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_TYPE'] = 'Тип микроразметки';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_TYPE_ARTICLE'] = 'Статьи';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_TYPE_NEWS_ARTICLE'] = 'Новости';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_TYPE_BLOG_POSTING'] = 'Блог';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_AUTHOR'] = 'Микроразметка. Автор статьи';
+$MESS['C_NEWS_DETAIL_DEFAULT_1_MICRODATA_PUBLISHER'] = 'Микроразметка. Издатель творческой работы';

@@ -1,0 +1,158 @@
+.widget-articles-content .widget-articles {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.widget-articles-content .widget-articles .widget-element {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.widget-articles-content .widget-articles .widget-element.element-big {
+    width: 50%;
+}
+.widget-articles-content .widget-articles .element-wrapper {
+    position: relative;
+    padding-bottom: 380px;
+}
+.widget-articles-content .widget-articles .element-wrapper .element {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.widget-articles-content .widget-articles .widget-element.element-big .element {
+    border: none;
+}
+.widget-articles-content .widget-articles .element-wrapper .element:hover {
+    -webkit-box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow:  0 2px 18px rgba(0, 0, 0, 0.12);
+    box-shadow:  0 2px 18px rgba(0, 0, 0, 0.12);
+}
+.widget-articles-content .widget-articles .element-wrapper .picture {
+    display: block;
+    height: 180px;
+    background-size: cover;
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: initial;
+	z-index: 1;
+}
+.widget-articles-content .widget-articles .element-wrapper .header {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 0 25px;
+    font-weight: bold;
+    max-height: 40px;
+    overflow: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .element .fade-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	z-index: 2;
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .element:hover .fade-bg {
+	background: rgba(0, 0, 0, 0.5);
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .text-wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 25px;
+	pointer-events: none;
+	z-index: 5
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .header {
+    max-width: 480px;
+    max-height: initial;
+    padding: 0 25px 0 25px;
+    pointer-events: none;
+	margin-top: 0;
+}
+.widget-articles-content .widget-articles .element-big .element-wrapper .header span {
+    font-size: 18px;
+    color: #FFF;
+    line-height: 1.5;
+    padding: 5px 15px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-color: #1B1E25;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.widget-articles-content .widget-articles .element-wrapper .description {
+    color: #808080;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+    padding: 0 25px;
+    max-height: 64px;
+    overflow: hidden;
+}
+.widget-articles-content .widget-articles .element-big .description {
+	display: block;
+	color: #FFF;
+	margin-top: 0;
+	padding-top: 15px;
+	max-height: 75px;
+	max-height: 0;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.widget-articles-content .widget-articles .element-big .element:hover .description {
+	max-height: 75px;
+}
+
+
+@media all and (max-width: 900px) {
+    .widget-articles-content .widget-articles .widget-element {
+        width: 33.333333%;
+    }
+    .widget-articles-content .widget-articles.first-big .widget-element.element-big{
+        width: 100%;
+    }
+    .widget-articles-content .widget-articles.first-big .widget-element {
+        width: 50%;
+    }
+}
+@media all and (max-width: 650px) {
+    .widget-articles-content .articles-description {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 650px) {
+    .widget-articles-content .widget-articles .widget-element {
+        width: 50%;
+    }
+}
+@media all and (max-width: 450px) {
+    .widget-articles-content .widget-articles .widget-element {
+        width: 100%;
+    }
+    .widget-articles-content .widget-articles.first-big .widget-element {
+        width: 100%;
+    }
+}

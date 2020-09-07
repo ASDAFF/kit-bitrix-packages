@@ -1,0 +1,154 @@
+$namespace: 'bitrix';
+$component: 'news-list';
+$template: 'shares-blocks-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+
+  .#{$class}-description {
+    margin-bottom: 20px;
+  }
+
+  .#{$class}-item {
+    &:hover {
+      .#{$class}-item-gradient {
+        opacity: 1;
+      }
+    }
+  }
+
+  .#{$class}-item-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 60%;
+  }
+
+  %#{$class}-item-part {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .#{$class}-item-wrapper-2 {
+    @extend %#{$class}-item-part;
+
+    overflow: hidden;
+    border-radius: 7px;
+  }
+
+  .#{$class}-item-picture {
+    @extend %#{$class}-item-part;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .#{$class}-item-gradient {
+    @extend %#{$class}-item-part;
+
+    opacity: 0;
+
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.4) 35%, rgba(224,224,224,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.4) 35%, rgba(224,224,224,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 35%, rgba(224,224,224,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e0e0e0",GradientType=1);
+
+    -webkit-transition: opacity 350ms;
+    -moz-transition: opacity 350ms;
+    -ms-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+  }
+
+  .#{$class}-item-gradient-2 {
+    @extend %#{$class}-item-part;
+
+    top: 55%;
+
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.6) 50%, rgba(224,224,224,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 50%, rgba(224,224,224,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(224,224,224,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e0e0e0",GradientType=1);
+  }
+
+  .#{$class}-item-information {
+    @extend %#{$class}-item-part;
+
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .#{$class}-item-name {
+    @extend %#{$class}-item-part;
+
+    top: auto;
+    bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    height: 48px;
+  }
+
+  .#{$class}-item-duration {
+    @extend %#{$class}-item-part;
+
+    top: auto;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    height: 18px;
+  }
+
+  .#{$class}-item-discount {
+    @extend %#{$class}-item-part;
+
+    right: auto;
+    bottom: auto;
+    padding: 7px 10px 5px 10px;
+    color: #fff;
+    background: #116afc;
+    border-radius: 3px;
+  }
+
+  @media all and (max-width: 1200px) {
+    .#{$class}-item-name {
+      overflow: hidden;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .#{$class}-item-information {
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .#{$class}-item-wrapper {
+      padding-top: 80%;
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .#{$class}-item-name {
+      font-size: 14px;
+      height: 42px;
+    }
+  }
+}

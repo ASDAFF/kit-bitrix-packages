@@ -1,0 +1,574 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+$themes: (
+  'white': #fff,
+  'black': #000
+);
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view.widget-view-desktop {
+    .widget-view-desktop-3 {
+      display: block;
+      background: #fff;
+    }
+
+    .widget-container {
+      display: block;
+
+      &-wrapper {
+        position: relative;
+      }
+    }
+
+    .widget-item {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .widget-logotype {
+      display: block;
+      width: 130px;
+      text-decoration: none;
+      color: #1d1d1d;
+
+      svg {
+        max-height: 50px;
+      }
+
+      @media all and (max-width: 900px) {
+        width: 80px;
+      }
+    }
+
+    .widget-search-wrap {
+      @extend %hide-1000;
+    }
+
+    .widget-contacts {
+      font-size: 0;
+      text-align: left;
+
+      &-wrap {
+        @extend %hide-1200;
+      }
+    }
+
+    .widget-address {
+      + .widget-email {
+        margin-top: 10px;
+      }
+
+      &-icon {
+        @extend %contacts-icon;
+      }
+
+      &-text {
+        @extend %contacts-text;
+      }
+    }
+
+    .widget-email {
+      &-icon {
+        @extend %contacts-icon;
+      }
+
+      &-text {
+        @extend %contacts-text;
+      }
+    }
+
+    .widget-region {
+      + .widget-email {
+        margin-top: 10px;
+      }
+
+      &-icon {
+        @extend %contacts-icon;
+      }
+
+      &-component {
+        @extend %contacts-text;
+      }
+    }
+
+    .widget-phone {
+      &-content {
+        position: relative;
+
+        a {
+          text-decoration: none;
+        }
+
+        &-text {
+          font-size: 0;
+          text-align: left;
+
+          &-icon {
+            @extend %contacts-icon;
+          }
+
+          &-value {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            font-weight: bold;
+            color: #2d2d2d;
+            -webkit-transition: color 0.35s;
+            -moz-transition: color 0.35s;
+            -ms-transition: color 0.35s;
+            -o-transition: color 0.35s;
+            transition: color 0.35s;
+          }
+        }
+
+        &-popup {
+          position: absolute;
+          opacity: 0;
+          top: 100%;
+          left: -20px;
+          right: -20px;
+          padding-top: 10px;
+          white-space: normal;
+          z-index: 1;
+          -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
+          pointer-events: none;
+          position: absolute;
+          -webkit-perspective: 2000px;
+          perspective: 2000px;
+
+          &-wrapper {
+            padding: 10px;
+            background: #fff;
+            width: 100%;
+            min-width: 140px;
+            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            will-change: transform;
+            -webkit-transform-origin: 50% -50px;
+            transform-origin: 50% -50px;
+            -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+            -webkit-transition: -webkit-transform 0.2s;
+            transition: -webkit-transform 0.2s;
+            transition: transform 0.2s;
+            transition: transform 0.2s, -webkit-transform 0.2s;
+          }
+
+          &-item {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 31px;
+            color: #2d2d2d;
+            text-decoration: none;
+            padding: 10px;
+            -webkit-transition: color 0.35s;
+            -moz-transition: color 0.35s;
+            -ms-transition: color 0.35s;
+            -o-transition: color 0.35s;
+            transition: color 0.35s;
+
+            &:hover {
+              color: #0065ff;
+            }
+          }
+
+          &-contacts {
+            padding: 10px 0;
+            border-bottom: 1px solid #e8e8e8;
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+
+          &-contact {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.2;
+            color: #2d2d2d;
+            text-decoration: none;
+            padding: 5px 10px;
+
+            -webkit-transition: 350ms color;
+            -moz-transition: 350ms color;
+            -ms-transition: 350ms color;
+            -o-transition: 350ms color;
+            transition: 350ms color;
+
+            &.phone {
+              font-size: 14px;
+              font-weight: bold;
+            }
+            &.schedule {
+              color: #888;
+            }
+          }
+
+        }
+
+        &[data-expanded=true] {
+          .widget-phone-content {
+            &-popup {
+              opacity: 1;
+              pointer-events: all;
+              -webkit-transition: none;
+              transition: none;
+
+              &-wrapper {
+                -webkit-transform: none;
+                transform: none;
+              }
+            }
+          }
+        }
+      }
+
+      + .widget-button-wrap {
+        margin-top: 7px;
+      }
+    }
+
+    %contacts-icon {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      line-height: 16px;
+      margin-right: 8px;
+    }
+
+    %contacts-text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ACACAC;
+    }
+
+    .widget-button {
+      &-wrap {
+        font-size: 0;
+        text-align: right;
+      }
+
+      display: inline-block;
+      font-size: 12px;
+      line-height: 18px;
+      cursor: pointer;
+      -webkit-transition: color 0.35s;
+      -moz-transition: color 0.35s;
+      -ms-transition: color 0.35s;
+      -o-transition: color 0.35s;
+      transition: color 0.35s;
+
+      &:hover {
+        color: #000!important;
+      }
+    }
+
+    .widget-authorize {
+      .widget-panel-button {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &-icon {
+          font-size: 15px;
+          line-height: 1px;
+          margin-right: 10px;
+        }
+
+        &-text {
+          font-size: 12px;
+          line-height: 15px;
+          color: #5b5b5b;
+        }
+      }
+    }
+
+    %hide-1200 {
+      @media all and (max-width: 1200px) {
+        display: none;
+      }
+    }
+    %hide-1000 {
+      @media all and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+
+  &.widget-transparent {
+    .widget-view.widget-view-desktop {
+      .widget-view-desktop-3 {
+        background: transparent;
+      }
+
+      .widget-menu {
+        .ns-bitrix.c-menu.c-menu-horizontal-1 {
+          .menu-item {
+            .menu-item-text-wrapper {
+              position: relative;
+
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 100%;
+                bottom: -1px;
+                background: #fff;
+                -webkit-transition: right 350ms;
+                -moz-transition: right 350ms;
+                -ms-transition: right 350ms;
+                -o-transition: right 350ms;
+                transition: right 350ms;
+              }
+            }
+
+            &:hover {
+              .menu-item-text-wrapper {
+                &:after {
+                  right: 0;
+                }
+              }
+            }
+
+            &.menu-item-more {
+              .menu-item-text-wrapper {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ns-intec-regionality.c-regions-select.c-regions-select-default {
+        .regions-select-region {
+          color: inherit !important;
+
+          -webkit-transition: opacity 350ms;
+          -moz-transition: opacity 350ms;
+          -ms-transition: opacity 350ms;
+          -o-transition: opacity 350ms;
+          transition: opacity 350ms;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    @each $name, $color in $themes {
+      %theme-#{$name}-element {
+        -webkit-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -moz-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -ms-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -o-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+      }
+
+      %theme-#{$name}-element-color {
+        @extend %theme-#{$name}-element;
+        color: $color !important;
+      }
+
+      %theme-#{$name}-element-fill {
+        @extend %theme-#{$name}-element;
+        fill: $color !important;
+      }
+
+      %theme-#{$name}-element-border {
+        @extend %theme-#{$name}-element;
+        border-color: $color !important;
+      }
+
+      %theme-#{$name}-element-background {
+        background: $color !important;
+      }
+
+      %theme-#{$name}-element-background-inverted {
+        @extend %theme-#{$name}-element;
+        background: (invert($color)) !important;
+      }
+
+      %theme-#{$name}-element-opacity {
+        @extend %theme-#{$name}-element;
+        opacity: 0.5;
+      }
+
+      %theme-#{$name}-element-border-inverted {
+        @extend %theme-#{$name}-element;
+        border-color: invert($color);
+      }
+
+      &[data-color="#{$name}"] {
+        .widget-view.widget-view-desktop {
+
+          .widget-logotype {
+            svg, path {
+              @extend %theme-#{$name}-element-color;
+              @extend %theme-#{$name}-element-fill;
+            }
+          }
+
+          .widget-search {
+            .search-title {
+              @extend %theme-#{$name}-element;
+              background: rgba($color, 0.2);
+            }
+
+            .search-title-input {
+              @extend %theme-#{$name}-element-color;
+              &::placeholder { @extend %theme-#{$name}-element-color; }
+            }
+
+            .search-title-button {
+              @extend %theme-#{$name}-element-color;
+            }
+          }
+
+          .widget-address {
+            &-icon {
+              @extend %theme-#{$name}-element-color;
+            }
+
+            &-text {
+              @extend %theme-#{$name}-element-color;
+            }
+          }
+
+          .widget-region {
+            &-icon {
+              @extend %theme-#{$name}-element-color;
+            }
+
+            &-component {
+              @extend %theme-#{$name}-element-color;
+            }
+          }
+
+          .widget-email {
+            &-icon {
+              @extend %theme-#{$name}-element-color;
+            }
+
+            &-text {
+              @extend %theme-#{$name}-element-color;
+            }
+          }
+
+          .widget-phone-content {
+            &-text {
+              &-icon {
+                @extend %theme-#{$name}-element-color;
+              }
+
+              &-value {
+                @extend %theme-#{$name}-element-color;
+
+                &:hover {
+                  @extend %theme-#{$name}-element-opacity
+                }
+              }
+            }
+          }
+
+          .widget-button {
+            @extend %theme-#{$name}-element-color;
+
+            &:hover {
+              @extend %theme-#{$name}-element-opacity
+            }
+          }
+
+          .widget-basket {
+            .sale-basket-icons-item {
+              &:hover {
+                .sale-basket-icons-item-icon {
+                  @extend %theme-#{$name}-element-opacity;
+                }
+              }
+
+              &-icon {
+                @extend %theme-#{$name}-element-color;
+              }
+
+              &-counter {
+                @extend %theme-#{$name}-element-background-inverted;
+                @extend %theme-#{$name}-element-border-inverted;
+                @extend %theme-#{$name}-element-color;
+              }
+            }
+
+            .sale-basket-small-items {
+              .sale-basket-small-tab {
+                .sale-basket-small-tab-icon {
+                  @extend %theme-#{$name}-element-color;
+                  opacity: 0.5;
+                }
+
+                &:hover,
+                &.sale-basket-small-tab-active {
+                  .sale-basket-small-tab-icon {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .sale-basket-small-tab-counter {
+                @extend %theme-#{$name}-element-color;
+                @extend %theme-#{$name}-element-background-inverted;
+                @extend %theme-#{$name}-element-border-inverted;
+              }
+            }
+          }
+
+          .widget-authorize {
+            .widget-panel-button {
+              &-icon {
+                @extend %theme-#{$name}-element-color;
+              }
+
+              &-text {
+                @extend %theme-#{$name}-element-color;
+              }
+              &-text:hover {
+                @extend %theme-#{$name}-element-opacity;
+              }
+            }
+          }
+
+          .widget-menu {
+            .ns-bitrix.c-menu.c-menu-horizontal-1 {
+              .menu-item {
+                .menu-item-text-wrapper {
+                  @extend %theme-#{$name}-element-color;
+
+                  &:after {
+                    @extend %theme-#{$name}-element-background;
+                  }
+
+                  &:hover {
+                    @extend %theme-#{$name}-element-opacity
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-map {
+	position: relative;
+	height: 500px;
+	background: #f7f7f7;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-map + .catalog-store-list-items {
+	margin-top: 60px;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-item {
+	border: 1px solid #e6e7e9;
+	margin-bottom: 30px;
+	min-height: 150px;
+	padding-right: 30px;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-image {
+	display: block;
+	width: 220px;
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 60px;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-title {
+	margin-bottom: 15px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #6a696e;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-content {
+	padding: 10px 0;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-address {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	text-decoration: none;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-text {
+	font-size: 13px;
+	line-height: 21px;
+	color: #313439;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-icon {
+	padding-right: 5px;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-email {
+	display: inline-block;
+	color: #222;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	text-decoration: none;
+}
+.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-phone {
+	display: inline-block;
+	color: #222;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	text-decoration: none;
+}
+@media all and (max-width: 768px) {
+	.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-item {
+		padding-right: 0;
+	}
+}
+@media all and (max-width: 550px) {
+	.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-image {
+		margin-right: 20px;
+		width: 170px;
+	}
+}
+@media all and (max-width: 450px) {
+	.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-image {
+		margin-right: 0;
+		width: 100%;
+		height: 210px;
+		background-position: center;
+	}
+	.ns-bitrix.c-catalog-store-list.c-catalog-store-list-template-1 .catalog-store-list-content {
+		padding: 20px;
+	}
+}

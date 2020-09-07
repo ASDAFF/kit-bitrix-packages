@@ -1,0 +1,132 @@
+.intec-404 .image-404 {
+    text-align:center;
+    margin-bottom:15px;
+}
+.intec-404 .text-404 {
+    text-align:center;
+    max-width:380px;
+    margin:0 auto;
+}
+.intec-404 .text-404 .header-text {
+    text-transform:uppercase;
+    font-size:48px;
+}
+.intec-404 .text-404 .header2-text {
+    font-size: 24px;
+    padding-bottom:10px;
+}
+.intec-404 .text-404 .text {
+    font-size: 14px;
+    max-width: 259px;
+    margin:0 auto;
+    padding-bottom:35px;
+}
+
+.colorpicker {
+    z-index: 1001;
+}
+
+/* ----- UI switch ----- */
+.api-ui-switch {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.api-ui-switch input {
+    display: none;
+}
+.api-ui-switch .api-ui-switch-control {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 38px;
+    background: #ced6d3;
+    cursor: pointer;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    -webkit-transition-property: background, border;
+    -moz-transition-property: background, border;
+    -ms-transition-property: background, border;
+    -o-transition-property: background, border;
+    transition-property: background, border;
+}
+.api-ui-switch.api-ui-switch-active .api-ui-switch-control {
+    background: #52d7be;
+}
+.api-ui-switch .api-ui-switch-control.api-ui-lg {
+    width: 48px;
+    height: 30px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.api-ui-switch .api-ui-switch-control .api-ui-switch-control-flag {
+    display: block;
+    position: absolute;
+    width: 10px;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: auto;
+    background: #fff;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    -webkit-transition-property: left, opacity;
+    -moz-transition-property: left, opacity;
+    -ms-transition-property: left, opacity;
+    -o-transition-property: left, opacity;
+    transition-property: left, opacity;
+}
+.api-ui-switch.api-ui-switch-active .api-ui-switch-control .api-ui-switch-control-flag {
+    left: 22px;
+}
+.api-ui-switch .api-ui-switch-control.api-ui-lg .api-ui-switch-control-flag {
+    width: 22px;
+    top: 4px;
+    bottom: 4px;
+}
+.api-ui-switch.api-ui-switch-active {}
+.api-ui-switch.api-ui-radio .api-ui-switch-control {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    overflow: hidden;
+}
+.api-ui-switch.api-ui-radio .api-ui-switch-control .api-ui-switch-control-flag {
+    top: 4px;
+    bottom: 4px;
+    left: 4px !important;
+    width: 7px;
+    background: #3761ef;
+    opacity: 0;
+}
+.api-ui-switch.api-ui-radio.api-ui-switch-active .api-ui-switch-control .api-ui-switch-control-flag {
+    opacity: 1;
+}
+/* ----- /UI switch ----- */
+body img {
+    max-width:100%;
+}

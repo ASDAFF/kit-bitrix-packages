@@ -1,0 +1,62 @@
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 30px 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  background: #fcfcfc;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-title {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #666666;
+  text-transform: uppercase;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-items {
+  display: table;
+  border: none;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-item {
+  display: table-row;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-sum {
+  display: table-cell;
+  width: auto;
+  padding: 5px 30px 5px 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  color: #000000;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-currency {
+  display: table-cell;
+  width: 100%;
+  padding: 5px 0;
+  vertical-align: middle;
+  text-align: left;
+}
+.ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-currency-item {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+@media all and (max-width: 600px) {
+  .ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content {
+    margin-bottom: 25px;
+    padding: 13px 15px;
+  }
+  .ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-title {
+    margin-bottom: 20px;
+  }
+  .ns-bitrix.c-sale-personal-account.c-sale-personal-account-default .sale-personal-account-content .sale-personal-account-sum {
+    padding: 5px 10px 5px 0;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

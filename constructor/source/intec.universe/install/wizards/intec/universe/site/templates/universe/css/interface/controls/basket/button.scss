@@ -1,0 +1,186 @@
+$class: 'intec-ui' !default;
+
+&-basket-button {
+  position: relative;
+  display: inline-block;
+
+  .#{$class}-part-content {}
+
+  .#{$class}-part-effect {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      height: 100%;
+      width: 0;
+      overflow: hidden;
+    }
+
+    .#{$class}-part-effect-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    &.#{$class}-part-effect-folding {
+      .#{$class}-part-effect-wrapper {
+        width: 12px;
+        height: 12px;
+        transform: rotateZ(45deg);
+
+        @keyframes #{$class}-basket-button-effect-folding {
+          0%, 10% {
+            transform: perspective(140px) rotateX(-180deg);
+            opacity: 0;
+          }
+          25%, 75% {
+            transform: perspective(140px) rotateX(0deg);
+            opacity: 1;
+          }
+          90%, 100% {
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+          }
+        }
+
+        & > i {
+          position: relative;
+          display: block;
+          float: left;
+          width: 6px;
+          height: 6px;
+
+          transform: scale(1.1);
+        }
+
+        & > i:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          animation: #{$class}-basket-button-effect-folding 1.6s infinite linear both;
+          transform-origin: 100% 100%;
+        }
+
+        & > i:first-child + i {
+          transform: scale(1.1) rotateZ(90deg);
+        }
+
+        & > i:first-child + i + i {
+          transform: scale(1.1) rotateZ(270deg);
+          clear: left;
+        }
+
+        & > i:first-child + i + i + i {
+          transform: scale(1.1) rotateZ(180deg);
+        }
+
+        & > i:first-child + i:before {
+          animation-delay: 0.2s;
+        }
+
+        & > i:first-child + i + i:before {
+          animation-delay: 0.6s;
+        }
+
+        & > i:first-child + i + i + i:before {
+          animation-delay: 0.4s;
+        }
+      }
+    }
+
+    &.#{$class}-part-effect-bounce {
+      .#{$class}-part-effect-wrapper {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        @keyframes #{$class}-basket-button-effect-bounce {
+          0%,
+          80%,
+          100% {
+            transform: scale(0);
+          }
+          40% {
+            transform: scale(1);
+          }
+        }
+
+        &:after {
+          content: '';
+          width: 0;
+          height: 100%;
+        }
+
+        & > i {
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        &:after,
+        & > i {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        & > i:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          animation: #{$class}-basket-button-effect-bounce 1.2s infinite ease-in-out both;
+        }
+
+        & > i:first-child {
+          margin-left: 0;
+        }
+
+        & > i:last-child {
+          margin-right: 0;
+        }
+
+        & > i:first-child:before {
+          margin-left: 0;
+          animation-delay: -0.32s;
+        }
+
+        & > i:first-child + i:before {
+          animation-delay: -0.16s;
+        }
+      }
+    }
+  }
+
+  &[data-basket-state="processing"],
+  &[data-compare-state="processing"] {
+    .#{$class}-part-content {
+      visibility: hidden;
+    }
+
+    .#{$class}-part-effect {
+      display: block;
+    }
+  }
+}

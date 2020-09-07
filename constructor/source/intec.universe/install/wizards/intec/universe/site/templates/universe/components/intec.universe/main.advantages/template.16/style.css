@@ -1,0 +1,50 @@
+.widget.c-advantages.c-advantages-template-16 {
+  padding: 95px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-header .widget-title {
+  color: #ffffff;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-header .widget-description {
+  color: #ffffff;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-item-picture {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-item-name-wrap {
+  position: relative;
+  padding-top: 52px;
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-item-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #fff;
+}
+.widget.c-advantages.c-advantages-template-16 .widget-item-description {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.45;
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+@media all and (max-width: 500px) {
+  .widget.c-advantages.c-advantages-template-16 .widget-item-name {
+    font-size: 16px;
+  }
+  .widget.c-advantages.c-advantages-template-16 .widget-item-description {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

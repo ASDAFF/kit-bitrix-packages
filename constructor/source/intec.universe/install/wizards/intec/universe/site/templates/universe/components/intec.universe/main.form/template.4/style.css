@@ -1,0 +1,83 @@
+.widget.c-form.c-form-template-4 .widget-wrapper-3 {
+  background: #fbfbfb;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+@media all and (max-width: 650px) {
+  .widget.c-form.c-form-template-4 .widget-wrapper-3 {
+    padding: 40px;
+  }
+}
+.widget.c-form.c-form-template-4 .widget-title {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #222222;
+}
+@media all and (max-width: 600px) {
+  .widget.c-form.c-form-template-4 .widget-title {
+    text-align: center;
+  }
+}
+.widget.c-form.c-form-template-4 .widget-description {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #8e949d;
+}
+@media all and (max-width: 600px) {
+  .widget.c-form.c-form-template-4 .widget-description {
+    text-align: center;
+  }
+}
+.widget.c-form.c-form-template-4 .widget-image img {
+  max-width: 160px;
+  max-height: 160px;
+}
+.widget.c-form.c-form-template-4 .widget-consultant-name {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #222222;
+}
+.widget.c-form.c-form-template-4 .widget-consultant-post {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #8e949d;
+  margin-bottom: 10px;
+}
+.widget.c-form.c-form-template-4 .widget-buttons {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #8e949d;
+}
+.widget.c-form.c-form-template-4 .widget-button {
+  font-size: 13px;
+  padding: 11px 22px;
+  border-radius: 50px;
+}
+@media all and (max-width: 600px) {
+  .widget.c-form.c-form-template-4 .widget-button {
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .widget.c-form.c-form-template-4 .widget-button-or {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

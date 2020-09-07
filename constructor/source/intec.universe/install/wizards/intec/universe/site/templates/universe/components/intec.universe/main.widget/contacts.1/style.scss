@@ -1,0 +1,165 @@
+$component: 'widget';
+$template: 'contacts-1';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  font-weight: 400;
+
+  .widget-maps-wrap {
+    position: relative;
+  }
+
+  .widget-items-wrap {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  .widget-items-wrap-2 {}
+  .widget-items-wrap-3 {}
+
+  .widget-items {
+    background-color: #17171d;
+    pointer-events: all;
+  }
+
+  .widget-item {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .widget-item-hidden {
+    display: none;
+  }
+
+  .widget-item-wrapper {
+    padding: 35px 45px;
+  }
+
+  .widget-item-custom-wrapper {
+    padding: 40px 50px 25px 30px;
+  }
+
+  .widget-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .widget-item-contacts,
+  .widget-item-address {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .widget-item-contacts {
+    margin-top: 10px;
+
+    a {
+      color: #fff!important;
+    }
+  }
+
+  .widget-item-address {
+    margin-top: 2px;
+  }
+
+  .widget-item-picture {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .widget-item-contact {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #FFF;
+  }
+
+  .widget-item-contact-button-wrap {
+    margin-top: 10px;
+  }
+
+  .widget-item-contact-button {
+    border-radius: 25px;
+  }
+
+  .widget-item-contact-button:hover {
+  }
+
+  @media all and (max-width: 1024px) {
+    .widget-items-wrap {
+      position: static;
+    }
+
+    .widget-items-wrap-3 {
+      margin: 0;
+    }
+
+    .widget-item,
+    .widget-item-custom {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+  }
+  @media all and (max-width: 450px) {
+    .widget-item-custom-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .widget-item-picture {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .widget-item-contact,
+    .widget-item-contact-button-wrap {
+      text-align: center;
+    }
+
+  }
+
+  .widget-maps {
+    position: relative;
+    height: 750px;
+    filter: grayscale(1);
+    z-index: 1;
+    transition: filter 0.4s;
+  }
+
+  .widget-maps:hover {
+    filter: none;
+  }
+
+  .widget-map[data-state=disabled] {
+    display: none;
+  }
+
+  .widget-map[data-state=enabled] {
+    display: block;
+  }
+
+  .widget-maps .c-map-yandex-system {
+    width: 100%!important;
+    height: 750px!important;
+  }
+
+  @media all and (max-width: 768px) {
+    .widget-maps {
+      height: 450px;
+    }
+
+    .widget-maps .c-map-yandex-system {
+      height: 450px!important;
+    }
+
+  }
+
+}

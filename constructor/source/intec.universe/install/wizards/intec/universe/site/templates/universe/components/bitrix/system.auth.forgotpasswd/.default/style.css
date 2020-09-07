@@ -1,0 +1,31 @@
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default {
+  display: block;
+}
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default .system-auth-forgotpasswd-block {
+  display: block;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default .system-auth-forgotpasswd-header {
+  text-align: left;
+  font-size: 1.28571429em;
+  line-height: 1.5;
+  margin: 0 0 35px 0;
+}
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default .system-auth-forgotpasswd-form {
+  max-width: 400px;
+}
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default .system-auth-forgotpasswd-form-description {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.ns-bitrix.c-system-auth-forgotpasswd.c-system-auth-forgotpasswd-default .system-auth-forgotpasswd-form-buttons {
+  display: block;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

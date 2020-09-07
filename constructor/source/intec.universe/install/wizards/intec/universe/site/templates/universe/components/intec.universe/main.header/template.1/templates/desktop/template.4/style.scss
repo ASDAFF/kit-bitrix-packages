@@ -1,0 +1,515 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+$themes: (
+  'white': #fff,
+  'black': #000
+);
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view.widget-view-desktop {
+    z-index: 110;
+
+    .widget-view-desktop-4 {
+      display: block;
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .widget-item {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .widget-menu {}
+
+    .widget-logotype {
+      display: block;
+      width: 130px;
+      text-decoration: none;
+      color: #1d1d1d;
+
+      svg {
+        max-height: 50px;
+      }
+
+      @media all and (max-width: 900px) {
+        width: 80px;
+      }
+    }
+
+    .widget-tagline {
+      display: block;
+
+      &-text {
+        display: block;
+        max-width: 300px;
+        font-size: 12px;
+        line-height: 16px;
+        max-height: 48px;
+        overflow: hidden;
+        color: #1d1d1d;
+      }
+
+      @media all and (max-width: 1050px) {
+        &-wrap { display: none; }
+      }
+    }
+
+    .widget-region {
+      white-space: nowrap;
+
+      &-icon,
+      &-text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &-icon {
+        margin-right: 7px;
+      }
+
+      &-text {
+        white-space: normal;
+      }
+    }
+
+    .widget-email {
+      &-text {
+        font-size: 15px;
+        line-height: 21px;
+        color: #1d1d1d;
+
+        -webkit-transition: 350ms color;
+        -moz-transition: 350ms color;
+        -ms-transition: 350ms color;
+        -o-transition: 350ms color;
+        transition: 350ms color;
+
+        &:hover {
+          color: #0065ff;
+        }
+      }
+    }
+
+    .widget-phone {
+      white-space: nowrap;
+      font-size: 0;
+
+      %widget-phone-item {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &-content {
+        @extend %widget-phone-item;
+
+        position: relative;
+      }
+
+      &-text {
+        font-size: 21px;
+        line-height: 31px;
+        color: #1d1d1d;
+        text-decoration: none;
+        white-space: normal;
+
+        -webkit-transition: 350ms color;
+        -moz-transition: 350ms color;
+        -ms-transition: 350ms color;
+        -o-transition: 350ms color;
+        transition: 350ms color;
+
+        &:hover {
+          color: #0065ff;
+        }
+      }
+
+      &-popup {
+        position: absolute;
+        opacity: 0;
+        top: 100%;
+        left: -20px;
+        right: -50px;
+        padding-top: 10px;
+        white-space: normal;
+        z-index: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        position: absolute;
+        -webkit-perspective: 2000px;
+        perspective: 2000px;
+
+        &-wrapper {
+          padding: 10px;
+          background: #fff;
+          width: 100%;
+          min-width: 140px;
+          -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          will-change: transform;
+          -webkit-transform-origin: 50% -50px;
+          transform-origin: 50% -50px;
+          -webkit-transform: rotateX(-15deg);
+          transform: rotateX(-15deg);
+          -webkit-transition: -webkit-transform 0.2s;
+          transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+          transition: transform 0.2s, -webkit-transform 0.2s;
+        }
+
+        &-item {
+          display: block;
+          text-align: left;
+          font-size: 21px;
+          line-height: 31px;
+          color: #2d2d2d;
+          text-decoration: none;
+          padding: 10px;
+
+          -webkit-transition: 350ms color;
+          -moz-transition: 350ms color;
+          -ms-transition: 350ms color;
+          -o-transition: 350ms color;
+          transition: 350ms color;
+
+          &:hover {
+            color: #0065ff;
+          }
+        }
+
+        &-contacts {
+          padding: 10px 0;
+          border-bottom: 1px solid #e8e8e8;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+
+        &-contact {
+          display: block;
+          font-size: 15px;
+          font-weight: normal;
+          line-height: 1.2;
+          color: #2d2d2d;
+          text-decoration: none;
+          padding: 5px 10px;
+
+          -webkit-transition: 350ms color;
+          -moz-transition: 350ms color;
+          -ms-transition: 350ms color;
+          -o-transition: 350ms color;
+          transition: 350ms color;
+
+          &.phone {
+            font-size: 20px;
+          }
+          &.schedule {
+            color: #888;
+          }
+        }
+
+      }
+
+      &-arrow {
+        @extend %widget-phone-item;
+
+        font-size: 16px;
+        width: 16px;
+        text-align: right;
+        line-height: 1;
+        color: #2d2d2d;
+        margin-left: 10px;
+      }
+
+      @media all and (max-width: 900px) {
+        &-text {
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        &-popup {
+          &-item {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+
+        &-arrow {
+          font-size: 10px;
+        }
+      }
+
+      &[data-expanded=true] {
+        .widget-phone {
+          &-popup {
+            opacity: 1;
+            pointer-events: all;
+            -webkit-transition: none;
+            transition: none;
+
+            &-wrapper {
+              -webkit-transform: none;
+              transform: none;
+            }
+          }
+        }
+      }
+
+    }
+
+    .widget-button {
+      &-wrap {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+        margin-bottom: 10px;
+        background: #0065ff;
+
+        -webkit-transition: background 350ms;
+        -moz-transition: background 350ms;
+        -ms-transition: background 350ms;
+        -o-transition: background 350ms;
+        transition: background 350ms;
+        cursor: pointer;
+
+        &:hover {
+          background: #3384ff;
+        }
+      }
+
+      height: 100%;
+      padding-bottom: 10px;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      &-icon,
+      &-text {
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+      }
+
+      &-icon {
+        line-height: 1;
+      }
+    }
+  }
+
+  &.widget-transparent {
+    .widget-view.widget-view-desktop {
+      .widget-view-desktop-4 {
+        background: transparent;
+        border-bottom: none;
+      }
+
+      .widget-region {
+        &-icon {
+          color: inherit !important;
+        }
+      }
+
+      .ns-intec-regionality.c-regions-select.c-regions-select-default {
+        .regions-select-region {
+          color: inherit !important;
+
+          -webkit-transition: opacity 350ms;
+          -moz-transition: opacity 350ms;
+          -ms-transition: opacity 350ms;
+          -o-transition: opacity 350ms;
+          transition: opacity 350ms;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .widget-phone {
+        &-popup {
+          padding-top: 0;
+
+          &-wrapper {
+            background: transparent;
+            width: 100%;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            &[data-advanced="true"] {
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    @each $name, $color in $themes {
+      %theme-#{$name}-element {
+        -webkit-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -moz-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -ms-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -o-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+      }
+
+      %theme-#{$name}-element-color {
+        @extend %theme-#{$name}-element;
+        color: $color !important;
+      }
+
+      %theme-#{$name}-element-fill {
+        @extend %theme-#{$name}-element;
+        fill: $color !important;
+      }
+
+      %theme-#{$name}-element-background {
+        @extend %theme-#{$name}-element;
+        background: $color !important;
+      }
+
+      %theme-#{$name}-element-background-inverted {
+        @extend %theme-#{$name}-element;
+        background: invert($color) !important;
+      }
+
+      %theme-#{$name}-element-border {
+        @extend %theme-#{$name}-element;
+        border-color: $color !important;
+      }
+
+      %theme-#{$name}-element-border-inverted {
+        @extend %theme-#{$name}-element;
+        border-color: invert($color) !important;
+      }
+
+      &[data-color="#{$name}"] {
+        .widget-view.widget-view-desktop {
+          .widget-menu {
+            .ns-bitrix.c-menu.c-menu-popup-1,
+            .ns-bitrix.c-menu.c-menu-popup-2,
+            .ns-bitrix.c-menu.c-menu-popup-3 {
+              .menu-button {
+                @extend %theme-#{$name}-element-color;
+
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+
+          .widget-logotype {
+            svg, path {
+              @extend %theme-#{$name}-element-color;
+              @extend %theme-#{$name}-element-fill;
+            }
+          }
+
+          .widget-tagline {
+            &-text { @extend %theme-#{$name}-element-color; }
+          }
+
+          .widget-region {
+            @extend %theme-#{$name}-element-color;
+          }
+
+          .widget-email {
+            &-text {
+              @extend %theme-#{$name}-element-color;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .widget-phone {
+            &-text {
+              @extend %theme-#{$name}-element-color;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+
+            &-popup {
+              &-item {
+                @extend %theme-#{$name}-element-color;
+
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+
+            }
+
+            &-arrow { @extend %theme-#{$name}-element-color; }
+          }
+
+          .widget-authorization {
+            .widget-authorization-button-icon svg {
+              @extend %theme-#{$name}-element-fill;
+            }
+            .widget-authorization-button-content {
+              @extend %theme-#{$name}-element-color;
+            }
+          }
+
+          .widget-basket {
+            .sale-basket-icons-items {
+              .sale-basket-icons-item {
+                .sale-basket-icons-item-icon {
+                  @extend %theme-#{$name}-element-color;
+                  opacity: 0.5;
+                }
+
+                &:hover,
+                &.sale-basket-icons-item-active {
+                  .sale-basket-icons-item-icon {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .sale-basket-icons-item-counter {
+                @extend %theme-#{$name}-element-color;
+                @extend %theme-#{$name}-element-background-inverted;
+                @extend %theme-#{$name}-element-border-inverted;
+
+              }
+            }
+
+            .sale-basket-small-items {
+              .sale-basket-small-tab {
+                .sale-basket-small-tab-icon {
+                  @extend %theme-#{$name}-element-color;
+                  opacity: 0.5;
+                }
+
+                &:hover,
+                &.sale-basket-small-tab-active {
+                  .sale-basket-small-tab-icon {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .sale-basket-small-tab-counter {
+                @extend %theme-#{$name}-element-color;
+                @extend %theme-#{$name}-element-background-inverted;
+                @extend %theme-#{$name}-element-border-inverted;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

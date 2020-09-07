@@ -1,0 +1,37 @@
+$namespace: 'intec';
+$component: 'startshop-form-result-new';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+  overflow: hidden;
+
+  .#{$class}-message-error {
+    display: block;
+    color: #ff114a;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .#{$class}-fields {
+    display: block;
+    margin: -8px 0 17px 0;
+    min-height: 8px;
+  }
+
+  .#{$class}-field {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .#{$class}-consent {
+    margin-bottom: 25px;
+  }
+
+  .#{$class}-sent {
+    display: block;
+    text-align: center;
+  }
+} 

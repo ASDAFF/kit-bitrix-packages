@@ -1,0 +1,87 @@
+&-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  text-align: center;
+  margin: -5px -10px;
+  min-width: 20px;
+  min-height: 10px;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &.disabled {
+    display: none;
+  }
+
+  .intec-ui-part-dot {
+    display: block;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+
+    span {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #808080;
+
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      -webkit-transition: 350ms;
+      -moz-transition: 350ms;
+      -ms-transition: 350ms;
+      -o-transition: 350ms;
+      transition: 350ms;
+    }
+
+    &.active {
+      span {
+        background-color: #1B1E25;
+        border-color: #1B1E25;
+      }
+    }
+  }
+
+  // Mods
+
+  &.#{$class}-mod-position-left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  &.#{$class}-mod-position-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &.#{$class}-mod-position-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}

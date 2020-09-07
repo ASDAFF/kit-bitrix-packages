@@ -1,0 +1,143 @@
+.widget.c-staff.c-staff-template-4 .widget-content-wrap {
+  position: relative;
+  color: #fff;
+}
+.widget.c-staff.c-staff-template-4 .widget-content-wrap[data-wide=false] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.widget.c-staff.c-staff-template-4 .widget-content {
+  position: relative;
+}
+.widget.c-staff.c-staff-template-4 .widget-background {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.widget.c-staff.c-staff-template-4 .widget-element-image-wrap {
+  width: 35%;
+}
+.widget.c-staff.c-staff-template-4 .widget-element-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-top: 100%;
+}
+.widget.c-staff.c-staff-template-4 .widget-element-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 60px;
+}
+.widget.c-staff.c-staff-template-4 .widget-element-name {
+  font-size: 18px;
+  margin-top: 45px;
+  font-weight: bold;
+}
+.widget.c-staff.c-staff-template-4 [data-role=navigation] {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.widget.c-staff.c-staff-template-4 [data-role=navigation] i {
+  color: #fff;
+  font-size: 40px;
+}
+.widget.c-staff.c-staff-template-4 .intec-ui.intec-ui-control-navigation .intec-ui-part-button-left {
+  left: -40px;
+}
+.widget.c-staff.c-staff-template-4 .intec-ui.intec-ui-control-navigation .intec-ui-part-button-right {
+  right: -40px;
+}
+.widget.c-staff.c-staff-template-4 .widget-panel {
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
+  line-height: 20px;
+  z-index: 1;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-wrapper {
+  display: inline-block;
+  color: #2d2d2d;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-name {
+  font-size: 18px;
+  line-height: 27px;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-description {
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 5px;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 25px;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-wrapper:hover .widget-button-icon {
+  animation-name: c-staff-template-2;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+}
+.widget.c-staff.c-staff-template-4 .widget-button-icon i {
+  font-size: 14px;
+  line-height: 14px;
+}
+@media all and (max-width: 1290px) {
+  .widget.c-staff.c-staff-template-4 [data-role=items] {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .widget.c-staff.c-staff-template-4 [data-role=navigation] {
+    z-index: 1;
+  }
+  .widget.c-staff.c-staff-template-4 .intec-ui.intec-ui-control-navigation .intec-ui-part-button-left {
+    left: 0px;
+  }
+  .widget.c-staff.c-staff-template-4 .intec-ui.intec-ui-control-navigation .intec-ui-part-button-right {
+    right: 0px;
+  }
+  .widget.c-staff.c-staff-template-4 .widget-panel {
+    left: 40px;
+  }
+  .widget.c-staff.c-staff-template-4 .widget-element-description {
+    margin-top: 80px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .widget.c-staff.c-staff-template-4 .widget-element-name {
+    margin-bottom: 60px;
+  }
+}
+@media all and (max-width: 950px) {
+  .widget.c-staff.c-staff-template-4 .widget-background {
+    top: 0;
+  }
+  .widget.c-staff.c-staff-template-4 .widget-element-description {
+    margin-top: 30px;
+  }
+  .widget.c-staff.c-staff-template-4 .widget-element-image-wrap {
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .widget.c-staff.c-staff-template-4 .widget-button-name {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

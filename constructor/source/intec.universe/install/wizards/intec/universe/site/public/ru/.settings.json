@@ -1,0 +1,187 @@
+{
+  "template-color": "#0065ff",
+  "template-background-show": false,
+  "template-background-color": "#c8c8cd",
+  "template-font": "Montserrat",
+  "template-images-effect": "opacity",
+  "template-images-lazyload-use": true,
+  "template-titles-size": 30,
+  "template-text-size": 16,
+  "template-width": 1200,
+  "template-menu-show": true,
+  "template-cache": true,
+  "base-regionality-use": true,
+  "base-consent": true,
+  "base-map-vendor": "yandex",
+  "base-search-mode": "catalog",
+  "basket-use": true,
+  "basket-delay-use": true,
+  "basket-compare-use": true,
+  "basket-position": "fixed.right",
+  "basket-fixed-template": "template.2",
+  "basket-fixed-auto": false,
+  "basket-notifications-use": true,
+  "catalog-detail-gallery-modes": [
+    "zoom",
+    "popup"
+  ],
+  "catalog-detail-sku-view": "dynamic",
+  "catalog-products-view-mode": "tile",
+  "catalog-menu-view": "simple.1",
+  "catalog-quick-view-use": true,
+  "catalog-detail-panel-show": true,
+  "catalog-detail-panel-mobile-show": true,
+  "catalog-root-menu-show": false,
+  "catalog-sections-menu-show": true,
+  "catalog-detail-menu-show": false,
+  "catalog-root-layout": "1",
+  "catalog-root-template": "tile.2",
+  "catalog-sections-layout": "2",
+  "catalog-sections-template": "tile.2",
+  "catalog-filter-ajax": false,
+  "catalog-filter-template": "vertical.2",
+  "catalog-elements-text-template": "text.1",
+  "catalog-elements-list-template": "list.1",
+  "catalog-elements-tile-template": "tile.4",
+  "catalog-elements-tile-mobile-columns": 2,
+  "catalog-detail-template": "default.2.wide",
+  "catalog-quick-view-template": 2,
+  "footer-blocks": {
+    "form": {
+      "active": true,
+      "template": "wide.1"
+    },
+    "contacts": {
+      "active": false,
+      "template": "wide.1"
+    }
+  },
+  "footer-theme": "dark",
+  "footer-products-viewed-show": true,
+  "footer-template": 5,
+  "header-basket-popup-show": true,
+  "header-template": 19,
+  "header-menu-uppercase-use": true,
+  "header-menu-overlay-use": true,
+  "header-fixed-use": true,
+  "header-fixed-menu-popup-show": true,
+  "header-menu-popup-template": 4,
+  "header-mobile-template": "white",
+  "header-mobile-fixed": true,
+  "header-mobile-hidden": true,
+  "header-mobile-search-type": "popup",
+  "header-mobile-menu-template": 2,
+  "pages-main-template": "wide",
+  "pages-main-blocks": {
+    "banner": {
+      "active": true,
+      "template": 12
+    },
+    "icons": {
+      "active": true,
+      "template": null
+    },
+    "sections": {
+      "active": true,
+      "template": "tiles.1"
+    },
+    "categories": {
+      "active": false,
+      "template": "tiles.3"
+    },
+    "gallery": {
+      "active": false,
+      "template": "tiles.1"
+    },
+    "products": {
+      "active": true,
+      "template": "tiles.3"
+    },
+    "reviews": {
+      "active": true,
+      "template": "blocks.2"
+    },
+    "services": {
+      "active": true,
+      "template": "tiles.7"
+    },
+    "video": {
+      "active": false,
+      "template": "wide.1"
+    },
+    "advantages": {
+      "active": false,
+      "template": "tiles.1"
+    },
+    "projects": {
+      "active": false,
+      "template": "tiles.1"
+    },
+    "staff": {
+      "active": false,
+      "template": "tiles.2"
+    },
+    "faq": {
+      "active": false,
+      "template": "wide.1"
+    },
+    "stages": {
+      "active": false,
+      "template": "tiles.2"
+    },
+    "certificates": {
+      "active": false,
+      "template": "tiles.1"
+    },
+    "news": {
+      "active": true,
+      "template": "slider.1"
+    },
+    "shares": {
+      "active": true,
+      "template": "blocks.1"
+    },
+    "about": {
+      "active": true,
+      "template": null
+    },
+    "brands": {
+      "active": true,
+      "template": "slider.1"
+    },
+    "articles": {
+      "active": true,
+      "template": "tiles.2"
+    },
+    "rates": {
+      "active": false,
+      "template": "tiles.1"
+    },
+    "videos": {
+      "active": false,
+      "template": "list.1"
+    },
+    "contacts": {
+      "active": false,
+      "template": "list.1"
+    }
+  },
+  "sections-shares-template": "blocks.2",
+  "sections-contacts-template": "offices.1",
+  "sections-news-template": "list.1",
+  "sections-articles-template": "blocks.1",
+  "sections-blog-template": "blocks.1",
+  "sections-certificates-template": "tiles.1",
+  "services-root-menu-show": false,
+  "services-root-template": 1,
+  "services-section-menu-show": true,
+  "services-section-template": 10,
+  "services-element-template": "wide.1",
+  "mobile-blocks": {
+    "panel": {
+      "active": true,
+      "template": "template.1"
+    }
+  },
+  "mobile-panel-hidden": true
+}

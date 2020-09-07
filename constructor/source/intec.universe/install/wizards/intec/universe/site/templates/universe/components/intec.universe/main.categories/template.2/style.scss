@@ -1,0 +1,49 @@
+$component: 'categories';
+$template: 'template-2';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-picture {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .#{$item}-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    max-height: 84px;
+    overflow: hidden;
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-picture {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

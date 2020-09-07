@@ -1,0 +1,185 @@
+$component: 'reviews';
+$template: 'template-9';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@keyframes c-#{$component}-#{$template}-keyframes {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .#{$item}-picture {
+    width: 105px;
+    height: 105px;
+    margin-right: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(50%);
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .#{$item}-link-wrap {
+    font-size: 0;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+  .#{$item}-link {
+    white-space: nowrap;
+  }
+  .#{$item}-link-value {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:hover {
+      & + .#{$item}-link-decoration {
+        animation-name: c-#{$component}-#{$template}-keyframes;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+  .#{$item}-link-decoration {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 2px;
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+  .#{$item}-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .#{$item}-position {
+    font-size: 14px;
+    line-height: 18px;
+    color: #888888;
+    margin-top: 10px;
+  }
+  .intec-ui-control-navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55px;
+
+    .intec-ui-part-button-left,
+    .intec-ui-part-button-right {
+      font-size: 0;
+      width: 48px;
+      height: 48px;
+      margin-top: -24px;
+      background-color: #FFF;
+      border: 1px solid #efefef;
+      opacity: 1;
+      @include border-radius(50%);
+      @include transition(box-shadow, 0.4s);
+
+      &:hover {
+        -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+      }
+      &.disabled {
+        display: none;
+      }
+      i {
+        font-size: 30px;
+      }
+    }
+    .intec-ui-part-button-left i {
+      padding-right: 2px;
+    }
+    .intec-ui-part-button-right i {
+      padding-left: 2px;
+    }
+  }
+  .widget-footer {}
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    .widget-items {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .#{$item}-picture {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .widget-items {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .#{$item}-description {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .#{$item}-link-value {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    .#{$item}-name {
+      font-size: 15px;
+      line-height: 19px;
+    }
+    .#{$item}-position {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 5px;
+    }
+    .intec-ui-control-navigation {
+      .intec-ui-part-button-left,
+      .intec-ui-part-button-right {
+        width: 35px;
+        height: 35px;
+        margin-top: -17.5px;
+      }
+    }
+  }
+}

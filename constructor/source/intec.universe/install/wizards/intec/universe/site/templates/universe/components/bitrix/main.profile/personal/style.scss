@@ -1,0 +1,28 @@
+$namespace: 'bitrix';
+$component: 'main-profile';
+$template: 'personal';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  .#{$class}-wrapper {}
+  .#{$class}-wrapper-2 {}
+
+  .#{$class}-block {
+    display: block;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+  }
+
+  .#{$class}-header {
+    text-align: left;
+    font-size: 1.28571429em;
+    line-height: 1.5;
+    margin: 0 0 35px 0;
+  }
+
+  .#{$class}-form-buttons {
+    margin-top: 20px;
+  }
+}

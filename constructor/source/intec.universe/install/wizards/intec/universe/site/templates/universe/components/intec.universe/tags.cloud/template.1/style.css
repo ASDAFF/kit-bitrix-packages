@@ -1,0 +1,59 @@
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-content {
+    font-size: 0;
+    text-align: left;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 7px 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button:focus {
+    outline: none;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-1,
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-1-hover:hover {
+    background-color: #ffd800;
+    color: #000;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-2,
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-2-hover:hover {
+    background-color: #d7569c;
+    color: #FFF;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-3,
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-3-hover:hover {
+    background-color: #3eb5f1;
+    color: #FFF;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-4,
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-4-hover:hover {
+    background-color: #52ac62;
+    color: #FFF;
+}
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-5,
+.c-tags-cloud.c-tags-cloud-template-1 .tags-cloud-element-button.tags-cloud-color-5-hover:hover {
+    background-color: #1f1f1f;
+    color: #FFF;
+}

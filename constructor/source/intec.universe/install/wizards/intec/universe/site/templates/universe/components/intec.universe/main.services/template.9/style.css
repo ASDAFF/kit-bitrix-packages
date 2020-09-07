@@ -1,0 +1,46 @@
+.widget.c-services.c-services-template-9 .widget-item-wrapper {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+.widget.c-services.c-services-template-9 .widget-item-picture {
+  display: block;
+  padding-top: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.widget.c-services.c-services-template-9 .widget-item-name {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-services.c-services-template-9 .widget-footer-button {
+  color: #2d2d2d !important;
+}
+.widget.c-services.c-services-template-9 .widget-footer-button:hover, .widget.c-services.c-services-template-9 .widget-footer-button:focus, .widget.c-services.c-services-template-9 .widget-footer-button:active {
+  color: #fff !important;
+}
+@media all and (max-width: 768px) {
+  .widget.c-services.c-services-template-9 .widget-item-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

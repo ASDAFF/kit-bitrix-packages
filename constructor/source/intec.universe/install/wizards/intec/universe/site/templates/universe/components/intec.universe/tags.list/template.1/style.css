@@ -1,0 +1,56 @@
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 {
+  display: block;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item input[type=checkbox]:checked + .tags-list-item-button {
+  background-color: #f4f4f4;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item-button {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  color: #444444;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 3px 12px;
+  border-radius: 3px;
+  top: 0;
+  -webkit-transition-property: color, background-color, top;
+  -moz-transition-property: color, background-color, top;
+  -ms-transition-property: color, background-color, top;
+  -o-transition-property: color, background-color, top;
+  transition-property: color, background-color, top;
+  -webkit-transition-duration: 350ms;
+  -moz-transition-duration: 350ms;
+  -ms-transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item-button:hover {
+  background-color: #f4f4f4;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item-button:active {
+  top: 3px;
+}
+.ns-intec-universe.c-tags-list.c-tags-list-template-1 .tags-list-item-quantity {
+  color: #9f9f9f;
+}
+
+/*# sourceMappingURL=style.css.map */

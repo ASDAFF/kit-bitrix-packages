@@ -1,0 +1,99 @@
+.widget.c-advantages.c-advantages-template-20 .widget-item-picture-wrap {
+  position: relative;
+}
+.widget.c-advantages.c-advantages-template-20 .widget-item-picture-arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -12.5px;
+  width: 25px;
+  height: 15px;
+  margin-top: -7.5px;
+  background-image: url(images/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.widget.c-advantages.c-advantages-template-20 .widget-item-picture {
+  position: relative;
+  max-width: 284px;
+  height: 177px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-advantages.c-advantages-template-20 .widget-item:hover .widget-item-picture {
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.widget.c-advantages.c-advantages-template-20 .widget-item-name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  max-width: 284px;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.widget.c-advantages.c-advantages-template-20 .widget-item:nth-child(3n) .widget-item-picture-arrow {
+  display: none;
+}
+@media all and (max-width: 1100px) {
+  .widget.c-advantages.c-advantages-template-20 .widget-item:nth-child(3n) .widget-item-picture-arrow {
+    display: block;
+  }
+  .widget.c-advantages.c-advantages-template-20 .widget-item:nth-child(2n) .widget-item-picture-arrow {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .widget.c-advantages.c-advantages-template-20 .widget-item-picture {
+    width: 210px;
+    height: 130px;
+  }
+  .widget.c-advantages.c-advantages-template-20 .widget-item-name {
+    width: 210px;
+  }
+}
+@media all and (max-width: 600px) {
+  .widget.c-advantages.c-advantages-template-20 .widget-item:nth-child(3n) .widget-item-picture-arrow {
+    display: none;
+  }
+  .widget.c-advantages.c-advantages-template-20 .widget-item-name {
+    font-size: 16px;
+    width: 100%;
+  }
+  .widget.c-advantages.c-advantages-template-20 .widget-item-picture-arrow {
+    display: none;
+  }
+  .widget.c-advantages.c-advantages-template-20 .widget-item-picture {
+    height: 170px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

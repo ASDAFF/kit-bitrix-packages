@@ -1,0 +1,115 @@
+.intec-gallery .intec-gallery_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.intec-gallery-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #2c2c2d;
+    margin-bottom: 20px;
+}
+.intec-gallery-title.text-center {
+    text-align:center;
+}
+.intec-detail-link .typcn:before {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0;
+    margin-top: -2px;
+    font-size: 24px;
+    line-height: 0;
+}
+.intec-detail-link > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.intec-gallery .intec-gallery_items {
+    font-size: 0;
+}
+.intec-gallery .intec-gallery_item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+.intec-gallery .intec-gallery_item a {
+    cursor: zoom-in;
+}
+.intec-gallery .intec-gallery_item:hover {
+    z-index: 1;
+    box-shadow: 0 8px 24px 0 rgba(100, 100, 100, 0.5);
+}
+.intec-gallery .intec-gallery_item,
+.intec-gallery .intec-gallery_image {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.intec-gallery .intec-gallery_item img {
+    display: none !important;
+}
+.intec-gallery .intec-gallery_item_wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+.intec-gallery .intec-gallery_image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.intec-gallery .intec-gallery_item:hover .intec-gallery_image {
+    transform: scale(1.1);
+}
+
+
+
+/* -------------------- Desktop -------------------- */
+.intec-gallery.desktop-template .intec-detail-link-wrap {
+    text-align: right;
+    margin-top:10px;
+}
+.intec-gallery.desktop-template .owl-carousel .owl-stage-outer {
+    margin: 0 -15px;
+    padding: 0 15px;
+}
+/* -------------------- /Desktop -------------------- */
+
+
+/* -------------------- Mobile -------------------- */
+.intec-adaptive .intec-gallery.mobile-template {
+    display: none;
+}
+.intec-gallery.mobile-template .intec-gallery_items {
+    text-align: center;
+}
+.intec-gallery.mobile-template .intec-gallery_item {
+    width: 50%;
+}
+.intec-gallery.mobile-template .intec-detail-link-wrap {
+    margin-top: 30px;
+    text-align: center;
+}
+/* -------------------- /Mobile -------------------- */
+
+
+/* -------------------- Adaptive -------------------- */
+@media (max-width:720px) {
+    .intec-adaptive .intec-gallery.desktop-template {
+        display: none;
+    }
+    .intec-adaptive .intec-gallery.mobile-template {
+        display: block;
+    }
+}
+/* -------------------- /Adaptive -------------------- */

@@ -1,0 +1,22 @@
+.widget.c-advantages.c-advantages-catalog-template-1 {
+  padding: 45px 0;
+}
+.widget.c-advantages.c-advantages-catalog-template-1[data-view="view.2"] {
+  background: #f8f8f8;
+}
+.widget.c-advantages.c-advantages-catalog-template-1[data-view="view.3"] {
+  border: 1px solid #DADADA;
+  border-left: 0;
+  border-right: 0;
+}
+.widget.c-advantages.c-advantages-catalog-template-1 .widget-item-name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+}
+.widget.c-advantages.c-advantages-catalog-template-1 .widget-item-image img {
+  max-width: 55px;
+}
+
+/*# sourceMappingURL=style.css.map */

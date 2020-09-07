@@ -1,0 +1,161 @@
+/** -- Basic inputs -- **/
+
+.intec-input,
+.intec-input:hover,
+.intec-input:focus,
+.intec-input:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+input.intec-input[type="text"],
+input.intec-input[type="password"],
+select.intec-input,
+textarea.intec-input {
+    padding: 8px 14px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    outline: none;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+input.intec-input[type="text"]:focus,
+input.intec-input[type="password"]:focus,
+select.intec-input:focus,
+textarea.intec-input:focus {
+    border-color: #7b7b80;
+}
+textarea.intec-input {
+    max-width: 100%;
+}
+
+/** -- Checkboxes & Radioboxes -- **/
+
+.intec-input.intec-input-checkbox,
+.intec-input.intec-input-radio {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 0;
+    line-height: 1;
+    white-space: nowrap;
+    margin: 0;
+    cursor: pointer;
+}
+.intec-input.intec-input-checkbox input[type="checkbox"],
+.intec-input.intec-input-radio input[type="radio"] {
+    display: none;
+}
+.intec-input.intec-input-checkbox .intec-input-selector,
+.intec-input.intec-input-radio .intec-input-selector {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background: #e9e9e9;
+    margin-right: 6px;
+    border: 1px solid #c9c9c9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.intec-input.intec-input-checkbox .intec-input-selector {
+    border-radius: 2px;
+}
+.intec-input.intec-input-radio .intec-input-selector {
+    border-radius: 7px;
+}
+.intec-input.intec-input-checkbox input:checked + .intec-input-selector:before,
+.intec-input.intec-input-radio input:checked + .intec-input-selector:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #1a58d7;
+}
+.intec-input.intec-input-checkbox input:checked + .intec-input-selector:before {
+    border-radius: 2px;
+}
+.intec-input.intec-input-radio input:checked + .intec-input-selector:before {
+    border-radius: 4px;
+}
+.intec-input.intec-input-checkbox .intec-input-text,
+.intec-input.intec-input-radio .intec-input-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+.intec-input.intec-input-block {
+    display: block;
+    width: 100%;
+}
+
+/** -- Numeric input -- **/
+
+.intec-input-numeric {
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    font-size: 0;
+    white-space: nowrap;
+}
+.intec-input-numeric .intec-input-numeric-button,
+.intec-input-numeric .intec-input-numeric-text {
+    outline: none;
+}
+.intec-input-numeric .intec-input-numeric-button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #1d1d1d;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.intec-input-numeric .intec-input-numeric-button:hover {
+    background: #e6e6e6;
+}
+.intec-input-numeric .intec-input-numeric-button.intec-input-numeric-button-left {
+    border-right: 1px solid #ececec;
+    border-radius: 5px 0 0 5px;
+}
+.intec-input-numeric .intec-input-numeric-button.intec-input-numeric-button-right {
+    border-left: 1px solid #ececec;
+    border-radius: 0 5px 5px 0;
+}
+.intec-input-numeric .intec-input-numeric-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    padding: 0 6px;
+    height: 100%;
+    font-size: 14px;
+    color: #1d1d1d;
+    text-align: center;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

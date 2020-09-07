@@ -1,0 +1,601 @@
+$component: 'header';
+$template: 'template-1';
+$class: #{$component};
+$themes: (
+  'white': #fff,
+  'black': #000
+);
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-view.widget-view-desktop {
+    .widget-view-desktop-9 {
+      display: block;
+      background: #fff;
+    }
+  }
+
+  .widget-panel {
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+
+    &-wrapper {}
+
+    &-wrapper-2 {
+      min-height: 40px;
+    }
+
+    &-social {
+      &-items {}
+
+      &-item {
+        display: block;
+        font-size: 18px;
+        min-width: 18px;
+        height: 18px;
+        text-align: center;
+        color: #d8d8d8;
+        line-height: 1;
+
+        -webkit-transition: color 350ms;
+        -moz-transition: color 350ms;
+        -ms-transition: color 350ms;
+        -o-transition: color 350ms;
+        transition: color 350ms;
+
+        &:hover {
+          color: #0065ff;
+        }
+      }
+    }
+
+    &-buttons {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+
+      &-wrapper {
+        display: block;
+        font-size: 0;
+      }
+    }
+
+    &-button {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      line-height: 1;
+      font-size: medium;
+
+      cursor: pointer;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-decoration: none;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      -webkit-transition: background 350ms;
+      -moz-transition: background 350ms;
+      -ms-transition: background 350ms;
+      -o-transition: background 350ms;
+      transition: background 350ms;
+
+      &-wrapper {
+        height: 40px;
+      }
+
+      &-icon {
+        font-size: 15px;
+        color: #222222;
+
+        + .widget-panel-button-text {
+          margin-left: 10px;
+        }
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 18px;
+        color: #999999;
+      }
+
+      &:hover {
+        background: #f4f5f7;
+      }
+
+      &.widget-panel-button-form {
+        background-color: #0065ff;
+        padding: 0 20px;
+
+        &:hover {
+          background-color: #3384ff;
+        }
+
+        .widget-panel-button-text {
+          font-size: 14px;
+          color: #fff !important;
+        }
+      }
+    }
+
+    &-phone {
+      display: inline-block;
+      position: relative;
+      white-space: nowrap;
+      font-size: 0;
+      height: 40px;
+
+      %widget-panel-phone-item {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &-content {
+        @extend %widget-panel-phone-item;
+
+        position: relative;
+      }
+
+      &-text {
+        @extend %widget-panel-phone-item;
+
+        font-size: 16px;
+        line-height: 1.5;
+        color: #2d2d2d;
+        text-decoration: none;
+        font-weight: bold;
+
+        -webkit-transition: 350ms color;
+        -moz-transition: 350ms color;
+        -ms-transition: 350ms color;
+        -o-transition: 350ms color;
+        transition: 350ms color;
+
+        &:hover {
+          color: #0065ff;
+        }
+      }
+
+      &-popup {
+        position: absolute;
+        opacity: 0;
+        top: 100%;
+        left: -20px;
+        right: -20px;
+        padding-top: 20px;
+        white-space: normal;
+        z-index: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        -webkit-perspective: 2000px;
+        perspective: 2000px;
+
+        &-wrapper {
+          display: block;
+          padding: 0;
+          background: #fff;
+          border-radius: 6px;
+          width: 100%;
+          min-width: 230px;
+          -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          will-change: transform;
+          -webkit-transform-origin: 50% -50px;
+          transform-origin: 50% -50px;
+          -webkit-transform: rotateX(-15deg);
+          transform: rotateX(-15deg);
+          -webkit-transition: -webkit-transform 0.2s;
+          transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+          transition: transform 0.2s, -webkit-transform 0.2s;
+        }
+
+        &-contacts {
+          padding: 25px;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+
+        &-contact {
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.3;
+          color: #2d2d2d;
+          text-decoration: none;
+          padding: 4px 8px;
+
+          -webkit-transition: 350ms color;
+          -moz-transition: 350ms color;
+          -ms-transition: 350ms color;
+          -o-transition: 350ms color;
+          transition: 350ms color;
+
+          &.phone {
+            font-size: 18px;
+            line-height: 1.5;
+          }
+
+          &.schedule {
+            color: #a6a8ac;
+          }
+        }
+
+        &-item {
+          display: block;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #2d2d2d;
+          text-decoration: none;
+          padding: 20px;
+
+          -webkit-transition: 350ms color;
+          -moz-transition: 350ms color;
+          -ms-transition: 350ms color;
+          -o-transition: 350ms color;
+          transition: 350ms color;
+
+          &:hover {
+            color: #0065ff;
+          }
+
+          & + .widget-panel-phone-popup-item {
+            padding-top: 0;
+          }
+        }
+      }
+
+      &[data-expanded=true] {
+        .widget-panel-phone {
+          &-popup {
+            opacity: 1;
+            pointer-events: all;
+            -webkit-transition: none;
+            transition: none;
+
+            &-wrapper {
+              -webkit-transform: none;
+              transform: none;
+            }
+          }
+        }
+      }
+
+      &-arrow {
+        @extend %widget-panel-phone-item;
+
+        font-size: 12px;
+        width: 12px;
+        text-align: right;
+        line-height: 1;
+        color: #2d2d2d;
+        margin-left: 5px;
+      }
+    }
+
+    &-basket {
+      &-wrap {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+
+      .sale-basket-icons-items {
+        .sale-basket-icons-item {
+          .sale-basket-icons-item-counter {
+            top: -6px;
+          }
+        }
+      }
+    }
+
+    .widget-authorization-panel {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .widget-container {
+    display: block;
+    border-bottom: 2px solid #e8e8e8;
+
+    &-wrapper {
+      position: relative;
+      height: 82px;
+    }
+
+    &-logotype {
+      display: block;
+      width: 180px;
+      text-decoration: none;
+      color: #1d1d1d;
+    }
+
+    &-menu {
+      height: 100%;
+
+      &-wrap {
+        position: static;
+        height: 100%;
+      }
+
+      .ns-bitrix.c-menu.c-menu-horizontal-1 {
+        background: transparent !important;
+        height: 100%;
+
+        .menu-wrapper,
+        .menu-wrapper-2,
+        .menu-wrapper-3 {
+          height: 100%;
+        }
+
+        .menu-wrapper-4 {
+          position: static;
+          height: 100%;
+        }
+
+        .menu-item {
+          background: transparent !important;
+          height: 100%;
+
+          .menu-item-text-wrapper {
+            color: #1d1d1d !important;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .ns-bitrix.c-search-title.c-search-title-popup-1 {
+    .search-title-button-icon {
+        font-size: 16px;
+    }
+
+    .search-title-button-text-wrap {
+      display: none;
+    }
+  }
+
+  .ns-bitrix.c-menu.c-menu-popup-1,
+  .ns-bitrix.c-menu.c-menu-popup-2,
+  .ns-bitrix.c-menu.c-menu-popup-3 {
+    padding-right: 13px;
+
+    .menu-button {
+      font-size: 16px;
+    }
+  }
+
+  &.widget-transparent {
+    .widget-view.widget-view-desktop {
+      .widget-view-desktop-9 {
+        background: transparent;
+      }
+    }
+
+    @each $name, $color in $themes {
+      %theme-#{$name}-element {
+        -webkit-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -moz-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -ms-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        -o-transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+        transition: color 350ms, background 350ms, border 350ms, fill 350ms, opacity 350ms;
+      }
+
+      %theme-#{$name}-element-color {
+        @extend %theme-#{$name}-element;
+        color: $color !important;
+      }
+
+      %theme-#{$name}-element-color-inverted {
+        @extend %theme-#{$name}-element;
+        color: invert($color) !important;
+      }
+
+      %theme-#{$name}-element-background {
+        @extend %theme-#{$name}-element;
+        background: $color !important;
+      }
+
+      %theme-#{$name}-element-background-inverted {
+        @extend %theme-#{$name}-element;
+        background: invert($color) !important;
+      }
+
+      %theme-#{$name}-element-fill {
+        @extend %theme-#{$name}-element;
+        fill: $color !important;
+      }
+
+      %theme-#{$name}-element-fill-inverted {
+        @extend %theme-#{$name}-element;
+        fill: invert($color) !important;
+      }
+
+      %theme-#{$name}-element-border {
+        @extend %theme-#{$name}-element;
+        border-color: $color !important;
+      }
+
+      %theme-#{$name}-element-border-inverted {
+        @extend %theme-#{$name}-element;
+        border-color: invert($color) !important;
+      }
+
+      &[data-color="#{$name}"] {
+        .widget-view.widget-view-desktop {
+          .widget-panel {
+            border-color: change-color($color, $alpha: 0.15);
+          }
+
+          .widget-container {
+            border-color: change-color($color, $alpha: 0.15);
+          }
+
+          .widget-panel {
+            &-button {
+              &-icon { @extend %theme-#{$name}-element-color; }
+              &-text { @extend %theme-#{$name}-element-color; }
+
+              &:hover {
+                @extend %theme-#{$name}-element;
+                background: rgba($color, 0.15);
+              }
+            }
+
+            &-social {
+              &-item {
+                @extend %theme-#{$name}-element-color;
+
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+            }
+
+            &-phone {
+              &-icon,
+              &-arrow {
+                @extend %theme-#{$name}-element-color;
+              }
+
+              &-text {
+                @extend %theme-#{$name}-element-color;
+
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+            }
+
+            &-basket {
+              .sale-basket-icons-items {
+                .sale-basket-icons-item {
+                  .sale-basket-icons-item-icon {
+                    @extend %theme-#{$name}-element-color;
+                    opacity: 0.5;
+                  }
+
+                  &:hover,
+                  &.sale-basket-icons-item-active {
+                    .sale-basket-icons-item-icon {
+                      opacity: 1;
+                    }
+                  }
+                }
+
+                .sale-basket-icons-item-counter {
+                  @extend %theme-#{$name}-element-color;
+                  @extend %theme-#{$name}-element-background-inverted;
+                  @extend %theme-#{$name}-element-border-inverted;
+
+                }
+              }
+
+              .sale-basket-small-items {
+                .sale-basket-small-tab {
+                  .sale-basket-small-tab-icon {
+                    @extend %theme-#{$name}-element-color;
+                    opacity: 0.5;
+                  }
+
+                  &:hover,
+                  &.sale-basket-small-tab-active {
+                    .sale-basket-small-tab-icon {
+                      opacity: 1;
+                    }
+                  }
+                }
+
+                .sale-basket-small-tab-counter {
+                  @extend %theme-#{$name}-element-color;
+                  @extend %theme-#{$name}-element-background-inverted;
+                  @extend %theme-#{$name}-element-border-inverted;
+                }
+              }
+            }
+          }
+
+          .widget-container {
+            &-logotype {
+              svg, path {
+                @extend %theme-#{$name}-element-color;
+                @extend %theme-#{$name}-element-fill;
+              }
+            }
+          }
+
+          .widget-menu.widget-menu-info-1 {
+            .widget-menu-item {
+              .widget-menu-item-text {
+                @extend %theme-#{$name}-element-color;
+              }
+
+              &:hover,
+              &.widget-menu-item-text-active {
+                .widget-menu-item-text {
+                  @extend %theme-#{$name}-element-color;
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+
+          .ns-bitrix.c-menu.c-menu-horizontal-1 {
+            .menu-item {
+              .menu-item-text {
+                .menu-item-text-wrapper {
+                  @extend %theme-#{$name}-element-color;
+                }
+              }
+
+              &:hover,
+              &.menu-item-active {
+                .menu-item-text {
+                  .menu-item-text-wrapper {
+                    @extend %theme-#{$name}-element-color;
+                    opacity: 0.5;
+                  }
+                }
+              }
+            }
+          }
+
+          .ns-bitrix.c-search-title.c-search-title-popup-1 {
+            .search-title-button {
+              &-icon { @extend %theme-#{$name}-element-color; }
+              &-text { @extend %theme-#{$name}-element-color; }
+
+              &:hover {
+                .search-title-button-icon,
+                .search-title-button-text {
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+
+          .ns-bitrix.c-menu.c-menu-popup-1,
+          .ns-bitrix.c-menu.c-menu-popup-2,
+          .ns-bitrix.c-menu.c-menu-popup-3 {
+            .menu-button {
+              @extend %theme-#{$name}-element-color;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

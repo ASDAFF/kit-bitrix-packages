@@ -1,0 +1,131 @@
+$component: 'widget';
+$template: 'form-4';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  position: relative;
+  z-index: 0;
+
+  .widget-form {
+  }
+
+  .widget-form[data-borders=rounded] {
+    border-radius: 10px;
+  }
+
+  .widget-form-wrapper-2 {
+    position: relative;
+    overflow: hidden;
+
+    & > div {
+      height: 130px;
+      font-size: 0;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  .widget-form-title-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    margin-left: 20px;
+  }
+
+  .widget-form-image {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .widget-form-title {
+    display: inline-block;
+    padding: 10px 0;
+    border-right: 4px solid #fff;
+
+    &-wrapper {
+      display: inline-block;
+      margin: 0 40px;
+      font-size: 22px;
+      font-weight: bold;
+      vertical-align: middle;
+      white-space: normal;
+      color: #fff;
+    }
+  }
+
+  .widget-form-description-wrap {
+    margin-left: 300px;
+    margin-right: 220px;
+  }
+
+  .widget-form-description {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    color: #fff;
+  }
+
+  .widget-form-button-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  .widget-form-button {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    .widget-form-description-wrap {
+      margin-right: 20px;
+    }
+    .widget-form-wrapper-2 .widget-form-button-wrap {
+      position: relative;
+      width: auto;
+      margin: 30px 0;
+      height: auto;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    .widget-form-title-wrap {
+      margin: 0;
+      position: relative;
+      width: auto;
+    }
+    .widget-form-image {
+      bottom: 0;
+    }
+    .widget-form-title {
+      border: none;
+
+      &-wrapper {
+        text-align: center;
+      }
+    }
+    .widget-form-wrapper-2 .widget-form-description-wrap {
+      margin: 30px 0;
+      height: auto;
+    }
+    .widget-form-description {
+      text-align: center;
+    }
+  }
+}

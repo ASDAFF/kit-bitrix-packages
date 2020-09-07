@@ -1,0 +1,26 @@
+<?php
+return [
+    'name' => 'Иконки',
+    'settings.header' => 'Заголовок',
+    'settings.header.switch' => 'Отображать заголовок',
+    'settings.caption' => 'Настройки заголовка',
+    'settings.description' => 'Настройки описания',
+    'settings.size' => 'Размер',
+    'settings.color' => 'Цвет',
+    'settings.opacity' => 'Прозрачность',
+    'settings.background' => 'Настройки подложки',
+    'settings.background.switch' => 'Отображать подложку',
+    'settings.rounding' => 'Скругление',
+    'settings.icon.edit' => 'Редактирование иконки',
+    'settings.icons.edit' => 'Редактирование иконок',
+    'settings.icons.add' => 'Добавить',
+    'settings.icons.editor' => 'Редактор иконок',
+    'settings.icons.count' => 'Количество иконок в строке',
+    'settings.icon.field.caption' => 'Заголовок',
+    'settings.icon.field.description' => 'Описание',
+    'settings.icon.field.link' => 'Ссылка',
+    'settings.icon.field.image' => 'Ссылка на изображение',
+    'settings.icon.image.select' => 'Выбрать из галереи',
+    'settings.icon.image.remove' => 'Удалить',
+    'settings.icon.apply' => 'Применить'
+];

@@ -1,0 +1,38 @@
+/* regular */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'),
+        url("./PT.Sans.regular.ttf") format('ttf'),
+        url("./PT.Sans.regular.woff") format('woff'),
+        url("./PT.Sans.regular.eot") format('eot');
+}
+/* bold */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+        url("./PT.Sans.bold.ttf") format('ttf'),
+        url("./PT.Sans.bold.woff") format('woff'),
+        url("./PT.Sans.bold.eot") format('eot');
+}
+/* italic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Sans Italic'), local('PTSans-Italic'),
+        url("./PT.Sans.italic.ttf") format('ttf'),
+        url("./PT.Sans.italic.woff") format('woff'),
+        url("./PT.Sans.italic.eot") format('eot');
+}
+/* bold italic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'),
+        url("./PT.Sans.bold.italic.ttf") format('ttf');
+}

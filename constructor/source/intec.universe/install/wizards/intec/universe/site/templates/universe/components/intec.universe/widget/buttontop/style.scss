@@ -1,0 +1,25 @@
+$component: 'widget';
+$template: 'buttontop';
+$item: $component;
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-button {
+    display:none;
+    width:52px;
+    height: 52px;
+    background-image: url(images/top.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 75;
+  }
+
+  @media all and (max-width: 720px) {
+    .#{$item}-button {
+      bottom: 70px;
+    }
+  }
+}

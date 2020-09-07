@@ -1,0 +1,151 @@
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-items {
+  position: relative;
+  z-index: 0;
+  margin: 0 -5px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item {
+  position: relative;
+  z-index: 0;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item:hover {
+  z-index: 1;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .owl-item {
+  z-index: 0;
+  padding: 5px 5px 15px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .owl-item:hover {
+  z-index: 1;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .intec-ui.intec-ui-control-navigation {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  left: -30px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .intec-ui.intec-ui-control-dots {
+  padding-top: 10px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-wrapper {
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 15px;
+  background: #fff;
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  -ms-transition: box-shadow 350ms;
+  -o-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-wrapper:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(60, 60, 60, 0.1);
+  -moz-box-shadow: 0 5px 15px rgba(60, 60, 60, 0.1);
+  box-shadow: 0 5px 15px rgba(60, 60, 60, 0.1);
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-image {
+  display: block;
+  width: 115px;
+  height: 115px;
+  float: left;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-information {
+  display: block;
+  margin-left: 135px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-name {
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  height: 60px;
+  color: #1d1d1d;
+  overflow: hidden;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-name:hover {
+  color: #0065ff;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-name-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-price {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-price-discount {
+  display: block;
+  font-size: 16px;
+  height: 24px;
+  color: #1d1d1d;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1 .catalog-section-item-price-base {
+  display: block;
+  font-size: 12px;
+  height: 18px;
+  text-decoration: line-through;
+  color: #444;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-borders=true] .catalog-section-item-wrapper {
+  border: 1px solid #f1f1f1;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-size=small] .catalog-section-item-image {
+  width: 80px;
+  height: 80px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-size=small] .catalog-section-item-information {
+  margin-left: 100px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-size=small] .catalog-section-item-name {
+  height: 40px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-size=small] .catalog-section-item-price {
+  margin-top: 0;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-size=small] .catalog-section-item-price-discount {
+  font-size: 14px;
+  height: 21px;
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-slider=true][data-slider-navigation=true] .catalog-section-items {
+  margin: 0 30px;
+  width: auto;
+}
+@media all and (max-width: 400px) {
+  .ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-slider=true][data-slider-navigation=true] .catalog-section-item-image {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-slider=true][data-slider-navigation=true] .catalog-section-item-information {
+    margin-left: 100px;
+  }
+}
+.ns-bitrix.c-catalog-section.c-catalog-section-products-small-1[data-slider=true][data-slider-dots=true] .intec-ui.intec-ui-control-navigation {
+  bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,390 @@
+.bx-soa-section.bx-selected {border: 1px solid #91cedc;}
+
+.bx-soa-section.bx-selected .bx-soa-section-title-container {padding: 15px 0;}
+
+.bx-soa-editstep {
+    display: inline;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 22px;
+    border-bottom: 1px dotted;
+}
+.bx-soa-section.bx-selected .bx-soa-editstep {display: none;}
+.bx-soa-section.bx-selected .bx-soa-editstep:hover {border-bottom: none;}
+
+.bx-soa-section.bx-step-completed .bx-soa-section-content,
+.bx-soa-section.bx-selected .bx-soa-section-content {line-height: 18px;}
+
+@media (max-width: 580px) {
+    .bx-soa-more {padding-top: 10px;}
+}
+
+/* SCU */
+.bx-scu-container{overflow:hidden;}
+.bx-soa-item-content .bx-scu-container {max-width: 200px;}
+.bx-scu-block {}
+.bx-scu-list {
+    margin: 0;
+    padding: 0 5px;
+}
+.bx-scu-itemlist {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 -5px;
+    min-width: 40px;
+}
+.bx-scu-item {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+.bx-img-item {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    min-width: 30px;
+    max-width: 50px;
+}
+@media (max-width: 580px){
+    .bx-img-item {
+        width: 45px;
+    }
+
+}
+.bx-img-itemColor {
+    position: absolute;
+    top:   3px;
+    right: 3px;
+    left:  3px;
+    bottom:3px;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx-scu-itemColorBlock {
+    position: relative;
+    padding-top: 100%;
+    cursor: pointer;
+    outline: 1px solid #c0cfda;
+    -webkit-transition: outline .2s ease;
+    -moz-transition: outline .2s ease;
+    -o-transition: outline .2s ease;
+    transition: outline .2s ease;
+}
+.bx-scu-itemColorBlock:hover {outline: 1px solid #006cc0;}
+.bx-scu-itemColorBlock.selected {outline: 2px solid #006cc0;}
+.bx-scu-itemColor {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    left: 3px;
+    bottom: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx-scu-itemTextBlock {
+    position: relative;
+    cursor: pointer;
+    outline: 1px solid #c0cfda;
+    -webkit-transition: outline .2s ease;
+    -moz-transition: outline .2s ease;
+    -o-transition: outline .2s ease;
+    transition: outline .2s ease;
+}
+.bx-scu-itemTextBlock:hover {outline: 1px solid #006cc0;}
+.bx-scu-itemTextBlock.selected {outline: 2px solid #006cc0;}
+.bx-scu-itemText {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 11px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*.bx-step-completed*/ .bx-scu-container{
+    position:relative;
+    height:35px;
+    overflow:hidden;
+}
+
+/*.bx-step-completed*/ .bx-scu-container:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:25px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background:    -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: 		linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.bx-selected .bx-scu-container{height:auto;}
+.bx-selected .bx-scu-container:after{height: 0;}
+@media (max-width: 768px) {
+    .bx-scu-container{height:auto;}
+    .bx-scu-container:after{height: 0;}
+}
+/*.bx-step-completed*/ .bx-scu-container .bx-soa-item-td-title{line-height:20px;}
+
+.bx-scu-container .bx-soa-item-td-title,
+.bx-scu-container .bx-soa-item-td-text{
+    float: left;
+    font-size:13px;
+    padding-right:5px;
+    line-height:19px;
+    vertical-align: middle;
+    padding-bottom:3px;
+}
+.bx-scu-container .bx-soa-item-td-title{clear: both;}
+/*.bx-scu-container .bx-soa-item-td-title:after{
+    content:": ";
+}*/
+@media (min-width:768px){
+    .bx-scu-container .bx-soa-item-td-title, .bx-scu-container .bx-soa-item-td-text {
+        padding-bottom:0;
+        line-height:20px;
+    }
+}
+
+/*REGION*/
+
+.bx-soa .bx-soa-location-offered small {color: #737373;}
+.bx-soa-location-selected {
+    padding-top: 12px;
+    padding-bottom: 22px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),@media only screen and (min--moz-device-pixel-ratio: 2),@media only screen and (-moz-min-device-pixel-ratio: 2),@media only screen and (-o-min-device-pixel-ratio: 2/1),@media only screen and (min-device-pixel-ratio: 2),@media only screen and (min-resolution: 192dpi),@media only screen and (min-resolution: 2dppx){
+    .bx-soa-location-input-container {
+        border-width: .5px;
+    }
+}
+
+.bx-soa-section.bx-step-good {
+    -webkit-animation: animationBorderStep ease 5s;
+    -moz-animation: animationBorderStep ease 5s;
+    -o-animation: animationBorderStep ease 5s;
+    animation: animationBorderStep ease 5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animationBorderStep {0%{border-color:#70BB18}100%{border-color: #91cedc}}
+@-moz-keyframes animationBorderStep {0%{border-color:#70BB18}100%{border-color: #91cedc}}
+@-ms-keyframes animationBorderStep {0%{border-color:#70BB18}100%{border-color: #91cedc}}
+@-o-keyframes animationBorderStep {0%{border-color:#70BB18}100%{border-color: #91cedc}}
+@keyframes animationBorderStep {0%{border-color:#70BB18}100%{border-color: #91cedc}}
+
+.bx-soa-section.bx-step-bad {
+    -webkit-animation: animationBorderStepBad ease 5s;
+    -moz-animation: animationBorderStepBad ease 5s;
+    -o-animation: animationBorderStepBad ease 5s;
+    animation: animationBorderStepBad ease 5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animationBorderStepBad {0%{border-color:#db4a29}100%{border-color: #91cedc}}
+@-moz-keyframes animationBorderStepBad {0%{border-color:#db4a29}100%{border-color: #91cedc}}
+@-ms-keyframes animationBorderStepBad {0%{border-color:#db4a29}100%{border-color: #91cedc}}
+@-o-keyframes animationBorderStepBad {0%{border-color:#db4a29}100%{border-color: #91cedc}}
+@keyframes animationBorderStepBad {0%{border-color:#db4a29}100%{border-color: #91cedc}}
+
+.bx-soa-changeCostSign {
+    -webkit-animation: changeCostSign ease .4s;
+    -moz-animation: changeCostSign ease .4s;
+    -o-animation: changeCostSign ease .4s;
+    animation: changeCostSign ease .4s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes changeCostSign {0%{opacity:1}40%{opacity:0}60%{opacity:0}100%{opacity:1}}
+@-moz-keyframes changeCostSign {0%{opacity:1}40%{opacity:0}60%{opacity:0}100%{opacity:1}}
+@-ms-keyframes changeCostSign {0%{opacity:1}40%{opacity:0}60%{opacity:0}100%{opacity:1}}
+@-o-keyframes changeCostSign {0%{opacity:1}40%{opacity:0}60%{opacity:0}100%{opacity:1}}
+@keyframes changeCostSign {0%{opacity:1}40%{opacity:0}60%{opacity:0}100%{opacity:1}}
+
+.bx-bd-error {border-color: #db4a29;}
+.bx-bd-waring {border-color: #CCBE71;}
+.wsnw{white-space: nowrap;}
+
+.bx-step-opacity {
+    transition: 500ms opacity ease;
+}
+
+/* MAPS */
+ymaps h3{
+    margin: 6px 0 10px 0;
+}
+
+/* AUTH */
+
+
+hr.bxe-light{
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alert{
+    border: none;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.bxe-aleft-title{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.alert-success {
+    color: #3C763D;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+}
+.alert-warning {
+    color: #8A6D3B;
+    background-color: #FCF8E3;
+    border-color: #FAEBCC;
+}
+.alert-danger {
+    color: #A94442;
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+}
+
+/* PAGINATION */
+.bx-pagination {
+    margin: 10px 0;
+}
+.bx-pagination .bx-pagination-container {
+    text-align: center;
+    position: relative;
+}
+.bx-pagination .bx-pagination-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+.bx-pagination .bx-pagination-container ul li {
+    display: inline-block;
+    margin: 0 2px 15px 2px;
+}
+.bx-pagination .bx-pagination-container ul li span{
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    background: #eff0f1;
+    padding: 0 8px;
+    display: block;
+    height: 32px;
+    min-width: 32px;
+    line-height: 32px;
+    color: #444;
+    font-size: 14px;
+    border-radius: 16px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bx-pagination .bx-pagination-container ul li a {
+    text-decoration: none;
+    display: block;
+    border-radius: 16px;
+    display: block;
+    height: 32px;
+    min-width: 32px;
+    line-height: 32px;
+    color: #444;
+    vertical-align: middle;
+}
+.bx-pagination .bx-pagination-container ul li a:hover span{
+    background: #DADADA;
+}
+.bx-pagination .bx-pagination-container ul li.bx-active span{
+    background: #0083d1;
+    color: #fff;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a span {
+    background: #fff;
+    border: 2px solid #eff0f1;
+    line-height: 28px;
+    padding: 0 18px;
+    color: #444;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next span{
+    color: #aab1b4;
+    background: #fff;
+    border: 2px solid #eff0f1;
+    line-height: 28px;
+    padding: 0 18px;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a:hover span {
+    background: #fff;
+    border-color: #DADADA;
+    color: #000;
+}
+
+.bx-pagination.bx-green  .bx-pagination-container ul li.bx-active span{
+    background: #3bc915;
+    color: #fff;
+}
+.bx-pagination.bx-yellow  .bx-pagination-container ul li.bx-active span{
+    background: #F9A91D;
+    color: #fff;
+}
+.bx-pagination.bx-red  .bx-pagination-container ul li.bx-active span{
+    background: #E22B2B;
+    color: #fff;
+}

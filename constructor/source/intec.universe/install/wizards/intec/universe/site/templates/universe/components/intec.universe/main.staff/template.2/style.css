@@ -1,0 +1,82 @@
+@keyframes c-staff-template-2 {
+    from {
+        padding-left: 25px;
+    }
+    50% {
+        padding-left: 35px;
+    }
+    to {
+        padding-left: 25px;
+    }
+}
+.widget.c-staff.c-staff-template-2 .widget-content {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.widget.c-staff.c-staff-template-2 .widget-element {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px 40px 10px;
+}
+.widget.c-staff.c-staff-template-2 .widget-element-wrapper {
+    max-width: 285px;
+    margin: auto;
+}
+.widget.c-staff.c-staff-template-2 .widget-element-image {
+    background-size: cover;
+    background-position: center center;
+    padding-top: 100%;
+}
+.widget.c-staff.c-staff-template-2 .widget-element-name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #1d1d1d;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-wrapper {
+    display: inline-block;
+    color: #2d2d2d;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-name {
+    font-size: 18px;
+    line-height: 27px;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-description {
+    font-size: 10px;
+    line-height: 15px;
+    padding-top: 5px;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 25px;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-wrapper:hover .widget-button-icon {
+    animation-name: c-staff-template-2;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+.widget.c-staff.c-staff-template-2 .widget-button-icon i {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@media all and (max-width: 500px) {
+    .widget.c-staff.c-staff-template-2 .widget-button-name {
+        font-size: 14px;
+    }
+}

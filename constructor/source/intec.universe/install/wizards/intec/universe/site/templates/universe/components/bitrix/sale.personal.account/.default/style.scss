@@ -1,0 +1,81 @@
+$namespace: 'bitrix';
+$component: 'sale-personal-account';
+$template: 'default';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+
+  .#{$class}-content {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 30px 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    background: #fcfcfc;
+
+    .#{$class}-title {
+      margin-bottom: 35px;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+
+    .#{$class}-items {
+      display: table;
+      border: none;
+    }
+
+    .#{$class}-item {
+      display: table-row;
+    }
+
+    .#{$class}-sum {
+      display: table-cell;
+      width: auto;
+      padding: 5px 30px 5px 0;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 41px;
+      color: #000000;
+    }
+
+    .#{$class}-currency{
+      display: table-cell;
+      width: 100%;
+      padding: 5px 0;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    .#{$class}-currency-item{
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+
+  }
+
+  @media all and (max-width: 600px) {
+    .#{$class}-content {
+
+      margin-bottom: 25px;
+      padding: 13px 15px;
+
+      .#{$class}-title {
+        margin-bottom: 20px;
+      }
+
+      .#{$class}-sum {
+        padding: 5px 10px 5px 0;
+        font-size: 24px;
+        line-height: 26px;
+      }
+
+    }
+  }
+
+}

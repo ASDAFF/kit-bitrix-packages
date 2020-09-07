@@ -1,0 +1,74 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include-description-5 {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.15;
+  color: #fff;
+  z-index: 0;
+
+  .#{$class}-part-background {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    background: rgb(114,33,99);
+    background: -moz-linear-gradient(-45deg, rgba(114,33,99,1) 0%, rgba(144,62,128,1) 76%, rgba(144,63,129,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(114,33,99,1) 0%,rgba(144,62,128,1) 76%,rgba(144,63,129,1) 100%);
+    background: linear-gradient(135deg, rgba(114,33,99,1) 0%,rgba(144,62,128,1) 76%,rgba(144,63,129,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#722163', endColorstr='#903f81',GradientType=1);
+  }
+
+  .#{$class}-part-content {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .#{$class}-part-content-wrapper {
+    display: block;
+  }
+
+  .#{$class}-part-text {
+    padding: 140px 0 60px 0;
+  }
+
+  .#{$class}-part-picture {
+    img {
+      width: auto;
+      height: auto;
+      max-width: none;
+      max-height: none;
+      margin-left: 40px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  @media all and (max-width: 650px) {
+    .#{$class}-part-background {
+      top: 0;
+    }
+
+    .#{$class}-part-text {
+      padding-top: 60px;
+    }
+
+    .#{$class}-part-picture {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 425px) {
+    font-size: 14px;
+  }
+}

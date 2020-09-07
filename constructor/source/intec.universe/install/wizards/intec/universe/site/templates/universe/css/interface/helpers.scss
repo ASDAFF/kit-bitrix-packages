@@ -1,0 +1,50 @@
+$class: 'intec-ui' !default;
+
+&-picture {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0;
+  word-spacing: 0;
+
+  &:before {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+  }
+
+  * {
+    display: none;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+&-clear,
+&-clearfix {
+  clear: both;
+}
+
+&-clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}

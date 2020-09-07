@@ -1,0 +1,53 @@
+.widget.c-advantages.c-advantages-template-2 .widget-element {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 25px 25px 40px;
+  text-align: left;
+}
+.widget.c-advantages.c-advantages-template-2 .widget-element-counter {
+  font-weight: bold;
+  font-size: 55px;
+}
+.widget.c-advantages.c-advantages-template-2 .widget-element-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: left;
+  width: 75%;
+}
+.widget.c-advantages.c-advantages-template-2 .intec-grid-item-5 .widget-element-name {
+  width: auto;
+}
+.widget.c-advantages.c-advantages-template-2 .widget-element-description {
+  top: 100%;
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+.widget.c-advantages.c-advantages-template-2 .widget-element-icon {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media all and (max-width: 1150px) {
+  .widget.c-advantages.c-advantages-template-2 .widget-element-name {
+    width: auto;
+  }
+}
+@media all and (max-width: 500px) {
+  .widget.c-advantages.c-advantages-template-2 .widget-element {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

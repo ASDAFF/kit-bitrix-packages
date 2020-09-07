@@ -1,0 +1,22 @@
+.c-header.c-header-template-1 .widget-authorization-icons .widget-authorization-modal {
+  display: none;
+}
+.c-header.c-header-template-1 .widget-authorization-icons .widget-authorization-item {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+  color: #bebebf;
+  cursor: pointer;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.c-header.c-header-template-1 .widget-authorization-icons .widget-authorization-item:hover {
+  color: #0065ff;
+}
+
+/*# sourceMappingURL=style.css.map */

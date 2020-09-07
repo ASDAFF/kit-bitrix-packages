@@ -1,0 +1,170 @@
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-wrapper {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-content {
+  position: relative;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-content-right-wrapper {
+  position: relative;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .bx-filter-container-modef {
+  display: none;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-smart-filter + .catalog-menu,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-catalog-smart-filter + .catalog-menu,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-smart-filter + .catalog-content,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-catalog-smart-filter + .catalog-content {
+  margin-top: 30px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-description {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 * + .c-tags-list,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 * + .ns-intec-seo.c-filter-tags,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 * + .catalog-description,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .c-tags-list + *,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-intec-seo.c-filter-tags + *,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-description + * {
+  margin-top: 20px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .c-catalog-section-list + .catalog-panel {
+  margin-top: 30px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel {
+  margin-bottom: 20px;
+}
+@media all and (min-width: 721px) {
+  .ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-filter {
+    display: none;
+  }
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-filter-button {
+  display: block;
+  line-height: 1;
+  padding: 7px;
+  background: #0065ff;
+  color: #fff;
+  border-radius: 3px;
+}
+@media all and (max-width: 720px) {
+  .ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-smart-filter.c-smart-filter-horizontal-1,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .ns-bitrix.c-smart-filter.c-smart-filter-horizontal-2 {
+    display: none !important;
+  }
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-menu {
+  display: block;
+  z-index: 20;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-filter-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  right: auto;
+  left: auto;
+  z-index: 20;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media all and (min-width: 721px) {
+  .ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-filter-mobile {
+    display: none !important;
+  }
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort {
+  color: #bababa;
+  font-size: 0;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort:hover {
+  color: #4d4d4d;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort[data-active=true] {
+  color: #2d2d2d;
+}
+@media all and (max-width: 850px) {
+  .ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort .catalog-panel-sort-icon {
+    display: inline-block;
+  }
+  .ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort .catalog-panel-sort-text {
+    display: none;
+  }
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-icon,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-text,
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-order {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-icon {
+  display: none;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-order {
+  margin-left: 5px;
+  font-size: 13px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-order-icon {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sort-order-icon.catalog-panel-sort-order-icon-desc {
+  display: none;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sorting[data-order=desc] .catalog-panel-sort-order-icon {
+  display: none;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-sorting[data-order=desc] .catalog-panel-sort-order-icon.catalog-panel-sort-order-icon-desc {
+  display: block;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-view {
+  color: #bababa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-view:hover {
+  color: #4d4d4d;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1 .catalog-panel-view[data-active=true] {
+  color: #2d2d2d;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .ns-bitrix.c-smart-filter + .catalog-menu,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .ns-bitrix.c-catalog-smart-filter + .catalog-menu,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .ns-bitrix.c-smart-filter + .catalog-content,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .ns-bitrix.c-catalog-smart-filter + .catalog-content {
+  margin-top: 32px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .c-catalog-section-list + * {
+  margin-top: 32px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] * + .catalog-description,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .catalog-description + * {
+  margin-top: 24px;
+}
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] * + .c-tags-list,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] * + .ns-intec-seo.c-filter-tags,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .c-tags-list + *,
+.ns-bitrix.c-catalog.c-catalog-catalog-1[data-layout="2"] .ns-intec-seo.c-filter-tags + * {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

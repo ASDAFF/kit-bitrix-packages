@@ -1,0 +1,32 @@
+$class: 'intec-area' !default;
+
+&.#{$class}-include-description-3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000;
+
+  .#{$class}-part-wrapper {}
+
+  .#{$class}-part-text {
+    display: block;
+    padding: 60px 230px;
+    text-align: center;
+  }
+
+  @media all and (max-width: 1000px) {
+    .#{$class}-part-text {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    font-size: 16px;
+
+    .#{$class}-part-text {
+      padding: 40px 20px;
+    }
+  }
+}

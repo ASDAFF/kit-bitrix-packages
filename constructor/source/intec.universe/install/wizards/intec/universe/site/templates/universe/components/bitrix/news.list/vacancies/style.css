@@ -1,0 +1,106 @@
+.vacancies {
+    display: block;
+}
+.vacancies .vacancies-section {
+    display: block;
+    margin-top: 35px;
+    border: 1px solid #e8e8e8;
+}
+.vacancies .vacancies-section .vacancies-delimiter {
+    display: block;
+    height: 1px;
+    background: #e8e8e8;
+    overflow: hidden;
+}
+.vacancies .vacancies-section .vacancies-item {
+    display: block;
+    padding: 25px 35px;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-wrapper {
+    display: block;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name {
+    display: block;
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-text {
+    color: #232121;
+    margin-right: 250px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-salary {
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: 70px;
+    bottom: -25px;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #fffce0;
+    text-align: center;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-salary .vacancies-item-name-salary-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    color: #232121;
+    font-size: 14px;
+    font-weight: bold;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-indicators {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-indicators .vacancies-item-name-indicator {
+    vertical-align: middle;
+    font-size: 14px;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-indicators .vacancies-item-name-indicator.vacancies-item-name-indicator-active {
+    display: none;
+}
+.vacancies .vacancies-section .vacancies-item.active .vacancies-item-name .vacancies-item-name-indicators .vacancies-item-name-indicator.vacancies-item-name-indicator-active {
+    display: inline-block;
+}
+.vacancies .vacancies-section .vacancies-item.active .vacancies-item-name .vacancies-item-name-indicators .vacancies-item-name-indicator.vacancies-item-name-indicator-inactive {
+    display: none;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-description {
+    display: none;
+    padding-top: 25px;
+    overflow: hidden;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-description .vacancies-item-description-wrapper {
+    display: block;
+    color: #888888;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+.vacancies .vacancies-section .vacancies-item .vacancies-item-description .vacancies-item-description-buttons {
+    display: block;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 520px) {
+    .vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-text {
+        margin-right: 70px;
+    }
+    .vacancies .vacancies-section .vacancies-item .vacancies-item-name .vacancies-item-name-salary {
+        position: static;
+        width: auto;
+        margin-top: 10px;
+        margin-right: 70px;
+        background-color: transparent;
+        text-align: left;
+    }
+}

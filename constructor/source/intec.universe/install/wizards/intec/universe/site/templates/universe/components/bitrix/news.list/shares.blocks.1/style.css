@@ -1,0 +1,112 @@
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-description {
+  margin-bottom: 20px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item:hover .news-list-item-gradient {
+  opacity: 1;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-wrapper {
+  display: block;
+  position: relative;
+  padding-top: 60%;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-discount, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-duration, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-name, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-information, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-gradient-2, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-gradient, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-picture, .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-wrapper-2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-wrapper-2 {
+  overflow: hidden;
+  border-radius: 7px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-gradient {
+  opacity: 0;
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 35%, rgba(224, 224, 224, 0) 100%);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 35%, rgba(224, 224, 224, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 35%, rgba(224, 224, 224, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e0e0e0",GradientType=1);
+  -webkit-transition: opacity 350ms;
+  -moz-transition: opacity 350ms;
+  -ms-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-gradient-2 {
+  top: 55%;
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 50%, rgba(224, 224, 224, 0) 100%);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 50%, rgba(224, 224, 224, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, rgba(224, 224, 224, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e0e0e0",GradientType=1);
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-information {
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  left: 25px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-name {
+  top: auto;
+  bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  height: 48px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-duration {
+  top: auto;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  height: 18px;
+}
+.ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-discount {
+  right: auto;
+  bottom: auto;
+  padding: 7px 10px 5px 10px;
+  color: #fff;
+  background: #116afc;
+  border-radius: 3px;
+}
+@media all and (max-width: 1200px) {
+  .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-name {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media all and (max-width: 480px) {
+  .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-information {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-wrapper {
+    padding-top: 80%;
+  }
+}
+@media all and (max-width: 400px) {
+  .ns-bitrix.c-news-list.c-news-list-shares-blocks-1 .news-list-item-name {
+    font-size: 14px;
+    height: 42px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

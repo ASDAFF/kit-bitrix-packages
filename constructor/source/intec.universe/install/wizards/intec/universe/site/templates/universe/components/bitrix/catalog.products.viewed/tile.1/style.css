@@ -1,0 +1,217 @@
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-header {
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #333333;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items {
+  z-index: 0;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items .owl-item {
+  z-index: 1;
+  position: relative;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items .owl-item:hover {
+  z-index: 2;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-stage-outer {
+  overflow: visible;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-stage-outer > .owl-stage > .owl-item {
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-stage-outer > .owl-stage > .owl-item.active {
+  opacity: 1;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 30px;
+  right: -40px;
+  bottom: 30px;
+  left: -40px;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-prev,
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-next {
+  display: block;
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  font-size: 12px;
+  line-height: 1;
+  margin-top: -6px;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-prev i,
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-next i {
+  color: #abaaaa;
+  -webkit-transition: color 350ms;
+  -moz-transition: color 350ms;
+  -ms-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-prev.disabled,
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-next.disabled {
+  display: none;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-prev {
+  left: 0;
+  text-align: left;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav .owl-next {
+  right: 0;
+  text-align: right;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-items > .owl-nav {
+    right: -13px;
+    left: -13px;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-item {
+  display: block;
+  height: 126px;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-item-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 22px 10px;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-item-wrapper:hover {
+  border-color: transparent;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-item-wrapper.blank {
+  border-color: transparent;
+  background-color: #F9F9F9;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-image {
+  flex: 0 0 38%;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-image-wrapper {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-information {
+  position: relative;
+  margin-left: 10px;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-name {
+  max-height: 38px;
+  overflow: hidden;
+  word-break: break-word;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-name-wrapper {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-price-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #222222;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1 .catalog-products-viewed-price-base {
+  font-size: 13px;
+  line-height: 13px;
+  color: #666666;
+  text-decoration: line-through;
+}
+
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-image {
+  flex-basis: 100%;
+  transition: opacity 0.5s;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-image {
+    flex-basis: 38%;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-information {
+  position: absolute;
+  margin: 15px 0;
+  padding: 0 7px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-information {
+    position: relative;
+    margin: 0 0 0 10px;
+    padding: 0;
+    opacity: 1;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-name {
+  max-height: 55px;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-name {
+    max-height: 38px;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-price-wrap {
+  left: 7px;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-price-wrap {
+    left: 0;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-price {
+  font-size: 15px;
+  line-height: 16px;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-price {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-item:hover .catalog-products-viewed-information {
+  opacity: 1;
+}
+.ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-item:hover .catalog-products-viewed-image {
+  opacity: 0.3;
+}
+@media all and (max-width: 1100px) {
+  .ns-bitrix.c-catalog-products-viewed.c-catalog-products-viewed-tile-1[data-collapsed=true] .catalog-products-viewed-item:hover .catalog-products-viewed-image {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

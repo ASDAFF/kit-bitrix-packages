@@ -1,0 +1,8 @@
+<?php
+
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_BASKET_SHOW'] = 'Выводить корзину';
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_DELAYED_SHOW'] = 'Выводить отложенные';
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_CATALOG_URL'] = 'Каталог';
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_BASKET_URL'] = 'Корзина';
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_ORDER_URL'] = 'Оформление заказа';
+$MESS['C_SALE_BASKET_SMALL_ICONS_1_COMPARE_URL'] = 'Сравнение товаров';

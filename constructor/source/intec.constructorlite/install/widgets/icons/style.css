@@ -1,0 +1,271 @@
+.widget-icons-settings {}
+.widget-icons-settings .widget-icons-font {
+    display: block;
+    position: relative;
+    height: 42px;
+    background: #393b47;
+    border-radius: 5px;
+    font-size: 0;
+    overflow: hidden;
+}
+.widget-icons-settings .widget-icons-font.widget-icons-font-left {
+    margin-right: 10px;
+}
+.widget-icons-settings .widget-icons-font.widget-icons-font-right {
+    margin-left: 10px;
+}
+.widget-icons-settings .widget-icons-font .widget-icons-font-button {
+    display: block;
+    width: 33.333333%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    cursor: pointer;
+
+}
+.widget-icons-settings .widget-icons-font .widget-icons-font-button.widget-icons-font-button-active,
+.widget-icons-settings .widget-icons-font .widget-icons-font-button:hover {
+    background: #515360;
+}
+.widget-icons-settings .widget-icons-font .widget-icons-font-button i {
+    font-size: 14px;
+    color: #f2f3f7;
+}
+
+.widget-icons-dialog-icons .widget-icons-items-wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.widget-icons-dialog-icons .widget-icons-items {
+    position: relative;
+    display: block;
+    margin: 20px;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-item-wrapper {
+    position: relative;
+    display: block;
+    padding-top: 100%;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-item-wrapper-2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #e8e8e8;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    text-align: center;
+    font-size: 0;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item.widget-icons-item-add .widget-icons-item-wrapper {
+    cursor: pointer;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item.widget-icons-item-add .widget-icons-item-wrapper-2 {
+    background: transparent;
+    border: 1px dashed #e8e8e8;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-item-icon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-item-wrapper:hover .widget-icons-item-wrapper-2 {
+    background: #cdcdcd;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item.widget-icons-item-add .widget-icons-item-wrapper:hover .widget-icons-item-wrapper-2 {
+    background: #e8e8e8;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-content {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-content .widget-icons-content-icon {
+    font-size: 22px;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-content .widget-icons-content-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons {
+    display: none;
+    position: relative;
+    vertical-align: middle;
+    height: 31px;
+    background: #6c6f74;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-item-wrapper:hover .widget-icons-buttons {
+    display: inline-block;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-delimiter,
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-button {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-delimiter {
+    height: 100%;
+    width: 1px;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-delimiter .widget-icons-line {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 7px;
+    left: 0;
+    background: #757a80;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-button {
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+    margin: 5px 7px;
+    color: #e2e2e2;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.widget-icons-dialog-icons .widget-icons-items .widget-icons-item .widget-icons-buttons .widget-icons-button:hover {
+    color: #fff;
+}
+
+.widget-icons-dialog-icon .widget-icons-item {
+    display: block;
+    margin: 20px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content {
+    display: block;
+    margin-bottom: 30px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content .widget-icons-icon {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    float: left;
+    border-radius: 50%;
+    background: #e8e8e8;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content .widget-icons-icon .widget-icons-icon-wrapper {
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content .widget-icons-buttons {
+    display: block;
+    position:relative;
+    margin-left: 180px;
+    margin-right: 90px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content .widget-icons-buttons .widget-icons-button-select {
+    display: block;
+    margin-right: 105px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-content .widget-icons-buttons .widget-icons-button-remove {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    width: 100px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields {
+    display: block;
+    overflow: hidden;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields .widget-icons-fields-wrapper {
+    margin: -8px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields .widget-icons-field {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields .widget-icons-field .widget-icons-field-wrapper {
+
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields .widget-icons-field .widget-icons-label {
+    font-size: 14px;
+    color: #282828;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-fields .widget-icons-field .widget-icons-control {
+    margin-top: 8px;
+    position: relative;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    line-height: 19px;
+    color: #494949;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    padding: 6px 9px;
+}
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-input:hover,
+.widget-icons-dialog-icon .widget-icons-item .widget-icons-input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

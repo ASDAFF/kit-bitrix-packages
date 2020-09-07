@@ -1,0 +1,3 @@
+<?php
+
+$MESS['C_NEWS_NEWS_1_TEMPLATE_PANEL_RESET'] = 'Все';

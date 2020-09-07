@@ -1,0 +1,41 @@
+$component: 'advantages';
+$template: 'catalog-template-1';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  padding: 45px 0;
+
+  &[data-view="view.2"] {
+    background: #f8f8f8;
+  }
+
+  &[data-view="view.3"] {
+    border: 1px solid #DADADA;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .#{$item}-name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+  }
+
+  .#{$item}-image img {
+    max-width: 55px;
+  }
+}

@@ -1,0 +1,83 @@
+$component: 'certificates';
+$template: 'template-1';
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {}
+  .widget-item {}
+  .widget-item-wrapper {}
+
+  .widget-item-picture {
+    display: block;
+    position: relative;
+    padding-top: 150%;
+    cursor: pointer;
+  }
+
+  .widget-item-picture-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 100%;
+
+    -webkit-transition: top 350ms;
+    -moz-transition: top 350ms;
+    -ms-transition: top 350ms;
+    -o-transition: top 350ms;
+    transition: top 350ms;
+
+    img {
+      -webkit-transition: box-shadow 350ms;
+      -moz-transition: box-shadow 350ms;
+      -ms-transition: box-shadow 350ms;
+      -o-transition: box-shadow 350ms;
+      transition: box-shadow 350ms;
+    }
+  }
+
+  .widget-item-name {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 15px;
+    cursor: default;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+  }
+
+  .widget-footer {}
+
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+
+  .widget-item-wrapper:hover {
+    .widget-item-name {
+      color: #0065ff;
+    }
+
+    .widget-item-picture-wrapper {
+      top: -10px;
+
+      img {
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

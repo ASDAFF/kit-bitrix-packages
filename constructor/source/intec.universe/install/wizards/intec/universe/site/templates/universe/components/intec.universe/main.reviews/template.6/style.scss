@@ -1,0 +1,118 @@
+$component: 'reviews';
+$template: 'template-6';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper {
+    height: 100%;
+  }
+  .#{$item}-picture-wrap {
+    position: relative;
+    z-index: 2;
+  }
+  .#{$item}-picture {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+    margin-right: -60px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(50%);
+  }
+  .#{$item}-text-wrap {
+    position: relative;
+    z-index: 1;
+  }
+  .#{$item}-text {
+    height: 100%;
+    padding: 20px 20px 20px 95px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    @include border-radius(7px);
+    @include transition(box-shadow, 0.4s);
+  }
+  .#{$item}-name {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-position {
+    font-size: 12px;
+    line-height: 18px;
+    color: #bcbcbc;
+  }
+  .#{$item}-line {
+    width: 30px;
+    border-top: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .#{$item}-description {
+    font-size: 14px;
+    line-height: 21px;
+    color: #606060;
+  }
+  .#{$item}-wrapper:hover {
+    .#{$item}-text {
+      -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-picture {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto -20px auto;
+    }
+    .#{$item}-text {
+      text-align: center;
+      padding-top: 40px;
+      padding-left: 20px;
+    }
+    .#{$item}-name {
+      max-width: 275px;
+    }
+    .#{$item}-position {
+      max-width: 250px;
+    }
+    .#{$item}-name,
+    .#{$item}-position,
+    .#{$item}-line {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

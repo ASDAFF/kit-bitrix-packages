@@ -1,0 +1,27 @@
+.ns-intec-constructor.block-element.block-element-shape {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ns-intec-constructor.block-element.block-element-shape.block-element-shape-rectangle {}
+.ns-intec-constructor.block-element.block-element-shape.block-element-shape-circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.ns-intec-constructor.block-element.block-element-shape .block-element-shape-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.ns-intec-constructor.block-element.block-element-shape.block-element-shape-circle .block-element-shape-border {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}

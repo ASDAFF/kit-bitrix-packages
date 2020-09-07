@@ -1,0 +1,51 @@
+.brand {
+	display: block;
+}
+.brand .brand-information {
+	display: block;
+	margin-top: 30px;
+}
+.brand .brand-information .brand-image {
+	display: block;
+	float: left;
+	position: relative;
+	width: 250px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+}
+.brand .brand-information .brand-image .brand-image-wrapper {
+	display: block;
+	position: relative;
+	padding-top: 75%;
+	-webkit-box-shadow: 0 15px 50px #f1f1f1;
+	-moz-box-shadow: 0 15px 50px #f1f1f1;
+	box-shadow: 0 15px 50px #f1f1f1;
+}
+.brand .brand-information .brand-image .brand-image-wrapper-2 {
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	bottom: 25px;
+	left: 25px;
+}
+.brand .brand-information .brand-text {
+	margin-bottom: 30px;
+}
+
+.brand .brand-products {}
+.brand .brand-products .brand-products-title {
+	display: block;
+	font-size: 1.42857143em;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+
+@media all and (max-width: 500px) {
+	.intec-adaptive .brand .brand-information .brand-image {
+		float: none;
+		width: auto;
+		margin-right: 0;
+	}
+}

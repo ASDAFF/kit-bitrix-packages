@@ -1,0 +1,41 @@
+.ns-bitrix.c-form-result-new.c-form-result-new-default {
+  display: block;
+  overflow: hidden;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-message,
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-description {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-message p,
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-description p {
+  margin: 0;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-message font,
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-description font {
+  color: inherit !important;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-message.form-result-new-message-note {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-fields {
+  display: block;
+  margin: -8px 0 17px 0;
+  min-height: 8px;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-field {
+  display: block;
+  padding: 8px 0;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-captcha-image img {
+  width: 180px;
+  height: 40px;
+}
+.ns-bitrix.c-form-result-new.c-form-result-new-default .form-result-new-consent {
+  margin-bottom: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

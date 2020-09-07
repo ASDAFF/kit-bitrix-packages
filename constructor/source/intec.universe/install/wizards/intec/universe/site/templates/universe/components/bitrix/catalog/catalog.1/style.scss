@@ -1,0 +1,221 @@
+$namespace: 'bitrix';
+$component: 'catalog';
+$template: 'catalog-1';
+$class: #{$component};
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$class}-wrapper {
+    display: block;
+  }
+
+  .#{$class}-content {
+    position: relative;
+  }
+
+  .#{$class}-content-right-wrapper {
+    position: relative;
+  }
+
+  .bx-filter-container-modef {
+    display: none;
+  }
+
+  .ns-bitrix.c-smart-filter + .#{$class}-menu,
+  .ns-bitrix.c-catalog-smart-filter + .#{$class}-menu,
+  .ns-bitrix.c-smart-filter + .#{$class}-content,
+  .ns-bitrix.c-catalog-smart-filter + .#{$class}-content {
+    margin-top: 30px;
+  }
+
+  .#{$class}-description {
+    display: block;
+  }
+
+  * + .c-tags-list,
+  * + .ns-intec-seo.c-filter-tags,
+  * + .#{$class}-description,
+  .c-tags-list + *,
+  .ns-intec-seo.c-filter-tags + *,
+  .#{$class}-description + * {
+    margin-top: 20px;
+  }
+
+  .c-catalog-section-list + .#{$class}-panel {
+    margin-top: 30px;
+  }
+
+  .#{$class}-panel {
+    margin-bottom: 20px;
+  }
+
+  .#{$class}-panel-filter {
+    @media all and (min-width: 721px) {
+      display: none;
+    }
+  }
+
+  .#{$class}-panel-filter-button {
+    display: block;
+    line-height: 1;
+    padding: 7px;
+    background: #0065ff;
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  @media all and (max-width: 720px) {
+    .ns-bitrix.c-smart-filter.c-smart-filter-horizontal-1,
+    .ns-bitrix.c-smart-filter.c-smart-filter-horizontal-2 {
+      display: none !important;
+    }
+  }
+
+  .#{$class}-menu {
+    display: block;
+    z-index: 20;
+  }
+
+  .#{$class}-filter-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 20;
+    background: #fff;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+
+    @media all and (min-width: 721px) {
+      display: none !important;
+    }
+  }
+
+  .#{$class}-panel-sorting {}
+  .#{$class}-panel-sorting-wrapper {}
+
+  .#{$class}-panel-sort {
+    color: #bababa;
+    font-size: 0;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: none;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    &:hover {
+      color: #4d4d4d;
+    }
+
+    &[data-active="true"] {
+      color: #2d2d2d;
+    }
+
+    @media all and (max-width: 850px) {
+      .#{$class}-panel-sort-icon {
+        display: inline-block;
+      }
+
+      .#{$class}-panel-sort-text {
+        display: none;
+      }
+    }
+  }
+
+  .#{$class}-panel-sort-icon,
+  .#{$class}-panel-sort-text,
+  .#{$class}-panel-sort-order {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  .#{$class}-panel-sort-icon {
+    display: none;
+  }
+
+  .#{$class}-panel-sort-order {
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  .#{$class}-panel-sort-order-icon {
+    display: block;
+
+    &.#{$class}-panel-sort-order-icon-desc {
+      display: none;
+    }
+  }
+
+  .#{$class}-panel-sorting {
+    &[data-order="desc"] {
+      .#{$class}-panel-sort-order-icon {
+        display: none;
+
+        &.#{$class}-panel-sort-order-icon-desc {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .#{$class}-panel-views {}
+  .#{$class}-panel-views-wrapper {}
+
+  .#{$class}-panel-view {
+    color: #bababa;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-transition: color 350ms;
+    -moz-transition: color 350ms;
+    -ms-transition: color 350ms;
+    -o-transition: color 350ms;
+    transition: color 350ms;
+
+    &:hover {
+      color: #4d4d4d;
+    }
+
+    &[data-active="true"] {
+      color: #2d2d2d;
+    }
+  }
+
+  &[data-layout="2"] {
+    .ns-bitrix.c-smart-filter + .#{$class}-menu,
+    .ns-bitrix.c-catalog-smart-filter + .#{$class}-menu,
+    .ns-bitrix.c-smart-filter + .#{$class}-content,
+    .ns-bitrix.c-catalog-smart-filter + .#{$class}-content {
+      margin-top: 32px;
+    }
+
+    .c-catalog-section-list + * {
+      margin-top: 32px;
+    }
+
+    * + .#{$class}-description,
+    .#{$class}-description + * {
+      margin-top: 24px;
+    }
+    * + .c-tags-list,
+    * + .ns-intec-seo.c-filter-tags,
+    .c-tags-list + *,
+    .ns-intec-seo.c-filter-tags + * {
+      margin-top: 32px;
+    }
+  }
+}

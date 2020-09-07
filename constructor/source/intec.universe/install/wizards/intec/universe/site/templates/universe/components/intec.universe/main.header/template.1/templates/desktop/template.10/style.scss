@@ -1,0 +1,520 @@
+$component: 'header';
+$template: 'template-1';
+$class: 'widget';
+
+$view: #{$class}-view-desktop;
+$container: #{$class}-container;
+$menu: #{$class}-menu;
+$logotype: #{$class}-logotype;
+$tag-line: #{$class}-tag-line;
+$region: #{$class}-region;
+$inforamtion: #{$class}-information;
+$contacts: #{$class}-contacts;
+$call: #{$class}-call;
+$search: #{$class}-search;
+$authorization: #{$class}-authorization;
+$basket: #{$class}-basket;
+
+$color-black-1: #1B1E25;
+$color-black-2:#404040;
+$color-gray-1: #808080;
+$color-gray-2: #B0B0B0;
+$color-gray-3: #E8E8E8;
+$color-gray-4: #F2F2F2;
+$color-yellow: #F4BB28;
+$color-red: #E05757;
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin user-select ($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+@mixin hover {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$view} {
+    .#{$container} {
+      position: relative;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      z-index: 2;
+
+      @extend %z-index;
+    }
+    .#{$menu} {
+      position: relative;
+      z-index: 1;
+
+      @extend %z-index;
+      .menu-wrapper {
+        @include border-radius(2px);
+      }
+      .menu-item-border {
+        &:first-child {
+          border-left: none!important;
+        }
+        &:last-child {
+          border-right: none!important;
+        }
+      }
+
+      [data-uppercase="true"] .menu-item .menu-item-text-wrapper {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+      }
+    }
+    %z-index {
+      &:hover {
+        z-index: 3;
+      }
+    }
+    .#{$logotype} {
+      display: block;
+      width: 130px;
+
+      path {
+        @include transition(fill, 0.4s);
+      }
+    }
+    .#{$tag-line} {
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray-2;
+      max-width: 160px;
+      @include transition(color, 0.4s);
+    }
+    .#{$region} {
+      line-height: 1;
+
+      .regions-select-region {
+        font-size: 12px;
+        line-height: 16px;
+        @include transition(opacity, 0.4s);
+        @include hover;
+      }
+      .regions-select-region-text {
+        color: $color-black-2;
+        padding-right: 4px!important;
+      }
+      .regions-select-region-icon {
+        color: $color-gray-2;
+      }
+      .regions-select-region-text,
+      .regions-select-region-icon {
+        @include transition(color, 0.4s);
+      }
+    }
+    .#{$contacts} {
+      position: relative;
+    }
+    .#{$contacts}-main {
+      font-size: 0;
+      white-space: nowrap;
+
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      & a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      @extend %contacts-link;
+      & svg {
+        margin-left: 8px;
+      }
+      & path {
+        stroke: $color-gray-2;
+        @include transition(stroke, 0.4s);
+      }
+    }
+    .#{$contacts}-advanced {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      font-size: 0;
+      text-align: right;
+      width: 200px;
+      pointer-events: none;
+      @include transition(opacity, 0.4s);
+    }
+    .#{$contacts}-advanced-items-wrap {
+      display: inline-block;
+      padding-top: 8px;
+      pointer-events: all;
+    }
+    .#{$contacts}-advanced-items {
+      text-align: left;
+      padding: 20px;
+      background-color: #FFF;
+      -webkit-box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+      -moz-box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+      box-shadow: 0px 4px 24px rgba(27, 30, 37, 0.08);
+      @include border-radius(2px);
+    }
+    .#{$contacts}-advanced-item {
+      & > div + div {
+        margin-top: 8px;
+      }
+    }
+    .#{$contacts}-advanced-item-phone {
+      font-size: 0;
+
+      & a {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+      }
+      @extend %contacts-link;
+    }
+    .#{$contacts}-advanced-item-address {
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray-1;
+    }
+    .#{$contacts}-advanced-item-schedule {
+      & > div + div {
+        margin-top: 4px;
+      }
+    }
+    .#{$contacts}-advanced-item-schedule-item {
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray-2;
+    }
+    .#{$contacts}-advanced-item-email {
+      font-size: 12px;
+      line-height: 16px;
+
+      a {
+        text-decoration: none;
+        @include transition(color, 0.4s);
+      }
+    }
+    %contacts-link {
+      a {
+        color: $color-black-2;
+        text-decoration: none;
+        @include transition(#{color, opacity}, 0.4s);
+
+        @include hover;
+      }
+    }
+    [data-advanced='false'] {
+      .#{$contacts}-advanced-item {
+        & + .#{$contacts}-advanced-item {
+          margin-top: 20px;
+        }
+      }
+    }
+    [data-advanced='true'] {
+      .#{$contacts}-advanced-item {
+        & + .#{$contacts}-advanced-item {
+          padding-top: 16px;
+          margin-top: 16px;
+          border-top: 1px solid $color-gray-4;
+        }
+      }
+    }
+    [data-expanded='false'] {
+      .#{$contacts}-advanced {
+        opacity: 0;
+      }
+      .#{$contacts}-advanced,
+      .#{$contacts}-advanced-items-wrap {
+        pointer-events: none;
+        @include user-select(none);
+      }
+    }
+    .#{$call} {
+      font-size: 12px;
+      line-height: 18px;
+      border-bottom: 1px dashed;
+      cursor: pointer;
+      @include transition(#{opacity, color}, 0.4s);
+      @include hover;
+    }
+    .#{$search} {
+      .search-title-button {
+        overflow: hidden;
+      }
+      .search-title-button-wrapper {
+        @include transition(opacity, 0.4s);
+        @include hover;
+      }
+      .search-title-button-icon {
+        font-size: 15px;
+        color: $color-gray-1;
+        @include transition(#{color, opacity}, 0.4s);
+      }
+      .search-title-button-text {
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-gray-1;
+        @include transition(#{color, opacity}, 0.4s);
+      }
+    }
+    .#{$authorization} {
+      .widget-authorization-button {
+        @include transition(#{color, opacity}, 0.4s);
+      }
+    }
+
+    @media all and (max-width: 1200px) {
+      .#{$tag-line}-container {
+        display: none;
+      }
+    }
+    @media all and (max-width: 1024px) {
+      .#{$inforamtion}-container {
+        display: none;
+      }
+    }
+  }
+
+  &[data-transparent='false'] {
+    .#{$view}-10 {
+      background-color: #fff;
+    }
+  }
+  &.widget-transparent[data-color='white'] .#{$view} {
+    .#{$logotype} {
+      path {
+        @extend %theme-white-fill;
+      }
+    }
+    .#{$tag-line} {
+      @extend %theme-white-color;
+    }
+    .#{$region} {
+      .regions-select-region-text,
+      .regions-select-region-icon {
+        @extend %theme-white-color;
+      }
+    }
+    .#{$contacts}-main {
+      a {
+        @extend %theme-white-color;
+      }
+      path {
+        @extend %theme-white-stroke;
+      }
+    }
+    .#{$call} {
+      @extend %theme-white-color;
+    }
+    .#{$search} {
+      .search-title-button-icon {
+        @extend %theme-white-color;
+      }
+      .search-title-button-text {
+        @extend %theme-white-color;
+      }
+    }
+    .#{$authorization} {
+      .widget-authorization-button-icon svg {
+        @extend %theme-white-fill;
+      }
+      .widget-authorization-button-content {
+        @extend %theme-white-color;
+      }
+    }
+    .#{$basket} {
+      .sale-basket-icons-items {
+        .sale-basket-icons-item {
+          .sale-basket-icons-item-icon {
+            @extend %theme-white-color;
+            @include transition(#{opacity, color}, 0.4s);
+            opacity: 0.5;
+          }
+
+          &:hover,
+          &.sale-basket-icons-item-active {
+            .sale-basket-icons-item-icon {
+              opacity: 1;
+            }
+          }
+        }
+
+        .sale-basket-icons-item-counter {
+          @extend %theme-white-color;
+          @extend %theme-white-background-inverted;
+          @extend %theme-white-border-inverted;
+          @include transition(#{color, background-color, border-color}, 0.4s);
+        }
+      }
+
+      .sale-basket-small-items {
+        .sale-basket-small-tab {
+          .sale-basket-small-tab-icon {
+            @extend %theme-white-color;
+            @include transition(#{opacity, color}, 0.4s);
+            opacity: 0.5;
+          }
+
+          &:hover,
+          &.sale-basket-small-tab-active {
+            .sale-basket-small-tab-icon {
+              opacity: 1;
+            }
+          }
+        }
+
+        .sale-basket-small-tab-counter {
+          @extend %theme-white-color;
+          @extend %theme-white-background-inverted;
+          @extend %theme-white-border-inverted;
+          @include transition(#{color, background-color, border-color}, 0.4s);
+        }
+      }
+    }
+  }
+  &.widget-transparent[data-color='black'] .#{$view} {
+    .#{$logotype} {
+      path {
+        @extend %theme-black-fill;
+      }
+    }
+    .#{$tag-line} {
+      @extend %theme-black-color;
+    }
+    .#{$region} {
+      .regions-select-region-text,
+      .regions-select-region-icon {
+        @extend %theme-black-color;
+      }
+    }
+    .#{$contacts}-main {
+      a {
+        @extend %theme-black-color;
+      }
+      path {
+        @extend %theme-black-stroke;
+      }
+    }
+    .#{$call} {
+      @extend %theme-black-color;
+    }
+    .#{$search} {
+      .search-title-button-icon {
+        @extend %theme-black-color;
+      }
+      .search-title-button-text {
+        @extend %theme-black-color;
+      }
+    }
+    .#{$authorization} {
+      .widget-authorization-button-icon svg {
+        @extend %theme-black-fill;
+      }
+      .widget-authorization-button-content {
+        @extend %theme-black-color;
+      }
+    }
+    .#{$basket} {
+      .sale-basket-icons-items {
+        .sale-basket-icons-item {
+          .sale-basket-icons-item-icon {
+            @extend %theme-black-color;
+            @include transition(#{opacity, color}, 0.4s);
+            opacity: 0.5;
+          }
+
+          &:hover,
+          &.sale-basket-icons-item-active {
+            .sale-basket-icons-item-icon {
+              opacity: 1;
+            }
+          }
+        }
+
+        .sale-basket-icons-item-counter {
+          @extend %theme-black-color;
+          @extend %theme-black-background-inverted;
+          @extend %theme-black-border-inverted;
+          @include transition(#{color, background-color, border-color}, 0.4s);
+        }
+      }
+
+      .sale-basket-small-items {
+        .sale-basket-small-tab {
+          .sale-basket-small-tab-icon {
+            @extend %theme-black-color;
+            @include transition(#{opacity, color}, 0.4s);
+            opacity: 0.5;
+          }
+
+          &:hover,
+          &.sale-basket-small-tab-active {
+            .sale-basket-small-tab-icon {
+              opacity: 1;
+            }
+          }
+        }
+
+        .sale-basket-small-tab-counter {
+          @extend %theme-black-color;
+          @extend %theme-black-background-inverted;
+          @extend %theme-black-border-inverted;
+          @include transition(#{color, background-color, border-color}, 0.4s);
+        }
+      }
+    }
+  }
+
+  %theme-white-color {
+    color: #FFF!important;
+  }
+  %theme-white-background-inverted {
+    background-color: #000!important;
+  }
+  %theme-white-border-inverted {
+    border-color: #000!important;
+  }
+  %theme-white-fill {
+    fill: #fff!important;
+  }
+  %theme-white-stroke {
+    stroke: #fff!important;
+  }
+
+  %theme-black-color {
+    color: #000!important;
+  }
+  %theme-black-background-inverted {
+    background-color: #fff!important;
+  }
+  %theme-black-border-inverted {
+    border-color: #fff!important;
+  }
+  %theme-black-fill {
+    fill: #000!important;
+  }
+  %theme-black-stroke {
+    stroke: #000!important;
+  }
+}

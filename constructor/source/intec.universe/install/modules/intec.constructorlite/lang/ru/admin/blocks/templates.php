@@ -1,0 +1,19 @@
+<?php
+$MESS['title'] = 'Шаблоны блоков';
+$MESS['list.header.code'] = 'Код';
+$MESS['list.header.category'] = 'Категория';
+$MESS['list.header.category.unset'] = '(Не установлена)';
+$MESS['list.header.category.unselected'] = '(Не выбрана)';
+$MESS['list.header.sort'] = 'Сортировка';
+$MESS['list.header.name'] = 'Наименование';
+$MESS['list.header.image'] = 'Изображение';
+$MESS['list.actions.add'] = 'Добавить';
+$MESS['list.actions.import'] = 'Импортировать';
+$MESS['list.actions.import.all'] = 'Импортировать все';
+$MESS['list.actions.export.all'] = 'Экспортировать все';
+$MESS['list.rows.actions.edit'] = 'Редактировать';
+$MESS['list.rows.actions.editor'] = 'Редактор';
+$MESS['list.rows.actions.copy'] = 'Копировать';
+$MESS['list.rows.actions.export'] = 'Экспорт';
+$MESS['list.rows.actions.delete'] = 'Удалить';
+$MESS['list.rows.actions.delete.confirm'] = 'Вы действительно хотите удалить шаблон блока?';

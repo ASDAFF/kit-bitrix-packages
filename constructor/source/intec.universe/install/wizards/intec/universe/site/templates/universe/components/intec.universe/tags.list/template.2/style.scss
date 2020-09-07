@@ -1,0 +1,90 @@
+$namespace: 'intec-universe';
+$component: 'tags-list';
+$template: 'template-2';
+$item: #{$component}-item;
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin user-select ($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-wrapper,
+  .#{$item}-text {
+    display: block;
+  }
+  .#{$item}-wrapper {
+    margin: 0;
+  }
+  .#{$item}-text {
+    font-size: 0;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    cursor: pointer;
+    @include border-radius(5px);
+    @include user-select(none);
+    @include transition(#{color, background-color}, 0.4s);
+  }
+  .#{$item}-name,
+  .#{$item}-count {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .#{$item} {
+    max-width: 100%;
+
+    input {
+      display: none;
+
+      &:checked {
+        & + span {
+          &[data-color='1'] {
+            background-color: #ffd800;
+            color: #1f1f1f;
+          }
+          &[data-color='2'] {
+            background-color: #d7569c;
+            color: #FFF;
+          }
+          &[data-color='3'] {
+            background-color: #3eb5f1;
+            color: #FFF;
+          }
+          &[data-color='4'] {
+            background-color: #52ac62;
+            color: #FFF;
+          }
+          &[data-color='5'] {
+            background-color: #1f1f1f;
+            color: #FFF;
+          }
+        }
+      }
+      & + span {
+        &:hover {
+          background-color: #BBBBBB;
+        }
+      }
+    }
+  }
+}

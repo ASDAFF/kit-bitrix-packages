@@ -1,0 +1,117 @@
+$component: 'reviews';
+$template: 'template-3';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .widget-items {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .#{$item}-picture {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include border-radius(50%);
+  }
+  .#{$item}-name,
+  .#{$item}-position {
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .#{$item}-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-decoration: none;
+    @include transition(color, 0.4s);
+  }
+  .#{$item}-position {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9e9e9e;
+    margin-top: 5px;
+  }
+  .#{$item}-description {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .intec-ui-control-navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+
+    .intec-ui-part-button-left,
+    .intec-ui-part-button-right {
+      font-size: 0;
+      width: 35px;
+      height: 35px;
+      margin-top: -17px;
+      @include border-radius(50%);
+      @include transition(background-color, 0.4s);
+
+      &:hover {
+        background-color: #E3E3E3;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+    .intec-ui-part-button-left i {
+      padding-right: 2px;
+    }
+    .intec-ui-part-button-right i {
+      padding-left: 2px;
+    }
+  }
+  .widget-footer-button {
+    color: #2d2d2d !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff !important;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .widget-items {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .#{$item}-description {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+$component: 'advantages';
+$template: 'template-12';
+$item: 'widget-item';
+
+@mixin transition ($property, $duration) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  padding: 95px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .widget-header {
+    padding-top: 52px;
+
+    .widget-title {
+      font-size: 40px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #ffffff;
+
+      & + .widget-description {
+        margin-top: 5px;
+      }
+    }
+    .widget-description {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+  }
+
+  .#{$item}-wrapper {
+    padding-bottom: 52px;
+  }
+  .#{$item}-counter {
+    position: absolute;
+    height: 130px;
+    font-size: 144px;
+    line-height: 1;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.13);
+    bottom: 0;
+  }
+  .#{$item}-name-wrap {
+    position: relative;
+    padding-top: 60px;
+    font-size: 0;
+    margin-bottom: 20px;
+  }
+  .#{$item}-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    min-height: 56px;
+  }
+  .#{$item}-description {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #ccb5b5;
+  }
+  @media all and (max-width: 1024px) {
+    .widget-header {
+      text-align: center;
+      padding-bottom: 50px;
+      max-width: 100%;
+      padding-right: 0px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .widget-header {
+      padding: 0;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .widget-header {
+      .widget-title {
+        font-size: 34px;
+        line-height: 44px;
+      }
+      .widget-description {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+    .#{$item}-name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &[data-number-show="false"] {
+    .#{$item}-name-wrap {
+      padding-top: 0;
+    }
+    .#{$item}-name {
+      min-height: initial;
+    }
+    .widget-header {
+      padding-top: 0;
+      padding-bottom: 00px;
+    }
+    .#{$item}-wrapper {
+      padding-bottom: 20px;
+    }
+  }
+}

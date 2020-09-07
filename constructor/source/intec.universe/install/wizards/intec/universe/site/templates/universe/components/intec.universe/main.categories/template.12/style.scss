@@ -1,0 +1,101 @@
+$component: 'categories';
+$template: 'template-12';
+$item: 'widget-item';
+
+@mixin transition ($property, $time) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -ms-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -ms-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.widget.c-#{$component}.c-#{$component}-#{$template} {
+  .#{$item}-picture-wrap {
+    position: relative;
+    overflow: hidden;
+    @include border-radius(10px);
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  .#{$item}-picture {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .#{$item}-picture-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    @include transition(opacity, 0.4s);
+  }
+  .#{$item}-picture-wrap:hover {
+    .#{$item}-picture-fade {
+      opacity: 1;
+    }
+  }
+  .#{$item}-name-wrap {
+    font-size: 0;
+    text-align: center;
+  }
+  .#{$item}-name {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #222222;
+    text-decoration: none;
+    margin-top: 20px;
+    @include transition(color, 0.4s);
+  }
+  [data-grid='3'] {
+    .#{$item}-picture-wrap {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    [data-grid='3'] {
+      .#{$item}-picture-wrap {
+        max-width: none;
+      }
+    }
+  }
+  @media all and (max-width: 350px) {
+    [data-grid] {
+      .#{$item}-picture-wrap {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

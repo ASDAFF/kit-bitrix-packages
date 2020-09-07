@@ -1,0 +1,88 @@
+$namespace: 'bitrix';
+$component: 'system-auth-authorize';
+$template: 'default';
+$class: $component;
+
+.ns-#{$namespace}.c-#{$component}.c-#{$component}-#{$template} {
+  display: block;
+
+  .#{$class}-wrapper {}
+  .#{$class}-wrapper-2 {}
+
+  .#{$class}-block {
+    display: block;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+  }
+
+  .#{$class}-header {
+    text-align: left;
+    font-size: 1.28571429em;
+    line-height: 1.5;
+    margin: 0 0 35px 0;
+  }
+
+  .#{$class}-delimiter {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 15px;
+    left: 30px;
+    width: 1px;
+    background-color: #ebebeb;
+
+    @media all and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .#{$class}-registration {
+    padding: 0 35px 0 70px;
+
+    @media all and (max-width: 800px) {
+      padding: 0;
+    }
+  }
+
+  .#{$class}-registration-button {}
+
+  .#{$class}-registration-text {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    color: #888;
+    margin-top: 20px;
+  }
+
+  .#{$class}-form-remember,
+  .#{$class}-form-restore {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .#{$class}-form-additions {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .#{$class}-form-buttons {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .#{$class}-form-socials {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .#{$class}-form-socials-title {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+}

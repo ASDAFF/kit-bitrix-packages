@@ -1,0 +1,75 @@
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 {
+  display: block;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-wrapper {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-picture {
+  display: block;
+  position: relative;
+  float: left;
+  width: 190px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-picture a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 100%;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-information {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-left: 190px;
+  padding: 15px 20px 15px 25px;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-name {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  max-height: 48px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-description {
+  display: block;
+  color: #616267;
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 105px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1[data-rounded=true] .catalog-section-list-item-wrapper {
+  border-radius: 7px;
+}
+@media all and (max-width: 500px) {
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-picture {
+    width: 100px;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-picture a {
+    padding-top: 170%;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-information {
+    margin-left: 100px;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-name {
+    font-size: 14px;
+    max-height: 42px;
+  }
+  .ns-bitrix.c-catalog-section-list.c-catalog-section-list-services-list-1 .catalog-section-list-item-description {
+    font-size: 12px;
+    max-height: 90px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
