@@ -20,7 +20,7 @@ class Sections extends Select
         if (Loader::includeModule('iblock')) {
             $l = \CIBlockSection::GetTreeList(Array("IBLOCK_ID"=>$this->getIblockId()), array("ID", "NAME", "DEPTH_LEVEL"));
             if($this->isCanEmpty()){
-                $this->setValue('','Íå ïðèâÿçûâàòü');
+                $this->setValue('','ÐÐµ Ð¿Ñ€Ð¸Ð²ÑÐ·Ñ‹Ð²Ð°Ñ‚ÑŒ');
             }
             while($ar_l = $l->GetNext()){
                 $this->setValue(
