@@ -1051,5 +1051,3 @@ class SotbitOrigami
         return;
     }
 } ?>
-
-
