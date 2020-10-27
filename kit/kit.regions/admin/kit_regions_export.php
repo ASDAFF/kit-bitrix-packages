@@ -691,4 +691,3 @@ function encodingFileName($string, $save = false) {
 }
 
 require($DOCUMENT_ROOT."/bitrix/modules/main/include/epilog_admin.php");
-

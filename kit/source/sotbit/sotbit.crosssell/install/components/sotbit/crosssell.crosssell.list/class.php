@@ -36,9 +36,9 @@ class CrosssellComponent extends CBitrixComponent
                     "LOGIC"=>$conditions["DATA"]['All'],
                 )
             );
-            //Номер текущей итерации по цене
+            //РќРѕРјРµСЂ С‚РµРєСѓС‰РµР№ РёС‚РµСЂР°С†РёРё РїРѕ С†РµРЅРµ
             $iterationPrice = 0;
-            //Количество условий для фильтрации по ценам - количество проходов для формирования фильтров
+            //РљРѕР»РёС‡РµСЃС‚РІРѕ СѓСЃР»РѕРІРёР№ РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё РїРѕ С†РµРЅР°Рј - РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕС…РѕРґРѕРІ РґР»СЏ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ С„РёР»СЊС‚СЂРѕРІ
             $iterationPriceNumber = 0;
             foreach ($conditions['CHILDREN'] as $index => $child){
                 if (strpos($child['CLASS_ID'], 'CondIBPrice') !== false)
@@ -56,7 +56,7 @@ class CrosssellComponent extends CBitrixComponent
             array_push($arrFilter[0], array("ID" => 0));
         }
 
-        //переменная для глобальных условий фильтрации (по группе параметров)
+        //РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ РіР»РѕР±Р°Р»СЊРЅС‹С… СѓСЃР»РѕРІРёР№ С„РёР»СЊС‚СЂР°С†РёРё (РїРѕ РіСЂСѓРїРїРµ РїР°СЂР°РјРµС‚СЂРѕРІ)
         if ($conditions["DATA"]['True'] == 'True')
         {
             $globalTrue = true;
@@ -76,7 +76,7 @@ class CrosssellComponent extends CBitrixComponent
 
         foreach ($conditions['CHILDREN'] as $index => $child) {
 
-            //Проверка условия для параметра
+            //РџСЂРѕРІРµСЂРєР° СѓСЃР»РѕРІРёСЏ РґР»СЏ РїР°СЂР°РјРµС‚СЂР°
             if($child['DATA']['logic']) $isEqual = $child['DATA']['logic'];
             if ($globalTrue){
                 if ($isEqual=='Not') {
@@ -150,7 +150,7 @@ class CrosssellComponent extends CBitrixComponent
                     );
                 }
 
-                //Если последняя итерация по цене
+                //Р•СЃР»Рё РїРѕСЃР»РµРґРЅСЏСЏ РёС‚РµСЂР°С†РёСЏ РїРѕ С†РµРЅРµ
                 if ($iterationPrice == ($iterationPriceNumber-1)){
                     $offerList = CIBlockElement::GetList(
                         array("SORT" => "ASC"),
@@ -223,12 +223,12 @@ class CrosssellComponent extends CBitrixComponent
                     $highloadItemID = $child['DATA']['value'];
 
                     if($highloadItemID == ''){
-                        //Получить торговые предложения для текущего товара
+                        //РџРѕР»СѓС‡РёС‚СЊ С‚РѕСЂРіРѕРІС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ РґР»СЏ С‚РµРєСѓС‰РµРіРѕ С‚РѕРІР°СЂР°
                         $res = CCatalogSKU::getOffersList(
-                            $this->arParams['PRODUCT_ID'], // массив ID товаров
-                            '', // указываете ID инфоблока только в том случае, когда ВЕСЬ массив товаров из одного инфоблока и он известен
-                            $skuFilter = array(), // дополнительный фильтр предложений. по умолчанию пуст.
-                            $fields = array(),  // массив полей предложений. даже если пуст - вернет ID и IBLOCK_ID
+                            $this->arParams['PRODUCT_ID'], // РјР°СЃСЃРёРІ ID С‚РѕРІР°СЂРѕРІ
+                            '', // СѓРєР°Р·С‹РІР°РµС‚Рµ ID РёРЅС„РѕР±Р»РѕРєР° С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РєРѕРіРґР° Р’Р•РЎР¬ РјР°СЃСЃРёРІ С‚РѕРІР°СЂРѕРІ РёР· РѕРґРЅРѕРіРѕ РёРЅС„РѕР±Р»РѕРєР° Рё РѕРЅ РёР·РІРµСЃС‚РµРЅ
+                            $skuFilter = array(), // РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ С„РёР»СЊС‚СЂ РїСЂРµРґР»РѕР¶РµРЅРёР№. РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РїСѓСЃС‚.
+                            $fields = array(),  // РјР°СЃСЃРёРІ РїРѕР»РµР№ РїСЂРµРґР»РѕР¶РµРЅРёР№. РґР°Р¶Рµ РµСЃР»Рё РїСѓСЃС‚ - РІРµСЂРЅРµС‚ ID Рё IBLOCK_ID
                             $propertyFilter = array('ID' => array($idProperty))
                         );
                         $currentProperties = array();
@@ -243,7 +243,7 @@ class CrosssellComponent extends CBitrixComponent
 
                     }
 
-                    //Если фильтр должен быть по элементу HighLoad блока
+                    //Р•СЃР»Рё С„РёР»СЊС‚СЂ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїРѕ СЌР»РµРјРµРЅС‚Сѓ HighLoad Р±Р»РѕРєР°
                     if ($propertyUserType == 'directory' && $propertyType == 'S')
                     {
                         if ($highloadItemID == ''){
@@ -358,7 +358,7 @@ class CrosssellComponent extends CBitrixComponent
     }
 
 
-    //Преобразует коды логики фильтрации в символы
+    //РџСЂРµРѕР±СЂР°Р·СѓРµС‚ РєРѕРґС‹ Р»РѕРіРёРєРё С„РёР»СЊС‚СЂР°С†РёРё РІ СЃРёРјРІРѕР»С‹
     private function convertLogic($logic, $globalTrue){
 
         switch ($logic) {
@@ -413,7 +413,7 @@ class CrosssellComponent extends CBitrixComponent
         );
     }
 
-    //добавляет в массив фильтра id по критерию товарного предложения и возвращает этот массив
+    //РґРѕР±Р°РІР»СЏРµС‚ РІ РјР°СЃСЃРёРІ С„РёР»СЊС‚СЂР° id РїРѕ РєСЂРёС‚РµСЂРёСЋ С‚РѕРІР°СЂРЅРѕРіРѕ РїСЂРµРґР»РѕР¶РµРЅРёСЏ Рё РІРѕР·РІСЂР°С‰Р°РµС‚ СЌС‚РѕС‚ РјР°СЃСЃРёРІ
     private function pushIdOffer($propertyCode, $propertyValue, $arrFilter, $isEqual,  $blockId){
 
         $arFilter = array('ID' => CIBlockElement::SubQuery('PROPERTY_CML2_LINK', array(
@@ -447,7 +447,7 @@ class CrosssellComponent extends CBitrixComponent
         return $arrFilter;
     }
 
-    //Получение UF_XML_ID по ID параметра - для Highload блоков
+    //РџРѕР»СѓС‡РµРЅРёРµ UF_XML_ID РїРѕ ID РїР°СЂР°РјРµС‚СЂР° - РґР»СЏ Highload Р±Р»РѕРєРѕРІ
     private function getUFXMLID($highloadItemID, $tblName)
     {
         \Bitrix\Main\Loader::IncludeModule("highloadblock");
@@ -475,7 +475,7 @@ class CrosssellComponent extends CBitrixComponent
         CModule::IncludeModule("catalog");
         $iterationPrice = 0;
 
-        //Количество условий для фильтрации по ценам - количество проходов для формирования фильтров
+        //РљРѕР»РёС‡РµСЃС‚РІРѕ СѓСЃР»РѕРІРёР№ РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё РїРѕ С†РµРЅР°Рј - РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕС…РѕРґРѕРІ РґР»СЏ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ С„РёР»СЊС‚СЂРѕРІ
         $iterationPriceNumber = 0;
         foreach ($children as $child){
             if (strpos($child['CLASS_ID'], 'CondIBPrice') !== false)
@@ -486,7 +486,7 @@ class CrosssellComponent extends CBitrixComponent
         Loader::includeModule('iblock');
         $childrenArr = array();
         foreach ($children as $child) {
-            //Проверка условия для параметра
+            //РџСЂРѕРІРµСЂРєР° СѓСЃР»РѕРІРёСЏ РґР»СЏ РїР°СЂР°РјРµС‚СЂР°
             if($child['DATA']['logic']) {
                 $isEqual = $child['DATA']['logic'];
             } else {
@@ -557,7 +557,7 @@ class CrosssellComponent extends CBitrixComponent
                     );
                 }
 
-                //Если последняя итерация по цене
+                //Р•СЃР»Рё РїРѕСЃР»РµРґРЅСЏСЏ РёС‚РµСЂР°С†РёСЏ РїРѕ С†РµРЅРµ
                 if ($iterationPrice == ($iterationPriceNumber-1)){
                     $offerList = CIBlockElement::GetList(
                         array("SORT" => "ASC"),
@@ -633,12 +633,12 @@ class CrosssellComponent extends CBitrixComponent
                     $highloadItemID = $child['DATA']['value'];
 
                     if ($highloadItemID == '') {
-                        //Получить торговые предложения для текущего товара
+                        //РџРѕР»СѓС‡РёС‚СЊ С‚РѕСЂРіРѕРІС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ РґР»СЏ С‚РµРєСѓС‰РµРіРѕ С‚РѕРІР°СЂР°
                         $res = CCatalogSKU::getOffersList(
-                            $this->arParams['PRODUCT_ID'], // массив ID товаров
-                            '', // указываете ID инфоблока только в том случае, когда ВЕСЬ массив товаров из одного инфоблока и он известен
-                            $skuFilter = array(), // дополнительный фильтр предложений. по умолчанию пуст.
-                            $fields = array(),  // массив полей предложений. даже если пуст - вернет ID и IBLOCK_ID
+                            $this->arParams['PRODUCT_ID'], // РјР°СЃСЃРёРІ ID С‚РѕРІР°СЂРѕРІ
+                            '', // СѓРєР°Р·С‹РІР°РµС‚Рµ ID РёРЅС„РѕР±Р»РѕРєР° С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РєРѕРіРґР° Р’Р•РЎР¬ РјР°СЃСЃРёРІ С‚РѕРІР°СЂРѕРІ РёР· РѕРґРЅРѕРіРѕ РёРЅС„РѕР±Р»РѕРєР° Рё РѕРЅ РёР·РІРµСЃС‚РµРЅ
+                            $skuFilter = array(), // РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ С„РёР»СЊС‚СЂ РїСЂРµРґР»РѕР¶РµРЅРёР№. РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РїСѓСЃС‚.
+                            $fields = array(),  // РјР°СЃСЃРёРІ РїРѕР»РµР№ РїСЂРµРґР»РѕР¶РµРЅРёР№. РґР°Р¶Рµ РµСЃР»Рё РїСѓСЃС‚ - РІРµСЂРЅРµС‚ ID Рё IBLOCK_ID
                             $propertyFilter = array('ID' => array($idProperty))
                         );
                         $currentProperties = array();
@@ -653,7 +653,7 @@ class CrosssellComponent extends CBitrixComponent
 
                     }
 
-                    //Если фильтр должен быть по элементу HighLoad блока
+                    //Р•СЃР»Рё С„РёР»СЊС‚СЂ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїРѕ СЌР»РµРјРµРЅС‚Сѓ HighLoad Р±Р»РѕРєР°
                     if ($propertyUserType == 'directory' && $propertyType == 'S') {
                         if ($highloadItemID == '') {
                             if (is_array($currentProperties)) {
