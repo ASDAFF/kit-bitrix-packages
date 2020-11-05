@@ -1286,7 +1286,7 @@ $arTemplateParameters['FILL_ITEM_ALL_PRICES'] = array(
 
 $arTemplateParameters['STORES_MAP'] = array(
     'PARENT' => 'STORE_SETTINGS',
-    'NAME' => '����� �������',
+    'NAME' => 'Карта складов',
     'TYPE' => 'LIST',
     'DEFAULT' => 'YANDEX',
     'VALUES' => array(
