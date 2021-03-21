@@ -1,7 +1,6 @@
 <?
 
 use Bitrix\Main\Loader;
-use Kit\Origami\Config\Option;
 use Kit\Origami\Helper\Config;
 
 class KitOrigami
@@ -29,12 +28,6 @@ class KitOrigami
     public static $_1191450594 = array();
     public static $_353950835 = true;
     static private $_1139810130 = null;
-
-
-    private static function __881263698()
-    {
-        self::$_1139810130 = \Bitrix\Main\Loader::includeSharewareModule(self::moduleId);
-    }
 
     public static function genTheme($theme = [], $_910798875 = '')
     {
@@ -65,8 +58,8 @@ class KitOrigami
             if (in_array($elem, ['.', '..', 'variables.scss',]) || strpos($elem, '.scss') === false) {
                 continue;
             }
-            $_143942720 = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $elem);
-            $_449085564 = $scssc->compile($variables . $_143942720);
+            $scssDir = file_get_contents($_SERVER['DOCUMENT_ROOT'] . KitOrigami::scssDir . '/' . $elem);
+            $_449085564 = $scssc->compile($variables . $scssDir);
             if (!is_dir($_SERVER['DOCUMENT_ROOT'] . $_910798875)) {
                 mkdir($_SERVER['DOCUMENT_ROOT'] . $_910798875);
             }
@@ -83,6 +76,16 @@ class KitOrigami
         } else {
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_address.php',]);
+        }
+    }
+
+    public static function isUseRegions($_14188243 = SITE_ID)
+    {
+
+        if (Loader::includeModule('kit.regions')/* && Config::get('USE_REGIONS') == 'Y'*/) {
+            return true;
+        } else {
+            return false;
         }
     }
 
@@ -129,33 +132,28 @@ class KitOrigami
         }
     }
 
-    public static function showDropDownPhones($_1334522753 = '', $_1592436967 = '', $_1313454871 = "")
+    public static function showDigitalPhone($phone = '')
+    {
+
+        $phone = preg_replace('/[^0-9]/', '', $phone);
+        $phone = '+' . $phone;
+        return $phone;
+    }
+
+    public static function showDropDownPhones($nClass = '', $nameClass = '', $_1313454871 = "")
     {
         if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_PHONE"]) {
-            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_PHONE"], $_1334522753, $_1592436967, $_1313454871, "tel:");
+            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_PHONE"], $nClass, $nameClass, $_1313454871, "tel:");
         } else {
             $phone = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_phone.php');
-            echo '' . $_1334522753 . '">';
+            echo '' . $nClass . '">';
             global $APPLICATION;
             $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_phone.php',]);
             echo '';
         }
     }
 
-    public static function showDropDownEmails($_1334522753 = '', $_1592436967 = '', $_1313454871 = "")
-    {
-        if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
-            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_EMAIL"], $_1334522753, $_1592436967, $_1313454871, "mailto:");
-        } else {
-            $email = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
-            echo '' . $_1334522753 . '">';
-            global $APPLICATION;
-            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_email.php',]);
-            echo '';
-        }
-    }
-
-    public static function showDropDownBlock($_447014131, $_1334522753 = '', $_1592436967 = '', $_1313454871 = "", $url = "")
+    public static function showDropDownBlock($_447014131, $nClass = '', $nameClass = '', $_1313454871 = "", $url = "")
     {
 
         if (is_array($_447014131)) {
@@ -167,10 +165,10 @@ class KitOrigami
             }
             if (is_array($_447014131)) {
                 if (count($_447014131) > 1) {
-                    $_1334522753 .= (empty($_1334522753) ? '' : '') . 'dropdown_list';
+                    $nClass .= (empty($nClass) ? '' : '') . 'dropdown_list';
                 }
                 $_1197286628 = reset($_447014131);
-                echo "<div class='$_1334522753'><div class='main_element_wrapper'><a href='$url" . $_1197286628 . "' class='$_1592436967'>" . $_1197286628 . '';
+                echo "<div class='$nClass'><div class='main_element_wrapper'><a href='$url" . $_1197286628 . "' class='$nameClass'>" . $_1197286628 . '';
                 if (!empty($_447014131)) {
                     echo '';
                     foreach ($_447014131 as $_791793763) {
@@ -180,32 +178,27 @@ class KitOrigami
                 }
                 echo '';
             } else {
-                echo "<div class='$_1334522753'><div class='main_element_wrapper'>";
+                echo "<div class='$nClass'><div class='main_element_wrapper'>";
                 echo "<a href='$url" . $_447014131 . "'>$_447014131</a>";
                 echo '';
             }
         } else {
-            echo "<div class='$_1334522753'><div class='main_element_wrapper'>";
+            echo "<div class='$nClass'><div class='main_element_wrapper'>";
             echo "<a href='$url" . $_447014131 . "'>$_447014131</a>";
             echo '';
         }
     }
 
-    public static function showDigitalPhone($phone = '')
+    public static function showDropDownEmails($nClass = '', $nameClass = '', $_1313454871 = "")
     {
-
-        $phone = preg_replace('/[^0-9]/', '', $phone);
-        $phone = '+' . $phone;
-        return $phone;
-    }
-
-    public static function isUseRegions($_14188243 = SITE_ID)
-    {
-
-        if (Loader::includeModule('kit.regions')/* && Config::get('USE_REGIONS') == 'Y'*/) {
-            return true;
+        if (self::isUseRegions() && $_SESSION["KIT_REGIONS"]["UF_EMAIL"]) {
+            self::showDropDownBlock($_SESSION["KIT_REGIONS"]["UF_EMAIL"], $nClass, $nameClass, $_1313454871, "mailto:");
         } else {
-            return false;
+            $email = file_get_contents($_SERVER['DOCUMENT_ROOT'] . SITE_DIR . 'include/kit_origami/contacts_email.php');
+            echo '' . $nClass . '">';
+            global $APPLICATION;
+            $APPLICATION->IncludeComponent('bitrix:main.include', '', ['AREA_FILE_SHOW' => 'file', 'PATH' => SITE_DIR . 'include/kit_origami/contacts_email.php',]);
+            echo '';
         }
     }
 
@@ -263,13 +256,13 @@ class KitOrigami
             }
             $_1019447164 = [];
             $_908836893 = \Bitrix\Catalog\PriceTable::getList(['filter' => ['PRODUCT_ID' => $product, 'CATALOG_GROUP_ID' => $_1341982944,], 'select' => ['CATALOG_GROUP_ID', 'PRODUCT_ID', 'PRICE', 'CURRENCY', 'ID',],]);
-            while ($_1091665988 = $_908836893->Fetch()) {
-                $_331888933 = \CCatalogDiscount::GetDiscountByPrice($_1091665988['ID'], $USER->GetUserGroupArray(), 'N', SITE_ID);
-                $_46201518 = \CCatalogProduct::CountPriceWithDiscount($_1091665988['PRICE'], $_1091665988['CURRENCY'], $_331888933);
-                $_1091665988['DISCOUNT_PRICE'] = $_46201518;
-                $_1091665988['PRINT_PRICE'] = \CCurrencyLang::CurrencyFormat($_1091665988['PRICE'], $_1091665988['CURRENCY']);
-                $_1091665988['PRINT_DISCOUNT_PRICE'] = \CCurrencyLang::CurrencyFormat($_1091665988['DISCOUNT_PRICE'], $_1091665988['CURRENCY']);
-                $_1019447164[$_1091665988['PRODUCT_ID']][$_1091665988['CATALOG_GROUP_ID']] = $_1091665988;
+            while ($resPrice = $_908836893->Fetch()) {
+                $discount = \CCatalogDiscount::GetDiscountByPrice($resPrice['ID'], $USER->GetUserGroupArray(), 'N', SITE_ID);
+                $_46201518 = \CCatalogProduct::CountPriceWithDiscount($resPrice['PRICE'], $resPrice['CURRENCY'], $discount);
+                $resPrice['DISCOUNT_PRICE'] = $_46201518;
+                $resPrice['PRINT_PRICE'] = \CCurrencyLang::CurrencyFormat($resPrice['PRICE'], $resPrice['CURRENCY']);
+                $resPrice['PRINT_DISCOUNT_PRICE'] = \CCurrencyLang::CurrencyFormat($resPrice['DISCOUNT_PRICE'], $resPrice['CURRENCY']);
+                $_1019447164[$resPrice['PRODUCT_ID']][$resPrice['CATALOG_GROUP_ID']] = $resPrice;
             }
             if ($data['ITEMS']) {
                 foreach ($data['ITEMS'] as &$item) {
@@ -347,12 +340,12 @@ class KitOrigami
     {
         $_1100295972 = array();
         if (isset($data['CAT_PRICES']) && !empty($data['CAT_PRICES'])) {
-            foreach ($data['CAT_PRICES'] as $_1091665988) {
-                $_1100295972[$_1091665988['ID']] = $_1091665988['TITLE'];
+            foreach ($data['CAT_PRICES'] as $resPrice) {
+                $_1100295972[$resPrice['ID']] = $resPrice['TITLE'];
             }
         } elseif (isset($data['PRICES']) && !empty($data['PRICES'])) {
-            foreach ($data['PRICES'] as $_1091665988) {
-                $_1100295972[$_1091665988['ID']] = $_1091665988['TITLE'];
+            foreach ($data['PRICES'] as $resPrice) {
+                $_1100295972[$resPrice['ID']] = $resPrice['TITLE'];
             }
             if (isset($data['ITEMS']) && !empty($_1100295972)) {
                 foreach ($data['ITEMS'] as &$_1706386077) {
@@ -365,7 +358,7 @@ class KitOrigami
 
     public static function getPriceDelta($data = [], $_560213636)
     {
-        $_1091665988 = $_2145267970 = array();
+        $resPrice = $_2145267970 = array();
         if (Config::get('SKU_TYPE_' . $_560213636) == 'LIST_OF_MODIFICATIONS' && $data['OFFERS']) {
             $_1938214814 = '';
             $_1036628273 = 0;
@@ -373,10 +366,10 @@ class KitOrigami
                 $_1036628273 = $offer['ITEM_PRICES'][0]['PRICE'];
                 $_941493782 = $offer['ITEM_PRICES'][0]['PRINT_PRICE'];
                 $_1938214814 = $offer['ITEM_PRICES'][0]['CURRENCY'];
-                $_1091665988[$_1938214814][$_1036628273] = $offer['ITEM_PRICES'][0];
-                ksort($_1091665988[$_1938214814]);
+                $resPrice[$_1938214814][$_1036628273] = $offer['ITEM_PRICES'][0];
+                ksort($resPrice[$_1938214814]);
             }
-            foreach ($_1091665988 as $_1938214814 => $_1392704888) {
+            foreach ($resPrice as $_1938214814 => $_1392704888) {
                 foreach ($_1392704888 as $_1392704888) {
                     $_2145267970[] = $_1392704888;
                     break 1;
@@ -392,9 +385,9 @@ class KitOrigami
             foreach ($data["OFFERS"] as &$offer) {
                 if (isset($offer["ITEM_ALL_PRICES"])) {
                     foreach ($offer["ITEM_ALL_PRICES"] as &$_977856884) {
-                        foreach ($_977856884["PRICES"] as $_432033205 => &$_1091665988) {
-                            if ($_1091665988["DISCOUNT"] > 0) {
-                                $_1091665988["PRINT_RATIO_PRICE"] = CCurrencyLang::CurrencyFormat($_1091665988['RATIO_PRICE'], $_1091665988['CURRENCY']);
+                        foreach ($_977856884["PRICES"] as $_432033205 => &$resPrice) {
+                            if ($resPrice["DISCOUNT"] > 0) {
+                                $resPrice["PRINT_RATIO_PRICE"] = CCurrencyLang::CurrencyFormat($resPrice['RATIO_PRICE'], $resPrice['CURRENCY']);
                             }
                         }
                     }
@@ -410,15 +403,15 @@ class KitOrigami
             foreach ($data['OFFERS'] as &$offer) {
                 if (isset($offer['ITEM_ALL_PRICES'])) {
                     foreach ($offer['ITEM_ALL_PRICES'] as &$_977856884) {
-                        foreach ($_977856884['PRICES'] as $_432033205 => &$_1091665988) {
-                            if ($_1091665988['DISCOUNT'] > 0) {
+                        foreach ($_977856884['PRICES'] as $_432033205 => &$resPrice) {
+                            if ($resPrice['DISCOUNT'] > 0) {
                                 $_1447135835 = true;
                             }
                         }
                     }
                 } elseif (isset($offer['ITEM_PRICES'])) {
-                    foreach ($offer['ITEM_PRICES'] as $_432033205 => &$_1091665988) {
-                        if ($_1091665988['DISCOUNT'] > 0) {
+                    foreach ($offer['ITEM_PRICES'] as $_432033205 => &$resPrice) {
+                        if ($resPrice['DISCOUNT'] > 0) {
                             $_1447135835 = true;
                         }
                     }
@@ -483,16 +476,23 @@ class KitOrigami
         return false;
     }
 
-    public static function process404($_1033840757, &$data, $_14696249)
+    public static function getUrlOfferIblock($_1864100049 = 0)
     {
-        if (ERROR_404 == "Y" && self::$_353950835) {
-            \Bitrix\Iblock\Component\Tools::process404("", ($_14696249["SET_STATUS_404"] === "Y"), ($_14696249["SET_STATUS_404"] === "Y"), true, $_14696249["FILE_404"]);
+        if (!$_1864100049) $_252352283 = Config::get('IBLOCK_ID');
+        $_110167465 = new \CPHPCache();
+        if ($_110167465->InitCache(36000, serialize(array($_1864100049)), '/kit.origami/iblock_offer')) {
+            $_1704156904 = $_110167465->GetVars();
+        } elseif ($_110167465->StartDataCache()) {
+            $_1704156904 = CCatalogSKU::GetInfoByProductIBlock($_252352283);
+            if ($_1704156904) {
+                $_1685894503 = \CIBlock::GetList(array('SORT' => 'ASC'), array('ID' => $_1704156904['IBLOCK_ID']), false);
+                while ($_1904968643 = $_1685894503->Fetch()) {
+                    $_1704156904['URL'] = $_1904968643['DETAIL_PAGE_URL'];
+                }
+            }
+            $_110167465->EndDataCache($_1704156904);
         }
-    }
-
-    public static function checkSef($_1458517449 = '')
-    {
-        if (strpos($_1458517449, '?') === false) return true; else return false;
+        return $_1704156904;
     }
 
     public static function checkOfferLanding(&$data, $_14696249)
@@ -524,6 +524,13 @@ class KitOrigami
         }
     }
 
+    public static function process404($_1033840757, &$data, $_14696249)
+    {
+        if (ERROR_404 == "Y" && self::$_353950835) {
+            \Bitrix\Iblock\Component\Tools::process404("", ($_14696249["SET_STATUS_404"] === "Y"), ($_14696249["SET_STATUS_404"] === "Y"), true, $_14696249["FILE_404"]);
+        }
+    }
+
     public static function checkOfferPage(&$data, &$_14696249)
     {
         if (!self::$_140594632 && $data["OFFERS"] && $data["OFFERS"][0]["DETAIL_PAGE_URL"] && Config::get('OFFER_LANDING') == "Y") {
@@ -536,6 +543,11 @@ class KitOrigami
                 }
             }
         }
+    }
+
+    public static function checkSef($_1458517449 = '')
+    {
+        if (strpos($_1458517449, '?') === false) return true; else return false;
     }
 
     public static function getSeoOffer($data)
@@ -597,25 +609,6 @@ class KitOrigami
             }
         }
         return $_241618154;
-    }
-
-    public static function getUrlOfferIblock($_1864100049 = 0)
-    {
-        if (!$_1864100049) $_252352283 = Config::get('IBLOCK_ID');
-        $_110167465 = new \CPHPCache();
-        if ($_110167465->InitCache(36000, serialize(array($_1864100049)), '/kit.origami/iblock_offer')) {
-            $_1704156904 = $_110167465->GetVars();
-        } elseif ($_110167465->StartDataCache()) {
-            $_1704156904 = CCatalogSKU::GetInfoByProductIBlock($_252352283);
-            if ($_1704156904) {
-                $_1685894503 = \CIBlock::GetList(array('SORT' => 'ASC'), array('ID' => $_1704156904['IBLOCK_ID']), false);
-                while ($_1904968643 = $_1685894503->Fetch()) {
-                    $_1704156904['URL'] = $_1904968643['DETAIL_PAGE_URL'];
-                }
-            }
-            $_110167465->EndDataCache($_1704156904);
-        }
-        return $_1704156904;
     }
 
     public static function prepareJSData($_1033840757, $_14696249)
@@ -748,7 +741,7 @@ class KitOrigami
     {
 
         global $APPLICATION;
-        $_225755897 = [];
+        $breadcrumbs = [];
         foreach ($_1046363615 as $_286888804) {
             if (is_dir($_617195126 . '/' . $_286888804) && !in_array($_286888804, ['.', '..', 'lang'])) {
                 $_205907113['CONTENT'] = file_get_contents($_617195126 . '/' . $_286888804 . '/content.php');
@@ -759,14 +752,14 @@ class KitOrigami
                 if (!in_array($_711692109, array_keys($_1080113230))) {
                     continue;
                 }
-                if ($_225755897[$_711692109]) {
-                    $_225755897[$_711692109][] = $_205907113;
+                if ($breadcrumbs[$_711692109]) {
+                    $breadcrumbs[$_711692109][] = $_205907113;
                 } else {
-                    $_225755897[$_711692109] = [$_205907113];
+                    $breadcrumbs[$_711692109] = [$_205907113];
                 }
             }
         }
-        return $_225755897;
+        return $breadcrumbs;
     }
 
     public static function FrontUser()
@@ -791,11 +784,11 @@ class KitOrigami
         return 'KitOrigami::ClearTmp();';
     }
 
-    public static function FormatFileSize($_2038695769, $_354791801 = 2)
+    public static function FormatFileSize($size, $_354791801 = 2)
     {
         $_2041167345 = array('B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
-        $_106289902 = (int)floor((strlen($_2038695769) - 1) / 3);
-        return sprintf("%.{$_354791801}f", $_2038695769 / pow('1024', $_106289902)) . '' . @$_2041167345[$_106289902];
+        $_106289902 = (int)floor((strlen($size) - 1) / 3);
+        return sprintf("%.{$_354791801}f", $size / pow('1024', $_106289902)) . '' . @$_2041167345[$_106289902];
     }
 
     public static function GetComponentPrices($_65703936 = [])
@@ -808,82 +801,87 @@ class KitOrigami
         return $_65703936;
     }
 
-    public static function showBreadCrumbs($_972379907 = SITE_DIR)
+    public static function showBreadCrumbs($section = SITE_DIR)
     {
         global $APPLICATION;
-        $_225755897 = true;
+        $breadcrumbs = true;
         if ($APPLICATION->GetProperty('SHOW_BREADCRUMBS') == 'N') {
-            $_225755897 = false;
+            $breadcrumbs = false;
         }
-        return $_225755897;
+        return $breadcrumbs;
     }
 
-    public static function needShowFullWidth($_972379907 = SITE_DIR)
+    public static function needShowFullWidth($section = SITE_DIR)
     {
 
-        $_225755897 = false;
-        if ($_972379907 == SITE_DIR) {
-            $_225755897 = true;
+        $breadcrumbs = false;
+        if ($section == SITE_DIR) {
+            $breadcrumbs = true;
         }
-        return $_225755897;
+        return $breadcrumbs;
     }
 
-    public static function needShowSide($_972379907 = SITE_DIR)
+    public static function needShowSide($section = SITE_DIR)
     {
 
-        $_225755897 = true;
+        $breadcrumbs = true;
         global $APPLICATION;
-        if (($_972379907 == SITE_DIR || $APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'N')) {
-            $_225755897 = false;
+        if (($section == SITE_DIR || $APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'N')) {
+            $breadcrumbs = false;
         }
-        if (self::checkDynamicSection($_972379907)) {
-            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'N') $_225755897 = false;
-            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'RIGHT') $_225755897 = true;
-            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'LEFT') $_225755897 = true;
+        if (self::checkDynamicSection($section)) {
+            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'N') $breadcrumbs = false;
+            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'RIGHT') $breadcrumbs = true;
+            if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'LEFT') $breadcrumbs = true;
         }
-        return $_225755897;
+        return $breadcrumbs;
     }
 
-    public static function checkDynamicSection($_972379907 = SITE_DIR)
+    public static function checkDynamicSection($section = SITE_DIR)
     {
-        $_1354070377 = explode("/", $_972379907);
+        $_1354070377 = explode("/", $section);
         if (count($_1354070377) > 3) {
             return true;
         }
         return false;
     }
 
-    public static function getSide($_972379907 = SITE_DIR)
+    public static function getSide($section = SITE_DIR)
     {
 
         global $APPLICATION;
-        $_275839199 = Config::get('MENU_SIDE');
-        if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'LEFT') $_275839199 = 'left'; elseif ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'RIGHT') $_275839199 = 'right';
-        $_99221141 = self::checkDynamicSection($_972379907);
-        if ($_99221141 && $APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'LEFT') $_275839199 = 'left';
-        if ($_99221141 && $APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'RIGHT') $_275839199 = 'right';
-        return $_275839199;
+        $menuSide = Config::get('MENU_SIDE');
+        if ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'LEFT') $menuSide = 'left'; elseif ($APPLICATION->GetProperty('SHOW_SIDE_BLOCK') == 'RIGHT') $menuSide = 'right';
+        $dinamicSection = self::checkDynamicSection($section);
+        if ($dinamicSection && $APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'LEFT') $menuSide = 'left';
+        if ($dinamicSection && $APPLICATION->GetProperty('SHOW_SIDE_BLOCK_SUBSECTION') == 'RIGHT') $menuSide = 'right';
+        return $menuSide;
     }
 
-    public static function needShowBreadcrumbs($_972379907 = SITE_DIR)
+    public static function needShowBreadcrumbs($section = SITE_DIR)
     {
 
-        $_225755897 = false;
-        if ($_972379907 != SITE_DIR) {
-            $_225755897 = true;
+        $breadcrumbs = false;
+        if ($section != SITE_DIR) {
+            $breadcrumbs = true;
         }
-        return $_225755897;
+        return $breadcrumbs;
     }
 
     public static function getCurrentPage()
     {
 
         global $APPLICATION;
-        $_225755897 = $APPLICATION->GetCurDir();
-        if (!$_225755897) {
-            $_225755897 = SITE_DIR;
+        $breadcrumbs = $APPLICATION->GetCurDir();
+        if (!$breadcrumbs) {
+            $breadcrumbs = SITE_DIR;
         }
-        return $_225755897;
+        return $breadcrumbs;
+    }
+
+    private static function __881263698()
+    {
+        self::$_1139810130 = \Bitrix\Main\Loader::includeSharewareModule(self::moduleId);
     }
 
     public function DoIBlockAfterSave($_425863815, $_1585110416 = false)
@@ -941,17 +939,17 @@ class KitOrigami
             if ($_1910868225[$_903491882]) {
                 foreach ($_1910868225[$_903491882] as $_958863122) {
                     if ($_958863122['ID']) {
-                        $_331888933 = CCatalogDiscount::GetDiscountByProduct($_958863122['ID'], array(), 'N', array(), $_260359155);
-                        if (isset($_331888933) && is_array($_331888933) && count($_331888933) > 0) {
+                        $discount = CCatalogDiscount::GetDiscountByProduct($_958863122['ID'], array(), 'N', array(), $_260359155);
+                        if (isset($discount) && is_array($discount) && count($discount) > 0) {
                             break;
                         }
                     }
                 }
             }
         } else {
-            $_331888933 = CCatalogDiscount::GetDiscountByProduct($_903491882, array(), 'N', array(), $_260359155);
+            $discount = CCatalogDiscount::GetDiscountByProduct($_903491882, array(), 'N', array(), $_260359155);
         }
-        if (isset($_331888933) && is_array($_331888933) && count($_331888933) > 0) $_1342066891 = true;
+        if (isset($discount) && is_array($discount) && count($discount) > 0) $_1342066891 = true;
         if ($_1342066891) {
             $_1635915203 = 'SALE';
             $_462197824 = CIBlockPropertyEnum::GetList(Array('DEF' => 'DESC', 'SORT' => 'ASC'), Array('IBLOCK_ID' => $_873335815, 'CODE' => $_1635915203));
@@ -975,20 +973,20 @@ class KitOrigami
                 } else $_1247672865 = array($_903491882);
                 $_849481474 = false;
                 $_902674456 = false;
-                $_372275711 = CPrice::GetList(array(), array('PRODUCT_ID' => $_1247672865,));
-                while ($_1091665988 = $_372275711->Fetch()) {
+                $price = CPrice::GetList(array(), array('PRODUCT_ID' => $_1247672865,));
+                while ($resPrice = $price->Fetch()) {
                     if ($_1342066891) {
-                        $_331888933 = CCatalogDiscount::GetDiscountByPrice($_1091665988['ID'], array(), 'N', $_260359155);
-                        $_46201518 = CCatalogProduct::CountPriceWithDiscount($_1091665988['PRICE'], $_1091665988['CURRENCY'], $_331888933);
-                        $_1091665988['DISCOUNT_PRICE'] = $_46201518;
+                        $discount = CCatalogDiscount::GetDiscountByPrice($resPrice['ID'], array(), 'N', $_260359155);
+                        $_46201518 = CCatalogProduct::CountPriceWithDiscount($resPrice['PRICE'], $resPrice['CURRENCY'], $discount);
+                        $resPrice['DISCOUNT_PRICE'] = $_46201518;
                     }
                     if (isset($_46201518)) {
                         $_403552288 = $_46201518;
                         unset($_46201518);
                     } else {
-                        $_403552288 = $_1091665988['PRICE'];
+                        $_403552288 = $resPrice['PRICE'];
                     }
-                    if (CModule::IncludeModule('currency') && $_1358705902 != $_1091665988['CURRENCY']) $_403552288 = CCurrencyRates::ConvertCurrency($_403552288, $_1091665988['CURRENCY'], $_1358705902);
+                    if (CModule::IncludeModule('currency') && $_1358705902 != $resPrice['CURRENCY']) $_403552288 = CCurrencyRates::ConvertCurrency($_403552288, $resPrice['CURRENCY'], $_1358705902);
                     $_1136074569 = $_403552288;
                     if ($_849481474 === false || $_849481474 > $_1136074569) $_849481474 = $_1136074569;
                     if ($_902674456 === false || $_902674456 < $_1136074569) $_902674456 = $_1136074569;
@@ -998,6 +996,46 @@ class KitOrigami
                 }
             }
         }
+    }
+
+    public function DoInlineCss(&$scssDir)
+    {
+        global $APPLICATION, $USER;
+        if (strpos($APPLICATION->GetCurDir(), '/bitrix/') === false && (strpos($APPLICATION->GetCurDir(), '/bitrix/subws/') === false || strpos($APPLICATION->GetCurDir(), '/bitrix/subws/') === false)) {
+            if (!(is_object($USER) && $USER->IsAuthorized()) && Config::get('INLINE_CSS_REMOVE_KERNEL_CSS_JS') == 'Y') {
+                $_539677309 = Array('/\]+\>/', '/\]+\>/');
+                $scssDir = preg_replace($_539677309, '', $scssDir);
+                $scssDir = preg_replace('/
+{2,}/', '', $scssDir);
+            }
+            if (Config::get('INLINE_CSS_CHECKBOX') == 'Y' && is_objec($USER) && !$USER->isAdmin()) $scssDir = self::__57872944($scssDir); else if (Config::get('INLINE_CSS_CHECKBOX') == 'Y' && is_objec($USER) && $USER->IsAuthorized() && Config::get('INLINE_CSS_ADMIN_CHECKBOX') != 'Y') $scssDir = self::__57872944($scssDir);
+        }
+        return;
+    }
+
+    private function __57872944($scssDir)
+    {
+        preg_match_all('/\<link\s+href\=\"([\S\w]+\.css)[\S\w]*\"[^\>]+\>/', $scssDir, $_1847910540);
+        if (isset($_1847910540[1]) && is_array($_1847910540[1])) {
+            foreach ($_1847910540[1] as $_241618154 => $item) {
+                if (strpos($item, '/assets/css/style-icons.css') === false && strpos($item, 'style.css') === false) {
+                    $item = $_SERVER['DOCUMENT_ROOT'] . $item;
+                    $_908521315 = Config::get('INLINE_CSS_EXCLUDE_FILE');
+                    if (file_exists($item) && (is_numeric($_908521315) && ($_908521315 * 1000) >= filesize($item) || $_908521315 == '')) {
+                        $file = file_get_contents($item);
+                        $_2096204513 = self::compressCSS($file);
+                        $scssDir = str_replace($_1847910540[0][$_241618154], '' . $_2096204513 . '', $scssDir);
+                    }
+                }
+            }
+        }
+        return $scssDir;
+    }
+
+    public function compressCSS($_449085564, $_1695721621 = Array())
+    {
+        $_1850202586 = $_449085564;
+        return $_1850202586;
     }
 
     private function __1871197832($_2137682369)
@@ -1011,45 +1049,5 @@ class KitOrigami
             }
         }
         return false;
-    }
-
-    private function __57872944($_143942720)
-    {
-        preg_match_all('/\<link\s+href\=\"([\S\w]+\.css)[\S\w]*\"[^\>]+\>/', $_143942720, $_1847910540);
-        if (isset($_1847910540[1]) && is_array($_1847910540[1])) {
-            foreach ($_1847910540[1] as $_241618154 => $item) {
-                if (strpos($item, '/assets/css/style-icons.css') === false && strpos($item, 'style.css') === false) {
-                    $item = $_SERVER['DOCUMENT_ROOT'] . $item;
-                    $_908521315 = Config::get('INLINE_CSS_EXCLUDE_FILE');
-                    if (file_exists($item) && (is_numeric($_908521315) && ($_908521315 * 1000) >= filesize($item) || $_908521315 == '')) {
-                        $file = file_get_contents($item);
-                        $_2096204513 = self::compressCSS($file);
-                        $_143942720 = str_replace($_1847910540[0][$_241618154], '' . $_2096204513 . '', $_143942720);
-                    }
-                }
-            }
-        }
-        return $_143942720;
-    }
-
-    public function compressCSS($_449085564, $_1695721621 = Array())
-    {
-        $_1850202586 = $_449085564;
-        return $_1850202586;
-    }
-
-    public function DoInlineCss(&$_143942720)
-    {
-        global $APPLICATION, $USER;
-        if (strpos($APPLICATION->GetCurDir(), '/bitrix/') === false && (strpos($APPLICATION->GetCurDir(), '/bitrix/subws/') === false || strpos($APPLICATION->GetCurDir(), '/bitrix/subws/') === false)) {
-            if (!(is_object($USER) && $USER->IsAuthorized()) && Config::get('INLINE_CSS_REMOVE_KERNEL_CSS_JS') == 'Y') {
-                $_539677309 = Array('/\]+\>/', '/\]+\>/');
-                $_143942720 = preg_replace($_539677309, '', $_143942720);
-                $_143942720 = preg_replace('/
-{2,}/', '', $_143942720);
-            }
-            if (Config::get('INLINE_CSS_CHECKBOX') == 'Y' && is_objec($USER) && !$USER->isAdmin()) $_143942720 = self::__57872944($_143942720); else if (Config::get('INLINE_CSS_CHECKBOX') == 'Y' && is_objec($USER) && $USER->IsAuthorized() && Config::get('INLINE_CSS_ADMIN_CHECKBOX') != 'Y') $_143942720 = self::__57872944($_143942720);
-        }
-        return;
     }
 } ?>
